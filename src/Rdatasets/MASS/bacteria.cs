@@ -1,0 +1,257 @@
+// ReSharper disable All
+
+namespace Rdatasets.MASS
+{
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// Presence of Bacteria after Drug Treatments
+    /// </summary>
+
+    public class bacteria
+    {
+        public readonly string y;
+        public readonly string ap;
+        public readonly string hilo;
+        public readonly int week;
+        public readonly string ID;
+        public readonly string trt;
+
+        public bacteria(string y, string ap, string hilo, int week, string ID, string trt)
+        {
+            this.y = y;
+            this.ap = ap;
+            this.hilo = hilo;
+            this.week = week;
+            this.ID = ID;
+            this.trt = trt;
+        }
+
+        public static IEnumerable<bacteria> Data
+        {
+            get
+            {
+                yield return new bacteria("y", "p", "hi", 0, "X01", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "X01", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "X01", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "X01", "placebo");
+                yield return new bacteria("y", "a", "hi", 0, "X02", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "X02", "drug+");
+                yield return new bacteria("n", "a", "hi", 6, "X02", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "X02", "drug+");
+                yield return new bacteria("y", "a", "lo", 0, "X03", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "X03", "drug");
+                yield return new bacteria("y", "a", "lo", 4, "X03", "drug");
+                yield return new bacteria("y", "a", "lo", 6, "X03", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "X03", "drug");
+                yield return new bacteria("y", "p", "lo", 0, "X04", "placebo");
+                yield return new bacteria("y", "p", "lo", 2, "X04", "placebo");
+                yield return new bacteria("y", "p", "lo", 4, "X04", "placebo");
+                yield return new bacteria("y", "p", "lo", 6, "X04", "placebo");
+                yield return new bacteria("y", "p", "lo", 11, "X04", "placebo");
+                yield return new bacteria("y", "p", "lo", 0, "X05", "placebo");
+                yield return new bacteria("y", "p", "lo", 2, "X05", "placebo");
+                yield return new bacteria("y", "p", "lo", 4, "X05", "placebo");
+                yield return new bacteria("y", "p", "lo", 6, "X05", "placebo");
+                yield return new bacteria("y", "p", "lo", 11, "X05", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "X06", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "X06", "drug");
+                yield return new bacteria("y", "a", "lo", 4, "X06", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "X06", "drug");
+                yield return new bacteria("y", "a", "hi", 0, "X07", "drug+");
+                yield return new bacteria("n", "a", "hi", 2, "X07", "drug+");
+                yield return new bacteria("n", "a", "hi", 4, "X07", "drug+");
+                yield return new bacteria("n", "a", "hi", 6, "X07", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "X07", "drug+");
+                yield return new bacteria("n", "p", "hi", 0, "X08", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "X08", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "X08", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "X08", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "X08", "placebo");
+                yield return new bacteria("y", "p", "lo", 0, "X09", "placebo");
+                yield return new bacteria("y", "p", "lo", 2, "X09", "placebo");
+                yield return new bacteria("y", "p", "lo", 4, "X09", "placebo");
+                yield return new bacteria("y", "p", "lo", 6, "X09", "placebo");
+                yield return new bacteria("y", "p", "lo", 11, "X09", "placebo");
+                yield return new bacteria("y", "a", "hi", 0, "X10", "drug+");
+                yield return new bacteria("y", "a", "hi", 6, "X10", "drug+");
+                yield return new bacteria("y", "p", "hi", 0, "X11", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "X11", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "X11", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "X11", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "X11", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "X12", "drug");
+                yield return new bacteria("n", "a", "lo", 2, "X12", "drug");
+                yield return new bacteria("n", "a", "lo", 4, "X12", "drug");
+                yield return new bacteria("y", "a", "lo", 6, "X12", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "X12", "drug");
+                yield return new bacteria("y", "p", "hi", 0, "X13", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "X13", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "X13", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "X13", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "X13", "placebo");
+                yield return new bacteria("y", "p", "lo", 0, "X14", "placebo");
+                yield return new bacteria("y", "p", "lo", 2, "X14", "placebo");
+                yield return new bacteria("n", "p", "lo", 4, "X14", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "X15", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "X15", "drug");
+                yield return new bacteria("y", "a", "lo", 4, "X15", "drug");
+                yield return new bacteria("y", "a", "lo", 6, "X15", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "X15", "drug");
+                yield return new bacteria("y", "a", "hi", 0, "X16", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "X16", "drug+");
+                yield return new bacteria("n", "a", "hi", 4, "X16", "drug+");
+                yield return new bacteria("y", "a", "hi", 6, "X16", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "X16", "drug+");
+                yield return new bacteria("y", "p", "hi", 0, "X17", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "X17", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "X17", "placebo");
+                yield return new bacteria("n", "p", "hi", 6, "X17", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "X17", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "X18", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "X18", "drug");
+                yield return new bacteria("n", "a", "lo", 4, "X18", "drug");
+                yield return new bacteria("n", "a", "lo", 6, "X18", "drug");
+                yield return new bacteria("n", "a", "lo", 11, "X18", "drug");
+                yield return new bacteria("y", "p", "lo", 0, "X19", "placebo");
+                yield return new bacteria("y", "p", "lo", 2, "X19", "placebo");
+                yield return new bacteria("n", "p", "lo", 4, "X19", "placebo");
+                yield return new bacteria("y", "p", "lo", 6, "X19", "placebo");
+                yield return new bacteria("n", "p", "lo", 11, "X19", "placebo");
+                yield return new bacteria("y", "a", "hi", 0, "X20", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "X20", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "X20", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "X20", "drug+");
+                yield return new bacteria("y", "p", "hi", 0, "X21", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "X21", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "X21", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "X21", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "X21", "placebo");
+                yield return new bacteria("y", "p", "hi", 0, "Y01", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "Y01", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "Y01", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "Y01", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "Y01", "placebo");
+                yield return new bacteria("n", "p", "lo", 0, "Y02", "placebo");
+                yield return new bacteria("y", "p", "lo", 2, "Y02", "placebo");
+                yield return new bacteria("n", "p", "lo", 4, "Y02", "placebo");
+                yield return new bacteria("y", "p", "lo", 6, "Y02", "placebo");
+                yield return new bacteria("n", "p", "lo", 11, "Y02", "placebo");
+                yield return new bacteria("y", "a", "hi", 0, "Y03", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "Y03", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Y03", "drug+");
+                yield return new bacteria("n", "a", "hi", 6, "Y03", "drug+");
+                yield return new bacteria("n", "a", "hi", 11, "Y03", "drug+");
+                yield return new bacteria("n", "a", "lo", 0, "Y04", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "Y04", "drug");
+                yield return new bacteria("n", "a", "lo", 4, "Y04", "drug");
+                yield return new bacteria("n", "a", "lo", 11, "Y04", "drug");
+                yield return new bacteria("y", "p", "hi", 0, "Y05", "placebo");
+                yield return new bacteria("n", "p", "hi", 2, "Y05", "placebo");
+                yield return new bacteria("n", "p", "hi", 11, "Y05", "placebo");
+                yield return new bacteria("y", "p", "lo", 0, "Y06", "placebo");
+                yield return new bacteria("y", "p", "lo", 2, "Y06", "placebo");
+                yield return new bacteria("y", "p", "lo", 6, "Y06", "placebo");
+                yield return new bacteria("y", "p", "lo", 11, "Y06", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "Y07", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "Y07", "drug");
+                yield return new bacteria("y", "a", "lo", 4, "Y07", "drug");
+                yield return new bacteria("n", "a", "lo", 6, "Y07", "drug");
+                yield return new bacteria("n", "a", "lo", 11, "Y07", "drug");
+                yield return new bacteria("y", "a", "hi", 0, "Y08", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Y08", "drug+");
+                yield return new bacteria("y", "a", "hi", 6, "Y08", "drug+");
+                yield return new bacteria("n", "a", "hi", 11, "Y08", "drug+");
+                yield return new bacteria("y", "p", "lo", 0, "Y09", "placebo");
+                yield return new bacteria("y", "p", "lo", 4, "Y09", "placebo");
+                yield return new bacteria("y", "p", "lo", 6, "Y09", "placebo");
+                yield return new bacteria("y", "p", "lo", 11, "Y09", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "Y10", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "Y10", "drug");
+                yield return new bacteria("n", "a", "lo", 4, "Y10", "drug");
+                yield return new bacteria("y", "a", "lo", 6, "Y10", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "Y10", "drug");
+                yield return new bacteria("y", "p", "hi", 0, "Y11", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "Y11", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "Y11", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "Y11", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "Y11", "placebo");
+                yield return new bacteria("y", "a", "hi", 0, "Y12", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Y12", "drug+");
+                yield return new bacteria("y", "a", "lo", 0, "Y13", "drug");
+                yield return new bacteria("n", "a", "lo", 2, "Y13", "drug");
+                yield return new bacteria("n", "a", "lo", 4, "Y13", "drug");
+                yield return new bacteria("n", "a", "lo", 6, "Y13", "drug");
+                yield return new bacteria("y", "p", "hi", 0, "Y14", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "Y14", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "Y14", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "Z01", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "Z01", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "Z01", "drug");
+                yield return new bacteria("y", "p", "hi", 0, "Z02", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "Z02", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "Z02", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "Z02", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "Z02", "placebo");
+                yield return new bacteria("y", "a", "hi", 0, "Z03", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "Z03", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Z03", "drug+");
+                yield return new bacteria("y", "a", "hi", 6, "Z03", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "Z03", "drug+");
+                yield return new bacteria("y", "p", "hi", 0, "Z05", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "Z05", "placebo");
+                yield return new bacteria("n", "p", "hi", 4, "Z05", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "Z05", "placebo");
+                yield return new bacteria("n", "p", "hi", 11, "Z05", "placebo");
+                yield return new bacteria("n", "a", "hi", 0, "Z06", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Z06", "drug+");
+                yield return new bacteria("n", "a", "lo", 0, "Z07", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "Z07", "drug");
+                yield return new bacteria("y", "a", "lo", 4, "Z07", "drug");
+                yield return new bacteria("n", "a", "lo", 6, "Z07", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "Z07", "drug");
+                yield return new bacteria("y", "a", "hi", 0, "Z09", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "Z09", "drug+");
+                yield return new bacteria("y", "a", "hi", 6, "Z09", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "Z09", "drug+");
+                yield return new bacteria("y", "p", "hi", 0, "Z10", "placebo");
+                yield return new bacteria("y", "p", "hi", 2, "Z10", "placebo");
+                yield return new bacteria("y", "p", "hi", 4, "Z10", "placebo");
+                yield return new bacteria("y", "p", "hi", 6, "Z10", "placebo");
+                yield return new bacteria("y", "p", "hi", 11, "Z10", "placebo");
+                yield return new bacteria("y", "a", "lo", 0, "Z11", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "Z11", "drug");
+                yield return new bacteria("y", "a", "lo", 4, "Z11", "drug");
+                yield return new bacteria("y", "a", "lo", 6, "Z11", "drug");
+                yield return new bacteria("y", "a", "lo", 11, "Z11", "drug");
+                yield return new bacteria("y", "a", "hi", 0, "Z14", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "Z14", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Z14", "drug+");
+                yield return new bacteria("y", "a", "hi", 6, "Z14", "drug+");
+                yield return new bacteria("n", "a", "hi", 11, "Z14", "drug+");
+                yield return new bacteria("y", "a", "lo", 0, "Z15", "drug");
+                yield return new bacteria("y", "a", "lo", 4, "Z15", "drug");
+                yield return new bacteria("y", "a", "lo", 6, "Z15", "drug");
+                yield return new bacteria("y", "a", "hi", 0, "Z19", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "Z19", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Z19", "drug+");
+                yield return new bacteria("y", "a", "hi", 6, "Z19", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "Z19", "drug+");
+                yield return new bacteria("y", "a", "lo", 0, "Z20", "drug");
+                yield return new bacteria("y", "a", "lo", 2, "Z20", "drug");
+                yield return new bacteria("n", "a", "lo", 6, "Z20", "drug");
+                yield return new bacteria("n", "a", "lo", 11, "Z20", "drug");
+                yield return new bacteria("y", "a", "hi", 0, "Z24", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "Z24", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Z24", "drug+");
+                yield return new bacteria("n", "a", "hi", 6, "Z24", "drug+");
+                yield return new bacteria("n", "a", "hi", 11, "Z24", "drug+");
+                yield return new bacteria("y", "a", "hi", 0, "Z26", "drug+");
+                yield return new bacteria("y", "a", "hi", 2, "Z26", "drug+");
+                yield return new bacteria("y", "a", "hi", 4, "Z26", "drug+");
+                yield return new bacteria("n", "a", "hi", 6, "Z26", "drug+");
+                yield return new bacteria("y", "a", "hi", 11, "Z26", "drug+");
+            }
+        }
+    }
+}

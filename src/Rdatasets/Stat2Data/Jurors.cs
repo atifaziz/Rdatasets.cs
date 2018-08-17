@@ -1,0 +1,85 @@
+// ReSharper disable All
+
+namespace Rdatasets.Stat2Data
+{
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// Jurors
+    /// </summary>
+
+    public class Jurors
+    {
+        public readonly int Period;
+        public readonly double PctReport;
+        public readonly int Year;
+        public readonly int I2000;
+
+        public Jurors(int Period, double PctReport, int Year, int I2000)
+        {
+            this.Period = Period;
+            this.PctReport = PctReport;
+            this.Year = Year;
+            this.I2000 = I2000;
+        }
+
+        public static IEnumerable<Jurors> Data
+        {
+            get
+            {
+                yield return new Jurors(1, 83.3, 1998, 0);
+                yield return new Jurors(2, 83.6, 1998, 0);
+                yield return new Jurors(3, 70.5, 1998, 0);
+                yield return new Jurors(4, 70.7, 1998, 0);
+                yield return new Jurors(5, 80.5, 1998, 0);
+                yield return new Jurors(6, 81.6, 1998, 0);
+                yield return new Jurors(7, 65.3, 1998, 0);
+                yield return new Jurors(8, 61.3, 1998, 0);
+                yield return new Jurors(9, 62.7, 1998, 0);
+                yield return new Jurors(10, 67.8, 1998, 0);
+                yield return new Jurors(11, 65, 1998, 0);
+                yield return new Jurors(12, 64.1, 1998, 0);
+                yield return new Jurors(13, 64.7, 1998, 0);
+                yield return new Jurors(14, 65.4, 1998, 0);
+                yield return new Jurors(15, 65, 1998, 0);
+                yield return new Jurors(16, 62.3, 1998, 0);
+                yield return new Jurors(17, 62.5, 1998, 0);
+                yield return new Jurors(18, 65.5, 1998, 0);
+                yield return new Jurors(19, 63.5, 1998, 0);
+                yield return new Jurors(20, 75, 1998, 0);
+                yield return new Jurors(21, 67.9, 1998, 0);
+                yield return new Jurors(22, 62, 1998, 0);
+                yield return new Jurors(23, 71, 1998, 0);
+                yield return new Jurors(24, 62.1, 1998, 0);
+                yield return new Jurors(25, 58.5, 1998, 0);
+                yield return new Jurors(26, 50.7, 1998, 0);
+                yield return new Jurors(1, 92.6, 2000, 1);
+                yield return new Jurors(2, 81.1, 2000, 1);
+                yield return new Jurors(3, 92.5, 2000, 1);
+                yield return new Jurors(4, 97, 2000, 1);
+                yield return new Jurors(5, 97, 2000, 1);
+                yield return new Jurors(6, 83.3, 2000, 1);
+                yield return new Jurors(7, 94.6, 2000, 1);
+                yield return new Jurors(8, 88.1, 2000, 1);
+                yield return new Jurors(9, 90.9, 2000, 1);
+                yield return new Jurors(10, 87.1, 2000, 1);
+                yield return new Jurors(11, 85.4, 2000, 1);
+                yield return new Jurors(12, 86.6, 2000, 1);
+                yield return new Jurors(13, 88.3, 2000, 1);
+                yield return new Jurors(14, 94.4, 2000, 1);
+                yield return new Jurors(15, 88.5, 2000, 1);
+                yield return new Jurors(16, 95.5, 2000, 1);
+                yield return new Jurors(17, 65.9, 2000, 1);
+                yield return new Jurors(18, 87.5, 2000, 1);
+                yield return new Jurors(19, 80.2, 2000, 1);
+                yield return new Jurors(20, 94.7, 2000, 1);
+                yield return new Jurors(21, 76.6, 2000, 1);
+                yield return new Jurors(22, 75.8, 2000, 1);
+                yield return new Jurors(23, 76.5, 2000, 1);
+                yield return new Jurors(24, 80.6, 2000, 1);
+                yield return new Jurors(25, 71.8, 2000, 1);
+                yield return new Jurors(26, 63.7, 2000, 1);
+            }
+        }
+    }
+}

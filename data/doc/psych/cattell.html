@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: 12 cognitive variables from Cattell (1963)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cattell"><tr><td>cattell</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>12 cognitive variables from Cattell (1963) </h2>
+
+<h3>Description</h3>
+
+<p>Rindskopf and Rose (1988) use this data set to demonstrate confirmatory second order factor models.  It is a nice example data set to explore hierarchical structure and alternative factor solutions. It contains measures of fluid and crystallized intelligence.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("cattell")</pre>
+
+
+<h3>Format</h3>
+
+<p>The format is:
+num [1:12, 1:12] 1 0.86 0.3 0.32 0.41 0.42 0.34 0.32 0.29 0.21 ...
+- attr(*, &quot;dimnames&quot;)=List of 2
+..$ : chr [1:12] &quot;Verbal&quot; &quot;Verbal2&quot; &quot;Space1&quot; &quot;Space2&quot; ...
+..$ : chr [1:12] &quot;Verbal&quot; &quot;Verbal2&quot; &quot;Space1&quot; &quot;Space2&quot; ...
+</p>
+
+
+<h3>Details</h3>
+
+<p>Cattell (1963) reported on 8 cognitive variables from Thurstone and four from the Institute for Personality Assessment Test (IPAT).  Rindskopf and Rose (1988) use this data set as an example of second order factor analysis. It is thus a nice set for examining alternative solutions such as bifactor rotation, <code>omega</code> hierarchical, as well as <code>esem</code> and <code>interbattery</code> factor analysis.
+</p>
+
+
+<h3>Source</h3>
+
+<p>David Rindskopf and Tedd Rose, (1988) Some Theory and Applications of Confirmatory Second- Order Factor Analysis, Multivariate Behavioral Research, 23, 51-67.</p>
+
+
+<h3>References</h3>
+
+<p>Cattell, R. B. (1963).Theory of fluid and crystallized intelligence: A critical experiment. Journal of Educational Psychology, 54, 1-22.
+</p>
+<p>David Rindskopf and Tedd Rose, (1988) Some Theory and Applications of Confirmatory Second- Order Factor Analysis, Multivariate Behavioral Research, 23, 51-67.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(cattell)
+corPlot(cattell,numbers=TRUE,upper=FALSE,diag=FALSE,
+             main="12 cognitive variables from Cattell (1963)")
+</pre>
+
+
+</body></html>

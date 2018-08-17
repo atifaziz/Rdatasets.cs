@@ -1,0 +1,251 @@
+// ReSharper disable All
+
+namespace Rdatasets.mosaicData
+{
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// CoolingWater
+    /// </summary>
+
+    public class CoolingWater
+    {
+        public readonly int time;
+        public readonly double temp;
+
+        public CoolingWater(int time, double temp)
+        {
+            this.time = time;
+            this.temp = temp;
+        }
+
+        public static IEnumerable<CoolingWater> Data
+        {
+            get
+            {
+                yield return new CoolingWater(0, 98.2);
+                yield return new CoolingWater(1, 94.4);
+                yield return new CoolingWater(2, 91.4);
+                yield return new CoolingWater(3, 89.1);
+                yield return new CoolingWater(4, 86.9);
+                yield return new CoolingWater(5, 84.9);
+                yield return new CoolingWater(6, 83.1);
+                yield return new CoolingWater(7, 81.2);
+                yield return new CoolingWater(8, 79.5);
+                yield return new CoolingWater(9, 78);
+                yield return new CoolingWater(10, 76.5);
+                yield return new CoolingWater(11, 75.2);
+                yield return new CoolingWater(12, 73.8);
+                yield return new CoolingWater(13, 72.6);
+                yield return new CoolingWater(14, 71.4);
+                yield return new CoolingWater(15, 70.3);
+                yield return new CoolingWater(16, 69.3);
+                yield return new CoolingWater(17, 68.2);
+                yield return new CoolingWater(18, 67.2);
+                yield return new CoolingWater(19, 66.3);
+                yield return new CoolingWater(20, 65.3);
+                yield return new CoolingWater(21, 64.3);
+                yield return new CoolingWater(22, 63.7);
+                yield return new CoolingWater(23, 62.9);
+                yield return new CoolingWater(24, 62.1);
+                yield return new CoolingWater(25, 61.5);
+                yield return new CoolingWater(26, 60.7);
+                yield return new CoolingWater(27, 60);
+                yield return new CoolingWater(28, 59.4);
+                yield return new CoolingWater(29, 58.6);
+                yield return new CoolingWater(30, 58.1);
+                yield return new CoolingWater(31, 57.4);
+                yield return new CoolingWater(32, 56.8);
+                yield return new CoolingWater(33, 56.1);
+                yield return new CoolingWater(34, 55.6);
+                yield return new CoolingWater(35, 55);
+                yield return new CoolingWater(36, 54.5);
+                yield return new CoolingWater(37, 54);
+                yield return new CoolingWater(38, 53.5);
+                yield return new CoolingWater(39, 53);
+                yield return new CoolingWater(40, 52.5);
+                yield return new CoolingWater(41, 52.1);
+                yield return new CoolingWater(42, 51.7);
+                yield return new CoolingWater(43, 51.3);
+                yield return new CoolingWater(44, 50.8);
+                yield return new CoolingWater(45, 50.5);
+                yield return new CoolingWater(46, 50);
+                yield return new CoolingWater(47, 49.6);
+                yield return new CoolingWater(48, 49.2);
+                yield return new CoolingWater(49, 48.8);
+                yield return new CoolingWater(50, 48.5);
+                yield return new CoolingWater(51, 48.1);
+                yield return new CoolingWater(52, 47.7);
+                yield return new CoolingWater(53, 47.3);
+                yield return new CoolingWater(54, 47);
+                yield return new CoolingWater(55, 46.6);
+                yield return new CoolingWater(56, 46.3);
+                yield return new CoolingWater(57, 46);
+                yield return new CoolingWater(58, 45.7);
+                yield return new CoolingWater(59, 45.3);
+                yield return new CoolingWater(60, 45.1);
+                yield return new CoolingWater(61, 44.7);
+                yield return new CoolingWater(62, 44.5);
+                yield return new CoolingWater(63, 44.2);
+                yield return new CoolingWater(64, 43.8);
+                yield return new CoolingWater(65, 43.6);
+                yield return new CoolingWater(66, 43.2);
+                yield return new CoolingWater(67, 43);
+                yield return new CoolingWater(68, 42.7);
+                yield return new CoolingWater(69, 42.5);
+                yield return new CoolingWater(70, 42.2);
+                yield return new CoolingWater(71, 42);
+                yield return new CoolingWater(72, 41.6);
+                yield return new CoolingWater(73, 41.5);
+                yield return new CoolingWater(74, 41.2);
+                yield return new CoolingWater(75, 41);
+                yield return new CoolingWater(76, 40.7);
+                yield return new CoolingWater(77, 40.6);
+                yield return new CoolingWater(78, 40.3);
+                yield return new CoolingWater(79, 40.2);
+                yield return new CoolingWater(80, 40);
+                yield return new CoolingWater(81, 39.5);
+                yield return new CoolingWater(82, 39.3);
+                yield return new CoolingWater(83, 39.1);
+                yield return new CoolingWater(84, 38.8);
+                yield return new CoolingWater(85, 38.7);
+                yield return new CoolingWater(86, 38.4);
+                yield return new CoolingWater(87, 38.2);
+                yield return new CoolingWater(88, 38.1);
+                yield return new CoolingWater(89, 37.9);
+                yield return new CoolingWater(90, 37.7);
+                yield return new CoolingWater(91, 37.5);
+                yield return new CoolingWater(92, 37.3);
+                yield return new CoolingWater(93, 37.1);
+                yield return new CoolingWater(94, 37);
+                yield return new CoolingWater(95, 36.8);
+                yield return new CoolingWater(96, 36.6);
+                yield return new CoolingWater(97, 36.5);
+                yield return new CoolingWater(98, 36.3);
+                yield return new CoolingWater(99, 36.2);
+                yield return new CoolingWater(100, 36);
+                yield return new CoolingWater(101, 35.8);
+                yield return new CoolingWater(102, 35.7);
+                yield return new CoolingWater(103, 35.6);
+                yield return new CoolingWater(104, 35.4);
+                yield return new CoolingWater(105, 35.3);
+                yield return new CoolingWater(106, 35.1);
+                yield return new CoolingWater(107, 35);
+                yield return new CoolingWater(108, 34.9);
+                yield return new CoolingWater(109, 34.7);
+                yield return new CoolingWater(110, 34.5);
+                yield return new CoolingWater(111, 34.4);
+                yield return new CoolingWater(112, 34.2);
+                yield return new CoolingWater(113, 34.1);
+                yield return new CoolingWater(114, 33.9);
+                yield return new CoolingWater(115, 33.8);
+                yield return new CoolingWater(116, 33.7);
+                yield return new CoolingWater(117, 33.5);
+                yield return new CoolingWater(118, 33.4);
+                yield return new CoolingWater(119, 33.3);
+                yield return new CoolingWater(120, 33.2);
+                yield return new CoolingWater(121, 33);
+                yield return new CoolingWater(122, 32.9);
+                yield return new CoolingWater(123, 32.8);
+                yield return new CoolingWater(124, 32.7);
+                yield return new CoolingWater(125, 32.6);
+                yield return new CoolingWater(126, 32.4);
+                yield return new CoolingWater(127, 32.3);
+                yield return new CoolingWater(128, 32.2);
+                yield return new CoolingWater(129, 32.1);
+                yield return new CoolingWater(130, 32);
+                yield return new CoolingWater(131, 31.9);
+                yield return new CoolingWater(132, 31.8);
+                yield return new CoolingWater(133, 31.7);
+                yield return new CoolingWater(134, 31.5);
+                yield return new CoolingWater(135, 31.5);
+                yield return new CoolingWater(136, 31.4);
+                yield return new CoolingWater(137, 31.3);
+                yield return new CoolingWater(138, 31.1);
+                yield return new CoolingWater(139, 31.1);
+                yield return new CoolingWater(140, 31);
+                yield return new CoolingWater(141, 30.9);
+                yield return new CoolingWater(142, 30.7);
+                yield return new CoolingWater(143, 30.7);
+                yield return new CoolingWater(144, 30.6);
+                yield return new CoolingWater(145, 30.5);
+                yield return new CoolingWater(146, 30.4);
+                yield return new CoolingWater(147, 30.3);
+                yield return new CoolingWater(148, 30.2);
+                yield return new CoolingWater(149, 30.1);
+                yield return new CoolingWater(150, 30.1);
+                yield return new CoolingWater(151, 30);
+                yield return new CoolingWater(152, 30);
+                yield return new CoolingWater(153, 29.8);
+                yield return new CoolingWater(154, 29.8);
+                yield return new CoolingWater(155, 29.7);
+                yield return new CoolingWater(156, 29.6);
+                yield return new CoolingWater(157, 29.5);
+                yield return new CoolingWater(158, 29.4);
+                yield return new CoolingWater(159, 29.4);
+                yield return new CoolingWater(160, 29.2);
+                yield return new CoolingWater(161, 29.2);
+                yield return new CoolingWater(162, 29.1);
+                yield return new CoolingWater(163, 29);
+                yield return new CoolingWater(164, 29);
+                yield return new CoolingWater(165, 28.9);
+                yield return new CoolingWater(166, 28.8);
+                yield return new CoolingWater(167, 28.7);
+                yield return new CoolingWater(168, 28.6);
+                yield return new CoolingWater(169, 28.6);
+                yield return new CoolingWater(170, 28.5);
+                yield return new CoolingWater(171, 28.4);
+                yield return new CoolingWater(172, 28.4);
+                yield return new CoolingWater(173, 28.3);
+                yield return new CoolingWater(174, 28.2);
+                yield return new CoolingWater(175, 28.2);
+                yield return new CoolingWater(176, 28.1);
+                yield return new CoolingWater(177, 28);
+                yield return new CoolingWater(178, 28);
+                yield return new CoolingWater(179, 27.9);
+                yield return new CoolingWater(180, 27.8);
+                yield return new CoolingWater(181, 27.8);
+                yield return new CoolingWater(182, 27.7);
+                yield return new CoolingWater(183, 27.7);
+                yield return new CoolingWater(184, 27.6);
+                yield return new CoolingWater(185, 27.5);
+                yield return new CoolingWater(186, 27.5);
+                yield return new CoolingWater(187, 27.4);
+                yield return new CoolingWater(188, 27.4);
+                yield return new CoolingWater(189, 27.3);
+                yield return new CoolingWater(190, 27.2);
+                yield return new CoolingWater(191, 27.2);
+                yield return new CoolingWater(192, 27.1);
+                yield return new CoolingWater(193, 27.1);
+                yield return new CoolingWater(194, 27);
+                yield return new CoolingWater(195, 27);
+                yield return new CoolingWater(196, 26.9);
+                yield return new CoolingWater(197, 26.9);
+                yield return new CoolingWater(198, 26.8);
+                yield return new CoolingWater(199, 26.8);
+                yield return new CoolingWater(200, 26.7);
+                yield return new CoolingWater(201, 26.7);
+                yield return new CoolingWater(202, 26.6);
+                yield return new CoolingWater(203, 26.6);
+                yield return new CoolingWater(204, 26.5);
+                yield return new CoolingWater(205, 26.5);
+                yield return new CoolingWater(206, 26.4);
+                yield return new CoolingWater(207, 26.4);
+                yield return new CoolingWater(208, 26.4);
+                yield return new CoolingWater(209, 26.3);
+                yield return new CoolingWater(210, 26.2);
+                yield return new CoolingWater(211, 26.2);
+                yield return new CoolingWater(212, 26.2);
+                yield return new CoolingWater(213, 26.1);
+                yield return new CoolingWater(214, 26.1);
+                yield return new CoolingWater(215, 26.1);
+                yield return new CoolingWater(216, 26);
+                yield return new CoolingWater(217, 26);
+                yield return new CoolingWater(218, 26);
+                yield return new CoolingWater(219, 25.9);
+                yield return new CoolingWater(220, 25.9);
+                yield return new CoolingWater(221, 25.8);
+            }
+        }
+    }
+}

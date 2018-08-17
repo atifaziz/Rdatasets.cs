@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Summary information on records omitted from the 'FARS'...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for FARSmiss"><tr><td>FARSmiss</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Summary information on records omitted from the <code>FARS</code> dataset
+</h2>
+
+<h3>Description</h3>
+
+<p>Data are a 3-way table, indexed by <code>state</code>, a set of
+variable names, and <code>years</code>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>FARSmiss</pre>
+
+
+<h3>Format</h3>
+
+<p>The format is:
+num [1:51, 1:7, 1:13] 2 0 16 0 75 1 5 0 5 5 ...
+- attr(*, &quot;dimnames&quot;)=List of 3
+..$ : chr [1:51] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; ...
+..$ : chr [1:7] &quot;injury&quot; &quot;age&quot; &quot;airbag&quot; &quot;restraint&quot; ...
+..$ : chr [1:13] &quot;1998&quot; &quot;1999&quot; &quot;2000&quot; &quot;2001&quot; ...
+</p>
+
+
+<h3>Details</h3>
+
+<p>These data were generated using the function <code>matchedPairs</code>,
+using as input data downloaded from the URL given as source. Data for
+the years 2007 and 2008 are included with this package, and can be
+used to generate the result of restricting <code>FARS</code> and
+<code>FARSmiss</code> to those years.  The check columns (all values should
+be zero) <code>nomatch</code> and <code>dups</code> have been omitted from the
+second dimension of the array
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www-fars.nhtsa.dot.gov/Main/index.aspx">http://www-fars.nhtsa.dot.gov/Main/index.aspx</a>
+</p>
+
+
+<h3>References</h3>
+
+<p><a href="http://maths-people.anu.edu.au/~johnm/nzsr/taws.html">http://maths-people.anu.edu.au/~johnm/nzsr/taws.html</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>matchedPairs</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(FARSmiss)
+str(FARSmiss)
+</pre>
+
+
+</body></html>

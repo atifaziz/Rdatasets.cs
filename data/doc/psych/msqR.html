@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: 75 mood items from the Motivational State Questionnaire for...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for msqR"><tr><td>msqR</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>75 mood items from the Motivational State Questionnaire for 3032 unique participants</h2>
+
+<h3>Description</h3>
+
+<p>Emotions may be described either as discrete emotions or in dimensional terms.  The Motivational State Questionnaire (MSQ) was developed to study emotions in laboratory and field settings.  The data can be well described in terms of a two dimensional solution of energy vs tiredness and tension versus calmness.  Additional items include what time of day the data were collected and a few personality questionnaire scores. 3082 unique participants took the MSQ  at least once, 2753 at least twice, 446 three times, and 181 four times.  The 3032 also took the <code>sai</code> state anxiety inventory at the same time.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("msqR")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6411 observations on the following 79 variables.
+</p>
+
+<dl>
+<dt><code>active</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>afraid</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>alert</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>alone</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>angry</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>aroused</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>ashamed</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>astonished</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>at.ease</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>at.rest</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>attentive</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>blue</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>bored</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>calm</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>clutched.up</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>confident</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>content</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>delighted</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>depressed</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>determined</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>distressed</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>drowsy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>dull</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>elated</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>energetic</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>enthusiastic</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>excited</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>fearful</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>frustrated</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>full.of.pep</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>gloomy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>grouchy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>guilty</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>happy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>hostile</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>inspired</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>intense</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>interested</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>irritable</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>jittery</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>lively</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>lonely</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>nervous</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>placid</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>pleased</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>proud</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>quiescent</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>quiet</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>relaxed</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>sad</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>satisfied</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>scared</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>serene</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>sleepy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>sluggish</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>sociable</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>sorry</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>still</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>strong</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>surprised</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>tense</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>tired</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>unhappy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>upset</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>vigorous</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>wakeful</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>warmhearted</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>wide.awake</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>anxious</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>cheerful</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>idle</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>inactive</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>tranquil</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>kindly</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>scornful</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>time</code></dt><dd><p>a factor with levels <code>1</code> <code>2</code> <code>3</code> <code>4</code></p>
+</dd>
+<dt><code>id</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>form</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>study</code></dt><dd><p>a character vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The Motivational States Questionnaire (MSQ) is composed of 75 items, which represent the full affective space (Revelle &amp; Anderson, 1998). The MSQ consists of 20 items taken from the Activation-Deactivation Adjective Check List (Thayer, 1986), 18 from the Positive and Negative Affect Schedule (PANAS, Watson, Clark, &amp; Tellegen, 1988) along with the items used by Larsen and Diener (1992). The response format was a four-point scale that corresponds to Russell and Carroll's (1999) &quot;ambiguous&ndash;likely-unipolar format&quot; and that asks the respondents to indicate their current standing (&ldquo;at this moment&quot;) with the following rating scale:<br />
+0&mdash;&mdash;&mdash;&mdash;&mdash;-1&mdash;&mdash;&mdash;&mdash;&mdash;-2&mdash;&mdash;&mdash;&mdash;&mdash;-3
+<br />
+Not at all		A little		Moderately     	Very much <br />
+</p>
+<p>The original version of the MSQ included 70 items. Intermediate analyses (done with 1840 subjects) demonstrated a concentration of items in some sections of the two dimensional space, and a paucity of items in others. To begin correcting this, 3 items from redundantly measured sections (alone, kindly, scornful) were removed, and 5 new ones (anxious, cheerful, idle, inactive, and tranquil) were added.  Thus, the correlation matrix is missing the correlations between items anxious, cheerful, idle, inactive, and tranquil with alone, kindly, and scornful. 
+</p>
+<p>1147 individuals took Form 1 version, 1885 the Form 2 version.  
+To see the relative frequencies by time and form, see the first example.
+</p>
+<p>Procedure. The data were collected over nine years, as part of a series of studies examining the effects of personality and situational factors on motivational state and subsequent cognitive performance. In each of 38 studies, prior to any manipulation of motivational state, participants signed a consent form and filled out the MSQ. (The procedures of the individual studies are irrelevant to this data set and could not affect the responses to the MSQ at time 1, since this instrument was completed before any further instructions or tasks).  Some MSQ post test (after manipulations) is available in <code>affect</code>.  Subsequent analysis of changes from time 1 to time 2, 3 and 4 is underway and the experimental conditions codes will be merged in eventually.
+</p>
+<p>The EA and TA scales are from Thayer, the PA and NA scales are from Watson et al. (1988).
+Scales and items:
+</p>
+<p>Energetic Arousal: active, energetic, vigorous, wakeful, wide.awake, full.of.pep, lively, -sleepy, -tired, - drowsy  (ADACL)
+</p>
+<p>Tense Arousal: Intense, Jittery, fearful, tense, clutched up, -quiet, -still, - placid, - calm, -at rest  (ADACL)
+</p>
+<p>Positive Affect: active, alert, attentive, determined, enthusiastic, excited, inspired,  interested,  proud, strong  (PANAS)
+</p>
+<p>Negative Affect: afraid, ashamed,   distressed,  guilty,  hostile, irritable , jittery, nervous, scared, upset (PANAS)
+</p>
+<p>The PA and NA scales can in turn can be thought of as having subscales:  (See the PANAS-X)
+Fear:  afraid, scared, nervous, jittery    (not included  frightened, shaky)
+Hostility: angry, hostile, irritable, (not included:   scornful,  disgusted, loathing 
+guilt: ashamed, guilty,   (not included: blameworthy, angry at self, disgusted with self, dissatisfied with self)
+sadness: alone,  blue,  lonely, sad,  (not included: downhearted) 
+joviality: cheerful, delighted, energetic, enthusiastic, excited,  happy, lively,     (not included:  joyful)
+self-assurance: proud, strong, confident,       (not included: bold,  daring, fearless )   
+attentiveness:  alert, attentive,  determined  (not included: concentrating)
+</p>
+<p>The next set of circumplex scales were taken (I think) from Larsen and Diener (1992).  
+High activation: active, aroused, surprised, intense, astonished
+Activated PA: elated, excited, enthusiastic, lively
+Unactivated NA : calm, serene, relaxed, at rest, content, at ease
+PA: happy, warmhearted, pleased, cheerful, delighted
+Low Activation: quiet, inactive, idle, still, tranquil
+Unactivated PA: dull, bored, sluggish, tired, drowsy
+NA: sad, blue, unhappy, gloomy, grouchy
+Activated NA: jittery, anxious, nervous, fearful, distressed.
+</p>
+<p>Keys for these separate scales are shown in the examples.  
+</p>
+<p>In addition to the MSQ, there are 5 scales from the Eysenck Personality Inventory (Extraversion, Impulsivity, Sociability, Neuroticism, Lie).  The Imp and Soc are subsets of the the total extraversion scale. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected at the Personality, Motivation, and Cognition Laboratory, Northwestern University. 
+</p>
+
+
+<h3>References</h3>
+
+<p>Rafaeli, Eshkol and Revelle, William (2006), A premature consensus: Are happiness and sadness truly opposite affects? Motivation and Emotion, 30, 1, 1-12.
+</p>
+<p>Revelle, W. and  Anderson, K.J. (1998) Personality, motivation and cognitive performance: Final report to the Army Research Institute on  contract MDA 903-93-K-0008. (<a href="https://www.personality-project.org/revelle/publications/ra.ari.98.pdf">https://www.personality-project.org/revelle/publications/ra.ari.98.pdf</a>).
+</p>
+<p>Thayer, R.E. (1989)  The biopsychology of mood and arousal.
+Oxford University Press. New York, NY. 
+</p>
+<p>Watson,D., Clark,  L.A.  and Tellegen, A. (1988)  Development and validation of brief measures of positive and negative affect: The PANAS scales. Journal of Personality and Social Psychology, 54(6):1063-1070.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>affect</code> for an example of the use of some of these adjectives in a mood manipulation study.
+</p>
+<p><code>make.keys</code>, <code>scoreItems</code> and <code>scoreOverlap</code> for instructions on how to score multiple scales with and without item overlap. Also see  <code>fa</code> and <code>fa.extension</code> for instructions on how to do factor analyses or factor extension.
+</p>
+<p>Given the temporal ordering of the <code>sai</code> data and the <code>msqR</code> data, these data are useful for demonstrations of <code>testRetest</code> reliability.  See the examples in <code>testRetest</code>  for how to combine the  <code>sai</code> <code>tai</code>  and <code>msqR</code> datasets.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(msqR)
+colSums(table(msqR$study,msqR$form,msqR$time))
+
+#score them for 20 short scales -- note that these have item overlap
+#The first 2 are from Thayer
+#The next 2 are classic positive and negative affect 
+#The next 9 are circumplex scales
+#the last 7 are msq estimates of PANASX scales (missing some items)
+keys.list &lt;- list(
+EA = c("active", "energetic", "vigorous", "wakeful", "wide.awake", "full.of.pep",
+       "lively", "-sleepy", "-tired", "-drowsy"),
+TA =c("intense", "jittery", "fearful", "tense", "clutched.up", "-quiet", "-still", 
+       "-placid", "-calm", "-at.rest") ,
+PA =c("active", "excited", "strong", "inspired", "determined", "attentive", 
+          "interested", "enthusiastic", "proud", "alert"),
+NAf =c("jittery", "nervous", "scared", "afraid", "guilty", "ashamed", "distressed",  
+         "upset", "hostile", "irritable" ),
+HAct = c("active", "aroused", "surprised", "intense", "astonished"),
+aPA = c("elated", "excited", "enthusiastic", "lively"),
+uNA = c("calm", "serene", "relaxed", "at.rest", "content", "at.ease"),
+pa = c("happy", "warmhearted", "pleased", "cheerful", "delighted" ),
+LAct = c("quiet", "inactive", "idle", "still", "tranquil"),
+uPA =c( "dull", "bored", "sluggish", "tired", "drowsy"),
+naf = c( "sad", "blue", "unhappy", "gloomy", "grouchy"),
+aNA = c("jittery", "anxious", "nervous", "fearful", "distressed"),
+Fear = c("afraid" , "scared" , "nervous" , "jittery" ) ,
+Hostility = c("angry" ,  "hostile", "irritable", "scornful" ), 
+Guilt = c("guilty" , "ashamed" ),
+Sadness = c( "sad"  , "blue" , "lonely",  "alone" ),
+Joviality =c("happy","delighted", "cheerful", "excited", "enthusiastic", "lively", "energetic"), 
+Self.Assurance=c( "proud","strong" , "confident" , "-fearful" ),
+Attentiveness = c("alert" , "determined" , "attentive" ))
+
+#acquiscence = c("sleepy" ,  "wakeful" ,  "relaxed","tense")
+   
+       
+msq.scores &lt;- scoreItems(keys.list,msqR)
+
+#show a circumplex structure for the non-overlapping items
+fcirc &lt;- fa(msq.scores$scores[,5:12],2)  
+fa.plot(fcirc,labels=colnames(msq.scores$scores)[5:12])
+
+#now, find the correlations corrected for item overlap
+msq.overlap &lt;- scoreOverlap(keys.list,msqR)
+f2 &lt;- fa(msq.overlap$cor,2)
+fa.plot(f2,labels=colnames(msq.overlap$cor),title="2 dimensions of affect, corrected for overlap")
+if(FALSE) {
+#extend this solution to EA/TA  NA/PA space
+fe  &lt;- fa.extension(cor(msq.scores$scores[,5:12],msq.scores$scores[,1:4]),fcirc)
+fa.diagram(fcirc,fe=fe,main="Extending the circumplex structure to  EA/TA and PA/NA ")
+
+#show the 2 dimensional structure
+f2 &lt;- fa(msqR[1:72],2)
+fa.plot(f2,labels=colnames(msqR)[1:72],title="2 dimensions of affect at the item level")
+
+#sort them by polar coordinates
+round(polar(f2),2)
+
+#the msqR and sai data sets have 10 overlapping items which can be used for
+#testRetest analysis.  We need to specify the keys, and then choose the appropriate
+#data sets  
+sai.msq.keys &lt;- list(pos =c( "at.ease" ,  "calm" , "confident", "content","relaxed"),
+  neg = c("anxious", "jittery", "nervous" ,"tense"  ,   "upset"),
+  anx = c("anxious", "jittery", "nervous" ,"tense", "upset","-at.ease" ,  "-calm" ,
+  "-confident", "-content","-relaxed"))
+#select &lt;- selectFromKeys(sai.msq.keys$anx)
+#The following is useful for examining test retest reliabilities
+#msq.control &lt;- subset(msqR,msqR$study %in% c("Cart", "Fast", "SHED", "SHOP"))
+#msq.film &lt;- subset(msqR,(msqR$study %in% c("FIAT","FLAT") &amp; (msqR$time &lt; 3) )) 
+#msq.film[((msq.film$study == "FLAT") &amp; (msq.film$time ==3)) ,] &lt;- NA 
+#msq.drug &lt;- subset(msqR,(msqR$study %in% c("AGES",  "SALT", "VALE", "XRAY"))&amp;(  msqR$time &lt; 3))
+
+
+#msq.day &lt;- subset(msqR,(msqR$study %in% c("SAM", "RIM")))
+
+
+
+
+}</pre>
+
+
+</body></html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: State Anxiety data from the PMC lab over multiple occasions.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for sai"><tr><td>sai</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>State Anxiety data from the PMC lab over multiple occasions.
+</h2>
+
+<h3>Description</h3>
+
+<p>State Anxiety was measured two-three times in 11 studies at the Personality-Motivation-Cognition laboratory.  Here are item responses for 11 studies (9 repeated twice, 2 repeated three times). In all studies, the first occasion was before a manipulation.  In some studies, caffeine, or movies or incentives were then given to some of the participants before the second and third STAI was given.  In addition, Trait measures are available and included in the tai data set (3032 subjects).  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(sai)
+data(tai)
+data(sai.dictionary)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3032 unique observations on the following 23 variables. 
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>study</code></dt><dd><p>a factor with levels <code>ages</code> <code>cart</code> <code>fast</code> <code>fiat</code> <code>film</code> <code>flat</code> <code>home</code> <code>pat</code> <code>rob</code> <code>salt</code> <code>shed</code><code>shop</code> <code>xray</code></p>
+</dd>
+<dt><code>time</code></dt><dd><p>1=First, 2 = Second, 3=third administration</p>
+</dd>
+<dt><code>TOD</code></dt><dd><p>TOD  (time of day 1= 8:50-9:30 am,2 = 1=3 pm, 3= 7:-8pm</p>
+</dd>
+<dt><code>drug</code></dt><dd><p>drug (placebo (0) vs. caffeine (1))</p>
+</dd>
+<dt><code>film</code></dt><dd><p>film (1=Frontline (concentration camp), 2 = Halloween
+3= National Geographic (control), 4- Parenthood (humor)</p>
+</dd>
+<dt><code>anxious</code></dt><dd><p>anxious</p>
+</dd>
+<dt><code>at.ease</code></dt><dd><p>at ease</p>
+</dd>
+<dt><code>calm</code></dt><dd><p>calm</p>
+</dd>
+<dt><code>comfortable</code></dt><dd><p>comfortable</p>
+</dd>
+<dt><code>confident</code></dt><dd><p>confident</p>
+</dd>
+<dt><code>content</code></dt><dd><p>content</p>
+</dd>
+<dt><code>high.strung</code></dt><dd><p>high.strung</p>
+</dd>
+<dt><code>jittery</code></dt><dd><p>jittery</p>
+</dd>
+<dt><code>joyful</code></dt><dd><p>joyful</p>
+</dd>
+<dt><code>nervous</code></dt><dd><p>nervous</p>
+</dd>
+<dt><code>pleasant</code></dt><dd><p>pleasant</p>
+</dd>
+<dt><code>rattled</code></dt><dd><p>over-excited and rattled</p>
+</dd>
+<dt><code>regretful</code></dt><dd><p>regretful</p>
+</dd>
+<dt><code>relaxed</code></dt><dd><p>relaxed</p>
+</dd>
+<dt><code>rested</code></dt><dd><p>rested</p>
+</dd>
+<dt><code>secure</code></dt><dd><p>secure</p>
+</dd>
+<dt><code>tense</code></dt><dd><p>tense</p>
+</dd>
+<dt><code>upset</code></dt><dd><p>upset</p>
+</dd>
+<dt><code>worried</code></dt><dd><p>worried</p>
+</dd>
+<dt><code>worrying</code></dt><dd><p>worrying</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The standard experimental study at the Personality, Motivation and Cognition (PMC) laboratory (Revelle and Anderson, 1997)  was to administer a number of personality trait and state measures (e.g. the <code>epi</code>, <code>msq</code>, <code>msqR</code> and <code>sai</code>)  to participants before some experimental manipulation of arousal/effort/anxiety.  Following the manipulation (with a 30 minute delay if giving caffeine/placebo), some performance task was given, followed once again by measures of state arousal/effort/anxiety.  
+</p>
+<p>Here are the item level data on the <code>sai</code> (state anxiety)  and the <code>tai</code> (trait anxiety). Scores on these scales may be found using the scoring keys.  The <code>affect</code> data set includes pre and post scores for two studies (flat and maps) which manipulated state by using four types of movies.
+</p>
+<p>In addition to being useful for studies of motivational state, these studies provide examples of test-retest and  alternate form reliabilities.  Given that 10 items overlap with the <code>msqR</code> data, they also allow for a comparison of immediate duplication of items with 30 minute delays.
+</p>
+<p>Studies CART, FAST, SHED,  RAFT,  and SHOP  were either control groups, or did not experimentally vary arousal/effort/anxiety.   
+</p>
+<p>AGES, CITY, EMIT, RIM, SALT, and XRAY were caffeine manipulations between time 1 and 2
+(RIM and VALE were repeated day 1 and day 2)
+</p>
+<p>FIAT, FLAT, MAPS, MIXX, and THRU  were 1 day studies with film manipulation between time 1 and time 2.
+</p>
+<p>SAM1 and SAM2 were the first and second day of a two day study. The STAI was given once per day.  MSQ not MSQR was given.
+</p>
+<p>VALE and PAT were two day studies with the STAI given pre and post on both days
+</p>
+<p>RIM was a two day study with the STAI and MSQ given once per day. 
+</p>
+<p>Usually, time of day 1 = 8:50-9am am, and 2 = 7:30 pm, however, in rob, with paid subjects, the times were 0530 and 22:30.  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data collected at the Personality, Motivation, and Cognition Laboratory, Northwestern University, between 1991 and 1999.
+</p>
+
+
+<h3>References</h3>
+
+<p>Charles D. Spielberger and Richard L. Gorsuch and R. E. Lushene, (1970) Manual for the State-Trait Anxiety Inventory.
+</p>
+<p>Revelle,  William  and Anderson, Kristen Joan  (1997) Personality, motivation and cognitive performance: Final report to the Army Research Institute on  contract MDA 903-93-K-0008
+</p>
+<p>Rafaeli, Eshkol and Revelle, William (2006), A premature consensus: Are happiness and sadness truly opposite affects? Motivation and Emotion, 30, 1, 1-12.
+</p>
+<p>Smillie, Luke D.  and Cooper, Andrew  and Wilt, Joshua  and Revelle, William (2012) Do Extraverts Get More Bang for the Buck? Refining the Affective-Reactivity Hypothesis of Extraversion. Journal of Personality and Social Psychology, 103 (2), 206-326.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(sai)
+table(sai$study,sai$time)  #show the counts for repeated measures
+#table(sai$study,sai$TOD) #and the studies by time of day
+#table(sai$study,sai$drug) # and the studies with drug
+#Here are the keys to score the sai total score, positive and negative items
+sai.keys &lt;- list(sai = c("tense","regretful" , "upset", "worrying", "anxious", "nervous" ,  
+"jittery" , "high.strung", "worried" , "rattled","-calm", 
+"-secure","-at.ease","-rested","-comfortable", "-confident" ,"-relaxed" , "-content" , 
+"-joyful", "-pleasant"  ) ,
+sai.p = c("calm","at.ease","rested","comfortable", "confident", "secure" ,"relaxed" ,     
+       "content" , "joyful", "pleasant" ),  
+sai.n = c( "tense" , "anxious", "nervous" , "jittery" , "rattled",     "high.strung",  
+         "upset", "worrying","worried","regretful" )
+) 
+
+ #just get the control subjects
+#control &lt;- subset(sai,sai$study %in% c("Cart", "Fast", "SHED",  "RAFT", "SHOP")) 
+#pre and post drug studies
+#drug &lt;- subset(sai,sai$study %in% c("AGES", "CITY","EMIT", "SALT", "VALE", "XRAY")) 
+#pre and post film studies
+#film &lt;- subset(sai,sai$study %in% c("FIAT","FLAT", "MAPS", "MIXX") 
+
+#this next set allows us to score those sai items that overlap with the msq item sets
+msq.items &lt;- c("anxious" ,  "at.ease" ,  "calm" ,     "confident", "content",   "jittery", 
+ "nervous" ,  "relaxed" ,  "tense"  ,   "upset" ) #these overlap with the msq
+ 
+sai.msq.keys &lt;- list(pos =c( "at.ease" ,  "calm" , "confident", "content","relaxed"),
+  neg = c("anxious", "jittery", "nervous" ,"tense"  ,   "upset"),
+  anx = c("anxious", "jittery", "nervous" ,"tense", "upset","-at.ease" ,  "-calm" ,
+  "-confident", "-content","-relaxed"))
+sai.not.msq.keys &lt;- list(pos=c(  "secure","rested","comfortable" ,"joyful" , "pleasant" ),    
+    neg=c("regretful","worrying", "high.strung","worried", "rattled" ),
+    anx = c("regretful","worrying", "high.strung","worried", "rattled",     "-secure",      
+    "-rested", "-comfortable", "-joyful",  "-pleasant" )) 
+sai.alternate.forms &lt;- list( pos1 =c( "at.ease","calm","confident","content","relaxed"),
+  neg1 = c("anxious", "jittery", "nervous" ,"tense"  ,   "upset"),
+  anx1 = c("anxious", "jittery", "nervous" ,"tense", "upset","-at.ease" ,  "-calm" ,
+       "-confident", "-content","-relaxed"),
+  pos2=c(  "secure","rested","comfortable" ,"joyful" , "pleasant" ),    
+  neg2=c("regretful","worrying", "high.strung","worried", "rattled" ),
+  anx2 = c("regretful","worrying", "high.strung","worried", "rattled", "-secure",      
+    "-rested", "-comfortable", "-joyful",  "-pleasant" )) 
+  
+#sai.repeated &lt;- c("AGES","Cart","Fast","FIAT","FILM","FLAT","HOME","PAT","RIM","SALT",
+#     "SAM","SHED","SHOP","VALE","XRAY")
+#sai12 &lt;- subset(sai,sai$study %in% sai.repeated)   #the subset with repeated measures
+#Choose those studies with repeated measures by :
+#sai.control &lt;- subset(sai,sai$study %in% c("Cart", "Fast", "SHED", "SHOP"))
+#sai.film &lt;- subset(sai,sai$study %in% c("FIAT","FLAT") )  
+#sai.drug &lt;- subset(sai,sai$study %in% c("AGES",  "SALT", "VALE", "XRAY"))
+#sai.day &lt;- subset(sai,sai$study %in% c("SAM", "RIM"))
+ 
+</pre>
+
+
+</body></html>
