@@ -11,6 +11,7 @@ namespace RdatasetsGenerator
     using MoreLinq.Experimental;
     using static MoreLinq.Extensions.FoldExtension;
     using static MoreLinq.Extensions.IndexExtension;
+    using static MoreLinq.Extensions.PartitionExtension;
 
     sealed class Program
     {
@@ -34,7 +35,7 @@ namespace RdatasetsGenerator
                 _encoder != null ? _encoder?.Invoke(s) : s;
 
             ColumnType ToNullable(string q = null) =>
-                new ColumnType(SourceName + (q ?? "?"), s => s == "NA" ? "null" : _encoder(s));
+                new ColumnType(SourceName + (q ?? "?"), s => s == "NA" ? "null" : Encode(s));
         }
 
         static void Wain(string[] args)
@@ -177,18 +178,25 @@ namespace RdatasetsGenerator
                     e.Format,
                     Columns = Enumerable.ToArray(
                         from c in f.Columns
-                        let vs = from d in f.Rows select d.Row[c.Key]
+                        let vs =
+                            f.Rows
+                             .Select(d => d.Row[c.Key])
+                             .Partition(v => v != "NA", (vs, na) => new
+                             {
+                                 HasNA  = na.Any(),
+                                 Values = vs,
+                             })
                         select new
                         {
                             Name = c.Value,
                             IdName = CSharpId(c.Value) + (c.Value == e.Item ? "_" : null),
                             Index = c.Key,
-                            Type = vs.All(v => v == "TRUE" || v == "FALSE")
-                                 ? (AnyNA(vs) ? ColumnType.NullableBoolean : ColumnType.Boolean)
-                                 : vs.All(v => int.TryParse(v, intStyles, CultureInfo.InvariantCulture, out _))
-                                 ? (AnyNA(vs) ? ColumnType.NullableInt : ColumnType.Int)
-                                 : vs.All(v => double.TryParse(v, numberStyles, CultureInfo.InvariantCulture, out _))
-                                 ? (AnyNA(vs) ? ColumnType.NullableDouble : ColumnType.Double)
+                            Type = vs.Values.All(v => v == "TRUE" || v == "FALSE")
+                                 ? (vs.HasNA ? ColumnType.NullableBoolean : ColumnType.Boolean)
+                                 : vs.Values.All(v => int.TryParse(v, intStyles, CultureInfo.InvariantCulture, out _))
+                                 ? (vs.HasNA ? ColumnType.NullableInt : ColumnType.Int)
+                                 : vs.Values.All(v => double.TryParse(v, numberStyles, CultureInfo.InvariantCulture, out _))
+                                 ? (vs.HasNA ? ColumnType.NullableDouble : ColumnType.Double)
                                  : ColumnType.String
                         }),
                     f.Rows,

@@ -13,9 +13,9 @@ namespace Rdatasets.Ecdat
         public readonly double wage;
         public readonly int educ;
         public readonly int exper;
-        public readonly string sex;
+        public readonly bool? sex;
 
-        public Bwages(double wage, int educ, int exper, string sex)
+        public Bwages(double wage, int educ, int exper, bool? sex)
         {
             this.wage = wage;
             this.educ = educ;

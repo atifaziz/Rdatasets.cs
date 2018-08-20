@@ -12,11 +12,11 @@ namespace Rdatasets.reshape2
     {
         public readonly string subject;
         public readonly int time;
-        public readonly string age;
-        public readonly string weight;
+        public readonly int? age;
+        public readonly int? weight;
         public readonly double height;
 
-        public smiths(string subject, int time, string age, string weight, double height)
+        public smiths(string subject, int time, int? age, int? weight, double height)
         {
             this.subject = subject;
             this.time = time;
@@ -29,7 +29,7 @@ namespace Rdatasets.reshape2
         {
             get
             {
-                yield return new smiths("John Smith", 1, "33", "90", 1.87);
+                yield return new smiths("John Smith", 1, 33, 90, 1.87);
                 yield return new smiths("Mary Smith", 1, null, null, 1.54);
             }
         }

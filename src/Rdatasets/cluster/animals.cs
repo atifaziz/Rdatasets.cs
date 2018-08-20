@@ -13,11 +13,11 @@ namespace Rdatasets.cluster
         public readonly int war;
         public readonly int fly;
         public readonly int ver;
-        public readonly string end;
-        public readonly string gro;
+        public readonly int? end;
+        public readonly int? gro;
         public readonly int hai;
 
-        public animals(int war, int fly, int ver, string end, string gro, int hai)
+        public animals(int war, int fly, int ver, int? end, int? gro, int hai)
         {
             this.war = war;
             this.fly = fly;
@@ -31,26 +31,26 @@ namespace Rdatasets.cluster
         {
             get
             {
-                yield return new animals(1, 1, 1, "1", "2", 1);
-                yield return new animals(1, 2, 1, "1", "2", 2);
-                yield return new animals(2, 1, 2, "1", "1", 2);
-                yield return new animals(1, 1, 1, "1", "1", 2);
-                yield return new animals(2, 1, 2, "2", "2", 2);
-                yield return new animals(2, 1, 2, "1", "2", 2);
-                yield return new animals(2, 2, 2, "1", "2", 1);
-                yield return new animals(2, 2, 2, "2", "1", 1);
-                yield return new animals(2, 1, 2, "2", "2", 1);
-                yield return new animals(1, 2, 1, "1", "1", 1);
-                yield return new animals(1, 1, 2, "2", null, 1);
-                yield return new animals(1, 1, 2, "1", "2", 1);
-                yield return new animals(2, 1, 2, null, "2", 2);
-                yield return new animals(1, 1, 2, "1", "1", 1);
-                yield return new animals(1, 1, 1, "1", null, 1);
-                yield return new animals(2, 1, 2, "2", "2", 2);
-                yield return new animals(2, 1, 2, "1", "2", 2);
-                yield return new animals(1, 1, 2, "1", null, 1);
-                yield return new animals(1, 1, 1, null, "1", 2);
-                yield return new animals(2, 1, 2, "2", "2", 1);
+                yield return new animals(1, 1, 1, 1, 2, 1);
+                yield return new animals(1, 2, 1, 1, 2, 2);
+                yield return new animals(2, 1, 2, 1, 1, 2);
+                yield return new animals(1, 1, 1, 1, 1, 2);
+                yield return new animals(2, 1, 2, 2, 2, 2);
+                yield return new animals(2, 1, 2, 1, 2, 2);
+                yield return new animals(2, 2, 2, 1, 2, 1);
+                yield return new animals(2, 2, 2, 2, 1, 1);
+                yield return new animals(2, 1, 2, 2, 2, 1);
+                yield return new animals(1, 2, 1, 1, 1, 1);
+                yield return new animals(1, 1, 2, 2, null, 1);
+                yield return new animals(1, 1, 2, 1, 2, 1);
+                yield return new animals(2, 1, 2, null, 2, 2);
+                yield return new animals(1, 1, 2, 1, 1, 1);
+                yield return new animals(1, 1, 1, 1, null, 1);
+                yield return new animals(2, 1, 2, 2, 2, 2);
+                yield return new animals(2, 1, 2, 1, 2, 2);
+                yield return new animals(1, 1, 2, 1, null, 1);
+                yield return new animals(1, 1, 1, null, 1, 2);
+                yield return new animals(2, 1, 2, 2, 2, 1);
             }
         }
     }

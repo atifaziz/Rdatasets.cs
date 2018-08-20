@@ -23,14 +23,14 @@ namespace Rdatasets.pscl
         public readonly double NP;
         public readonly double DLP;
         public readonly double Dem;
-        public readonly string Green;
+        public readonly double? Green;
         public readonly double Hanson;
         public readonly double Com;
         public readonly double AP;
         public readonly double Informal;
         public readonly double Turnout;
 
-        public AustralianElections(string date, int Seats, int Uncontested, int ALPSeats, int LPSeats, int NPSeats, int OtherSeats, double ALP, double ALP2PP, double LP, double NP, double DLP, double Dem, string Green, double Hanson, double Com, double AP, double Informal, double Turnout)
+        public AustralianElections(string date, int Seats, int Uncontested, int ALPSeats, int LPSeats, int NPSeats, int OtherSeats, double ALP, double ALP2PP, double LP, double NP, double DLP, double Dem, double? Green, double Hanson, double Com, double AP, double Informal, double Turnout)
         {
             this.date = date;
             this.Seats = Seats;
@@ -76,14 +76,14 @@ namespace Rdatasets.pscl
                 yield return new AustralianElections("1987-07-11", 148, 0, 86, 43, 19, 0, 45.83, 50.8, 34.55, 11.52, 0, 6.03, null, 0, 0, 0, 4.94, 93.84);
                 yield return new AustralianElections("1990-03-24", 148, 0, 78, 55, 14, 1, 39.44, 49.9, 35.04, 8.42, 0, 11.26, null, 0, 0, 0, 3.19, 95.31);
                 yield return new AustralianElections("1993-03-13", 147, 0, 80, 49, 16, 2, 44.92, 51.4, 37.1, 7.17, 0, 3.75, null, 0, 0, 0, 2.97, 95.75);
-                yield return new AustralianElections("1996-03-02", 148, 0, 49, 76, 18, 5, 38.75, 46.4, 39.04, 8.21, 0, 6.76, "1.74", 0, 0, 0, 3.2, 95.77);
-                yield return new AustralianElections("1998-10-03", 148, 0, 67, 64, 16, 1, 40.1, 51, 33.89, 5.6, 0, 5.13, "2.14", 8.43, 0, 0, 3.78, 94.99);
-                yield return new AustralianElections("2001-11-10", 150, 0, 65, 69, 14, 3, 37.84, 49, 37.08, 5.93, 0, 5.41, "4.96", 4.34, 0, 0, 4.81, 95.39);
-                yield return new AustralianElections("2004-10-09", 150, 0, 60, 75, 12, 3, 37.64, 47.26, 40.47, 5.89, 0, 1.24, "7.19", 0, 0, 0, 5.18, 94.32);
-                yield return new AustralianElections("2007-11-24", 150, 0, 83, 55, 10, 2, 43.38, 52.7, 36.6, 5.49, 0.05, 0.72, "7.79", 0.26, 0, 0, 3.95, 94.76);
-                yield return new AustralianElections("2010-08-21", 150, 0, 72, 66, 7, 5, 37.99, 50.12, 39.89, 3.73, 0.04, 0.18, "11.76", 0, 0, 0, 5.55, 93.22);
-                yield return new AustralianElections("2013-09-07", 150, 0, 55, 81, 9, 5, 33.38, 46.51, 41.26, 4.29, 0.28, 0.03, "8.65", 0, 0, 0, 5.91, 93.23);
-                yield return new AustralianElections("2016-07-02", 150, 0, 69, 66, 10, 5, 34.73, 49.64, 37.43, 4.61, 0.02, 0, "10.23", 1.29, 0, 0, 5.05, 91.01);
+                yield return new AustralianElections("1996-03-02", 148, 0, 49, 76, 18, 5, 38.75, 46.4, 39.04, 8.21, 0, 6.76, 1.74, 0, 0, 0, 3.2, 95.77);
+                yield return new AustralianElections("1998-10-03", 148, 0, 67, 64, 16, 1, 40.1, 51, 33.89, 5.6, 0, 5.13, 2.14, 8.43, 0, 0, 3.78, 94.99);
+                yield return new AustralianElections("2001-11-10", 150, 0, 65, 69, 14, 3, 37.84, 49, 37.08, 5.93, 0, 5.41, 4.96, 4.34, 0, 0, 4.81, 95.39);
+                yield return new AustralianElections("2004-10-09", 150, 0, 60, 75, 12, 3, 37.64, 47.26, 40.47, 5.89, 0, 1.24, 7.19, 0, 0, 0, 5.18, 94.32);
+                yield return new AustralianElections("2007-11-24", 150, 0, 83, 55, 10, 2, 43.38, 52.7, 36.6, 5.49, 0.05, 0.72, 7.79, 0.26, 0, 0, 3.95, 94.76);
+                yield return new AustralianElections("2010-08-21", 150, 0, 72, 66, 7, 5, 37.99, 50.12, 39.89, 3.73, 0.04, 0.18, 11.76, 0, 0, 0, 5.55, 93.22);
+                yield return new AustralianElections("2013-09-07", 150, 0, 55, 81, 9, 5, 33.38, 46.51, 41.26, 4.29, 0.28, 0.03, 8.65, 0, 0, 0, 5.91, 93.23);
+                yield return new AustralianElections("2016-07-02", 150, 0, 69, 66, 10, 5, 34.73, 49.64, 37.43, 4.61, 0.02, 0, 10.23, 1.29, 0, 0, 5.05, 91.01);
             }
         }
     }
