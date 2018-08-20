@@ -43,7 +43,9 @@ namespace RdatasetsGenerator
             var rootPath = args.FirstOrDefault() ?? throw new Exception("Missing path to the root of the Rdatasets repository.");
             var targetPath = args.ElementAtOrDefault(1) ?? Environment.CurrentDirectory;
 
-            bool AnyNA(IEnumerable<string> ss) => ss.Any(s => s == "NA");
+            var filters = args.Skip(2)
+                              .Select(pattern => new Predicate<string>(s => Regex.IsMatch(s, pattern, RegexOptions.CultureInvariant)))
+                              .ToArray();
 
             string CSharpId(string s)
             {
@@ -90,6 +92,7 @@ namespace RdatasetsGenerator
                 }
                 into e
                 where e.Rows > 0
+                   && filters.Aggregate(true, (f, p) => f && p(e.Package + "/" + e.Item))
                 join f in
                     from path in Directory.EnumerateFiles(Path.Combine(rootPath, "doc"), "*.rst", SearchOption.AllDirectories)
                     select
