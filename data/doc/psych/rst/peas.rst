@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(peas)
+   data(peas)
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 700 observations on the following 2 variables.
 
 ``parent``
-    The mean diameter of the mother pea for 700 peas
+   The mean diameter of the mother pea for 700 peas
 
 ``child``
-    The mean diameter of the daughter pea for 700 sweet peas
+   The mean diameter of the daughter pea for 700 sweet peas
 
 Details
 ~~~~~~~
@@ -70,7 +70,7 @@ Examples
 
 ::
 
-    data(peas)
-    pairs.panels(peas,lm=TRUE,xlim=c(14,22),ylim=c(14,22),main="Galton's Peas")
-    describe(peas)
-    pairs.panels(peas,main="Galton's Peas")
+   data(peas)
+   pairs.panels(peas,lm=TRUE,xlim=c(14,22),ylim=c(14,22),main="Galton's Peas")
+   describe(peas)
+   pairs.panels(peas,main="Galton's Peas")

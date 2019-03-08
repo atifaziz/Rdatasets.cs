@@ -48,7 +48,7 @@ data(Weather)
 </dd>
 <dt>high_wind, avg_wind, low_wind</dt><dd><p>High, average, and low wind speed for the day in mph.</p>
 </dd>
-<dt>precip</dt><dd><p>Precipitation for the day &ndash; a character vale; 'T' means &quot;trace amount&quot;.</p>
+<dt>precip</dt><dd><p>Precipitation for the day &ndash; a character vale; <code>T</code> means &quot;trace amount&quot;.</p>
 </dd>
 <dt>events</dt><dd><p>Character string naming weather events on the day (Rain, Fog, Snow, etc.)</p>
 </dd>
@@ -71,6 +71,13 @@ if (require(dplyr)) {
       min_temp = min(low_temp),
       max_temp = max(high_temp)
       )
+}
+
+if (require(ggformula)) {
+  Weather %&gt;%
+    gf_linerange(low_temp + high_temp ~ date | city ~ ., 
+    color = ~ (high_temp + low_temp) / 2 ) %&gt;%
+    gf_refine(scale_color_gradientn(colors = rev(rainbow(5))))
 }
 
 </pre>

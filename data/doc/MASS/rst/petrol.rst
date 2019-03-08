@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    petrol
+   petrol
 
 Format
 ~~~~~~
@@ -27,23 +27,23 @@ Format
 The variables are as follows
 
 ``No``
-    crude oil sample identification label. (Factor.)
+   crude oil sample identification label. (Factor.)
 
 ``SG``
-    specific gravity, degrees API. (Constant within sample.)
+   specific gravity, degrees API. (Constant within sample.)
 
 ``VP``
-    vapour pressure in pounds per square inch. (Constant within sample.)
+   vapour pressure in pounds per square inch. (Constant within sample.)
 
 ``V10``
-    volatility of crude; ASTM 10% point. (Constant within sample.)
+   volatility of crude; ASTM 10% point. (Constant within sample.)
 
 ``EP``
-    desired volatility of gasoline. (The end point. Varies within
-    sample.)
+   desired volatility of gasoline. (The end point. Varies within
+   sample.)
 
 ``Y``
-    yield as a percentage of crude.
+   yield as a percentage of crude.
 
 Source
 ~~~~~~
@@ -66,11 +66,11 @@ Examples
 
 ::
 
-    library(nlme)
-    Petrol <- petrol
-    Petrol[, 2:5] <- scale(as.matrix(Petrol[, 2:5]), scale = FALSE)
-    pet3.lme <- lme(Y ~ SG + VP + V10 + EP,
-                    random = ~ 1 | No, data = Petrol)
-    pet3.lme <- update(pet3.lme, method = "ML")
-    pet4.lme <- update(pet3.lme, fixed = Y ~ V10 + EP)
-    anova(pet4.lme, pet3.lme)
+   library(nlme)
+   Petrol <- petrol
+   Petrol[, 2:5] <- scale(as.matrix(Petrol[, 2:5]), scale = FALSE)
+   pet3.lme <- lme(Y ~ SG + VP + V10 + EP,
+                   random = ~ 1 | No, data = Petrol)
+   pet3.lme <- update(pet3.lme, method = "ML")
+   pet4.lme <- update(pet3.lme, fixed = Y ~ V10 + EP)
+   anova(pet4.lme, pet3.lme)

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(edcCO2)
+   data(edcCO2)
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 A data frame with 1096 observations on the following 2 variables.
 
 ``age``
-    Age in years before present (BP)
+   Age in years before present (BP)
 
 ``co2``
-    CO2 level (ppmv)
+   CO2 level (ppmv)
 
 Details
 ~~~~~~~
@@ -65,4 +65,4 @@ Examples
 
 ::
 
-    data(edcCO2)
+   data(edcCO2)

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("plasma")
+   data("plasma")
 
 Format
 ~~~~~~
@@ -24,14 +24,14 @@ Format
 A data frame with 32 observations on the following 3 variables.
 
 ``fibrinogen``
-    the fibrinogen level in the blood.
+   the fibrinogen level in the blood.
 
 ``globulin``
-    the globulin level in the blood.
+   the globulin level in the blood.
 
 ``ESR``
-    the erythrocyte sedimentation rate, either less or greater 20 mm /
-    hour.
+   the erythrocyte sedimentation rate, either less or greater 20 mm /
+   hour.
 
 Details
 ~~~~~~~
@@ -64,8 +64,8 @@ Examples
 ::
 
 
-      data("plasma", package = "HSAUR")
-      layout(matrix(1:2, ncol = 2))
-      boxplot(fibrinogen ~ ESR, data = plasma, varwidth = TRUE)
-      boxplot(globulin ~ ESR, data = plasma, varwidth = TRUE)
+     data("plasma", package = "HSAUR")
+     layout(matrix(1:2, ncol = 2))
+     boxplot(fibrinogen ~ ESR, data = plasma, varwidth = TRUE)
+     boxplot(globulin ~ ESR, data = plasma, varwidth = TRUE)
 

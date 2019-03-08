@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    occupationalStatus
+   occupationalStatus
 
 Format
 ~~~~~~
@@ -41,16 +41,16 @@ Examples
 
 ::
 
-    require(stats); require(graphics)
+   require(stats); require(graphics)
 
-    plot(occupationalStatus)
+   plot(occupationalStatus)
 
-    ##  Fit a uniform association model separating diagonal effects
-    Diag <- as.factor(diag(1:8))
-    Rscore <- scale(as.numeric(row(occupationalStatus)), scale = FALSE)
-    Cscore <- scale(as.numeric(col(occupationalStatus)), scale = FALSE)
-    modUnif <- glm(Freq ~ origin + destination + Diag + Rscore:Cscore,
-                   family = poisson, data = occupationalStatus)
+   ##  Fit a uniform association model separating diagonal effects
+   Diag <- as.factor(diag(1:8))
+   Rscore <- scale(as.numeric(row(occupationalStatus)), scale = FALSE)
+   Cscore <- scale(as.numeric(col(occupationalStatus)), scale = FALSE)
+   modUnif <- glm(Freq ~ origin + destination + Diag + Rscore:Cscore,
+                  family = poisson, data = occupationalStatus)
 
-    summary(modUnif)
-    plot(modUnif) # 4 plots, with warning about  h_ii ~= 1
+   summary(modUnif)
+   plot(modUnif) # 4 plots, with warning about  h_ii ~= 1

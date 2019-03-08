@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    Aids2
+   Aids2
 
 Format
 ~~~~~~
@@ -23,26 +23,26 @@ Format
 This data frame contains 2843 rows and the following columns:
 
 ``state``
-    Grouped state of origin: ``"NSW "``\ includes ACT and ``"other"`` is
-    WA, SA, NT and TAS.
+   Grouped state of origin: ``"NSW "``\ includes ACT and ``"other"`` is
+   WA, SA, NT and TAS.
 
 ``sex``
-    Sex of patient.
+   Sex of patient.
 
 ``diag``
-    (Julian) date of diagnosis.
+   (Julian) date of diagnosis.
 
 ``death``
-    (Julian) date of death or end of observation.
+   (Julian) date of death or end of observation.
 
 ``status``
-    ``"A"`` (alive) or ``"D"`` (dead) at end of observation.
+   ``"A"`` (alive) or ``"D"`` (dead) at end of observation.
 
 ``T.categ``
-    Reported transmission category.
+   Reported transmission category.
 
 ``age``
-    Age (years) at diagnosis.
+   Age (years) at diagnosis.
 
 Note
 ~~~~

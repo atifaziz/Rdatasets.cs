@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("hurricNamed")
+   data("hurricNamed")
 
 Format
 ~~~~~~
@@ -25,44 +25,44 @@ Format
 A data frame with 94 observations on the following 11 variables.
 
 ``Name``
-    Hurricane name
+   Hurricane name
 
 ``Year``
-    Numeric
+   Numeric
 
 ``LF.WindsMPH``
-    Maximum sustained windspeed (>= 1 minute) to occur along the US
-    coast. Prior to 1980, this is estimated from the maximum windspeed
-    associated with the Saffir-Simpson index at landfall. If 2 or more
-    landfalls, the maximum is taken
+   Maximum sustained windspeed (>= 1 minute) to occur along the US
+   coast. Prior to 1980, this is estimated from the maximum windspeed
+   associated with the Saffir-Simpson index at landfall. If 2 or more
+   landfalls, the maximum is taken
 
 ``LF.PressureMB``
-    Atmospheric pressure at landfall in millibars. If 2 or more
-    landfalls, the minimum is taken
+   Atmospheric pressure at landfall in millibars. If 2 or more
+   landfalls, the minimum is taken
 
 ``LF.times``
-    Date of first landfall
+   Date of first landfall
 
 ``BaseDam2014``
-    Property damage (millions of 2014 US dollars)
+   Property damage (millions of 2014 US dollars)
 
 ``BaseDamage``
-    Property damage (in millions of dollars for that year)
+   Property damage (in millions of dollars for that year)
 
 ``NDAM2014``
-    Damage, had hurricane appeared in 2014
+   Damage, had hurricane appeared in 2014
 
 ``AffectedStates``
-    Affected states (2-digit abbreviations), pasted together
+   Affected states (2-digit abbreviations), pasted together
 
 ``firstLF``
-    Date of first landfall
+   Date of first landfall
 
 ``deaths``
-    Number of continental US direct and indirect deaths
+   Number of continental US direct and indirect deaths
 
 ``mf``
-    Gender of name; a factor with levels ``f`` ``m``
+   Gender of name; a factor with levels ``f`` ``m``
 
 Details
 ~~~~~~~
@@ -97,9 +97,9 @@ Examples
 
 ::
 
-    data(hurricNamed)
-    str(hurricNamed)
-    plot(log(deaths+0.5) ~ log(NDAM2014), data=hurricNamed)
-    with(hurricNamed, lines(lowess(log(deaths+0.5) ~ log(NDAM2014))))
-    plot(log(deaths+0.5) ~ I(NDAM2014^0.14), data=hurricNamed)
-    with(hurricNamed, lines(lowess(log(deaths+0.1) ~ I(NDAM2014^0.14))))
+   data(hurricNamed)
+   str(hurricNamed)
+   plot(log(deaths+0.5) ~ log(NDAM2014), data=hurricNamed)
+   with(hurricNamed, lines(lowess(log(deaths+0.5) ~ log(NDAM2014))))
+   plot(log(deaths+0.5) ~ I(NDAM2014^0.14), data=hurricNamed)
+   with(hurricNamed, lines(lowess(log(deaths+0.1) ~ I(NDAM2014^0.14))))

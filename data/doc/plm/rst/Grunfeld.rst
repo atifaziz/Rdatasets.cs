@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Grunfeld)
+   data(Grunfeld)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A data frame containing :
 
 firm
-    observation
+   observation
 
 year
-    date
+   date
 
 inv
-    gross Investment
+   gross Investment
 
 value
-    value of the firm
+   value of the firm
 
 capital
-    stock of plant and equipment
+   stock of plant and equipment
 
 Note
 ~~~~
@@ -102,12 +102,12 @@ Examples
 
 ::
 
-    ## Not run: 
-    # Compare plm's Grunfeld data to Baltagi's (2001) Grunfeld data:
-      data("Grunfeld"", package="plm")
-      Grunfeld_baltagi2001 <- read.csv("http://www.wiley.com/legacy/wileychi/
-        baltagi/supp/Grunfeld.fil", sep="", header = FALSE)
-      library(compare)
-      compare::compare(Grunfeld, Grunfeld_baltagi2001, allowAll = T) # same data set
-      
-    ## End(Not run)
+   ## Not run: 
+   # Compare plm's Grunfeld data to Baltagi's (2001) Grunfeld data:
+     data("Grunfeld"", package="plm")
+     Grunfeld_baltagi2001 <- read.csv("http://www.wiley.com/legacy/wileychi/
+       baltagi/supp/Grunfeld.fil", sep="", header = FALSE)
+     library(compare)
+     compare::compare(Grunfeld, Grunfeld_baltagi2001, allowAll = T) # same data set
+     
+   ## End(Not run)

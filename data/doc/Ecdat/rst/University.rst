@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(University)
+   data(University)
 
 Format
 ~~~~~~
@@ -29,55 +29,55 @@ Format
 A dataframe containing :
 
 undstudents
-    undergraduate students
+   undergraduate students
 
 poststudents
-    postgraduate students
+   postgraduate students
 
 nassets
-    net assets
+   net assets
 
 acnumbers
-    academic numbers
+   academic numbers
 
 acrelnum
-    academic related numbers
+   academic related numbers
 
 clernum
-    clerical numbers
+   clerical numbers
 
 compop
-    computer operators
+   computer operators
 
 techn
-    technicians
+   technicians
 
 stfees
-    student fees
+   student fees
 
 acpay
-    academic pay
+   academic pay
 
 acrelpay
-    academic related pay
+   academic related pay
 
 secrpay
-    secretarial pay
+   secretarial pay
 
 admpay
-    admin pay
+   admin pay
 
 agresrk
-    aggregate research rank
+   aggregate research rank
 
 furneq
-    furniture and equipment
+   furniture and equipment
 
 landbuild
-    land and buildings
+   land and buildings
 
 resgr
-    research grants
+   research grants
 
 Source
 ~~~~~~

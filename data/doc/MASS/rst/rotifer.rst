@@ -18,25 +18,25 @@ Usage
 
 ::
 
-    rotifer
+   rotifer
 
 Format
 ~~~~~~
 
 ``density``
-    specific density of fluid.
+   specific density of fluid.
 
 ``pm.y``
-    number falling out for *P. major*.
+   number falling out for *P. major*.
 
 ``pm.total``
-    total number of *P. major*.
+   total number of *P. major*.
 
 ``kc.y``
-    number falling out for *K. cochlearis*.
+   number falling out for *K. cochlearis*.
 
 ``kc.tot``
-    total number of *K. cochlearis*.
+   total number of *K. cochlearis*.
 
 Source
 ~~~~~~

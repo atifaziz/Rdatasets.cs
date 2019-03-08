@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    LoBD
+   LoBD
 
 Format
 ~~~~~~
@@ -24,41 +24,41 @@ Format
 A data frame with 84 observations on the following 9 variables.
 
 ``pool``
-    a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7`` ``8``
-    ``9`` ``10`` ``11`` ``12`` denoting the 12 pools used in the
-    experiment; each pool had a different level of drug.
+   a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7`` ``8``
+   ``9`` ``10`` ``11`` ``12`` denoting the 12 pools used in the
+   experiment; each pool had a different level of drug.
 
 ``I1L1``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 ``I1L2``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 ``I2L1``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 ``I2L2``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 ``I3L1``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 ``I3L2``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 ``I4L1``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 ``I4L2``
-    a numeric vector giving the measured concentration in pmol/L of drug
-    in the assay
+   a numeric vector giving the measured concentration in pmol/L of drug
+   in the assay
 
 Details
 ~~~~~~~
@@ -97,4 +97,4 @@ Examples
 
 ::
 
-    LoBD
+   LoBD

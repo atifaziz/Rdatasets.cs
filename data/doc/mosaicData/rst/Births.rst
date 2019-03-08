@@ -15,18 +15,28 @@ Usage
 
 ::
 
-    data(Births)
+   data(Births)
 
 Format
 ~~~~~~
 
 A data.frame with 7305 observations on the following 8 variables.
 
-itemcodedate [Date] itemcodebirths number of births on ``date``
-[integer] itemcodewday day of week [ordered factor] itemcodeyear year
-[integer] itemcodemonth month [integer] itemcodeday day of month
-[integer] itemcodeday_of_year day of year [integer] itemcodeday_of_week
-day of week [integer]
+-  ``date`` Date
+
+-  ``births`` Number of births on ``date`` (integer)
+
+-  ``wday`` Day of week (ordered factor)
+
+-  ``year`` Year (integer)
+
+-  ``month`` Month (integer)
+
+-  ``day_of_year`` Day of year (integer)
+
+-  ``day_of_month`` Day of month (integer)
+
+-  ``day_of_week`` Day of week (integer)
 
 Details
 ~~~~~~~
@@ -51,20 +61,20 @@ Examples
 
 ::
 
-    data(Births)
-    if(require(ggplot2)) {
-      ggplot(data = Births, aes(x = date, y = births, colour = wday)) +
-        stat_smooth(se = FALSE, alpha = 0.8, geom = "line")
-      ggplot(data = Births, aes(x = day_of_year, y = births, colour = wday)) +
-        geom_point(size = 0.4, alpha = 0.5) +
-        stat_smooth(se = FALSE, geom = "line", alpha = 0.6, size = 1.5)
-      if (require(dplyr)) {
-        ggplot(
-         data =  bind_cols(Births %>% filter(year == 1978), 
-                           Births78 %>% rename(births78 = births)),
-         aes(x = births - births78)
-         ) +
-         geom_histogram(binwidth = 1)
-      }
-    }
+   data(Births)
+   if(require(ggplot2)) {
+     ggplot(data = Births, aes(x = date, y = births, colour = ~ wday)) +
+       stat_smooth(se = FALSE, alpha = 0.8, geom = "line")
+     ggplot(data = Births, aes(x = day_of_year, y = births, colour = ~ wday)) +
+       geom_point(size = 0.4, alpha = 0.5) +
+       stat_smooth(se = FALSE, geom = "line", alpha = 0.6, size = 1.5)
+     if (require(dplyr)) {
+       ggplot(
+        data =  bind_cols(Births %>% filter(year == 1978), 
+                          Births78 %>% rename(births78 = births)),
+        aes(x = births - births78)
+        ) +
+        geom_histogram(binwidth = 1)
+     }
+   }
 

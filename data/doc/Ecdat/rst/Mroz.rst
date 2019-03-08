@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Mroz)
+   data(Mroz)
 
 Format
 ~~~~~~
@@ -29,59 +29,59 @@ Format
 A dataframe containing :
 
 work
-    participation in 1975 ?
+   participation in 1975 ?
 
 hoursw
-    wife's hours of work in 1975
+   wife's hours of work in 1975
 
 child6
-    number of children less than 6 years old in household
+   number of children less than 6 years old in household
 
 child618
-    number of children between ages 6 and 18 in household
+   number of children between ages 6 and 18 in household
 
 agew
-    wife's age
+   wife's age
 
 educw
-    wife's educational attainment, in years
+   wife's educational attainment, in years
 
 hearnw
-    wife's average hourly earnings, in 1975 dollars
+   wife's average hourly earnings, in 1975 dollars
 
 wagew
-    wife's wage reported at the time of the 1976 interview (not= 1975
-    estimated wage)
+   wife's wage reported at the time of the 1976 interview (not= 1975
+   estimated wage)
 
 hoursh
-    husband's hours worked in 1975
+   husband's hours worked in 1975
 
 ageh
-    husband's age
+   husband's age
 
 educh
-    husband's educational attainment, in years
+   husband's educational attainment, in years
 
 wageh
-    husband's wage, in 1975 dollars
+   husband's wage, in 1975 dollars
 
 income
-    family income, in 1975 dollars
+   family income, in 1975 dollars
 
 educwm
-    wife's mother's educational attainment, in years
+   wife's mother's educational attainment, in years
 
 educwf
-    wife's father's educational attainment, in years
+   wife's father's educational attainment, in years
 
 unemprate
-    unemployment rate in county of residence, in percentage points
+   unemployment rate in county of residence, in percentage points
 
 city
-    lives in large city (SMSA) ?
+   lives in large city (SMSA) ?
 
 experience
-    actual years of wife's previous labor market experience
+   actual years of wife's previous labor market experience
 
 Source
 ~~~~~~

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(NaturalPark)
+   data(NaturalPark)
 
 Format
 ~~~~~~
@@ -29,25 +29,25 @@ Format
 A dataframe containing :
 
 bid1
-    initial bid, in euro
+   initial bid, in euro
 
 bidh
-    higher bid
+   higher bid
 
 bidl
-    lower bid
+   lower bid
 
 answers
-    a factor with levels (nn,ny,yn,yy)
+   a factor with levels (nn,ny,yn,yy)
 
 age
-    age in 6 classes
+   age in 6 classes
 
 sex
-    a factor with levels (male,female)
+   a factor with levels (male,female)
 
 income
-    income in 8 classes
+   income in 8 classes
 
 Source
 ~~~~~~

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    SP500W90
+   SP500W90
 
 Source
 ~~~~~~
@@ -27,4 +27,4 @@ Examples
 
 ::
 
-    ts.plot(SP500W90)
+   ts.plot(SP500W90)

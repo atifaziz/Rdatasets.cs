@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Longley)
+   data(Longley)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A time serie containing :
 
 employ
-    employment (1,000s)
+   employment (1,000s)
 
 price
-    GNP deflator
+   GNP deflator
 
 gnp
-    nominal GNP (millions)
+   nominal GNP (millions)
 
 armed
-    armed forces
+   armed forces
 
 Source
 ~~~~~~

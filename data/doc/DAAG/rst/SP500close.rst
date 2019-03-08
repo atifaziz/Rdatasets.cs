@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    SP500close
+   SP500close
 
 Source
 ~~~~~~
@@ -27,4 +27,4 @@ Examples
 
 ::
 
-    ts.plot(SP500close)
+   ts.plot(SP500close)

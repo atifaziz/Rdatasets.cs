@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    leafshape17
+   leafshape17
 
 Format
 ~~~~~~
@@ -25,28 +25,28 @@ Format
 This data frame contains the following columns:
 
 bladelen
-    leaf length (in mm)
+   leaf length (in mm)
 
 petiole
-    a numeric vector
+   a numeric vector
 
 bladewid
-    leaf width (in mm)
+   leaf width (in mm)
 
 latitude
-    latitude
+   latitude
 
 logwid
-    natural logarithm of width
+   natural logarithm of width
 
 logpet
-    logarithm of petiole measurement
+   logarithm of petiole measurement
 
 loglen
-    logarithm of length
+   logarithm of length
 
 arch
-    leaf architecture (0 = orthotropic, 1 = plagiotropic)
+   leaf architecture (0 = orthotropic, 1 = plagiotropic)
 
 Source
 ~~~~~~
@@ -60,28 +60,28 @@ Examples
 
 ::
 
-    print("Discriminant Analysis - Example 11.2")
+   print("Discriminant Analysis - Example 11.2")
 
-    require(MASS)
-    leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)
-    leaf17.hat <- predict(leaf17.lda)
-    leaf17.lda
-     table(leafshape17$arch, leaf17.hat$class)
-    pause()
+   require(MASS)
+   leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)
+   leaf17.hat <- predict(leaf17.lda)
+   leaf17.lda
+    table(leafshape17$arch, leaf17.hat$class)
+   pause()
 
-    tab <- table(leafshape17$arch, leaf17.hat$class)
-     sum(tab[row(tab)==col(tab)])/sum(tab)
-    leaf17cv.lda <- lda(arch ~ logwid+loglen, data=leafshape17, CV=TRUE)
-    tab <- table(leafshape17$arch, leaf17cv.lda$class)
-    pause()
+   tab <- table(leafshape17$arch, leaf17.hat$class)
+    sum(tab[row(tab)==col(tab)])/sum(tab)
+   leaf17cv.lda <- lda(arch ~ logwid+loglen, data=leafshape17, CV=TRUE)
+   tab <- table(leafshape17$arch, leaf17cv.lda$class)
+   pause()
 
-    leaf17.glm <- glm(arch ~ logwid + loglen, family=binomial, data=leafshape17)
-     options(digits=3)
-    summary(leaf17.glm)$coef
-    pause()
+   leaf17.glm <- glm(arch ~ logwid + loglen, family=binomial, data=leafshape17)
+    options(digits=3)
+   summary(leaf17.glm)$coef
+   pause()
 
-    leaf17.one <- cv.binary(leaf17.glm)
-    table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
-    pause()
+   leaf17.one <- cv.binary(leaf17.glm)
+   table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
+   pause()
 
-    table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation
+   table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation

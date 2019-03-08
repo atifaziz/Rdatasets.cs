@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    barley
+   barley
 
 Format
 ~~~~~~
@@ -24,19 +24,19 @@ Format
 A data frame with 120 observations on the following 4 variables.
 
 yield
-    Yield (averaged across three blocks) in bushels/acre.
+   Yield (averaged across three blocks) in bushels/acre.
 
 variety
-    Factor with levels ``"Svansota"``, ``"No. 462"``, ``"Manchuria"``,
-    ``"No. 475"``, ``"Velvet"``, ``"Peatland"``, ``"Glabron"``,
-    ``"No. 457"``, ``"Wisconsin No. 38"``, ``"Trebi"``.
+   Factor with levels ``"Svansota"``, ``"No. 462"``, ``"Manchuria"``,
+   ``"No. 475"``, ``"Velvet"``, ``"Peatland"``, ``"Glabron"``,
+   ``"No. 457"``, ``"Wisconsin No. 38"``, ``"Trebi"``.
 
 year
-    Factor with levels ``1932``, ``1931``
+   Factor with levels ``1932``, ``1931``
 
 site
-    Factor with 6 levels: ``"Grand Rapids"``, ``"Duluth"``,
-    ``"University Farm"``, ``"Morris"``, ``"Crookston"``, ``"Waseca"``
+   Factor with 6 levels: ``"Grand Rapids"``, ``"Duluth"``,
+   ``"University Farm"``, ``"Morris"``, ``"Crookston"``, ``"Waseca"``
 
 Details
 ~~~~~~~
@@ -93,9 +93,9 @@ Examples
 
 ::
 
-    # Graphic suggesting the Morris data switched the years 1931 and 1932
-    # Figure 1.1 from Cleveland
-    dotplot(variety ~ yield | site, data = barley, groups = year,
-            key = simpleKey(levels(barley$year), space = "right"),
-            xlab = "Barley Yield (bushels/acre) ",
-            aspect=0.5, layout = c(1,6), ylab=NULL)
+   # Graphic suggesting the Morris data switched the years 1931 and 1932
+   # Figure 1.1 from Cleveland
+   dotplot(variety ~ yield | site, data = barley, groups = year,
+           key = simpleKey(levels(barley$year), space = "right"),
+           xlab = "Barley Yield (bushels/acre) ",
+           aspect=0.5, layout = c(1,6), ylab=NULL)

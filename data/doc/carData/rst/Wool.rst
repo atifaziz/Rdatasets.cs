@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Wool
+   Wool
 
 Format
 ~~~~~~
@@ -26,16 +26,16 @@ Format
 This data frame contains the following columns:
 
 len
-    length of specimen (250, 300, 350 mm)
+   length of specimen (250, 300, 350 mm)
 
 amp
-    amplitude of loading cycle (8, 9, 10 min)
+   amplitude of loading cycle (8, 9, 10 min)
 
 load
-    load (40, 45, 50g)
+   load (40, 45, 50g)
 
 cycles
-    number of cycles until failure
+   number of cycles until failure
 
 Source
 ~~~~~~

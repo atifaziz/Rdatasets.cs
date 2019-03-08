@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    nsw74psid1
+   nsw74psid1
 
 Format
 ~~~~~~
@@ -27,35 +27,35 @@ Format
 This data frame contains the following columns:
 
 trt
-    a numeric vector identifying the study in which the subjects were
-    enrolled (0 = PSID, 1 = NSW).
+   a numeric vector identifying the study in which the subjects were
+   enrolled (0 = PSID, 1 = NSW).
 
 age
-    age (in years).
+   age (in years).
 
 educ
-    years of education.
+   years of education.
 
 black
-    (0 = not black, 1 = black).
+   (0 = not black, 1 = black).
 
 hisp
-    (0 = not hispanic, 1 = hispanic).
+   (0 = not hispanic, 1 = hispanic).
 
 marr
-    (0 = not married, 1 = married).
+   (0 = not married, 1 = married).
 
 nodeg
-    (0 = completed high school, 1 = dropout).
+   (0 = completed high school, 1 = dropout).
 
 re74
-    real earnings in 1974.
+   real earnings in 1974.
 
 re75
-    real earnings in 1975.
+   real earnings in 1975.
 
 re78
-    real earnings in 1978.
+   real earnings in 1978.
 
 Source
 ~~~~~~
@@ -77,30 +77,30 @@ Examples
 
 ::
 
-    print("Interpretation of Regression Coefficients - Example 6.6")
+   print("Interpretation of Regression Coefficients - Example 6.6")
 
-     nsw74psid1.lm <- lm(re78~ trt+ (age + educ + re74 + re75) +
-       (black + hisp + marr + nodeg), data = nsw74psid1)
-     summary(nsw74psid1.lm)$coef
-    options(digits=4)
-    sapply(nsw74psid1[, c(2,3,8,9,10)], quantile, prob=c(.25,.5,.75,.95,1))
-    attach(nsw74psid1)
-    sapply(nsw74psid1[trt==1, c(2,3,8,9,10)], quantile, 
-    prob=c(.25,.5,.75,.95,1))
-    pause()
+    nsw74psid1.lm <- lm(re78~ trt+ (age + educ + re74 + re75) +
+      (black + hisp + marr + nodeg), data = nsw74psid1)
+    summary(nsw74psid1.lm)$coef
+   options(digits=4)
+   sapply(nsw74psid1[, c(2,3,8,9,10)], quantile, prob=c(.25,.5,.75,.95,1))
+   attach(nsw74psid1)
+   sapply(nsw74psid1[trt==1, c(2,3,8,9,10)], quantile, 
+   prob=c(.25,.5,.75,.95,1))
+   pause()
 
-    here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000 
-    nsw74psidA <- nsw74psid1[here, ]
-    detach(nsw74psid1)
-    table(nsw74psidA$trt)
-    pause()
+   here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000 
+   nsw74psidA <- nsw74psid1[here, ]
+   detach(nsw74psid1)
+   table(nsw74psidA$trt)
+   pause()
 
-    A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
-          hisp + marr + nodeg), data = nsw74psidA)
-    summary(A1.lm)$coef
-    pause()
+   A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
+         hisp + marr + nodeg), data = nsw74psidA)
+   summary(A1.lm)$coef
+   pause()
 
-    A2.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) * (black +   
-          hisp + marr + nodeg), data = nsw74psidA)
-    anova(A1.lm, A2.lm)
+   A2.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) * (black +   
+         hisp + marr + nodeg), data = nsw74psidA)
+   anova(A1.lm, A2.lm)
 

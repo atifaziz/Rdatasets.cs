@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    polar
+   polar
 
 Format
 ~~~~~~
@@ -26,12 +26,12 @@ Format
 This data frame contains the following columns:
 
 ``lat``
-    The latitude (in degrees) of the pole position. Note that all
-    latitudes are negative as the axis is taken to be in the lower
-    hemisphere.
+   The latitude (in degrees) of the pole position. Note that all
+   latitudes are negative as the axis is taken to be in the lower
+   hemisphere.
 
 ``long``
-    The longitude (in degrees) of the pole position.
+   The longitude (in degrees) of the pole position.
 
 Source
 ~~~~~~

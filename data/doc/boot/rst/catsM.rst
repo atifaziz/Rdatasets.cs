@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    cats
+   cats
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 This data frames contain the following columns:
 
 ``Sex``
-    A factor for the sex of the cat (levels are ``F`` and ``M``).
+   A factor for the sex of the cat (levels are ``F`` and ``M``).
 
 ``Bwt``
-    Body weight in kg.
+   Body weight in kg.
 
 ``Hwt``
-    Heart weight in g.
+   Heart weight in g.
 
 Source
 ~~~~~~

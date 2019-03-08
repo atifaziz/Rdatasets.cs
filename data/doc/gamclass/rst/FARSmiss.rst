@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    FARSmiss
+   FARSmiss
 
 Format
 ~~~~~~
@@ -56,5 +56,5 @@ Examples
 
 ::
 
-    data(FARSmiss)
-    str(FARSmiss)
+   data(FARSmiss)
+   str(FARSmiss)

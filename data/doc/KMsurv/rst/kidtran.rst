@@ -16,22 +16,22 @@ Format
 This data frame contains the following columns:
 
 obs
-    Observation number
+   Observation number
 
 time
-    Time to death or on-study time
+   Time to death or on-study time
 
 delta
-    Death indicator (0=alive, 1=dead)
+   Death indicator (0=alive, 1=dead)
 
 gender
-    1=male, 2=female
+   1=male, 2=female
 
 race
-    1=white, 2=black
+   1=white, 2=black
 
 age
-    Age in years
+   Age in years
 
 Source
 ~~~~~~
@@ -44,4 +44,4 @@ Examples
 
 ::
 
-    data(kidtran)
+   data(kidtran)

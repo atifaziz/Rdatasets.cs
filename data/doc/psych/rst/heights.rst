@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    data(heights)
+   data(heights)
 
 Format
 ~~~~~~
@@ -31,10 +31,10 @@ Format
 A data frame with 348 observations on the following 2 variables.
 
 ``height``
-    Height in inches
+   Height in inches
 
 ``cubit``
-    Forearm length in inches
+   Forearm length in inches
 
 Details
 ~~~~~~~
@@ -69,6 +69,6 @@ Examples
 
 ::
 
-    data(heights)
-    ellipses(heights,n=1,main="Galton's co-relation data set")
+   data(heights)
+   ellipses(heights,n=1,main="Galton's co-relation data set")
 

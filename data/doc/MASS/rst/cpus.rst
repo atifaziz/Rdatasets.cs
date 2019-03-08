@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    cpus
+   cpus
 
 Format
 ~~~~~~
@@ -23,32 +23,32 @@ Format
 The components are:
 
 ``name``
-    manufacturer and model.
+   manufacturer and model.
 
 ``syct``
-    cycle time in nanoseconds.
+   cycle time in nanoseconds.
 
 ``mmin``
-    minimum main memory in kilobytes.
+   minimum main memory in kilobytes.
 
 ``mmax``
-    maximum main memory in kilobytes.
+   maximum main memory in kilobytes.
 
 ``cach``
-    cache size in kilobytes.
+   cache size in kilobytes.
 
 ``chmin``
-    minimum number of channels.
+   minimum number of channels.
 
 ``chmax``
-    maximum number of channels.
+   maximum number of channels.
 
 ``perf``
-    published performance on a benchmark mix relative to an IBM
-    370/158-3.
+   published performance on a benchmark mix relative to an IBM
+   370/158-3.
 
 ``estperf``
-    estimated performance (by Ein-Dor & Feldmesser).
+   estimated performance (by Ein-Dor & Feldmesser).
 
 Source
 ~~~~~~

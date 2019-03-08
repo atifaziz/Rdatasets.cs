@@ -17,8 +17,8 @@ Usage
 
 ::
 
-    aml
-    leukemia
+   aml
+   leukemia
 
 Format
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    women
+   women
 
 Format
 ~~~~~~
@@ -54,6 +54,6 @@ Examples
 
 ::
 
-    require(graphics)
-    plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
-         main = "women data: American women aged 30-39")
+   require(graphics)
+   plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
+        main = "women data: American women aged 30-39")

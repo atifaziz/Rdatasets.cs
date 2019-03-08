@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("smoking")
+   data("smoking")
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ A data frame with 26 observations (studies) on the following 4
 variables.
 
 ``qt``
-    the number of treated subjetcs who stopped smoking.
+   the number of treated subjetcs who stopped smoking.
 
 ``tt``
-    the totla number of treated subjects.
+   the totla number of treated subjects.
 
 ``qc``
-    the number of subjetcs who stopped smoking without being treated.
+   the number of subjetcs who stopped smoking without being treated.
 
 ``tc``
-    the total number of subject not being treated.
+   the total number of subject not being treated.
 
 Details
 ~~~~~~~
@@ -67,8 +67,8 @@ Examples
 ::
 
 
-      data("smoking", package = "HSAUR")
-      boxplot(smoking$qt/smoking$tt,
-              smoking$qc/smoking$tc,
-              names = c("Treated", "Control"), ylab = "Percent Quitters")
+     data("smoking", package = "HSAUR")
+     boxplot(smoking$qt/smoking$tt,
+             smoking$qc/smoking$tc,
+             names = c("Treated", "Control"), ylab = "Percent Quitters")
 

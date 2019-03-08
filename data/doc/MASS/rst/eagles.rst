@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    eagles
+   eagles
 
 Format
 ~~~~~~
@@ -26,19 +26,19 @@ Format
 The ``eagles`` data frame has 8 rows and 5 columns.
 
 ``y``
-    Number of successful attempts.
+   Number of successful attempts.
 
 ``n``
-    Total number of attempts.
+   Total number of attempts.
 
 ``P``
-    Size of pirating eagle (``L`` = large, ``S`` = small).
+   Size of pirating eagle (``L`` = large, ``S`` = small).
 
 ``A``
-    Age of pirating eagle (``I`` = immature, ``A`` = adult).
+   Age of pirating eagle (``I`` = immature, ``A`` = adult).
 
 ``V``
-    Size of victim eagle (``L`` = large, ``S`` = small).
+   Size of victim eagle (``L`` = large, ``S`` = small).
 
 Source
 ~~~~~~
@@ -57,9 +57,9 @@ Examples
 
 ::
 
-    eagles.glm <- glm(cbind(y, n - y) ~ P*A + V, data = eagles,
-                      family = binomial)
-    dropterm(eagles.glm)
-    prof <- profile(eagles.glm)
-    plot(prof)
-    pairs(prof)
+   eagles.glm <- glm(cbind(y, n - y) ~ P*A + V, data = eagles,
+                     family = binomial)
+   dropterm(eagles.glm)
+   prof <- profile(eagles.glm)
+   plot(prof)
+   pairs(prof)

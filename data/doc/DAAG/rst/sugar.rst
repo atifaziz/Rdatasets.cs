@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    sugar
+   sugar
 
 Format
 ~~~~~~
@@ -26,11 +26,11 @@ Format
 This data frame contains the following columns:
 
 weight
-    weight, in mg
+   weight, in mg
 
 trt
-    a factor with levels ``Control`` i.e. unmodified Wild form, ``A``
-    Modified 1, ``B`` Modified 2, ``C`` Modified 3
+   a factor with levels ``Control`` i.e. unmodified Wild form, ``A``
+   Modified 1, ``B`` Modified 2, ``C`` Modified 3
 
 Source
 ~~~~~~
@@ -42,8 +42,8 @@ Examples
 
 ::
 
-    sugar.aov <- aov(weight ~ trt, data=sugar)
-    fitted.values(sugar.aov)
-    summary.lm(sugar.aov)
-    sugar.aov <- aov(formula = weight ~ trt, data = sugar)
-    summary.lm(sugar.aov)
+   sugar.aov <- aov(weight ~ trt, data=sugar)
+   fitted.values(sugar.aov)
+   summary.lm(sugar.aov)
+   sugar.aov <- aov(formula = weight ~ trt, data = sugar)
+   summary.lm(sugar.aov)

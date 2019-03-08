@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(flchain)
+   data(flchain)
 
 Format
 ~~~~~~
@@ -26,40 +26,39 @@ Format
 A data frame with 7874 persons containing the following variables.
 
 ``age``
-    age in years
+   age in years
 
 ``sex``
-    F=female, M=male
+   F=female, M=male
 
 ``sample.yr``
-    the calendar year in which a blood sample was obtained
+   the calendar year in which a blood sample was obtained
 
 ``kappa``
-    serum free light chain, kappa portion
+   serum free light chain, kappa portion
 
 ``lambda``
-    serum free light chain, lambda portion
+   serum free light chain, lambda portion
 
 ``flc.grp``
-    the FLC group for the subject, as used in the original analysis
+   the FLC group for the subject, as used in the original analysis
 
 ``creatinine``
-    serum creatinine
+   serum creatinine
 
 ``mgus``
-    1 if the subject had been diagnosed with monoclonal gammapothy
-    (MGUS)
+   1 if the subject had been diagnosed with monoclonal gammapothy (MGUS)
 
 ``futime``
-    days from enrollment until death. Note that there are 3 subjects
-    whose sample was obtained on their death date.
+   days from enrollment until death. Note that there are 3 subjects
+   whose sample was obtained on their death date.
 
 ``death``
-    0=alive at last contact date, 1=dead
+   0=alive at last contact date, 1=dead
 
 ``chapter``
-    for those who died, a grouping of their primary cause of death by
-    chapter headings of the International Code of Diseases ICD-9
+   for those who died, a grouping of their primary cause of death by
+   chapter headings of the International Code of Diseases ICD-9
 
 Details
 ~~~~~~~
@@ -110,8 +109,8 @@ Examples
 
 ::
 
-    data(flchain)
-    age.grp <-  cut(flchain$age, c(49,54, 59,64, 69,74,79, 89, 110),
-                   labels= paste(c(50,55,60,65,70,75,80,90),
-                                 c(54,59,64,69,74,79,89,109), sep='-'))
-    table(flchain$sex, age.grp)
+   data(flchain)
+   age.grp <-  cut(flchain$age, c(49,54, 59,64, 69,74,79, 89, 110),
+                  labels= paste(c(50,55,60,65,70,75,80,90),
+                                c(54,59,64,69,74,79,89,109), sep='-'))
+   table(flchain$sex, age.grp)

@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(nlsyV)
+   data(nlsyV)
 
 Format
 ~~~~~~
@@ -26,30 +26,30 @@ A data frame with 400 randomly subsampled observations on the following
 7 variables.
 
 ``ppvtr.36``
-    a numeric vector with data on the Peabody Picture Vocabulary Test
-    (Revised) administered at 36 months
+   a numeric vector with data on the Peabody Picture Vocabulary Test
+   (Revised) administered at 36 months
 
 ``first``
-    indicator for whether child was first-born
+   indicator for whether child was first-born
 
 ``b.marr``
-    indicator for whether mother was married when child was born
+   indicator for whether mother was married when child was born
 
 ``income``
-    a numeric vector with data on family income in year after the child
-    was born
+   a numeric vector with data on family income in year after the child
+   was born
 
 ``momage``
-    a numeric vector with data on the age of the mother when the child
-    was born
+   a numeric vector with data on the age of the mother when the child
+   was born
 
 ``momed``
-    educational status of mother when child was born (1 = less than high
-    school, 2 = high school graduate, 3 = some college, 4 = college
-    graduate)
+   educational status of mother when child was born (1 = less than high
+   school, 2 = high school graduate, 3 = some college, 4 = college
+   graduate)
 
 ``momrace``
-    race of mother (1 = black, 2 = Hispanic, 3 = white)
+   race of mother (1 = black, 2 = Hispanic, 3 = white)
 
 Note that **momed** would typically be an ordered ``factor`` while
 **momrace** would typically be an unorderd ``factor`` but both are
@@ -67,5 +67,5 @@ Examples
 
 ::
 
-    data(nlsyV)
-    summary(nlsyV)
+   data(nlsyV)
+   summary(nlsyV)

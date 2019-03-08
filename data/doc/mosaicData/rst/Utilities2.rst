@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(Utilities2)
+   data(Utilities2)
 
 Format
 ~~~~~~
@@ -47,22 +47,22 @@ A data frame containing 117 observations for the following variables.
 
 -  ``notes`` notes about the billing period
 
--  ``ccfpday`` average gas usage per day [``Utilities2`` only]
+-  ``ccfpday`` average gas usage per day (``Utilities2`` only)
 
--  ``kwhpday`` average electric usage per day [``Utilities2`` only]
+-  ``kwhpday`` average electric usage per day (``Utilities2`` only)
 
--  ``gasbillpday`` gas bill divided by billing days [``Utilities2``
-   only]
+-  ``gasbillpday`` gas bill divided by billing days (``Utilities2``
+   only)
 
 -  ``elecbillpday`` electric bill divided by billing days a numeric
-   vector [``Utilities2`` only]
+   vector (``Utilities2`` only)
 
 -  ``totalbillpday`` total bill divided by billing days a numeric vector
-   [``Utilities2`` only]
+   (``Utilities2`` only)
 
--  ``therms`` ``thermsPerDay * billingDays`` [``Utilities2`` only]
+-  ``therms`` ``thermsPerDay * billingDays`` (``Utilities2`` only)
 
--  ``monthsSinceY2K`` months since 2000 [``Utilities2`` only]
+-  ``monthsSinceY2K`` months since 2000 (``Utilities2`` only)
 
 Source
 ~~~~~~
@@ -79,8 +79,8 @@ Examples
 
 ::
 
-    data(Utilities2)
-    if (require(lattice)) {
-      xyplot(gasbillpday ~ temp, Utilities2)
-    }
+   data(Utilities2)
+   if (require(ggformula)) {
+     gf_point(gasbillpday ~ temp, data = Utilities2)
+   }
 

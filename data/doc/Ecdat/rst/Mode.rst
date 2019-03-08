@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(Mode)
+   data(Mode)
 
 Format
 ~~~~~~
@@ -27,13 +27,13 @@ Format
 A dataframe containing :
 
 choice
-    one of car, carpool, bus or rail
+   one of car, carpool, bus or rail
 
 cost.z
-    cost of mode z
+   cost of mode z
 
 time.z
-    time of mode z
+   time of mode z
 
 References
 ~~~~~~~~~~

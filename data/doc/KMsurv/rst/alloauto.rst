@@ -16,14 +16,14 @@ Format
 This data frame contains the following columns:
 
 time
-    Time to death or relapse, months
+   Time to death or relapse, months
 
 type
-    Type of transplant (1=allogeneic, 2=autologous)
+   Type of transplant (1=allogeneic, 2=autologous)
 
 delta
-    Leukemia-free survival indicator (0=alive without relapse, 1=dead or
-    relapse)
+   Leukemia-free survival indicator (0=alive without relapse, 1=dead or
+   relapse)
 
 Source
 ~~~~~~
@@ -37,4 +37,4 @@ Examples
 
 ::
 
-    data(alloauto)
+   data(alloauto)

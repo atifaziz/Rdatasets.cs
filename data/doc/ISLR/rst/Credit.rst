@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Credit
+   Credit
 
 Format
 ~~~~~~
@@ -25,43 +25,43 @@ Format
 A data frame with 10000 observations on the following 4 variables.
 
 ``ID``
-    Identification
+   Identification
 
 ``Income``
-    Income in $10,000's
+   Income in $10,000's
 
 ``Limit``
-    Credit limit
+   Credit limit
 
 ``Rating``
-    Credit rating
+   Credit rating
 
 ``Cards``
-    Number of credit cards
+   Number of credit cards
 
 ``Age``
-    Age in years
+   Age in years
 
 ``Education``
-    Number of years of education
+   Number of years of education
 
 ``Gender``
-    A factor with levels ``Male`` and ``Female``
+   A factor with levels ``Male`` and ``Female``
 
 ``Student``
-    A factor with levels ``No`` and ``Yes`` indicating whether the
-    individual was a student
+   A factor with levels ``No`` and ``Yes`` indicating whether the
+   individual was a student
 
 ``Married``
-    A factor with levels ``No`` and ``Yes`` indicating whether the
-    individual was married
+   A factor with levels ``No`` and ``Yes`` indicating whether the
+   individual was married
 
 ``Ethnicity``
-    A factor with levels ``African American``, ``Asian``, and
-    ``Caucasian`` indicating the individual's ethnicity
+   A factor with levels ``African American``, ``Asian``, and
+   ``Caucasian`` indicating the individual's ethnicity
 
 ``Balance``
-    Average credit card balance in $.
+   Average credit card balance in $.
 
 Source
 ~~~~~~
@@ -83,5 +83,5 @@ Examples
 
 ::
 
-    summary(Credit)
-    lm(Balance ~ Student + Limit, data=Credit)
+   summary(Credit)
+   lm(Balance ~ Student + Limit, data=Credit)

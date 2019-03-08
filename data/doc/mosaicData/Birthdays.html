@@ -50,14 +50,12 @@ data(Birthdays)
 
 <pre>
 data(Birthdays)
-if (require(lattice)) {
-  xyplot(births ~ date, Birthdays, subset=state=="CA")
-  xyplot(births ~ date, Birthdays, subset=state=="CA", 
-    groups=wday, type='l')
-  if (require(mosaic)) {
-    xyplot(births ~ date, type='l',
-      data = Birthdays %&gt;% group_by(date) %&gt;% summarise(births=sum(births)))
-    }
+if (require(mosaic)) {
+  MI &lt;- Birthdays %&gt;% filter(state == "MI")
+  gf_point(births ~ date, Birthdays, data = MI) 
+  gf_line(births ~ date, Birthdays, data = MI, color = ~ wday)
+  gf_line(births ~ date, 
+    data = Birthdays %&gt;% group_by(date) %&gt;% summarise(births = sum(births)))
   }
 </pre>
 

@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("JointSports")
+   data("JointSports")
 
 Format
 ~~~~~~
@@ -25,20 +25,20 @@ Format
 A data frame with 40 observations and 5 variables.
 
 Freq
-    frequency.
+   frequency.
 
 opinion
-    factor indicating opinion about sports joint with the other gender
-    (very good, good, indifferent, bad, very bad).
+   factor indicating opinion about sports joint with the other gender
+   (very good, good, indifferent, bad, very bad).
 
 year
-    factor indicating year of study (1983, 1985).
+   factor indicating year of study (1983, 1985).
 
 grade
-    factor indicating school grade (1st, 3rd).
+   factor indicating school grade (1st, 3rd).
 
 gender
-    factor indicating gender (Boy, Girl).
+   factor indicating gender (Boy, Girl).
 
 Source
 ~~~~~~
@@ -57,8 +57,8 @@ Examples
 
 ::
 
-    library(MASS)
-    data("JointSports")
-    tab <- xtabs(Freq ~ gender + opinion + grade + year, data = JointSports)
-    doubledecker(opinion ~ gender + year + grade, data = tab)
-    loglm(~ opinion* (gender + grade+ year) + gender*year*grade, data = tab)
+   library(MASS)
+   data("JointSports")
+   tab <- xtabs(Freq ~ gender + opinion + grade + year, data = JointSports)
+   doubledecker(opinion ~ gender + year + grade, data = tab)
+   loglm(~ opinion* (gender + grade+ year) + gender*year*grade, data = tab)

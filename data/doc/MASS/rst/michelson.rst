@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    michelson
+   michelson
 
 Format
 ~~~~~~
@@ -27,13 +27,13 @@ Format
 The data frame contains the following components:
 
 ``Expt``
-    The experiment number, from 1 to 5.
+   The experiment number, from 1 to 5.
 
 ``Run``
-    The run number within each experiment.
+   The run number within each experiment.
 
 ``Speed``
-    Speed-of-light measurement.
+   Speed-of-light measurement.
 
 Source
 ~~~~~~

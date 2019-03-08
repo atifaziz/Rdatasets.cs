@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    tobin
+   tobin
 
 Format
 ~~~~~~
@@ -24,13 +24,13 @@ Format
 A data frame with 20 observations on the following 3 variables.
 
 durable
-    Durable goods purchase
+   Durable goods purchase
 
 age
-    Age in years
+   Age in years
 
 quant
-    Liquidity ratio (x 1000)
+   Liquidity ratio (x 1000)
 
 Source
 ~~~~~~
@@ -43,8 +43,8 @@ Examples
 
 ::
 
-    tfit <- survreg(Surv(durable, durable>0, type='left') ~age + quant,
-                    data=tobin, dist='gaussian')
+   tfit <- survreg(Surv(durable, durable>0, type='left') ~age + quant,
+                   data=tobin, dist='gaussian')
 
-    predict(tfit,type="response")
+   predict(tfit,type="response")
 

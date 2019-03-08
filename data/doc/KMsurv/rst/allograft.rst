@@ -16,16 +16,16 @@ Format
 This data frame contains the following columns:
 
 patient
-    Patient
+   Patient
 
 time
-    Time to graft rejection, days
+   Time to graft rejection, days
 
 rejection
-    Indicator of graft rejection (1=yes, 0=no)
+   Indicator of graft rejection (1=yes, 0=no)
 
 match
-    Good HLA skin match (1=yes, 0=no)
+   Good HLA skin match (1=yes, 0=no)
 
 Source
 ~~~~~~
@@ -39,4 +39,4 @@ Examples
 
 ::
 
-    data(allograft)
+   data(allograft)

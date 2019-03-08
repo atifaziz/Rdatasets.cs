@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Money)
+   data(Money)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A time serie containing :
 
 m
-    log of the real money supply
+   log of the real money supply
 
 y
-    the log of GDP, in 1992 dollars, seasonally adjusted
+   the log of GDP, in 1992 dollars, seasonally adjusted
 
 p
-    the log of the price level
+   the log of the price level
 
 r
-    the 3-month treasury till rate
+   the 3-month treasury till rate
 
 Source
 ~~~~~~

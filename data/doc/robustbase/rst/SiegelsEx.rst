@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(SiegelsEx)
+   data(SiegelsEx, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 9 observations on the following 2 variables.
 
 ``x``
-    a numeric vector
+   a numeric vector
 
 ``y``
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~
@@ -46,8 +46,8 @@ Examples
 
 ::
 
-    data(SiegelsEx)
-    plot(SiegelsEx, main = "Siegel's example for 'exact fit'")
-    abline(          lm(y ~ x, data = SiegelsEx))
-    abline(MASS::lqs(y ~ x, data = SiegelsEx, method = "lms"), col = 2)
-    legend("topright", leg = c("lm", "LMS"), col=1:2, lwd=1, inset = 1/20)
+   data(SiegelsEx)
+   plot(SiegelsEx, main = "Siegel's example for 'exact fit'")
+   abline(          lm(y ~ x, data = SiegelsEx))
+   abline(MASS::lqs(y ~ x, data = SiegelsEx, method = "lms"), col = 2)
+   legend("topright", leg = c("lm", "LMS"), col=1:2, lwd=1, inset = 1/20)

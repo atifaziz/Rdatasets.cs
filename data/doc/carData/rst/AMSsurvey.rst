@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    AMSsurvey
+   AMSsurvey
 
 Format
 ~~~~~~
@@ -24,22 +24,22 @@ Format
 A data frame with 24 observations on the following 5 variables.
 
 type
-    a factor with levels ``I(Pu)`` for group I public universities,
-    ``I(Pr)`` for group I private universities, ``II`` and ``III`` for
-    groups II and III, ``IV`` for statistics and biostatistics programs,
-    and ``Va`` for applied mathemeatics programs.
+   a factor with levels ``I(Pu)`` for group I public universities,
+   ``I(Pr)`` for group I private universities, ``II`` and ``III`` for
+   groups II and III, ``IV`` for statistics and biostatistics programs,
+   and ``Va`` for applied mathemeatics programs.
 
 sex
-    a factor with levels ``Female``, ``Male`` of the recipient
+   a factor with levels ``Female``, ``Male`` of the recipient
 
 citizen
-    a factor with levels ``Non-US``, ``US`` giving citizenship status
+   a factor with levels ``Non-US``, ``US`` giving citizenship status
 
 count
-    The number of individuals of each type in 2008-09
+   The number of individuals of each type in 2008-09
 
 count11
-    The number of individuals of each type in 2011-12
+   The number of individuals of each type in 2011-12
 
 Details
 ~~~~~~~

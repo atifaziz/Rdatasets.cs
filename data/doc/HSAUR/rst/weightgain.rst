@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("weightgain")
+   data("weightgain")
 
 Format
 ~~~~~~
@@ -25,14 +25,14 @@ Format
 A data frame with 40 observations on the following 3 variables.
 
 ``source``
-    source of protein given, a factor with levels ``Beef`` and
-    ``Cereal``.
+   source of protein given, a factor with levels ``Beef`` and
+   ``Cereal``.
 
 ``type``
-    amount of protein given, a factor with levels ``High`` and ``Low``.
+   amount of protein given, a factor with levels ``High`` and ``Low``.
 
 ``weightgain``
-    weigt gain in grams.
+   weigt gain in grams.
 
 Details
 ~~~~~~~
@@ -52,7 +52,7 @@ Examples
 ::
 
 
-      data("weightgain", package = "HSAUR")
-      interaction.plot(weightgain$type, weightgain$source, 
-                       weightgain$weightgain)
+     data("weightgain", package = "HSAUR")
+     interaction.plot(weightgain$type, weightgain$source, 
+                      weightgain$weightgain)
 

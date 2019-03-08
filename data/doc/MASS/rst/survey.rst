@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    survey
+   survey
 
 Format
 ~~~~~~
@@ -24,49 +24,49 @@ Format
 The components of the data frame are:
 
 ``Sex``
-    The sex of the student. (Factor with levels ``"Male"`` and
-    ``"Female"``.)
+   The sex of the student. (Factor with levels ``"Male"`` and
+   ``"Female"``.)
 
 ``Wr.Hnd``
-    span (distance from tip of thumb to tip of little finger of spread
-    hand) of writing hand, in centimetres.
+   span (distance from tip of thumb to tip of little finger of spread
+   hand) of writing hand, in centimetres.
 
 ``NW.Hnd``
-    span of non-writing hand.
+   span of non-writing hand.
 
 ``W.Hnd``
-    writing hand of student. (Factor, with levels ``"Left"`` and
-    ``"Right"``.)
+   writing hand of student. (Factor, with levels ``"Left"`` and
+   ``"Right"``.)
 
 ``Fold``
-    “Fold your arms! Which is on top” (Factor, with levels ``"R on L"``,
-    ``"L on R"``, ``"Neither"``.)
+   “Fold your arms! Which is on top” (Factor, with levels ``"R on L"``,
+   ``"L on R"``, ``"Neither"``.)
 
 ``Pulse``
-    pulse rate of student (beats per minute).
+   pulse rate of student (beats per minute).
 
 ``Clap``
-    ‘Clap your hands! Which hand is on top?’ (Factor, with levels
-    ``"Right"``, ``"Left"``, ``"Neither"``.)
+   ‘Clap your hands! Which hand is on top?’ (Factor, with levels
+   ``"Right"``, ``"Left"``, ``"Neither"``.)
 
 ``Exer``
-    how often the student exercises. (Factor, with levels ``"Freq"``
-    (frequently), ``"Some"``, ``"None"``.)
+   how often the student exercises. (Factor, with levels ``"Freq"``
+   (frequently), ``"Some"``, ``"None"``.)
 
 ``Smoke``
-    how much the student smokes. (Factor, levels ``"Heavy"``,
-    ``"Regul"`` (regularly), ``"Occas"`` (occasionally), ``"Never"``.)
+   how much the student smokes. (Factor, levels ``"Heavy"``, ``"Regul"``
+   (regularly), ``"Occas"`` (occasionally), ``"Never"``.)
 
 ``Height``
-    height of the student in centimetres.
+   height of the student in centimetres.
 
 ``M.I``
-    whether the student expressed height in imperial (feet/inches) or
-    metric (centimetres/metres) units. (Factor, levels ``"Metric"``,
-    ``"Imperial"``.)
+   whether the student expressed height in imperial (feet/inches) or
+   metric (centimetres/metres) units. (Factor, levels ``"Metric"``,
+   ``"Imperial"``.)
 
 ``Age``
-    age of the student in years.
+   age of the student in years.
 
 References
 ~~~~~~~~~~

@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(nonEnglishNames)
+   data(nonEnglishNames)
 
 Format
 ~~~~~~
@@ -26,12 +26,12 @@ Format
 A ``data.frame`` with two columns:
 
 nonEnglish
-    a character vector containing names that often have non-standard
-    characters with the non-standard characters replaced by "_"
+   a character vector containing names that often have non-standard
+   characters with the non-standard characters replaced by "_"
 
 English
-    a character vector containing a standard English-character
-    translation of ``nonEnglish``
+   a character vector containing a standard English-character
+   translation of ``nonEnglish``
 
 See Also
 ~~~~~~~~
@@ -43,9 +43,9 @@ Examples
 
 ::
 
-    data(nonEnglishNames)
+   data(nonEnglishNames)
 
 
-    all.equal(ncol(nonEnglishNames), 2)
+   all.equal(ncol(nonEnglishNames), 2)
 
 

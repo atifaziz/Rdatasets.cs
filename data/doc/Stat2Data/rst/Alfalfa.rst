@@ -50,4 +50,4 @@ Examples
 
 ::
 
-    data(Alfalfa)
+   data(Alfalfa)

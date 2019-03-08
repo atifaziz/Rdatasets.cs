@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    antigua
+   antigua
 
 Format
 ~~~~~~
@@ -24,25 +24,25 @@ Format
 A data frame with 324 observations on 7 variables.
 
 id
-    a numeric vector
+   a numeric vector
 
 site
-    a factor with 8 levels.
+   a factor with 8 levels.
 
 block
-    a factor with levels ``I`` ``II`` ``III`` ``IV``
+   a factor with levels ``I`` ``II`` ``III`` ``IV``
 
 plot
-    a numeric vector
+   a numeric vector
 
 trt
-    a factor consisting of 12 levels
+   a factor consisting of 12 levels
 
 ears
-    a numeric vector; note that -9999 is used as a missing value code.
+   a numeric vector; note that -9999 is used as a missing value code.
 
 harvwt
-    a numeric vector; the average yield
+   a numeric vector; the average yield
 
 Source
 ~~~~~~

@@ -21,19 +21,19 @@ Data frames with 578 (summer) and 532 (winter) observations on the
 following 5 variables.
 
 O3
-    Daily maximum ozone in parts per billion.
+   Daily maximum ozone in parts per billion.
 
 NO2
-    Daily maximum NO2 in parts per billion.
+   Daily maximum NO2 in parts per billion.
 
 NO
-    Daily maximum NO in parts per billion.
+   Daily maximum NO in parts per billion.
 
 SO2
-    Daily maximum SO2 in parts per billion.
+   Daily maximum SO2 in parts per billion.
 
 PM10
-    Daily maximum PM10 in micrograms/metre^3
+   Daily maximum PM10 in micrograms/metre^3
 
 Source
 ~~~~~~
@@ -55,6 +55,6 @@ Examples
 ::
 
 
-    data(summer)
-    data(winter)
+   data(summer)
+   data(winter)
 

@@ -28,7 +28,7 @@ Usage
 
 ::
 
-    nodal
+   nodal
 
 Format
 ~~~~~~
@@ -36,33 +36,33 @@ Format
 This data frame contains the following columns:
 
 ``m``
-    A column of ones.
+   A column of ones.
 
 ``r``
-    An indicator of nodal involvement.
+   An indicator of nodal involvement.
 
 ``aged``
-    The patients age dichotomized into less than 60 (``0``) and 60 or
-    over ``1``.
+   The patients age dichotomized into less than 60 (``0``) and 60 or
+   over ``1``.
 
 ``stage``
-    A measurement of the size and position of the tumour observed by
-    palpitation with the fingers via the rectum. A value of ``1``
-    indicates a more serious case of the cancer.
+   A measurement of the size and position of the tumour observed by
+   palpitation with the fingers via the rectum. A value of ``1``
+   indicates a more serious case of the cancer.
 
 ``grade``
-    Another indicator of the seriousness of the cancer, this one is
-    determined by a pathology reading of a biopsy taken by needle before
-    surgery. A value of ``1`` indicates a more serious case of the
-    cancer.
+   Another indicator of the seriousness of the cancer, this one is
+   determined by a pathology reading of a biopsy taken by needle before
+   surgery. A value of ``1`` indicates a more serious case of the
+   cancer.
 
 ``xray``
-    A third measure of the seriousness of the cancer taken from an X-ray
-    reading. A value of ``1`` indicates a more serious case of the
-    cancer.
+   A third measure of the seriousness of the cancer taken from an X-ray
+   reading. A value of ``1`` indicates a more serious case of the
+   cancer.
 
 ``acid``
-    The level of acid phosphatase in the blood serum.
+   The level of acid phosphatase in the blood serum.
 
 Source
 ~~~~~~

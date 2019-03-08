@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(alcohol)
+   data(alcohol, package="robustbase")
 
 Format
 ~~~~~~
@@ -27,25 +27,25 @@ Format
 A data frame with 44 observations on the following 7 numeric variables.
 
 ``SAG``
-    solvent accessible surface-bounded molecular volume.
+   solvent accessible surface-bounded molecular volume.
 
 ``V``
-    volume
+   volume
 
 ``logPC``
-    Log(PC); PC = octanol-water partitions coefficient
+   Log(PC); PC = octanol-water partitions coefficient
 
 ``P``
-    polarizability
+   polarizability
 
 ``RM``
-    molar refractivity
+   molar refractivity
 
 ``Mass``
-    the mass
+   the mass
 
 ``logSolubility``
-    ln(Solubility), the response.
+   ln(Solubility), the response.
 
 Source
 ~~~~~~
@@ -64,7 +64,7 @@ Examples
 
 ::
 
-    data(alcohol)
-    ## version of data set with trivial names, as
-    s.alcohol <- alcohol
-    names(s.alcohol) <- paste("Col", 1:7, sep='')
+   data(alcohol)
+   ## version of data set with trivial names, as
+   s.alcohol <- alcohol
+   names(s.alcohol) <- paste("Col", 1:7, sep='')

@@ -28,7 +28,7 @@ Usage
 
 ::
 
-    beaver
+   beaver
 
 Format
 ~~~~~~
@@ -36,19 +36,19 @@ Format
 This data frame contains the following columns:
 
 ``day``
-    The day number. The data includes only data from day 307 and early
-    308.
+   The day number. The data includes only data from day 307 and early
+   308.
 
 ``time``
-    The time of day formatted as hour-minute.
+   The time of day formatted as hour-minute.
 
 ``temp``
-    The body temperature in degrees Celsius.
+   The body temperature in degrees Celsius.
 
 ``activ``
-    The dichotomized activity indicator. ``1`` indicates that the beaver
-    is outside of the retreat and therefore engaged in high-intensity
-    activity.
+   The dichotomized activity indicator. ``1`` indicates that the beaver
+   is outside of the retreat and therefore engaged in high-intensity
+   activity.
 
 Source
 ~~~~~~

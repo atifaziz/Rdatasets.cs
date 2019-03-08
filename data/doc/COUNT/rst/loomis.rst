@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(loomis)
+   data(loomis)
 
 Format
 ~~~~~~
@@ -26,37 +26,37 @@ Format
 A data frame with 410 observations on the following 11 variables.
 
 ``anvisits``
-    number of annual visits to park
+   number of annual visits to park
 
 ``gender``
-    1=male;0=female
+   1=male;0=female
 
 ``income``
-    income in US dollars per year, categorical: 4 levels
+   income in US dollars per year, categorical: 4 levels
 
 ``income1``
-    <=$25000
+   <=$25000
 
 ``income2``
-    >$25000 - $55000
+   >$25000 - $55000
 
 ``income3``
-    >$55000 - $95000
+   >$55000 - $95000
 
 ``income4``
-    >$95000
+   >$95000
 
 ``travel``
-    travel time, categorical: 3 levels
+   travel time, categorical: 3 levels
 
 ``travel1``
-    <.25 hrs
+   <.25 hrs
 
 ``travel2``
-    >=.25 - <4 hrs
+   >=.25 - <4 hrs
 
 ``travel3``
-    >=4 hrs
+   >=4 hrs
 
 Details
 ~~~~~~~
@@ -83,11 +83,11 @@ Examples
 
 ::
 
-    data(loomis)
-    glmlmp <- glm(anvisits ~ gender + factor(income) + factor(travel), family=poisson, data=loomis)
-    summary(glmlmp)
-    exp(coef(glmlmp))
-    library(MASS)
-    glmlmnb <- glm.nb(anvisits ~ gender + factor(income) + factor(travel), data=loomis)
-    summary(glmlmnb)
-    exp(coef(glmlmnb))
+   data(loomis)
+   glmlmp <- glm(anvisits ~ gender + factor(income) + factor(travel), family=poisson, data=loomis)
+   summary(glmlmp)
+   exp(coef(glmlmp))
+   library(MASS)
+   glmlmnb <- glm.nb(anvisits ~ gender + factor(income) + factor(travel), data=loomis)
+   summary(glmlmnb)
+   exp(coef(glmlmnb))

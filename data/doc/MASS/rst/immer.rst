@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    immer
+   immer
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 This data frame contains the following columns:
 
 ``Loc``
-    The location.
+   The location.
 
 ``Var``
-    The variety of barley (``"manchuria"``, ``"svansota"``,
-    ``"velvet"``, ``"trebi"`` and ``"peatland"``).
+   The variety of barley (``"manchuria"``, ``"svansota"``, ``"velvet"``,
+   ``"trebi"`` and ``"peatland"``).
 
 ``Y1``
-    Yield in 1931.
+   Yield in 1931.
 
 ``Y2``
-    Yield in 1932.
+   Yield in 1932.
 
 Source
 ~~~~~~
@@ -57,9 +57,9 @@ Examples
 
 ::
 
-    immer.aov <- aov(cbind(Y1,Y2) ~ Loc + Var, data = immer)
-    summary(immer.aov)
+   immer.aov <- aov(cbind(Y1,Y2) ~ Loc + Var, data = immer)
+   summary(immer.aov)
 
-    immer.aov <- aov((Y1+Y2)/2 ~ Var + Loc, data = immer)
-    summary(immer.aov)
-    model.tables(immer.aov, type = "means", se = TRUE, cterms = "Var")
+   immer.aov <- aov((Y1+Y2)/2 ~ Var + Loc, data = immer)
+   summary(immer.aov)
+   model.tables(immer.aov, type = "means", se = TRUE, cterms = "Var")

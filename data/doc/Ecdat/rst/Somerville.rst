@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Somerville)
+   data(Somerville)
 
 Format
 ~~~~~~
@@ -29,28 +29,28 @@ Format
 A dataframe containing :
 
 visits
-    annual number of visits to lake Somerville
+   annual number of visits to lake Somerville
 
 quality
-    quality ranking score for lake Somerville
+   quality ranking score for lake Somerville
 
 ski
-    engaged in water–skiing at the lake ?
+   engaged in water–skiing at the lake ?
 
 income
-    annual household income
+   annual household income
 
 feeSom
-    annual user fee paid at lake Somerville ?
+   annual user fee paid at lake Somerville ?
 
 costCon
-    expenditures when visiting lake Conroe
+   expenditures when visiting lake Conroe
 
 costSom
-    expenditures when visiting lake Somerville
+   expenditures when visiting lake Somerville
 
 costHoust
-    expenditures when visiting lake Houston
+   expenditures when visiting lake Houston
 
 Source
 ~~~~~~

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(dietox)
+   data(dietox)
 
 Format
 ~~~~~~
@@ -23,25 +23,25 @@ Format
 This data frame contains the following columns:
 
 Weight
-    a numeric vector
+   a numeric vector
 
 Feed
-    a numeric vector
+   a numeric vector
 
 Time
-    a numeric vector
+   a numeric vector
 
 Pig
-    a numeric vector
+   a numeric vector
 
 Evit
-    a numeric vector
+   a numeric vector
 
 Cu
-    a numeric vector
+   a numeric vector
 
 Litter
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~
@@ -55,13 +55,13 @@ Examples
 
 ::
 
-    data(dietox)
-    dietox$Cu     <- as.factor(dietox$Cu)
-    gee01 <- geeglm (Weight ~ Time + Cu + Cu * Time, id =Pig, data = dietox,
-             family=gaussian,corstr="ex")
+   data(dietox)
+   dietox$Cu     <- as.factor(dietox$Cu)
+   gee01 <- geeglm (Weight ~ Time + Cu + Cu * Time, id =Pig, data = dietox,
+            family=gaussian,corstr="ex")
 
-    mf <- formula(Weight~Cu*(Time+I(Time^2)+I(Time^3)))
-    gee1 <- geeglm(mf, data=dietox, id=Pig, family=poisson("identity"),corstr="ar1")
-    summary(gee1)
-    anova(gee1)
+   mf <- formula(Weight~Cu*(Time+I(Time^2)+I(Time^3)))
+   gee1 <- geeglm(mf, data=dietox, id=Pig, family=poisson("identity"),corstr="ar1")
+   summary(gee1)
+   anova(gee1)
 

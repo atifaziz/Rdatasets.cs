@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    lh
+   lh
 
 Source
 ~~~~~~

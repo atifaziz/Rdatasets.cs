@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Macrodat)
+   data(Macrodat)
 
 Format
 ~~~~~~
@@ -29,25 +29,25 @@ Format
 A time serie containing :
 
 lhur
-    unemployment rate (average of months in quarter)
+   unemployment rate (average of months in quarter)
 
 punew
-    cPI (Average of Months in Quarter)
+   cPI (Average of Months in Quarter)
 
 fyff
-    federal funds interest rate (last month in quarter)
+   federal funds interest rate (last month in quarter)
 
 fygm3
-    3 month treasury bill interest rate (last month in quarter)
+   3 month treasury bill interest rate (last month in quarter)
 
 fygt1
-    1 year treasury bond interest rate (last month in quarter)
+   1 year treasury bond interest rate (last month in quarter)
 
 exruk
-    dollar / Pound exchange rate (last month in quarter)
+   dollar / Pound exchange rate (last month in quarter)
 
 gdpjp
-    real GDP for Japan
+   real GDP for Japan
 
 Source
 ~~~~~~

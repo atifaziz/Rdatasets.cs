@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    softbacks
+   softbacks
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 This data frame contains the following columns:
 
 volume
-    a numeric vector giving the book volumes in cubic centimeters
+   a numeric vector giving the book volumes in cubic centimeters
 
 weight
-    a numeric vector giving the weights in grams
+   a numeric vector giving the weights in grams
 
 Source
 ~~~~~~
@@ -39,7 +39,7 @@ Examples
 
 ::
 
-    print("Outliers in Simple Regression - Example 5.2")
-    paperback.lm <- lm(weight ~ volume, data=softbacks)
-    summary(paperback.lm)
-    plot(paperback.lm)
+   print("Outliers in Simple Regression - Example 5.2")
+   paperback.lm <- lm(weight ~ volume, data=softbacks)
+   summary(paperback.lm)
+   plot(paperback.lm)

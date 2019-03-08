@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(pilot)
+   data(pilot, package="robustbase")
 
 Format
 ~~~~~~
@@ -27,10 +27,10 @@ Format
 A data frame with 20 observations on the following 2 variables.
 
 ``X``
-    Organic acid content - extraction
+   Organic acid content - extraction
 
 ``Y``
-    Acid content - titration
+   Acid content - titration
 
 Source
 ~~~~~~
@@ -43,6 +43,6 @@ Examples
 
 ::
 
-    data(pilot)
-    summary(lm.pilot <- lm(Y ~.,data=pilot))
+   data(pilot)
+   summary(lm.pilot <- lm(Y ~.,data=pilot))
 

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(SwimRecords)
+   data(SwimRecords)
 
 Format
 ~~~~~~
@@ -33,8 +33,8 @@ Examples
 
 ::
 
-    data(SwimRecords)
-    if (require(lattice)) {
-      xyplot(time~year, data=SwimRecords, groups=sex)
-    }
+   data(SwimRecords)
+   if (require(ggformula)) {
+     gf_point(time ~ year, data = SwimRecords, color = ~ sex) 
+   }
 

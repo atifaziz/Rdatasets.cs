@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    topo
+   topo
 
 Format
 ~~~~~~
@@ -24,13 +24,13 @@ Format
 This data frame contains the following columns:
 
 ``x``
-    x coordinates (units of 50 feet)
+   x coordinates (units of 50 feet)
 
 ``y``
-    y coordinates (units of 50 feet)
+   y coordinates (units of 50 feet)
 
 ``z``
-    heights (feet)
+   heights (feet)
 
 Source
 ~~~~~~

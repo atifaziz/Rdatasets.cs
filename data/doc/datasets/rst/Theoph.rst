@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Theoph
+   Theoph
 
 Format
 ~~~~~~
@@ -26,21 +26,21 @@ An object of class
 containing the following columns:
 
 Subject
-    an ordered factor with levels ``1``, ..., ``12`` identifying the
-    subject on whom the observation was made. The ordering is by
-    increasing maximum concentration of theophylline observed.
+   an ordered factor with levels ``1``, ..., ``12`` identifying the
+   subject on whom the observation was made. The ordering is by
+   increasing maximum concentration of theophylline observed.
 
 Wt
-    weight of the subject (kg).
+   weight of the subject (kg).
 
 Dose
-    dose of theophylline administered orally to the subject (mg/kg).
+   dose of theophylline administered orally to the subject (mg/kg).
 
 Time
-    time since drug administration when the sample was drawn (hr).
+   time since drug administration when the sample was drawn (hr).
 
 conc
-    theophylline concentration in the sample (mg/L).
+   theophylline concentration in the sample (mg/L).
 
 Details
 ~~~~~~~
@@ -82,19 +82,19 @@ Examples
 
 ::
 
-    require(stats); require(graphics)
+   require(stats); require(graphics)
 
-    coplot(conc ~ Time | Subject, data = Theoph, show.given = FALSE)
-    Theoph.4 <- subset(Theoph, Subject == 4)
-    fm1 <- nls(conc ~ SSfol(Dose, Time, lKe, lKa, lCl),
-               data = Theoph.4)
-    summary(fm1)
-    plot(conc ~ Time, data = Theoph.4,
-         xlab = "Time since drug administration (hr)",
-         ylab = "Theophylline concentration (mg/L)",
-         main = "Observed concentrations and fitted model",
-         sub  = "Theophylline data - Subject 4 only",
-         las = 1, col = 4)
-    xvals <- seq(0, par("usr")[2], length.out = 55)
-    lines(xvals, predict(fm1, newdata = list(Time = xvals)),
-          col = 4)
+   coplot(conc ~ Time | Subject, data = Theoph, show.given = FALSE)
+   Theoph.4 <- subset(Theoph, Subject == 4)
+   fm1 <- nls(conc ~ SSfol(Dose, Time, lKe, lKa, lCl),
+              data = Theoph.4)
+   summary(fm1)
+   plot(conc ~ Time, data = Theoph.4,
+        xlab = "Time since drug administration (hr)",
+        ylab = "Theophylline concentration (mg/L)",
+        main = "Observed concentrations and fitted model",
+        sub  = "Theophylline data - Subject 4 only",
+        las = 1, col = 4)
+   xvals <- seq(0, par("usr")[2], length.out = 55)
+   lines(xvals, predict(fm1, newdata = list(Time = xvals)),
+         col = 4)

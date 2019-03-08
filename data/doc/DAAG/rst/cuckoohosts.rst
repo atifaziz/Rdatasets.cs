@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    cuckoohosts
+   cuckoohosts
 
 Format
 ~~~~~~
@@ -24,40 +24,40 @@ Format
 A data frame with 10 observations on the following 12 variables.
 
 clength
-    mean length of cuckoo eggs in given host's nest
+   mean length of cuckoo eggs in given host's nest
 
 cl.sd
-    standard deviation of cuckoo egg lengths
+   standard deviation of cuckoo egg lengths
 
 cbreadth
-    mean breadth of cuckoo eggs in given host's nest
+   mean breadth of cuckoo eggs in given host's nest
 
 cb.sd
-    standard deviation of cuckoo egg breadths
+   standard deviation of cuckoo egg breadths
 
 cnum
-    number of cuckoo eggs
+   number of cuckoo eggs
 
 hlength
-    length of host eggs
+   length of host eggs
 
 hl.sd
-    standard deviation of host egg lengths
+   standard deviation of host egg lengths
 
 hbreadth
-    breadth of host eggs
+   breadth of host eggs
 
 hb.sd
-    standard deviation of host egg breadths
+   standard deviation of host egg breadths
 
 hnum
-    number of host eggs
+   number of host eggs
 
 match
-    number of eggs where color matched
+   number of eggs where color matched
 
 nomatch
-    number where color did not match
+   number where color did not match
 
 Details
 ~~~~~~~
@@ -81,8 +81,8 @@ Examples
 
 ::
 
-    cuckoohosts
-    str(cuckoohosts)
-    plot(cuckoohosts)
-    with(cuckoohosts,
-         plot(c(clength,hlength),c(cbreadth,hbreadth),col=rep(1:2,c(6,6))))
+   cuckoohosts
+   str(cuckoohosts)
+   plot(cuckoohosts)
+   with(cuckoohosts,
+        plot(c(clength,hlength),c(cbreadth,hbreadth),col=rep(1:2,c(6,6))))

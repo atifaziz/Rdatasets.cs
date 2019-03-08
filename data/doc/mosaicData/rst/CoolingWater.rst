@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(CoolingWater)
+   data(CoolingWater)
 
 Format
 ~~~~~~
@@ -44,8 +44,8 @@ Examples
 
 ::
 
-    data(CoolingWater)
-    if (require(lattice)) {
-      xyplot(temp~time, data=CoolingWater)
-    }
+   data(CoolingWater)
+   if (require(ggformula)) {
+     gf_point(temp ~ time, data = CoolingWater, alpha = 0.5)
+   }
 

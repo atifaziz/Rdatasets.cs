@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(CRSPday)
+   data(CRSPday)
 
 Format
 ~~~~~~
@@ -29,25 +29,25 @@ Format
 A dataframe containing :
 
 year
-    the year
+   the year
 
 month
-    the month
+   the month
 
 day
-    the day
+   the day
 
 ge
-    the return for General Electric, Permno 12060
+   the return for General Electric, Permno 12060
 
 ibm
-    the return for IBM, Permno 12490
+   the return for IBM, Permno 12490
 
 mobil
-    the return for Mobil Corporation, Permno 15966
+   the return for Mobil Corporation, Permno 15966
 
 crsp
-    the return for the CRSP value-weighted index, including dividends
+   the return for the CRSP value-weighted index, including dividends
 
 Source
 ~~~~~~

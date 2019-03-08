@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(KidsFeet)
+   data(KidsFeet)
 
 Format
 ~~~~~~
@@ -61,5 +61,5 @@ Examples
 
 ::
 
-    data(KidsFeet)
+   data(KidsFeet)
 

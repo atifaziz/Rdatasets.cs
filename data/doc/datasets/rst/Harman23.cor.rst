@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Harman23.cor
+   Harman23.cor
 
 Source
 ~~~~~~
@@ -29,6 +29,6 @@ Examples
 
 ::
 
-    require(stats)
-    (Harman23.FA <- factanal(factors = 1, covmat = Harman23.cor))
-    for(factors in 2:4) print(update(Harman23.FA, factors = factors))
+   require(stats)
+   (Harman23.FA <- factanal(factors = 1, covmat = Harman23.cor))
+   for(factors in 2:4) print(update(Harman23.FA, factors = factors))

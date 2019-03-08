@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    SP500
+   SP500
 
 Format
 ~~~~~~

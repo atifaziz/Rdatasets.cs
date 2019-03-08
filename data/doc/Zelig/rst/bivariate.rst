@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(bivariate)
+   data(bivariate)
 
 Format
 ~~~~~~

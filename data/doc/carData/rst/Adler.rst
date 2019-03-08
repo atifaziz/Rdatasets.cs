@@ -26,7 +26,7 @@ Usage
 
 ::
 
-    Adler
+   Adler
 
 Format
 ~~~~~~
@@ -34,15 +34,15 @@ Format
 This data frame contains the following columns:
 
 instruction
-    a factor with levels: ``good``, good data; ``none``, no stress;
-    ``scientific``, scientific data.
+   a factor with levels: ``good``, good data; ``none``, no stress;
+   ``scientific``, scientific data.
 
 expectation
-    a factor with levels: ``high``, expect high ratings; ``low``, expect
-    low ratings.
+   a factor with levels: ``high``, expect high ratings; ``low``, expect
+   low ratings.
 
 rating
-    The average rating obtained.
+   The average rating obtained.
 
 Source
 ~~~~~~

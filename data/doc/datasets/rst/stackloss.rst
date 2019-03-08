@@ -15,10 +15,10 @@ Usage
 
 ::
 
-    stackloss
+   stackloss
 
-    stack.x
-    stack.loss
+   stack.x
+   stack.loss
 
 Format
 ~~~~~~
@@ -81,5 +81,5 @@ Examples
 
 ::
 
-    require(stats)
-    summary(lm.stack <- lm(stack.loss ~ stack.x))
+   require(stats)
+   summary(lm.stack <- lm(stack.loss ~ stack.x))

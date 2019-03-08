@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    anesthetic
+   anesthetic
 
 Format
 ~~~~~~
@@ -25,17 +25,17 @@ Format
 This data frame contains the following columns:
 
 move
-    a binary numeric vector coded for patient movement (0 = no movement,
-    1 = movement)
+   a binary numeric vector coded for patient movement (0 = no movement,
+   1 = movement)
 
 conc
-    anesthetic concentration
+   anesthetic concentration
 
 logconc
-    logarithm of concentration
+   logarithm of concentration
 
 nomove
-    the complement of move
+   the complement of move
 
 Details
 ~~~~~~~
@@ -53,23 +53,23 @@ Examples
 
 ::
 
-    print("Logistic Regression - Example 8.1.4")
+   print("Logistic Regression - Example 8.1.4")
 
-    z <- table(anesthetic$nomove, anesthetic$conc)
-    tot <- apply(z, 2, sum)         # totals at each concentration
-    prop <- z[2,  ]/(tot)           # proportions at each concentration
-    oprop <- sum(z[2,  ])/sum(tot)  # expected proportion moving if concentration had no effect
-    conc <- as.numeric(dimnames(z)[[2]])
-    plot(conc, prop, xlab = "Concentration", ylab = "Proportion", xlim = c(.5,2.5),
-        ylim = c(0, 1), pch = 16)
-    chw <- par()$cxy[1]
-    text(conc - 0.75 * chw, prop, paste(tot), adj = 1)
-    abline(h = oprop, lty = 2)
+   z <- table(anesthetic$nomove, anesthetic$conc)
+   tot <- apply(z, 2, sum)         # totals at each concentration
+   prop <- z[2,  ]/(tot)           # proportions at each concentration
+   oprop <- sum(z[2,  ])/sum(tot)  # expected proportion moving if concentration had no effect
+   conc <- as.numeric(dimnames(z)[[2]])
+   plot(conc, prop, xlab = "Concentration", ylab = "Proportion", xlim = c(.5,2.5),
+       ylim = c(0, 1), pch = 16)
+   chw <- par()$cxy[1]
+   text(conc - 0.75 * chw, prop, paste(tot), adj = 1)
+   abline(h = oprop, lty = 2)
 
-    pause()
+   pause()
 
-    anes.logit <- glm(nomove ~ conc, family = binomial(link = logit),
-      data = anesthetic)
-    anova(anes.logit)
-    summary(anes.logit)
+   anes.logit <- glm(nomove ~ conc, family = binomial(link = logit),
+     data = anesthetic)
+   anova(anes.logit)
+   summary(anes.logit)
 

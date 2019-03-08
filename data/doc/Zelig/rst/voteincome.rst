@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(voteincome)
+   data(voteincome)
 
 Format
 ~~~~~~
@@ -27,31 +27,30 @@ A data frame containing 7 variables ("state", "year", "vote", "income",
 "education", "age", "female") and 1500 observations.
 
 ``state``
-    a factor variable with levels equal to "AR" (Arkansas) and "SC"
-    (South Carolina)
+   a factor variable with levels equal to "AR" (Arkansas) and "SC"
+   (South Carolina)
 
 ``year``
-    an integer vector
+   an integer vector
 
 ``vote``
-    an integer vector taking on values "1" (Voted) and "0" (Did Not
-    Vote)
+   an integer vector taking on values "1" (Voted) and "0" (Did Not Vote)
 
 ``income``
-    an integer vector ranging from "4" (Less than \\$5000) to "17"
-    (Greater than \\$75000) denoting family income. See the CPS codebook
-    for more information on variable coding
+   an integer vector ranging from "4" (Less than \\$5000) to "17"
+   (Greater than \\$75000) denoting family income. See the CPS codebook
+   for more information on variable coding
 
 ``education``
-    an integer vector ranging from "1" (Less than High School Education)
-    to "4" (More than a College Education). See the CPS codebook for
-    more information on variable coding
+   an integer vector ranging from "1" (Less than High School Education)
+   to "4" (More than a College Education). See the CPS codebook for more
+   information on variable coding
 
 ``age``
-    an integer vector ranging from "18" to "85"
+   an integer vector ranging from "18" to "85"
 
 ``female``
-    an integer vector taking on values "1" (Female) and "0" (Male)
+   an integer vector taking on values "1" (Female) and "0" (Male)
 
 Source
 ~~~~~~

@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    nuclear
+   nuclear
 
 Format
 ~~~~~~
@@ -30,46 +30,46 @@ Format
 This data frame contains the following columns:
 
 ``cost``
-    The capital cost of construction in millions of dollars adjusted to
-    1976 base.
+   The capital cost of construction in millions of dollars adjusted to
+   1976 base.
 
 ``date``
-    The date on which the construction permit was issued. The data are
-    measured in years since January 1 1990 to the nearest month.
+   The date on which the construction permit was issued. The data are
+   measured in years since January 1 1990 to the nearest month.
 
 ``t1``
-    The time between application for and issue of the construction
-    permit.
+   The time between application for and issue of the construction
+   permit.
 
 ``t2``
-    The time between issue of operating license and construction permit.
+   The time between issue of operating license and construction permit.
 
 ``cap``
-    The net capacity of the power plant (MWe).
+   The net capacity of the power plant (MWe).
 
 ``pr``
-    A binary variable where ``1`` indicates the prior existence of a LWR
-    plant at the same site.
+   A binary variable where ``1`` indicates the prior existence of a LWR
+   plant at the same site.
 
 ``ne``
-    A binary variable where ``1`` indicates that the plant was
-    constructed in the north-east region of the U.S.A.
+   A binary variable where ``1`` indicates that the plant was
+   constructed in the north-east region of the U.S.A.
 
 ``ct``
-    A binary variable where ``1`` indicates the use of a cooling tower
-    in the plant.
+   A binary variable where ``1`` indicates the use of a cooling tower in
+   the plant.
 
 ``bw``
-    A binary variable where ``1`` indicates that the nuclear steam
-    supply system was manufactured by Babcock-Wilcox.
+   A binary variable where ``1`` indicates that the nuclear steam supply
+   system was manufactured by Babcock-Wilcox.
 
 ``cum.n``
-    The cumulative number of power plants constructed by each
-    architect-engineer.
+   The cumulative number of power plants constructed by each
+   architect-engineer.
 
 ``pt``
-    A binary variable where ``1`` indicates those plants with partial
-    turnkey guarantees.
+   A binary variable where ``1`` indicates those plants with partial
+   turnkey guarantees.
 
 Source
 ~~~~~~

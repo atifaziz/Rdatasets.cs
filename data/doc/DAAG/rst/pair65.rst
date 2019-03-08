@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    pair65
+   pair65
 
 Format
 ~~~~~~
@@ -28,10 +28,10 @@ Format
 This data frame contains the following columns:
 
 heated
-    a numeric vector giving the stretch lengths for the heated bands
+   a numeric vector giving the stretch lengths for the heated bands
 
 ambient
-    a numeric vector giving the stretch lengths for the unheated bands
+   a numeric vector giving the stretch lengths for the unheated bands
 
 Source
 ~~~~~~
@@ -43,5 +43,5 @@ Examples
 
 ::
 
-    mean(pair65$heated - pair65$ambient)
-    sd(pair65$heated - pair65$ambient)
+   mean(pair65$heated - pair65$ambient)
+   sd(pair65$heated - pair65$ambient)

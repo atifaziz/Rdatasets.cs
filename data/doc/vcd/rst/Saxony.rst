@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("Saxony")
+   data("Saxony")
 
 Format
 ~~~~~~
@@ -54,7 +54,7 @@ Examples
 
 ::
 
-    data("Saxony")
-    gf <- goodfit(Saxony, type = "binomial")
-    summary(gf)
-    plot(gf)
+   data("Saxony")
+   gf <- goodfit(Saxony, type = "binomial")
+   summary(gf)
+   plot(gf)

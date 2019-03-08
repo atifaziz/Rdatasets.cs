@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Icecream)
+   data(Icecream)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A time serie containing :
 
 cons
-    consumption of ice cream per head (in pints);
+   consumption of ice cream per head (in pints);
 
 income
-    average family income per week (in US Dollars);
+   average family income per week (in US Dollars);
 
 price
-    price of ice cream (per pint);
+   price of ice cream (per pint);
 
 temp
-    average temperature (in Fahrenheit);
+   average temperature (in Fahrenheit);
 
 Source
 ~~~~~~

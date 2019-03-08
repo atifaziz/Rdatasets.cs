@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(LaborSupply)
+   data(LaborSupply)
 
 Format
 ~~~~~~
@@ -25,25 +25,25 @@ Format
 A data frame containing :
 
 lnhr
-    log of annual hours worked
+   log of annual hours worked
 
 lnwg
-    log of hourly wage
+   log of hourly wage
 
 kids
-    number of children
+   number of children
 
 age
-    age
+   age
 
 disab
-    bad health
+   bad health
 
 id
-    id
+   id
 
 year
-    year
+   year
 
 Source
 ~~~~~~

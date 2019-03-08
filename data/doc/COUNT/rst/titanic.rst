@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(titanic)
+   data(titanic)
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 A data frame with 1316 observations on the following 4 variables.
 
 ``class``
-    a factor with levels ``1st class`` ``2nd class`` ``3rd class``
-    ``crew``
+   a factor with levels ``1st class`` ``2nd class`` ``3rd class``
+   ``crew``
 
 ``age``
-    a factor with levels ``child`` ``adults``
+   a factor with levels ``child`` ``adults``
 
 ``sex``
-    a factor with levels ``women`` ``man``
+   a factor with levels ``women`` ``man``
 
 ``survived``
-    a factor with levels ``no`` ``yes``
+   a factor with levels ``no`` ``yes``
 
 Details
 ~~~~~~~
@@ -60,8 +60,8 @@ Examples
 ::
 
 
-    data(titanic)
-    titanic$survival <- titanic$survived == "yes"
-    glmlr <- glm(survival ~ age + sex + factor(class), family=binomial, data=titanic)
-    summary(glmlr)
+   data(titanic)
+   titanic$survival <- titanic$survived == "yes"
+   glmlr <- glm(survival ~ age + sex + factor(class), family=binomial, data=titanic)
+   summary(glmlr)
 

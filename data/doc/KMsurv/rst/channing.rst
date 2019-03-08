@@ -16,22 +16,22 @@ Format
 This data frame contains the following columns:
 
 obs
-    Observation number
+   Observation number
 
 death
-    Death status (1=dead, 0=alive)
+   Death status (1=dead, 0=alive)
 
 ageentry
-    Age of entry into retirement home, months
+   Age of entry into retirement home, months
 
 age
-    Age of death or left retirement home, months
+   Age of death or left retirement home, months
 
 time
-    Difference between the above two ages, months
+   Difference between the above two ages, months
 
 gender
-    Gender (1=male, 2=female)
+   Gender (1=male, 2=female)
 
 Source
 ~~~~~~
@@ -44,4 +44,4 @@ Examples
 
 ::
 
-    data(channing)
+   data(channing)

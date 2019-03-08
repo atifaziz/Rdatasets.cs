@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(kmenta)
+   data(kmenta)
 
 Format
 ~~~~~~

@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(neo)
+   data(neo)
 
 Format
 ~~~~~~
@@ -28,94 +28,94 @@ A data frame of a 30 x 30 correlation matrix with the following 30
 variables.
 
 N1
-    Anxiety
+   Anxiety
 
 N2
-    AngryHostility
+   AngryHostility
 
  N3
-    Depression
+   Depression
 
  N4
-    Self-Consciousness
+   Self-Consciousness
 
  N5
-    Impulsiveness
+   Impulsiveness
 
  N6
-    Vulnerability
+   Vulnerability
 
  E1
-    Warmth
+   Warmth
 
  E2
-    Gregariousness
+   Gregariousness
 
  E3
-    Assertiveness
+   Assertiveness
 
  E4
-    Activity
+   Activity
 
  E5
-    Excitement-Seeking
+   Excitement-Seeking
 
  E6
-    PositiveEmotions
+   PositiveEmotions
 
  O1
-    Fantasy
+   Fantasy
 
  O2
-    Aesthetics
+   Aesthetics
 
  O3
-    Feelings
+   Feelings
 
  O4
-    Ideas
+   Ideas
 
  O5
-    Actions
+   Actions
 
  O6
-    Values
+   Values
 
  A1
-    Trust
+   Trust
 
  A2
-    Straightforwardness
+   Straightforwardness
 
  A3
-    Altruism
+   Altruism
 
  A4
-    Compliance
+   Compliance
 
  A5
-    Modesty
+   Modesty
 
  A6
-    Tender-Mindedness
+   Tender-Mindedness
 
  C1
-    Competence
+   Competence
 
  C2
-    Order
+   Order
 
  C3
-    Dutifulness
+   Dutifulness
 
  C4
-    AchievementStriving
+   AchievementStriving
 
  C5
-    Self-Discipline
+   Self-Discipline
 
  C6
-    Deliberation
+   Deliberation
 
 Details
 ~~~~~~~
@@ -169,9 +169,9 @@ Examples
 
 ::
 
-    data(neo)
-    n5 <- fa(neo,5)
-    neo.keys <- make.keys(30,list(N=c(1:6),E=c(7:12),O=c(13:18),A=c(19:24),C=c(25:30)))
-    n5p <- target.rot(n5,neo.keys) #show a targeted rotation for simple structure
-    n5p
+   data(neo)
+   n5 <- fa(neo,5)
+   neo.keys <- make.keys(30,list(N=c(1:6),E=c(7:12),O=c(13:18),A=c(19:24),C=c(25:30)))
+   n5p <- target.rot(n5,neo.keys) #show a targeted rotation for simple structure
+   n5p
 

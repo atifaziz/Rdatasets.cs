@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Soils
+   Soils
 
 Format
 ~~~~~~
@@ -27,49 +27,49 @@ A data frame with 48 observations on the following 14 variables. There
 are 3 factors and 9 response variables.
 
 ``Group``
-    a factor with 12 levels, corresponding to the combinations of
-    ``Contour`` and ``Depth``
+   a factor with 12 levels, corresponding to the combinations of
+   ``Contour`` and ``Depth``
 
 ``Contour``
-    a factor with 3 levels: ``Depression`` ``Slope`` ``Top``
+   a factor with 3 levels: ``Depression`` ``Slope`` ``Top``
 
 ``Depth``
-    a factor with 4 levels: ``0-10`` ``10-30`` ``30-60`` ``60-90``
+   a factor with 4 levels: ``0-10`` ``10-30`` ``30-60`` ``60-90``
 
 ``Gp``
-    a factor with 12 levels, giving abbreviations for the groups: ``D0``
-    ``D1`` ``D3`` ``D6`` ``S0`` ``S1`` ``S3`` ``S6`` ``T0`` ``T1``
-    ``T3`` ``T6``
+   a factor with 12 levels, giving abbreviations for the groups: ``D0``
+   ``D1`` ``D3`` ``D6`` ``S0`` ``S1`` ``S3`` ``S6`` ``T0`` ``T1`` ``T3``
+   ``T6``
 
 ``Block``
-    a factor with levels ``1`` ``2`` ``3`` ``4``
+   a factor with levels ``1`` ``2`` ``3`` ``4``
 
 ``pH``
-    soil pH
+   soil pH
 
 ``N``
-    total nitrogen in %
+   total nitrogen in %
 
 ``Dens``
-    bulk density in gm/cm$^3$
+   bulk density in gm/cm$^3$
 
 ``P``
-    total phosphorous in ppm
+   total phosphorous in ppm
 
 ``Ca``
-    calcium in me/100 gm.
+   calcium in me/100 gm.
 
 ``Mg``
-    magnesium in me/100 gm.
+   magnesium in me/100 gm.
 
 ``K``
-    phosphorous in me/100 gm.
+   phosphorous in me/100 gm.
 
 ``Na``
-    sodium in me/100 gm.
+   sodium in me/100 gm.
 
 ``Conduc``
-    conductivity
+   conductivity
 
 Details
 ~~~~~~~

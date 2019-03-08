@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(siemens)
+   data(siemens)
 
 Format
 ~~~~~~

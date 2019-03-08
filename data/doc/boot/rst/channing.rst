@@ -25,7 +25,7 @@ Usage
 
 ::
 
-    channing
+   channing
 
 Format
 ~~~~~~
@@ -33,24 +33,24 @@ Format
 This data frame contains the following columns:
 
 ``sex``
-    A factor for the sex of each resident (``"Male"`` or ``"Female"``).
+   A factor for the sex of each resident (``"Male"`` or ``"Female"``).
 
 ``entry``
-    The residents age (in months) on entry to the centre
+   The residents age (in months) on entry to the centre
 
 ``exit``
-    The age (in months) of the resident on death, leaving the centre or
-    July 1, 1975 whichever event occurred first.
+   The age (in months) of the resident on death, leaving the centre or
+   July 1, 1975 whichever event occurred first.
 
 ``time``
-    The length of time (in months) that the resident spent at Channing
-    House. (``time=exit-entry``)
+   The length of time (in months) that the resident spent at Channing
+   House. (``time=exit-entry``)
 
 ``cens``
-    The indicator of right censoring. 1 indicates that the resident died
-    at Channing House, 0 indicates that they left the house prior to
-    July 1, 1975 or that they were still alive and living in the centre
-    at that date.
+   The indicator of right censoring. 1 indicates that the resident died
+   at Channing House, 0 indicates that they left the house prior to July
+   1, 1975 or that they were still alive and living in the centre at
+   that date.
 
 Source
 ~~~~~~

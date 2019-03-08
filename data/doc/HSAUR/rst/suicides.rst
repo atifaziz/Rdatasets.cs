@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("suicides")
+   data("suicides")
 
 Format
 ~~~~~~
@@ -36,6 +36,6 @@ Examples
 ::
 
 
-      data("suicides", package = "HSAUR")
-      mosaicplot(suicides)
+     data("suicides", package = "HSAUR")
+     mosaicplot(suicides)
 

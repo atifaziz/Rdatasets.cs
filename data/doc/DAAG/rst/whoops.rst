@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(whoops)
+   data(whoops)
 
 Format
 ~~~~~~
@@ -39,6 +39,6 @@ Examples
 
 ::
 
-    data(whoops)
-    str(whoops)
-    plot(whoops) 
+   data(whoops)
+   str(whoops)
+   plot(whoops) 

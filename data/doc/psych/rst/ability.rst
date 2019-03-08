@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(iqitems)
+   data(iqitems)
 
 Format
 ~~~~~~
@@ -30,52 +30,52 @@ A data frame with 1525 observations on the following 16 variables. The
 number following the name is the item number from SAPA.
 
 ``reason.4``
-    Basic reasoning questions
+   Basic reasoning questions
 
 ``reason.16``
-    Basic reasoning question
+   Basic reasoning question
 
 ``reason.17``
-    Basic reasoning question
+   Basic reasoning question
 
 ``reason.19``
-    Basic reasoning question
+   Basic reasoning question
 
 ``letter.7``
-    In the following alphanumeric series, what letter comes next?
+   In the following alphanumeric series, what letter comes next?
 
 ``letter.33``
-    In the following alphanumeric series, what letter comes next?
+   In the following alphanumeric series, what letter comes next?
 
 ``letter.34``
-    In the following alphanumeric series, what letter comes next
+   In the following alphanumeric series, what letter comes next
 
 ``letter.58``
-    In the following alphanumeric series, what letter comes next?
+   In the following alphanumeric series, what letter comes next?
 
 ``matrix.45``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``matrix.46``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``matrix.47``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``matrix.55``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``rotate.3``
-    Spatial Rotation of type 1.2
+   Spatial Rotation of type 1.2
 
 ``rotate.4``
-    Spatial Rotation of type 1.2
+   Spatial Rotation of type 1.2
 
 ``rotate.6``
-    Spatial Rotation of type 1.1
+   Spatial Rotation of type 1.1
 
 ``rotate.8``
-    Spatial Rotation of type 2.3
+   Spatial Rotation of type 2.3
 
 Details
 ~~~~~~~
@@ -127,7 +127,7 @@ Examples
 
 ::
 
-    data(ability)
-    #not run
-    # ability.irt <- irt.fa(ability)
-    # ability.scores <- score.irt(ability.irt,ability)
+   data(ability)
+   #not run
+   # ability.irt <- irt.fa(ability)
+   # ability.scores <- score.irt(ability.irt,ability)

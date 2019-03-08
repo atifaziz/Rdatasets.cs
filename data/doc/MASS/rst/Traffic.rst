@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    Traffic
+   Traffic
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 This data frame contains the following columns:
 
 ``year``
-    1961 or 1962.
+   1961 or 1962.
 
 ``day``
-    of year.
+   of year.
 
 ``limit``
-    was there a speed limit?
+   was there a speed limit?
 
 ``y``
-    traffic accident count for that day.
+   traffic accident count for that day.
 
 Source
 ~~~~~~

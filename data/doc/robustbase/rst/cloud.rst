@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(cloud)
+   data(cloud, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 19 observations on the following 2 variables.
 
 ``Percentage``
-    Percentage of I-8
+   Percentage of I-8
 
 ``CloudPoint``
-    Cloud point
+   Cloud point
 
 Source
 ~~~~~~
@@ -41,6 +41,6 @@ Examples
 
 ::
 
-    data(cloud)
-    summary(lm.cloud <- lm(CloudPoint ~., data=cloud))
+   data(cloud)
+   summary(lm.cloud <- lm(CloudPoint ~., data=cloud))
 

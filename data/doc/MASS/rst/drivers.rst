@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    drivers
+   drivers
 
 Source
 ~~~~~~

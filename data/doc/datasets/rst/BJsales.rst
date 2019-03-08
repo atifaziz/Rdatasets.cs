@@ -16,8 +16,8 @@ Usage
 
 ::
 
-    BJsales
-    BJsales.lead
+   BJsales
+   BJsales.lead
 
 Source
 ~~~~~~

@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(UnempDur)
+   data(UnempDur)
 
 Format
 ~~~~~~
@@ -26,37 +26,37 @@ Format
 A time serie containing :
 
 spell
-    length of spell in number of two-week intervals
+   length of spell in number of two-week intervals
 
 censor1
-    = 1 if re-employed at full-time job
+   = 1 if re-employed at full-time job
 
 censor2
-    = 1 if re-employed at part-time job
+   = 1 if re-employed at part-time job
 
 censor3
-    1 if re-employed but left job: pt-ft status unknown
+   1 if re-employed but left job: pt-ft status unknown
 
 censor4
-    1 if still jobless
+   1 if still jobless
 
 age
-    age
+   age
 
 ui
-    = 1 if filed UI claim
+   = 1 if filed UI claim
 
 reprate
-    eligible replacement rate
+   eligible replacement rate
 
 disrate
-    eligible disregard rate
+   eligible disregard rate
 
 logwage
-    log weekly earnings in lost job (1985\$)
+   log weekly earnings in lost job (1985\$)
 
 tenure
-    years tenure in lost job
+   years tenure in lost job
 
 Source
 ~~~~~~

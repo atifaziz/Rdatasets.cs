@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    data(HHSCyberSecurityBreaches)
+   data(HHSCyberSecurityBreaches)
 
 Format
 ~~~~~~
@@ -30,45 +30,45 @@ Format
 A dataframe containing 1151 observations of 9 variables:
 
 Name.of.Covered.Entity
-    A ``character`` vector identifying the organization involved in the
-    breach.
+   A ``character`` vector identifying the organization involved in the
+   breach.
 
 State
-    A ``factor`` giving the two-letter abbreviation of the US state or
-    territory where the breach occurred. This has 52 levels for the 50
-    states plus the District of Columbia (DC) and Puerto Rico (PR).
+   A ``factor`` giving the two-letter abbreviation of the US state or
+   territory where the breach occurred. This has 52 levels for the 50
+   states plus the District of Columbia (DC) and Puerto Rico (PR).
 
 Covered.Entity.Type
-    A ``factor`` giving the organization type of the covered entity with
-    levels "Business Associate", "Health Plan", "Healthcare Clearing
-    House", and "Healthcare Provider"
+   A ``factor`` giving the organization type of the covered entity with
+   levels "Business Associate", "Health Plan", "Healthcare Clearing
+   House", and "Healthcare Provider"
 
 Individuals.Affected
-    An ``integer`` giving the number of humans whose records were
-    compromised in the breach. This is 500 or greater; U.S. law requires
-    reports of breaches involving 500 or more records but not of
-    breaches involving fewer.
+   An ``integer`` giving the number of humans whose records were
+   compromised in the breach. This is 500 or greater; U.S. law requires
+   reports of breaches involving 500 or more records but not of breaches
+   involving fewer.
 
 Breach.Submission.Date
-    Date when the breach was reported.
+   Date when the breach was reported.
 
 Type.of.Breach
-    A ``factor`` giving one of 29 different combinations of 7 different
-    breach types, separated by ", ": "Hacking/IT Incident", "Improper
-    Disposal", "Loss", "Other", "Theft", "Unauthorized
-    Access/Disclosure", and "Unknown"
+   A ``factor`` giving one of 29 different combinations of 7 different
+   breach types, separated by ", ": "Hacking/IT Incident", "Improper
+   Disposal", "Loss", "Other", "Theft", "Unauthorized
+   Access/Disclosure", and "Unknown"
 
 Location.of.Breached.Information
-    A ``factor`` giving one of 47 different combinations of 8 different
-    location categories: "Desktop Computer", "Electronic Medical
-    Record", "Email", "Laptop", "Network Server", "Other", "Other
-    Portable Electronic Device", "Paper/Films"
+   A ``factor`` giving one of 47 different combinations of 8 different
+   location categories: "Desktop Computer", "Electronic Medical Record",
+   "Email", "Laptop", "Network Server", "Other", "Other Portable
+   Electronic Device", "Paper/Films"
 
 Business.Associate.Present
-    ``Logical`` = (Covered.Entity.Type == "Business Associate")
+   ``Logical`` = (Covered.Entity.Type == "Business Associate")
 
 Web.Description
-    A character vector giving a narrative description of the incident.
+   A character vector giving a narrative description of the incident.
 
 Details
 ~~~~~~~
@@ -115,30 +115,30 @@ Examples
 
 ::
 
-    ##
-    ## 1.  mean(Individuals.Affected)
-    ##
-    mean(HHSCyberSecurityBreaches$Individuals.Affected)
-    ##
-    ## 2.  Basic Breach Types
-    ##
-    tb <- as.character(HHSCyberSecurityBreaches$Type.of.Breach)
-    tb. <- strsplit(tb, ', ')
-    table(unlist(tb.))
-    # 8 levels, but two are the same apart from 
-    # a trailing blank.  
-    ##
-    ## 3.  Location.of.Breached.Information 
-    ##
-    lb <- as.character(HHSCyberSecurityBreaches[[
-              'Location.of.Breached.Information']])
-    table(lb)
-    lb. <- strsplit(lb, ', ')
-    table(unlist(lb.))
-    # 8 levels 
-    table(sapply(lb., length))
-    #   1    2    3    4    5    6    7    8 
-    #1007  119   13    8    1    1    1    1 
-    # all 8 levels together observed once 
-    # There are 256 = 2^8 possible combinations 
-    # of which 47 actually occur in these data.  
+   ##
+   ## 1.  mean(Individuals.Affected)
+   ##
+   mean(HHSCyberSecurityBreaches$Individuals.Affected)
+   ##
+   ## 2.  Basic Breach Types
+   ##
+   tb <- as.character(HHSCyberSecurityBreaches$Type.of.Breach)
+   tb. <- strsplit(tb, ', ')
+   table(unlist(tb.))
+   # 8 levels, but two are the same apart from 
+   # a trailing blank.  
+   ##
+   ## 3.  Location.of.Breached.Information 
+   ##
+   lb <- as.character(HHSCyberSecurityBreaches[[
+             'Location.of.Breached.Information']])
+   table(lb)
+   lb. <- strsplit(lb, ', ')
+   table(unlist(lb.))
+   # 8 levels 
+   table(sapply(lb., length))
+   #   1    2    3    4    5    6    7    8 
+   #1007  119   13    8    1    1    1    1 
+   # all 8 levels together observed once 
+   # There are 256 = 2^8 possible combinations 
+   # of which 47 actually occur in these data.  

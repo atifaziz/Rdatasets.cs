@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    acme
+   acme
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 This data frame contains the following columns:
 
 ``month``
-    A character string representing the month of the observation.
+   A character string representing the month of the observation.
 
 ``market``
-    The excess return of the market as a whole.
+   The excess return of the market as a whole.
 
 ``acme``
-    The excess return for the Acme Cleveland Corporation.
+   The excess return for the Acme Cleveland Corporation.
 
 Source
 ~~~~~~

@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("WeldonDice")
+   data("WeldonDice")
 
 Format
 ~~~~~~
@@ -55,7 +55,7 @@ Examples
 
 ::
 
-    data("WeldonDice")
-    gf <- goodfit(WeldonDice, type = "binomial")
-    summary(gf)
-    plot(gf)
+   data("WeldonDice")
+   gf <- goodfit(WeldonDice, type = "binomial")
+   summary(gf)
+   plot(gf)

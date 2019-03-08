@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Gasoline)
+   data(Gasoline)
 
 Format
 ~~~~~~
@@ -29,22 +29,22 @@ Format
 A data frame containing :
 
 country
-    a factor with 18 levels
+   a factor with 18 levels
 
 year
-    the year
+   the year
 
 lgaspcar
-    logarithm of motor gasoline consumption per car
+   logarithm of motor gasoline consumption per car
 
 lincomep
-    logarithm of real per-capita income
+   logarithm of real per-capita income
 
 lrpmg
-    logarithm of real motor gasoline price
+   logarithm of real motor gasoline price
 
 lcarpcap
-    logarithm of the stock of cars per capita
+   logarithm of the stock of cars per capita
 
 Source
 ~~~~~~

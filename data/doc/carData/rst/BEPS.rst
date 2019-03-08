@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    BEPS
+   BEPS
 
 Format
 ~~~~~~
@@ -24,35 +24,35 @@ Format
 A data frame with 1525 observations on the following 10 variables.
 
 ``vote``
-    Party choice: ``Conservative``, ``Labour``, or ``Liberal Democrat``
+   Party choice: ``Conservative``, ``Labour``, or ``Liberal Democrat``
 
 ``age``
-    in years
+   in years
 
 ``economic.cond.national``
-    Assessment of current national economic conditions, 1 to 5.
+   Assessment of current national economic conditions, 1 to 5.
 
 ``economic.cond.household``
-    Assessment of current household economic conditions, 1 to 5.
+   Assessment of current household economic conditions, 1 to 5.
 
 ``Blair``
-    Assessment of the Labour leader, 1 to 5.
+   Assessment of the Labour leader, 1 to 5.
 
 ``Hague``
-    Assessment of the Conservative leader, 1 to 5.
+   Assessment of the Conservative leader, 1 to 5.
 
 ``Kennedy``
-    Assessment of the leader of the Liberal Democrats, 1 to 5.
+   Assessment of the leader of the Liberal Democrats, 1 to 5.
 
 ``Europe``
-    an 11-point scale that measures respondents' attitudes toward
-    European integration. High scores represent ‘Eurosceptic’ sentiment.
+   an 11-point scale that measures respondents' attitudes toward
+   European integration. High scores represent ‘Eurosceptic’ sentiment.
 
 ``political.knowledge``
-    Knowledge of parties' positions on European integration, 0 to 3.
+   Knowledge of parties' positions on European integration, 0 to 3.
 
 ``gender``
-    ``female`` or ``male``.
+   ``female`` or ``male``.
 
 References
 ~~~~~~~~~~
@@ -66,4 +66,4 @@ Examples
 
 ::
 
-    summary(BEPS)
+   summary(BEPS)

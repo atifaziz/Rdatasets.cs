@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Clothing)
+   data(Clothing)
 
 Format
 ~~~~~~
@@ -29,43 +29,43 @@ Format
 A dataframe containing :
 
 tsales
-    annual sales in Dutch guilders
+   annual sales in Dutch guilders
 
 sales
-    sales per square meter
+   sales per square meter
 
 margin
-    gross-profit-margin
+   gross-profit-margin
 
 nown
-    number of owners (managers)
+   number of owners (managers)
 
 nfull
-    number of full-timers
+   number of full-timers
 
 npart
-    number of part-timers
+   number of part-timers
 
 naux
-    number of helpers (temporary workers)
+   number of helpers (temporary workers)
 
 hoursw
-    total number of hours worked
+   total number of hours worked
 
 hourspw
-    number of hours worked per worker
+   number of hours worked per worker
 
 inv1
-    investment in shop-premises
+   investment in shop-premises
 
 inv2
-    investment in automation.
+   investment in automation.
 
 ssize
-    sales floorspace of the store (in m$^2$).
+   sales floorspace of the store (in m$^2$).
 
 start
-    year start of business
+   year start of business
 
 References
 ~~~~~~~~~~

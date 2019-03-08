@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Bfox
+   Bfox
 
 Format
 ~~~~~~
@@ -24,24 +24,24 @@ Format
 This data frame contains the following columns:
 
 partic
-    Percent of adult women in the workforce.
+   Percent of adult women in the workforce.
 
 tfr
-    Total fertility rate: expected births to a cohort of 1000 women at
-    current age-specific fertility rates.
+   Total fertility rate: expected births to a cohort of 1000 women at
+   current age-specific fertility rates.
 
 menwage
-    Men's average weekly wages, in constant 1935 dollars and adjusted
-    for current tax rates.
+   Men's average weekly wages, in constant 1935 dollars and adjusted for
+   current tax rates.
 
 womwage
-    Women's average weekly wages.
+   Women's average weekly wages.
 
 debt
-    Per-capita consumer debt, in constant dollars.
+   Per-capita consumer debt, in constant dollars.
 
 parttime
-    Percent of the active workforce working 34 hours per week or less.
+   Percent of the active workforce working 34 hours per week or less.
 
 Warning
 ~~~~~~~

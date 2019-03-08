@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(USstateAbbreviations)
+   data(USstateAbbreviations)
 
 Format
 ~~~~~~
@@ -27,16 +27,16 @@ territories and other political designation, some of which are obsolete
 but are included for historical reference.
 
 Name
-    The standard name of the entity.
+   The standard name of the entity.
 
 Status
-    description of status, e.g., state / commonwealth vs. island,
-    territory, military mail code, etc.
+   description of status, e.g., state / commonwealth vs. island,
+   territory, military mail code, etc.
 
 ISO, ANSI.letters, ANSI.digits, USPS, USCG, Old.GPO, AP, Other
-    Alternative abbreviations used per different standards. The most
-    commonly used among these may be the 2-letter codes officially used
-    by the US Postal Service (``USPS``).
+   Alternative abbreviations used per different standards. The most
+   commonly used among these may be the 2-letter codes officially used
+   by the US Postal Service (``USPS``).
 
 Details
 ~~~~~~~
@@ -61,15 +61,15 @@ Examples
 
 ::
 
-    ##
-    ## to use
-    ##
-    data(USstateAbbreviations)
+   ##
+   ## to use
+   ##
+   data(USstateAbbreviations)
 
-    ##
-    ## to update
-    ##
-    ## Not run: 
-    USstateAbb2 <- readUSstateAbbreviations()
+   ##
+   ## to update
+   ##
+   ## Not run: 
+   USstateAbb2 <- readUSstateAbbreviations()
 
-    ## End(Not run)
+   ## End(Not run)

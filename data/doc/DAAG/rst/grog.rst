@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(grog)
+   data(grog)
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 A data frame with 18 observations on the following 5 variables.
 
 ``Beer``
-    liters per annum
+   liters per annum
 
 ``Wine``
-    liters per annum
+   liters per annum
 
 ``Spirit``
-    liters per annum
+   liters per annum
 
 ``Country``
-    a factor with levels ``Australia`` ``NewZealand``
+   a factor with levels ``Australia`` ``NewZealand``
 
 ``Year``
-    Year ending in June of the given year
+   Year ending in June of the given year
 
 Details
 ~~~~~~~
@@ -61,7 +61,7 @@ Examples
 
 ::
 
-    data(grog)
-    library(lattice)
-    xyplot(Beer+Wine+Spirit ~ Year | Country, data=grog)
-    xyplot(Beer+Wine+Spirit ~ Year, groups=Country, data=grog, outer=TRUE)
+   data(grog)
+   library(lattice)
+   xyplot(Beer+Wine+Spirit ~ Year | Country, data=grog)
+   xyplot(Beer+Wine+Spirit ~ Year, groups=Country, data=grog, outer=TRUE)

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(PatentsRD)
+   data(PatentsRD)
 
 Format
 ~~~~~~
@@ -29,30 +29,29 @@ Format
 A dataframe containing :
 
 year
-    year
+   year
 
 fi
-    firm's id
+   firm's id
 
 sector
-    firm's main industry sector, one of aero (aerospace), chem
-    (chemistry), comput (computer), drugs, elec (electricity), food,
-    fuel (fuel and mining), glass, instr (instruments), machin
-    (machinery), metals, other, paper, soft (software), motor (motor
-    vehicles)
+   firm's main industry sector, one of aero (aerospace), chem
+   (chemistry), comput (computer), drugs, elec (electricity), food, fuel
+   (fuel and mining), glass, instr (instruments), machin (machinery),
+   metals, other, paper, soft (software), motor (motor vehicles)
 
 geo
-    geographic area, one of eu (European Union), japan, usa, rotw (rest
-    of the world)
+   geographic area, one of eu (European Union), japan, usa, rotw (rest
+   of the world)
 
 patent
-    numbers of European patent applications
+   numbers of European patent applications
 
 rdexp
-    log of R\&D expenditures
+   log of R\&D expenditures
 
 spil
-    log of spillovers
+   log of spillovers
 
 Source
 ~~~~~~

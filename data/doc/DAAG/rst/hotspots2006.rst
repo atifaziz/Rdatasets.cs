@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(hotspots2006)
+   data(hotspots2006)
 
 Format
 ~~~~~~
@@ -25,22 +25,22 @@ Format
 A data frame with 10 observations on the following 6 variables.
 
 ``age``
-    Ar-Ar age
+   Ar-Ar age
 
 ``CI95lim``
-    Measurement error; 95% CI
+   Measurement error; 95% CI
 
 ``geoErr``
-    Geological Uncertainty
+   Geological Uncertainty
 
 ``totplus``
-    Total uncertainty (+)
+   Total uncertainty (+)
 
 ``totminus``
-    Total uncertainty (-)
+   Total uncertainty (-)
 
 ``distance``
-    Distance in kilometers
+   Distance in kilometers
 
 Details
 ~~~~~~~
@@ -64,4 +64,4 @@ Examples
 
 ::
 
-    data(hotspots2006)
+   data(hotspots2006)

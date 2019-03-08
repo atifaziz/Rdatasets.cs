@@ -17,37 +17,37 @@ Usage
 
 ::
 
-    data(grouseticks)
+   data(grouseticks)
 
 Format
 ~~~~~~
 
 ``INDEX``
-    (factor) chick number (observation level)
+   (factor) chick number (observation level)
 
 ``TICKS``
-    number of ticks sampled
+   number of ticks sampled
 
 ``BROOD``
-    (factor) brood number
+   (factor) brood number
 
 ``HEIGHT``
-    height above sea level (meters)
+   height above sea level (meters)
 
 ``YEAR``
-    year (-1900)
+   year (-1900)
 
 ``LOCATION``
-    (factor) geographic location code
+   (factor) geographic location code
 
 ``cHEIGHT``
-    centered height, derived from ``HEIGHT``
+   centered height, derived from ``HEIGHT``
 
 ``meanTICKS``
-    mean number of ticks by brood
+   mean number of ticks by brood
 
 ``varTICKS``
-    variance of number of ticks by brood
+   variance of number of ticks by brood
 
 Details
 ~~~~~~~
@@ -73,26 +73,26 @@ Examples
 
 ::
 
-    data(grouseticks)
-    ## Figure 1a from Elston et al
-    par(las=1,bty="l")
-    tvec <- c(0,1,2,5,20,40,80)
-    pvec <- c(4,1,3)
-    with(grouseticks_agg,plot(1+meanTICKS~HEIGHT,
-                      pch=pvec[factor(YEAR)],
-                      log="y",axes=FALSE,
-                      xlab="Altitude (m)",
-                      ylab="Brood mean ticks"))
-    axis(side=1)
-    axis(side=2,at=tvec+1,label=tvec)
-    box()
-    abline(v=405,lty=2)
-    ## Figure 1b
-    with(grouseticks_agg,plot(varTICKS~meanTICKS,
-                      pch=4,
-                      xlab="Brood mean ticks",
-                      ylab="Within-brood variance"))
-    curve(1*x,from=0,to=70,add=TRUE)
-    ## Model fitting
-    form <- TICKS~YEAR+HEIGHT+(1|BROOD)+(1|INDEX)+(1|LOCATION)
-    (full_mod1  <- glmer(form, family="poisson",data=grouseticks))
+   data(grouseticks)
+   ## Figure 1a from Elston et al
+   par(las=1,bty="l")
+   tvec <- c(0,1,2,5,20,40,80)
+   pvec <- c(4,1,3)
+   with(grouseticks_agg,plot(1+meanTICKS~HEIGHT,
+                     pch=pvec[factor(YEAR)],
+                     log="y",axes=FALSE,
+                     xlab="Altitude (m)",
+                     ylab="Brood mean ticks"))
+   axis(side=1)
+   axis(side=2,at=tvec+1,label=tvec)
+   box()
+   abline(v=405,lty=2)
+   ## Figure 1b
+   with(grouseticks_agg,plot(varTICKS~meanTICKS,
+                     pch=4,
+                     xlab="Brood mean ticks",
+                     ylab="Within-brood variance"))
+   curve(1*x,from=0,to=70,add=TRUE)
+   ## Model fitting
+   form <- TICKS~YEAR+HEIGHT+(1|BROOD)+(1|INDEX)+(1|LOCATION)
+   (full_mod1  <- glmer(form, family="poisson",data=grouseticks))

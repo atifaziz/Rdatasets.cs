@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(IncomeUK)
+   data(IncomeUK)
 
 Format
 ~~~~~~
@@ -29,10 +29,10 @@ Format
 A time serie containing :
 
 income
-    total disposable income (million Pounds, current prices)
+   total disposable income (million Pounds, current prices)
 
 consumption
-    consumer expenditure (million Pounds, current prices)
+   consumer expenditure (million Pounds, current prices)
 
 References
 ~~~~~~~~~~

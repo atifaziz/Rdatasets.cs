@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    data(heart)
+   data(heart)
 
 
 Format
@@ -33,18 +33,18 @@ Format
 A data frame with 12 observations on the following 3 variables.
 
 ``height``
-    Patient's height in inches
+   Patient's height in inches
 
 ``weight``
-    Patient's weights in pounds
+   Patient's weights in pounds
 
 ``clength``
-    Y: Catheter Length (in centimeters)
+   Y: Catheter Length (in centimeters)
 
 Note
 ~~~~
 
-There are other ``heart`` datasets in other **R** packages, notably
+There are other ``heart`` datasets in other R packages, notably
 survival, hence considering using ``package = "robustbase"``, see
 examples.
 
@@ -63,9 +63,9 @@ Examples
 
 ::
 
-    data(heart, package="robustbase")
-    heart.x <- data.matrix(heart[, 1:2]) # the X-variables
-    plot(heart.x)
-    covMcd(heart.x)
-    summary( lm.heart <-     lm(clength ~ . , data = heart))
-    summary(lts.heart <- ltsReg(clength ~ . , data = heart))
+   data(heart, package="robustbase")
+   heart.x <- data.matrix(heart[, 1:2]) # the X-variables
+   plot(heart.x)
+   covMcd(heart.x)
+   summary( lm.heart <-     lm(clength ~ . , data = heart))
+   summary(lts.heart <- ltsReg(clength ~ . , data = heart))

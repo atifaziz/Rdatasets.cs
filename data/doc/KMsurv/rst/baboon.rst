@@ -16,13 +16,13 @@ Format
 This data frame contains the following columns:
 
 date
-    Date (day/month/year)
+   Date (day/month/year)
 
 time
-    Descent time (military time)
+   Descent time (military time)
 
 observed
-    Indicator of observed or not (1=observed, 0=not observed)
+   Indicator of observed or not (1=observed, 0=not observed)
 
 Source
 ~~~~~~
@@ -35,4 +35,4 @@ Examples
 
 ::
 
-    data(baboon)
+   data(baboon)

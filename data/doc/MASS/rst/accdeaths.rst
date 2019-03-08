@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    accdeaths
+   accdeaths
 
 Details
 ~~~~~~~

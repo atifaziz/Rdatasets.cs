@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    remission
+   remission
 
 Format
 ~~~~~~
@@ -23,14 +23,14 @@ Format
 This data frame contains the following columns:
 
 ``LI``
-    A measure of cell activity.
+   A measure of cell activity.
 
 ``m``
-    The number of patients in each group (all values are actually 1
-    here).
+   The number of patients in each group (all values are actually 1
+   here).
 
 ``r``
-    The number of patients (out of ``m``) who went into remission.
+   The number of patients (out of ``m``) who went into remission.
 
 Source
 ~~~~~~

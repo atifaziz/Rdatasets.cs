@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("RepVict")
+   data("RepVict")
 
 Format
 ~~~~~~
@@ -66,7 +66,7 @@ Examples
 
 ::
 
-    data("RepVict")
+   data("RepVict")
 
-    mosaic(RepVict[-c(4,7),-c(4,7)], gp = shading_max,
-           main = "Repeat Victimization Data")
+   mosaic(RepVict[-c(4,7),-c(4,7)], gp = shading_max,
+          main = "Repeat Victimization Data")

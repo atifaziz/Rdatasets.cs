@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Hstarts)
+   data(Hstarts)
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 A time serie containing :
 
 hs
-    the log of urban housing starts in Canada, not seasonally adjusted,
-    CANSIM series J6001, converted to quarterly
+   the log of urban housing starts in Canada, not seasonally adjusted,
+   CANSIM series J6001, converted to quarterly
 
 hssa
-    the log of urban housing starts in Canada, seasonally adjusted,
-    CANSIM series J9001, converted to quarterly. Observations prior to
-    1966:1 are missing
+   the log of urban housing starts in Canada, seasonally adjusted,
+   CANSIM series J9001, converted to quarterly. Observations prior to
+   1966:1 are missing
 
 References
 ~~~~~~~~~~

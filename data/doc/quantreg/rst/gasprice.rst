@@ -15,11 +15,11 @@ Usage
 
 ::
 
-    data("gasprice")
+   data("gasprice")
 
 Examples
 ~~~~~~~~
 
 ::
 
-    data(gasprice)
+   data(gasprice)

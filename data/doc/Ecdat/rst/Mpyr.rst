@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Mpyr)
+   data(Mpyr)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A time serie containing :
 
 m
-    natural log of M1
+   natural log of M1
 
 p
-    natural log of the net national product price deflator
+   natural log of the net national product price deflator
 
 y
-    natural log of the net national product
+   natural log of the net national product
 
 r
-    the commercial paper rate in percent at an annual rate
+   the commercial paper rate in percent at an annual rate
 
 Source
 ~~~~~~

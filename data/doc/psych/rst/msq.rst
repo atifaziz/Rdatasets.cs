@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(msq)
+   data(msq)
 
 Format
 ~~~~~~
@@ -28,286 +28,286 @@ Format
 A data frame with 3896 observations on the following 92 variables.
 
 ``active``
-    a numeric vector
+   a numeric vector
 
 ``afraid``
-    a numeric vector
+   a numeric vector
 
 ``alert``
-    a numeric vector
+   a numeric vector
 
 ``angry``
-    a numeric vector
+   a numeric vector
 
 ``anxious``
-    a numeric vector
+   a numeric vector
 
 ``aroused``
-    a numeric vector
+   a numeric vector
 
 ``ashamed``
-    a numeric vector
+   a numeric vector
 
 ``astonished``
-    a numeric vector
+   a numeric vector
 
 ``at.ease``
-    a numeric vector
+   a numeric vector
 
 ``at.rest``
-    a numeric vector
+   a numeric vector
 
 ``attentive``
-    a numeric vector
+   a numeric vector
 
 ``blue``
-    a numeric vector
+   a numeric vector
 
 ``bored``
-    a numeric vector
+   a numeric vector
 
 ``calm``
-    a numeric vector
+   a numeric vector
 
 ``cheerful``
-    a numeric vector
+   a numeric vector
 
 ``clutched.up``
-    a numeric vector
+   a numeric vector
 
 ``confident``
-    a numeric vector
+   a numeric vector
 
 ``content``
-    a numeric vector
+   a numeric vector
 
 ``delighted``
-    a numeric vector
+   a numeric vector
 
 ``depressed``
-    a numeric vector
+   a numeric vector
 
 ``determined``
-    a numeric vector
+   a numeric vector
 
 ``distressed``
-    a numeric vector
+   a numeric vector
 
 ``drowsy``
-    a numeric vector
+   a numeric vector
 
 ``dull``
-    a numeric vector
+   a numeric vector
 
 ``elated``
-    a numeric vector
+   a numeric vector
 
 ``energetic``
-    a numeric vector
+   a numeric vector
 
 ``enthusiastic``
-    a numeric vector
+   a numeric vector
 
 ``excited``
-    a numeric vector
+   a numeric vector
 
 ``fearful``
-    a numeric vector
+   a numeric vector
 
 ``frustrated``
-    a numeric vector
+   a numeric vector
 
 ``full.of.pep``
-    a numeric vector
+   a numeric vector
 
 ``gloomy``
-    a numeric vector
+   a numeric vector
 
 ``grouchy``
-    a numeric vector
+   a numeric vector
 
 ``guilty``
-    a numeric vector
+   a numeric vector
 
 ``happy``
-    a numeric vector
+   a numeric vector
 
 ``hostile``
-    a numeric vector
+   a numeric vector
 
 ``idle``
-    a numeric vector
+   a numeric vector
 
 ``inactive``
-    a numeric vector
+   a numeric vector
 
 ``inspired``
-    a numeric vector
+   a numeric vector
 
 ``intense``
-    a numeric vector
+   a numeric vector
 
 ``interested``
-    a numeric vector
+   a numeric vector
 
 ``irritable``
-    a numeric vector
+   a numeric vector
 
 ``jittery``
-    a numeric vector
+   a numeric vector
 
 ``lively``
-    a numeric vector
+   a numeric vector
 
 ``lonely``
-    a numeric vector
+   a numeric vector
 
 ``nervous``
-    a numeric vector
+   a numeric vector
 
 ``placid``
-    a numeric vector
+   a numeric vector
 
 ``pleased``
-    a numeric vector
+   a numeric vector
 
 ``proud``
-    a numeric vector
+   a numeric vector
 
 ``quiescent``
-    a numeric vector
+   a numeric vector
 
 ``quiet``
-    a numeric vector
+   a numeric vector
 
 ``relaxed``
-    a numeric vector
+   a numeric vector
 
 ``sad``
-    a numeric vector
+   a numeric vector
 
 ``satisfied``
-    a numeric vector
+   a numeric vector
 
 ``scared``
-    a numeric vector
+   a numeric vector
 
 ``serene``
-    a numeric vector
+   a numeric vector
 
 ``sleepy``
-    a numeric vector
+   a numeric vector
 
 ``sluggish``
-    a numeric vector
+   a numeric vector
 
 ``sociable``
-    a numeric vector
+   a numeric vector
 
 ``sorry``
-    a numeric vector
+   a numeric vector
 
 ``still``
-    a numeric vector
+   a numeric vector
 
 ``strong``
-    a numeric vector
+   a numeric vector
 
 ``surprised``
-    a numeric vector
+   a numeric vector
 
 ``tense``
-    a numeric vector
+   a numeric vector
 
 ``tired``
-    a numeric vector
+   a numeric vector
 
 ``tranquil``
-    a numeric vector
+   a numeric vector
 
 ``unhappy``
-    a numeric vector
+   a numeric vector
 
 ``upset``
-    a numeric vector
+   a numeric vector
 
 ``vigorous``
-    a numeric vector
+   a numeric vector
 
 ``wakeful``
-    a numeric vector
+   a numeric vector
 
 ``warmhearted``
-    a numeric vector
+   a numeric vector
 
 ``wide.awake``
-    a numeric vector
+   a numeric vector
 
 ``alone``
-    a numeric vector
+   a numeric vector
 
 ``kindly``
-    a numeric vector
+   a numeric vector
 
 ``scornful``
-    a numeric vector
+   a numeric vector
 
 ``EA``
-    Thayer's Energetic Arousal Scale
+   Thayer's Energetic Arousal Scale
 
 ``TA``
-    Thayer's Tense Arousal Scale
+   Thayer's Tense Arousal Scale
 
 ``PA``
-    Positive Affect scale
+   Positive Affect scale
 
 ``NegAff``
-    Negative Affect scale
+   Negative Affect scale
 
 ``Extraversion``
-    Extraversion from the Eysenck Personality Inventory
+   Extraversion from the Eysenck Personality Inventory
 
 ``Neuroticism``
-    Neuroticism from the Eysenck Personality Inventory
+   Neuroticism from the Eysenck Personality Inventory
 
 ``Lie``
-    Lie from the EPI
+   Lie from the EPI
 
 ``Sociability``
-    The sociability subset of the Extraversion Scale
+   The sociability subset of the Extraversion Scale
 
 ``Impulsivity``
-    The impulsivity subset of the Extraversions Scale
+   The impulsivity subset of the Extraversions Scale
 
 ``MSQ_Time``
-    Time of day the data were collected
+   Time of day the data were collected
 
 ``MSQ_Round``
-    Rounded time of day
+   Rounded time of day
 
 ``TOD``
-    a numeric vector
+   a numeric vector
 
 ``TOD24``
-    a numeric vector
+   a numeric vector
 
 ``ID``
-    subject ID
+   subject ID
 
 ``condition``
-    What was the experimental condition after the msq was given
+   What was the experimental condition after the msq was given
 
 ``scale``
-    a factor with levels ``msq`` ``r`` original or revised msq
+   a factor with levels ``msq`` ``r`` original or revised msq
 
 ``exper``
-    Which study were the data collected: a factor with levels ``AGES``
-    ``BING`` ``BORN`` ``CART`` ``CITY`` ``COPE`` ``EMIT`` ``FAST``
-    ``Fern`` ``FILM`` ``FLAT`` ``Gray`` ``imps`` ``item`` ``knob``
-    ``MAPS`` ``mite`` ``pat-1`` ``pat-2`` ``PATS`` ``post`` ``RAFT``
-    ``Rim.1`` ``Rim.2`` ``rob-1`` ``rob-2`` ``ROG1`` ``ROG2`` ``SALT``
-    ``sam-1`` ``sam-2`` ``SAVE/PATS`` ``sett`` ``swam`` ``swam-2``
-    ``TIME`` ``VALE-1`` ``VALE-2`` ``VIEW``
+   Which study were the data collected: a factor with levels ``AGES``
+   ``BING`` ``BORN`` ``CART`` ``CITY`` ``COPE`` ``EMIT`` ``FAST``
+   ``Fern`` ``FILM`` ``FLAT`` ``Gray`` ``imps`` ``item`` ``knob``
+   ``MAPS`` ``mite`` ``pat-1`` ``pat-2`` ``PATS`` ``post`` ``RAFT``
+   ``Rim.1`` ``Rim.2`` ``rob-1`` ``rob-2`` ``ROG1`` ``ROG2`` ``SALT``
+   ``sam-1`` ``sam-2`` ``SAVE/PATS`` ``sett`` ``swam`` ``swam-2``
+   ``TIME`` ``VALE-1`` ``VALE-2`` ``VIEW``
 
 Details
 ~~~~~~~
@@ -426,64 +426,64 @@ Examples
 
 ::
 
-    data(msq)
-    if(FALSE){ #not run in the interests of time
-    #basic descriptive statistics
-    describe(msq)
-    }
-    #score them for 20 short scales -- note that these have item overlap
-    #The first 2 are from Thayer
-    #The next 2 are classic positive and negative affect
-    #The next 9 are circumplex scales
-    #the last 7 are msq estimates of PANASX scales (missing some items)
-    keys <- make.keys(msq[1:75],list(
-    EA = c("active", "energetic", "vigorous", "wakeful", "wide.awake", "full.of.pep",
-           "lively", "-sleepy", "-tired", "-drowsy"),
-    TA =c("intense", "jittery", "fearful", "tense", "clutched.up", "-quiet", "-still", 
-           "-placid", "-calm", "-at.rest") ,
-    PA =c("active", "excited", "strong", "inspired", "determined", "attentive", 
-              "interested", "enthusiastic", "proud", "alert"),
-    NAf =c("jittery", "nervous", "scared", "afraid", "guilty", "ashamed", "distressed",  
-             "upset", "hostile", "irritable" ),
-    HAct = c("active", "aroused", "surprised", "intense", "astonished"),
-    aPA = c("elated", "excited", "enthusiastic", "lively"),
-    uNA = c("calm", "serene", "relaxed", "at.rest", "content", "at.ease"),
-    pa = c("happy", "warmhearted", "pleased", "cheerful", "delighted" ),
-    LAct = c("quiet", "inactive", "idle", "still", "tranquil"),
-    uPA =c( "dull", "bored", "sluggish", "tired", "drowsy"),
-    naf = c( "sad", "blue", "unhappy", "gloomy", "grouchy"),
-    aNA = c("jittery", "anxious", "nervous", "fearful", "distressed"),
-    Fear = c("afraid" , "scared" , "nervous" , "jittery" ) ,
-    Hostility = c("angry" ,  "hostile", "irritable", "scornful" ), 
-    Guilt = c("guilty" , "ashamed" ),
-    Sadness = c( "sad"  , "blue" , "lonely",  "alone" ),
-    Joviality =c("happy","delighted", "cheerful", "excited", "enthusiastic", "lively", "energetic"), 
-    Self.Assurance=c( "proud","strong" , "confident" , "-fearful" ),
-    Attentiveness = c("alert" , "determined" , "attentive" )
-    #acquiscence = c("sleepy" ,  "wakeful" ,  "relaxed","tense")
-       ))
-           
-    msq.scores <- scoreItems(keys,msq[1:75])
+   data(msq)
+   if(FALSE){ #not run in the interests of time
+   #basic descriptive statistics
+   describe(msq)
+   }
+   #score them for 20 short scales -- note that these have item overlap
+   #The first 2 are from Thayer
+   #The next 2 are classic positive and negative affect
+   #The next 9 are circumplex scales
+   #the last 7 are msq estimates of PANASX scales (missing some items)
+   keys <- make.keys(msq[1:75],list(
+   EA = c("active", "energetic", "vigorous", "wakeful", "wide.awake", "full.of.pep",
+          "lively", "-sleepy", "-tired", "-drowsy"),
+   TA =c("intense", "jittery", "fearful", "tense", "clutched.up", "-quiet", "-still", 
+          "-placid", "-calm", "-at.rest") ,
+   PA =c("active", "excited", "strong", "inspired", "determined", "attentive", 
+             "interested", "enthusiastic", "proud", "alert"),
+   NAf =c("jittery", "nervous", "scared", "afraid", "guilty", "ashamed", "distressed",  
+            "upset", "hostile", "irritable" ),
+   HAct = c("active", "aroused", "surprised", "intense", "astonished"),
+   aPA = c("elated", "excited", "enthusiastic", "lively"),
+   uNA = c("calm", "serene", "relaxed", "at.rest", "content", "at.ease"),
+   pa = c("happy", "warmhearted", "pleased", "cheerful", "delighted" ),
+   LAct = c("quiet", "inactive", "idle", "still", "tranquil"),
+   uPA =c( "dull", "bored", "sluggish", "tired", "drowsy"),
+   naf = c( "sad", "blue", "unhappy", "gloomy", "grouchy"),
+   aNA = c("jittery", "anxious", "nervous", "fearful", "distressed"),
+   Fear = c("afraid" , "scared" , "nervous" , "jittery" ) ,
+   Hostility = c("angry" ,  "hostile", "irritable", "scornful" ), 
+   Guilt = c("guilty" , "ashamed" ),
+   Sadness = c( "sad"  , "blue" , "lonely",  "alone" ),
+   Joviality =c("happy","delighted", "cheerful", "excited", "enthusiastic", "lively", "energetic"), 
+   Self.Assurance=c( "proud","strong" , "confident" , "-fearful" ),
+   Attentiveness = c("alert" , "determined" , "attentive" )
+   #acquiscence = c("sleepy" ,  "wakeful" ,  "relaxed","tense")
+      ))
+          
+   msq.scores <- scoreItems(keys,msq[1:75])
 
-    #show a circumplex structure for the non-overlapping items
-    fcirc <- fa(msq.scores$scores[,5:12],2)  
-    fa.plot(fcirc,labels=colnames(msq.scores$scores)[5:12])
+   #show a circumplex structure for the non-overlapping items
+   fcirc <- fa(msq.scores$scores[,5:12],2)  
+   fa.plot(fcirc,labels=colnames(msq.scores$scores)[5:12])
 
-    #now, find the correlations corrected for item overlap
-    msq.overlap <- scoreOverlap(keys,msq[1:75])
-    f2 <- fa(msq.overlap$cor,2)
-    fa.plot(f2,labels=colnames(msq.overlap$cor),title="2 dimensions of affect, corrected for overlap")
-    if(FALSE) {
-    #extend this solution to EA/TA  NA/PA space
-    fe  <- fa.extension(cor(msq.scores$scores[,5:12],msq.scores$scores[,1:4]),fcirc)
-    fa.diagram(fcirc,fe=fe,main="Extending the circumplex structure to  EA/TA and PA/NA ")
+   #now, find the correlations corrected for item overlap
+   msq.overlap <- scoreOverlap(keys,msq[1:75])
+   f2 <- fa(msq.overlap$cor,2)
+   fa.plot(f2,labels=colnames(msq.overlap$cor),title="2 dimensions of affect, corrected for overlap")
+   if(FALSE) {
+   #extend this solution to EA/TA  NA/PA space
+   fe  <- fa.extension(cor(msq.scores$scores[,5:12],msq.scores$scores[,1:4]),fcirc)
+   fa.diagram(fcirc,fe=fe,main="Extending the circumplex structure to  EA/TA and PA/NA ")
 
-    #show the 2 dimensional structure
-    f2 <- fa(msq[1:72],2)
-    fa.plot(f2,labels=colnames(msq)[1:72],title="2 dimensions of affect at the item level")
+   #show the 2 dimensional structure
+   f2 <- fa(msq[1:72],2)
+   fa.plot(f2,labels=colnames(msq)[1:72],title="2 dimensions of affect at the item level")
 
-    #sort them by polar coordinates
-    round(polar(f2),2)
-    }
-                
+   #sort them by polar coordinates
+   round(polar(f2),2)
+   }
+               
 

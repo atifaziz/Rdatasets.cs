@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    cerealsugar
+   cerealsugar
 
 Format
 ~~~~~~

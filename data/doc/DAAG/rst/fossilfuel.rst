@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    fossilfuel
+   fossilfuel
 
 Format
 ~~~~~~
@@ -23,11 +23,11 @@ Format
 This data frame contains the following columns:
 
 year
-    a numeric vector giving the year the measurement was taken.
+   a numeric vector giving the year the measurement was taken.
 
 carbon
-    a numeric vector giving the total worldwide carbon emissions from
-    fossil fuel use, in millions of tonnes.
+   a numeric vector giving the total worldwide carbon emissions from
+   fossil fuel use, in millions of tonnes.
 
 Source
 ~~~~~~
@@ -39,4 +39,4 @@ Examples
 
 ::
 
-    plot(fossilfuel)
+   plot(fossilfuel)

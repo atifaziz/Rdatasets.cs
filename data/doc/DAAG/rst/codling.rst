@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(codling)
+   data(codling)
 
 Format
 ~~~~~~
@@ -24,36 +24,36 @@ Format
 A data frame with 99 observations on the following 10 variables.
 
 dose
-    Injected dose of methyl bromide, in gm per cubic meter
+   Injected dose of methyl bromide, in gm per cubic meter
 
 tot
-    Number of insects in chamber
+   Number of insects in chamber
 
 dead
-    Number of insects dying
+   Number of insects dying
 
 pobs
-    Proportion dying
+   Proportion dying
 
 cm
-    Control mortality, i.e., at dose 0
+   Control mortality, i.e., at dose 0
 
 ct
-    Concentration-time sum
+   Concentration-time sum
 
 Cultivar
-    a factor with levels ``BRAEBURN`` ``FUJI`` ``GRANNY`` ``Gala``
-    ``ROYAL`` ``Red Delicious`` ``Splendour``
+   a factor with levels ``BRAEBURN`` ``FUJI`` ``GRANNY`` ``Gala``
+   ``ROYAL`` ``Red Delicious`` ``Splendour``
 
 gp
-    a factor which has a different level for each different combination
-    of ``Cultivar``, ``year`` and ``rep`` (replicate).
+   a factor which has a different level for each different combination
+   of ``Cultivar``, ``year`` and ``rep`` (replicate).
 
 year
-    a factor with levels ``1988`` ``1989``
+   a factor with levels ``1988`` ``1989``
 
 numcm
-    a numeric vector: total number of control insects
+   a numeric vector: total number of control insects
 
 Details
 ~~~~~~~

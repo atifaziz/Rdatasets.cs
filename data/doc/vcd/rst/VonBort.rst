@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("VonBort")
+   data("VonBort")
 
 Format
 ~~~~~~
@@ -25,17 +25,17 @@ Format
 A data frame with 280 observations and 4 variables.
 
 deaths
-    number of deaths.
+   number of deaths.
 
 year
-    year of the deaths.
+   year of the deaths.
 
 corps
-    factor indicating the corps.
+   factor indicating the corps.
 
 fisher
-    factor indicating whether the corresponding corps was considered by
-    Fisher (1925) or not.
+   factor indicating whether the corresponding corps was considered by
+   Fisher (1925) or not.
 
 Source
 ~~~~~~
@@ -69,6 +69,6 @@ Examples
 
 ::
 
-    data("VonBort")
-    ## HorseKicks data
-    xtabs(~ deaths, data = VonBort, subset = fisher == "yes")
+   data("VonBort")
+   ## HorseKicks data
+   xtabs(~ deaths, data = VonBort, subset = fisher == "yes")

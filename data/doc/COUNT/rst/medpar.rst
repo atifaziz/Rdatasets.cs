@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    data(medpar)
+   data(medpar)
 
 Format
 ~~~~~~
@@ -30,34 +30,34 @@ Format
 A data frame with 1495 observations on the following 10 variables.
 
 ``los``
-    length of hospital stay
+   length of hospital stay
 
 ``hmo``
-    Patient belongs to a Health Maintenance Organization, binary
+   Patient belongs to a Health Maintenance Organization, binary
 
 ``white``
-    Patient identifies themselves as Caucasian, binary
+   Patient identifies themselves as Caucasian, binary
 
 ``died``
-    Patient died, binary
+   Patient died, binary
 
 ``age80``
-    Patient age 80 and over, binary
+   Patient age 80 and over, binary
 
 ``type``
-    Type of admission, categorical
+   Type of admission, categorical
 
 ``type1``
-    Elective admission, binary
+   Elective admission, binary
 
 ``type2``
-    Urgent admission,binary
+   Urgent admission,binary
 
 ``type3``
-    Elective admission, binary
+   Elective admission, binary
 
 ``provnum``
-    Provider ID
+   Provider ID
 
 Details
 ~~~~~~~
@@ -84,16 +84,16 @@ Examples
 
 ::
 
-    library(MASS)
-    library(msme)
-    data(medpar)
-    glmp <- glm(los ~ hmo + white + factor(type), family=poisson, data=medpar)
-    summary(glmp)
-    exp(coef(glmp))
-    nb2 <- nbinomial(los ~ hmo + white + factor(type), data=medpar)
-    summary(nb2)
-    exp(coef(nb2))
-    glmnb <- glm.nb(los ~ hmo + white + factor(type), data=medpar)
-    summary(glmnb)
-    exp(coef(glmnb))
+   library(MASS)
+   library(msme)
+   data(medpar)
+   glmp <- glm(los ~ hmo + white + factor(type), family=poisson, data=medpar)
+   summary(glmp)
+   exp(coef(glmp))
+   nb2 <- nbinomial(los ~ hmo + white + factor(type), data=medpar)
+   summary(nb2)
+   exp(coef(nb2))
+   glmnb <- glm.nb(los ~ hmo + white + factor(type), data=medpar)
+   summary(glmnb)
+   exp(coef(glmnb))
 

@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    capability
+   capability
 
 Format
 ~~~~~~
@@ -27,7 +27,7 @@ Format
 This data frame contains the following column:
 
 ``y``
-    The simulated measurements.
+   The simulated measurements.
 
 Source
 ~~~~~~

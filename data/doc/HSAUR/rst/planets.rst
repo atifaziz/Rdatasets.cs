@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("planets")
+   data("planets")
 
 Format
 ~~~~~~
@@ -24,13 +24,13 @@ A data frame with 101 observations from 101 exoplanets on the following
 3 variables.
 
 mass
-    Jupiter mass of the planet.
+   Jupiter mass of the planet.
 
 period
-    period in earth days.
+   period in earth days.
 
 eccen
-    the radial eccentricity of the planet.
+   the radial eccentricity of the planet.
 
 Details
 ~~~~~~~
@@ -54,9 +54,9 @@ Examples
 ::
 
 
-      data("planets", package = "HSAUR")
-      require("scatterplot3d")
-      scatterplot3d(log(planets$mass), log(planets$period), log(planets$eccen), 
-                    type = "h", highlight.3d = TRUE,  angle = 55, 
-                    scale.y = 0.7, pch = 16)
+     data("planets", package = "HSAUR")
+     require("scatterplot3d")
+     scatterplot3d(log(planets$mass), log(planets$period), log(planets$eccen), 
+                   type = "h", highlight.3d = TRUE,  angle = 55, 
+                   scale.y = 0.7, pch = 16)
 

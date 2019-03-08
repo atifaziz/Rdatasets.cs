@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    Moore
+   Moore
 
 Format
 ~~~~~~
@@ -27,17 +27,17 @@ Format
 This data frame contains the following columns:
 
 partner.status
-    Partner's status. A factor with levels: ``high``, ``low``.
+   Partner's status. A factor with levels: ``high``, ``low``.
 
 conformity
-    Number of conforming responses in 40 critical trials.
+   Number of conforming responses in 40 critical trials.
 
 fcategory
-    F-Scale Categorized. A factor with levels (note levels out of
-    order): ``high``, ``low``, ``medium``.
+   F-Scale Categorized. A factor with levels (note levels out of order):
+   ``high``, ``low``, ``medium``.
 
 fscore
-    Authoritarianism: F-Scale score.
+   Authoritarianism: F-Scale score.
 
 Source
 ~~~~~~

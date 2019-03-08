@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    coop
+   coop
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 This data frame contains the following columns:
 
 ``Lab``
-    Laboratory, ``L1``, ``L2``, ..., ``L6``.
+   Laboratory, ``L1``, ``L2``, ..., ``L6``.
 
 ``Spc``
-    Specimen, ``S1``, ``S2``, ..., ``S7``.
+   Specimen, ``S1``, ``S2``, ..., ``S7``.
 
 ``Bat``
-    Batch, ``B1``, ``B2``, ``B3`` (nested within ``Spc/Lab``),
+   Batch, ``B1``, ``B2``, ``B3`` (nested within ``Spc/Lab``),
 
 ``Conc``
-    Concentration of Analyte in *g/kg*.
+   Concentration of Analyte in *g/kg*.
 
 Source
 ~~~~~~

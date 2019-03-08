@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    stanford2
+   stanford2
 
 Format
 ~~~~~~

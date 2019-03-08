@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    stVincent
+   stVincent
 
 Format
 ~~~~~~
@@ -23,28 +23,28 @@ Format
 A data frame with 324 observations on 8 variables.
 
 code
-    a numeric vector
+   a numeric vector
 
 island
-    a numeric vector
+   a numeric vector
 
 id
-    a numeric vector
+   a numeric vector
 
 site
-    a factor with 8 levels.
+   a factor with 8 levels.
 
 block
-    a factor with levels ``I`` ``II`` ``III`` ``IV``
+   a factor with levels ``I`` ``II`` ``III`` ``IV``
 
 plot
-    a numeric vector
+   a numeric vector
 
 trt
-    a factor consisting of 12 levels
+   a factor consisting of 12 levels
 
 harvwt
-    a numeric vector; the average yield
+   a numeric vector; the average yield
 
 Source
 ~~~~~~

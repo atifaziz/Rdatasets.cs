@@ -16,20 +16,28 @@ Usage
 
 ::
 
-    data(Births2015)
+   data(Births2015)
 
 Format
 ~~~~~~
 
-A data frame with 365 observations on the following variables.
+A data.frame with 365 observations on the following 8 variables.
 
--  ``date`` date in 2015
+-  ``date`` Date
 
--  ``births`` number of US births
+-  ``births`` Number of births on ``date`` (integer)
 
--  ``dayofyear`` sequential number of days from 1 to 365
+-  ``wday`` Day of week (ordered factor)
 
--  ``wday`` day of week as an ordered factor
+-  ``year`` Year (integer)
+
+-  ``month`` Month (integer)
+
+-  ``day_of_year`` Day of year (integer)
+
+-  ``day_of_month`` Day of month (integer)
+
+-  ``day_of_week`` Day of week (integer)
 
 Source
 ~~~~~~
@@ -47,16 +55,16 @@ Examples
 
 ::
 
-    data(Births2015)
-    if (require(lattice)) {
-      xyplot(births ~ date, Births2015)
-      xyplot(births ~ date, Births2015, groups = wday)
-    }
-    if (require(dplyr)) {
-      Births78 %>% 
-        group_by(wday) %>% summarise(births = sum(births)) %>% 
-        ungroup() %>% mutate(frac = births / sum(births))
-      Births2015 %>% 
-        group_by(wday) %>% summarise(births = sum(births)) %>% 
-        ungroup() %>% mutate(frac = births / sum(births))
-    }
+   data(Births2015)
+   if (require(ggformula)) {
+     gf_point(births ~ date, data = Births2015)
+     gf_point(births ~ date, data = Births2015, color = ~ wday)
+   }
+   if (require(dplyr)) {
+     Births78 %>% 
+       group_by(wday) %>% summarise(births = sum(births)) %>% 
+       ungroup() %>% mutate(frac = births / sum(births))
+     Births2015 %>% 
+       group_by(wday) %>% summarise(births = sum(births)) %>% 
+       ungroup() %>% mutate(frac = births / sum(births))
+   }

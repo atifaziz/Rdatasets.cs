@@ -16,10 +16,10 @@ Format
 This data frame contains the following columns:
 
 encounter
-    Months from 1/93 to encounter
+   Months from 1/93 to encounter
 
 diagnosed
-    Months until STD diagnosed in the clinic
+   Months until STD diagnosed in the clinic
 
 Source
 ~~~~~~
@@ -32,4 +32,4 @@ Examples
 
 ::
 
-    data(stddiag)
+   data(stddiag)

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Griliches)
+   data(Griliches)
 
 Format
 ~~~~~~
@@ -29,64 +29,64 @@ Format
 A dataframe containing :
 
 rns
-    residency in the southern states (first observation) ?
+   residency in the southern states (first observation) ?
 
 rns80
-    same variable for 1980
+   same variable for 1980
 
 mrt
-    married (first observation) ?
+   married (first observation) ?
 
 mrt80
-    same variable for 1980
+   same variable for 1980
 
 smsa
-    residency in metropolitan areas (first observation) ?
+   residency in metropolitan areas (first observation) ?
 
 smsa80
-    same variable for 1980
+   same variable for 1980
 
 med
-    mother's education in years
+   mother's education in years
 
 iq
-    IQ score
+   IQ score
 
 kww
-    score on the “knowledge of the world of work” test
+   score on the “knowledge of the world of work” test
 
 year
-    year of the observation
+   year of the observation
 
 age
-    age (first observation)
+   age (first observation)
 
 age80
-    same variable for 1980
+   same variable for 1980
 
 school
-    completed years of schooling (first observation)
+   completed years of schooling (first observation)
 
 school80
-    same variable for 1980
+   same variable for 1980
 
 expr
-    experience in years (first observation)
+   experience in years (first observation)
 
 expr80
-    same variable for 1980
+   same variable for 1980
 
 tenure
-    tenure in years (first observation)
+   tenure in years (first observation)
 
 tenure80
-    same variable for 1980
+   same variable for 1980
 
 lw
-    log wage (first observation)
+   log wage (first observation)
 
 lw80
-    same variable for 1980
+   same variable for 1980
 
 Source
 ~~~~~~

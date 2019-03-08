@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    genotype
+   genotype
 
 Format
 ~~~~~~
@@ -26,15 +26,14 @@ Format
 The data frame has the following components:
 
 ``Litter``
-    genotype of the litter.
+   genotype of the litter.
 
 ``Mother``
-    genotype of the foster mother.
+   genotype of the foster mother.
 
 ``Wt``
-    Litter average weight gain of the litter, in grams at age 28 days.
-    (The source states that the within-litter variability is
-    negligible.)
+   Litter average weight gain of the litter, in grams at age 28 days.
+   (The source states that the within-litter variability is negligible.)
 
 Source
 ~~~~~~

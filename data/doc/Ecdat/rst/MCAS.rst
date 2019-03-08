@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(MCAS)
+   data(MCAS)
 
 Format
 ~~~~~~
@@ -29,55 +29,55 @@ Format
 A dataframe containing :
 
 code
-    district code (numerical)
+   district code (numerical)
 
 municipa
-    municipality (name)
+   municipality (name)
 
 district
-    district name
+   district name
 
 regday
-    spending per pupil, regular
+   spending per pupil, regular
 
 specneed
-    spending per pupil, special needs
+   spending per pupil, special needs
 
 bilingua
-    spending per pupil, bilingual
+   spending per pupil, bilingual
 
 occupday
-    spending per pupil, occupational
+   spending per pupil, occupational
 
 totday
-    spending per pupil, total
+   spending per pupil, total
 
 spc
-    students per computer
+   students per computer
 
 speced
-    special education students
+   special education students
 
 lnchpct
-    eligible for free or reduced price lunch
+   eligible for free or reduced price lunch
 
 tchratio
-    students per teacher
+   students per teacher
 
 percap
-    per capita income
+   per capita income
 
 totsc4
-    4th grade score (math+english+science)
+   4th grade score (math+english+science)
 
 totsc8
-    8th grade score (math+english+science)
+   8th grade score (math+english+science)
 
 avgsalary
-    average teacher salary
+   average teacher salary
 
 pctel
-    percent english learnersh
+   percent english learnersh
 
 Source
 ~~~~~~

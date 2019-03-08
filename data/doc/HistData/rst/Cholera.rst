@@ -25,7 +25,7 @@ Usage
 
 ::
 
-    data("Cholera")
+   data("Cholera")
 
 Format
 ~~~~~~
@@ -33,51 +33,51 @@ Format
 A data frame with 38 observations on the following 15 variables.
 
 ``district``
-    name of the district in London, a character vector
+   name of the district in London, a character vector
 
 ``cholera_drate``
-    deaths from cholera in 1849 per 10,000 inhabitants, a numeric vector
+   deaths from cholera in 1849 per 10,000 inhabitants, a numeric vector
 
 ``cholera_deaths``
-    number of deaths registered from cohlera in 1849, a numeric vector
+   number of deaths registered from cohlera in 1849, a numeric vector
 
 ``popn``
-    population, in the middle of 1849, a numeric vector
+   population, in the middle of 1849, a numeric vector
 
 ``elevation``
-    elevation, in feet above the high water mark, a numeric vector
+   elevation, in feet above the high water mark, a numeric vector
 
 ``region``
-    a grouping of the London districts, a factor with levels ``West``
-    ``North`` ``Central`` ``South`` ``Kent``
+   a grouping of the London districts, a factor with levels ``West``
+   ``North`` ``Central`` ``South`` ``Kent``
 
 ``water``
-    water supply region, a factor with levels ``Battersea``
-    ``New River`` ``Kew``; see Details
+   water supply region, a factor with levels ``Battersea`` ``New River``
+   ``Kew``; see Details
 
 ``annual_deaths``
-    annual deaths from all causes, 1838-1844, a numeric vector
+   annual deaths from all causes, 1838-1844, a numeric vector
 
 ``pop_dens``
-    population density (persons per acre), a numeric vector
+   population density (persons per acre), a numeric vector
 
 ``persons_house``
-    persons per inhabited house, a numeric vector
+   persons per inhabited house, a numeric vector
 
 ``house_valpp``
-    average annual value of house, per person (pounds), a numeric vector
+   average annual value of house, per person (pounds), a numeric vector
 
 ``poor_rate``
-    poor rate precept per pound of howse value, a numeric vector
+   poor rate precept per pound of howse value, a numeric vector
 
 ``area``
-    district area, a numeric vector
+   district area, a numeric vector
 
 ``houses``
-    number of houses, a numeric vector
+   number of houses, a numeric vector
 
 ``house_val``
-    total house values, a numeric vector
+   total house values, a numeric vector
 
 Details
 ~~~~~~~
@@ -119,53 +119,53 @@ Examples
 
 ::
 
-    data(Cholera)
+   data(Cholera)
 
-    # plot cholera deaths vs. elevation
-    plot(cholera_drate ~ elevation, data=Cholera, 
-        pch=16, cex.lab=1.2, cex=1.2,
-        xlab="Elevation above high water mark (ft)",
-        ylab="Deaths from cholera in 1849 per 10,000")
+   # plot cholera deaths vs. elevation
+   plot(cholera_drate ~ elevation, data=Cholera, 
+       pch=16, cex.lab=1.2, cex=1.2,
+       xlab="Elevation above high water mark (ft)",
+       ylab="Deaths from cholera in 1849 per 10,000")
 
-    # Farr's mortality ~ 1/ elevation law
-    elev <- c(0, 10, 30, 50, 70, 90, 100, 350)
-    mort <- c(174, 99, 53, 34, 27, 22, 20, 6)
-    lines(mort ~ elev, lwd=2, col="blue")
+   # Farr's mortality ~ 1/ elevation law
+   elev <- c(0, 10, 30, 50, 70, 90, 100, 350)
+   mort <- c(174, 99, 53, 34, 27, 22, 20, 6)
+   lines(mort ~ elev, lwd=2, col="blue")
 
-    # better plots, using car::scatterplot
-    library(car)
+   # better plots, using car::scatterplot
+   library(car)
 
-    # show separate regression lines for each water supply
+   # show separate regression lines for each water supply
 
-    scatterplot(cholera_drate ~ elevation | water, data=Cholera, 
-                smooth=FALSE, pch=15:17,
-                id=list(n=2, labels=sub(",.*", "", Cholera$district)),
-                col=c("red", "darkgreen", "blue"),
-                legend=list(coords="topleft", title="Water supply"),
-                xlab="Elevation above high water mark (ft)",
-                ylab="Deaths from cholera in 1849 per 10,000")
+   scatterplot(cholera_drate ~ elevation | water, data=Cholera, 
+               smooth=FALSE, pch=15:17,
+               id=list(n=2, labels=sub(",.*", "", Cholera$district)),
+               col=c("red", "darkgreen", "blue"),
+               legend=list(coords="topleft", title="Water supply"),
+               xlab="Elevation above high water mark (ft)",
+               ylab="Deaths from cholera in 1849 per 10,000")
 
-    scatterplot(cholera_drate ~ poor_rate | water, data=Cholera, 
-                smooth=FALSE, pch=15:17,
-                id=list(n=2, labels=sub(",.*", "", Cholera$district)),
-                col=c("red", "darkgreen", "blue"),
-                legend=list(coords="topleft", title="Water supply"),
-                xlab="Poor rate per pound of house value",
-                ylab="Deaths from cholera in 1849 per 10,000")
+   scatterplot(cholera_drate ~ poor_rate | water, data=Cholera, 
+               smooth=FALSE, pch=15:17,
+               id=list(n=2, labels=sub(",.*", "", Cholera$district)),
+               col=c("red", "darkgreen", "blue"),
+               legend=list(coords="topleft", title="Water supply"),
+               xlab="Poor rate per pound of house value",
+               ylab="Deaths from cholera in 1849 per 10,000")
 
 
-    # fit a logistic regression model a la Bingham etal.
-    fit <- glm( cbind(cholera_deaths, popn) ~ 
-                water + elevation + poor_rate + annual_deaths +
-                pop_dens + persons_house,
-                data=Cholera, family=binomial)
-    summary(fit)
+   # fit a logistic regression model a la Bingham etal.
+   fit <- glm( cbind(cholera_deaths, popn) ~ 
+               water + elevation + poor_rate + annual_deaths +
+               pop_dens + persons_house,
+               data=Cholera, family=binomial)
+   summary(fit)
 
-    # odds ratios
-    cbind( OR = exp(coef(fit))[-1], exp(confint(fit))[-1,] )
+   # odds ratios
+   cbind( OR = exp(coef(fit))[-1], exp(confint(fit))[-1,] )
 
-    if (require(effects)) {
-      eff <- allEffects(fit)
-      plot(eff)
-    }
+   if (require(effects)) {
+     eff <- allEffects(fit)
+     plot(eff)
+   }
 

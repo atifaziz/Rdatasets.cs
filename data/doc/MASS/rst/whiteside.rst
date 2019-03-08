@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    whiteside
+   whiteside
 
 Format
 ~~~~~~
@@ -28,15 +28,15 @@ Format
 The ``whiteside`` data frame has 56 rows and 3 columns.:
 
 ``Insul``
-    A factor, before or after insulation.
+   A factor, before or after insulation.
 
 ``Temp``
-    Purportedly the average outside temperature in degrees Celsius.
-    (These values is far too low for any 56-week period in the 1960s in
-    South-East England. It might be the weekly average of daily minima.)
+   Purportedly the average outside temperature in degrees Celsius.
+   (These values is far too low for any 56-week period in the 1960s in
+   South-East England. It might be the weekly average of daily minima.)
 
 ``Gas``
-    The weekly gas consumption in 1000s of cubic feet.
+   The weekly gas consumption in 1000s of cubic feet.
 
 Source
 ~~~~~~
@@ -58,27 +58,27 @@ Examples
 
 ::
 
-    require(lattice)
-    xyplot(Gas ~ Temp | Insul, whiteside, panel =
-      function(x, y, ...) {
-        panel.xyplot(x, y, ...)
-        panel.lmline(x, y, ...)
-      }, xlab = "Average external temperature (deg. C)",
-      ylab = "Gas consumption  (1000 cubic feet)", aspect = "xy",
-      strip = function(...) strip.default(..., style = 1))
+   require(lattice)
+   xyplot(Gas ~ Temp | Insul, whiteside, panel =
+     function(x, y, ...) {
+       panel.xyplot(x, y, ...)
+       panel.lmline(x, y, ...)
+     }, xlab = "Average external temperature (deg. C)",
+     ylab = "Gas consumption  (1000 cubic feet)", aspect = "xy",
+     strip = function(...) strip.default(..., style = 1))
 
-    gasB <- lm(Gas ~ Temp, whiteside, subset = Insul=="Before")
-    gasA <- update(gasB, subset = Insul=="After")
-    summary(gasB)
-    summary(gasA)
-    gasBA <- lm(Gas ~ Insul/Temp - 1, whiteside)
-    summary(gasBA)
+   gasB <- lm(Gas ~ Temp, whiteside, subset = Insul=="Before")
+   gasA <- update(gasB, subset = Insul=="After")
+   summary(gasB)
+   summary(gasA)
+   gasBA <- lm(Gas ~ Insul/Temp - 1, whiteside)
+   summary(gasBA)
 
-    gasQ <- lm(Gas ~ Insul/(Temp + I(Temp^2)) - 1, whiteside)
-    coef(summary(gasQ))
+   gasQ <- lm(Gas ~ Insul/(Temp + I(Temp^2)) - 1, whiteside)
+   coef(summary(gasQ))
 
-    gasPR <- lm(Gas ~ Insul + Temp, whiteside)
-    anova(gasPR, gasBA)
-    options(contrasts = c("contr.treatment", "contr.poly"))
-    gasBA1 <- lm(Gas ~ Insul*Temp, whiteside)
-    coef(summary(gasBA1))
+   gasPR <- lm(Gas ~ Insul + Temp, whiteside)
+   anova(gasPR, gasBA)
+   options(contrasts = c("contr.treatment", "contr.poly"))
+   gasBA1 <- lm(Gas ~ Insul*Temp, whiteside)
+   coef(summary(gasBA1))

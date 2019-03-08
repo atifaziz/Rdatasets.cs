@@ -34,7 +34,7 @@ Usage
 
 ::
 
-    data(DrinksWages)
+   data(DrinksWages)
 
 Format
 ~~~~~~
@@ -44,23 +44,23 @@ the number of non-drinkers (``sober``) and drinkers (``drinks``) in
 various occupational categories (``trade``).
 
 ``class``
-    wage class: a factor with levels ``A`` ``B`` ``C``
+   wage class: a factor with levels ``A`` ``B`` ``C``
 
 ``trade``
-    a factor with levels ``baker`` ``barman`` ``billposter`` ...
-    ``wellsinker`` ``wireworker``
+   a factor with levels ``baker`` ``barman`` ``billposter`` ...
+   ``wellsinker`` ``wireworker``
 
 ``sober``
-    the number of non-drinkers, a numeric vector
+   the number of non-drinkers, a numeric vector
 
 ``drinks``
-    the number of drinkers, a numeric vector
+   the number of drinkers, a numeric vector
 
 ``wage``
-    weekly wage (in shillings), a numeric vector
+   weekly wage (in shillings), a numeric vector
 
 ``n``
-    total number, a numeric vector
+   total number, a numeric vector
 
 Details
 ~~~~~~~
@@ -93,17 +93,17 @@ Examples
 
 ::
 
-    data(DrinksWages)
-    plot(DrinksWages) 
+   data(DrinksWages)
+   plot(DrinksWages) 
 
-    # plot proportion sober vs. wage | class
-    with(DrinksWages, plot(wage, sober/n, col=c("blue","red","green")[class]))
+   # plot proportion sober vs. wage | class
+   with(DrinksWages, plot(wage, sober/n, col=c("blue","red","green")[class]))
 
-    # fit logistic regression model of sober on wage
-    mod.sober <- glm(cbind(sober, n) ~ wage, family=binomial, data=DrinksWages)
-    summary(mod.sober)
-    op <- par(mfrow=c(2,2))
-    plot(mod.sober)
-    par(op)
+   # fit logistic regression model of sober on wage
+   mod.sober <- glm(cbind(sober, n) ~ wage, family=binomial, data=DrinksWages)
+   summary(mod.sober)
+   op <- par(mfrow=c(2,2))
+   plot(mod.sober)
+   par(op)
 
-    # TODO: plot fitted model
+   # TODO: plot fitted model

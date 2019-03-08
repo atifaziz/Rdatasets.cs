@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(lukas)
+   data(lukas)
 
 Format
 ~~~~~~

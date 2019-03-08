@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(TranspEq)
+   data(TranspEq)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A dataframe containing :
 
 state
-    state name
+   state name
 
 va
-    output
+   output
 
 capital
-    capital input
+   capital input
 
 labor
-    labor input
+   labor input
 
 nfirm
-    number of firms
+   number of firms
 
 Source
 ~~~~~~

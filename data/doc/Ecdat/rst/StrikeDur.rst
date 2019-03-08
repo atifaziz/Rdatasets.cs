@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(StrikeDur)
+   data(StrikeDur)
 
 Format
 ~~~~~~
@@ -27,12 +27,12 @@ Format
 A dataframe containing :
 
 dur
-    duration of the strike in days
+   duration of the strike in days
 
 gdp
-    measure of stage of business cycle (deviation of monthly log
-    industrial production in manufacturing from prediction from OLS on
-    time, time-squared and monthly dummies)
+   measure of stage of business cycle (deviation of monthly log
+   industrial production in manufacturing from prediction from OLS on
+   time, time-squared and monthly dummies)
 
 Source
 ~~~~~~

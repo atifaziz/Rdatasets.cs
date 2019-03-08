@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    FARS
+   FARS
 
 Format
 ~~~~~~
@@ -26,55 +26,55 @@ Format
 A data frame with 153338 observations on the following 17 variables.
 
 ``caseid``
-    a character vector: identifies the vehicle
+   a character vector: identifies the vehicle
 
 ``state``
-    a numeric vector. See the FARS website for details
+   a numeric vector. See the FARS website for details
 
 ``age``
-    a numeric vector; 998=not reported; 999=not known
+   a numeric vector; 998=not reported; 999=not known
 
 ``airbag``
-    a numeric vector
+   a numeric vector
 
 ``injury``
-    a numeric vector
+   a numeric vector
 
 ``restraint``
-    a numeric vector
+   a numeric vector
 
 ``sex``
-    1=male, 2=female, 9=unknown
+   1=male, 2=female, 9=unknown
 
 ``inimpact``
-    a numeric vector
+   a numeric vector
 
 ``modelyr``
-    a numeric vector
+   a numeric vector
 
 ``airbagAvail``
-    a factor with levels ``no`` ``yes`` ``NA-code``
+   a factor with levels ``no`` ``yes`` ``NA-code``
 
 ``airbagDeploy``
-    a factor with levels ``no`` ``yes`` ``NA-code``
+   a factor with levels ``no`` ``yes`` ``NA-code``
 
 ``Restraint``
-    a factor with levels ``no`` ``yes`` ``NA-code``
+   a factor with levels ``no`` ``yes`` ``NA-code``
 
 ``D_injury``
-    a numeric vector
+   a numeric vector
 
 ``D_airbagAvail``
-    a factor with levels ``no`` ``yes`` ``NA-code``
+   a factor with levels ``no`` ``yes`` ``NA-code``
 
 ``D_airbagDeploy``
-    a factor with levels ``no`` ``yes`` ``NA-code``
+   a factor with levels ``no`` ``yes`` ``NA-code``
 
 ``D_Restraint``
-    a factor with levels ``no`` ``yes`` ``NA-code``
+   a factor with levels ``no`` ``yes`` ``NA-code``
 
 ``year``
-    year of accident
+   year of accident
 
 Details
 ~~~~~~~
@@ -124,4 +124,4 @@ Examples
 
 ::
 
-    data(FARS)
+   data(FARS)

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Metal)
+   data(Metal)
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 A dataframe containing :
 
 va
-    output
+   output
 
 labor
-    labor input
+   labor input
 
 capital
-    capital input
+   capital input
 
 Source
 ~~~~~~

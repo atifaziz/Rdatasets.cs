@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("Lanza")
+   data("Lanza")
 
 Format
 ~~~~~~
@@ -25,15 +25,15 @@ Format
 A data frame with 198 observations on the following 3 variables.
 
 ``study``
-    a factor with levels ``I``, ``II``, ``III``, and ``IV`` describing
-    the study number.
+   a factor with levels ``I``, ``II``, ``III``, and ``IV`` describing
+   the study number.
 
 ``treatment``
-    a factor with levels ``Misoprostol`` ``Placebo``
+   a factor with levels ``Misoprostol`` ``Placebo``
 
 ``classification``
-    an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4`` < ``5``
-    describing an ordered response variable.
+   an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4`` < ``5``
+   describing an ordered response variable.
 
 Details
 ~~~~~~~
@@ -74,10 +74,10 @@ Examples
 ::
 
 
-      data("Lanza", package = "HSAUR")
-      layout(matrix(1:4, nrow = 2))
-      pl <- tapply(1:nrow(Lanza), Lanza$study, function(indx)
-          mosaicplot(table(Lanza[indx,"treatment"], 
-                           Lanza[indx,"classification"]),
-                     main = "", shade = TRUE))
+     data("Lanza", package = "HSAUR")
+     layout(matrix(1:4, nrow = 2))
+     pl <- tapply(1:nrow(Lanza), Lanza$study, function(indx)
+         mosaicplot(table(Lanza[indx,"treatment"], 
+                          Lanza[indx,"classification"]),
+                    main = "", shade = TRUE))
 

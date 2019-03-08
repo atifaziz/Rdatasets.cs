@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("water")
+   data("water")
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 A data frame with 61 observations on the following 4 variables.
 
 location
-    a factor with levels ``North`` and ``South`` indicating whether the
-    town is as north as Derby.
+   a factor with levels ``North`` and ``South`` indicating whether the
+   town is as north as Derby.
 
 town
-    the name of the town.
+   the name of the town.
 
 mortality
-    averaged annual mortality per 100.000 male inhabitants.
+   averaged annual mortality per 100.000 male inhabitants.
 
 hardness
-    calcium concentration (in parts per million).
+   calcium concentration (in parts per million).
 
 Details
 ~~~~~~~
@@ -61,7 +61,7 @@ Examples
 ::
 
 
-      data("water", package = "HSAUR")
-      plot(mortality ~ hardness, data = water, 
-           col = as.numeric(water$location))
+     data("water", package = "HSAUR")
+     plot(mortality ~ hardness, data = water, 
+          col = as.numeric(water$location))
 

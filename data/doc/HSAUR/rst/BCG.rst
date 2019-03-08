@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("BCG")
+   data("BCG")
 
 Format
 ~~~~~~
@@ -24,25 +24,25 @@ Format
 A data frame with 13 observations on the following 7 variables.
 
 ``Study``
-    an identifier of the study.
+   an identifier of the study.
 
 ``BCGTB``
-    the number of subjects suffering from TB after a BCG vaccination.
+   the number of subjects suffering from TB after a BCG vaccination.
 
 ``BCGVacc``
-    the number of subjects with BCG vaccination.
+   the number of subjects with BCG vaccination.
 
 ``NoVaccTB``
-    the number of subjects suffering from TB without BCG vaccination.
+   the number of subjects suffering from TB without BCG vaccination.
 
 ``NoVacc``
-    the total number of subjects without BCG vaccination.
+   the total number of subjects without BCG vaccination.
 
 ``Latitude``
-    geographic position of the place the study was undertaken.
+   geographic position of the place the study was undertaken.
 
 ``Year``
-    the year the study was undertaken.
+   the year the study was undertaken.
 
 Details
 ~~~~~~~
@@ -73,8 +73,8 @@ Examples
 ::
 
 
-      data("BCG", package = "HSAUR")
-      boxplot(BCG$BCGTB/BCG$BCGVacc, BCG$NoVaccTB/BCG$NoVacc,
-              names = c("BCG Vaccination", "No Vaccination"), 
-              ylab = "Percent BCG cases")
+     data("BCG", package = "HSAUR")
+     boxplot(BCG$BCGTB/BCG$BCGVacc, BCG$NoVaccTB/BCG$NoVacc,
+             names = c("BCG Vaccination", "No Vaccination"), 
+             ylab = "Percent BCG cases")
 

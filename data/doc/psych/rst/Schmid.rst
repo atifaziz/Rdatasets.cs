@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(Schmid)
+   data(Schmid)
 
 Details
 ~~~~~~~
@@ -74,8 +74,8 @@ Examples
 
 ::
 
-    data(Schmid)
-    cor.plot(Schmid,TRUE)
-    print(fa(Schmid,6,rotate="oblimin"),cut=0)  #shows an oblique solution
-    round(cov2cor(schmid.leiman),2)
-    cor.plot(cov2cor(West),TRUE)
+   data(Schmid)
+   cor.plot(Schmid,TRUE)
+   print(fa(Schmid,6,rotate="oblimin"),cut=0)  #shows an oblique solution
+   round(cov2cor(schmid.leiman),2)
+   cor.plot(cov2cor(West),TRUE)

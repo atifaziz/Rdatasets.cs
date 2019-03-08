@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    data(meyer)
+   data(meyer)
 
 Format
 ~~~~~~
@@ -47,34 +47,34 @@ Examples
 
 ::
 
-    ## Not run: 
-    library(gap)
-    meyer <- within(meyer,{
-       g1 <- ifelse(generation==1,1,0)
-       g2 <- ifelse(generation==2,1,0)
-    })
-    lm(y~-1+g1+g2,data=meyer)
-    library(MCMCglmm)
-    m <-MCMCglmm(y~-1+g1+g2,random=animal~1,pedigree=meyer[,1:3],data=meyer,verbose=FALSE)
-    summary(m)
-    plot(m)   
+   ## Not run: 
+   library(gap)
+   meyer <- within(meyer,{
+      g1 <- ifelse(generation==1,1,0)
+      g2 <- ifelse(generation==2,1,0)
+   })
+   lm(y~-1+g1+g2,data=meyer)
+   library(MCMCglmm)
+   m <-MCMCglmm(y~-1+g1+g2,random=animal~1,pedigree=meyer[,1:3],data=meyer,verbose=FALSE)
+   summary(m)
+   plot(m)   
 
-    meyer <- within(meyer,{
-       id <- animal
-       animal <- ifelse(!is.na(animal),animal,0)
-       dam <- ifelse(!is.na(dam),dam,0)
-       sire <- ifelse(!is.na(sire),sire,0)
-    })
-    # library(kinship)
-    # A <- with(meyer,kinship(animal,sire,dam))*2
+   meyer <- within(meyer,{
+      id <- animal
+      animal <- ifelse(!is.na(animal),animal,0)
+      dam <- ifelse(!is.na(dam),dam,0)
+      sire <- ifelse(!is.na(sire),sire,0)
+   })
+   # library(kinship)
+   # A <- with(meyer,kinship(animal,sire,dam))*2
 
-    A <- kin.morgan(meyer)$kin.matrix*2
+   A <- kin.morgan(meyer)$kin.matrix*2
 
-    library(regress)
-    regress(y~-1+g1+g2,~A,data=meyer)
-    prior <- list(R=list(V=1, nu=0.002), G=list(G1=list(V=1, nu=0.002)))
-    m2 <- MCMCgrm(y~-1+g1+g2,prior,meyer,A,singular.ok=TRUE,verbose=FALSE)
-    summary(m2)
-    plot(m2)   
+   library(regress)
+   regress(y~-1+g1+g2,~A,data=meyer)
+   prior <- list(R=list(V=1, nu=0.002), G=list(G1=list(V=1, nu=0.002)))
+   m2 <- MCMCgrm(y~-1+g1+g2,prior,meyer,A,singular.ok=TRUE,verbose=FALSE)
+   summary(m2)
+   plot(m2)   
 
-    ## End(Not run)
+   ## End(Not run)

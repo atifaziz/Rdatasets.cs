@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    frets
+   frets
 
 Format
 ~~~~~~
@@ -27,16 +27,16 @@ Format
 This data frame contains the following columns:
 
 ``l1``
-    The head length of the eldest son.
+   The head length of the eldest son.
 
 ``b1``
-    The head breadth of the eldest son.
+   The head breadth of the eldest son.
 
 ``l2``
-    The head length of the second son.
+   The head length of the second son.
 
 ``b2``
-    The head breadth of the second son.
+   The head breadth of the second son.
 
 Source
 ~~~~~~

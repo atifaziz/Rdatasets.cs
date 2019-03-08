@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("Punishment")
+   data("Punishment")
 
 Format
 ~~~~~~
@@ -25,21 +25,21 @@ Format
 A data frame with 36 observations and 5 variables.
 
 Freq
-    frequency.
+   frequency.
 
 attitude
-    factor indicating attitude: (no, moderate) punishment of children.
+   factor indicating attitude: (no, moderate) punishment of children.
 
 memory
-    factor indicating whether the person had memories of corporal
-    punishment as a child (yes, no).
+   factor indicating whether the person had memories of corporal
+   punishment as a child (yes, no).
 
 education
-    factor indicating highest level of education (elementary, secondary,
-    high).
+   factor indicating highest level of education (elementary, secondary,
+   high).
 
 age
-    factor indicating age group in years (15-24, 25-39, 40-).
+   factor indicating age group in years (15-24, 25-39, 40-).
 
 Note
 ~~~~
@@ -64,10 +64,10 @@ Examples
 
 ::
 
-    data("Punishment", package = "vcd")
-    pun <- xtabs(Freq ~ memory + attitude + age + education, data = Punishment)
+   data("Punishment", package = "vcd")
+   pun <- xtabs(Freq ~ memory + attitude + age + education, data = Punishment)
 
-    ## model: ~ (memory + attitude) * age * education
-    ## use maximum sum-of-squares test/shading
-    cotabplot(~ memory + attitude | age + education, data = pun, panel = cotab_coindep,
-      n = 5000, type = "assoc", test = "maxchisq", interpolate = 1:2)
+   ## model: ~ (memory + attitude) * age * education
+   ## use maximum sum-of-squares test/shading
+   cotabplot(~ memory + attitude | age + education, data = pun, panel = cotab_coindep,
+     n = 5000, type = "assoc", test = "maxchisq", interpolate = 1:2)

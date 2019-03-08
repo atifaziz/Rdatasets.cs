@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    aids
+   aids
 
 Format
 ~~~~~~
@@ -32,30 +32,30 @@ Format
 This data frame contains the following columns:
 
 ``year``
-    The year of the diagnosis.
+   The year of the diagnosis.
 
 ``quarter``
-    The quarter of the year in which diagnosis was made.
+   The quarter of the year in which diagnosis was made.
 
 ``delay``
-    The time delay (in months) between diagnosis and reporting. 0 means
-    that the case was reported within one month. Longer delays are
-    grouped in 3 month intervals and the value of ``delay`` is the
-    midpoint of the interval (therefore a value of ``2`` indicates that
-    reporting was delayed for between 1 and 3 months).
+   The time delay (in months) between diagnosis and reporting. 0 means
+   that the case was reported within one month. Longer delays are
+   grouped in 3 month intervals and the value of ``delay`` is the
+   midpoint of the interval (therefore a value of ``2`` indicates that
+   reporting was delayed for between 1 and 3 months).
 
 ``dud``
-    An indicator of censoring. These are categories for which full
-    information is not yet available and the number recorded is a lower
-    bound only.
+   An indicator of censoring. These are categories for which full
+   information is not yet available and the number recorded is a lower
+   bound only.
 
 ``time``
-    The time interval of the diagnosis. That is the number of quarters
-    from July 1983 until the end of the quarter in which these cases
-    were diagnosed.
+   The time interval of the diagnosis. That is the number of quarters
+   from July 1983 until the end of the quarter in which these cases were
+   diagnosed.
 
 ``y``
-    The number of AIDS cases reported.
+   The number of AIDS cases reported.
 
 Source
 ~~~~~~

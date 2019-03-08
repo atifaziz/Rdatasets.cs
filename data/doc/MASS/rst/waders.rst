@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    waders
+   waders
 
 Format
 ~~~~~~
@@ -24,61 +24,61 @@ Format
 This data frame contains the following columns (species)
 
 ``S1``
-    Oystercatcher
+   Oystercatcher
 
 ``S2``
-    White-fronted Plover
+   White-fronted Plover
 
 ``S3``
-    Kitt Lutz's Plover
+   Kitt Lutz's Plover
 
 ``S4``
-    Three-banded Plover
+   Three-banded Plover
 
 ``S5``
-    Grey Plover
+   Grey Plover
 
 ``S6``
-    Ringed Plover
+   Ringed Plover
 
 ``S7``
-    Bar-tailed Godwit
+   Bar-tailed Godwit
 
 ``S8``
-    Whimbrel
+   Whimbrel
 
 ``S9``
-    Marsh Sandpiper
+   Marsh Sandpiper
 
 ``S10``
-    Greenshank
+   Greenshank
 
 ``S11``
-    Common Sandpiper
+   Common Sandpiper
 
 ``S12``
-    Turnstone
+   Turnstone
 
 ``S13``
-    Knot
+   Knot
 
 ``S14``
-    Sanderling
+   Sanderling
 
 ``S15``
-    Little Stint
+   Little Stint
 
 ``S16``
-    Curlew Sandpiper
+   Curlew Sandpiper
 
 ``S17``
-    Ruff
+   Ruff
 
 ``S18``
-    Avocet
+   Avocet
 
 ``S19``
-    Black-winged Stilt
+   Black-winged Stilt
 
 The rows are the sites:
 
@@ -113,4 +113,4 @@ Examples
 
 ::
 
-    plot(corresp(waders, nf=2))
+   plot(corresp(waders, nf=2))

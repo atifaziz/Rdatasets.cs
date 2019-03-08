@@ -30,7 +30,7 @@ Usage
 
 ::
 
-    claridge
+   claridge
 
 Format
 ~~~~~~
@@ -38,10 +38,10 @@ Format
 This data frame contains the following columns:
 
 ``dnan``
-    The genetic measurement on each woman's DNA.
+   The genetic measurement on each woman's DNA.
 
 ``hand``
-    The measure of left-handedness on an integer scale from 1 to 8.
+   The measure of left-handedness on an integer scale from 1 to 8.
 
 Source
 ~~~~~~

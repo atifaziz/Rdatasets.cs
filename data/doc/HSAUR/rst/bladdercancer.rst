@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data("bladdercancer")
+   data("bladdercancer")
 
 Format
 ~~~~~~
@@ -26,13 +26,13 @@ Format
 A data frame with 31 observations on the following 3 variables.
 
 ``time``
-    the duration.
+   the duration.
 
 ``tumorsize``
-    a factor with levels ``<=3cm`` and ``>3cm``.
+   a factor with levels ``<=3cm`` and ``>3cm``.
 
 ``number``
-    number of recurrent tumours.
+   number of recurrent tumours.
 
 Details
 ~~~~~~~
@@ -53,6 +53,6 @@ Examples
 ::
 
 
-      data("bladdercancer", package = "HSAUR")
-      mosaicplot(xtabs(~ number + tumorsize, data = bladdercancer))
+     data("bladdercancer", package = "HSAUR")
+     mosaicplot(xtabs(~ number + tumorsize, data = bladdercancer))
 

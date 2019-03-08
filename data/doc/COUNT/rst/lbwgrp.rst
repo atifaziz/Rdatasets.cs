@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(lbwgrp)
+   data(lbwgrp)
 
 Format
 ~~~~~~
@@ -27,25 +27,25 @@ Format
 A data frame with 6 observations on the following 7 variables.
 
 ``lowbw``
-    Number of low weight babies per covariate pattern: 12-60
+   Number of low weight babies per covariate pattern: 12-60
 
 ``cases``
-    Number of observations with same covariate pattern: 30-165
+   Number of observations with same covariate pattern: 30-165
 
 ``smoke``
-    1=history of mother smoking; 0=mother nonsmoker
+   1=history of mother smoking; 0=mother nonsmoker
 
 ``race1``
-    (1/0): Caucasian
+   (1/0): Caucasian
 
 ``race2``
-    (1/0): Black
+   (1/0): Black
 
 ``race3``
-    (1/0): Other
+   (1/0): Other
 
 ``low``
-    low birth weight (not valid variable in grouped format)
+   low birth weight (not valid variable in grouped format)
 
 Details
 ~~~~~~~
@@ -71,11 +71,11 @@ Examples
 
 ::
 
-    data(lbwgrp)
-    glmgp <- glm(lowbw ~ smoke + race2 + race3 + offset(log(cases)), family=poisson, data=lbwgrp)
-    summary(glmgp)
-    exp(coef(glmgp))
-    library(MASS)
-    glmgnb <- glm.nb(lowbw ~  smoke + race2 + race3, data=lbwgrp)
-    summary(glmgnb)
-    exp(coef(glmgnb))
+   data(lbwgrp)
+   glmgp <- glm(lowbw ~ smoke + race2 + race3 + offset(log(cases)), family=poisson, data=lbwgrp)
+   summary(glmgp)
+   exp(coef(glmgp))
+   library(MASS)
+   glmgnb <- glm.nb(lowbw ~  smoke + race2 + race3, data=lbwgrp)
+   summary(glmgnb)
+   exp(coef(glmgnb))

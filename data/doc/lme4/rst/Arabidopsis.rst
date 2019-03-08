@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("Arabidopsis")
+   data("Arabidopsis")
 
 Format
 ~~~~~~
@@ -24,34 +24,33 @@ Format
 A data frame with 625 observations on the following 8 variables.
 
 ``reg``
-    region: a factor with 3 levels ``NL`` (Netherlands), ``SP`` (Spain),
-    ``SW`` (Sweden)
+   region: a factor with 3 levels ``NL`` (Netherlands), ``SP`` (Spain),
+   ``SW`` (Sweden)
 
 ``popu``
-    population: a factor with the form ``n.R`` representing a population
-    in region ``R``
+   population: a factor with the form ``n.R`` representing a population
+   in region ``R``
 
 ``gen``
-    genotype: a factor with 24 (numeric-valued) levels
+   genotype: a factor with 24 (numeric-valued) levels
 
 ``rack``
-    a nuisance factor with 2 levels, one for each of two greenhouse
-    racks
+   a nuisance factor with 2 levels, one for each of two greenhouse racks
 
 ``nutrient``
-    fertilization treatment/nutrient level (1, minimal nutrients or 8,
-    added nutrients)
+   fertilization treatment/nutrient level (1, minimal nutrients or 8,
+   added nutrients)
 
 ``amd``
-    simulated herbivory or "clipping" (apical meristem damage):
-    ``unclipped`` (baseline) or ``clipped``
+   simulated herbivory or "clipping" (apical meristem damage):
+   ``unclipped`` (baseline) or ``clipped``
 
 ``status``
-    a nuisance factor for germination method (``Normal``,
-    ``Petri.Plate``, or ``Transplant``)
+   a nuisance factor for germination method (``Normal``,
+   ``Petri.Plate``, or ``Transplant``)
 
 ``total.fruits``
-    total fruit set per plant (integer)
+   total fruit set per plant (integer)
 
 Source
 ~~~~~~
@@ -71,14 +70,14 @@ Examples
 
 ::
 
-    data(Arabidopsis)
-    summary(Arabidopsis[,"total.fruits"])
-    table(gsub("[0-9].","",levels(Arabidopsis[,"popu"])))
-    library(lattice)
-    stripplot(log(total.fruits+1) ~ amd|nutrient, data = Arabidopsis,
-              groups = gen,
-              strip=strip.custom(strip.names=c(TRUE,TRUE)),
-              type=c('p','a'), ## points and panel-average value --
-              ## see ?panel.xyplot
-              scales=list(x=list(rot=90)),
-              main="Panel: nutrient, Color: genotype")
+   data(Arabidopsis)
+   summary(Arabidopsis[,"total.fruits"])
+   table(gsub("[0-9].","",levels(Arabidopsis[,"popu"])))
+   library(lattice)
+   stripplot(log(total.fruits+1) ~ amd|nutrient, data = Arabidopsis,
+             groups = gen,
+             strip=strip.custom(strip.names=c(TRUE,TRUE)),
+             type=c('p','a'), ## points and panel-average value --
+             ## see ?panel.xyplot
+             scales=list(x=list(rot=90)),
+             main="Panel: nutrient, Color: genotype")

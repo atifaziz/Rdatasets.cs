@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("WomenQueue")
+   data("WomenQueue")
 
 Format
 ~~~~~~
@@ -58,7 +58,7 @@ Examples
 
 ::
 
-    data("WomenQueue")
-    gf <- goodfit(WomenQueue, type = "binomial")
-    summary(gf)
-    plot(gf)
+   data("WomenQueue")
+   gf <- goodfit(WomenQueue, type = "binomial")
+   summary(gf)
+   plot(gf)

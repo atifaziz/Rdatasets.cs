@@ -17,55 +17,55 @@ Usage
 
 ::
 
-    cgd
+   cgd
 
 Format
 ~~~~~~
 
 id
-    subject identification number
+   subject identification number
 
 center
-    enrolling center
+   enrolling center
 
 random
-    date of randomization
+   date of randomization
 
 treatment
-    placebo or gamma interferon
+   placebo or gamma interferon
 
 sex
-    sex
+   sex
 
 age
-    age in years, at study entry
+   age in years, at study entry
 
 height
-    height in cm at study entry
+   height in cm at study entry
 
 weight
-    weight in kg at study entry
+   weight in kg at study entry
 
 inherit
-    pattern of inheritance
+   pattern of inheritance
 
 steroids
-    use of steroids at study entry,1=yes
+   use of steroids at study entry,1=yes
 
 propylac
-    use of prophylactic antibiotics at study entry
+   use of prophylactic antibiotics at study entry
 
 hos.cat
-    a categorization of the centers into 4 groups
+   a categorization of the centers into 4 groups
 
 tstart, tstop
-    start and end of each time interval
+   start and end of each time interval
 
 status
-    1=the interval ends with an infection
+   1=the interval ends with an infection
 
 enum
-    observation number within subject
+   observation number within subject
 
 Details
 ~~~~~~~

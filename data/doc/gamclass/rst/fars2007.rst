@@ -16,8 +16,8 @@ Usage
 
 ::
 
-    fars2007
-    fars2008
+   fars2007
+   fars2008
 
 Format
 ~~~~~~
@@ -25,76 +25,76 @@ Format
 A data frame with 72548 observations on the following 24 variables.
 
 ``Obs.``
-    a numeric vector
+   a numeric vector
 
 ``state``
-    a numeric vector
+   a numeric vector
 
 ``casenum``
-    a numeric vector
+   a numeric vector
 
 ``vnum``
-    a numeric vector
+   a numeric vector
 
 ``pnum``
-    a numeric vector
+   a numeric vector
 
 ``lightcond``
-    a numeric vector
+   a numeric vector
 
 ``numfatal``
-    a numeric vector
+   a numeric vector
 
 ``vforms``
-    a numeric vector
+   a numeric vector
 
 ``age``
-    a numeric vector
+   a numeric vector
 
 ``airbag``
-    a numeric vector
+   a numeric vector
 
 ``injury``
-    a numeric vector
+   a numeric vector
 
 ``ptype``
-    a numeric vector
+   a numeric vector
 
 ``restraint``
-    a numeric vector
+   a numeric vector
 
 ``seatpos``
-    a numeric vector
+   a numeric vector
 
 ``sex``
-    a numeric vector
+   a numeric vector
 
 ``body``
-    a numeric vector
+   a numeric vector
 
 ``inimpact``
-    a numeric vector
+   a numeric vector
 
 ``mhevent``
-    a numeric vector
+   a numeric vector
 
 ``vfatcount``
-    a numeric vector
+   a numeric vector
 
 ``numoccs``
-    a numeric vector
+   a numeric vector
 
 ``travspd``
-    a numeric vector
+   a numeric vector
 
 ``make``
-    a numeric vector
+   a numeric vector
 
 ``model``
-    a numeric vector
+   a numeric vector
 
 ``modelyr``
-    a numeric vector
+   a numeric vector
 
 Details
 ~~~~~~~
@@ -128,5 +128,5 @@ Examples
 
 ::
 
-    data(fars2007)
-    str(fars2007)
+   data(fars2007)
+   str(fars2007)

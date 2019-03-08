@@ -3,7 +3,7 @@ Main website: https://vincentarelbundock.github.io/Rdatasets/
 What is this?
 =============
 
-``Rdatasets`` is a collection of 1161 datasets that were originally distributed alongside the statistical software environment ``R`` and some of its add-on packages. The goal is to make these data more broadly accessible for teaching and statistical software development. 
+``Rdatasets`` is a collection of over 1200 datasets that were originally distributed alongside the statistical software environment ``R`` and some of its add-on packages. The goal is to make these data more broadly accessible for teaching and statistical software development. 
 
 What is included?
 =================

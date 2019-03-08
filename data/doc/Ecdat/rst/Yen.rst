@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Yen)
+   data(Yen)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A dataframe containing :
 
 date
-    the date of the observation (19850104 is January, 4, 1985)
+   the date of the observation (19850104 is January, 4, 1985)
 
 s
-    the ask price of the dollar in units of Yen in the spot market on
-    friday of the current week
+   the ask price of the dollar in units of Yen in the spot market on
+   friday of the current week
 
 f
-    the ask price of the dollar in units of Yen in the 30-day forward
-    market on friday of the current week
+   the ask price of the dollar in units of Yen in the 30-day forward
+   market on friday of the current week
 
 s30
-    the bid price of the dollar in units of Yen in the spot market on
-    the delivery date on a current forward contract
+   the bid price of the dollar in units of Yen in the spot market on the
+   delivery date on a current forward contract
 
 Source
 ~~~~~~

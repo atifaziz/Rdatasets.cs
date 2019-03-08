@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("Suicide")
+   data("Suicide")
 
 Format
 ~~~~~~
@@ -24,23 +24,23 @@ Format
 A data frame with 306 observations and 6 variables.
 
 Freq
-    frequency of suicides.
+   frequency of suicides.
 
 sex
-    factor indicating sex (male, female).
+   factor indicating sex (male, female).
 
 method
-    factor indicating method used.
+   factor indicating method used.
 
 age
-    age (rounded).
+   age (rounded).
 
 age.group
-    factor. Age classified into 5 groups.
+   factor. Age classified into 5 groups.
 
 method2
-    factor indicating method used (same as ``method`` but some levels
-    are merged).
+   factor indicating method used (same as ``method`` but some levels are
+   merged).
 
 Source
 ~~~~~~
@@ -62,5 +62,5 @@ Examples
 
 ::
 
-    data("Suicide")
-    structable(~ sex + method2 + age.group, data = Suicide)
+   data("Suicide")
+   structable(~ sex + method2 + age.group, data = Suicide)

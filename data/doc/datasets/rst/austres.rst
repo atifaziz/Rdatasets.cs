@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    austres
+   austres
 
 Source
 ~~~~~~

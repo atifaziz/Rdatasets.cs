@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    droughts
+   droughts
 
 Format
 ~~~~~~
@@ -24,19 +24,19 @@ Format
 This data frame contains the following columns:
 
 length
-    the length of time from the completion of the last rain event to the
-    beginning of the next rain event.
+   the length of time from the completion of the last rain event to the
+   beginning of the next rain event.
 
 year
-    the calendar year.
+   the calendar year.
 
 Examples
 ~~~~~~~~
 
 ::
 
-      boxplot(length ~ year, data=droughts)
-      boxplot(log(length) ~ year, data=droughts)
-      hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
-      hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")
+     boxplot(length ~ year, data=droughts)
+     boxplot(log(length) ~ year, data=droughts)
+     hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
+     hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")
 

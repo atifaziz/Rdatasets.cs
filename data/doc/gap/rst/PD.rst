@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(PD)
+   data(PD)
 
 Format
 ~~~~~~

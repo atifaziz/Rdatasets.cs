@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(hbk)
+   data(hbk, package="robustbase")
 
 Format
 ~~~~~~
@@ -30,16 +30,16 @@ A data frame with 75 observations on 4 variables, where the last
 variable is the dependent one.
 
 X1
-    x[,1]
+   x[,1]
 
 X2
-    x[,2]
+   x[,2]
 
 X3
-    x[,3]
+   x[,3]
 
 Y
-    y
+   y
 
 Note
 ~~~~
@@ -61,9 +61,9 @@ Examples
 
 ::
 
-    data(hbk)
-    plot(hbk)
-    summary(lm.hbk <- lm(Y ~ ., data = hbk))
+   data(hbk)
+   plot(hbk)
+   summary(lm.hbk <- lm(Y ~ ., data = hbk))
 
-    hbk.x <- data.matrix(hbk[, 1:3])
-    (cHBK <- covMcd(hbk.x))
+   hbk.x <- data.matrix(hbk[, 1:3])
+   (cHBK <- covMcd(hbk.x))

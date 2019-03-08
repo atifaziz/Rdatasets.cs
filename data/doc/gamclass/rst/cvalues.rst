@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    cvalues
+   cvalues
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 A data frame with 9 observations on the following 3 variables.
 
 ``Year``
-    Year of measurement
+   Year of measurement
 
 ``speed``
-    estimated speed in meters per second
+   estimated speed in meters per second
 
 ``error``
-    measurement error, as estimated by experimenter(s)
+   measurement error, as estimated by experimenter(s)
 
 Source
 ~~~~~~
@@ -41,4 +41,4 @@ Examples
 
 ::
 
-    data(cvalues)
+   data(cvalues)

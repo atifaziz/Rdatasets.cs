@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(foodstamp)
+   data(foodstamp, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,17 +25,17 @@ Format
 A data frame with 150 observations on the following 4 variables.
 
 ``participation``
-    participation in U.S. Food Stamp Program; yes = 1, no = 0
+   participation in U.S. Food Stamp Program; yes = 1, no = 0
 
 ``tenancy``
-    tenancy, indicating home ownership; yes = 1, no = 0
+   tenancy, indicating home ownership; yes = 1, no = 0
 
 ``suppl.income``
-    supplemental income, indicating whether some form of supplemental
-    security income is received; yes = 1, no = 0
+   supplemental income, indicating whether some form of supplemental
+   security income is received; yes = 1, no = 0
 
 ``income``
-    monthly income (in US dollars)
+   monthly income (in US dollars)
 
 Source
 ~~~~~~
@@ -65,22 +65,22 @@ Examples
 
 ::
 
-    data(foodstamp)
+   data(foodstamp)
 
-    (T123 <- xtabs(~ participation+ tenancy+ suppl.income, data=foodstamp))
-    summary(T123) ## ==> the binary var's are clearly not independent
+   (T123 <- xtabs(~ participation+ tenancy+ suppl.income, data=foodstamp))
+   summary(T123) ## ==> the binary var's are clearly not independent
 
-    foodSt <- within(foodstamp, {
-       logInc <- log(1 + income)
-       rm(income)
-    })
+   foodSt <- within(foodstamp, {
+      logInc <- log(1 + income)
+      rm(income)
+   })
 
-    m1 <- glm(participation ~ ., family=binomial, data=foodSt)
-    summary(m1)
-    rm1 <- glmrob(participation ~ ., family=binomial, data=foodSt)
-    summary(rm1)
-    ## Now use robust weights.on.x :
-    rm2 <- glmrob(participation ~ ., family=binomial, data=foodSt,
-                  weights.on.x = "robCov")
-    summary(rm2)## aha, now the weights are different:
-    which( weights(rm2, type="robust") < 0.5)
+   m1 <- glm(participation ~ ., family=binomial, data=foodSt)
+   summary(m1)
+   rm1 <- glmrob(participation ~ ., family=binomial, data=foodSt)
+   summary(rm1)
+   ## Now use robust weights.on.x :
+   rm2 <- glmrob(participation ~ ., family=binomial, data=foodSt,
+                 weights.on.x = "robCov")
+   summary(rm2)## aha, now the weights are different:
+   which( weights(rm2, type="robust") < 0.5)

@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data("HalleyLifeTable")
+   data("HalleyLifeTable")
 
 Format
 ~~~~~~
@@ -27,19 +27,19 @@ Format
 A data frame with 84 observations on the following 4 variables.
 
 ``age``
-    a numeric vector
+   a numeric vector
 
 ``deaths``
-    number of deaths, *D_k*, among people of age k, a numeric vector
+   number of deaths, *D_k*, among people of age k, a numeric vector
 
 ``number``
-    size of the population, *P_k* surviving until this age, a numeric
-    vector
+   size of the population, *P_k* surviving until this age, a numeric
+   vector
 
 ``ratio``
-    the ratio *P_{k+1}/P_k*, the conditional probability of surviving
-    until age k + 1 given that one had already reached age k, a numeric
-    vector
+   the ratio *P_{k+1}/P_k*, the conditional probability of surviving
+   until age k + 1 given that one had already reached age k, a numeric
+   vector
 
 Details
 ~~~~~~~
@@ -89,18 +89,18 @@ Examples
 
 ::
 
-    data(HalleyLifeTable)
-    # what was the estimated population of Breslau?
-    sum(HalleyLifeTable$number)
+   data(HalleyLifeTable)
+   # what was the estimated population of Breslau?
+   sum(HalleyLifeTable$number)
 
-    # plot survival vs. age
-    plot(number ~ age, data=HalleyLifeTable, type="h", ylab="Number surviving")
+   # plot survival vs. age
+   plot(number ~ age, data=HalleyLifeTable, type="h", ylab="Number surviving")
 
-    # population pyramid is transpose of this
-    plot(age ~ number, data=HalleyLifeTable, type="l", xlab="Number surviving")
-    with(HalleyLifeTable, segments(0, age, number, age, lwd=2))
+   # population pyramid is transpose of this
+   plot(age ~ number, data=HalleyLifeTable, type="l", xlab="Number surviving")
+   with(HalleyLifeTable, segments(0, age, number, age, lwd=2))
 
-    # conditional probability of survival, one more year
-    plot(ratio ~ age, data=HalleyLifeTable, ylab="Probability survive one more year")
+   # conditional probability of survival, one more year
+   plot(ratio ~ age, data=HalleyLifeTable, ylab="Probability survive one more year")
 
 

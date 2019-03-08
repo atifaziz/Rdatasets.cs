@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    boundsdata
+   boundsdata
 
 Format
 ~~~~~~
@@ -27,29 +27,29 @@ as results from a hypothetical randomized trial. See the source for a
 full description.
 
 out:
-    The binary outcome variable under the parallel design.
+   The binary outcome variable under the parallel design.
 
 out.enc:
-    The binary outcome variable under the parallel encouragement design.
+   The binary outcome variable under the parallel encouragement design.
 
 med:
-    The binary mediator under the parallel design.
+   The binary mediator under the parallel design.
 
 med.enc:
-    The binary mediator under the parallel encouragement design.
+   The binary mediator under the parallel encouragement design.
 
 ttt:
-    The binary treatment variable.
+   The binary treatment variable.
 
 manip:
-    The design indicator, or the variable indicating whether the
-    mediator is manipulated under the parallel design.
+   The design indicator, or the variable indicating whether the mediator
+   is manipulated under the parallel design.
 
 enc:
-    The trichotomous encouragement variable under the parallel
-    encouragement design. Equals 0 if subject received no encouragement;
-    1 if encouraged for the mediator value of 1; and -1 if encouraged
-    for the mediator value of 0.
+   The trichotomous encouragement variable under the parallel
+   encouragement design. Equals 0 if subject received no encouragement;
+   1 if encouraged for the mediator value of 1; and -1 if encouraged for
+   the mediator value of 0.
 
 Details
 ~~~~~~~

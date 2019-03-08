@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    aircondit
+   aircondit
 
 Format
 ~~~~~~
@@ -29,8 +29,8 @@ Format
 The data frames contain the following column:
 
 ``hours``
-    The time interval in hours between successive failures of the
-    air-conditioning equipment
+   The time interval in hours between successive failures of the
+   air-conditioning equipment
 
 Source
 ~~~~~~

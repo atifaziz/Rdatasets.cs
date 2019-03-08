@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(AustralianElectionPolling)
+   data(AustralianElectionPolling)
 
 Format
 ~~~~~~
@@ -26,57 +26,57 @@ Format
 A data frame with 239 observations on the following 14 variables.
 
 ``ALP``
-    a numeric vector, percentage of respondents reported as intending to
-    vote for the Australian Labor Party
+   a numeric vector, percentage of respondents reported as intending to
+   vote for the Australian Labor Party
 
 ``Lib``
-    a numeric vector, percentage of respondents reported as intending to
-    vote for the Liberal Party
+   a numeric vector, percentage of respondents reported as intending to
+   vote for the Liberal Party
 
 ``Nat``
-    a numeric vector, percentage of respondents reported as intending to
-    vote for the National Party
+   a numeric vector, percentage of respondents reported as intending to
+   vote for the National Party
 
 ``Green``
-    a numeric vector, percentage of respondents reported as intending to
-    vote for the Greens
+   a numeric vector, percentage of respondents reported as intending to
+   vote for the Greens
 
 ``FamilyFirst``
-    a numeric vector, percentage of respondents reported as intending to
-    vote for the Family First party
+   a numeric vector, percentage of respondents reported as intending to
+   vote for the Family First party
 
 ``Dems``
-    a numeric vector, percentage of respondents reported as intending to
-    vote for the Australian Democrats
+   a numeric vector, percentage of respondents reported as intending to
+   vote for the Australian Democrats
 
 ``OneNation``
-    a numeric vector, percentage of respondents reported as intending to
-    vote for One Nation
+   a numeric vector, percentage of respondents reported as intending to
+   vote for One Nation
 
 ``DK``
-    a numeric vector, percentage of respondents reported as expressing
-    no preference or a “don't know” response
+   a numeric vector, percentage of respondents reported as expressing no
+   preference or a “don't know” response
 
 ``sampleSize``
-    a numeric vector, reported sample size of the poll
+   a numeric vector, reported sample size of the poll
 
 ``org``
-    a factor with levels ``Galaxy``, ``Morgan, F2F``, ``Newspoll``,
-    ``Nielsen`` and ``Morgan, Phone``, indicating the survey house
-    and/or mode of the poll
+   a factor with levels ``Galaxy``, ``Morgan, F2F``, ``Newspoll``,
+   ``Nielsen`` and ``Morgan, Phone``, indicating the survey house and/or
+   mode of the poll
 
 ``startDate``
-    a Date, reported start of the field period
+   a Date, reported start of the field period
 
 ``endDate``
-    a Date, reported end of the field period
+   a Date, reported end of the field period
 
 ``source``
-    a character vector, source of the poll report
+   a character vector, source of the poll report
 
 ``remark``
-    a character vector, remarks noted by author and/or research
-    assistant coders
+   a character vector, remarks noted by author and/or research assistant
+   coders
 
 Details
 ~~~~~~~
@@ -112,22 +112,22 @@ Examples
 
 ::
 
-    data(AustralianElectionPolling)
-    if(require(lattice)) {
-        lattice::xyplot(ALP ~ startDate | org, 
-           data=AustralianElectionPolling,
-           layout=c(1,5),
-           type="b",
-           xlab="Start Date",
-           ylab="ALP")
-    }
+   data(AustralianElectionPolling)
+   if(require(lattice)) {
+       lattice::xyplot(ALP ~ startDate | org, 
+          data=AustralianElectionPolling,
+          layout=c(1,5),
+          type="b",
+          xlab="Start Date",
+          ylab="ALP")
+   }
 
-    ## test for house effects
-    y <- AustralianElectionPolling$ALP/100
-    v <- y*(1-y)/AustralianElectionPolling$sampleSize
-    w <- 1/v
-    m1 <- mgcv::gam(y ~ s(as.numeric(startDate)),
-              weight=w,       
-              data=AustralianElectionPolling)
-    m2 <- update(m1, ~ . + org)
-    anova(m1,m2)
+   ## test for house effects
+   y <- AustralianElectionPolling$ALP/100
+   v <- y*(1-y)/AustralianElectionPolling$sampleSize
+   w <- 1/v
+   m1 <- mgcv::gam(y ~ s(as.numeric(startDate)),
+             weight=w,       
+             data=AustralianElectionPolling)
+   m2 <- update(m1, ~ . + org)
+   anova(m1,m2)

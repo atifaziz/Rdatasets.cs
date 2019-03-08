@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(swiss)
+   data(swiss)
 
 Format
 ~~~~~~

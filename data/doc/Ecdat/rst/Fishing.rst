@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Fishing)
+   data(Fishing)
 
 Format
 ~~~~~~
@@ -29,40 +29,40 @@ Format
 A dataframe containing :
 
 mode
-    recreation mode choice, on of : beach, pier, boat and charter
+   recreation mode choice, on of : beach, pier, boat and charter
 
 price
-    price for chosen alternative
+   price for chosen alternative
 
 catch
-    catch rate for chosen alternative
+   catch rate for chosen alternative
 
 pbeach
-    price for beach mode
+   price for beach mode
 
 ppier
-    price for pier mode
+   price for pier mode
 
 pboat
-    price for private boat mode
+   price for private boat mode
 
 pcharter
-    price for charter boat mode
+   price for charter boat mode
 
 cbeach
-    catch rate for beach mode
+   catch rate for beach mode
 
 cpier
-    catch rate for pier mode
+   catch rate for pier mode
 
 cboat
-    catch rate for private boat mode
+   catch rate for private boat mode
 
 ccharter
-    catch rate for charter boat mode
+   catch rate for charter boat mode
 
 income
-    monthly income
+   monthly income
 
 Source
 ~~~~~~

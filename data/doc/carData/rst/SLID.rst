@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    SLID
+   SLID
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 This data frame contains the following columns:
 
 wages
-    Composite hourly wage rate from all jobs.
+   Composite hourly wage rate from all jobs.
 
 education
-    Number of years of schooling.
+   Number of years of schooling.
 
 age
-    in years.
+   in years.
 
 sex
-    A factor with levels: ``Female``, ``Male``.
+   A factor with levels: ``Female``, ``Male``.
 
 language
-    A factor with levels: ``English``, ``French``, ``Other``.
+   A factor with levels: ``English``, ``French``, ``Other``.
 
 Source
 ~~~~~~

@@ -17,12 +17,12 @@ Usage
 
 ::
 
-    mtcars
+   mtcars
 
 Format
 ~~~~~~
 
-A data frame with 32 observations on 11 variables.
+A data frame with 32 observations on 11 (numeric) variables.
 
 +-------+------+------------------------------------------+
 | [, 1] | mpg  | Miles/(US) gallon                        |
@@ -39,7 +39,7 @@ A data frame with 32 observations on 11 variables.
 +-------+------+------------------------------------------+
 | [, 7] | qsec | 1/4 mile time                            |
 +-------+------+------------------------------------------+
-| [, 8] | vs   | V/S                                      |
+| [, 8] | vs   | Engine (0 = V-shaped, 1 = straight)      |
 +-------+------+------------------------------------------+
 | [, 9] | am   | Transmission (0 = automatic, 1 = manual) |
 +-------+------+------------------------------------------+
@@ -59,7 +59,16 @@ Examples
 
 ::
 
-    require(graphics)
-    pairs(mtcars, main = "mtcars data")
-    coplot(mpg ~ disp | as.factor(cyl), data = mtcars,
-           panel = panel.smooth, rows = 1)
+   require(graphics)
+   pairs(mtcars, main = "mtcars data", gap = 1/4)
+   coplot(mpg ~ disp | as.factor(cyl), data = mtcars,
+          panel = panel.smooth, rows = 1)
+   ## possibly more meaningful, e.g., for summary() or bivariate plots:
+   mtcars2 <- within(mtcars, {
+      vs <- factor(vs, labels = c("V", "S"))
+      am <- factor(am, labels = c("automatic", "manual"))
+      cyl  <- ordered(cyl)
+      gear <- ordered(gear)
+      carb <- ordered(carb)
+   })
+   summary(mtcars2)

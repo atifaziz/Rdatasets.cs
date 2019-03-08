@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    shoes
+   shoes
 
 Source
 ~~~~~~

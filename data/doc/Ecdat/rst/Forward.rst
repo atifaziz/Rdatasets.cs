@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(Forward)
+   data(Forward)
 
 Format
 ~~~~~~
@@ -25,31 +25,31 @@ Format
 A time serie containing :
 
 usdbp
-    exchange rate USD/British Pound Sterling
+   exchange rate USD/British Pound Sterling
 
 usdeuro
-    exchange rate US D/Euro
+   exchange rate US D/Euro
 
 eurobp
-    exchange rate Euro/Pound
+   exchange rate Euro/Pound
 
 usdbp1
-    1 month forward rate USD/Pound
+   1 month forward rate USD/Pound
 
 usdeuro1
-    1 month forward rate USD/Euro
+   1 month forward rate USD/Euro
 
 eurobp1
-    1 month forward rate Euro/Pound
+   1 month forward rate Euro/Pound
 
 usdbp3
-    3 month forward rate USD/Pound
+   3 month forward rate USD/Pound
 
 usdeuro3
-    month forward rate USD/Euro
+   month forward rate USD/Euro
 
 eurobp3
-    month forward rate Euro/Pound
+   month forward rate Euro/Pound
 
 Source
 ~~~~~~

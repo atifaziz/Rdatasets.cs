@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Robey
+   Robey
 
 Format
 ~~~~~~
@@ -24,15 +24,15 @@ Format
 This data frame contains the following columns:
 
 region
-    A factor with levels: ``Africa``; ``Asia``, Asia and Pacific;
-    ``Latin.Amer``, Latin America and Caribbean; ``Near.East``, Near
-    East and North Africa.
+   A factor with levels: ``Africa``; ``Asia``, Asia and Pacific;
+   ``Latin.Amer``, Latin America and Caribbean; ``Near.East``, Near East
+   and North Africa.
 
 tfr
-    Total fertility rate (children per woman).
+   Total fertility rate (children per woman).
 
 contraceptors
-    Percent of contraceptors among married women of childbearing age.
+   Percent of contraceptors among married women of childbearing age.
 
 Source
 ~~~~~~

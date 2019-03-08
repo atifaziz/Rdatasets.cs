@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("BrokenMarriage")
+   data("BrokenMarriage")
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 A data frame with 20 observations and 4 variables.
 
 Freq
-    frequency.
+   frequency.
 
 gender
-    factor indicating gender (male, female).
+   factor indicating gender (male, female).
 
 rank
-    factor indicating social rank (I, II, III, IV, V).
+   factor indicating social rank (I, II, III, IV, V).
 
 broken
-    factor indicating whether the marriage or permanent relationship was
-    broken (yes, no).
+   factor indicating whether the marriage or permanent relationship was
+   broken (yes, no).
 
 Source
 ~~~~~~
@@ -53,5 +53,5 @@ Examples
 
 ::
 
-    data("BrokenMarriage")
-    structable(~ ., data = BrokenMarriage)
+   data("BrokenMarriage")
+   structable(~ ., data = BrokenMarriage)

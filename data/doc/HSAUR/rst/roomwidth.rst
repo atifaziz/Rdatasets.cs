@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("roomwidth")
+   data("roomwidth")
 
 Format
 ~~~~~~
@@ -23,10 +23,10 @@ Format
 A data frame with 113 observations on the following 2 variables.
 
 unit
-    a factor with levels ``feet`` and ``metres``.
+   a factor with levels ``feet`` and ``metres``.
 
 width
-    the estimated width of the lecture room.
+   the estimated width of the lecture room.
 
 Details
 ~~~~~~~
@@ -51,7 +51,7 @@ Examples
 ::
 
 
-      data("roomwidth", package = "HSAUR")
-      convert <- ifelse(roomwidth$unit == "feet", 1, 3.28)
-      boxplot(I(width * convert) ~ unit, data = roomwidth)
+     data("roomwidth", package = "HSAUR")
+     convert <- ifelse(roomwidth$unit == "feet", 1, 3.28)
+     boxplot(I(width * convert) ~ unit, data = roomwidth)
 

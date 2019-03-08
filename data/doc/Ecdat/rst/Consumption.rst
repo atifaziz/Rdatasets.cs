@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Consumption)
+   data(Consumption)
 
 Format
 ~~~~~~
@@ -29,10 +29,10 @@ Format
 A time serie containing :
 
 yd
-    personal disposable income, 1986 dollars
+   personal disposable income, 1986 dollars
 
 ce
-    personal consumption expenditure, 1986 dollars
+   personal consumption expenditure, 1986 dollars
 
 References
 ~~~~~~~~~~

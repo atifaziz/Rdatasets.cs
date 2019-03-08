@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    nlschools
+   nlschools
 
 Format
 ~~~~~~
@@ -25,26 +25,26 @@ Format
 This data frame contains 2287 rows and the following columns:
 
 ``lang``
-    language test score.
+   language test score.
 
 ``IQ``
-    verbal IQ.
+   verbal IQ.
 
 ``class``
-    class ID.
+   class ID.
 
 ``GS``
-    class size: number of eighth-grade pupils recorded in the class
-    (there may be others: see ``COMB``, and some may have been omitted
-    with missing values).
+   class size: number of eighth-grade pupils recorded in the class
+   (there may be others: see ``COMB``, and some may have been omitted
+   with missing values).
 
 ``SES``
-    social-economic status of pupil's family.
+   social-economic status of pupil's family.
 
 ``COMB``
-    were the pupils taught in a multi-grade class (``0/1``)? Classes
-    which contained pupils from grades 7 and 8 are coded ``1``, but only
-    eighth-graders were tested.
+   were the pupils taught in a multi-grade class (``0/1``)? Classes
+   which contained pupils from grades 7 and 8 are coded ``1``, but only
+   eighth-graders were tested.
 
 Source
 ~~~~~~
@@ -64,14 +64,14 @@ Examples
 ::
 
 
-    nl1 <- within(nlschools, {
-    IQave <- tapply(IQ, class, mean)[as.character(class)]
-    IQ <- IQ - IQave
-    })
-    cen <- c("IQ", "IQave", "SES")
-    nl1[cen] <- scale(nl1[cen], center = TRUE, scale = FALSE)
+   nl1 <- within(nlschools, {
+   IQave <- tapply(IQ, class, mean)[as.character(class)]
+   IQ <- IQ - IQave
+   })
+   cen <- c("IQ", "IQave", "SES")
+   nl1[cen] <- scale(nl1[cen], center = TRUE, scale = FALSE)
 
-    nl.lme <- nlme::lme(lang ~ IQ*COMB + IQave + SES,
-                        random = ~ IQ | class, data = nl1)
-    summary(nl.lme)
+   nl.lme <- nlme::lme(lang ~ IQ*COMB + IQave + SES,
+                       random = ~ IQ | class, data = nl1)
+   summary(nl.lme)
 

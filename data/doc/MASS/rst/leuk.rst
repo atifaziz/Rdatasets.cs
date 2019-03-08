@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    leuk
+   leuk
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 A data frame with columns:
 
 ``wbc``
-    white blood count.
+   white blood count.
 
 ``ag``
-    a test result, ``"present"`` or ``"absent"``.
+   a test result, ``"present"`` or ``"absent"``.
 
 ``time``
-    survival time in weeks.
+   survival time in weeks.
 
 Details
 ~~~~~~~
@@ -65,9 +65,9 @@ Examples
 
 ::
 
-    library(survival)
-    plot(survfit(Surv(time) ~ ag, data = leuk), lty = 2:3, col = 2:3)
+   library(survival)
+   plot(survfit(Surv(time) ~ ag, data = leuk), lty = 2:3, col = 2:3)
 
-    # now Cox models
-    leuk.cox <- coxph(Surv(time) ~ ag + log(wbc), leuk)
-    summary(leuk.cox)
+   # now Cox models
+   leuk.cox <- coxph(Surv(time) ~ ag + log(wbc), leuk)
+   summary(leuk.cox)

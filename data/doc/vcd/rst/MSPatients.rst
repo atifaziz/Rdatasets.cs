@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data("MSPatients")
+   data("MSPatients")
 
 Format
 ~~~~~~
@@ -57,26 +57,26 @@ Examples
 
 ::
 
-    data("MSPatients")
-    ## Not run: 
-    ## best visualized using a resized device, e.g. using:
-    ## get(getOption("device"))(width = 12)
-    pushViewport(viewport(layout = grid.layout(ncol = 2)))
-    pushViewport(viewport(layout.pos.col = 1))
-    popViewport()
-    pushViewport(viewport(layout.pos.col = 2))
-    popViewport(2)
-    dev.off()
+   data("MSPatients")
+   ## Not run: 
+   ## best visualized using a resized device, e.g. using:
+   ## get(getOption("device"))(width = 12)
+   pushViewport(viewport(layout = grid.layout(ncol = 2)))
+   pushViewport(viewport(layout.pos.col = 1))
+   popViewport()
+   pushViewport(viewport(layout.pos.col = 2))
+   popViewport(2)
+   dev.off()
 
-    ## End(Not run)
+   ## End(Not run)
 
-    ## alternative, more convenient way
-    mplot(
-      agreementplot(t(MSPatients[,,1]), return_grob = TRUE,
-        main = "Winnipeg Patients"),
-      agreementplot(t(MSPatients[,,2]), return_grob = TRUE,
-        main = "New Orleans Patients")
-    )
+   ## alternative, more convenient way
+   mplot(
+     agreementplot(t(MSPatients[,,1]), return_grob = TRUE,
+       main = "Winnipeg Patients"),
+     agreementplot(t(MSPatients[,,2]), return_grob = TRUE,
+       main = "New Orleans Patients")
+   )
 
-    ## alternatively, use cotabplot:
-    cotabplot(MSPatients, panel = cotab_agreementplot)
+   ## alternatively, use cotabplot:
+   cotabplot(MSPatients, panel = cotab_agreementplot)

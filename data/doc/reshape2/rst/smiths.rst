@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    smiths
+   smiths
 
 Format
 ~~~~~~

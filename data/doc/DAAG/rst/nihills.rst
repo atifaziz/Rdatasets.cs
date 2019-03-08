@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(nihills)
+   data(nihills)
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 A data frame with 23 observations on the following 4 variables.
 
 ``dist``
-    distances in miles
+   distances in miles
 
 ``climb``
-    amount of climb in feet
+   amount of climb in feet
 
 ``time``
-    record time in hours for males
+   record time in hours for males
 
 ``timef``
-    record time in hours for females
+   record time in hours for females
 
 Details
 ~~~~~~~
@@ -52,6 +52,6 @@ Examples
 
 ::
 
-    data(nihills)
-    lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
-    lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)
+   data(nihills)
+   lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
+   lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)

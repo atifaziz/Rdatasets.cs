@@ -12,17 +12,17 @@ A list object with the annual numbers of telephone calls, in Belgium.
 The components are:
 
 ``year``
-    last two digits of the year.
+   last two digits of the year.
 
 ``calls``
-    number of telephone calls made (in millions of calls).
+   number of telephone calls made (in millions of calls).
 
 Usage
 ~~~~~
 
 ::
 
-    phones
+   phones
 
 Source
 ~~~~~~

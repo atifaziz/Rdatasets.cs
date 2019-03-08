@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(HELPfull)
+   data(HELPfull)
 
 Format
 ~~~~~~
@@ -1987,5 +1987,5 @@ Examples
 
 ::
 
-    data(HELPfull)
+   data(HELPfull)
 

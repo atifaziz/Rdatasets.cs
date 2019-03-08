@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    NCI60
+   NCI60
 
 Format
 ~~~~~~
@@ -45,4 +45,4 @@ Examples
 
 ::
 
-    table(NCI60$labs)
+   table(NCI60$labs)

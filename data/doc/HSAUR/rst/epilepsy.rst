@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("epilepsy")
+   data("epilepsy")
 
 Format
 ~~~~~~
@@ -24,23 +24,23 @@ Format
 A data frame with 236 observations on the following 6 variables.
 
 ``treatment``
-    the treatment group, a factor with levels ``placebo`` and
-    ``Progabide``.
+   the treatment group, a factor with levels ``placebo`` and
+   ``Progabide``.
 
 ``base``
-    the number of seizures before the trial.
+   the number of seizures before the trial.
 
 ``age``
-    the age of the patient.
+   the age of the patient.
 
 ``seizure.rate``
-    the number of seizures (response variable).
+   the number of seizures (response variable).
 
 ``period``
-    treatment period, an ordered factor with levels ``1`` to ``4``.
+   treatment period, an ordered factor with levels ``1`` to ``4``.
 
 ``subject``
-    the patient ID, a factor with levels ``1`` to ``59``.
+   the patient ID, a factor with levels ``1`` to ``59``.
 
 Details
 ~~~~~~~
@@ -67,10 +67,10 @@ Examples
 ::
 
 
-      data("epilepsy", package = "HSAUR")
-      library(lattice)
-      dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
-              subset = treatment == "Progabide")
-      dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
-              subset = treatment == "Progabide")
+     data("epilepsy", package = "HSAUR")
+     library(lattice)
+     dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
+             subset = treatment == "Progabide")
+     dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
+             subset = treatment == "Progabide")
 

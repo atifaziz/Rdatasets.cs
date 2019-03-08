@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(LT)
+   data(LT)
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 A time serie containing :
 
 s
-    US \*Dollar / \*Pound exchange rate
+   US \*Dollar / \*Pound exchange rate
 
 uswpi
-    US wholesale price index, normalized to 100 for 1914
+   US wholesale price index, normalized to 100 for 1914
 
 ukwpi
-    US wholesale price index, normalized to 100 for 1914
+   US wholesale price index, normalized to 100 for 1914
 
 Source
 ~~~~~~

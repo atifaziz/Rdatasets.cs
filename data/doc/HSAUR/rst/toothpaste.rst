@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("toothpaste")
+   data("toothpaste")
 
 Format
 ~~~~~~
@@ -23,25 +23,25 @@ Format
 A data frame with 9 observations on the following 7 variables.
 
 ``Study``
-    the identifier of the study.
+   the identifier of the study.
 
 ``nA``
-    number of subjects using toothpaste A.
+   number of subjects using toothpaste A.
 
 ``meanA``
-    mean DMFS index of subjects using toothpaste A.
+   mean DMFS index of subjects using toothpaste A.
 
 ``sdA``
-    standard deviation of DMFS index of subjects using toothpaste A.
+   standard deviation of DMFS index of subjects using toothpaste A.
 
 ``nB``
-    number of subjects using toothpaste B.
+   number of subjects using toothpaste B.
 
 ``meanB``
-    mean DMFS index of subjects using toothpaste B.
+   mean DMFS index of subjects using toothpaste B.
 
 ``sdB``
-    standard deviation of DMFS index of subjects using toothpaste B.
+   standard deviation of DMFS index of subjects using toothpaste B.
 
 Details
 ~~~~~~~
@@ -63,6 +63,6 @@ Examples
 ::
 
 
-      data("toothpaste", package = "HSAUR")
-      toothpaste
+     data("toothpaste", package = "HSAUR")
+     toothpaste
 

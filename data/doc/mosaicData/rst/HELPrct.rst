@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(HELPrct)
+   data(HELPrct)
 
 Format
 ~~~~~~
@@ -125,8 +125,10 @@ many additional variables.
 Note
 ~~~~
 
-The ``HELPrct`` data set was originally named ``HELP`` but has been
-renamed to avoid confusion with the ``help`` function.
+::
+
+   The \code{HELPrct} data set was originally named \code{HELP} but has 
+   been renamed to avoid confusion with the \code{help} function.
 
 Source
 ~~~~~~
@@ -151,5 +153,5 @@ Examples
 
 ::
 
-    data(HELPrct)
+   data(HELPrct)
 

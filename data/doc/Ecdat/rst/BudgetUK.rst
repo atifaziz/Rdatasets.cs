@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(BudgetUK)
+   data(BudgetUK)
 
 Format
 ~~~~~~
@@ -29,36 +29,36 @@ Format
 A dataframe containing :
 
 wfood
-    budget share for food expenditure
+   budget share for food expenditure
 
 wfuel
-    budget share for fuel expenditure
+   budget share for fuel expenditure
 
 wcloth
-    budget share for clothing expenditure
+   budget share for clothing expenditure
 
 walc
-    budget share for alcohol expenditure
+   budget share for alcohol expenditure
 
 wtrans
-    budget share for transport expenditure
+   budget share for transport expenditure
 
 wother
-    budget share for other good expenditure
+   budget share for other good expenditure
 
 totexp
-    total household expenditure (rounded to the nearest 10 UK pounds
-    sterling)
+   total household expenditure (rounded to the nearest 10 UK pounds
+   sterling)
 
 income
-    total net household income (rounded to the nearest 10 UK pounds
-    sterling)
+   total net household income (rounded to the nearest 10 UK pounds
+   sterling)
 
 age
-    age of household head
+   age of household head
 
 children
-    number of children
+   number of children
 
 Source
 ~~~~~~

@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(respdis)
+   data(respdis)
 
 Format
 ~~~~~~
@@ -28,11 +28,11 @@ Format
 This data frame contains the following columns:
 
 y1, y2, y3, y4
-    ordered factor measured at 4 visits for the response with levels,
-    ``1`` < ``2`` < ``3``, 1 = poor, 2 = good, and 3 = excellent
+   ordered factor measured at 4 visits for the response with levels,
+   ``1`` < ``2`` < ``3``, 1 = poor, 2 = good, and 3 = excellent
 
 trt
-    a factor for treatment with levels, 1 = active, 0 = placebo.
+   a factor for treatment with levels, 1 = active, 0 = placebo.
 
 References
 ~~~~~~~~~~
@@ -46,16 +46,16 @@ Examples
 
 ::
 
-    data(respdis)
-    resp.l <- reshape(respdis, varying = list(c("y1", "y2", "y3", "y4")),
-                      v.names = "resp", direction = "long")
-    resp.l <- resp.l[order(resp.l$id, resp.l$time),]
-    fit <- ordgee(ordered(resp) ~ trt, id = id, data = resp.l, int.const = FALSE)
-    summary(fit)
+   data(respdis)
+   resp.l <- reshape(respdis, varying = list(c("y1", "y2", "y3", "y4")),
+                     v.names = "resp", direction = "long")
+   resp.l <- resp.l[order(resp.l$id, resp.l$time),]
+   fit <- ordgee(ordered(resp) ~ trt, id = id, data = resp.l, int.const = FALSE)
+   summary(fit)
 
-    z <- model.matrix( ~ trt - 1, data = respdis)
-    ind <- rep(1:111, 4*3/2 * 2^2)
-    zmat <- z[ind,,drop=FALSE]
-    fit <- ordgee(ordered(resp) ~ trt, id = id, data = resp.l, int.const = FALSE,
-                  z = zmat, corstr = "exchangeable")
-    summary(fit)
+   z <- model.matrix( ~ trt - 1, data = respdis)
+   ind <- rep(1:111, 4*3/2 * 2^2)
+   zmat <- z[ind,,drop=FALSE]
+   fit <- ordgee(ordered(resp) ~ trt, id = id, data = resp.l, int.const = FALSE,
+                 z = zmat, corstr = "exchangeable")
+   summary(fit)

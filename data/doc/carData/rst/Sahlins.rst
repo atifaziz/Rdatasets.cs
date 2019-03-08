@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Sahlins
+   Sahlins
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 This data frame contains the following columns:
 
 consumers
-    Consumers/Gardener, ratio of consumers to productive individuals.
+   Consumers/Gardener, ratio of consumers to productive individuals.
 
 acres
-    Acres/Gardener, amount of land cultivated per gardener.
+   Acres/Gardener, amount of land cultivated per gardener.
 
 Source
 ~~~~~~

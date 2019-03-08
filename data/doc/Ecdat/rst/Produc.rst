@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Produc)
+   data(Produc)
 
 Format
 ~~~~~~
@@ -29,34 +29,34 @@ Format
 A dataframe containing :
 
 state
-    the state
+   the state
 
 year
-    the year
+   the year
 
 pcap
-    private capital stock
+   private capital stock
 
 hwy
-    highway and streets
+   highway and streets
 
 water
-    water and sewer facilities
+   water and sewer facilities
 
 util
-    other public buildings and structures
+   other public buildings and structures
 
 pc
-    public capital
+   public capital
 
 gsp
-    gross state products
+   gross state products
 
 emp
-    labor input measured by the employment in non–agricultural payrolls
+   labor input measured by the employment in non–agricultural payrolls
 
 unemp
-    state unemployment rate
+   state unemployment rate
 
 Source
 ~~~~~~

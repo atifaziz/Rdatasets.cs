@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    deaths
+   deaths
 
 Source
 ~~~~~~
@@ -33,4 +33,4 @@ S.* Fourth edition. Springer.
 See Also
 ~~~~~~~~
 
-This the same as dataset ``ldeaths`` in **R**'s datasets package.
+This the same as dataset ``ldeaths`` in R's datasets package.

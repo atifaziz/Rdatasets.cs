@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    ironslag
+   ironslag
 
 Format
 ~~~~~~
@@ -26,12 +26,12 @@ Format
 This data frame contains the following columns:
 
 chemical
-    a numeric vector containing the measurements coming from the
-    chemical method
+   a numeric vector containing the measurements coming from the chemical
+   method
 
 magnetic
-    a numeric vector containing the measurments coming from the magnetic
-    method
+   a numeric vector containing the measurments coming from the magnetic
+   method
 
 Source
 ~~~~~~
@@ -44,7 +44,7 @@ Examples
 
 ::
 
-    iron.lm <- lm(chemical ~ magnetic, data = ironslag)
-    oldpar <- par(mfrow = c(2,2))
-    plot(iron.lm)
-    par(oldpar)
+   iron.lm <- lm(chemical ~ magnetic, data = ironslag)
+   oldpar <- par(mfrow = c(2,2))
+   plot(iron.lm)
+   par(oldpar)

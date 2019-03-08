@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(FriendFoe)
+   data(FriendFoe)
 
 Format
 ~~~~~~
@@ -29,48 +29,48 @@ Format
 A dataframe containing :
 
 sex
-    contestant's sex
+   contestant's sex
 
 white
-    is contestant white ?
+   is contestant white ?
 
 age
-    contestant's age in years
+   contestant's age in years
 
 play
-    contestant's choice : a factor with levels "foe" and "friend". If
-    both players play "friend", they share the trust box, if both play
-    "foe", both players receive zero prize, if one of them play "foe"
-    and the other one "friend", the "foe" player receive the entire
-    trust bix and the "friend" player nothing
+   contestant's choice : a factor with levels "foe" and "friend". If
+   both players play "friend", they share the trust box, if both play
+   "foe", both players receive zero prize, if one of them play "foe" and
+   the other one "friend", the "foe" player receive the entire trust bix
+   and the "friend" player nothing
 
 round
-    round in which contestant is eliminated, a factor with levels
-    ("1","2","3")
+   round in which contestant is eliminated, a factor with levels
+   ("1","2","3")
 
 season
-    season show, a factor with levels ("1","2")
+   season show, a factor with levels ("1","2")
 
 cash
-    the amount of cash in the trust box
+   the amount of cash in the trust box
 
 sex1
-    partner's sex
+   partner's sex
 
 white1
-    is partner white ?
+   is partner white ?
 
 age1
-    partner's age in years
+   partner's age in years
 
 play1
-    partner's choice : a factor with levels "foe" and "friend"
+   partner's choice : a factor with levels "foe" and "friend"
 
 win
-    money won by contestant
+   money won by contestant
 
 win1
-    money won by partner
+   money won by partner
 
 Source
 ~~~~~~

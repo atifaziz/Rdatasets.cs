@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Wells
+   Wells
 
 Format
 ~~~~~~
@@ -24,23 +24,23 @@ Format
 A data frame with 3020 observations on the following 5 variables.
 
 ``switch``
-    whether or not the household switched to another well from an unsafe
-    well: ``no`` or ``yes``.
+   whether or not the household switched to another well from an unsafe
+   well: ``no`` or ``yes``.
 
 ``arsenic``
-    the level of arsenic contamination in the household's original well,
-    in hundreds of micrograms per liter; all are above 0.5, which was
-    the level identified as “safe”.
+   the level of arsenic contamination in the household's original well,
+   in hundreds of micrograms per liter; all are above 0.5, which was the
+   level identified as “safe”.
 
 ``distance``
-    in meters to the closest known safe well.
+   in meters to the closest known safe well.
 
 ``education``
-    in years of the head of the household.
+   in years of the head of the household.
 
 ``association``
-    whether or not any members of the household participated in any
-    community organizations: ``no`` or ``yes``.
+   whether or not any members of the household participated in any
+   community organizations: ``no`` or ``yes``.
 
 Details
 ~~~~~~~
@@ -69,4 +69,4 @@ Examples
 
 ::
 
-    summary(Wells)
+   summary(Wells)

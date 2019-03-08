@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(MW)
+   data(MW)
 
 Format
 ~~~~~~
@@ -29,11 +29,11 @@ Format
 A time serie containing :
 
 rdi
-    the rate of growth of real U.S. disposable income, seasonally
-    adjusted
+   the rate of growth of real U.S. disposable income, seasonally
+   adjusted
 
 trate
-    the U.S. treasury bill rate
+   the U.S. treasury bill rate
 
 Source
 ~~~~~~

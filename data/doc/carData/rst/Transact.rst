@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    Transact
+   Transact
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 This data frame contains the following columns:
 
 t1
-    number of type 1 transactions
+   number of type 1 transactions
 
 t2
-    number of type 2 transactions
+   number of type 2 transactions
 
 time
-    total transaction time, minutes
+   total transaction time, minutes
 
 Source
 ~~~~~~

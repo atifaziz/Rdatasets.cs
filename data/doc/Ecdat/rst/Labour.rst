@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Labour)
+   data(Labour)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A dataframe containing :
 
 capital
-    total fixed assets, end of 1995 (in 1000000 euro)
+   total fixed assets, end of 1995 (in 1000000 euro)
 
 labour
-    number of workers (employment)
+   number of workers (employment)
 
 output
-    value added (in 1000000 euro)
+   value added (in 1000000 euro)
 
 wage
-    wage costs per worker (in 1000 euro)
+   wage costs per worker (in 1000 euro)
 
 References
 ~~~~~~~~~~

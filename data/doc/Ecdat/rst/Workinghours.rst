@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Workinghours)
+   data(Workinghours)
 
 Format
 ~~~~~~
@@ -29,40 +29,40 @@ Format
 A dataframe containing :
 
 hours
-    wife working hours per year
+   wife working hours per year
 
 income
-    the other household income in hundreds of dollars
+   the other household income in hundreds of dollars
 
 age
-    age of the wife
+   age of the wife
 
 education
-    education years of the wife
+   education years of the wife
 
 child5
-    number of children for ages 0 to 5
+   number of children for ages 0 to 5
 
 child13
-    number of children for ages 6 to 13
+   number of children for ages 6 to 13
 
 child17
-    number of children for ages 14 to 17
+   number of children for ages 14 to 17
 
 nonwhite
-    non–white ?
+   non–white ?
 
 owned
-    is the home owned by the household ?
+   is the home owned by the household ?
 
 mortgage
-    is the home on mortgage ?
+   is the home on mortgage ?
 
 occupation
-    occupation of the husband, one of mp (manager or
+   occupation of the husband, one of mp (manager or
 
 unemp
-    local unemployment rate in %
+   local unemployment rate in %
 
 Source
 ~~~~~~

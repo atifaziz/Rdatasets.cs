@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("clouds")
+   data("clouds")
 
 Format
 ~~~~~~
@@ -25,29 +25,29 @@ Format
 A data frame with 24 observations on the following 7 variables.
 
 seeding
-    a factor indicating whether seeding action occured (``no`` or
-    ``yes``).
+   a factor indicating whether seeding action occured (``no`` or
+   ``yes``).
 
 time
-    number of days after the first day of the experiment.
+   number of days after the first day of the experiment.
 
 sne
-    suitability criterion.
+   suitability criterion.
 
 cloudcover
-    the percentage cloud cover in the experimental area, measured using
-    radar.
+   the percentage cloud cover in the experimental area, measured using
+   radar.
 
 prewetness
-    the total rainfall in the target area one hour before seeding (in
-    cubic metres times ``1e+8``).
+   the total rainfall in the target area one hour before seeding (in
+   cubic metres times ``1e+8``).
 
 echomotion
-    a factor showing whether the radar echo was ``moving`` or
-    ``stationary``.
+   a factor showing whether the radar echo was ``moving`` or
+   ``stationary``.
 
 rainfall
-    the amount of rain in cubic metres times ``1e+8``.
+   the amount of rain in cubic metres times ``1e+8``.
 
 Details
 ~~~~~~~
@@ -85,8 +85,8 @@ Examples
 ::
 
 
-      data("clouds", package = "HSAUR")
-      layout(matrix(1:2, nrow = 2))
-      boxplot(rainfall ~ seeding, data = clouds, ylab = "Rainfall")
-      boxplot(rainfall ~ echomotion, data = clouds, ylab = "Rainfall")    
+     data("clouds", package = "HSAUR")
+     layout(matrix(1:2, nrow = 2))
+     boxplot(rainfall ~ seeding, data = clouds, ylab = "Rainfall")
+     boxplot(rainfall ~ echomotion, data = clouds, ylab = "Rainfall")    
 

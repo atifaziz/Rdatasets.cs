@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data("cattell")
+   data("cattell")
 
 Format
 ~~~~~~
@@ -60,6 +60,6 @@ Examples
 
 ::
 
-    data(cattell)
-    corPlot(cattell,numbers=TRUE,upper=FALSE,diag=FALSE,
-                 main="12 cognitive variables from Cattell (1963)")
+   data(cattell)
+   corPlot(cattell,numbers=TRUE,upper=FALSE,diag=FALSE,
+                main="12 cognitive variables from Cattell (1963)")

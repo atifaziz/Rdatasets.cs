@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(ChestSizes)
+   data(ChestSizes)
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 16 observations on the following 2 variables.
 
 ``chest``
-    Chest size (in inches)
+   Chest size (in inches)
 
 ``count``
-    Number of soldiers with this chest size
+   Number of soldiers with this chest size
 
 Source
 ~~~~~~
@@ -50,10 +50,10 @@ Examples
 
 ::
 
-    data(ChestSizes)
-    ## maybe str(ChestSizes) ; plot(ChestSizes) ...
+   data(ChestSizes)
+   ## maybe str(ChestSizes) ; plot(ChestSizes) ...
 
-    # frequency polygon
-    plot(ChestSizes, type='b')
-    #barplot
-    barplot(ChestSizes[,2], ylab="Frequency", xlab="Chest size")
+   # frequency polygon
+   plot(ChestSizes, type='b')
+   #barplot
+   barplot(ChestSizes[,2], ylab="Frequency", xlab="Chest size")

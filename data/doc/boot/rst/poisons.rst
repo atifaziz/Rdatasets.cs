@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    poisons
+   poisons
 
 Format
 ~~~~~~
@@ -28,15 +28,15 @@ Format
 This data frame contains the following columns:
 
 ``time``
-    The survival time of the animal in units of 10 hours.
+   The survival time of the animal in units of 10 hours.
 
 ``poison``
-    A factor with levels ``1``, ``2`` and ``3`` giving the type of
-    poison used.
+   A factor with levels ``1``, ``2`` and ``3`` giving the type of poison
+   used.
 
 ``treat``
-    A factor with levels ``A``, ``B``, ``C`` and ``D`` giving the
-    treatment.
+   A factor with levels ``A``, ``B``, ``C`` and ``D`` giving the
+   treatment.
 
 Source
 ~~~~~~

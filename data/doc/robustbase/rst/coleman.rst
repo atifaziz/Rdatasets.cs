@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(coleman)
+   data(coleman, package="robustbase")
 
 Format
 ~~~~~~
@@ -27,25 +27,25 @@ Format
 A data frame with 20 observations on the following 6 variables.
 
 ``salaryP``
-    staff salaries per pupil
+   staff salaries per pupil
 
 ``fatherWc``
-    percent of white-collar fathers
+   percent of white-collar fathers
 
 ``sstatus``
-    socioeconomic status composite deviation: means for family size,
-    family intactness, father's education, mother's education, and home
-    items
+   socioeconomic status composite deviation: means for family size,
+   family intactness, father's education, mother's education, and home
+   items
 
 ``teacherSc``
-    mean teacher's verbal test score
+   mean teacher's verbal test score
 
 ``motherLev``
-    mean mother's educational level, one unit is equal to two school
-    years
+   mean mother's educational level, one unit is equal to two school
+   years
 
 ``Y``
-    verbal mean test score (y, all sixth graders)
+   verbal mean test score (y, all sixth graders)
 
 Author(s)
 ~~~~~~~~~
@@ -63,10 +63,10 @@ Examples
 
 ::
 
-    data(coleman)
-    pairs(coleman)
-    summary( lm.coleman <-     lm(Y ~ . , data = coleman))
-    summary(lts.coleman <- ltsReg(Y ~ . , data = coleman))
+   data(coleman)
+   pairs(coleman)
+   summary( lm.coleman <-     lm(Y ~ . , data = coleman))
+   summary(lts.coleman <- ltsReg(Y ~ . , data = coleman))
 
-    coleman.x <- data.matrix(coleman[, 1:6])
-    (Cc <- covMcd(coleman.x))
+   coleman.x <- data.matrix(coleman[, 1:6])
+   (Cc <- covMcd(coleman.x))

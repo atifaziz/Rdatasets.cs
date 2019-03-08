@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(pluton)
+   data(pluton)
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 This data frame contains the following columns:
 
 Pu238
-    the percentages of *(238)Pu*, always less than 2 percent.
+   the percentages of *(238)Pu*, always less than 2 percent.
 
 Pu239
-    the percentages of *(239)Pu*, typically between 60 and 80 percent
-    (from neutron capture of Uranium, *(238)U*).
+   the percentages of *(239)Pu*, typically between 60 and 80 percent
+   (from neutron capture of Uranium, *(238)U*).
 
 Pu240
-    percentage of the plutonium 240 isotope.
+   percentage of the plutonium 240 isotope.
 
 Pu241
-    percentage of the plutonium 241 isotope.
+   percentage of the plutonium 241 isotope.
 
 Details
 ~~~~~~~
@@ -64,9 +64,9 @@ Examples
 
 ::
 
-    data(pluton)
+   data(pluton)
 
-    hist(apply(pluton,1,sum), col = "gray") # between 94% and 100%
-    pu5 <- pluton
-    pu5$Pu242 <- 100 - apply(pluton,1,sum) # the remaining isotope.
-    pairs(pu5)
+   hist(apply(pluton,1,sum), col = "gray") # between 94% and 100%
+   pu5 <- pluton
+   pu5$Pu242 <- 100 - apply(pluton,1,sum) # the remaining isotope.
+   pairs(pu5)

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(poxetc)
+   data(poxetc)
 
 Format
 ~~~~~~
@@ -40,6 +40,6 @@ Examples
 
 ::
 
-    data(poxetc)
-    str(poxetc)
-    plot(poxetc) 
+   data(poxetc)
+   str(poxetc)
+   plot(poxetc) 

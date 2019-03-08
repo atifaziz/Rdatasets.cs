@@ -18,20 +18,20 @@ Usage
 
 ::
 
-    medExpenses
+   medExpenses
 
 Format
 ~~~~~~
 
 familysize
-    number of individuals in a family
+   number of individuals in a family
 
 expenses
-    average weekly cost for medical expenses per family member
+   average weekly cost for medical expenses per family member
 
 Examples
 ~~~~~~~~
 
 ::
 
-    with(medExpenses, weighted.mean(expenses, familysize))
+   with(medExpenses, weighted.mean(expenses, familysize))

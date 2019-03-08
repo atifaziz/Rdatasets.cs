@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(VietNamI)
+   data(VietNamI)
 
 Format
 ~~~~~~
@@ -29,40 +29,40 @@ Format
 A dataframe containing :
 
 pharvis
-    number of direct pharmacy visits
+   number of direct pharmacy visits
 
 lnhhexp
-    log of total medical expenditure
+   log of total medical expenditure
 
 age
-    age of household head
+   age of household head
 
 sex
-    gender (male,female)
+   gender (male,female)
 
 married
-    married ?
+   married ?
 
 educ
-    completed diploma level ?
+   completed diploma level ?
 
 illness
-    number of of illnesses experiences in past 12 months
+   number of of illnesses experiences in past 12 months
 
 injury
-    injured during survey period ?
+   injured during survey period ?
 
 illdays
-    number of illness days
+   number of illness days
 
 actdays
-    number of days of limited activity
+   number of days of limited activity
 
 insurance
-    respondent has health insurance coverage ?
+   respondent has health insurance coverage ?
 
 commune
-    commune
+   commune
 
 Source
 ~~~~~~

@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(MoneyUS)
+   data(MoneyUS)
 
 Format
 ~~~~~~
@@ -27,19 +27,19 @@ Format
 A time serie containing :
 
 m
-    log of real M1 money stock
+   log of real M1 money stock
 
 infl
-    quarterly inflation rate (change in log prices), % per year
+   quarterly inflation rate (change in log prices), % per year
 
 cpr
-    commercial paper rate, % per year
+   commercial paper rate, % per year
 
 y
-    log real GDP (in billions of 1987 dollars)
+   log real GDP (in billions of 1987 dollars)
 
 tbr
-    treasury bill rate
+   treasury bill rate
 
 Source
 ~~~~~~

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(BudgetFood)
+   data(BudgetFood)
 
 Format
 ~~~~~~
@@ -29,24 +29,23 @@ Format
 A dataframe containing :
 
 wfood
-    percentage of total expenditure which the household has spent on
-    food
+   percentage of total expenditure which the household has spent on food
 
 totexp
-    total expenditure of the household
+   total expenditure of the household
 
 age
-    age of reference person in the household
+   age of reference person in the household
 
 size
-    size of the household
+   size of the household
 
 town
-    size of the town where the household is placed categorised into 5
-    groups: 1 for small towns, 5 for big ones
+   size of the town where the household is placed categorised into 5
+   groups: 1 for small towns, 5 for big ones
 
 sex
-    sex of reference person (man,woman)
+   sex of reference person (man,woman)
 
 Source
 ~~~~~~

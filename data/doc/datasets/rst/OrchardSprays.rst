@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    OrchardSprays
+   OrchardSprays
 
 Format
 ~~~~~~
@@ -81,5 +81,5 @@ Examples
 
 ::
 
-    require(graphics)
-    pairs(OrchardSprays, main = "OrchardSprays data")
+   require(graphics)
+   pairs(OrchardSprays, main = "OrchardSprays data")

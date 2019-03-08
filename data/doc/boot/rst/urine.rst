@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    urine
+   urine
 
 Format
 ~~~~~~
@@ -27,27 +27,27 @@ Format
 This data frame contains the following columns:
 
 ``r``
-    Indicator of the presence of calcium oxalate crystals.
+   Indicator of the presence of calcium oxalate crystals.
 
 ``gravity``
-    The specific gravity of the urine.
+   The specific gravity of the urine.
 
 ``ph``
-    The pH reading of the urine.
+   The pH reading of the urine.
 
 ``osmo``
-    The osmolarity of the urine. Osmolarity is proportional to the
-    concentration of molecules in solution.
+   The osmolarity of the urine. Osmolarity is proportional to the
+   concentration of molecules in solution.
 
 ``cond``
-    The conductivity of the urine. Conductivity is proportional to the
-    concentration of charged ions in solution.
+   The conductivity of the urine. Conductivity is proportional to the
+   concentration of charged ions in solution.
 
 ``urea``
-    The urea concentration in millimoles per litre.
+   The urea concentration in millimoles per litre.
 
 ``calc``
-    The calcium concentration in millimoles per litre.
+   The calcium concentration in millimoles per litre.
 
 Source
 ~~~~~~

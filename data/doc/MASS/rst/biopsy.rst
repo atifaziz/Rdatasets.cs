@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    biopsy
+   biopsy
 
 Format
 ~~~~~~
@@ -27,37 +27,37 @@ Format
 This data frame contains the following columns:
 
 ``ID``
-    sample code number (not unique).
+   sample code number (not unique).
 
 ``V1``
-    clump thickness.
+   clump thickness.
 
 ``V2``
-    uniformity of cell size.
+   uniformity of cell size.
 
 ``V3``
-    uniformity of cell shape.
+   uniformity of cell shape.
 
 ``V4``
-    marginal adhesion.
+   marginal adhesion.
 
 ``V5``
-    single epithelial cell size.
+   single epithelial cell size.
 
 ``V6``
-    bare nuclei (16 values are missing).
+   bare nuclei (16 values are missing).
 
 ``V7``
-    bland chromatin.
+   bland chromatin.
 
 ``V8``
-    normal nucleoli.
+   normal nucleoli.
 
 ``V9``
-    mitoses.
+   mitoses.
 
 ``class``
-    ``"benign"`` or ``"malignant"``.
+   ``"benign"`` or ``"malignant"``.
 
 Source
 ~~~~~~

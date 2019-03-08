@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    attenu
+   attenu
 
 Format
 ~~~~~~
@@ -48,23 +48,25 @@ report 81-365. Menlo Park, Ca.
 References
 ~~~~~~~~~~
 
-Boore, D. M. and Joyner, W.B.(1982) The empirical prediction of ground
-motion, *Bull. Seism. Soc. Am.*, **72**, S269–S268.
+Boore, D. M. and Joyner, W. B.(1982). The empirical prediction of ground
+motion, *Bulletin of the Seismological Society of America*, **72**,
+S269–S268.
 
-Bolt, B. A. and Abrahamson, N. A. (1982) New attenuation relations for
-peak and expected accelerations of strong ground motion, *Bull. Seism.
-Soc. Am.*, **72**, 2307–2321.
+Bolt, B. A. and Abrahamson, N. A. (1982). New attenuation relations for
+peak and expected accelerations of strong ground motion. *Bulletin of
+the Seismological Society of America*, **72**, 2307–2321.
 
-Bolt B. A. and Abrahamson, N. A. (1983) Reply to W. B. Joyner & D. M.
+Bolt B. A. and Abrahamson, N. A. (1983). Reply to W. B. Joyner & D. M.
 Boore's “Comments on: New attenuation relations for peak and expected
 accelerations for peak and expected accelerations of strong ground
-motion”, *Bull. Seism. Soc. Am.*, **73**, 1481–1483.
+motion”, *Bulletin of the Seismological Society of America*, **73**,
+1481–1483.
 
-Brillinger, D. R. and Preisler, H. K. (1984) An exploratory analysis of
-the Joyner-Boore attenuation data, *Bull. Seism. Soc. Am.*, **74**,
-1441–1449.
+Brillinger, D. R. and Preisler, H. K. (1984). An exploratory analysis of
+the Joyner-Boore attenuation data, *Bulletin of the Seismological
+Society of America*, **74**, 1441–1449.
 
-Brillinger, D. R. and Preisler, H. K. (1984) *Further analysis of the
+Brillinger, D. R. and Preisler, H. K. (1984). *Further analysis of the
 Joyner-Boore attenuation data*. Manuscript.
 
 Examples
@@ -72,11 +74,11 @@ Examples
 
 ::
 
-    require(graphics)
-    ## check the data class of the variables
-    sapply(attenu, data.class)
-    summary(attenu)
-    pairs(attenu, main = "attenu data")
-    coplot(accel ~ dist | as.factor(event), data = attenu, show.given = FALSE)
-    coplot(log(accel) ~ log(dist) | as.factor(event),
-           data = attenu, panel = panel.smooth, show.given = FALSE)
+   require(graphics)
+   ## check the data class of the variables
+   sapply(attenu, data.class)
+   summary(attenu)
+   pairs(attenu, main = "attenu data")
+   coplot(accel ~ dist | as.factor(event), data = attenu, show.given = FALSE)
+   coplot(log(accel) ~ log(dist) | as.factor(event),
+          data = attenu, panel = panel.smooth, show.given = FALSE)

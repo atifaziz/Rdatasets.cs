@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(delivery)
+   data(delivery, package="robustbase")
 
 Format
 ~~~~~~
@@ -26,13 +26,13 @@ Format
 A data frame with 25 observations on the following 3 variables.
 
 ``n.prod``
-    Number of Products
+   Number of Products
 
 ``distance``
-    Distance
+   Distance
 
 ``delTime``
-    Delivery time
+   Delivery time
 
 Source
 ~~~~~~
@@ -50,9 +50,9 @@ Examples
 
 ::
 
-    data(delivery)
-    summary(lm.deli <- lm(delTime ~ ., data = delivery))
+   data(delivery)
+   summary(lm.deli <- lm(delTime ~ ., data = delivery))
 
-    delivery.x <- as.matrix(delivery[, 1:2])
-    c_deli <- covMcd(delivery.x)
-    c_deli
+   delivery.x <- as.matrix(delivery[, 1:2])
+   c_deli <- covMcd(delivery.x)
+   c_deli

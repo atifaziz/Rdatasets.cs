@@ -26,7 +26,7 @@ Usage
 
 ::
 
-    data(Fingerprints)
+   data(Fingerprints)
 
 Format
 ~~~~~~
@@ -36,15 +36,15 @@ variables, representing a 6 x 6 table giving the cross-classification of
 the fingers on 2000 right hands as a whorl, small loop or neither.
 
 ``Whorls``
-    Number of whorls, an ordered factor with levels ``0`` < ``1`` <
-    ``2`` < ``3`` < ``4`` < ``5``
+   Number of whorls, an ordered factor with levels ``0`` < ``1`` < ``2``
+   < ``3`` < ``4`` < ``5``
 
 ``Loops``
-    Number of small loops, an ordered factor with levels ``0`` < ``1`` <
-    ``2`` < ``3`` < ``4`` < ``5``
+   Number of small loops, an ordered factor with levels ``0`` < ``1`` <
+   ``2`` < ``3`` < ``4`` < ``5``
 
 ``count``
-    Number of hands
+   Number of hands
 
 Details
 ~~~~~~~
@@ -74,5 +74,5 @@ Examples
 
 ::
 
-    data(Fingerprints)
-    xtabs(count ~ Whorls + Loops, data=Fingerprints)
+   data(Fingerprints)
+   xtabs(count ~ Whorls + Loops, data=Fingerprints)

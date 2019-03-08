@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(UN)
+   data(UN)
 
 Format
 ~~~~~~
@@ -25,31 +25,30 @@ Format
 A data frame with 213 rows on the following 7 variables.
 
 ``region``
-    Region of the world: ``Africa``, ``Asia``, ``Caribbean``,
-    ``Europe``, ``Latin Amer``, ``North America``, ``NorthAtlantic``,
-    ``Oceania``.
+   Region of the world: ``Africa``, ``Asia``, ``Caribbean``, ``Europe``,
+   ``Latin Amer``, ``North America``, ``NorthAtlantic``, ``Oceania``.
 
 ``group``
-    A factor with levels ``oecd`` for countries that are members of the
-    OECD, the Organization for Economic Co-operation and Development, as
-    of May 2012, ``africa`` for countries on the African continent, and
-    ``other`` for all other countries. No OECD countries are located in
-    Africa.
+   A factor with levels ``oecd`` for countries that are members of the
+   OECD, the Organization for Economic Co-operation and Development, as
+   of May 2012, ``africa`` for countries on the African continent, and
+   ``other`` for all other countries. No OECD countries are located in
+   Africa.
 
 ``fertility``
-    Total fertility rate, number of children per woman.
+   Total fertility rate, number of children per woman.
 
 ``ppgdp``
-    Per capita gross domestic product in US dollars.
+   Per capita gross domestic product in US dollars.
 
 ``lifeExpF``
-    Female life expectancy, years.
+   Female life expectancy, years.
 
 ``pctUrban``
-    Percent urban.
+   Percent urban.
 
 ``infantMortality``
-    Infant deaths by age 1 year per 1000 live births
+   Infant deaths by age 1 year per 1000 live births
 
 Note
 ~~~~
@@ -77,4 +76,4 @@ Examples
 
 ::
 
-    summary(UN)
+   summary(UN)

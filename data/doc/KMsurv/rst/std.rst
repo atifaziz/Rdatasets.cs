@@ -16,76 +16,76 @@ Format
 This data frame contains the following columns:
 
 obs
-    Observation number
+   Observation number
 
 race
-    Race (W=white, B=black)
+   Race (W=white, B=black)
 
 marital
-    Marital status (D=divorced / separated, M=married, S=single)
+   Marital status (D=divorced / separated, M=married, S=single)
 
 age
-    AGE
+   AGE
 
 yschool
-    Years of schooling
+   Years of schooling
 
 iinfct
-    Initial infection (1= gonorrhea, 2=chlamydia, 3=both)
+   Initial infection (1= gonorrhea, 2=chlamydia, 3=both)
 
 npartner
-    Number of partners
+   Number of partners
 
 os12m
-    Oral sex within 12 months (1=yes, 0=no)
+   Oral sex within 12 months (1=yes, 0=no)
 
 os30d
-    Oral sex within 30 days (1=yes, 0=no)
+   Oral sex within 30 days (1=yes, 0=no)
 
 rs12m
-    Rectal sex within 12 months (1=yes, 0=no)
+   Rectal sex within 12 months (1=yes, 0=no)
 
 rs30d
-    Rectal sex within 30 days (1=yes, 0=no)
+   Rectal sex within 30 days (1=yes, 0=no)
 
 abdpain
-    Presence of abdominal pain (1=yes, 0=no)
+   Presence of abdominal pain (1=yes, 0=no)
 
 discharge
-    Sign of discharge (1=yes, 0=no)
+   Sign of discharge (1=yes, 0=no)
 
 dysuria
-    Sign of dysuria (1=yes, 0=no)
+   Sign of dysuria (1=yes, 0=no)
 
 condom
-    Condom use (1=always, 2=sometime, 3=never)
+   Condom use (1=always, 2=sometime, 3=never)
 
 itch
-    Sign of itch (1=yes, 0=no)
+   Sign of itch (1=yes, 0=no)
 
 lesion
-    Sign of lesion (1=yes, 0=no)
+   Sign of lesion (1=yes, 0=no)
 
 rash
-    Sign of rash (1=yes, 0=no)
+   Sign of rash (1=yes, 0=no)
 
 lymph
-    Sign of lymph (1=yes, 0=no)
+   Sign of lymph (1=yes, 0=no)
 
 vagina
-    Involvement vagina at exam (1=yes, 0=no)
+   Involvement vagina at exam (1=yes, 0=no)
 
 dchexam
-    Discharge at exam (1=yes, 0=no)
+   Discharge at exam (1=yes, 0=no)
 
 abnode
-    Abnormal node at exam (1=yes, 0=no)
+   Abnormal node at exam (1=yes, 0=no)
 
 rinfct
-    Reinfection (1=yes, 0=no)
+   Reinfection (1=yes, 0=no)
 
 time
-    Time to reinfection
+   Time to reinfection
 
 Source
 ~~~~~~
@@ -98,4 +98,4 @@ Examples
 
 ::
 
-    data(std)
+   data(std)

@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    UScereal
+   UScereal
 
 Format
 ~~~~~~
@@ -26,38 +26,38 @@ Format
 This data frame contains the following columns:
 
 ``mfr``
-    Manufacturer, represented by its first initial: G=General Mills,
-    K=Kelloggs, N=Nabisco, P=Post, Q=Quaker Oats, R=Ralston Purina.
+   Manufacturer, represented by its first initial: G=General Mills,
+   K=Kelloggs, N=Nabisco, P=Post, Q=Quaker Oats, R=Ralston Purina.
 
 ``calories``
-    number of calories in one portion.
+   number of calories in one portion.
 
 ``protein``
-    grams of protein in one portion.
+   grams of protein in one portion.
 
 ``fat``
-    grams of fat in one portion.
+   grams of fat in one portion.
 
 ``sodium``
-    milligrams of sodium in one portion.
+   milligrams of sodium in one portion.
 
 ``fibre``
-    grams of dietary fibre in one portion.
+   grams of dietary fibre in one portion.
 
 ``carbo``
-    grams of complex carbohydrates in one portion.
+   grams of complex carbohydrates in one portion.
 
 ``sugars``
-    grams of sugars in one portion.
+   grams of sugars in one portion.
 
 ``shelf``
-    display shelf (1, 2, or 3, counting from the floor).
+   display shelf (1, 2, or 3, counting from the floor).
 
 ``potassium``
-    grams of potassium.
+   grams of potassium.
 
 ``vitamins``
-    vitamins and minerals (none, enriched, or 100%).
+   vitamins and minerals (none, enriched, or 100%).
 
 Source
 ~~~~~~

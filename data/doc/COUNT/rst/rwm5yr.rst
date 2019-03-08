@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(rwm5yr)
+   data(rwm5yr)
 
 Format
 ~~~~~~
@@ -24,55 +24,55 @@ Format
 A data frame with 19,609 observations on the following 17 variables.
 
 ``id``
-    patient ID (1=7028)
+   patient ID (1=7028)
 
 ``docvis``
-    number of visits to doctor during year (0-121)
+   number of visits to doctor during year (0-121)
 
 ``hospvis``
-    number of days in hospital during year (0-51)
+   number of days in hospital during year (0-51)
 
 ``year``
-    year; (categorical: 1984, 1985, 1986, 1987, 1988)
+   year; (categorical: 1984, 1985, 1986, 1987, 1988)
 
 ``edlevel``
-    educational level (categorical: 1-4)
+   educational level (categorical: 1-4)
 
 ``age``
-    age: 25-64
+   age: 25-64
 
 ``outwork``
-    out of work=1; 0=working
+   out of work=1; 0=working
 
 ``female``
-    female=1; 0=male
+   female=1; 0=male
 
 ``married``
-    married=1; 0=not married
+   married=1; 0=not married
 
 ``kids``
-    have children=1; no children=0
+   have children=1; no children=0
 
 ``hhninc``
-    household yearly income in marks (in Marks)
+   household yearly income in marks (in Marks)
 
 ``educ``
-    years of formal education (7-18)
+   years of formal education (7-18)
 
 ``self``
-    self-employed=1; not self employed=0
+   self-employed=1; not self employed=0
 
 ``edlevel1``
-    (1/0) not high school graduate
+   (1/0) not high school graduate
 
 ``edlevel2``
-    (1/0) high school graduate
+   (1/0) high school graduate
 
 ``edlevel3``
-    (1/0) university/college
+   (1/0) university/college
 
 ``edlevel4``
-    (1/0) graduate school
+   (1/0) graduate school
 
 Details
 ~~~~~~~
@@ -101,21 +101,21 @@ Examples
 
 ::
 
-    library(MASS)
-    data(rwm5yr)
+   library(MASS)
+   data(rwm5yr)
 
-    glmrp <- glm(docvis ~ outwork + female + age + factor(edlevel), family=poisson, data=rwm5yr)
-    summary(glmrp)
-    exp(coef(glmrp))
+   glmrp <- glm(docvis ~ outwork + female + age + factor(edlevel), family=poisson, data=rwm5yr)
+   summary(glmrp)
+   exp(coef(glmrp))
 
-    ## Not run: 
-    library(msme)
-    nb2 <- nbinomial(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
-    summary(nb2)
-    exp(coef(nb2)) 
+   ## Not run: 
+   library(msme)
+   nb2 <- nbinomial(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
+   summary(nb2)
+   exp(coef(nb2)) 
 
-    glmrnb <- glm.nb(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
-    summary(glmrnb)
-    exp(coef(glmrnb))
+   glmrnb <- glm.nb(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
+   summary(glmrnb)
+   exp(coef(glmrnb))
 
-    ## End(Not run)
+   ## End(Not run)

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    vince111b
+   vince111b
 
 Format
 ~~~~~~
@@ -24,29 +24,29 @@ Format
 A data frame with 36 observations on 8 variables.
 
 site
-    a factor with levels ``AGSV`` ``CASV`` ``CPSV`` ``LPSV`` ``MPSV``
-    ``OOSV`` ``OTSV`` ``SSSV`` ``UISV``
+   a factor with levels ``AGSV`` ``CASV`` ``CPSV`` ``LPSV`` ``MPSV``
+   ``OOSV`` ``OTSV`` ``SSSV`` ``UISV``
 
 parcel
-    a factor with levels ``I`` ``II`` ``III`` ``IV``
+   a factor with levels ``I`` ``II`` ``III`` ``IV``
 
 code
-    a numeric vector
+   a numeric vector
 
 island
-    a numeric vector
+   a numeric vector
 
 id
-    a numeric vector
+   a numeric vector
 
 plot
-    a numeric vector
+   a numeric vector
 
 trt
-    a numeric vector
+   a numeric vector
 
 harvwt
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~

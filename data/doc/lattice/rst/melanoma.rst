@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    melanoma
+   melanoma
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 37 observations on the following 2 variables.
 
 year
-    Years 1936 to 1972.
+   Years 1936 to 1972.
 
 incidence
-    Rate of melanoma cancer per 100,000 population.
+   Rate of melanoma cancer per 100,000 population.
 
 Note
 ~~~~
@@ -63,12 +63,12 @@ Examples
 
 ::
 
-    # Time-series plot.  Figure 3.64 from Cleveland.
-    xyplot(incidence ~ year,
-      data = melanoma,
-        aspect = "xy",
-        panel = function(x, y)
-            panel.xyplot(x, y, type="o", pch = 16),
-        ylim = c(0, 6),
-        xlab = "Year",
-        ylab = "Incidence")
+   # Time-series plot.  Figure 3.64 from Cleveland.
+   xyplot(incidence ~ year,
+     data = melanoma,
+       aspect = "xy",
+       panel = function(x, y)
+           panel.xyplot(x, y, type="o", pch = 16),
+       ylim = c(0, 6),
+       xlab = "Year",
+       ylab = "Incidence")

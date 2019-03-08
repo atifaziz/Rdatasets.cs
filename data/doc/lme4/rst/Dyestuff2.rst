@@ -20,12 +20,11 @@ Format
 Data frames, each with 30 observations on the following 2 variables.
 
 ``Batch``
-    a factor indicating the batch of the intermediate product from which
-    the preparation was created.
+   a factor indicating the batch of the intermediate product from which
+   the preparation was created.
 
 ``Yield``
-    the yield of dyestuff from the preparation (grams of standard
-    color).
+   the yield of dyestuff from the preparation (grams of standard color).
 
 Details
 ~~~~~~~
@@ -61,13 +60,13 @@ Examples
 ::
 
 
-    require(lattice)
-    str(Dyestuff)
-    dotplot(reorder(Batch, Yield) ~ Yield, Dyestuff,
-            ylab = "Batch", jitter.y = TRUE, aspect = 0.3,
-            type = c("p", "a"))
-    dotplot(reorder(Batch, Yield) ~ Yield, Dyestuff2,
-            ylab = "Batch", jitter.y = TRUE, aspect = 0.3,
-            type = c("p", "a"))
-    (fm1 <- lmer(Yield ~ 1|Batch, Dyestuff))
-    (fm2 <- lmer(Yield ~ 1|Batch, Dyestuff2))
+   require(lattice)
+   str(Dyestuff)
+   dotplot(reorder(Batch, Yield) ~ Yield, Dyestuff,
+           ylab = "Batch", jitter.y = TRUE, aspect = 0.3,
+           type = c("p", "a"))
+   dotplot(reorder(Batch, Yield) ~ Yield, Dyestuff2,
+           ylab = "Batch", jitter.y = TRUE, aspect = 0.3,
+           type = c("p", "a"))
+   (fm1 <- lmer(Yield ~ 1|Batch, Dyestuff))
+   (fm2 <- lmer(Yield ~ 1|Batch, Dyestuff2))

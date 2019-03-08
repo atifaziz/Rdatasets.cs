@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Snmesp)
+   data(Snmesp)
 
 Format
 ~~~~~~
@@ -29,28 +29,28 @@ Format
 A data frame containing:
 
 firm
-    firm index
+   firm index
 
 year
-    year
+   year
 
 n
-    log of employment
+   log of employment
 
 w
-    log of wages
+   log of wages
 
 y
-    log of real output
+   log of real output
 
 i
-    log of intermediate inputs
+   log of intermediate inputs
 
 k
-    log of real capital stock
+   log of real capital stock
 
 f
-    real cash flow
+   real cash flow
 
 Source
 ~~~~~~

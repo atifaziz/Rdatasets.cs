@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    geophones
+   geophones
 
 Format
 ~~~~~~
@@ -24,15 +24,15 @@ Format
 This data frame contains the following columns:
 
 distance
-    location of geophone.
+   location of geophone.
 
 thickness
-    time for signal to pass through substratum.
+   time for signal to pass through substratum.
 
 Examples
 ~~~~~~~~
 
 ::
 
-    plot(geophones)
-    lines(lowess(geophones, f=.25))
+   plot(geophones)
+   lines(lowess(geophones, f=.25))

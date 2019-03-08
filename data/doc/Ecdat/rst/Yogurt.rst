@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Yogurt)
+   data(Yogurt)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A dataframe containing :
 
 id
-    individuals identifiers
+   individuals identifiers
 
 choice
-    one of yoplait, dannon, hiland, weight (weight watcher)
+   one of yoplait, dannon, hiland, weight (weight watcher)
 
 feat.z
-    is there a newspaper feature advertisement for brand z ?
+   is there a newspaper feature advertisement for brand z ?
 
 price.z
-    price of brand z
+   price of brand z
 
 Source
 ~~~~~~

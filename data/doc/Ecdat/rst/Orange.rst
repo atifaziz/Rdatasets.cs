@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Orange)
+   data(Orange)
 
 Format
 ~~~~~~
@@ -29,14 +29,14 @@ Format
 A time serie containing :
 
 priceoj
-    producer price for frozen orange juice
+   producer price for frozen orange juice
 
 pricefg
-    producer price index for finished goods
+   producer price index for finished goods
 
 fdd
-    freezing degree days (from daily minimum temperature recorded at
-    Orlando area airports)
+   freezing degree days (from daily minimum temperature recorded at
+   Orlando area airports)
 
 Source
 ~~~~~~

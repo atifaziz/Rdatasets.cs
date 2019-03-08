@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Freedman
+   Freedman
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 This data frame contains the following columns:
 
 population
-    Total 1968 population, 1000s.
+   Total 1968 population, 1000s.
 
 nonwhite
-    Percent nonwhite population, 1960.
+   Percent nonwhite population, 1960.
 
 density
-    Population per square mile, 1968.
+   Population per square mile, 1968.
 
 crime
-    Crime rate per 100,000, 1969.
+   Crime rate per 100,000, 1969.
 
 Source
 ~~~~~~

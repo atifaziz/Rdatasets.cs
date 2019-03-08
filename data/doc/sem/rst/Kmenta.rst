@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Kmenta
+   Kmenta
 
 Format
 ~~~~~~
@@ -26,20 +26,20 @@ Format
 This data frame contains the following columns:
 
 Q
-    food consumption per capita.
+   food consumption per capita.
 
 P
-    ratio of food prices to general consumer prices.
+   ratio of food prices to general consumer prices.
 
 D
-    disposable income in constant dollars.
+   disposable income in constant dollars.
 
 F
-    ratio of preceding year's prices received by farmers to general
-    consumer prices.
+   ratio of preceding year's prices received by farmers to general
+   consumer prices.
 
 A
-    time in years.
+   time in years.
 
 Details
 ~~~~~~~

@@ -16,16 +16,16 @@ Usage
 
 ::
 
-    mcycle
+   mcycle
 
 Format
 ~~~~~~
 
 ``times``
-    in milliseconds after impact.
+   in milliseconds after impact.
 
 ``accel``
-    in g.
+   in g.
 
 Source
 ~~~~~~

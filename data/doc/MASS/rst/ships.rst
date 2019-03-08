@@ -16,26 +16,26 @@ Usage
 
 ::
 
-    ships
+   ships
 
 Format
 ~~~~~~
 
 ``type``
-    type: ``"A"`` to ``"E"``.
+   type: ``"A"`` to ``"E"``.
 
 ``year``
-    year of construction: 1960–64, 65–69, 70–74, 75–79 (coded as
-    ``"60"``, ``"65"``, ``"70"``, ``"75"``).
+   year of construction: 1960–64, 65–69, 70–74, 75–79 (coded as
+   ``"60"``, ``"65"``, ``"70"``, ``"75"``).
 
 ``period``
-    period of operation : 1960–74, 75–79.
+   period of operation : 1960–74, 75–79.
 
 ``service``
-    aggregate months of service.
+   aggregate months of service.
 
 ``incidents``
-    number of damage incidents.
+   number of damage incidents.
 
 Source
 ~~~~~~

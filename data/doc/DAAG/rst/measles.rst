@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(measles)
+   data(measles)
 
 Format
 ~~~~~~

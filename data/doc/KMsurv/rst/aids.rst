@@ -16,13 +16,13 @@ Format
 This data frame contains the following columns:
 
 infect
-    Infection time for AIDS, years
+   Infection time for AIDS, years
 
 induct
-    Induction time for AIDS, years
+   Induction time for AIDS, years
 
 adult
-    Indicator of adult (1=adult, 0=child)
+   Indicator of adult (1=adult, 0=child)
 
 Source
 ~~~~~~
@@ -36,4 +36,4 @@ Examples
 
 ::
 
-    data(aids)
+   data(aids)

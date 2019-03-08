@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("Federalist")
+   data("Federalist")
 
 Format
 ~~~~~~
@@ -53,7 +53,7 @@ Examples
 
 ::
 
-    data("Federalist")
-    gf <- goodfit(Federalist, type = "nbinomial")
-    summary(gf)
-    plot(gf)
+   data("Federalist")
+   gf <- goodfit(Federalist, type = "nbinomial")
+   summary(gf)
+   plot(gf)

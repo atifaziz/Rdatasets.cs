@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(klein)
+   data(klein)
 
 Format
 ~~~~~~

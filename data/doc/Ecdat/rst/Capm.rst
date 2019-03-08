@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(Capm)
+   data(Capm)
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 A time serie containing :
 
 rfood
-    excess returns food industry
+   excess returns food industry
 
 rdur
-    excess returns durables industry
+   excess returns durables industry
 
 rcon
-    excess returns construction industry
+   excess returns construction industry
 
 rmrf
-    excess returns market portfolio
+   excess returns market portfolio
 
 rf
-    riskfree return
+   riskfree return
 
 Source
 ~~~~~~

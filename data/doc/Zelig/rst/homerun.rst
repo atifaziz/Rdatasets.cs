@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(homerun)
+   data(homerun)
 
 Format
 ~~~~~~
@@ -25,22 +25,22 @@ A data frame containing 5 variables ("gameno", "month", "homeruns",
 "playerstatus", "player") and 326 observations.
 
 ``gameno``
-    an integer variable denoting the game number
+   an integer variable denoting the game number
 
 ``month``
-    a factor variable taking with levels "March" through "September"
-    denoting the month of the game
+   a factor variable taking with levels "March" through "September"
+   denoting the month of the game
 
 ``homeruns``
-    an integer vector denoting the number of homeruns hit in that game
-    for that player
+   an integer vector denoting the number of homeruns hit in that game
+   for that player
 
 ``playerstatus``
-    an integer vector equal to "0" if the player played in the game, and
-    "1" if they did not.
+   an integer vector equal to "0" if the player played in the game, and
+   "1" if they did not.
 
 ``player``
-    an integer vector equal to "0" (McGwire) or "1" (Sosa)
+   an integer vector equal to "0" (McGwire) or "1" (Sosa)
 
 Source
 ~~~~~~

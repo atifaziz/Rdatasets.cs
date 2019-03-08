@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    roller
+   roller
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 This data frame contains the following columns:
 
 weight
-    a numeric vector consisting of the roller weights
+   a numeric vector consisting of the roller weights
 
 depression
-    the depth of the depression made in the grass under the roller
+   the depth of the depression made in the grass under the roller
 
 Source
 ~~~~~~
@@ -42,6 +42,6 @@ Examples
 
 ::
 
-    plot(roller)
-    roller.lm <- lm(depression ~ weight, data = roller)
-    plot(roller.lm, which = 4)
+   plot(roller)
+   roller.lm <- lm(depression ~ weight, data = roller)
+   plot(roller.lm, which = 4)

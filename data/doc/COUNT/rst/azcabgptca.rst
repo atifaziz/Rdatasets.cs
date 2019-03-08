@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(azcabgptca)
+   data(azcabgptca)
 
 Format
 ~~~~~~
@@ -25,22 +25,22 @@ Format
 A data frame with 1959 observations on the following 6 variables.
 
 ``died``
-    systolic blood pressure of subject
+   systolic blood pressure of subject
 
 ``procedure``
-    1=CABG; 0=PTCA
+   1=CABG; 0=PTCA
 
 ``gender``
-    1=male; 0=female
+   1=male; 0=female
 
 ``age``
-    age of subject
+   age of subject
 
 ``los``
-    hospital length of stay
+   hospital length of stay
 
 ``type``
-    1=emerg/urgent; 0=elective
+   1=emerg/urgent; 0=elective
 
 Details
 ~~~~~~~
@@ -63,12 +63,12 @@ Examples
 ::
 
 
-    data(azcabgptca); attach(azcabgptca)
-    table(los); table(procedure, type); table(los, procedure)
-    summary(los)
-    summary(c91a <- glm(los ~ procedure+ type, family=poisson, data=azcabgptca))
-    modelfit(c91a)
-    summary(c91b <- glm(los ~ procedure+ type, family=quasipoisson, data=azcabgptca))
-    modelfit(c91b)
-    library(sandwich)
-    sqrt(diag(vcovHC(c91a, type="HC0")))
+   data(azcabgptca); attach(azcabgptca)
+   table(los); table(procedure, type); table(los, procedure)
+   summary(los)
+   summary(c91a <- glm(los ~ procedure+ type, family=poisson, data=azcabgptca))
+   modelfit(c91a)
+   summary(c91b <- glm(los ~ procedure+ type, family=quasipoisson, data=azcabgptca))
+   modelfit(c91b)
+   library(sandwich)
+   sqrt(diag(vcovHC(c91a, type="HC0")))

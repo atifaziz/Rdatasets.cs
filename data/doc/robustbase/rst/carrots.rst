@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(carrots)
+   data(carrots, package="robustbase")
 
 Format
 ~~~~~~
@@ -27,17 +27,17 @@ Format
 A data frame with 24 observations on the following 4 variables.
 
 success
-    integer giving the number of carrots with insect damage.
+   integer giving the number of carrots with insect damage.
 
 total
-    integer giving the total number of carrots per experimental unit.
+   integer giving the total number of carrots per experimental unit.
 
 logdose
-    a numeric vector giving log(dose) values (eight different levels
-    only).
+   a numeric vector giving log(dose) values (eight different levels
+   only).
 
 block
-    factor with levels ``B1`` to ``B3``
+   factor with levels ``B1`` to ``B3``
 
 Source
 ~~~~~~
@@ -63,14 +63,14 @@ Examples
 
 ::
 
-    data(carrots)
-    str(carrots)
-    plot(success/total ~ logdose, data = carrots, col = as.integer(block))
-    coplot(success/total ~ logdose | block, data = carrots)
+   data(carrots)
+   str(carrots)
+   plot(success/total ~ logdose, data = carrots, col = as.integer(block))
+   coplot(success/total ~ logdose | block, data = carrots)
 
-    ## Classical glm
-    Cfit0 <- glm(cbind(success, total-success) ~ logdose + block,
-                 data=carrots, family=binomial)
-    summary(Cfit0)
+   ## Classical glm
+   Cfit0 <- glm(cbind(success, total-success) ~ logdose + block,
+                data=carrots, family=binomial)
+   summary(Cfit0)
 
-    ## Robust Fit (see help(glmrob)) ....
+   ## Robust Fit (see help(glmrob)) ....

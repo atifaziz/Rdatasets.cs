@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    mifem
+   mifem
 
 Format
 ~~~~~~
@@ -24,37 +24,37 @@ Format
 This data frame contains the following columns:
 
 outcome
-    mortality outcome, a factor with levels ``live``, ``dead``
+   mortality outcome, a factor with levels ``live``, ``dead``
 
 age
-    age at onset
+   age at onset
 
 yronset
-    year of onset
+   year of onset
 
 premi
-    previous myocardial infarction event, a factor with levels ``y``,
-    ``n``, ``nk`` not known
+   previous myocardial infarction event, a factor with levels ``y``,
+   ``n``, ``nk`` not known
 
 smstat
-    smoking status, a factor with levels ``c`` current, ``x`` ex-smoker,
-    ``n`` non-smoker, ``nk`` not known
+   smoking status, a factor with levels ``c`` current, ``x`` ex-smoker,
+   ``n`` non-smoker, ``nk`` not known
 
 diabetes
-    a factor with levels ``y``, ``n``, ``nk`` not known
+   a factor with levels ``y``, ``n``, ``nk`` not known
 
 highbp
-    high blood pressure, a factor with levels ``y``, ``n``, ``nk`` not
-    known
+   high blood pressure, a factor with levels ``y``, ``n``, ``nk`` not
+   known
 
 hichol
-    high cholesterol, a factor with levels ``y``, ``n`` ``nk`` not known
+   high cholesterol, a factor with levels ``y``, ``n`` ``nk`` not known
 
 angina
-    a factor with levels ``y``, ``n``, ``nk`` not known
+   a factor with levels ``y``, ``n``, ``nk`` not known
 
 stroke
-    a factor with levels ``y``, ``n``, ``nk`` not known
+   a factor with levels ``y``, ``n``, ``nk`` not known
 
 Source
 ~~~~~~
@@ -67,15 +67,15 @@ Examples
 
 ::
 
-    print("CART - Example 10.7")
-    summary(mifem)
-    pause()
+   print("CART - Example 10.7")
+   summary(mifem)
+   pause()
 
-    require(rpart)
-    mifem.rpart <- rpart(outcome ~ ., data = mifem, cp = 0.0025)
-    plotcp(mifem.rpart)
-    printcp(mifem.rpart)
-    pause()
+   require(rpart)
+   mifem.rpart <- rpart(outcome ~ ., data = mifem, cp = 0.0025)
+   plotcp(mifem.rpart)
+   printcp(mifem.rpart)
+   pause()
 
-    mifemb.rpart <- prune(mifem.rpart, cp=0.006)
-    print(mifemb.rpart)
+   mifemb.rpart <- prune(mifem.rpart, cp=0.006)
+   print(mifemb.rpart)

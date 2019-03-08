@@ -26,7 +26,7 @@ Usage
 
 ::
 
-    data("Armada")
+   data("Armada")
 
 Format
 ~~~~~~
@@ -34,39 +34,39 @@ Format
 A data frame with 10 observations on the following 11 variables.
 
 ``Armada``
-    designation of the fleet, a factor with levels ``Andalucia``
-    ``Castilla`` ``Galeras`` ``Guipuscua`` ``Napoles`` ``Pataches``
-    ``Portugal`` ``Uantiscas`` ``Vizca`` ``Vrcas``
+   designation of the fleet, a factor with levels ``Andalucia``
+   ``Castilla`` ``Galeras`` ``Guipuscua`` ``Napoles`` ``Pataches``
+   ``Portugal`` ``Uantiscas`` ``Vizca`` ``Vrcas``
 
 ``ships``
-    number of ships, a numeric vector
+   number of ships, a numeric vector
 
 ``tons``
-    total tons, a numeric vector
+   total tons, a numeric vector
 
 ``soldiers``
-    number of soldiers, a numeric vector
+   number of soldiers, a numeric vector
 
 ``sailors``
-    number of sailors, a numeric vector
+   number of sailors, a numeric vector
 
 ``men``
-    total of soldiers plus sailors, a numeric vector
+   total of soldiers plus sailors, a numeric vector
 
 ``artillery``
-    a numeric vector
+   a numeric vector
 
 ``balls``
-    a numeric vector
+   a numeric vector
 
 ``gunpowder``
-    a numeric vector
+   a numeric vector
 
 ``lead``
-    a numeric vector
+   a numeric vector
 
 ``rope``
-    a numeric vector
+   a numeric vector
 
 Details
 ~~~~~~~
@@ -93,12 +93,12 @@ Examples
 
 ::
 
-    data(Armada)
-    # delete character and redundant variable
-    armada <- Armada[,-c(1,6)]
+   data(Armada)
+   # delete character and redundant variable
+   armada <- Armada[,-c(1,6)]
 
-    armada.pca <- prcomp(armada, scale.=TRUE)
-    summary(armada.pca)
+   armada.pca <- prcomp(armada, scale.=TRUE)
+   summary(armada.pca)
 
-    plot(armada.pca, type="lines", pch=16, cex=2)
-    biplot(armada.pca)
+   plot(armada.pca, type="lines", pch=16, cex=2)
+   biplot(armada.pca)

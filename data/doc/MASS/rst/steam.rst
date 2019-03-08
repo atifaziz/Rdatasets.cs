@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    steam
+   steam
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 The data frame contains the following components:
 
 ``Temp``
-    temperature, in degrees Celsius.
+   temperature, in degrees Celsius.
 
 ``Press``
-    pressure, in Pascals.
+   pressure, in Pascals.
 
 Source
 ~~~~~~

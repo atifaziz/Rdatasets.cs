@@ -32,7 +32,7 @@ Usage
 
 ::
 
-    data(Quarrels)
+   data(Quarrels)
 
 Format
 ~~~~~~
@@ -40,256 +40,256 @@ Format
 A data frame with 779 observations on the following 84 variables.
 
 ``ID``
-    V84: Id sequence
+   V84: Id sequence
 
 ``year``
-    V1: Begin date of quarrel
+   V1: Begin date of quarrel
 
 ``international``
-    V2: Nation vs nation
+   V2: Nation vs nation
 
 ``colonial``
-    V3: Nation vs colony
+   V3: Nation vs colony
 
 ``revolution``
-    V4: Revolution or civil war
+   V4: Revolution or civil war
 
 ``nat.grp``
-    V5: Nation vs gp in other nation
+   V5: Nation vs gp in other nation
 
 ``grp.grpSame``
-    V6: Grp vs grp (same nation)
+   V6: Grp vs grp (same nation)
 
 ``grp.grpDif``
-    V7: Grp vs grp (between nations)
+   V7: Grp vs grp (between nations)
 
 ``numGroups``
-    V8: Num grps agst which fighting
+   V8: Num grps agst which fighting
 
 ``months``
-    V9: Num months fighting
+   V9: Num months fighting
 
 ``pairs``
-    V10: Num pairs in whole matrix
+   V10: Num pairs in whole matrix
 
 ``monthsPairs``
-    V11: Num mons for all in mtrx
+   V11: Num mons for all in mtrx
 
 ``logDeaths``
-    V12: Log (killed) matrix
+   V12: Log (killed) matrix
 
 ``deaths``
-    V13: Total killed for matrix
+   V13: Total killed for matrix
 
 ``exchangeGoods``
-    V14: Gp sent goods to other
+   V14: Gp sent goods to other
 
 ``obstacleGoods``
-    V15: Gp puts obstacles to goods
+   V15: Gp puts obstacles to goods
 
 ``intermarriageOK``
-    V16: Present intermarriages
+   V16: Present intermarriages
 
 ``intermarriageBan``
-    V17: Intermarriages banned
+   V17: Intermarriages banned
 
 ``simBody``
-    V18: Similar body characteristics
+   V18: Similar body characteristics
 
 ``difBody``
-    V19: Difference in body characteristics
+   V19: Difference in body characteristics
 
 ``simDress``
-    V20: Similarity of customs (dress)
+   V20: Similarity of customs (dress)
 
 ``difDress``
-    V21: Difference of customs (dress)
+   V21: Difference of customs (dress)
 
 ``eqWealth``
-    V22: Common level of wealth
+   V22: Common level of wealth
 
 ``difWealth``
-    V23: Difference in wealth
+   V23: Difference in wealth
 
 ``simMariagCust``
-    V24: Similar marriage cusomst
+   V24: Similar marriage cusomst
 
 ``difMariagCust``
-    V25: Different marriage customs
+   V25: Different marriage customs
 
 ``simRelig``
-    V26: Similar religion or philosophy of life
+   V26: Similar religion or philosophy of life
 
 ``difRelig``
-    V27: Religion or philisophy felt different
+   V27: Religion or philisophy felt different
 
 ``philanthropy``
-    V28: General philanthropy
+   V28: General philanthropy
 
 ``restrictMigration``
-    V29: Restricted immigrations
+   V29: Restricted immigrations
 
 ``sameLanguage``
-    V30: Common mother tongue
+   V30: Common mother tongue
 
 ``difLanguage``
-    V31: Different languages
+   V31: Different languages
 
 ``simArtSci``
-    V32: Similar science, arts
+   V32: Similar science, arts
 
 ``travel``
-    V33: Travel
+   V33: Travel
 
 ``ignorance``
-    V34: Ignorant of other/both
+   V34: Ignorant of other/both
 
 ``simPersLiberty``
-    V35: Personal liberty similar
+   V35: Personal liberty similar
 
 ``difPersLiberty``
-    V36: More personal liberty
+   V36: More personal liberty
 
 ``sameGov``
-    V37: Common government
+   V37: Common government
 
 ``sameGovYrs``
-    V38: Years since common govt established
+   V38: Years since common govt established
 
 ``prevConflict``
-    V39: Belligerents fought previously
+   V39: Belligerents fought previously
 
 ``prevConflictYrs``
-    V40: Years since belligerents fought
+   V40: Years since belligerents fought
 
 ``chronicFighting``
-    V41: Chronic figthing between belligerents
+   V41: Chronic figthing between belligerents
 
 ``persFriendship``
-    V42: Autocrats personal friends
+   V42: Autocrats personal friends
 
 ``persResentment``
-    V43: Leaders personal resentment
+   V43: Leaders personal resentment
 
 ``difLegal``
-    V44: Annoyingly different legal systems
+   V44: Annoyingly different legal systems
 
 ``nonintervention``
-    V45: Policy of nonintervention
+   V45: Policy of nonintervention
 
 ``thirdParty``
-    V46: Led by 3rd group to conflict
+   V46: Led by 3rd group to conflict
 
 ``supportEnemy``
-    V47: Supported others enemy
+   V47: Supported others enemy
 
 ``attackAlly``
-    V48: Attacked ally of other
+   V48: Attacked ally of other
 
 ``rivalsLand``
-    V49: Rivals territory concess
+   V49: Rivals territory concess
 
 ``rivalsTrade``
-    V50: Rivals trade
+   V50: Rivals trade
 
 ``churchPower``
-    V51: Church civil power
+   V51: Church civil power
 
 ``noExtension``
-    V52: Policy not extending ter
+   V52: Policy not extending ter
 
 ``territory``
-    V53: Desired territory
+   V53: Desired territory
 
 ``habitation``
-    V54: Wanted habitation
+   V54: Wanted habitation
 
 ``minerals``
-    V55: Desired minerals
+   V55: Desired minerals
 
 ``StrongHold``
-    V56: Wanted strategic stronghold
+   V56: Wanted strategic stronghold
 
 ``taxation``
-    V57: Taxed other
+   V57: Taxed other
 
 ``loot``
-    V58: Wanted loot
+   V58: Wanted loot
 
 ``objectedWar``
-    V59: Objected to war
+   V59: Objected to war
 
 ``enjoyFight``
-    V60: Enjoyed fighting
+   V60: Enjoyed fighting
 
 ``pride``
-    V61: Elated by strong pride
+   V61: Elated by strong pride
 
 ``overpopulated``
-    V62: Insufficient land for population
+   V62: Insufficient land for population
 
 ``fightForPay``
-    V63: Fought only for pay
+   V63: Fought only for pay
 
 ``joinWinner``
-    V64: Desired to join winners
+   V64: Desired to join winners
 
 ``otherDesiredWar``
-    V65: Quarrel desired by other
+   V65: Quarrel desired by other
 
 ``propaganda3rd``
-    V66: Issued of propaganda to third parties
+   V66: Issued of propaganda to third parties
 
 ``protection``
-    V67: Offered protection
+   V67: Offered protection
 
 ``sympathy``
-    V68: Sympathized under control
+   V68: Sympathized under control
 
 ``debt``
-    V69: Owed money to others
+   V69: Owed money to others
 
 ``prevAllies``
-    V70: Had fought as allies
+   V70: Had fought as allies
 
 ``yearsAllies``
-    V71: Years since fought as allies
+   V71: Years since fought as allies
 
 ``intermingled``
-    V72: Had intermingled on territory
+   V72: Had intermingled on territory
 
 ``interbreeding``
-    V73: Interbreeding between groups
+   V73: Interbreeding between groups
 
 ``propadanda``
-    V74: Issued propaganda to other group
+   V74: Issued propaganda to other group
 
 ``orderedObey``
-    V75: Ordered other to obey
+   V75: Ordered other to obey
 
 ``commerceOther``
-    V76: Commercial enterprises
+   V76: Commercial enterprises
 
 ``feltStronger``
-    V77: Felt stronger
+   V77: Felt stronger
 
 ``competeIntellect``
-    V78: Competed successfully intellectual occ
+   V78: Competed successfully intellectual occ
 
 ``insecureGovt``
-    V79: Government insecure
+   V79: Government insecure
 
 ``prepWar``
-    V80: Preparations for war
+   V80: Preparations for war
 
 ``RegionalError``
-    V81: Regional error measure
+   V81: Regional error measure
 
 ``CasualtyError``
-    V82: Casualty error measure
+   V82: Casualty error measure
 
 ``Auxiliaries``
-    V83: Auxiliaries in service of nation at war
+   V83: Auxiliaries in service of nation at war
 
 Details
 ~~~~~~~
@@ -327,5 +327,5 @@ Examples
 
 ::
 
-    data(Quarrels)
-    str(Quarrels)
+   data(Quarrels)
+   str(Quarrels)

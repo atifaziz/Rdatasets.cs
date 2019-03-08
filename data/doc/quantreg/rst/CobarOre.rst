@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(CobarOre)
+   data(CobarOre)
 
 Format
 ~~~~~~
@@ -25,13 +25,13 @@ Format
 A data frame with 38 observations on the following 3 variables.
 
 x
-    x-coordinate of location of mine site
+   x-coordinate of location of mine site
 
 y
-    y-coordinate of location of mine site
+   y-coordinate of location of mine site
 
 z
-    ore thickness
+   ore thickness
 
 Source
 ~~~~~~
@@ -44,5 +44,5 @@ Examples
 
 ::
 
-    data(CobarOre)
-    plot(CobarOre)
+   data(CobarOre)
+   plot(CobarOre)

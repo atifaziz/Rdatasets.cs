@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(ManufCost)
+   data(ManufCost)
 
 Format
 ~~~~~~
@@ -29,31 +29,31 @@ Format
 A time serie containing :
 
 cost
-    cost index
+   cost index
 
 sk
-    capital cost share
+   capital cost share
 
 sl
-    labor cost share
+   labor cost share
 
 se
-    energy cost share
+   energy cost share
 
 sm
-    materials cost share
+   materials cost share
 
 pk
-    capital price
+   capital price
 
 pl
-    labor price
+   labor price
 
 pe
-    energy price
+   energy price
 
 pm
-    materials price
+   materials price
 
 Source
 ~~~~~~

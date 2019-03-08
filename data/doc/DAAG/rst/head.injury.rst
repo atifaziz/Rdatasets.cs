@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    head.injury
+   head.injury
 
 Format
 ~~~~~~
@@ -26,41 +26,41 @@ Format
 This data frame contains the following columns:
 
 age.65
-    age factor (0 = under 65, 1 = over 65).
+   age factor (0 = under 65, 1 = over 65).
 
 amnesia.before
-    amnesia before impact (less than 30 minutes = 0, more than 30
-    minutes =1).
+   amnesia before impact (less than 30 minutes = 0, more than 30 minutes
+   =1).
 
 basal.skull.fracture
-    (0 = no fracture, 1 = fracture).
+   (0 = no fracture, 1 = fracture).
 
 GCS.decrease
-    Glasgow Coma Scale decrease (0 = no deterioration, 1 =
-    deterioration).
+   Glasgow Coma Scale decrease (0 = no deterioration, 1 =
+   deterioration).
 
 GCS.13
-    initial Glasgow Coma Scale (0 = not ‘13’, 1 = ‘13’).
+   initial Glasgow Coma Scale (0 = not ‘13’, 1 = ‘13’).
 
 GCS.15.2hours
-    Glasgow Coma Scale after 2 hours (0 = not ‘15’, 1 = '15').
+   Glasgow Coma Scale after 2 hours (0 = not ‘15’, 1 = '15').
 
 high.risk
-    assessed by clinician as high risk for neurological intervention (0
-    = not high risk, 1 = high risk).
+   assessed by clinician as high risk for neurological intervention (0 =
+   not high risk, 1 = high risk).
 
 loss.of.consciousness
-    (0 = conscious, 1 = loss of consciousness).
+   (0 = conscious, 1 = loss of consciousness).
 
 open.skull.fracture
-    (0 = no fracture, 1 = fracture)
+   (0 = no fracture, 1 = fracture)
 
 vomiting
-    (0 = no vomiting, 1 = vomiting)
+   (0 = no vomiting, 1 = vomiting)
 
 clinically.important.brain.injury
-    any acute brain finding revealed on CT (0 = not present, 1 =
-    present).
+   any acute brain finding revealed on CT (0 = not present, 1 =
+   present).
 
 References
 ~~~~~~~~~~

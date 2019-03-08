@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(RailTrail)
+   data(RailTrail)
 
 Format
 ~~~~~~
@@ -76,5 +76,5 @@ Examples
 
 ::
 
-    data(RailTrail)
+   data(RailTrail)
 

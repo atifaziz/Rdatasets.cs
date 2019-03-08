@@ -15,29 +15,29 @@ Usage
 
 ::
 
-    data(bioChemists)
+   data(bioChemists)
 
 Format
 ~~~~~~
 
 ``art``
-    count of articles produced during last 3 years of Ph.D.
+   count of articles produced during last 3 years of Ph.D.
 
 ``fem``
-    factor indicating gender of student, with levels Men and Women
+   factor indicating gender of student, with levels Men and Women
 
 ``mar``
-    factor indicating marital status of student, with levels Single and
-    Married
+   factor indicating marital status of student, with levels Single and
+   Married
 
 ``kid5``
-    number of children aged 5 or younger
+   number of children aged 5 or younger
 
 ``phd``
-    prestige of Ph.D. department
+   prestige of Ph.D. department
 
 ``ment``
-    count of articles produced by Ph.D. mentor during last 3 years
+   count of articles produced by Ph.D. mentor during last 3 years
 
 References
 ~~~~~~~~~~

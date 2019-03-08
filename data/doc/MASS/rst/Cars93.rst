@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    Cars93
+   Cars93
 
 Format
 ~~~~~~
@@ -23,88 +23,88 @@ Format
 This data frame contains the following columns:
 
 ``Manufacturer``
-    Manufacturer.
+   Manufacturer.
 
 ``Model``
-    Model.
+   Model.
 
 ``Type``
-    Type: a factor with levels ``"Small"``, ``"Sporty"``, ``"Compact"``,
-    ``"Midsize"``, ``"Large"`` and ``"Van"``.
+   Type: a factor with levels ``"Small"``, ``"Sporty"``, ``"Compact"``,
+   ``"Midsize"``, ``"Large"`` and ``"Van"``.
 
 ``Min.Price``
-    Minimum Price (in \\$1,000): price for a basic version.
+   Minimum Price (in \\$1,000): price for a basic version.
 
 ``Price``
-    Midrange Price (in \\$1,000): average of ``Min.Price`` and
-    ``Max.Price``.
+   Midrange Price (in \\$1,000): average of ``Min.Price`` and
+   ``Max.Price``.
 
 ``Max.Price``
-    Maximum Price (in \\$1,000): price for “a premium version”.
+   Maximum Price (in \\$1,000): price for “a premium version”.
 
 ``MPG.city``
-    City MPG (miles per US gallon by EPA rating).
+   City MPG (miles per US gallon by EPA rating).
 
 ``MPG.highway``
-    Highway MPG.
+   Highway MPG.
 
 ``AirBags``
-    Air Bags standard. Factor: none, driver only, or driver & passenger.
+   Air Bags standard. Factor: none, driver only, or driver & passenger.
 
 ``DriveTrain``
-    Drive train type: rear wheel, front wheel or 4WD; (factor).
+   Drive train type: rear wheel, front wheel or 4WD; (factor).
 
 ``Cylinders``
-    Number of cylinders (missing for Mazda RX-7, which has a rotary
-    engine).
+   Number of cylinders (missing for Mazda RX-7, which has a rotary
+   engine).
 
 ``EngineSize``
-    Engine size (litres).
+   Engine size (litres).
 
 ``Horsepower``
-    Horsepower (maximum).
+   Horsepower (maximum).
 
 ``RPM``
-    RPM (revs per minute at maximum horsepower).
+   RPM (revs per minute at maximum horsepower).
 
 ``Rev.per.mile``
-    Engine revolutions per mile (in highest gear).
+   Engine revolutions per mile (in highest gear).
 
 ``Man.trans.avail``
-    Is a manual transmission version available? (yes or no, Factor).
+   Is a manual transmission version available? (yes or no, Factor).
 
 ``Fuel.tank.capacity``
-    Fuel tank capacity (US gallons).
+   Fuel tank capacity (US gallons).
 
 ``Passengers``
-    Passenger capacity (persons)
+   Passenger capacity (persons)
 
 ``Length``
-    Length (inches).
+   Length (inches).
 
 ``Wheelbase``
-    Wheelbase (inches).
+   Wheelbase (inches).
 
 ``Width``
-    Width (inches).
+   Width (inches).
 
 ``Turn.circle``
-    U-turn space (feet).
+   U-turn space (feet).
 
 ``Rear.seat.room``
-    Rear seat room (inches) (missing for 2-seater vehicles).
+   Rear seat room (inches) (missing for 2-seater vehicles).
 
 ``Luggage.room``
-    Luggage capacity (cubic feet) (missing for vans).
+   Luggage capacity (cubic feet) (missing for vans).
 
 ``Weight``
-    Weight (pounds).
+   Weight (pounds).
 
 ``Origin``
-    Of non-USA or USA company origins? (factor).
+   Of non-USA or USA company origins? (factor).
 
 ``Make``
-    Combination of Manufacturer and Model (character).
+   Combination of Manufacturer and Model (character).
 
 Details
 ~~~~~~~

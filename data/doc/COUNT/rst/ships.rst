@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(ships)
+   data(ships)
 
 Format
 ~~~~~~
@@ -26,25 +26,25 @@ Format
 A data frame with 40 observations on the following 7 variables.
 
 ``accident``
-    number of shipping accidents
+   number of shipping accidents
 
 ``op``
-    1=ship operated 1975-1979;0=1965-74
+   1=ship operated 1975-1979;0=1965-74
 
 ``co.65.69``
-    ship was in construction 1965-1969 (1/0)
+   ship was in construction 1965-1969 (1/0)
 
 ``co.70.74``
-    ship was in construction 1970-1974 (1/0)
+   ship was in construction 1970-1974 (1/0)
 
 ``co.75.79``
-    ship was in construction 1975-1979 (1/0)
+   ship was in construction 1975-1979 (1/0)
 
 ``service``
-    months in service
+   months in service
 
 ``ship``
-    ship identification : 1-5
+   ship identification : 1-5
 
 Details
 ~~~~~~~
@@ -72,20 +72,20 @@ Examples
 
 ::
 
-    data(ships)
-    glmshp <- glm(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
-                  family=poisson, data=ships)
-    summary(glmshp)
-    exp(coef(glmshp))
-    library(MASS)
-    glmshnb <- glm.nb(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
-                       data=ships)
-    summary(glmshnb)
-    exp(coef(glmshnb))
-    ## Not run: 
-    library(gee)
-    shipgee <- gee(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
-                  data=ships, family=poisson, corstr="exchangeable", id=ship)
-    summary(shipgee)
+   data(ships)
+   glmshp <- glm(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
+                 family=poisson, data=ships)
+   summary(glmshp)
+   exp(coef(glmshp))
+   library(MASS)
+   glmshnb <- glm.nb(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
+                      data=ships)
+   summary(glmshnb)
+   exp(coef(glmshnb))
+   ## Not run: 
+   library(gee)
+   shipgee <- gee(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
+                 data=ships, family=poisson, corstr="exchangeable", id=ship)
+   summary(shipgee)
 
-    ## End(Not run)
+   ## End(Not run)

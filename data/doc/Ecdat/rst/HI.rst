@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(HI)
+   data(HI)
 
 Format
 ~~~~~~
@@ -29,44 +29,44 @@ Format
 A dataframe containing :
 
 whrswk
-    hours worked per week by wife
+   hours worked per week by wife
 
 hhi
-    wife covered by husband's HI ?
+   wife covered by husband's HI ?
 
 whi
-    wife has HI thru her job ?
+   wife has HI thru her job ?
 
 hhi2
-    husband has HI thru own job ?
+   husband has HI thru own job ?
 
 education
-    a factor with levels, "<9years", "9-11years", "12years",
-    "13-15years", "16years", ">16years"
+   a factor with levels, "<9years", "9-11years", "12years",
+   "13-15years", "16years", ">16years"
 
 race
-    one of white, black, other
+   one of white, black, other
 
 hispanic
-    hispanic ?
+   hispanic ?
 
 experience
-    years of potential work experience
+   years of potential work experience
 
 kidslt6
-    number of kids under age of 6
+   number of kids under age of 6
 
 kids618
-    number of kids 6–18 years old
+   number of kids 6–18 years old
 
 husby
-    husband's income in thousands of dollars
+   husband's income in thousands of dollars
 
 region
-    one of other, northcentral, south, west
+   one of other, northcentral, south, west
 
 wght
-    sampling weight
+   sampling weight
 
 Source
 ~~~~~~

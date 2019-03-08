@@ -9,8 +9,8 @@
 
 <h3>Description</h3>
 
-<p>237 hunters were each offered one of 11 cash amounts (bids) ranging from 
-$1 to $200 in return for their goose permits.  Hunters returned either their 
+<p>237 hunters were each offered one of 11 cash amounts (bids) ranging from
+$1 to $200 in return for their goose permits.  Hunters returned either their
 permit or the cash.
 </p>
 
@@ -27,17 +27,17 @@ data(GoosePermits)
 <p>A data.frame with 11 observations on the following 3 variables.
 </p>
 
-<p>itemcodebid amount offered for permit (US $) [numeric]
-itemcodekeep number of hunters who kept the permit and returned the cash [numeric]
-itemcodesell number of hunters who kept the cash and returned the permit [numeric]
+<p>itemcodebid amount offered for permit (US $) (numeric)
+itemcodekeep number of hunters who kept the permit and returned the cash (numeric)
+itemcodesell number of hunters who kept the cash and returned the permit (numeric)
 </p>
 
 
 <h3>Source</h3>
 
-<p>Bishop and Heberlein. 
-&quot;Measuring values of extramarket goods: are indirect measures biased?&quot;. 
-Amer. J. Agr. Econ. 61, 1979. Available at 
+<p>Bishop and Heberlein.
+&quot;Measuring values of extramarket goods: are indirect measures biased?&quot;.
+Amer. J. Agr. Econ. 61, 1979. Available at
 <a href="http://www1.udel.edu/johnmack/frec343/bishop_and_heberlein.pdf">http://www1.udel.edu/johnmack/frec343/bishop_and_heberlein.pdf</a>.
 </p>
 
@@ -49,10 +49,10 @@ data(GoosePermits)
 
 goose.model &lt;- 
   glm( cbind(keep, sell) ~ log(bid), data = GoosePermits, family = binomial())
-if (require(mosaic)) {
-  f &lt;- makeFun(goose.model)
-  xyplot( (keep/(keep+sell)) ~ bid, data = GoosePermits, ylim = c(0,1.05))
-  plotFun( f(b) ~ b, add = TRUE) 
+if (require(ggformula)) {
+  y.hat &lt;- makeFun(goose.model)
+  gf_point( (keep/(keep+sell)) ~ bid, data = GoosePermits, ylim = c(0,1.05)) %&gt;%
+  gf_fun(y.hat(b) ~ b, add = TRUE, color = "red", alpha = 0.5) 
 }
 
 </pre>

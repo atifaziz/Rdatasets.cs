@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(Journals)
+   data(Journals)
 
 Format
 ~~~~~~
@@ -27,34 +27,34 @@ Format
 A dataframe containing :
 
 title
-    journal title
+   journal title
 
 pub
-    publisher
+   publisher
 
 society
-    scholarly society ?
+   scholarly society ?
 
 libprice
-    library subscription price
+   library subscription price
 
 pages
-    number of pages
+   number of pages
 
 charpp
-    characters per page
+   characters per page
 
 citestot
-    total number of citations
+   total number of citations
 
 date1
-    year journal was founded
+   year journal was founded
 
 oclc
-    number of library subscriptions
+   number of library subscriptions
 
 field
-    field description
+   field description
 
 Source
 ~~~~~~

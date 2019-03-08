@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    ChickWeight
+   ChickWeight
 
 Format
 ~~~~~~
@@ -26,21 +26,21 @@ An object of class
 containing the following columns:
 
 weight
-    a numeric vector giving the body weight of the chick (gm).
+   a numeric vector giving the body weight of the chick (gm).
 
 Time
-    a numeric vector giving the number of days since birth when the
-    measurement was made.
+   a numeric vector giving the number of days since birth when the
+   measurement was made.
 
 Chick
-    an ordered factor with levels ``18`` < ... < ``48`` giving a unique
-    identifier for the chick. The ordering of the levels groups chicks
-    on the same diet together and orders them according to their final
-    weight (lightest to heaviest) within diet.
+   an ordered factor with levels ``18`` < ... < ``48`` giving a unique
+   identifier for the chick. The ordering of the levels groups chicks on
+   the same diet together and orders them according to their final
+   weight (lightest to heaviest) within diet.
 
 Diet
-    a factor with levels 1, ..., 4 indicating which experimental diet
-    the chick received.
+   a factor with levels 1, ..., 4 indicating which experimental diet the
+   chick received.
 
 Details
 ~~~~~~~
@@ -75,6 +75,6 @@ Examples
 
 ::
 
-    require(graphics)
-    coplot(weight ~ Time | Chick, data = ChickWeight,
-           type = "b", show.given = FALSE)
+   require(graphics)
+   coplot(weight ~ Time | Chick, data = ChickWeight,
+          type = "b", show.given = FALSE)

@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    coal
+   coal
 
 Format
 ~~~~~~
@@ -27,9 +27,9 @@ Format
 This data frame contains the following column:
 
 ``date``
-    The date of the disaster. The integer part of ``date`` gives the
-    year. The day is represented as the fraction of the year that had
-    elapsed on that day.
+   The date of the disaster. The integer part of ``date`` gives the
+   year. The day is represented as the fraction of the year that had
+   elapsed on that day.
 
 Source
 ~~~~~~

@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    stormer
+   stormer
 
 Format
 ~~~~~~
@@ -31,13 +31,13 @@ Format
 The data frame contains the following components:
 
 ``Viscosity``
-    viscosity of fluid.
+   viscosity of fluid.
 
 ``Wt``
-    actuating weight.
+   actuating weight.
 
 ``Time``
-    time taken.
+   time taken.
 
 Source
 ~~~~~~

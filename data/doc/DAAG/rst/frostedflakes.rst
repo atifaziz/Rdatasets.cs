@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    elastic1
+   elastic1
 
 Format
 ~~~~~~
@@ -26,11 +26,11 @@ Format
 This data frame contains the following columns:
 
 Lab
-    careful laboratory analysis measurements using high performance
-    liquid chromatography
+   careful laboratory analysis measurements using high performance
+   liquid chromatography
 
 IA400
-    measurements based on the infra-analyzer 400
+   measurements based on the infra-analyzer 400
 
 Source
 ~~~~~~

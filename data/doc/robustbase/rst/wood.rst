@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(wood)
+   data(wood, package="robustbase")
 
 Format
 ~~~~~~
@@ -26,10 +26,10 @@ Format
 A data frame with 20 observations on the following 6 variables.
 
 x1, x2, x3, x4, x5
-    explanatory “anatomical” wood variables.
+   explanatory “anatomical” wood variables.
 
 y
-    wood specific gravity, the target variable.
+   wood specific gravity, the target variable.
 
 Source
 ~~~~~~
@@ -44,12 +44,12 @@ Examples
 
 ::
 
-    data(wood)
-    plot(wood)
-    summary( lm.wood <-        lm(y ~ ., data = wood))
-    summary(rlm.wood <- MASS::rlm(y ~ ., data = wood))
-    summary(lts.wood <-    ltsReg(y ~ ., data = wood))
+   data(wood)
+   plot(wood)
+   summary( lm.wood <-        lm(y ~ ., data = wood))
+   summary(rlm.wood <- MASS::rlm(y ~ ., data = wood))
+   summary(lts.wood <-    ltsReg(y ~ ., data = wood))
 
-    wood.x <- as.matrix(wood)[,1:5]
-    c_wood <- covMcd(wood.x)
-    c_wood
+   wood.x <- as.matrix(wood)[,1:5]
+   c_wood <- covMcd(wood.x)
+   c_wood

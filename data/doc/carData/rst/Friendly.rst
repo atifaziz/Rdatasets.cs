@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Friendly
+   Friendly
 
 Format
 ~~~~~~
@@ -25,13 +25,13 @@ Format
 This data frame contains the following columns:
 
 condition
-    A factor with levels: ``Before``, Recalled words presented before
-    others; ``Meshed``, Recalled words meshed with others; ``SFR``,
-    Standard free recall.
+   A factor with levels: ``Before``, Recalled words presented before
+   others; ``Meshed``, Recalled words meshed with others; ``SFR``,
+   Standard free recall.
 
 correct
-    Number of words correctly recalled, out of 40 on final trial of the
-    experiment.
+   Number of words correctly recalled, out of 40 on final trial of the
+   experiment.
 
 Source
 ~~~~~~

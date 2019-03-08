@@ -16,16 +16,16 @@ Usage
 
 ::
 
-    forbes
+   forbes
 
 Format
 ~~~~~~
 
 ``bp``
-    boiling point (degrees Farenheit).
+   boiling point (degrees Farenheit).
 
 ``pres``
-    barometric pressure in inches of mercury.
+   barometric pressure in inches of mercury.
 
 Source
 ~~~~~~

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("Bundesliga")
+   data("Bundesliga")
 
 Format
 ~~~~~~
@@ -23,25 +23,25 @@ Format
 A data frame with 14018 observations and 7 variables.
 
 HomeTeam
-    factor. Name of the home team.
+   factor. Name of the home team.
 
 AwayTeam
-    factor. Name of the away team.
+   factor. Name of the away team.
 
 HomeGoals
-    number of goals scored by the home team.
+   number of goals scored by the home team.
 
 AwayGoals
-    number of goals scored by the away team.
+   number of goals scored by the away team.
 
 Round
-    round of the game.
+   round of the game.
 
 Year
-    year in which the season started.
+   year in which the season started.
 
 Date
-    starting time of the game (in ``"POSIXct"`` format).
+   starting time of the game (in ``"POSIXct"`` format).
 
 Details
 ~~~~~~~
@@ -80,23 +80,23 @@ Examples
 
 ::
 
-    data("Bundesliga")
+   data("Bundesliga")
 
-    ## number of goals per game poisson distributed?
-    ngoals1 <- xtabs(~ HomeGoals, data = Bundesliga, subset = Year == 1995)
-    ngoals2 <- xtabs(~ AwayGoals, data = Bundesliga, subset = Year == 1995)
-    ngoals3 <- table(apply(subset(Bundesliga, Year == 1995)[,3:4], 1, sum))
+   ## number of goals per game poisson distributed?
+   ngoals1 <- xtabs(~ HomeGoals, data = Bundesliga, subset = Year == 1995)
+   ngoals2 <- xtabs(~ AwayGoals, data = Bundesliga, subset = Year == 1995)
+   ngoals3 <- table(apply(subset(Bundesliga, Year == 1995)[,3:4], 1, sum))
 
-    gf1 <- goodfit(ngoals1)
-    gf2 <- goodfit(ngoals2)
-    gf3 <- goodfit(ngoals3)
+   gf1 <- goodfit(ngoals1)
+   gf2 <- goodfit(ngoals2)
+   gf3 <- goodfit(ngoals3)
 
-    summary(gf1)
-    summary(gf2)
-    summary(gf3)
-    plot(gf1)
-    plot(gf2)
-    plot(gf3)
+   summary(gf1)
+   summary(gf2)
+   summary(gf3)
+   plot(gf1)
+   plot(gf2)
+   plot(gf3)
 
-    Ord_plot(ngoals1)
-    distplot(ngoals1)
+   Ord_plot(ngoals1)
+   distplot(ngoals1)

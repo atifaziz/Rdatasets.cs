@@ -23,9 +23,9 @@ Usage
 
 ::
 
-    data(epi)
-    data(epi.dictionary)
-    data(epiR)
+   data(epi)
+   data(epi.dictionary)
+   data(epiR)
 
 Format
 ~~~~~~
@@ -33,185 +33,185 @@ Format
 A data frame with 3570 observations on the following 57 variables.
 
 ``id``
-    The identification number within the study
+   The identification number within the study
 
 ``time``
-    First (group testing) or 2nd time (before a lab experiment) for the
-    epiR data set.
+   First (group testing) or 2nd time (before a lab experiment) for the
+   epiR data set.
 
 ``study``
-    Four lab based studies and their pretest data
+   Four lab based studies and their pretest data
 
 ``V1``
-    a numeric vector
+   a numeric vector
 
 ``V2``
-    a numeric vector
+   a numeric vector
 
 ``V3``
-    a numeric vector
+   a numeric vector
 
 ``V4``
-    a numeric vector
+   a numeric vector
 
 ``V5``
-    a numeric vector
+   a numeric vector
 
 ``V6``
-    a numeric vector
+   a numeric vector
 
 ``V7``
-    a numeric vector
+   a numeric vector
 
 ``V8``
-    a numeric vector
+   a numeric vector
 
 ``V9``
-    a numeric vector
+   a numeric vector
 
 ``V10``
-    a numeric vector
+   a numeric vector
 
 ``V11``
-    a numeric vector
+   a numeric vector
 
 ``V12``
-    a numeric vector
+   a numeric vector
 
 ``V13``
-    a numeric vector
+   a numeric vector
 
 ``V14``
-    a numeric vector
+   a numeric vector
 
 ``V15``
-    a numeric vector
+   a numeric vector
 
 ``V16``
-    a numeric vector
+   a numeric vector
 
 ``V17``
-    a numeric vector
+   a numeric vector
 
 ``V18``
-    a numeric vector
+   a numeric vector
 
 ``V19``
-    a numeric vector
+   a numeric vector
 
 ``V20``
-    a numeric vector
+   a numeric vector
 
 ``V21``
-    a numeric vector
+   a numeric vector
 
 ``V22``
-    a numeric vector
+   a numeric vector
 
 ``V23``
-    a numeric vector
+   a numeric vector
 
 ``V24``
-    a numeric vector
+   a numeric vector
 
 ``V25``
-    a numeric vector
+   a numeric vector
 
 ``V26``
-    a numeric vector
+   a numeric vector
 
 ``V27``
-    a numeric vector
+   a numeric vector
 
 ``V28``
-    a numeric vector
+   a numeric vector
 
 ``V29``
-    a numeric vector
+   a numeric vector
 
 ``V30``
-    a numeric vector
+   a numeric vector
 
 ``V31``
-    a numeric vector
+   a numeric vector
 
 ``V32``
-    a numeric vector
+   a numeric vector
 
 ``V33``
-    a numeric vector
+   a numeric vector
 
 ``V34``
-    a numeric vector
+   a numeric vector
 
 ``V35``
-    a numeric vector
+   a numeric vector
 
 ``V36``
-    a numeric vector
+   a numeric vector
 
 ``V37``
-    a numeric vector
+   a numeric vector
 
 ``V38``
-    a numeric vector
+   a numeric vector
 
 ``V39``
-    a numeric vector
+   a numeric vector
 
 ``V40``
-    a numeric vector
+   a numeric vector
 
 ``V41``
-    a numeric vector
+   a numeric vector
 
 ``V42``
-    a numeric vector
+   a numeric vector
 
 ``V43``
-    a numeric vector
+   a numeric vector
 
 ``V44``
-    a numeric vector
+   a numeric vector
 
 ``V45``
-    a numeric vector
+   a numeric vector
 
 ``V46``
-    a numeric vector
+   a numeric vector
 
 ``V47``
-    a numeric vector
+   a numeric vector
 
 ``V48``
-    a numeric vector
+   a numeric vector
 
 ``V49``
-    a numeric vector
+   a numeric vector
 
 ``V50``
-    a numeric vector
+   a numeric vector
 
 ``V51``
-    a numeric vector
+   a numeric vector
 
 ``V52``
-    a numeric vector
+   a numeric vector
 
 ``V53``
-    a numeric vector
+   a numeric vector
 
 ``V54``
-    a numeric vector
+   a numeric vector
 
 ``V55``
-    a numeric vector
+   a numeric vector
 
 ``V56``
-    a numeric vector
+   a numeric vector
 
 ``V57``
-    a numeric vector
+   a numeric vector
 
 Details
 ~~~~~~~
@@ -257,31 +257,31 @@ Examples
 
 ::
 
-    data(epi)
-    epi.keys <- list(E = c("V1",  "V3",  "V8",  "V10", "V13", "V17", "V22", "V25", "V27", "V39",
-      "V44", "V46", "V49", "V53", "V56", "-V5", "-V15", "-V20", "-V29", "-V32", "-V34","-V37",
-       "-V41", "-V51"),
-    N = c( "V2", "V4", "V7", "V9", "V11", "V14", "V16", "V19", "V21", "V23", "V26", "V28", 
-    "V31", "V33", "V35", "V38", "V40","V43", "V45", "V47", "V50", "V52","V55", "V57"),
-    L = c("V6",  "V24", "V36", "-V12", "-V18", "-V30", "-V42", "-V48", "-V54"),
-    Imp = c( "V1",  "V3",  "V8",  "V10", "V13", "V22", "V39", "-V5", "-V41"),
-    Soc = c( "V17", "V25", "V27", "V44", "V46", "V53", "-V11", "-V15", "-V20", 
-    "-V29", "-V32", "-V37", "-V51")
-    )
-    scores <- scoreItems(epi.keys,epi)
+   data(epi)
+   epi.keys <- list(E = c("V1",  "V3",  "V8",  "V10", "V13", "V17", "V22", "V25", "V27", "V39",
+     "V44", "V46", "V49", "V53", "V56", "-V5", "-V15", "-V20", "-V29", "-V32", "-V34","-V37",
+      "-V41", "-V51"),
+   N = c( "V2", "V4", "V7", "V9", "V11", "V14", "V16", "V19", "V21", "V23", "V26", "V28", 
+   "V31", "V33", "V35", "V38", "V40","V43", "V45", "V47", "V50", "V52","V55", "V57"),
+   L = c("V6",  "V24", "V36", "-V12", "-V18", "-V30", "-V42", "-V48", "-V54"),
+   Imp = c( "V1",  "V3",  "V8",  "V10", "V13", "V22", "V39", "-V5", "-V41"),
+   Soc = c( "V17", "V25", "V27", "V44", "V46", "V53", "-V11", "-V15", "-V20", 
+   "-V29", "-V32", "-V37", "-V51")
+   )
+   scores <- scoreItems(epi.keys,epi)
 
-    keys <- make.keys(epi,epi.keys)   #the old way of making keys is to make a matrix
-    fa.lookup(keys[,1:3],epi.dictionary) #show the items and keying information
+   keys <- make.keys(epi,epi.keys)   #the old way of making keys is to make a matrix
+   fa.lookup(keys[,1:3],epi.dictionary) #show the items and keying information
 
-    #a variety of demonstrations (not run) of test retest reliability versus alpha versus omega
+   #a variety of demonstrations (not run) of test retest reliability versus alpha versus omega
 
-    E <- selectFromKeys(epi.keys$E)
-    #omega(epi[E])  #to show the low omega but high alpha of Extraversion 
-    #testRetest(epiR,select=E)  #test retest of the extraversion scale (.82) is higher than 
-    #alpha  for either the first (.77) or second administration (.74)
-    #Imp <- selectFromKeys(epi.keys$Imp)
-    #testRetest(epiR,select=Imp)  #Similarly test retest = .68 but alpha = .48 and .50.
-    #Soc <- selectFromKeys(epi.keys$Soc)
-    #testRetest(epiR,select=Soc)  # test retest =.83, alpha = .76, .75
-    #N <- selectFromKeys(epi.keys$N)
-    #testRetest(epiR, select=N) #Test retest = .8, alpha = .81, .80
+   E <- selectFromKeys(epi.keys$E)
+   #omega(epi[E])  #to show the low omega but high alpha of Extraversion 
+   #testRetest(epiR,select=E)  #test retest of the extraversion scale (.82) is higher than 
+   #alpha  for either the first (.77) or second administration (.74)
+   #Imp <- selectFromKeys(epi.keys$Imp)
+   #testRetest(epiR,select=Imp)  #Similarly test retest = .68 but alpha = .48 and .50.
+   #Soc <- selectFromKeys(epi.keys$Soc)
+   #testRetest(epiR,select=Soc)  # test retest =.83, alpha = .76, .75
+   #N <- selectFromKeys(epi.keys$N)
+   #testRetest(epiR, select=N) #Test retest = .8, alpha = .81, .80

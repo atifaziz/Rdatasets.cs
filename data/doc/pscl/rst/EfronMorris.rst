@@ -16,31 +16,31 @@ Usage
 
 ::
 
-    data(EfronMorris)
+   data(EfronMorris)
 
 Format
 ~~~~~~
 
 ``name``
-    character, name of player
+   character, name of player
 
 ``team``
-    character, team of player, abbreviated
+   character, team of player, abbreviated
 
 ``league``
-    character, National League or American League
+   character, National League or American League
 
 ``r``
-    numeric, hits in 1st 45 at bats
+   numeric, hits in 1st 45 at bats
 
 ``y``
-    numeric, ``r``/45, batting average over 1st 45 at bats
+   numeric, ``r``/45, batting average over 1st 45 at bats
 
 ``n``
-    numeric, number of at bats, remainder of 1970 season
+   numeric, number of at bats, remainder of 1970 season
 
 ``p``
-    numeric, batting average over remainder of 1970 season
+   numeric, batting average over remainder of 1970 season
 
 Source
 ~~~~~~
@@ -54,11 +54,11 @@ Examples
 
 ::
 
-    data(EfronMorris)
-    attach(EfronMorris)
-    plot(p~y,
-         xlim=range(p,y),
-         ylim=range(p,y),
-         xlab="Batting Average, 1st 45 at bats",
-         ylab="Batting Average, Remainder of Season")
-    abline(0,1)
+   data(EfronMorris)
+   attach(EfronMorris)
+   plot(p~y,
+        xlim=range(p,y),
+        ylim=range(p,y),
+        xlab="Batting Average, 1st 45 at bats",
+        ylab="Batting Average, Remainder of Season")
+   abline(0,1)

@@ -85,14 +85,16 @@ data(SnowGR)
 <pre>
 data(SnowGR)
 if (require(mosaic)) {
-  favstats(SnowGR$Total)
-  histogram(~Total, data=SnowGR)
-  xyplot(Total ~ SeasonStart, SnowGR, type=c('p','smooth'))
+  df_stats(~ Total, data = SnowGR)
+  gf_histogram( ~ Total, data = SnowGR)
+  gf_point(Total ~ SeasonStart, data = SnowGR) %&gt;%
+    gf_smooth()
 }
-if (require(reshape2)) {
-  Snow2 &lt;- melt(SnowGR, id=1:2)
-  names(Snow2)[3:4] &lt;- c('Time','Snow')
-  bwplot(Snow ~ Time, Snow2)
+if (require(tidyr)) {
+  Snow2 &lt;- 
+    SnowGR %&gt;%
+    gather("Time", "Snowfall", Jul:Total) 
+  gf_boxplot(Snowfall ~ Time, data = Snow2)
 }
 
 </pre>

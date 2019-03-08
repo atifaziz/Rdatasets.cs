@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(grunfeld)
+   data(grunfeld)
 
 Format
 ~~~~~~

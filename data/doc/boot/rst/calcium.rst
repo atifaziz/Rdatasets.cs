@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    calcium
+   calcium
 
 Format
 ~~~~~~
@@ -32,10 +32,10 @@ Format
 This data frame contains the following columns:
 
 ``time``
-    The time (in minutes) that the cells were suspended in the solution.
+   The time (in minutes) that the cells were suspended in the solution.
 
 ``cal``
-    The amount of calcium uptake (nmoles/mg).
+   The amount of calcium uptake (nmoles/mg).
 
 Source
 ~~~~~~

@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(MedExp)
+   data(MedExp)
 
 Format
 ~~~~~~
@@ -26,51 +26,51 @@ Format
 A time serie containing :
 
 med
-    annual medical expenditures in constant dollars excluding dental and
-    outpatient mental
+   annual medical expenditures in constant dollars excluding dental and
+   outpatient mental
 
 lc
-    log(coinsrate+1) where coinsurance rate is 0 to 100
+   log(coinsrate+1) where coinsurance rate is 0 to 100
 
 idp
-    individual deductible plan ?
+   individual deductible plan ?
 
 lpi
-    log(annual participation incentive payment) or 0 if no payment
+   log(annual participation incentive payment) or 0 if no payment
 
 fmde
-    log(max(medical deductible expenditure)) if IDP=1 and MDE>1 or 0
-    otherw
+   log(max(medical deductible expenditure)) if IDP=1 and MDE>1 or 0
+   otherw
 
 physlim
-    physical limitation ?
+   physical limitation ?
 
 ndisease
-    number of chronic diseases
+   number of chronic diseases
 
 health
-    self–rate health (excellent,good,fair,poor)
+   self–rate health (excellent,good,fair,poor)
 
 linc
-    log of annual family income (in \\$)
+   log of annual family income (in \\$)
 
 lfam
-    log of family size
+   log of family size
 
 educdec
-    years of schooling of household head
+   years of schooling of household head
 
 age
-    exact age
+   exact age
 
 sex
-    sex (male,female)
+   sex (male,female)
 
 child
-    age less than 18 ?
+   age less than 18 ?
 
 black
-    is household head black ?
+   is household head black ?
 
 Source
 ~~~~~~

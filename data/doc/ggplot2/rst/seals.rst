@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    seals
+   seals
 
 Format
 ~~~~~~

@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    toycars
+   toycars
 
 Format
 ~~~~~~
@@ -26,18 +26,18 @@ Format
 This data frame contains the following columns:
 
 angle
-    tilt of ramp, in degrees
+   tilt of ramp, in degrees
 
 distance
-    distance traveled, in meters
+   distance traveled, in meters
 
 car
-    a numeric code (1 = first car, 2 = second car, 3 = third car)
+   a numeric code (1 = first car, 2 = second car, 3 = third car)
 
 Examples
 ~~~~~~~~
 
 ::
 
-    toycars.lm <- lm(distance ~ angle + factor(car), data=toycars)
-    summary(toycars.lm)
+   toycars.lm <- lm(distance ~ angle + factor(car), data=toycars)
+   summary(toycars.lm)

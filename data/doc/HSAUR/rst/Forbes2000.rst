@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("Forbes2000")
+   data("Forbes2000")
 
 Format
 ~~~~~~
@@ -24,28 +24,28 @@ Format
 A data frame with 2000 observations on the following 8 variables.
 
 rank
-    the ranking of the company.
+   the ranking of the company.
 
 name
-    the name of the company.
+   the name of the company.
 
 country
-    a factor giving the country the company is situated in.
+   a factor giving the country the company is situated in.
 
 category
-    a factor describing the products the company produces.
+   a factor describing the products the company produces.
 
 sales
-    the amount of sales of the company in billion USD.
+   the amount of sales of the company in billion USD.
 
 profits
-    the profit of the company in billion USD.
+   the profit of the company in billion USD.
 
 assets
-    the assets of the company in billion USD.
+   the assets of the company in billion USD.
 
 marketvalue
-    the market value of the company in billion USD.
+   the market value of the company in billion USD.
 
 Source
 ~~~~~~
@@ -57,9 +57,9 @@ Examples
 
 ::
 
-    data("Forbes2000", package = "HSAUR")
-    summary(Forbes2000)
-    ### number of countries
-    length(levels(Forbes2000$country))
-    ### number of industries
-    length(levels(Forbes2000$category))
+   data("Forbes2000", package = "HSAUR")
+   summary(Forbes2000)
+   ### number of countries
+   length(levels(Forbes2000$country))
+   ### number of industries
+   length(levels(Forbes2000$category))

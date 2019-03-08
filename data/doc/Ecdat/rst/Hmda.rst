@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(Hmda)
+   data(Hmda)
 
 Format
 ~~~~~~
@@ -28,44 +28,44 @@ Format
 A dataframe containing :
 
 dir
-    debt payments to total income ratio
+   debt payments to total income ratio
 
 hir
-    housing expenses to income ratio
+   housing expenses to income ratio
 
 lvr
-    ratio of size of loan to assessed value of property
+   ratio of size of loan to assessed value of property
 
 ccs
-    consumer credit score from 1 to 6 (a low value being a good score)
+   consumer credit score from 1 to 6 (a low value being a good score)
 
 mcs
-    mortgage credit score from 1 to 4 (a low value being a good score)
+   mortgage credit score from 1 to 4 (a low value being a good score)
 
 pbcr
-    public bad credit record ?
+   public bad credit record ?
 
 dmi
-    denied mortgage insurance ?
+   denied mortgage insurance ?
 
 self
-    self employed ?
+   self employed ?
 
 single
-    is the applicant single ?
+   is the applicant single ?
 
 uria
-    1989 Massachusetts unemployment rate in the applicant's industry
+   1989 Massachusetts unemployment rate in the applicant's industry
 
 condominium
-    is unit a condominium ? (was called comdominiom in version 0.2-9 and
-    earlier versions of the package)
+   is unit a condominium ? (was called comdominiom in version 0.2-9 and
+   earlier versions of the package)
 
 black
-    is the applicant black ?
+   is the applicant black ?
 
 deny
-    mortgage application denied ?
+   mortgage application denied ?
 
 Source
 ~~~~~~

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Catsup)
+   data(Catsup)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A dataframe containing :
 
 id
-    individuals identifiers
+   individuals identifiers
 
 choice
-    one of heinz41, heinz32, heinz28, hunts32
+   one of heinz41, heinz32, heinz28, hunts32
 
 disp.z
-    is there a display for brand z ?
+   is there a display for brand z ?
 
 feat.z
-    is there a newspaper feature advertisement for brand z ?
+   is there a newspaper feature advertisement for brand z ?
 
 price.z
-    price of brand z
+   price of brand z
 
 Source
 ~~~~~~

@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(bushfire)
+   data(bushfire, package="robustbase")
 
 Format
 ~~~~~~
@@ -36,6 +36,6 @@ Examples
 
 ::
 
-    data(bushfire)
-    plot(bushfire)
-    covMcd(bushfire)
+   data(bushfire)
+   plot(bushfire)
+   covMcd(bushfire)

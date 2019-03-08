@@ -9,7 +9,7 @@
 
 <h3>Description</h3>
 
-<p>SAT data assembled for a statistics education journal article on the 
+<p>SAT data assembled for a statistics education journal article on the
 link between SAT scores and measures of educational expenditures
 </p>
 
@@ -73,10 +73,11 @@ public school expenditures&quot; (1999), <em>Journal of Statistics Education</em
 
 <pre>
 data(SAT)
-if (require(lattice)) {
-  xyplot(sat ~ expend, SAT)
-  xyplot(sat ~ expend, SAT, 
-	   panel=function(x,y){grid.text(abbreviate(SAT$state, 3), x, y, default.units='native')})
+if (require(ggformula)) {
+  gf_point(sat ~ expend, data = SAT, color = "blue", alpha = 0.5) %&gt;%
+    gf_lm()
+  gf_text(sat ~ expend, data = SAT, label = ~ abbreviate(SAT$state, 3),
+    inherit = FALSE)
 } 
 </pre>
 

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(OFP)
+   data(OFP)
 
 Format
 ~~~~~~
@@ -29,61 +29,61 @@ Format
 A dataframe containing :
 
 ofp
-    number of physician office visits
+   number of physician office visits
 
 ofnp
-    number of nonphysician office visits
+   number of nonphysician office visits
 
 opp
-    number of physician outpatient visits
+   number of physician outpatient visits
 
 opnp
-    number of nonphysician outpatient visits
+   number of nonphysician outpatient visits
 
 emr
-    number of emergency room visits
+   number of emergency room visits
 
 hosp
-    number of hospitalizations
+   number of hospitalizations
 
 numchron
-    number of chronic conditions
+   number of chronic conditions
 
 adldiff
-    the person has a condition that limits activities of daily living ?
+   the person has a condition that limits activities of daily living ?
 
 age
-    age in years (divided by 10)
+   age in years (divided by 10)
 
 black
-    is the person african–american ?
+   is the person african–american ?
 
 sex
-    is the person male ?
+   is the person male ?
 
 maried
-    is the person maried ?
+   is the person maried ?
 
 school
-    number of years of education
+   number of years of education
 
 faminc
-    family income in 10000\$
+   family income in 10000\$
 
 employed
-    is the person employed ?
+   is the person employed ?
 
 privins
-    is the person covered by private health insurance ?
+   is the person covered by private health insurance ?
 
 medicaid
-    is the person covered by medicaid ?
+   is the person covered by medicaid ?
 
 region
-    the region (noreast, midwest,west)
+   the region (noreast, midwest,west)
 
 hlth
-    self-perceived health (excellent, poor, other)
+   self-perceived health (excellent, poor, other)
 
 Source
 ~~~~~~

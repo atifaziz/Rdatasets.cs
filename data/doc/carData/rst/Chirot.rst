@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Chirot
+   Chirot
 
 Format
 ~~~~~~
@@ -24,19 +24,19 @@ Format
 This data frame contains the following columns:
 
 intensity
-    Intensity of the rebellion
+   Intensity of the rebellion
 
 commerce
-    Commercialization of agriculture
+   Commercialization of agriculture
 
 tradition
-    Traditionalism
+   Traditionalism
 
 midpeasant
-    Strength of middle peasantry
+   Strength of middle peasantry
 
 inequality
-    Inequality of land tenure
+   Inequality of land tenure
 
 Source
 ~~~~~~

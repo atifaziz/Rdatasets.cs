@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    quine
+   quine
 
 Format
 ~~~~~~
@@ -26,21 +26,21 @@ Format
 This data frame contains the following columns:
 
 ``Eth``
-    ethnic background: Aboriginal or Not, (``"A"`` or ``"N"``).
+   ethnic background: Aboriginal or Not, (``"A"`` or ``"N"``).
 
 ``Sex``
-    sex: factor with levels (``"F"`` or ``"M"``).
+   sex: factor with levels (``"F"`` or ``"M"``).
 
 ``Age``
-    age group: Primary (``"F0"``), or forms ``"F1,"`` ``"F2"`` or
-    ``"F3"``.
+   age group: Primary (``"F0"``), or forms ``"F1,"`` ``"F2"`` or
+   ``"F3"``.
 
 ``Lrn``
-    learner status: factor with levels Average or Slow learner,
-    (``"AL"`` or ``"SL"``).
+   learner status: factor with levels Average or Slow learner, (``"AL"``
+   or ``"SL"``).
 
 ``Days``
-    days absent from school in the year.
+   days absent from school in the year.
 
 Source
 ~~~~~~

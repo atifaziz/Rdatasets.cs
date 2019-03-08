@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Ornstein
+   Ornstein
 
 Format
 ~~~~~~
@@ -25,22 +25,22 @@ Format
 This data frame contains the following columns:
 
 assets
-    Assets in millions of dollars.
+   Assets in millions of dollars.
 
 sector
-    Industrial sector. A factor with levels: ``AGR``, agriculture, food,
-    light industry; ``BNK``, banking; ``CON``, construction; ``FIN``,
-    other financial; ``HLD``, holding companies; ``MAN``, heavy
-    manufacturing; ``MER``, merchandizing; ``MIN``, mining, metals,
-    etc.; ``TRN``, transport; ``WOD``, wood and paper.
+   Industrial sector. A factor with levels: ``AGR``, agriculture, food,
+   light industry; ``BNK``, banking; ``CON``, construction; ``FIN``,
+   other financial; ``HLD``, holding companies; ``MAN``, heavy
+   manufacturing; ``MER``, merchandizing; ``MIN``, mining, metals, etc.;
+   ``TRN``, transport; ``WOD``, wood and paper.
 
 nation
-    Nation of control. A factor with levels: ``CAN``, Canada; ``OTH``,
-    other foreign; ``UK``, Britain; ``US``, United States.
+   Nation of control. A factor with levels: ``CAN``, Canada; ``OTH``,
+   other foreign; ``UK``, Britain; ``US``, United States.
 
 interlocks
-    Number of interlocking director and executive positions shared with
-    other major firms.
+   Number of interlocking director and executive positions shared with
+   other major firms.
 
 Source
 ~~~~~~

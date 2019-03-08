@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("skulls")
+   data("skulls")
 
 Format
 ~~~~~~
@@ -23,21 +23,21 @@ Format
 A data frame with 150 observations on the following 5 variables.
 
 ``epoch``
-    the epoch the skull as assigned to, a factor with levels ``c4000BC``
-    ``c3300BC``, ``c1850BC``, ``c200BC``, and ``cAD150``, where the
-    years are only given approximately, of course.
+   the epoch the skull as assigned to, a factor with levels ``c4000BC``
+   ``c3300BC``, ``c1850BC``, ``c200BC``, and ``cAD150``, where the years
+   are only given approximately, of course.
 
 ``mb``
-    maximum breaths of the skull.
+   maximum breaths of the skull.
 
 ``bh``
-    basibregmatic heights of the skull.
+   basibregmatic heights of the skull.
 
 ``bl``
-    basialiveolar length of the skull.
+   basialiveolar length of the skull.
 
 ``nh``
-    nasal heights of the skull.
+   nasal heights of the skull.
 
 Details
 ~~~~~~~
@@ -58,14 +58,14 @@ Examples
 ::
 
 
-      data("skulls", package = "HSAUR")
-      means <- tapply(1:nrow(skulls), skulls$epoch, function(i)
-                   apply(skulls[i,colnames(skulls)[-1]], 2, mean))
-      means <- matrix(unlist(means), nrow = length(means), byrow = TRUE)
-      colnames(means) <- colnames(skulls)[-1]
-      rownames(means) <- levels(skulls$epoch)
-      pairs(means,
-          panel = function(x, y) {
-              text(x, y, levels(skulls$epoch))
-          })
+     data("skulls", package = "HSAUR")
+     means <- tapply(1:nrow(skulls), skulls$epoch, function(i)
+                  apply(skulls[i,colnames(skulls)[-1]], 2, mean))
+     means <- matrix(unlist(means), nrow = length(means), byrow = TRUE)
+     colnames(means) <- colnames(skulls)[-1]
+     rownames(means) <- levels(skulls$epoch)
+     pairs(means,
+         panel = function(x, y) {
+             text(x, y, levels(skulls$epoch))
+         })
 

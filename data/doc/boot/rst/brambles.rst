@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    brambles
+   brambles
 
 Format
 ~~~~~~
@@ -27,15 +27,15 @@ Format
 This data frame contains the following columns:
 
 ``x``
-    The x coordinate of the position of the cane in the plot.
+   The x coordinate of the position of the cane in the plot.
 
 ``y``
-    The y coordinate of the position of the cane in the plot.
+   The y coordinate of the position of the cane in the plot.
 
 ``age``
-    The age classification of the canes; ``0`` indicates a newly emerged
-    cane, ``1`` indicates a one year old cane and ``2`` indicates a two
-    year old cane.
+   The age classification of the canes; ``0`` indicates a newly emerged
+   cane, ``1`` indicates a one year old cane and ``2`` indicates a two
+   year old cane.
 
 Source
 ~~~~~~

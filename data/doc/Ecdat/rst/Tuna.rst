@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Tuna)
+   data(Tuna)
 
 Format
 ~~~~~~
@@ -29,18 +29,18 @@ Format
 A dataframe containing :
 
 hid
-    individuals identifiers
+   individuals identifiers
 
 id
-    purchase identifiers
+   purchase identifiers
 
 choice
-    one of skw (Starkist water), cosw (Chicken of the sea water), pw
-    (store–specific private label water), sko (Starkist oil), coso
-    (Chicken of the sea oil)
+   one of skw (Starkist water), cosw (Chicken of the sea water), pw
+   (store–specific private label water), sko (Starkist oil), coso
+   (Chicken of the sea oil)
 
 price.z
-    price of brand z
+   price of brand z
 
 Source
 ~~~~~~

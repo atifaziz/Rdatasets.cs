@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    UCBAdmissions
+   UCBAdmissions
 
 Format
 ~~~~~~
@@ -56,25 +56,26 @@ the fourfoldplot for 2-by-2-by-\ *k* tables.
 References
 ~~~~~~~~~~
 
-Bickel, P. J., Hammel, E. A., and O'Connell, J. W. (1975) Sex bias in
+Bickel, P. J., Hammel, E. A., and O'Connell, J. W. (1975). Sex bias in
 graduate admissions: Data from Berkeley. *Science*, **187**, 398–403.
+http://www.jstor.org/stable/1739581.
 
 Examples
 ~~~~~~~~
 
 ::
 
-    require(graphics)
-    ## Data aggregated over departments
-    apply(UCBAdmissions, c(1, 2), sum)
-    mosaicplot(apply(UCBAdmissions, c(1, 2), sum),
-               main = "Student admissions at UC Berkeley")
-    ## Data for individual departments
-    opar <- par(mfrow = c(2, 3), oma = c(0, 0, 2, 0))
-    for(i in 1:6)
-      mosaicplot(UCBAdmissions[,,i],
-        xlab = "Admit", ylab = "Sex",
-        main = paste("Department", LETTERS[i]))
-    mtext(expression(bold("Student admissions at UC Berkeley")),
-          outer = TRUE, cex = 1.5)
-    par(opar)
+   require(graphics)
+   ## Data aggregated over departments
+   apply(UCBAdmissions, c(1, 2), sum)
+   mosaicplot(apply(UCBAdmissions, c(1, 2), sum),
+              main = "Student admissions at UC Berkeley")
+   ## Data for individual departments
+   opar <- par(mfrow = c(2, 3), oma = c(0, 0, 2, 0))
+   for(i in 1:6)
+     mosaicplot(UCBAdmissions[,,i],
+       xlab = "Admit", ylab = "Sex",
+       main = paste("Department", LETTERS[i]))
+   mtext(expression(bold("Student admissions at UC Berkeley")),
+         outer = TRUE, cex = 1.5)
+   par(opar)

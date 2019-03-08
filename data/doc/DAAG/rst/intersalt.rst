@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    intersalt
+   intersalt
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 A data frame with 52 observations on the following 4 variables.
 
 ``b``
-    a numeric vector
+   a numeric vector
 
 ``bp``
-    mean diastolic blood pressure (mm Hg)
+   mean diastolic blood pressure (mm Hg)
 
 ``na``
-    mean sodium excretion (mmol/24h)
+   mean sodium excretion (mmol/24h)
 
 ``country``
-    a character vector
+   a character vector
 
 Details
 ~~~~~~~
@@ -61,6 +61,6 @@ Examples
 
 ::
 
-    data(intersalt)
-    plot(bp ~ na, data=intersalt, xlab="Median sodium excretion (mmol/24h)",
-         ylab="Median diatoluc blood pressure (mm Hg)")
+   data(intersalt)
+   plot(bp ~ na, data=intersalt, xlab="Median sodium excretion (mmol/24h)",
+        ylab="Median diatoluc blood pressure (mm Hg)")

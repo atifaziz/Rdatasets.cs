@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    menarche
+   menarche
 
 Format
 ~~~~~~
@@ -24,14 +24,14 @@ Format
 This data frame contains the following columns:
 
 ``Age``
-    Average age of the group. (The groups are reasonably age
-    homogeneous.)
+   Average age of the group. (The groups are reasonably age
+   homogeneous.)
 
 ``Total``
-    Total number of children in the group.
+   Total number of children in the group.
 
 ``Menarche``
-    Number who have reached menarche.
+   Number who have reached menarche.
 
 Source
 ~~~~~~
@@ -54,5 +54,5 @@ Examples
 
 ::
 
-    mprob <- glm(cbind(Menarche, Total - Menarche) ~ Age,
-                 binomial(link = probit), data = menarche)
+   mprob <- glm(cbind(Menarche, Total - Menarche) ~ Age,
+                binomial(link = probit), data = menarche)

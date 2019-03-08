@@ -27,7 +27,7 @@ Usage
 
 ::
 
-    data(starsCYG)
+   data(starsCYG, package="robustbase")
 
 Format
 ~~~~~~
@@ -35,11 +35,11 @@ Format
 A data frame with 47 observations on the following 2 variables
 
 ``log.Te``
-    Logarithm of the effective temperature at the surface of the star
-    (Te).
+   Logarithm of the effective temperature at the surface of the star
+   (Te).
 
 ``log.light``
-    Logarithm of its light intencity (*L/L_0*)
+   Logarithm of its light intencity (*L/L_0*)
 
 Source
 ~~~~~~
@@ -52,11 +52,11 @@ Examples
 
 ::
 
-    data(starsCYG)
-    plot(starsCYG)
-    cst <- covMcd(starsCYG)
-    lm.stars <- lm(log.light ~ log.Te, data = starsCYG)
-    summary(lm.stars)
-    plot(lm.stars)
-    lts.stars <- ltsReg(log.light ~ log.Te, data = starsCYG)
-    plot(lts.stars)
+   data(starsCYG)
+   plot(starsCYG)
+   cst <- covMcd(starsCYG)
+   lm.stars <- lm(log.light ~ log.Te, data = starsCYG)
+   summary(lm.stars)
+   plot(lm.stars)
+   lts.stars <- ltsReg(log.light ~ log.Te, data = starsCYG)
+   plot(lts.stars)

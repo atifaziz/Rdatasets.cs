@@ -16,20 +16,28 @@ Usage
 
 ::
 
-    data(Births78)
+   data(Births78)
 
 Format
 ~~~~~~
 
-A data frame with 365 observations on the following variables.
+A data.frame with 365 observations on the following 8 variables.
 
--  ``date`` date in 1978
+-  ``date`` Date
 
--  ``births`` number of US births
+-  ``births`` Number of births on ``date`` (integer)
 
--  ``dayofyear`` sequential number of days from 1 to 365
+-  ``wday`` Day of week (ordered factor)
 
--  ``wday`` day of week as an ordered factor
+-  ``year`` Year (integer)
+
+-  ``month`` Month (integer)
+
+-  ``day_of_year`` Day of year (integer)
+
+-  ``day_of_month`` Day of month (integer)
+
+-  ``day_of_week`` Day of week (integer)
 
 See Also
 ~~~~~~~~
@@ -41,8 +49,8 @@ Examples
 
 ::
 
-    data(Births78)
-    if (require(lattice)) {
-      xyplot(births ~ date, Births78)
-      xyplot(births ~ date, Births78, groups = wday)
-    }
+   data(Births78)
+   if (require(ggformula)) {
+     gf_point(births ~ date, data = Births78)
+     gf_point(births ~ date, data = Births78, color = ~ wday)
+   }

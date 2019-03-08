@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    motor
+   motor
 
 Format
 ~~~~~~
@@ -26,19 +26,19 @@ Format
 This data frame contains the following columns:
 
 ``times``
-    The time in milliseconds since impact.
+   The time in milliseconds since impact.
 
 ``accel``
-    The recorded head acceleration (in g).
+   The recorded head acceleration (in g).
 
 ``strata``
-    A numeric column indicating to which of the three strata (numbered
-    1, 2 and 3) the observations belong.
+   A numeric column indicating to which of the three strata (numbered 1,
+   2 and 3) the observations belong.
 
 ``v``
-    An estimate of the residual variance for the observation. ``v`` is
-    constant within the strata but a different estimate is used for each
-    of the three strata.
+   An estimate of the residual variance for the observation. ``v`` is
+   constant within the strata but a different estimate is used for each
+   of the three strata.
 
 Source
 ~~~~~~

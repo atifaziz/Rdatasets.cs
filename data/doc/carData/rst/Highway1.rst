@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    Highway1
+   Highway1
 
 Format
 ~~~~~~
@@ -29,43 +29,43 @@ Format
 This data frame contains the following columns:
 
 rate
-    1973 accident rate per million vehicle miles
+   1973 accident rate per million vehicle miles
 
 len
-    length of the ``Highway1`` segment in miles
+   length of the ``Highway1`` segment in miles
 
 adt
-    average daily traffic count in thousands
+   average daily traffic count in thousands
 
 trks
-    truck volume as a percent of the total volume
+   truck volume as a percent of the total volume
 
 sigs1
-    (number of signalized interchanges per mile times len + 1)/len, the
-    number of signals per mile of roadway, adjusted to have no zero
-    values.
+   (number of signalized interchanges per mile times len + 1)/len, the
+   number of signals per mile of roadway, adjusted to have no zero
+   values.
 
 slim
-    speed limit in 1973
+   speed limit in 1973
 
 shld
-    width in feet of outer shoulder on the roadway
+   width in feet of outer shoulder on the roadway
 
 lane
-    total number of lanes of traffic
+   total number of lanes of traffic
 
 acpt
-    number of access points per mile
+   number of access points per mile
 
 itg
-    number of freeway-type interchanges per mile
+   number of freeway-type interchanges per mile
 
 lwid
-    lane width, in feet
+   lane width, in feet
 
 htype
-    An indicator of the type of roadway or the source of funding for the
-    road, either MC, FAI, PA, or MA
+   An indicator of the type of roadway or the source of funding for the
+   road, either MC, FAI, PA, or MA
 
 Source
 ~~~~~~

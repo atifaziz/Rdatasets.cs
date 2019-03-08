@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(sp.raw)
+   data(sp.raw)
 
 Format
 ~~~~~~

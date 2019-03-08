@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(humanpower1)
+   data(humanpower1)
 
 Format
 ~~~~~~
@@ -23,14 +23,14 @@ Format
 A data frame with 28 observations on the following 3 variables.
 
 wattsPerKg
-    a numeric vector: watts per kilogram of body weight
+   a numeric vector: watts per kilogram of body weight
 
 o2
-    a numeric vector: ml/min/kg
+   a numeric vector: ml/min/kg
 
 id
-    a factor with levels 1 - 5 (``humanpower1``) or 1 - 4
-    (``humanpower2``), identifying the different athletes
+   a factor with levels 1 - 5 (``humanpower1``) or 1 - 4
+   (``humanpower2``), identifying the different athletes
 
 Details
 ~~~~~~~
@@ -65,7 +65,7 @@ Examples
 
 ::
 
-    str(humanpower1)
-    plot(humanpower1)
-    lm(o2 ~ id + wattsPerKg:id, data=humanpower1)
-    lm(o2 ~ id + wattsPerKg:id, data=humanpower2)
+   str(humanpower1)
+   plot(humanpower1)
+   lm(o2 ~ id + wattsPerKg:id, data=humanpower1)
+   lm(o2 ~ id + wattsPerKg:id, data=humanpower2)

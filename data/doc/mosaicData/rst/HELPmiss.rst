@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(HELPmiss)
+   data(HELPmiss)
 
 Format
 ~~~~~~
@@ -65,10 +65,10 @@ Data frame with 470 observations on the following variables.
    the past 30 days (measured at baseline)
 
 -  ``avg_drinks`` average number of drinks (standard units) consumed per
-   day, in the past 30 days (measured at baseline). Same as 'i1'.
+   day, in the past 30 days (measured at baseline). Same as ``i1``.
 
 -  ``max_drinks`` maximum number of drinks (standard units) consumed per
-   day, in the past 30 days (measured at baseline). Same as 'i2'.
+   day, in the past 30 days (measured at baseline). Same as ``i2``.
 
 -  ``id`` subject identifier
 
@@ -146,5 +146,5 @@ Examples
 
 ::
 
-    data(HELPmiss)
+   data(HELPmiss)
 

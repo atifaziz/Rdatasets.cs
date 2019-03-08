@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(arthritis)
+   data(arthritis)
 
 Format
 ~~~~~~
@@ -24,27 +24,27 @@ Format
 A data frame with 906 observations on the following 7 variables:
 
 ``id``
-    Patient identifier variable.
+   Patient identifier variable.
 
 ``y``
-    Self-assessment score of rheumatoid arthritis measured on a
-    five-level ordinal response scale.
+   Self-assessment score of rheumatoid arthritis measured on a
+   five-level ordinal response scale.
 
 ``sex``
-    Coded as (1) for female and (2) for male.
+   Coded as (1) for female and (2) for male.
 
 ``age``
-    Recorded at the baseline.
+   Recorded at the baseline.
 
 ``trt``
-    Treatment group variable, coded as (1) for the placebo group and (2)
-    for the drug group.
+   Treatment group variable, coded as (1) for the placebo group and (2)
+   for the drug group.
 
 ``baseline``
-    Self-assessment score of rheumatoid arthritis at the baseline.
+   Self-assessment score of rheumatoid arthritis at the baseline.
 
 ``time``
-    Follow-up time recorded in months.
+   Follow-up time recorded in months.
 
 Source
 ~~~~~~
@@ -58,5 +58,5 @@ Examples
 
 ::
 
-    data(arthritis)
-    str(arthritis)
+   data(arthritis)
+   str(arthritis)

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Housing)
+   data(Housing)
 
 Format
 ~~~~~~
@@ -29,40 +29,40 @@ Format
 A dataframe containing :
 
 price
-    sale price of a house
+   sale price of a house
 
 lotsize
-    the lot size of a property in square feet
+   the lot size of a property in square feet
 
 bedrooms
-    number of bedrooms
+   number of bedrooms
 
 bathrms
-    number of full bathrooms
+   number of full bathrooms
 
 stories
-    number of stories excluding basement
+   number of stories excluding basement
 
 driveway
-    does the house has a driveway ?
+   does the house has a driveway ?
 
 recroom
-    does the house has a recreational room ?
+   does the house has a recreational room ?
 
 fullbase
-    does the house has a full finished basement ?
+   does the house has a full finished basement ?
 
 gashw
-    does the house uses gas for hot water heating ?
+   does the house uses gas for hot water heating ?
 
 airco
-    does the house has central air conditioning ?
+   does the house has central air conditioning ?
 
 garagepl
-    number of garage places
+   number of garage places
 
 prefarea
-    is the house located in the preferred neighbourhood of the city ?
+   is the house located in the preferred neighbourhood of the city ?
 
 Source
 ~~~~~~

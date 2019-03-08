@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(CRANpackages)
+   data(CRANpackages)
 
 Format
 ~~~~~~
@@ -26,22 +26,22 @@ Format
 A ``data.frame`` containing:
 
 Version
-    an ordered factor of the R version number primarily in use at the
-    time. This was taken from archives of the major releases at
-    https://svn.r-project.org/R/branches/R-1-3-patches/tests/internet.Rout.save,
-    ...
-    https://svn.r-project.org/R/branches/R-3-1-branch/tests/internet.Rout.save
+   an ordered factor of the R version number primarily in use at the
+   time. This was taken from archives of the major releases at
+   https://svn.r-project.org/R/branches/R-1-3-patches/tests/internet.Rout.save,
+   ...
+   https://svn.r-project.org/R/branches/R-3-1-branch/tests/internet.Rout.save
 
 Date
-    an object of class ``Date`` giving the date on which the count of
-    the number of CRAN packages was determined.
+   an object of class ``Date`` giving the date on which the count of the
+   number of CRAN packages was determined.
 
 Packages
-    an integer number of packages on the CRAN mirror checked on the
-    indicated ``Date``.
+   an integer number of packages on the CRAN mirror checked on the
+   indicated ``Date``.
 
 Source
-    A factor giving the source (person) who collected the data.
+   A factor giving the source (person) who collected the data.
 
 Details
 ~~~~~~~
@@ -86,5 +86,5 @@ Examples
 
 ::
 
-    plot(Packages~Date, CRANpackages, log='y')
-    # almost exponential growth
+   plot(Packages~Date, CRANpackages, log='y')
+   # almost exponential growth

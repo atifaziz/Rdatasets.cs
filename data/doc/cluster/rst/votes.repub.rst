@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(votes.repub)
+   data(votes.repub)
 
 Source
 ~~~~~~

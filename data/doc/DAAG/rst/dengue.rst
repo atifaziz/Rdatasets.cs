@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(dengue)
+   data(dengue)
 
 Format
 ~~~~~~
@@ -24,43 +24,43 @@ Format
 A data frame with 2000 observations on the following 13 variables.
 
 humid
-    Average vapour density: 1961-1990
+   Average vapour density: 1961-1990
 
 humid90
-    90th percentile of ``humid``
+   90th percentile of ``humid``
 
 temp
-    Average temperature: 1961-1990
+   Average temperature: 1961-1990
 
 temp90
-    90th percentile of ``temp``
+   90th percentile of ``temp``
 
 h10pix
-    maximum of ``humid``, within a 10 pixel radius
+   maximum of ``humid``, within a 10 pixel radius
 
 h10pix90
-    maximum of ``humid90``, within a 10 pixel radius
+   maximum of ``humid90``, within a 10 pixel radius
 
 trees
-    Percent tree cover, from satellite data
+   Percent tree cover, from satellite data
 
 trees90
-    90th percentile of ``trees``
+   90th percentile of ``trees``
 
 NoYes
-    Was dengue observed? (1=yes)
+   Was dengue observed? (1=yes)
 
 Xmin
-    minimum longitude
+   minimum longitude
 
 Xmax
-    maximum longitude
+   maximum longitude
 
 Ymin
-    minimum latitude
+   minimum latitude
 
 Ymax
-    maximum latitude
+   maximum latitude
 
 Details
 ~~~~~~~
@@ -89,6 +89,6 @@ Examples
 
 ::
 
-    str(dengue)
-    glm(NoYes ~ humid, data=dengue, family=binomial)
-    glm(NoYes ~ humid90, data=dengue, family=binomial)
+   str(dengue)
+   glm(NoYes ~ humid, data=dengue, family=binomial)
+   glm(NoYes ~ humid90, data=dengue, family=binomial)

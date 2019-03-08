@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    milk
+   milk
 
 Format
 ~~~~~~
@@ -24,12 +24,11 @@ Format
 This data frame contains the following columns:
 
 four
-    a numeric vector consisting of the assessments for four units of
-    additive
+   a numeric vector consisting of the assessments for four units of
+   additive
 
 one
-    a numeric vector while the is the assessment for one unit of
-    additive
+   a numeric vector while the is the assessment for one unit of additive
 
 Source
 ~~~~~~
@@ -41,9 +40,9 @@ Examples
 
 ::
 
-    print("Rug Plot - Example 1.8.1")
-    xyrange <- range(milk)
-    plot(four ~ one, data = milk, xlim = xyrange, ylim = xyrange, pch = 16)
-    rug(milk$one)
-    rug(milk$four, side = 2)
-    abline(0, 1)
+   print("Rug Plot - Example 1.8.1")
+   xyrange <- range(milk)
+   plot(four ~ one, data = milk, xlim = xyrange, ylim = xyrange, pch = 16)
+   rug(milk$one)
+   rug(milk$four, side = 2)
+   abline(0, 1)

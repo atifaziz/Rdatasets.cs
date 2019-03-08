@@ -20,9 +20,9 @@ Usage
 
 ::
 
-    Pima.tr
-    Pima.tr2
-    Pima.te
+   Pima.tr
+   Pima.tr2
+   Pima.te
 
 Format
 ~~~~~~
@@ -30,28 +30,28 @@ Format
 These data frames contains the following columns:
 
 ``npreg``
-    number of pregnancies.
+   number of pregnancies.
 
 ``glu``
-    plasma glucose concentration in an oral glucose tolerance test.
+   plasma glucose concentration in an oral glucose tolerance test.
 
 ``bp``
-    diastolic blood pressure (mm Hg).
+   diastolic blood pressure (mm Hg).
 
 ``skin``
-    triceps skin fold thickness (mm).
+   triceps skin fold thickness (mm).
 
 ``bmi``
-    body mass index (weight in kg/(height in m)\ *\\^2*).
+   body mass index (weight in kg/(height in m)\ *\\^2*).
 
 ``ped``
-    diabetes pedigree function.
+   diabetes pedigree function.
 
 ``age``
-    age in years.
+   age in years.
 
 ``type``
-    ``Yes`` or ``No``, for diabetic according to WHO criteria.
+   ``Yes`` or ``No``, for diabetic according to WHO criteria.
 
 Details
 ~~~~~~~

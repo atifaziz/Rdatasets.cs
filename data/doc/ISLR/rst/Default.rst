@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Default
+   Default
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 A data frame with 10000 observations on the following 4 variables.
 
 ``default``
-    A factor with levels ``No`` and ``Yes`` indicating whether the
-    customer defaulted on their debt
+   A factor with levels ``No`` and ``Yes`` indicating whether the
+   customer defaulted on their debt
 
 ``student``
-    A factor with levels ``No`` and ``Yes`` indicating whether the
-    customer is a student
+   A factor with levels ``No`` and ``Yes`` indicating whether the
+   customer is a student
 
 ``balance``
-    The average balance that the customer has remaining on their credit
-    card after making their monthly payment
+   The average balance that the customer has remaining on their credit
+   card after making their monthly payment
 
 ``income``
-    Income of customer
+   Income of customer
 
 Source
 ~~~~~~
@@ -57,5 +57,5 @@ Examples
 
 ::
 
-    summary(Default)
-    glm(default~student+balance+income,family="binomial",data=Default)
+   summary(Default)
+   glm(default~student+balance+income,family="binomial",data=Default)

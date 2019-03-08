@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("waves")
+   data("waves")
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 A data frame with 18 observations on the following 2 variables.
 
 method1
-    Root mean square bending moment in Newton metres, mooring method 1
+   Root mean square bending moment in Newton metres, mooring method 1
 
 method2
-    Root mean square bending moment in Newton metres, mooring method 2
+   Root mean square bending moment in Newton metres, mooring method 2
 
 Details
 ~~~~~~~
@@ -53,6 +53,6 @@ Examples
 ::
 
 
-      data("waves", package = "HSAUR")
-      plot(method1 ~ method2, data = waves)
+     data("waves", package = "HSAUR")
+     plot(method1 ~ method2, data = waves)
 

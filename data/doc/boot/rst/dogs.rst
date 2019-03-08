@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    dogs
+   dogs
 
 Format
 ~~~~~~
@@ -26,10 +26,10 @@ Format
 This data frame contains the following columns:
 
 mvo
-    Cardiac Oxygen Consumption
+   Cardiac Oxygen Consumption
 
 lvp
-    Left Ventricular Pressure
+   Left Ventricular Pressure
 
 References
 ~~~~~~~~~~

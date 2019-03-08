@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    Mandel
+   Mandel
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 This data frame contains the following columns:
 
 x1
-    first predictor.
+   first predictor.
 
 x2
-    second predictor.
+   second predictor.
 
 y
-    response.
+   response.
 
 Source
 ~~~~~~

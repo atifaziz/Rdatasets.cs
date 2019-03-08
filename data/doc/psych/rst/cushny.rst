@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(cushny)
+   data(cushny)
 
 Format
 ~~~~~~
@@ -29,26 +29,26 @@ Format
 A data frame with 10 observations on the following 7 variables.
 
 ``Control``
-    Hours of sleep in a control condition
+   Hours of sleep in a control condition
 
 ``drug1``
-    Hours of sleep in Drug condition 1
+   Hours of sleep in Drug condition 1
 
 ``drug2L``
-    Hours of sleep in Drug condition 2
+   Hours of sleep in Drug condition 2
 
 ``drug2R``
-    Hours of sleep in Drug condition 3 (an isomer of the drug in
-    condition 2
+   Hours of sleep in Drug condition 3 (an isomer of the drug in
+   condition 2
 
 ``delta1``
-    Change from control, drug 1
+   Change from control, drug 1
 
 ``delta2L``
-    Change from control, drug 2L
+   Change from control, drug 2L
 
 ``delta2R``
-    Change from control, drug 2R
+   Change from control, drug 2R
 
 Details
 ~~~~~~~
@@ -79,8 +79,8 @@ Examples
 
 ::
 
-    data(cushny)
-    with(cushny, t.test(drug1,drug2L,paired=TRUE)) #within subjects 
+   data(cushny)
+   with(cushny, t.test(drug1,drug2L,paired=TRUE)) #within subjects 
 
-    error.bars(cushny[1:4],within=TRUE,ylab="Hours of sleep",xlab="Drug condition", 
-           main="95% confidence of within subject effects")
+   error.bars(cushny[1:4],within=TRUE,ylab="Hours of sleep",xlab="Drug condition", 
+          main="95% confidence of within subject effects")

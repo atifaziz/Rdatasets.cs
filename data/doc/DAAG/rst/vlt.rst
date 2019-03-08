@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    vlt
+   vlt
 
 Format
 ~~~~~~
@@ -27,20 +27,20 @@ Format
 This data frame contains the following columns:
 
 window1
-    object appearing in the first window.
+   object appearing in the first window.
 
 window2
-    object appearing in the second window.
+   object appearing in the second window.
 
 window3
-    object appearing in the third window.
+   object appearing in the third window.
 
 prize
-    cash prize awarded (in Canadian dollars).
+   cash prize awarded (in Canadian dollars).
 
 night
-    1, if observation was taken on day 1; 2, if observation was taken on
-    day 2.
+   1, if observation was taken on day 1; 2, if observation was taken on
+   day 2.
 
 Details
 ~~~~~~~
@@ -70,5 +70,5 @@ Examples
 
 ::
 
-         vlt.stk <- stack(vlt[,1:3])
-         table(vlt.stk)
+        vlt.stk <- stack(vlt[,1:3])
+        table(vlt.stk)

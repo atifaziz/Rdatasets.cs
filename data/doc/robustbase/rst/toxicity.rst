@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(toxicity)
+   data(toxicity, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,36 +25,36 @@ A data frame with 38 observations on the following 10 variables which
 are attributes for carboxylic acids:
 
 ``toxicity``
-    aquatic toxicity, defined as *log(IGC50^(-1))*; typically the
-    “response”.
+   aquatic toxicity, defined as *log(IGC50^(-1))*; typically the
+   “response”.
 
 ``logKow``
-    *log Kow*, the partition coefficient
+   *log Kow*, the partition coefficient
 
 ``pKa``
-    pKa: the dissociation constant
+   pKa: the dissociation constant
 
 ``ELUMO``
-    **E**\ nergy of the **l**\ owest **u**\ noccupied **m**\ olecular
-    **o**\ rbital
+   **E**\ nergy of the **l**\ owest **u**\ noccupied **m**\ olecular
+   **o**\ rbital
 
 ``Ecarb``
-    Electrotopological state of the **carb**\ oxylic group
+   Electrotopological state of the **carb**\ oxylic group
 
 ``Emet``
-    Electrotopological state of the **met**\ hyl group
+   Electrotopological state of the **met**\ hyl group
 
 ``RM``
-    Molar refractivity
+   Molar refractivity
 
 ``IR``
-    Refraction index
+   Refraction index
 
 ``Ts``
-    Surface tension
+   Surface tension
 
 ``P``
-    Polarizability
+   Polarizability
 
 Source
 ~~~~~~
@@ -74,14 +74,14 @@ Examples
 
 ::
 
-    data(toxicity)
-    summary(toxicity)
-    plot(toxicity)
-    plot(toxicity ~ pKa, data = toxicity)
+   data(toxicity)
+   summary(toxicity)
+   plot(toxicity)
+   plot(toxicity ~ pKa, data = toxicity)
 
-    ## robustly scale the data (to scale 1) using Qn
-    (scQ.tox <- sapply(toxicity, Qn))
-    scTox <- scale(toxicity, center = FALSE, scale = scQ.tox)
-    csT <- covOGK(scTox, n.iter = 2,
-                  sigmamu = s_Qn, weight.fn = hard.rejection)
-    as.dist(round(cov2cor(csT$cov), 2))
+   ## robustly scale the data (to scale 1) using Qn
+   (scQ.tox <- sapply(toxicity, Qn))
+   scTox <- scale(toxicity, center = FALSE, scale = scQ.tox)
+   csT <- covOGK(scTox, n.iter = 2,
+                 sigmamu = s_Qn, weight.fn = hard.rejection)
+   as.dist(round(cov2cor(csT$cov), 2))

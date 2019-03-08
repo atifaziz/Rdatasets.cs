@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(CPSch3)
+   data(CPSch3)
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 A dataframe containing :
 
 year
-    survey year
+   survey year
 
 ahe
-    average hourly earnings
+   average hourly earnings
 
 sex
-    a factor with levels (male,female)
+   a factor with levels (male,female)
 
 Source
 ~~~~~~

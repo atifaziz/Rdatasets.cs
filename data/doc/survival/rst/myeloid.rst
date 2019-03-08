@@ -16,25 +16,25 @@ Format
 A data frame with 646 observations on the following 9 variables.
 
 ``id``
-    subject identifier, 1-646
+   subject identifier, 1-646
 
 ``trt``
-    treatment arm A or B
+   treatment arm A or B
 
 ``futime``
-    time to death or last follow-up
+   time to death or last follow-up
 
 ``death``
-    1 if ``futime`` is a death, 0 for censoring
+   1 if ``futime`` is a death, 0 for censoring
 
 ``txtime``
-    time to hematropetic stem cell transplant
+   time to hematropetic stem cell transplant
 
 ``crtime``
-    time to complete response
+   time to complete response
 
 ``rltime``
-    time to relapse of disease
+   time to relapse of disease
 
 Details
 ~~~~~~~
@@ -49,5 +49,5 @@ Examples
 
 ::
 
-    coxph(Surv(futime, death) ~ trt, data=myeloid)
-    # See the mstate vignette for a more complete analysis
+   coxph(Surv(futime, death) ~ trt, data=myeloid)
+   # See the mstate vignette for a more complete analysis

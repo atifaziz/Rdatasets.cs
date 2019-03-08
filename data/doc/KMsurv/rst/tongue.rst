@@ -16,13 +16,13 @@ Format
 This data frame contains the following columns:
 
 type
-    Tumor DNA profile (1=Aneuploid Tumor, 2=Diploid Tumor)
+   Tumor DNA profile (1=Aneuploid Tumor, 2=Diploid Tumor)
 
 time
-    Time to death or on-study time, weeks
+   Time to death or on-study time, weeks
 
 delta
-    Death indicator (0=alive, 1=dead)
+   Death indicator (0=alive, 1=dead)
 
 Source
 ~~~~~~
@@ -36,4 +36,4 @@ Examples
 
 ::
 
-    data(tongue)
+   data(tongue)

@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    fir
+   fir
 
 Format
 ~~~~~~
@@ -27,13 +27,13 @@ Format
 This data frame contains the following columns:
 
 ``count``
-    The number of seedlings in the quadrant.
+   The number of seedlings in the quadrant.
 
 ``row``
-    The row number of the quadrant.
+   The row number of the quadrant.
 
 ``col``
-    The quadrant number within the row.
+   The quadrant number within the row.
 
 Source
 ~~~~~~

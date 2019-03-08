@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    npr1
+   npr1
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 This data frame contains the following columns:
 
 ``x``
-    x coordinates, in miles (origin unspecified)..
+   x coordinates, in miles (origin unspecified)..
 
 ``y``
-    y coordinates, in miles.
+   y coordinates, in miles.
 
 ``perm``
-    permeability in milli-Darcies.
+   permeability in milli-Darcies.
 
 ``por``
-    porosity (%).
+   porosity (%).
 
 Source
 ~~~~~~

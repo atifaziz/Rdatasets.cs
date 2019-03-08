@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(Gleser)
+   data(Gleser)
 
 Format
 ~~~~~~
@@ -29,40 +29,40 @@ A data frame with 12 observations on the following 12 variables. J item
 by judge:
 
 ``J11``
-    a numeric vector
+   a numeric vector
 
 ``J12``
-    a numeric vector
+   a numeric vector
 
 ``J21``
-    a numeric vector
+   a numeric vector
 
 ``J22``
-    a numeric vector
+   a numeric vector
 
 ``J31``
-    a numeric vector
+   a numeric vector
 
 ``J32``
-    a numeric vector
+   a numeric vector
 
 ``J41``
-    a numeric vector
+   a numeric vector
 
 ``J42``
-    a numeric vector
+   a numeric vector
 
 ``J51``
-    a numeric vector
+   a numeric vector
 
 ``J52``
-    a numeric vector
+   a numeric vector
 
 ``J61``
-    a numeric vector
+   a numeric vector
 
 ``J62``
-    a numeric vector
+   a numeric vector
 
 Details
 ~~~~~~~
@@ -93,12 +93,12 @@ Examples
 
 ::
 
-    #Find the MS for each component:
-    #First, stack the data
-    data(Gleser)
-    stack.g <- stack(Gleser)
-    st.gc.df <- data.frame(stack.g,Persons=rep(letters[1:12],12),
-    Items=rep(letters[1:6],each=24),Judges=rep(letters[1:2],each=12))
-    #now do the ANOVA
-    anov <- aov(values ~ (Persons*Judges*Items),data=st.gc.df)
-    summary(anov)
+   #Find the MS for each component:
+   #First, stack the data
+   data(Gleser)
+   stack.g <- stack(Gleser)
+   st.gc.df <- data.frame(stack.g,Persons=rep(letters[1:12],12),
+   Items=rep(letters[1:6],each=24),Judges=rep(letters[1:2],each=12))
+   #now do the ANOVA
+   anov <- aov(values ~ (Persons*Judges*Items),data=st.gc.df)
+   summary(anov)

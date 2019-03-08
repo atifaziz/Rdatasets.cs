@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(UTIdata)
+   data(UTIdata)
 
 Format
 ~~~~~~
@@ -27,19 +27,19 @@ Format
 A data frame with 373 observations on the following 5 variables.
 
 ``Patid``
-    patient ID
+   patient ID
 
 ``Days.after.TI``
-    days after treatment interruption
+   days after treatment interruption
 
 ``Fup``
-    follow-up months
+   follow-up months
 
 ``RNA``
-    viral load RNA
+   viral load RNA
 
 ``RNAcens``
-    censoring indicator for viral load
+   censoring indicator for viral load
 
 References
 ~~~~~~~~~~
@@ -53,5 +53,5 @@ Examples
 
 ::
 
-    data(UTIdata)
-    ## maybe str(UTIdata) ; plot(UTIdata) ...
+   data(UTIdata)
+   ## maybe str(UTIdata) ; plot(UTIdata) ...

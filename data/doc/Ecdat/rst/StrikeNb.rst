@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(StrikeNb)
+   data(StrikeNb)
 
 Format
 ~~~~~~
@@ -29,15 +29,15 @@ Format
 A time serie containing :
 
 strikes
-    number of strikes (number of contract strikes in U.S. manufacturing
-    beginning each month)
+   number of strikes (number of contract strikes in U.S. manufacturing
+   beginning each month)
 
 output
-    level of economic activity (measured as cyclical departure of
-    aggregate production from its trend level)
+   level of economic activity (measured as cyclical departure of
+   aggregate production from its trend level)
 
 time
-    a time trend from 1 to 108
+   a time trend from 1 to 108
 
 Source
 ~~~~~~

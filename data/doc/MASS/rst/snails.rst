@@ -25,7 +25,7 @@ Usage
 
 ::
 
-    snails
+   snails
 
 Format
 ~~~~~~
@@ -33,22 +33,22 @@ Format
 The data frame contains the following components:
 
 ``Species``
-    snail species A (``1``) or B (``2``).
+   snail species A (``1``) or B (``2``).
 
 ``Exposure``
-    exposure in weeks.
+   exposure in weeks.
 
 ``Rel.Hum``
-    relative humidity (4 levels).
+   relative humidity (4 levels).
 
 ``Temp``
-    temperature, in degrees Celsius (3 levels).
+   temperature, in degrees Celsius (3 levels).
 
 ``Deaths``
-    number of deaths.
+   number of deaths.
 
 ``N``
-    number of snails exposed.
+   number of snails exposed.
 
 Source
 ~~~~~~

@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(burt)
+   data(burt)
 
 Format
 ~~~~~~
@@ -28,37 +28,37 @@ A correlation matrix based upon 172 "normal school age children aged
 9-12".
 
 Sociality
-    Sociality
+   Sociality
 
 Sorrow
-    Sorrow
+   Sorrow
 
 Tenderness
-    Tenderness
+   Tenderness
 
 Joy
-    Joy
+   Joy
 
 Wonder
-    Wonder
+   Wonder
 
 Elation
-    Elation
+   Elation
 
 Disgust
-    Disgust
+   Disgust
 
 Anger
-    Anger
+   Anger
 
 Sex
-    Sex
+   Sex
 
 Fear
-    Fear
+   Fear
 
 Subjection
-    Subjection
+   Subjection
 
 Details
 ~~~~~~~
@@ -100,11 +100,11 @@ Examples
 
 ::
 
-    data(burt)
-    eigen(burt)$values  #one is negative!
-    burt.new <- burt
-    burt.new[2,3] <- burt.new[3,2] <- .81
-    eigen(burt.new)$values  #all are positive
-    bs <- cor.smooth(burt)
-    round(burt.new - bs,3)
+   data(burt)
+   eigen(burt)$values  #one is negative!
+   burt.new <- burt
+   burt.new[2,3] <- burt.new[3,2] <- .81
+   eigen(burt.new)$values  #all are positive
+   bs <- cor.smooth(burt)
+   round(burt.new - bs,3)
 

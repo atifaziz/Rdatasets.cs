@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    midwest
+   midwest
 
 Format
 ~~~~~~
@@ -27,50 +27,50 @@ county
 state
 area
 poptotal
-    Total population
+   Total population
 
 popdensity
-    Population density
+   Population density
 
 popwhite
-    Number of whites.
+   Number of whites.
 
 popblack
-    Number of blacks.
+   Number of blacks.
 
 popamerindian
-    Number of American Indians.
+   Number of American Indians.
 
 popasian
-    Number of Asians.
+   Number of Asians.
 
 popother
-    Number of other races.
+   Number of other races.
 
 percwhite
-    Percent white.
+   Percent white.
 
 percblack
-    Percent black.
+   Percent black.
 
 percamerindan
-    Percent American Indian.
+   Percent American Indian.
 
 percasian
-    Percent Asian.
+   Percent Asian.
 
 percother
-    Percent other races.
+   Percent other races.
 
 popadults
-    Number of adults.
+   Number of adults.
 
 perchsd
 percollege
-    Percent college educated.
+   Percent college educated.
 
 percprof
-    Percent profession.
+   Percent profession.
 
 poppovertyknown
 percpovertyknown
@@ -79,7 +79,7 @@ percchildbelowpovert
 percadultpoverty
 percelderlypoverty
 inmetro
-    In a metro area.
+   In a metro area.
 
 category
 

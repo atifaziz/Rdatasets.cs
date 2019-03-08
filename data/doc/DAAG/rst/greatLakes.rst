@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(greatLakes)
+   data(greatLakes)
 
 Format
 ~~~~~~
@@ -41,6 +41,6 @@ Examples
 
 ::
 
-    data(greatLakes)
-    plot(greatLakes)
-    ## maybe str(greatLakes)
+   data(greatLakes)
+   plot(greatLakes)
+   ## maybe str(greatLakes)

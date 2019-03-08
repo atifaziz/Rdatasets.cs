@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    oats
+   oats
 
 Format
 ~~~~~~
@@ -26,17 +26,17 @@ Format
 This data frame contains the following columns:
 
 ``B``
-    Blocks, levels I, II, III, IV, V and VI.
+   Blocks, levels I, II, III, IV, V and VI.
 
 ``V``
-    Varieties, 3 levels.
+   Varieties, 3 levels.
 
 ``N``
-    Nitrogen (manurial) treatment, levels 0.0cwt, 0.2cwt, 0.4cwt and
-    0.6cwt, showing the application in cwt/acre.
+   Nitrogen (manurial) treatment, levels 0.0cwt, 0.2cwt, 0.4cwt and
+   0.6cwt, showing the application in cwt/acre.
 
 ``Y``
-    Yields in 1/4lbs per sub-plot, each of area 1/80 acre.
+   Yields in 1/4lbs per sub-plot, each of area 1/80 acre.
 
 Source
 ~~~~~~
@@ -58,17 +58,17 @@ Examples
 
 ::
 
-    oats$Nf <- ordered(oats$N, levels = sort(levels(oats$N)))
-    oats.aov <- aov(Y ~ Nf*V + Error(B/V), data = oats, qr = TRUE)
-    summary(oats.aov)
-    summary(oats.aov, split = list(Nf=list(L=1, Dev=2:3)))
-    par(mfrow = c(1,2), pty = "s")
-    plot(fitted(oats.aov[[4]]), studres(oats.aov[[4]]))
-    abline(h = 0, lty = 2)
-    oats.pr <- proj(oats.aov)
-    qqnorm(oats.pr[[4]][,"Residuals"], ylab = "Stratum 4 residuals")
-    qqline(oats.pr[[4]][,"Residuals"])
+   oats$Nf <- ordered(oats$N, levels = sort(levels(oats$N)))
+   oats.aov <- aov(Y ~ Nf*V + Error(B/V), data = oats, qr = TRUE)
+   summary(oats.aov)
+   summary(oats.aov, split = list(Nf=list(L=1, Dev=2:3)))
+   par(mfrow = c(1,2), pty = "s")
+   plot(fitted(oats.aov[[4]]), studres(oats.aov[[4]]))
+   abline(h = 0, lty = 2)
+   oats.pr <- proj(oats.aov)
+   qqnorm(oats.pr[[4]][,"Residuals"], ylab = "Stratum 4 residuals")
+   qqline(oats.pr[[4]][,"Residuals"])
 
-    par(mfrow = c(1,1), pty = "m")
-    oats.aov2 <- aov(Y ~ N + V + Error(B/V), data = oats, qr = TRUE)
-    model.tables(oats.aov2, type = "means", se = TRUE)
+   par(mfrow = c(1,1), pty = "m")
+   oats.aov2 <- aov(Y ~ N + V + Error(B/V), data = oats, qr = TRUE)
+   model.tables(oats.aov2, type = "means", se = TRUE)

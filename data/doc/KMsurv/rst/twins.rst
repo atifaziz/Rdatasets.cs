@@ -16,17 +16,17 @@ Format
 This data frame contains the following columns:
 
 id
-    Twin number
+   Twin number
 
 age
-    Age of twin's death from CHD, months
+   Age of twin's death from CHD, months
 
 death
-    Death (male twin) from CHD indicator (1=dead from CHD, 0=alive or
-    other cause of death)
+   Death (male twin) from CHD indicator (1=dead from CHD, 0=alive or
+   other cause of death)
 
 gender
-    1=male, 2=female
+   1=male, 2=female
 
 Source
 ~~~~~~
@@ -39,4 +39,4 @@ Examples
 
 ::
 
-    data(twins)
+   data(twins)

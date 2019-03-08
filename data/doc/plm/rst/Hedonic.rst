@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Hedonic)
+   data(Hedonic)
 
 Format
 ~~~~~~
@@ -29,50 +29,50 @@ Format
 A dataframe containing:
 
 mv
-    median value of owner–occupied homes
+   median value of owner–occupied homes
 
 crim
-    crime rate
+   crime rate
 
 zn
-    proportion of 25,000 square feet residential lots
+   proportion of 25,000 square feet residential lots
 
 indus
-    proportion of no–retail business acres
+   proportion of no–retail business acres
 
 chas
-    is the tract bounds the Charles River?
+   is the tract bounds the Charles River?
 
 nox
-    annual average nitrogen oxide concentration in parts per hundred
-    million
+   annual average nitrogen oxide concentration in parts per hundred
+   million
 
 rm
-    average number of rooms
+   average number of rooms
 
 age
-    proportion of owner units built prior to 1940
+   proportion of owner units built prior to 1940
 
 dis
-    weighted distances to five employment centers in the Boston area
+   weighted distances to five employment centers in the Boston area
 
 rad
-    index of accessibility to radial highways
+   index of accessibility to radial highways
 
 tax
-    full value property tax rate ($/$10,000)
+   full value property tax rate ($/$10,000)
 
 ptratio
-    pupil/teacher ratio
+   pupil/teacher ratio
 
 blacks
-    proportion of blacks in the population
+   proportion of blacks in the population
 
 lstat
-    proportion of population that is lower status
+   proportion of population that is lower status
 
 townid
-    town identifier
+   town identifier
 
 Source
 ~~~~~~

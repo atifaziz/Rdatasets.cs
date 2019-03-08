@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    races2000
+   races2000
 
 Format
 ~~~~~~
@@ -26,20 +26,20 @@ Format
 This data frame contains the following columns:
 
 dist
-    distance, in miles (on the map)
+   distance, in miles (on the map)
 
 climb
-    total height gained during the route, in feet
+   total height gained during the route, in feet
 
 time
-    record time in hours
+   record time in hours
 
 timef
-    record time in hours for females
+   record time in hours for females
 
 type
-    a factor, with levels indicating type of race, i.e. hill, marathon,
-    relay, uphill or other
+   a factor, with levels indicating type of race, i.e. hill, marathon,
+   relay, uphill or other
 
 Source
 ~~~~~~
@@ -51,4 +51,4 @@ Examples
 
 ::
 
-        pairs(races2000[,-5])
+       pairs(races2000[,-5])

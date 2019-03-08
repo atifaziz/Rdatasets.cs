@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("Hospital")
+   data("Hospital")
 
 Format
 ~~~~~~
@@ -59,9 +59,9 @@ Examples
 
 ::
 
-    data("Hospital")
+   data("Hospital")
 
-    mosaic(t(Hospital), shade = TRUE)
-    mosaic(Hospital, shade = TRUE)
-    sieve(Hospital, shade = TRUE)
-    assoc(Hospital, shade = TRUE)
+   mosaic(t(Hospital), shade = TRUE)
+   mosaic(Hospital, shade = TRUE)
+   sieve(Hospital, shade = TRUE)
+   assoc(Hospital, shade = TRUE)

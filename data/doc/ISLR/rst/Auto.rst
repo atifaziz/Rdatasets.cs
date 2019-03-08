@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    Auto
+   Auto
 
 Format
 ~~~~~~
@@ -23,31 +23,31 @@ Format
 A data frame with 392 observations on the following 9 variables.
 
 ``mpg``
-    miles per gallon
+   miles per gallon
 
 ``cylinders``
-    Number of cylinders between 4 and 8
+   Number of cylinders between 4 and 8
 
 ``displacement``
-    Engine displacement (cu. inches)
+   Engine displacement (cu. inches)
 
 ``horsepower``
-    Engine horsepower
+   Engine horsepower
 
 ``weight``
-    Vehicle weight (lbs.)
+   Vehicle weight (lbs.)
 
 ``acceleration``
-    Time to accelerate from 0 to 60 mph (sec.)
+   Time to accelerate from 0 to 60 mph (sec.)
 
 ``year``
-    Model year (modulo 100)
+   Model year (modulo 100)
 
 ``origin``
-    Origin of car (1. American, 2. European, 3. Japanese)
+   Origin of car (1. American, 2. European, 3. Japanese)
 
 ``name``
-    Vehicle name
+   Vehicle name
 
 The orginal data contained 408 observations but 16 observations with
 missing values were removed.
@@ -72,6 +72,6 @@ Examples
 
 ::
 
-    pairs(Auto)
-    attach(Auto)
-    hist(mpg)
+   pairs(Auto)
+   attach(Auto)
+   hist(mpg)

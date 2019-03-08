@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(oddbooks)
+   data(oddbooks)
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 A data frame with 12 observations on the following 4 variables.
 
 thick
-    a numeric vector
+   a numeric vector
 
 height
-    a numeric vector
+   a numeric vector
 
 breadth
-    a numeric vector
+   a numeric vector
 
 weight
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~
@@ -46,6 +46,6 @@ Examples
 
 ::
 
-    data(oddbooks)
-    str(oddbooks)
-    plot(oddbooks) 
+   data(oddbooks)
+   str(oddbooks)
+   plot(oddbooks) 

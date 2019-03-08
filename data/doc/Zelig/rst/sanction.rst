@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(sanction)
+   data(sanction)
 
 Format
 ~~~~~~

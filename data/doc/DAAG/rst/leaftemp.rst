@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    leaftemp
+   leaftemp
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 This data frame contains the following columns:
 
 CO2level
-    Carbon Dioxide level ``low``, ``medium``, ``high``
+   Carbon Dioxide level ``low``, ``medium``, ``high``
 
 vapPress
-    Vapour pressure
+   Vapour pressure
 
 tempDiff
-    Difference between leaf and air temperature
+   Difference between leaf and air temperature
 
 BtempDiff
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~
@@ -45,16 +45,16 @@ Examples
 
 ::
 
-    print("Fitting Multiple Lines - Example 7.3")
+   print("Fitting Multiple Lines - Example 7.3")
 
-    leaf.lm1 <- lm(tempDiff ~ 1 , data = leaftemp)
-    leaf.lm2 <- lm(tempDiff ~ vapPress, data = leaftemp)
-    leaf.lm3 <- lm(tempDiff ~ CO2level + vapPress, data = leaftemp)
-    leaf.lm4 <- lm(tempDiff ~ CO2level + vapPress + vapPress:CO2level,
-      data = leaftemp)
+   leaf.lm1 <- lm(tempDiff ~ 1 , data = leaftemp)
+   leaf.lm2 <- lm(tempDiff ~ vapPress, data = leaftemp)
+   leaf.lm3 <- lm(tempDiff ~ CO2level + vapPress, data = leaftemp)
+   leaf.lm4 <- lm(tempDiff ~ CO2level + vapPress + vapPress:CO2level,
+     data = leaftemp)
 
-    anova(leaf.lm1, leaf.lm2, leaf.lm3, leaf.lm4)
+   anova(leaf.lm1, leaf.lm2, leaf.lm3, leaf.lm4)
 
-    summary(leaf.lm2)
-    plot(leaf.lm2)
+   summary(leaf.lm2)
+   plot(leaf.lm2)
 

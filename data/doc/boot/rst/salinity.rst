@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    salinity
+   salinity
 
 Format
 ~~~~~~
@@ -28,21 +28,21 @@ Format
 This data frame contains the following columns:
 
 ``sal``
-    The average salinity of the water over two weeks.
+   The average salinity of the water over two weeks.
 
 ``lag``
-    The average salinity of the water lagged two weeks. Since only
-    spring is used, the value of ``lag`` is not always equal to the
-    previous value of ``sal``.
+   The average salinity of the water lagged two weeks. Since only spring
+   is used, the value of ``lag`` is not always equal to the previous
+   value of ``sal``.
 
 ``trend``
-    A factor indicating in which of the 6 biweekly periods between March
-    and May, the observations were taken. The levels of the factor are
-    from 0 to 5 with 0 being the first two weeks in March.
+   A factor indicating in which of the 6 biweekly periods between March
+   and May, the observations were taken. The levels of the factor are
+   from 0 to 5 with 0 being the first two weeks in March.
 
 ``dis``
-    The amount of river discharge during the two weeks for which ``sal``
-    is the average salinity.
+   The amount of river discharge during the two weeks for which ``sal``
+   is the average salinity.
 
 Source
 ~~~~~~

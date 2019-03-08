@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("aspirin")
+   data("aspirin")
 
 Format
 ~~~~~~
@@ -23,16 +23,16 @@ Format
 A data frame with 7 observations on the following 4 variables.
 
 ``dp``
-    number of deaths after placebo.
+   number of deaths after placebo.
 
 ``tp``
-    total number subjects treated with placebo.
+   total number subjects treated with placebo.
 
 ``da``
-    number of deaths after Aspirin.
+   number of deaths after Aspirin.
 
 ``ta``
-    total number of subjects treated with Aspirin.
+   total number of subjects treated with Aspirin.
 
 Details
 ~~~~~~~
@@ -53,6 +53,6 @@ Examples
 ::
 
 
-      data("aspirin", package = "HSAUR")
-      aspirin
+     data("aspirin", package = "HSAUR")
+     aspirin
 

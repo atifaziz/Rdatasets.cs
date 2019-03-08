@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    DDT
+   DDT
 
 Source
 ~~~~~~

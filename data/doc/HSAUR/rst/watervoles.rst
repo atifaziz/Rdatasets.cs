@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("watervoles")
+   data("watervoles")
 
 Format
 ~~~~~~
@@ -51,6 +51,6 @@ Examples
 ::
 
 
-      data("watervoles", package = "HSAUR")
-      watervoles
+     data("watervoles", package = "HSAUR")
+     watervoles
 

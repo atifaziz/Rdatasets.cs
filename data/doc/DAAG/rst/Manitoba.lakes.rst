@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    Manitoba.lakes
+   Manitoba.lakes
 
 Format
 ~~~~~~
@@ -30,12 +30,12 @@ Format
 This data frame contains the following columns:
 
 elevation
-    a numeric vector consisting of the elevations of the lakes (in
-    meters)
+   a numeric vector consisting of the elevations of the lakes (in
+   meters)
 
 area
-    a numeric vector consisting of the areas of the lakes (in square
-    kilometers)
+   a numeric vector consisting of the areas of the lakes (in square
+   kilometers)
 
 Source
 ~~~~~~
@@ -47,5 +47,5 @@ Examples
 
 ::
 
-    plot(Manitoba.lakes)
-    plot(Manitoba.lakes[-1,])
+   plot(Manitoba.lakes)
+   plot(Manitoba.lakes[-1,])

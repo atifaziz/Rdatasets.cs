@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    USJudgeRatings
+   USJudgeRatings
 
 Format
 ~~~~~~
@@ -58,5 +58,5 @@ Examples
 
 ::
 
-    require(graphics)
-    pairs(USJudgeRatings, main = "USJudgeRatings data")
+   require(graphics)
+   pairs(USJudgeRatings, main = "USJudgeRatings data")

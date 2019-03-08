@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    bigcity
+   bigcity
 
 Format
 ~~~~~~
@@ -30,10 +30,10 @@ Format
 This data frame contains the following columns:
 
 ``u``
-    The 1920 population.
+   The 1920 population.
 
 ``x``
-    The 1930 population.
+   The 1930 population.
 
 Source
 ~~~~~~

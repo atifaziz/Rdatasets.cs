@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(approval)
+   data(approval)
 
 Format
 ~~~~~~

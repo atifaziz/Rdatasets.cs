@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    data(nuts)
+   data(nuts)
 
 Format
 ~~~~~~
@@ -31,28 +31,28 @@ Format
 A data frame with 52 observations on the following 8 variables.
 
 ``cones``
-    number cones stripped by squirrels
+   number cones stripped by squirrels
 
 ``ntrees``
-    number of trees per plot
+   number of trees per plot
 
 ``dbh``
-    number DBH per plot
+   number DBH per plot
 
 ``height``
-    mean tree height per plot
+   mean tree height per plot
 
 ``cover``
-    canopy closure (as a percentage)
+   canopy closure (as a percentage)
 
 ``sntrees``
-    standardized number of trees per plot
+   standardized number of trees per plot
 
 ``sheight``
-    standardized mean tree height per plot
+   standardized mean tree height per plot
 
 ``scover``
-    standardized canopy closure (as a percentage)
+   standardized canopy closure (as a percentage)
 
 Details
 ~~~~~~~
@@ -79,9 +79,9 @@ Examples
 
 ::
 
-    data(nuts)
-    nut <- subset(nuts, dbh < 0.6)
-    # sntrees <- scale(nuts$ntrees)
-    # sheigtht <- scale(nuts$height)
-    # scover <- scale(nuts$cover)
-    summary(PO <- glm(cones ~ sntrees + sheight + scover, family=quasipoisson, data=nut))
+   data(nuts)
+   nut <- subset(nuts, dbh < 0.6)
+   # sntrees <- scale(nuts$ntrees)
+   # sheigtht <- scale(nuts$height)
+   # scover <- scale(nuts$cover)
+   summary(PO <- glm(cones ~ sntrees + sheight + scover, family=quasipoisson, data=nut))

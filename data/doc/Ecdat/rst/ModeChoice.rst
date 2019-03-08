@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(ModeChoice)
+   data(ModeChoice)
 
 Format
 ~~~~~~
@@ -29,25 +29,25 @@ Format
 A dataframe containing :
 
 mode
-    choice : air, train, bus or car
+   choice : air, train, bus or car
 
 ttme
-    terminal waiting cost time, 0 for car
+   terminal waiting cost time, 0 for car
 
 invc
-    in vehicle cost-cost component
+   in vehicle cost-cost component
 
 invt
-    travel time in vehicle
+   travel time in vehicle
 
 gc
-    generalized cost measure
+   generalized cost measure
 
 hinc
-    household income
+   household income
 
 psize
-    party size in mode chosen
+   party size in mode chosen
 
 Source
 ~~~~~~

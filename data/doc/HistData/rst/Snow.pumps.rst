@@ -32,11 +32,11 @@ Usage
 
 ::
 
-        data(Snow.deaths)
-        data(Snow.pumps)
-        data(Snow.streets)
-        data(Snow.polygons)
-        data(Snow.dates)
+       data(Snow.deaths)
+       data(Snow.pumps)
+       data(Snow.streets)
+       data(Snow.polygons)
+       data(Snow.dates)
 
 Format
 ~~~~~~
@@ -49,29 +49,29 @@ visualized. This is how they are displayed on John Snow's original map.
 The dates of the deaths are not individually recorded in this data set.
 
 ``case``
-    Sequential case number, in some arbitrary, randomized order
+   Sequential case number, in some arbitrary, randomized order
 
 ``x``
-    x coordinate
+   x coordinate
 
 ``y``
-    y coordinate
+   y coordinate
 
 ``Snow.pumps``: A data frame with 13 observations on the following 4
 variables, giving the locations of water pumps within the boundaries of
 the map.
 
 ``pump``
-    pump number
+   pump number
 
 ``label``
-    pump label: ``Briddle St`` ``Broad St`` ... ``Warwick``
+   pump label: ``Briddle St`` ``Broad St`` ... ``Warwick``
 
 ``x``
-    x coordinate
+   x coordinate
 
 ``y``
-    y coordinate
+   y coordinate
 
 ``Snow.streets``: A data frame with 1241 observations on the following 4
 variables, giving coordinates used to draw the 528 street segment lines
@@ -79,16 +79,16 @@ within the boundaries of the map. The map is created by drawing lines
 connecting the ``n`` points in each street segment.
 
 ``street``
-    street segment number: ``1:528``
+   street segment number: ``1:528``
 
 ``n``
-    number of points in this street line segment
+   number of points in this street line segment
 
 ``x``
-    x coordinate
+   x coordinate
 
 ``y``
-    y coordinate
+   y coordinate
 
 ``Snow.polygons``: A list of 13 data frames, giving the vertices of
 Thiessen (Voronoi) polygons containing each pump. Their boundaries
@@ -97,10 +97,10 @@ pumps. They are mathematically defined by the perpendicular bisectors of
 the lines between all pumps. Each data frame contains:
 
 ``x``
-    x coordinate
+   x coordinate
 
 ``y``
-    y coordinate
+   y coordinate
 
 ``Snow.deaths2``: An alternative version of ``Snow.deaths`` correcting
 some possible duplicate and missing cases, as described in
@@ -170,51 +170,51 @@ Examples
 
 ::
 
-    data(Snow.deaths)
-    data(Snow.pumps)
-    data(Snow.streets)
-    data(Snow.polygons)
-    data(Snow.deaths)
+   data(Snow.deaths)
+   data(Snow.pumps)
+   data(Snow.streets)
+   data(Snow.polygons)
+   data(Snow.deaths)
 
-    ## Plot deaths over time
-    require(lubridate)
-    clr <- ifelse(Snow.dates$date < mdy("09/08/1854"), "red", "darkgreen")
-    plot(deaths ~ date, data=Snow.dates, type="h", lwd=2, col=clr)
-    points(deaths ~ date, data=Snow.dates, cex=0.5, pch=16, col=clr)
-    text( mdy("09/08/1854"), 40, "Pump handle\nremoved Sept. 8", pos=4)
-
-
-    ## draw Snow's map and data
-
-    SnowMap()
-
-    # add polygons
-    SnowMap(polygons=TRUE, main="Snow's Cholera Map with Pump Polygons")
-
-    # zoom in a bit, and show density estimate
-    SnowMap(xlim=c(7.5,16.5), ylim=c(7,16), polygons=TRUE, density=TRUE,
-            main="Snow's Cholera Map, Annotated")
+   ## Plot deaths over time
+   require(lubridate)
+   clr <- ifelse(Snow.dates$date < mdy("09/08/1854"), "red", "darkgreen")
+   plot(deaths ~ date, data=Snow.dates, type="h", lwd=2, col=clr)
+   points(deaths ~ date, data=Snow.dates, cex=0.5, pch=16, col=clr)
+   text( mdy("09/08/1854"), 40, "Pump handle\nremoved Sept. 8", pos=4)
 
 
-    ## re-do this the sp way... [thx: Stephane Dray]
+   ## draw Snow's map and data
 
-    library(sp)
+   SnowMap()
 
-    # streets
-    slist <- split(Snow.streets[,c("x","y")],as.factor(Snow.streets[,"street"]))
-    Ll1 <- lapply(slist,Line)
-    Lsl1 <- Lines(Ll1,"Street")
-    Snow.streets.sp <- SpatialLines(list(Lsl1))
-    plot(Snow.streets.sp, col="gray")
-    title(main="Snow's Cholera Map of London (sp)")
+   # add polygons
+   SnowMap(polygons=TRUE, main="Snow's Cholera Map with Pump Polygons")
 
-    # deaths
-    Snow.deaths.sp = SpatialPoints(Snow.deaths[,c("x","y")])
-    plot(Snow.deaths.sp, add=TRUE, col ='red', pch=15, cex=0.6)
+   # zoom in a bit, and show density estimate
+   SnowMap(xlim=c(7.5,16.5), ylim=c(7,16), polygons=TRUE, density=TRUE,
+           main="Snow's Cholera Map, Annotated")
 
-    # pumps
-    spp <- SpatialPoints(Snow.pumps[,c("x","y")])
-    Snow.pumps.sp <- SpatialPointsDataFrame(spp,Snow.pumps[,c("x","y")])
-    plot(Snow.pumps.sp, add=TRUE, col='blue', pch=17, cex=1.5)
-    text(Snow.pumps[,c("x","y")], labels=Snow.pumps$label, pos=1, cex=0.8)
+
+   ## re-do this the sp way... [thx: Stephane Dray]
+
+   library(sp)
+
+   # streets
+   slist <- split(Snow.streets[,c("x","y")],as.factor(Snow.streets[,"street"]))
+   Ll1 <- lapply(slist,Line)
+   Lsl1 <- Lines(Ll1,"Street")
+   Snow.streets.sp <- SpatialLines(list(Lsl1))
+   plot(Snow.streets.sp, col="gray")
+   title(main="Snow's Cholera Map of London (sp)")
+
+   # deaths
+   Snow.deaths.sp = SpatialPoints(Snow.deaths[,c("x","y")])
+   plot(Snow.deaths.sp, add=TRUE, col ='red', pch=15, cex=0.6)
+
+   # pumps
+   spp <- SpatialPoints(Snow.pumps[,c("x","y")])
+   Snow.pumps.sp <- SpatialPointsDataFrame(spp,Snow.pumps[,c("x","y")])
+   plot(Snow.pumps.sp, add=TRUE, col='blue', pch=17, cex=1.5)
+   text(Snow.pumps[,c("x","y")], labels=Snow.pumps$label, pos=1, cex=0.8)
 

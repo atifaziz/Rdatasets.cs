@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    motors
+   motors
 
 Format
 ~~~~~~
@@ -25,14 +25,13 @@ Format
 This data frame contains the following columns:
 
 ``temp``
-    the temperature (degrees C) of the test.
+   the temperature (degrees C) of the test.
 
 ``time``
-    the time in hours to failure or censoring at 8064 hours (= 336
-    days).
+   the time in hours to failure or censoring at 8064 hours (= 336 days).
 
 ``cens``
-    an indicator variable for death.
+   an indicator variable for death.
 
 Source
 ~~~~~~
@@ -57,17 +56,17 @@ Examples
 
 ::
 
-    library(survival)
-    plot(survfit(Surv(time, cens) ~ factor(temp), motors), conf.int = FALSE)
-    # fit Weibull model
-    motor.wei <- survreg(Surv(time, cens) ~ temp, motors)
-    summary(motor.wei)
-    # and predict at 130C
-    unlist(predict(motor.wei, data.frame(temp=130), se.fit = TRUE))
+   library(survival)
+   plot(survfit(Surv(time, cens) ~ factor(temp), motors), conf.int = FALSE)
+   # fit Weibull model
+   motor.wei <- survreg(Surv(time, cens) ~ temp, motors)
+   summary(motor.wei)
+   # and predict at 130C
+   unlist(predict(motor.wei, data.frame(temp=130), se.fit = TRUE))
 
-    motor.cox <- coxph(Surv(time, cens) ~ temp, motors)
-    summary(motor.cox)
-    # predict at temperature 200
-    plot(survfit(motor.cox, newdata = data.frame(temp=200),
-         conf.type = "log-log"))
-    summary( survfit(motor.cox, newdata = data.frame(temp=130)) )
+   motor.cox <- coxph(Surv(time, cens) ~ temp, motors)
+   summary(motor.cox)
+   # predict at temperature 200
+   plot(survfit(motor.cox, newdata = data.frame(temp=200),
+        conf.type = "log-log"))
+   summary( survfit(motor.cox, newdata = data.frame(temp=130)) )

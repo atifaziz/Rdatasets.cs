@@ -38,7 +38,7 @@ Usage
 
 ::
 
-    data(aldh2)
+   data(aldh2)
 
 Format
 ~~~~~~

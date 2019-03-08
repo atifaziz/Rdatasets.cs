@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    ovarian
+   ovarian
 
 Format
 ~~~~~~

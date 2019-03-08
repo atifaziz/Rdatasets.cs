@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(plantTraits)
+   data(plantTraits)
 
 Format
 ~~~~~~
@@ -24,105 +24,105 @@ Format
 A data frame with 136 observations on the following 31 variables.
 
 ``pdias``
-    Diaspore mass (mg)
+   Diaspore mass (mg)
 
 ``longindex``
-    Seed bank longevity
+   Seed bank longevity
 
 ``durflow``
-    Flowering duration
+   Flowering duration
 
 ``height``
-    Plant height, an ordered factor with levels ``1`` < ``2`` < ... <
-    ``8``.
+   Plant height, an ordered factor with levels ``1`` < ``2`` < ... <
+   ``8``.
 
 ``begflow``
-    Time of first flowering, an ordered factor with levels ``1`` < ``2``
-    < ``3`` < ``4`` < ``5`` < ``6`` < ``7`` < ``8`` < ``9``
+   Time of first flowering, an ordered factor with levels ``1`` < ``2``
+   < ``3`` < ``4`` < ``5`` < ``6`` < ``7`` < ``8`` < ``9``
 
 ``mycor``
-    Mycorrhizas, an ordered factor with levels ``0``\ never < ``1``
-    sometimes< ``2``\ always
+   Mycorrhizas, an ordered factor with levels ``0``\ never < ``1``
+   sometimes< ``2``\ always
 
 ``vegaer``
-    aerial vegetative propagation, an ordered factor with levels
-    ``0``\ never < ``1`` present but limited< ``2``\ important.
+   aerial vegetative propagation, an ordered factor with levels
+   ``0``\ never < ``1`` present but limited< ``2``\ important.
 
 ``vegsout``
-    underground vegetative propagation, an ordered factor with 3 levels
-    identical to ``vegaer`` above.
+   underground vegetative propagation, an ordered factor with 3 levels
+   identical to ``vegaer`` above.
 
 ``autopoll``
-    selfing pollination, an ordered factor with levels ``0``\ never <
-    ``1``\ rare < ``2`` often< the rule\ ``3``
+   selfing pollination, an ordered factor with levels ``0``\ never <
+   ``1``\ rare < ``2`` often< the rule\ ``3``
 
 ``insects``
-    insect pollination, an ordered factor with 5 levels ``0`` < ... <
-    ``4``.
+   insect pollination, an ordered factor with 5 levels ``0`` < ... <
+   ``4``.
 
 ``wind``
-    wind pollination, an ordered factor with 5 levels ``0`` < ... <
-    ``4``.
+   wind pollination, an ordered factor with 5 levels ``0`` < ... <
+   ``4``.
 
 ``lign``
-    a binary factor with levels ``0:1``, indicating if plant is woody.
+   a binary factor with levels ``0:1``, indicating if plant is woody.
 
 ``piq``
-    a binary factor indicating if plant is thorny.
+   a binary factor indicating if plant is thorny.
 
 ``ros``
-    a binary factor indicating if plant is rosette.
+   a binary factor indicating if plant is rosette.
 
 ``semiros``
-    semi-rosette plant, a binary factor (``0``: no; ``1``: yes).
+   semi-rosette plant, a binary factor (``0``: no; ``1``: yes).
 
 ``leafy``
-    leafy plant, a binary factor.
+   leafy plant, a binary factor.
 
 ``suman``
-    summer annual, a binary factor.
+   summer annual, a binary factor.
 
 ``winan``
-    winter annual, a binary factor.
+   winter annual, a binary factor.
 
 ``monocarp``
-    monocarpic perennial, a binary factor.
+   monocarpic perennial, a binary factor.
 
 ``polycarp``
-    polycarpic perennial, a binary factor.
+   polycarpic perennial, a binary factor.
 
 ``seasaes``
-    seasonal aestival leaves, a binary factor.
+   seasonal aestival leaves, a binary factor.
 
 ``seashiv``
-    seasonal hibernal leaves, a binary factor.
+   seasonal hibernal leaves, a binary factor.
 
 ``seasver``
-    seasonal vernal leaves, a binary factor.
+   seasonal vernal leaves, a binary factor.
 
 ``everalw``
-    leaves always evergreen, a binary factor.
+   leaves always evergreen, a binary factor.
 
 ``everparti``
-    leaves partially evergreen, a binary factor.
+   leaves partially evergreen, a binary factor.
 
 ``elaio``
-    fruits with an elaiosome (dispersed by ants), a binary factor.
+   fruits with an elaiosome (dispersed by ants), a binary factor.
 
 ``endozoo``
-    endozoochorous fruits, a binary factor.
+   endozoochorous fruits, a binary factor.
 
 ``epizoo``
-    epizoochorous fruits, a binary factor.
+   epizoochorous fruits, a binary factor.
 
 ``aquat``
-    aquatic dispersal fruits, a binary factor.
+   aquatic dispersal fruits, a binary factor.
 
 ``windgl``
-    wind dispersed fruits, a binary factor.
+   wind dispersed fruits, a binary factor.
 
 ``unsp``
-    unspecialized mechanism of seed dispersal, a binary factor.
+   unspecialized mechanism of seed dispersal, a binary factor.
 
 Details
 ~~~~~~~
@@ -144,20 +144,20 @@ Examples
 
 ::
 
-    data(plantTraits)
+   data(plantTraits)
 
-    ## Calculation of a dissimilarity matrix
-    library(cluster)
-    dai.b <- daisy(plantTraits,
-                   type = list(ordratio = 4:11, symm = 12:13, asymm = 14:31))
+   ## Calculation of a dissimilarity matrix
+   library(cluster)
+   dai.b <- daisy(plantTraits,
+                  type = list(ordratio = 4:11, symm = 12:13, asymm = 14:31))
 
-    ## Hierarchical classification
-    agn.trts <- agnes(dai.b, method="ward")
-    plot(agn.trts, which.plots = 2, cex= 0.6)
-    plot(agn.trts, which.plots = 1)
-    cutree6 <- cutree(agn.trts, k=6)
-    cutree6
+   ## Hierarchical classification
+   agn.trts <- agnes(dai.b, method="ward")
+   plot(agn.trts, which.plots = 2, cex= 0.6)
+   plot(agn.trts, which.plots = 1)
+   cutree6 <- cutree(agn.trts, k=6)
+   cutree6
 
-    ## Principal Coordinate Analysis
-    cmdsdai.b <- cmdscale(dai.b, k=6)
-    plot(cmdsdai.b[, 1:2], asp = 1, col = cutree6)
+   ## Principal Coordinate Analysis
+   cmdsdai.b <- cmdscale(dai.b, k=6)
+   plot(cmdsdai.b[, 1:2], asp = 1, col = cutree6)

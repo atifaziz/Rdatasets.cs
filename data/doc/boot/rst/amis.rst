@@ -26,7 +26,7 @@ Usage
 
 ::
 
-    amis
+   amis
 
 Format
 ~~~~~~
@@ -34,24 +34,24 @@ Format
 This data frame contains the following columns:
 
 ``speed``
-    Speeds of cars (in miles per hour).
+   Speeds of cars (in miles per hour).
 
 ``period``
-    A numeric column indicating the time that the reading was taken. A
-    value of 1 indicates a reading taken before the sign was erected, a
-    2 indicates a reading taken shortly after erection of the sign and a
-    3 indicates a reading taken after the sign had been in place for
-    some time.
+   A numeric column indicating the time that the reading was taken. A
+   value of 1 indicates a reading taken before the sign was erected, a 2
+   indicates a reading taken shortly after erection of the sign and a 3
+   indicates a reading taken after the sign had been in place for some
+   time.
 
 ``warning``
-    A numeric column indicating whether the location of the reading was
-    chosen to have a warning sign erected. A value of 1 indicates
-    presence of a sign and a value of 2 indicates that no sign was
-    erected.
+   A numeric column indicating whether the location of the reading was
+   chosen to have a warning sign erected. A value of 1 indicates
+   presence of a sign and a value of 2 indicates that no sign was
+   erected.
 
 ``pair``
-    A numeric column giving the pair number at which the reading was
-    taken. Pairs were numbered from 1 to 14.
+   A numeric column giving the pair number at which the reading was
+   taken. Pairs were numbered from 1 to 14.
 
 Source
 ~~~~~~

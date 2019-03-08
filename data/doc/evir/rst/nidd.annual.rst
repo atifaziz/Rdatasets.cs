@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(nidd.annual)
+   data(nidd.annual)
 
 Format
 ~~~~~~

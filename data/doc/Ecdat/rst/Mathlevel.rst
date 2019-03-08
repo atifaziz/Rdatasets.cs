@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Mathlevel)
+   data(Mathlevel)
 
 Format
 ~~~~~~
@@ -29,30 +29,30 @@ Format
 A dataframe containing :
 
 mathlevel
-    highest level of math attained , an ordered factor with levels 170,
-    171a, 172, 171b, 172b, 221a, 221b
+   highest level of math attained , an ordered factor with levels 170,
+   171a, 172, 171b, 172b, 221a, 221b
 
 sat
-    sat Math score
+   sat Math score
 
 language
-    foreign language proficiency ?
+   foreign language proficiency ?
 
 sex
-    male, female
+   male, female
 
 major
-    one of other, eco, oss (other social sciences), ns (natural
-    sciences), hum (humanities)
+   one of other, eco, oss (other social sciences), ns (natural
+   sciences), hum (humanities)
 
 mathcourse
-    number of courses in advanced math (0 to 3)
+   number of courses in advanced math (0 to 3)
 
 physiccourse
-    number of courses in physics (0 to 2)
+   number of courses in physics (0 to 2)
 
 chemistcourse
-    number of courses in chemistry (0 to 2)
+   number of courses in chemistry (0 to 2)
 
 Source
 ~~~~~~

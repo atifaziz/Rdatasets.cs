@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(cricketer)
+   data(cricketer)
 
 Format
 ~~~~~~
@@ -26,29 +26,29 @@ Format
 A data frame with 5960 observations on the following 8 variables.
 
 ``left``
-    a factor with levels ``right`` ``left``
+   a factor with levels ``right`` ``left``
 
 ``year``
-    numeric, year of birth
+   numeric, year of birth
 
 ``life``
-    numeric, lifetime or lifespan to 1992
+   numeric, lifetime or lifespan to 1992
 
 ``dead``
-    numeric (0 = alive (censored), 1 = dead, in 1992)
+   numeric (0 = alive (censored), 1 = dead, in 1992)
 
 ``acd``
-    numeric (0 = not accidental or not dead, 1 = accidental death)
+   numeric (0 = not accidental or not dead, 1 = accidental death)
 
 ``kia``
-    numeric (0 = not killed in action, 1 = killed in action)
+   numeric (0 = not killed in action, 1 = killed in action)
 
 ``inbed``
-    numeric (0 = did not die in bed, 1 = died in bed)
+   numeric (0 = did not die in bed, 1 = died in bed)
 
 ``cause``
-    a factor with levels ``alive`` ``acd`` (accidental death) ``inbed``
-    (died in bed)
+   a factor with levels ``alive`` ``acd`` (accidental death) ``inbed``
+   (died in bed)
 
 Details
 ~~~~~~~
@@ -85,19 +85,19 @@ Examples
 
 ::
 
-    data(cricketer)
-    numLH <- xtabs(~ left+year, data=cricketer)
-    propLH <- prop.table(numLH, margin=2)[2,]
-    yr <- as.numeric(colnames(numLH))
-    plot(propLH ~ yr)
-    cricketer$lh <- unclass(cricketer$left)-1
-    left2.hat <- fitted(lm(lh ~ poly(year,2), data=cricketer))
-    ord <- order(cricketer$year)
-    lines(left2.hat[ord] ~ cricketer$year[ord])
-    library(splines)
-    ns3.hat <- fitted(lm(lh ~ ns(year,3), data=cricketer))
-    lines(ns3.hat[ord] ~ cricketer$year[ord], col="red")
-    require(survival)
-    summary(coxph(Surv(life, kia) ~ bs(year,3) +left, data=cricketer))
-    cricketer$notacdDead <- with(cricketer, {dead[acd==1]<-0; dead})
-    summary(coxph(Surv(life, notacdDead) ~ ns(year,2) +left, data=cricketer))
+   data(cricketer)
+   numLH <- xtabs(~ left+year, data=cricketer)
+   propLH <- prop.table(numLH, margin=2)[2,]
+   yr <- as.numeric(colnames(numLH))
+   plot(propLH ~ yr)
+   cricketer$lh <- unclass(cricketer$left)-1
+   left2.hat <- fitted(lm(lh ~ poly(year,2), data=cricketer))
+   ord <- order(cricketer$year)
+   lines(left2.hat[ord] ~ cricketer$year[ord])
+   library(splines)
+   ns3.hat <- fitted(lm(lh ~ ns(year,3), data=cricketer))
+   lines(ns3.hat[ord] ~ cricketer$year[ord], col="red")
+   require(survival)
+   summary(coxph(Surv(life, kia) ~ bs(year,3) +left, data=cricketer))
+   cricketer$notacdDead <- with(cricketer, {dead[acd==1]<-0; dead})
+   summary(coxph(Surv(life, notacdDead) ~ ns(year,2) +left, data=cricketer))

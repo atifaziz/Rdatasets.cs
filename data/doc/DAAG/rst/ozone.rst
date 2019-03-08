@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    ozone
+   ozone
 
 Format
 ~~~~~~
@@ -24,37 +24,37 @@ Format
 This data frame contains the following columns:
 
 Year
-    the year
+   the year
 
 Aug
-    August mean total ozone
+   August mean total ozone
 
 Sep
-    September mean total ozone
+   September mean total ozone
 
 Oct
-    October mean total ozone
+   October mean total ozone
 
 Nov
-    November mean total ozone
+   November mean total ozone
 
 Dec
-    December mean total ozone
+   December mean total ozone
 
 Jan
-    January mean total ozone
+   January mean total ozone
 
 Feb
-    February mean total ozone
+   February mean total ozone
 
 Mar
-    March mean total ozone
+   March mean total ozone
 
 Apr
-    April mean total ozone
+   April mean total ozone
 
 Annual
-    Yearly mean total ozone
+   Yearly mean total ozone
 
 Source
 ~~~~~~
@@ -74,5 +74,5 @@ Examples
 
 ::
 
-    AnnualOzone <- ts(ozone$Annual, start=1956)
-    plot(AnnualOzone)
+   AnnualOzone <- ts(ozone$Annual, start=1956)
+   plot(AnnualOzone)

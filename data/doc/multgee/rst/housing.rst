@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(housing)
+   data(housing)
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 A data frame with 1448 observations on the following 4 variables:
 
 ``id``
-    Subject identifier variable.
+   Subject identifier variable.
 
 ``y``
-    Housing status response, coded as (1) for street living, (2) for
-    community living and (3) for independent housing.
+   Housing status response, coded as (1) for street living, (2) for
+   community living and (3) for independent housing.
 
 ``time``
-    Time recorded in months.
+   Time recorded in months.
 
 ``sec``
-    Section 8 rent certificate indicator.
+   Section 8 rent certificate indicator.
 
 Source
 ~~~~~~
@@ -49,5 +49,5 @@ Examples
 
 ::
 
-    data(housing)
-    str(housing)
+   data(housing)
+   str(housing)

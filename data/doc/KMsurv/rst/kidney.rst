@@ -16,13 +16,13 @@ Format
 This data frame contains the following columns:
 
 time
-    Time to infection, months
+   Time to infection, months
 
 delta
-    Infection indicator (0=no, 1=yes)
+   Infection indicator (0=no, 1=yes)
 
 type
-    Catheter placement (1=surgically, 2=percutaneously)
+   Catheter placement (1=surgically, 2=percutaneously)
 
 Source
 ~~~~~~
@@ -36,4 +36,4 @@ Examples
 
 ::
 
-    data(kidney)
+   data(kidney)

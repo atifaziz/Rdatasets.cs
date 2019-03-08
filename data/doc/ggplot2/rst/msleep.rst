@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    msleep
+   msleep
 
 Format
 ~~~~~~
@@ -27,33 +27,33 @@ Format
 A data frame with 83 rows and 11 variables
 
 name
-    common name
+   common name
 
 genus
 vore
-    carnivore, omnivore or herbivore?
+   carnivore, omnivore or herbivore?
 
 order
 conservation
-    the conservation status of the animal
+   the conservation status of the animal
 
 sleep_total
-    total amount of sleep, in hours
+   total amount of sleep, in hours
 
 sleep_rem
-    rem sleep, in hours
+   rem sleep, in hours
 
 sleep_cycle
-    length of sleep cycle, in hours
+   length of sleep cycle, in hours
 
 awake
-    amount of time spent awake, in hours
+   amount of time spent awake, in hours
 
 brainwt
-    brain weight in kilograms
+   brain weight in kilograms
 
 bodywt
-    body weight in kilograms
+   body weight in kilograms
 
 Details
 ~~~~~~~

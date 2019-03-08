@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    nsw74psid3
+   nsw74psid3
 
 Format
 ~~~~~~
@@ -29,35 +29,35 @@ Format
 This data frame contains the following columns:
 
 trt
-    a numeric vector identifying the study in which the subjects were
-    enrolled (0 = PSID, 1 = NSW)
+   a numeric vector identifying the study in which the subjects were
+   enrolled (0 = PSID, 1 = NSW)
 
 age
-    age (in years)
+   age (in years)
 
 educ
-    years of education
+   years of education
 
 black
-    (0 = not black, 1 = black)
+   (0 = not black, 1 = black)
 
 hisp
-    (0 = not hispanic, 1 = hispanic)
+   (0 = not hispanic, 1 = hispanic)
 
 marr
-    (0 = not married, 1 = married)
+   (0 = not married, 1 = married)
 
 nodeg
-    (0 = completed high school, 1 = dropout)
+   (0 = completed high school, 1 = dropout)
 
 re74
-    real earnings in 1974
+   real earnings in 1974
 
 re75
-    real earnings in 1975
+   real earnings in 1975
 
 re78
-    real earnings in 1978
+   real earnings in 1978
 
 Source
 ~~~~~~
@@ -79,6 +79,6 @@ Examples
 
 ::
 
-    print("Contingency Tables - Example 4.4")
-    table(nsw74psid3$trt, nsw74psid3$nodeg)
-    chisq.test(table(nsw74psid3$trt,nsw74psid3$nodeg))
+   print("Contingency Tables - Example 4.4")
+   table(nsw74psid3$trt, nsw74psid3$nodeg)
+   chisq.test(table(nsw74psid3$trt,nsw74psid3$nodeg))

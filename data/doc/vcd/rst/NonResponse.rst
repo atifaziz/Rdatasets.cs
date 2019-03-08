@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("NonResponse")
+   data("NonResponse")
 
 Format
 ~~~~~~
@@ -23,18 +23,17 @@ Format
 A data frame with 12 observations and 4 variables.
 
 Freq
-    frequency.
+   frequency.
 
 residence
-    factor indicating whether residence was in Copenhagen, in a city
-    outside Copenhagen or at the countryside (Copenhagen, City,
-    Country).
+   factor indicating whether residence was in Copenhagen, in a city
+   outside Copenhagen or at the countryside (Copenhagen, City, Country).
 
 response
-    factor indicating whether a response was given (yes, no).
+   factor indicating whether a response was given (yes, no).
 
 gender
-    factor indicating gender (male, female).
+   factor indicating gender (male, female).
 
 Source
 ~~~~~~
@@ -53,5 +52,5 @@ Examples
 
 ::
 
-    data("NonResponse")
-    structable(~ ., data = NonResponse)
+   data("NonResponse")
+   structable(~ ., data = NonResponse)

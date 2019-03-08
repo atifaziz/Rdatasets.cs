@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(Alcohol)
+   data(Alcohol)
 
 Format
 ~~~~~~
@@ -41,6 +41,6 @@ Examples
 
 ::
 
-    data(Alcohol)
-    # There are only a few observations in years other than 2005 and 2008
-    subset(Alcohol, ! year %in% c(2005,2008))
+   data(Alcohol)
+   # There are only a few observations in years other than 2005 and 2008
+   subset(Alcohol, ! year %in% c(2005,2008))

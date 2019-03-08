@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("OvaryCancer")
+   data("OvaryCancer")
 
 Format
 ~~~~~~
@@ -25,20 +25,20 @@ Format
 A data frame with 16 observations and 5 variables.
 
 Freq
-    frequency.
+   frequency.
 
 stage
-    factor indicating the stage of the cancer at the time of operation
-    (early, advanced).
+   factor indicating the stage of the cancer at the time of operation
+   (early, advanced).
 
 operation
-    factor indicating type of operation (radical, limited).
+   factor indicating type of operation (radical, limited).
 
 survival
-    factor indicating survival status after 10 years (yes, no).
+   factor indicating survival status after 10 years (yes, no).
 
 xray
-    factor indicating whether X-ray treatment was received (yes, no).
+   factor indicating whether X-ray treatment was received (yes, no).
 
 Source
 ~~~~~~
@@ -61,17 +61,17 @@ Examples
 
 ::
 
-    data("OvaryCancer")
-    tab <- xtabs(Freq ~ xray + survival + stage + operation, data = OvaryCancer)
-    ftable(tab, col.vars = "survival", row.vars = c("stage", "operation", "xray"))
+   data("OvaryCancer")
+   tab <- xtabs(Freq ~ xray + survival + stage + operation, data = OvaryCancer)
+   ftable(tab, col.vars = "survival", row.vars = c("stage", "operation", "xray"))
 
-    ## model: ~ xray * operation * stage + survival * stage
-    ## interpretation: treat xray, operation, stage as fixed margins,
-    ##   the survival depends on stage, but not xray and operation.
-    doubledecker(survival ~ stage + operation + xray, data = tab)
-    mosaic(~ stage + operation + xray + survival,
-      split = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep = FALSE,
-      gp = gpar(fill = rev(grey.colors(2))))
-    mosaic(~ stage + operation + xray + survival,
-      split = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep = FALSE,
-      expected = ~ xray * operation * stage + survival*stage)
+   ## model: ~ xray * operation * stage + survival * stage
+   ## interpretation: treat xray, operation, stage as fixed margins,
+   ##   the survival depends on stage, but not xray and operation.
+   doubledecker(survival ~ stage + operation + xray, data = tab)
+   mosaic(~ stage + operation + xray + survival,
+     split = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep = FALSE,
+     gp = gpar(fill = rev(grey.colors(2))))
+   mosaic(~ stage + operation + xray + survival,
+     split = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep = FALSE,
+     expected = ~ xray * operation * stage + survival*stage)

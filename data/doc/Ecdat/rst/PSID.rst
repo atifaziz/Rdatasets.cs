@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(PSID)
+   data(PSID)
 
 Format
 ~~~~~~
@@ -29,29 +29,29 @@ Format
 A dataframe containing :
 
 intnum
-    1968 interview number
+   1968 interview number
 
 persnum
-    person number
+   person number
 
 age
-    age of individual
+   age of individual
 
 educatn
-    highest grade completed
+   highest grade completed
 
 earnings
-    total labor income
+   total labor income
 
 hours
-    annual work hours
+   annual work hours
 
 kids
-    live births to this individual
+   live births to this individual
 
 married
-    last known marital status (married, never married, windowed,
-    divorced, separated, NA/DF, no histories)
+   last known marital status (married, never married, windowed,
+   divorced, separated, NA/DF, no histories)
 
 Source
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("retinopathy")
+   data("retinopathy")
 
 Format
 ~~~~~~
@@ -24,32 +24,32 @@ Format
 A data frame with 394 observations on the following 9 variables.
 
 ``id``
-    numeric subject id
+   numeric subject id
 
 ``laser``
-    type of laser used: ``xenon`` ``argon``
+   type of laser used: ``xenon`` ``argon``
 
 ``eye``
-    which eye was treated: ``right`` ``left``
+   which eye was treated: ``right`` ``left``
 
 ``age``
-    age at diagnosis of diabetes
+   age at diagnosis of diabetes
 
 ``type``
-    type of diabetes: ``juvenile`` ``adult``, (diagnosis before age 20)
+   type of diabetes: ``juvenile`` ``adult``, (diagnosis before age 20)
 
 ``trt``
-    0 = control eye, 1 = treated eye
+   0 = control eye, 1 = treated eye
 
 ``futime``
-    time to loss of vision or last follow-up
+   time to loss of vision or last follow-up
 
 ``status``
-    0 = censored, 1 = loss of vision in this eye
+   0 = censored, 1 = loss of vision in this eye
 
 ``risk``
-    a risk score for the eye. This high risk subset is defined as a
-    score of 6 or greater in at least one eye.
+   a risk score for the eye. This high risk subset is defined as a score
+   of 6 or greater in at least one eye.
 
 Details
 ~~~~~~~
@@ -81,4 +81,4 @@ Examples
 
 ::
 
-    coxph(Surv(futime, status) ~ type + trt + cluster(id), retinopathy)
+   coxph(Surv(futime, status) ~ type + trt + cluster(id), retinopathy)

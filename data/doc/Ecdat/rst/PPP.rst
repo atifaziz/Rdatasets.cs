@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(PPP)
+   data(PPP)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A time serie containing :
 
 lnit
-    log price index Italy
+   log price index Italy
 
 lnfr
-    log price index France
+   log price index France
 
 lnx
-    log exchange rate France/Italy
+   log exchange rate France/Italy
 
 cpiit
-    consumer price index Italy
+   consumer price index Italy
 
 cpifr
-    consumer price index France
+   consumer price index France
 
 Source
 ~~~~~~

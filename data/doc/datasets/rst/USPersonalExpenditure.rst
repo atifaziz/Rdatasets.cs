@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    USPersonalExpenditure
+   USPersonalExpenditure
 
 Format
 ~~~~~~
@@ -42,6 +42,6 @@ Examples
 
 ::
 
-    require(stats) # for medpolish
-    USPersonalExpenditure
-    medpolish(log10(USPersonalExpenditure))
+   require(stats) # for medpolish
+   USPersonalExpenditure
+   medpolish(log10(USPersonalExpenditure))

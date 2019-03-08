@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(liver)
+   data(liver)
 
 Format
 ~~~~~~
@@ -24,32 +24,32 @@ Format
 A data frame with 606 observations on the following 9 variables.
 
 ALP.B
-    Alkaline phosphatase at baseline. A numeric vector.
+   Alkaline phosphatase at baseline. A numeric vector.
 
 ALT.B
-    Alanine aminotransferase at baseline. A numeric vector.
+   Alanine aminotransferase at baseline. A numeric vector.
 
 AST.B
-    Aspartate aminotransferase at baseline. A numeric vector.
+   Aspartate aminotransferase at baseline. A numeric vector.
 
 TBL.B
-    Total bilirubin at baseline. A numeric vector.
+   Total bilirubin at baseline. A numeric vector.
 
 ALP.M
-    Alkaline phosphatase after treatment. A numeric vector.
+   Alkaline phosphatase after treatment. A numeric vector.
 
 ALT.M
-    Alanine aminotransferase after treatment. A numeric vector.
+   Alanine aminotransferase after treatment. A numeric vector.
 
 AST.M
-    Aspartate aminotransferase after treatment. A numeric vector.
+   Aspartate aminotransferase after treatment. A numeric vector.
 
 TBL.M
-    Total bilirubin after treatment. A numeric vector.
+   Total bilirubin after treatment. A numeric vector.
 
 dose
-    The treatment group (i.e. dose group). A factor with levels ``A``
-    ``B`` ``C`` ``D``
+   The treatment group (i.e. dose group). A factor with levels ``A``
+   ``B`` ``C`` ``D``
 
 Details
 ~~~~~~~

@@ -17,8 +17,8 @@ Usage
 
 ::
 
-    lung
-    cancer
+   lung
+   cancer
 
 Format
 ~~~~~~

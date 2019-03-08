@@ -24,8 +24,8 @@ Usage
 
 ::
 
-        data("Virginis")
-        data("Virginis.interp")
+       data("Virginis")
+       data("Virginis.interp")
 
 Format
 ~~~~~~
@@ -36,41 +36,41 @@ between the central (brightest) star and its twin, recorded by various
 observers over more than 100 years.
 
 ``year``
-    year ("epoch") of the observation, a decimal numeric vector
+   year ("epoch") of the observation, a decimal numeric vector
 
 ``posangle``
-    recorded position angle between the two stars, a numeric vector
+   recorded position angle between the two stars, a numeric vector
 
 ``distance``
-    separation distance between the two stars, a numeric vector
+   separation distance between the two stars, a numeric vector
 
 ``weight``
-    a subjective weight attributed to the accuracy of this observation,
-    a numeric vector
+   a subjective weight attributed to the accuracy of this observation, a
+   numeric vector
 
 ``notes``
-    Herschel's notes on this observation, a character vector
+   Herschel's notes on this observation, a character vector
 
 ``authority``
-    A simplified version of the notes giving just the attribution of
-    authority of the observation, a character vector
+   A simplified version of the notes giving just the attribution of
+   authority of the observation, a character vector
 
 ``Virgins.interp``: A data frame with 14 observations on the following 4
 variables, giving the position angles and angular distance that Herschel
 interpolated from his smoothed curve.
 
 ``year``
-    year ("epoch") of the observation, a decimal numeric vector
+   year ("epoch") of the observation, a decimal numeric vector
 
 ``posangle``
-    recorded position angle between the two stars, a numeric vector
+   recorded position angle between the two stars, a numeric vector
 
 ``distance``
-    separation distance, calculated *1/sqrt(velocity)*
+   separation distance, calculated *1/sqrt(velocity)*
 
 ``velocity``
-    angular velocity, calcualted as the instantaneous slopes of tangents
-    to the smoothed curve, a numeric vector
+   angular velocity, calcualted as the instantaneous slopes of tangents
+   to the smoothed curve, a numeric vector
 
 Details
 ~~~~~~~
@@ -114,17 +114,17 @@ Examples
 
 ::
 
-    data(Virginis)
-    data(Virginis.interp)
+   data(Virginis)
+   data(Virginis.interp)
 
-    # Herschel's interpolated curve
-    plot(posangle ~ year, data=Virginis.interp, 
-        pch=15, type="b", col="red", cex=0.8, lwd=2,
-        xlim=c(1710,1840), ylim=c(80, 170),
-        ylab="Position angle (deg.)", xlab="Year",
-        cex.lab=1.5)
+   # Herschel's interpolated curve
+   plot(posangle ~ year, data=Virginis.interp, 
+       pch=15, type="b", col="red", cex=0.8, lwd=2,
+       xlim=c(1710,1840), ylim=c(80, 170),
+       ylab="Position angle (deg.)", xlab="Year",
+       cex.lab=1.5)
 
-    # The data points, and indication of their uncertainty
-    points(posangle ~ year, data=Virginis, pch=16)
-    points(posangle ~ year, data=Virginis, cex=weight/2)
+   # The data points, and indication of their uncertainty
+   points(posangle ~ year, data=Virginis, pch=16)
+   points(posangle ~ year, data=Virginis, cex=weight/2)
 

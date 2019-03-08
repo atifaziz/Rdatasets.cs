@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(lactic)
+   data(lactic, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 20 observations on the following 2 variables.
 
 ``X``
-    True Concentration
+   True Concentration
 
 ``Y``
-    Instrument
+   Instrument
 
 Source
 ~~~~~~
@@ -41,6 +41,6 @@ Examples
 
 ::
 
-    data(lactic)
-    summary(lm.lactic <- lm(Y ~., data=lactic))
+   data(lactic)
+   summary(lm.lactic <- lm(Y ~., data=lactic))
 

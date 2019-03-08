@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(Prostitutes)
+   data(Prostitutes)
 
 Format
 ~~~~~~
@@ -25,20 +25,20 @@ Format
 A data frame with 516 observations on the following 5 variables.
 
 ``Year``
-    a numeric vector
+   a numeric vector
 
 ``month``
-    a factor with levels ``Apr`` ``Aug`` ``Dec`` ``Feb`` ``Jan`` ``Jul``
-    ``Jun`` ``Mar`` ``May`` ``Nov`` ``Oct`` ``Sep``
+   a factor with levels ``Apr`` ``Aug`` ``Dec`` ``Feb`` ``Jan`` ``Jul``
+   ``Jun`` ``Mar`` ``May`` ``Nov`` ``Oct`` ``Sep``
 
 ``count``
-    a numeric vector: number of prostitutes
+   a numeric vector: number of prostitutes
 
 ``mon``
-    a numeric vector: numeric month
+   a numeric vector: numeric month
 
 ``date``
-    a Date
+   a Date
 
 Details
 ~~~~~~~
@@ -58,5 +58,5 @@ Examples
 
 ::
 
-    data(Prostitutes)
-    ## maybe str(Prostitutes) ; plot(Prostitutes) ...
+   data(Prostitutes)
+   ## maybe str(Prostitutes) ; plot(Prostitutes) ...

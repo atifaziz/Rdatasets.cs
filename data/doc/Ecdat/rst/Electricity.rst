@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Electricity)
+   data(Electricity)
 
 Format
 ~~~~~~
@@ -29,28 +29,28 @@ Format
 A dataframe containing :
 
 cost
-    total cost
+   total cost
 
 q
-    total output
+   total output
 
 pl
-    wage rate
+   wage rate
 
 sl
-    cost share for labor
+   cost share for labor
 
 pk
-    capital price index
+   capital price index
 
 sk
-    cost share for capital
+   cost share for capital
 
 pf
-    fuel price
+   fuel price
 
 sf
-    cost share for fuel
+   cost share for fuel
 
 Source
 ~~~~~~

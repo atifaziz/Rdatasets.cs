@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    crabs
+   crabs
 
 Format
 ~~~~~~
@@ -26,28 +26,28 @@ Format
 This data frame contains the following columns:
 
 ``sp``
-    ``species`` - ``"B"`` or ``"O"`` for blue or orange.
+   ``species`` - ``"B"`` or ``"O"`` for blue or orange.
 
 ``sex``
-    as it says.
+   as it says.
 
 ``index``
-    index ``1:50`` within each of the four groups.
+   index ``1:50`` within each of the four groups.
 
 ``FL``
-    frontal lobe size (mm).
+   frontal lobe size (mm).
 
 ``RW``
-    rear width (mm).
+   rear width (mm).
 
 ``CL``
-    carapace length (mm).
+   carapace length (mm).
 
 ``CW``
-    carapace width (mm).
+   carapace width (mm).
 
 ``BD``
-    body depth (mm).
+   body depth (mm).
 
 Source
 ~~~~~~

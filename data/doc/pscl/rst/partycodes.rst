@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(partycodes)
+   data(partycodes)
 
 Format
 ~~~~~~

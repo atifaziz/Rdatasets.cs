@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Fatality)
+   data(Fatality)
 
 Format
 ~~~~~~
@@ -29,34 +29,34 @@ Format
 A dataframe containing :
 
 state
-    state ID code
+   state ID code
 
 year
-    year
+   year
 
 mrall
-    traffic fatality rate (deaths per 10000)
+   traffic fatality rate (deaths per 10000)
 
 beertax
-    tax on case of beer
+   tax on case of beer
 
 mlda
-    minimum legal drinking age
+   minimum legal drinking age
 
 jaild
-    mandatory jail sentence ?
+   mandatory jail sentence ?
 
 comserd
-    mandatory community service ?
+   mandatory community service ?
 
 vmiles
-    average miles per driver
+   average miles per driver
 
 unrate
-    unemployment rate
+   unemployment rate
 
 perinc
-    per capita personal income
+   per capita personal income
 
 Source
 ~~~~~~

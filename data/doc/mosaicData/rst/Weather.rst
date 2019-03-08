@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(Weather)
+   data(Weather)
 
 Format
 ~~~~~~
@@ -23,45 +23,45 @@ Format
 A data frame with weather-related variables for several world cities.
 
 city
-    City name.
+   City name.
 
 date
-    Date.
+   Date.
 
 year
-    Numeric year.
+   Numeric year.
 
 month
-    Numeric month.
+   Numeric month.
 
 day
-    Numeric day.
+   Numeric day.
 
 high_temp, avg_temp, low_temp
-    High, average, and low temperature for the day in degrees F.
+   High, average, and low temperature for the day in degrees F.
 
 high_dewpt, avg_dewpt, low_dewpt
-    High, average, and low dew point for the day in degrees F.
+   High, average, and low dew point for the day in degrees F.
 
 high_humidity, avg_humidity, low_humidity
-    High, average, and low relative humidity.
+   High, average, and low relative humidity.
 
 high_hg, avg_hg, low_hg
-    High, average, and low sea level pressure in inches of mercury.
+   High, average, and low sea level pressure in inches of mercury.
 
 high_vis, avg_vis, low_vis
-    High, average, and low visability for the day in miles.
+   High, average, and low visability for the day in miles.
 
 high_wind, avg_wind, low_wind
-    High, average, and low wind speed for the day in mph.
+   High, average, and low wind speed for the day in mph.
 
 precip
-    Precipitation for the day – a character vale; 'T' means "trace
-    amount".
+   Precipitation for the day – a character vale; ``T`` means "trace
+   amount".
 
 events
-    Character string naming weather events on the day (Rain, Fog, Snow,
-    etc.)
+   Character string naming weather events on the day (Rain, Fog, Snow,
+   etc.)
 
 Source
 ~~~~~~
@@ -73,12 +73,19 @@ Examples
 
 ::
 
-    if (require(dplyr)) {
-      Weather %>%
-        group_by(city, year) %>%
-        summarise(
-          min_temp = min(low_temp),
-          max_temp = max(high_temp)
-          )
-    }
+   if (require(dplyr)) {
+     Weather %>%
+       group_by(city, year) %>%
+       summarise(
+         min_temp = min(low_temp),
+         max_temp = max(high_temp)
+         )
+   }
+
+   if (require(ggformula)) {
+     Weather %>%
+       gf_linerange(low_temp + high_temp ~ date | city ~ ., 
+       color = ~ (high_temp + low_temp) / 2 ) %>%
+       gf_refine(scale_color_gradientn(colors = rev(rainbow(5))))
+   }
 

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(worldRecords)
+   data(worldRecords)
 
 Format
 ~~~~~~
@@ -23,19 +23,19 @@ Format
 A data frame with 40 observations on the following 9 variables.
 
 ``Distance``
-    distance in kilometers
+   distance in kilometers
 
 ``roadORtrack``
-    a factor with levels ``road`` ``track``
+   a factor with levels ``road`` ``track``
 
 ``Place``
-    place; a character vector
+   place; a character vector
 
 ``Time``
-    time in minutes
+   time in minutes
 
 ``Date``
-    a Date
+   a Date
 
 Details
 ~~~~~~~
@@ -53,9 +53,9 @@ Examples
 
 ::
 
-    data(worldRecords)
-    xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords)
-    xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
-           type=c("p","r"))
-    xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
-           type=c("p","smooth"))
+   data(worldRecords)
+   xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords)
+   xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
+          type=c("p","r"))
+   xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
+          type=c("p","smooth"))

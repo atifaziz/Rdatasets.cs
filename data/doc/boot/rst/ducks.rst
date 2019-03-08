@@ -25,7 +25,7 @@ Usage
 
 ::
 
-    ducks
+   ducks
 
 Format
 ~~~~~~
@@ -33,11 +33,11 @@ Format
 This data frame contains the following columns:
 
 ``plumage``
-    The index of physical appearance based on the plumage of individual
-    ducks.
+   The index of physical appearance based on the plumage of individual
+   ducks.
 
 ``behaviour``
-    The index of behavioural characteristics of the ducks.
+   The index of behavioural characteristics of the ducks.
 
 Source
 ~~~~~~

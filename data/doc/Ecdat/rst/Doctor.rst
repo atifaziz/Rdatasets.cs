@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Doctor)
+   data(Doctor)
 
 Format
 ~~~~~~
@@ -29,17 +29,17 @@ Format
 A dataframe containing :
 
 doctor
-    the number of doctor visits
+   the number of doctor visits
 
 children
-    the number of children in the household
+   the number of children in the household
 
 access
-    is a measure of access to health care
+   is a measure of access to health care
 
 health
-    a measure of health status (larger positive numbers are associated
-    with poorer health)
+   a measure of health status (larger positive numbers are associated
+   with poorer health)
 
 Source
 ~~~~~~

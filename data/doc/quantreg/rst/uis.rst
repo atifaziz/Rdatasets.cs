@@ -86,7 +86,7 @@ Usage
 
 ::
 
-    data(uis)
+   data(uis)
 
 Format
 ~~~~~~

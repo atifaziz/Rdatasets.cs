@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(pulpfiber)
+   data(pulpfiber, package="robustbase")
 
 Format
 ~~~~~~
@@ -24,28 +24,28 @@ Format
 A data frame with 62 observations on the following 8 variables.
 
 ``X1``
-    numeric vector of arithmetic fiber length
+   numeric vector of arithmetic fiber length
 
 ``X2``
-    numeric vector of long fiber fraction
+   numeric vector of long fiber fraction
 
 ``X3``
-    numeric vector of fine fiber fraction
+   numeric vector of fine fiber fraction
 
 ``X4``
-    numeric vector of zero span tensile
+   numeric vector of zero span tensile
 
 ``Y1``
-    numeric vector of breaking length
+   numeric vector of breaking length
 
 ``Y2``
-    numeric vector of elastic modulus
+   numeric vector of elastic modulus
 
 ``Y3``
-    numeric vector of stress at failure
+   numeric vector of stress at failure
 
 ``Y4``
-    numeric vector of burst strength
+   numeric vector of burst strength
 
 Details
 ~~~~~~~
@@ -53,7 +53,7 @@ Details
 Cited from the reference article: *The dataset contains measurements of
 properties of pulp fibers and the paper made from them. The aim is to
 investigate relations between pulp fiber properties and the resulting
-paper properties. The dataset contains *n = 62* measurements of the
+paper properties. The dataset contains n = 62 measurements of the
 following four pulp fiber characteristics: arithmetic fiber length, long
 fiber fraction, fine fiber fraction, and zero span tensile. The four
 paper properties that have been measured are breaking length, elastic
@@ -65,7 +65,7 @@ fiber characteristics.
 Author(s)
 ~~~~~~~~~
 
-port to **R** and this help page: Martin Maechler
+port to R and this help page: Martin Maechler
 
 Source
 ~~~~~~
@@ -87,13 +87,13 @@ Examples
 
 ::
 
-    data(pulpfiber)
-    str(pulpfiber)
+   data(pulpfiber)
+   str(pulpfiber)
 
-    pairs(pulpfiber, gap=.1)
-    ## 2 blocks of 4 ..
-    c1 <- cov(pulpfiber)
-    cR <- covMcd(pulpfiber)
-    ## how different are they: The robust estimate has more clear high correlations:
-    symnum(cov2cor(c1))
-    symnum(cov2cor(cR$cov))
+   pairs(pulpfiber, gap=.1)
+   ## 2 blocks of 4 ..
+   c1 <- cov(pulpfiber)
+   cR <- covMcd(pulpfiber)
+   ## how different are they: The robust estimate has more clear high correlations:
+   symnum(cov2cor(c1))
+   symnum(cov2cor(cR$cov))

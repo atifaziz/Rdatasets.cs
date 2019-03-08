@@ -25,7 +25,7 @@ Usage
 
 ::
 
-    paulsen
+   paulsen
 
 Format
 ~~~~~~
@@ -33,8 +33,8 @@ Format
 This data frame contains the following column:
 
 ``y``
-    The current flowing into individual brain cells. The currents are
-    measured in pico-amperes.
+   The current flowing into individual brain cells. The currents are
+   measured in pico-amperes.
 
 Source
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(USFinanceIndustry)
+   data(USFinanceIndustry)
 
 Format
 ~~~~~~
@@ -24,28 +24,28 @@ Format
 A ``data.frame`` with the following columns:
 
 year
-    integer year starting with 1929
+   integer year starting with 1929
 
 CorporateProfitsAdj
-    Corporate profits with inventory valuation and capital consumption
-    adjustments in billions of current (not adjusted for inflation) US
-    dollars
+   Corporate profits with inventory valuation and capital consumption
+   adjustments in billions of current (not adjusted for inflation) US
+   dollars
 
 Domestic
-    Domestic industries profits in billions
+   Domestic industries profits in billions
 
 Financial
-    Financial industries profits in billions
+   Financial industries profits in billions
 
 Nonfinancial
-    Nonfinancial industries profits in billions
+   Nonfinancial industries profits in billions
 
 restOfWorld
-    Profits of the "Rest of the world" in their contribution to US Gross
-    Domestic Product in billions
+   Profits of the "Rest of the world" in their contribution to US Gross
+   Domestic Product in billions
 
 FinanceProportion
-    = Financial/Domestic
+   = Financial/Domestic
 
 Details
 ~~~~~~~
@@ -94,16 +94,16 @@ Examples
 
 ::
 
-    data(USFinanceIndustry)
-    plot(FinanceProportion~year, USFinanceIndustry, type='b',
-         ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
-         xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
-         col='blue')
+   data(USFinanceIndustry)
+   plot(FinanceProportion~year, USFinanceIndustry, type='b',
+        ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
+        xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
+        col='blue')
 
-    # Write to a file for Wikimedia Commons
-    svg('USFinanceIndustry.svg')
-    plot(FinanceProportion~year, USFinanceIndustry, type='b',
-         ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
-         xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
-         col='blue')
-    dev.off()
+   # Write to a file for Wikimedia Commons
+   svg('USFinanceIndustry.svg')
+   plot(FinanceProportion~year, USFinanceIndustry, type='b',
+        ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
+        xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
+        col='blue')
+   dev.off()

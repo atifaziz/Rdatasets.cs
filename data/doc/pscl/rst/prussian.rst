@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(prussian)
+   data(prussian)
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 A data frame with 280 observations on the following 3 variables.
 
 ``y``
-    a numeric vector, count of deaths
+   a numeric vector, count of deaths
 
 ``year``
-    a numeric vector, 18XX, year of observation
+   a numeric vector, 18XX, year of observation
 
 ``corp``
-    a ``factor``, corp of Prussian Army generating observation
+   a ``factor``, corp of Prussian Army generating observation
 
 Source
 ~~~~~~
@@ -42,6 +42,6 @@ Examples
 
 ::
 
-    data(prussian)
-    corpP <- glm(y ~ corp, family=poisson,data=prussian)
-    summary(corpP)
+   data(prussian)
+   corpP <- glm(y ~ corp, family=poisson,data=prussian)
+   summary(corpP)

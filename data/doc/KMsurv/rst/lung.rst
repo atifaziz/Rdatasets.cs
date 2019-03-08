@@ -16,16 +16,16 @@ Format
 This data frame contains the following columns:
 
 time
-    Days to death
+   Days to death
 
 death
-    Death indicator (1=dead), complete follow-up on all patients
+   Death indicator (1=dead), complete follow-up on all patients
 
 time2
-    Days to 3/31/80 or death (interim analysis)
+   Days to 3/31/80 or death (interim analysis)
 
 death2
-    Death indicator as of 3/31/80 (1=dead, 0=alive)
+   Death indicator as of 3/31/80 (1=dead, 0=alive)
 
 Source
 ~~~~~~
@@ -38,4 +38,4 @@ Examples
 
 ::
 
-    data(lung)
+   data(lung)

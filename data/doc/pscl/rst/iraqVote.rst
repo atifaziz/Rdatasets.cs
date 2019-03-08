@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(iraqVote)
+   data(iraqVote)
 
 Format
 ~~~~~~
@@ -25,23 +25,23 @@ Format
 A data frame with 100 observations on the following 6 variables.
 
 ``y``
-    a numeric vector, the recorded vote (1 if Aye, 0 if Nay)
+   a numeric vector, the recorded vote (1 if Aye, 0 if Nay)
 
 ``state.abb``
-    two letter abbreviation for each state
+   two letter abbreviation for each state
 
 ``name``
-    senator name, party and state, e.g., ``AKAKA (D HI)``
+   senator name, party and state, e.g., ``AKAKA (D HI)``
 
 ``rep``
-    logical, ``TRUE`` for Republican senators
+   logical, ``TRUE`` for Republican senators
 
 ``state.name``
-    name of state
+   name of state
 
 ``gorevote``
-    numeric, the vote share recorded by Al Gore in the corresponding
-    state in the 2000 Presidential election
+   numeric, the vote share recorded by Al Gore in the corresponding
+   state in the 2000 Presidential election
 
 Details
 ~~~~~~~
@@ -70,8 +70,8 @@ Examples
 
 ::
 
-    data(iraqVote)
-    ## probit model
-    glm1 <- glm(y ~ gorevote + rep,
-                data=iraqVote,
-                family=binomial(link=probit))
+   data(iraqVote)
+   ## probit model
+   glm1 <- glm(y ~ gorevote + rep,
+               data=iraqVote,
+               family=binomial(link=probit))

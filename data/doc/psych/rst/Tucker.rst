@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(Tucker)
+   data(Tucker)
 
 Format
 ~~~~~~
@@ -27,31 +27,31 @@ Format
 A data frame with 9 observations on the following 9 variables.
 
 ``t42``
-    Prefixes
+   Prefixes
 
 ``t54``
-    Suffixes
+   Suffixes
 
 ``t45``
-    Chicago Reading Test: Vocabulary
+   Chicago Reading Test: Vocabulary
 
 ``t46``
-    Chicago Reading Test: Sentences
+   Chicago Reading Test: Sentences
 
 ``t23``
-    First and last letters
+   First and last letters
 
 ``t24``
-    First letters
+   First letters
 
 ``t27``
-    Four letter words
+   Four letter words
 
 ``t10``
-    Completion
+   Completion
 
 ``t51``
-    Same or Opposite
+   Same or Opposite
 
 Details
 ~~~~~~~
@@ -80,6 +80,6 @@ Examples
 
 ::
 
-    data(Tucker)
-    fa(Tucker,2,n.obs=710)
-    omega(Tucker,2)
+   data(Tucker)
+   fa(Tucker,2,n.obs=710)
+   omega(Tucker,2)

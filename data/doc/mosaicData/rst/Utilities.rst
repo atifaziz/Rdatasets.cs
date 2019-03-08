@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(Utilities)
+   data(Utilities)
 
 Format
 ~~~~~~
@@ -62,8 +62,8 @@ Examples
 
 ::
 
-    data(Utilities)
-    if (require(lattice)) {
-      xyplot(gasbill ~ temp, Utilities)
-    }
+   data(Utilities)
+   if (require(ggformula)) {
+     gf_point(gasbill ~ temp, data = Utilities)
+   }
 

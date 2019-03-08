@@ -21,15 +21,15 @@ Usage
 
 ::
 
-    data(Thurstone)
-    data(Thurstone.33)
-    data(Thurstone.9)
-    data(Holzinger)
-    data(Holzinger.9)
-    data(Bechtoldt)
-    data(Bechtoldt.1)
-    data(Bechtoldt.2)
-    data(Reise)
+   data(Thurstone)
+   data(Thurstone.33)
+   data(Thurstone.9)
+   data(Holzinger)
+   data(Holzinger.9)
+   data(Bechtoldt)
+   data(Bechtoldt.1)
+   data(Bechtoldt.2)
+   data(Reise)
 
 Details
 ~~~~~~~
@@ -168,12 +168,12 @@ Examples
 ::
 
 
-    if(!require(GPArotation)) {message("I am sorry, to run omega requires GPArotation") 
-            } else {
-    #holz <- omega(Holzinger,4, title = "14 ability tests from Holzinger-Swineford")
-    #bf <- omega(Reise,5,title="16 health items from Reise") 
-    #omega(Reise,5,labels=colnames(Reise),title="16 health items from Reise")
-    thur.om <- omega(Thurstone,title="9 variables from Thurstone") #compare with
-    thur.bf   <- fa(Thurstone,3,rotate="biquartimin")
-    factor.congruence(thur.om,thur.bf)
-    }
+   if(!require(GPArotation)) {message("I am sorry, to run omega requires GPArotation") 
+           } else {
+   #holz <- omega(Holzinger,4, title = "14 ability tests from Holzinger-Swineford")
+   #bf <- omega(Reise,5,title="16 health items from Reise") 
+   #omega(Reise,5,labels=colnames(Reise),title="16 health items from Reise")
+   thur.om <- omega(Thurstone,title="9 variables from Thurstone") #compare with
+   thur.bf   <- fa(Thurstone,3,rotate="biquartimin")
+   factor.congruence(thur.om,thur.bf)
+   }

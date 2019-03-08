@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    aml
+   aml
 
 Format
 ~~~~~~
@@ -32,17 +32,17 @@ Format
 This data frame contains the following columns:
 
 ``time``
-    The length of the complete remission (in weeks).
+   The length of the complete remission (in weeks).
 
 ``cens``
-    An indicator of right censoring. 1 indicates that the patient had a
-    relapse and so ``time`` is the length of the remission. 0 indicates
-    that the patient had left the study or was still in remission in
-    October 1974, that is the length of remission is right-censored.
+   An indicator of right censoring. 1 indicates that the patient had a
+   relapse and so ``time`` is the length of the remission. 0 indicates
+   that the patient had left the study or was still in remission in
+   October 1974, that is the length of remission is right-censored.
 
 ``group``
-    The group into which the patient was randomized. Group 1 received
-    maintenance chemotherapy, group 2 did not.
+   The group into which the patient was randomized. Group 1 received
+   maintenance chemotherapy, group 2 did not.
 
 Note
 ~~~~

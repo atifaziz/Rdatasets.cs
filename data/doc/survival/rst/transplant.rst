@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("transplant")
+   data("transplant")
 
 Format
 ~~~~~~
@@ -25,22 +25,22 @@ Format
 A data frame with 815 observations on the following 6 variables.
 
 ``age``
-    age at addition to the waiting list
+   age at addition to the waiting list
 
 ``sex``
-    ``m`` or ``f``
+   ``m`` or ``f``
 
 ``abo``
-    blood type: ``A``, ``B``, ``AB`` or ``O``
+   blood type: ``A``, ``B``, ``AB`` or ``O``
 
 ``year``
-    year in which they entered the waiting list
+   year in which they entered the waiting list
 
 ``futime``
-    time from entry to final disposition
+   time from entry to final disposition
 
 ``event``
-    final disposition: ``censored``, ``death``, ``ltx`` or ``withdraw``
+   final disposition: ``censored``, ``death``, ``ltx`` or ``withdraw``
 
 Details
 ~~~~~~~
@@ -78,16 +78,16 @@ Examples
 
 ::
 
-    #since event is a factor, survfit creates competing risk curves
-    pfit <- survfit(Surv(futime, event) ~ abo, transplant)
-    pfit[,2]  #time to liver transplant, by period
-    plot(pfit[,2], mark.time=FALSE, col=1:4, lwd=2, xmax=735,
-           xscale=30.5, xlab="Months", ylab="Fraction transplanted",
-           xaxt = 'n')
-    temp <- c(0, 6, 12, 18, 24)
-    axis(1, temp, temp)
-    legend(450, .35, levels(transplant$abo), lty=1, col=1:4, lwd=2, bty='n')
+   #since event is a factor, survfit creates competing risk curves
+   pfit <- survfit(Surv(futime, event) ~ abo, transplant)
+   pfit[,2]  #time to liver transplant, by period
+   plot(pfit[,2], mark.time=FALSE, col=1:4, lwd=2, xmax=735,
+          xscale=30.5, xlab="Months", ylab="Fraction transplanted",
+          xaxt = 'n')
+   temp <- c(0, 6, 12, 18, 24)
+   axis(1, temp, temp)
+   legend(450, .35, levels(transplant$abo), lty=1, col=1:4, lwd=2, bty='n')
 
-    # competing risks for type O
-    plot(pfit[4,], xscale=30.5, xmax=735, col=1:3, lwd=2)
-    legend(450, .4, c("Death", "Transpant", "Withdrawal"), col=1:3, lwd=2)
+   # competing risks for type O
+   plot(pfit[4,], xscale=30.5, xmax=735, col=1:3, lwd=2)
+   legend(450, .4, c("Death", "Transpant", "Withdrawal"), col=1:3, lwd=2)

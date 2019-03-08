@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Florida
+   Florida
 
 Format
 ~~~~~~
@@ -24,37 +24,37 @@ Format
 This data frame contains the following columns:
 
 GORE
-    Number of votes for Gore
+   Number of votes for Gore
 
 BUSH
-    Number of votes for Bush.
+   Number of votes for Bush.
 
 BUCHANAN
-    Number of votes for Buchanan.
+   Number of votes for Buchanan.
 
 NADER
-    Number of votes for Nader.
+   Number of votes for Nader.
 
 BROWNE
-    Number of votes for Browne (whoever that is).
+   Number of votes for Browne (whoever that is).
 
 HAGELIN
-    Number of votes for Hagelin (whoever that is).
+   Number of votes for Hagelin (whoever that is).
 
 HARRIS
-    Number of votes for Harris (whoever that is).
+   Number of votes for Harris (whoever that is).
 
 MCREYNOLDS
-    Number of votes for McReynolds (whoever that is).
+   Number of votes for McReynolds (whoever that is).
 
 MOOREHEAD
-    Number of votes for Moorehead (whoever that is).
+   Number of votes for Moorehead (whoever that is).
 
 PHILLIPS
-    Number of votes for Phillips (whoever that is).
+   Number of votes for Phillips (whoever that is).
 
 Total
-    Total number of votes.
+   Total number of votes.
 
 Source
 ~~~~~~

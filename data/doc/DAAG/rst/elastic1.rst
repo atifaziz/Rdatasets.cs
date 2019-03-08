@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    elastic1
+   elastic1
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 This data frame contains the following columns:
 
 stretch
-    the amount by which the elastic band was stretched
+   the amount by which the elastic band was stretched
 
 distance
-    the distance traveled
+   the distance traveled
 
 Source
 ~~~~~~
@@ -40,18 +40,18 @@ Examples
 
 ::
 
-    plot(elastic1)
+   plot(elastic1)
 
-    print("Inline Functions - Example 12.2.2")
-    sapply(elastic1, mean)
-    pause()
+   print("Inline Functions - Example 12.2.2")
+   sapply(elastic1, mean)
+   pause()
 
-    sapply(elastic1, function(x)mean(x))
-    pause()
+   sapply(elastic1, function(x)mean(x))
+   pause()
 
-    sapply(elastic1, function(x)sum(log(x)))
-    pause()
+   sapply(elastic1, function(x)sum(log(x)))
+   pause()
 
-    print("Data Output - Example 12.3.2")
-    write.table(elastic1, file="bandsframe.txt")
+   print("Data Output - Example 12.3.2")
+   write.table(elastic1, file="bandsframe.txt")
 

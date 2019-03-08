@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(IndianIrish)
+   data(IndianIrish)
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 This data frame contains the following columns:
 
 Population
-    Factor with levels: ``Indian`` and ``Irish``
+   Factor with levels: ``Indian`` and ``Irish``
 
 locus1
-    Factor with levels: ``MM``, ``MN`` and ``NN``
+   Factor with levels: ``MM``, ``MN`` and ``NN``
 
 locus2
-    Factor with levels: ``SS``, ``Ss`` and ``ss``
+   Factor with levels: ``SS``, ``Ss`` and ``ss``
 
 Observed
-    a numeric vector giving the frequency for each category of the tale
+   a numeric vector giving the frequency for each category of the tale
 
 Source
 ~~~~~~
@@ -61,5 +61,5 @@ Examples
 
 ::
 
-    data(IndianIrish)
-    hwde(data=IndianIrish)
+   data(IndianIrish)
+   hwde(data=IndianIrish)

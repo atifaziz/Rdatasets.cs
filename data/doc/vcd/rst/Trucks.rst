@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data("Trucks")
+   data("Trucks")
 
 Format
 ~~~~~~
@@ -27,22 +27,22 @@ Format
 A data frame with 24 observations on 5 variables.
 
 Freq
-    frequency of accidents involving trucks.
+   frequency of accidents involving trucks.
 
 period
-    factor indicating time period (before, after) 1971-11-01.
+   factor indicating time period (before, after) 1971-11-01.
 
 collision
-    factor indicating whether the collision was in the back or forward
-    (including the front and the sides) of the truck (back, forward).
+   factor indicating whether the collision was in the back or forward
+   (including the front and the sides) of the truck (back, forward).
 
 parked
-    factor indicating whether the truck was parked (yes, no).
+   factor indicating whether the truck was parked (yes, no).
 
 light
-    factor indicating light conditions: day light (daylight), night on
-    an illuminated road (night, illuminate), night on a dark road
-    (night, dark).
+   factor indicating light conditions: day light (daylight), night on an
+   illuminated road (night, illuminate), night on a dark road (night,
+   dark).
 
 Source
 ~~~~~~
@@ -61,9 +61,9 @@ Examples
 
 ::
 
-    library(MASS)
-    data("Trucks")
-    tab <- xtabs(Freq ~ period + collision + light + parked, data = Trucks)
-    loglm(~ (collision + period) * parked * light, data = tab)
-    doubledecker(collision ~ parked + light + period, data = tab)
-    cotabplot(tab, panel = cotab_coindep)
+   library(MASS)
+   data("Trucks")
+   tab <- xtabs(Freq ~ period + collision + light + parked, data = Trucks)
+   loglm(~ (collision + period) * parked * light, data = tab)
+   doubledecker(collision ~ parked + light + period, data = tab)
+   cotabplot(tab, panel = cotab_coindep)

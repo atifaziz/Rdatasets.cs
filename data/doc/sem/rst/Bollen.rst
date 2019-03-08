@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Bollen
+   Bollen
 
 Format
 ~~~~~~
@@ -25,37 +25,37 @@ Format
 A data frame with 75 observations on the following 11 variables.
 
 ``y1``
-    freedom of the press, 1960
+   freedom of the press, 1960
 
 ``y2``
-    freedom of political opposition, 1960
+   freedom of political opposition, 1960
 
 ``y3``
-    fairness of elections, 1960
+   fairness of elections, 1960
 
 ``y4``
-    effectivness of elected legislature, 1960
+   effectivness of elected legislature, 1960
 
 ``y5``
-    freedom of the press, 1965
+   freedom of the press, 1965
 
 ``y6``
-    freedom of political opposition, 1965
+   freedom of political opposition, 1965
 
 ``y7``
-    fairness of elections, 1965
+   fairness of elections, 1965
 
 ``y8``
-    effectivness of elected legislature, 1965
+   effectivness of elected legislature, 1965
 
 ``x1``
-    GNP per capita, 1960
+   GNP per capita, 1960
 
 ``x2``
-    energy consumption per capita, 1960
+   energy consumption per capita, 1960
 
 ``x3``
-    percentage of labor force in industry, 1960
+   percentage of labor force in industry, 1960
 
 Details
 ~~~~~~~

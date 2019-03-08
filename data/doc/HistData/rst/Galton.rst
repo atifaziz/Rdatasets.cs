@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(Galton)
+   data(Galton)
 
 Format
 ~~~~~~
@@ -28,11 +28,11 @@ Format
 A data frame with 928 observations on the following 2 variables.
 
 ``parent``
-    a numeric vector: height of the mid-parent (average of father and
-    mother)
+   a numeric vector: height of the mid-parent (average of father and
+   mother)
 
 ``child``
-    a numeric vector: height of the child
+   a numeric vector: height of the child
 
 Details
 ~~~~~~~
@@ -87,20 +87,20 @@ Examples
 ::
 
 
-    data(Galton)
+   data(Galton)
 
-    ###########################################################################
-    # sunflower plot with regression line and data ellipses and lowess smooth
-    ###########################################################################
+   ###########################################################################
+   # sunflower plot with regression line and data ellipses and lowess smooth
+   ###########################################################################
 
-    with(Galton, 
-        {
-        sunflowerplot(parent,child, xlim=c(62,74), ylim=c(62,74))
-        reg <- lm(child ~ parent)
-        abline(reg)
-        lines(lowess(parent, child), col="blue", lwd=2)
-        if(require(car)) {
-        dataEllipse(parent,child, xlim=c(62,74), ylim=c(62,74), plot.points=FALSE)
-            }
-      })
+   with(Galton, 
+       {
+       sunflowerplot(parent,child, xlim=c(62,74), ylim=c(62,74))
+       reg <- lm(child ~ parent)
+       abline(reg)
+       lines(lowess(parent, child), col="blue", lwd=2)
+       if(require(car)) {
+       dataEllipse(parent,child, xlim=c(62,74), ylim=c(62,74), plot.points=FALSE)
+           }
+     })
 

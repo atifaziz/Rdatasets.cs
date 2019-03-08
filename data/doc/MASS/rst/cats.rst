@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    cats
+   cats
 
 Format
 ~~~~~~
@@ -24,13 +24,13 @@ Format
 This data frame contains the following columns:
 
 ``Sex``
-    sex: Factor with evels ``"F"`` and ``"M"``.
+   sex: Factor with evels ``"F"`` and ``"M"``.
 
 ``Bwt``
-    body weight in kg.
+   body weight in kg.
 
 ``Hwt``
-    heart weight in g.
+   heart weight in g.
 
 Source
 ~~~~~~

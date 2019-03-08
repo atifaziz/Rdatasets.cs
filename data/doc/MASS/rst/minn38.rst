@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    minn38
+   minn38
 
 Format
 ~~~~~~
@@ -25,23 +25,23 @@ Format
 This data frame contains the following columns:
 
 ``hs``
-    high school rank: ``"L"``, ``"M"`` and ``"U"`` for lower, middle and
-    upper third.
+   high school rank: ``"L"``, ``"M"`` and ``"U"`` for lower, middle and
+   upper third.
 
 ``phs``
-    post high school status: Enrolled in college, (``"C"``), enrolled in
-    non-collegiate school, (``"N"``), employed full-time, (``"E"``) and
-    other, (``"O"``).
+   post high school status: Enrolled in college, (``"C"``), enrolled in
+   non-collegiate school, (``"N"``), employed full-time, (``"E"``) and
+   other, (``"O"``).
 
 ``fol``
-    father's occupational level, (seven levels, ``"F1"``, ``"F2"``, ...,
-    ``"F7"``).
+   father's occupational level, (seven levels, ``"F1"``, ``"F2"``, ...,
+   ``"F7"``).
 
 ``sex``
-    sex: factor with levels\ ``"F"`` or ``"M"``.
+   sex: factor with levels\ ``"F"`` or ``"M"``.
 
 ``f``
-    frequency.
+   frequency.
 
 Source
 ~~~~~~

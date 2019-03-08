@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    sunspots
+   sunspots
 
 Format
 ~~~~~~
@@ -43,6 +43,6 @@ Examples
 
 ::
 
-    require(graphics)
-    plot(sunspots, main = "sunspots data", xlab = "Year",
-         ylab = "Monthly sunspot numbers")
+   require(graphics)
+   plot(sunspots, main = "sunspots data", xlab = "Year",
+        ylab = "Monthly sunspot numbers")

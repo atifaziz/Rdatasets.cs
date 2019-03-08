@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Airline)
+   data(Airline)
 
 Format
 ~~~~~~
@@ -29,22 +29,22 @@ Format
 A dataframe containing :
 
 airline
-    airline
+   airline
 
 year
-    year
+   year
 
 cost
-    total cost, in \\$1,000
+   total cost, in \\$1,000
 
 output
-    output, in revenue passenger miles, index number
+   output, in revenue passenger miles, index number
 
 pf
-    fuel price
+   fuel price
 
 lf
-    load factor, the average capacity utilization of the fleet
+   load factor, the average capacity utilization of the fleet
 
 References
 ~~~~~~~~~~

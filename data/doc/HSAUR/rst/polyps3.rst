@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("polyps3")
+   data("polyps3")
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 A data frame with 22 observations on the following 5 variables.
 
 ``sex``
-    a factor with levels ``female`` and ``male``.
+   a factor with levels ``female`` and ``male``.
 
 ``treatment``
-    a factor with levels ``placebo`` and ``active``.
+   a factor with levels ``placebo`` and ``active``.
 
 ``baseline``
-    the baseline number of polyps.
+   the baseline number of polyps.
 
 ``age``
-    the age of the patient.
+   the age of the patient.
 
 ``number3m``
-    the number of polyps after three month.
+   the number of polyps after three month.
 
 Details
 ~~~~~~~
@@ -63,7 +63,7 @@ Examples
 ::
 
 
-      data("polyps3", package = "HSAUR")
-      plot(number3m ~ age, data = polyps3, pch = as.numeric(polyps3$treatment))
-      legend("topright", legend = levels(polyps3$treatment), pch = 1:2, bty = "n")
+     data("polyps3", package = "HSAUR")
+     plot(number3m ~ age, data = polyps3, pch = as.numeric(polyps3$treatment))
+     legend("topright", legend = levels(polyps3$treatment), pch = 1:2, bty = "n")
 

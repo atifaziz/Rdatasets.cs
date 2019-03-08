@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    newcomb
+   newcomb
 
 Source
 ~~~~~~

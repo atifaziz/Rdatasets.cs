@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(SP500)
+   data(SP500)
 
 Format
 ~~~~~~
@@ -25,7 +25,7 @@ Format
 A dataframe containing :
 
 r500
-    daily return S\&P500 (change in log index)
+   daily return S\&P500 (change in log index)
 
 References
 ~~~~~~~~~~

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("rearrests")
+   data("rearrests")
 
 Format
 ~~~~~~
@@ -46,6 +46,6 @@ Examples
 ::
 
 
-      data("rearrests", package = "HSAUR")
-      rearrests
+     data("rearrests", package = "HSAUR")
+     rearrests
 

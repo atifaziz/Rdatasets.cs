@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    painters
+   painters
 
 Format
 ~~~~~~
@@ -26,22 +26,22 @@ Format
 The row names of the data frame are the painters. The components are:
 
 ``Composition``
-    Composition score.
+   Composition score.
 
 ``Drawing``
-    Drawing score.
+   Drawing score.
 
 ``Colour``
-    Colour score.
+   Colour score.
 
 ``Expression``
-    Expression score.
+   Expression score.
 
 ``School``
-    The school to which a painter belongs, as indicated by a factor
-    level code as follows: ``"A"``: Renaissance; ``"B"``: Mannerist;
-    ``"C"``: Seicento; ``"D"``: Venetian; ``"E"``: Lombard; ``"F"``:
-    Sixteenth Century; ``"G"``: Seventeenth Century; ``"H"``: French.
+   The school to which a painter belongs, as indicated by a factor level
+   code as follows: ``"A"``: Renaissance; ``"B"``: Mannerist; ``"C"``:
+   Seicento; ``"D"``: Venetian; ``"E"``: Lombard; ``"F"``: Sixteenth
+   Century; ``"G"``: Seventeenth Century; ``"H"``: French.
 
 Source
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(telef)
+   data(telef, package="robustbase")
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 A data frame with 24 observations on the following 2 variables.
 
 ``Calls``
-    Number of Calls (in tens of millions)
+   Number of Calls (in tens of millions)
 
 ``Year``
-    Year (1950 - 1973)
+   Year (1950 - 1973)
 
 Source
 ~~~~~~
@@ -40,6 +40,6 @@ Examples
 
 ::
 
-    data(telef)
-    summary(lm.telef <- lm(Year~., data=telef))
+   data(telef)
+   summary(lm.telef <- lm(Year~., data=telef))
 

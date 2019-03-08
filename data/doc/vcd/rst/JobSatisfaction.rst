@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("JobSatisfaction")
+   data("JobSatisfaction")
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 A data frame with 8 observations and 4 variables.
 
 Freq
-    frequency.
+   frequency.
 
 management
-    factor indicating quality of management (bad, good).
+   factor indicating quality of management (bad, good).
 
 supervisor
-    factor indicating supervisor's job satisfaction (low, high).
+   factor indicating supervisor's job satisfaction (low, high).
 
 own
-    factor indicating worker's own job satisfaction (low, high).
+   factor indicating worker's own job satisfaction (low, high).
 
 Source
 ~~~~~~
@@ -55,9 +55,9 @@ Examples
 
 ::
 
-    data("JobSatisfaction")
-    structable(~ ., data = JobSatisfaction)
+   data("JobSatisfaction")
+   structable(~ ., data = JobSatisfaction)
 
-    mantelhaen.test(xtabs(Freq ~ own + supervisor + management,
-                          data = JobSatisfaction))
+   mantelhaen.test(xtabs(Freq ~ own + supervisor + management,
+                         data = JobSatisfaction))
 

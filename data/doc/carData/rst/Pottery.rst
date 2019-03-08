@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Pottery
+   Pottery
 
 Format
 ~~~~~~
@@ -25,23 +25,23 @@ Format
 A data frame with 26 observations on the following 6 variables.
 
 ``Site``
-    a factor with levels ``AshleyRails`` ``Caldicot`` ``IsleThorns``
-    ``Llanedyrn``
+   a factor with levels ``AshleyRails`` ``Caldicot`` ``IsleThorns``
+   ``Llanedyrn``
 
 ``Al``
-    Aluminum
+   Aluminum
 
 ``Fe``
-    Iron
+   Iron
 
 ``Mg``
-    Magnesium
+   Magnesium
 
 ``Ca``
-    Calcium
+   Calcium
 
 ``Na``
-    Sodium
+   Sodium
 
 Source
 ~~~~~~
@@ -54,4 +54,4 @@ Examples
 
 ::
 
-    Pottery
+   Pottery

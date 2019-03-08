@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    shuttle
+   shuttle
 
 Format
 ~~~~~~
@@ -26,26 +26,26 @@ Format
 This data frame contains the following factor columns:
 
 ``stability``
-    stable positioning or not (``stab`` / ``xstab``).
+   stable positioning or not (``stab`` / ``xstab``).
 
 ``error``
-    size of error (``MM`` / ``SS`` / ``LX`` / ``XL``).
+   size of error (``MM`` / ``SS`` / ``LX`` / ``XL``).
 
 ``sign``
-    sign of error, positive or negative (``pp`` / ``nn``).
+   sign of error, positive or negative (``pp`` / ``nn``).
 
 ``wind``
-    wind sign (``head`` / ``tail``).
+   wind sign (``head`` / ``tail``).
 
 ``magn``
-    wind strength (``Light`` / ``Medium`` / ``Strong`` /
-    ``Out of Range``).
+   wind strength (``Light`` / ``Medium`` / ``Strong`` /
+   ``Out of Range``).
 
 ``vis``
-    visibility (``yes`` / ``no``).
+   visibility (``yes`` / ``no``).
 
 ``use``
-    use the autolander or not. (``auto`` / ``noauto``.)
+   use the autolander or not. (``auto`` / ``noauto``.)
 
 Source
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    CanPop
+   CanPop
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 This data frame contains the following columns:
 
 year
-    census year.
+   census year.
 
 population
-    Population, in millions
+   Population, in millions
 
 Source
 ~~~~~~

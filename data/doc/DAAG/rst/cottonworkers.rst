@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(cottonworkers)
+   data(cottonworkers)
 
 Format
 ~~~~~~
@@ -27,17 +27,16 @@ Format
 A data frame with 14 observations on the following 3 variables.
 
 census1886
-    Numbers of workers in each of 14 different categories, according to
-    the Board of Trade wage census that was conducted in 1886
+   Numbers of workers in each of 14 different categories, according to
+   the Board of Trade wage census that was conducted in 1886
 
 survey1889
-    Numbers of workers in each of 14 different categories, according to
-    data collected in 1889 by the US Bureau of Labor, for use in a
-    report to the US Congress and House of Representatives
+   Numbers of workers in each of 14 different categories, according to
+   data collected in 1889 by the US Bureau of Labor, for use in a report
+   to the US Congress and House of Representatives
 
 avwage
-    Average wage, in pence, as estimated in the US Bureau of Labor
-    survey
+   Average wage, in pence, as estimated in the US Bureau of Labor survey
 
 Details
 ~~~~~~~
@@ -71,7 +70,7 @@ Examples
 
 ::
 
-    data(cottonworkers)
-    str(cottonworkers)
-    plot(survey1889 ~ census1886, data=cottonworkers)
-    plot(I(avwage*survey1889) ~ I(avwage*census1886), data=cottonworkers)
+   data(cottonworkers)
+   str(cottonworkers)
+   plot(survey1889 ~ census1886, data=cottonworkers)
+   plot(I(avwage*survey1889) ~ I(avwage*census1886), data=cottonworkers)

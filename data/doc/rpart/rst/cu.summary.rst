@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    cu.summary
+   cu.summary
 
 Format
 ~~~~~~
@@ -24,23 +24,23 @@ Format
 This data frame contains the following columns:
 
 ``Price``
-    a numeric vector giving the list price in US dollars of a standard
-    model
+   a numeric vector giving the list price in US dollars of a standard
+   model
 
 ``Country``
-    of origin, a factor with levels Brazil, England, France, Germany,
-    Japan, Japan/USA, Korea, Mexico, Sweden and USA
+   of origin, a factor with levels Brazil, England, France, Germany,
+   Japan, Japan/USA, Korea, Mexico, Sweden and USA
 
 ``Reliability``
-    an ordered factor with levels Much worse < worse < average < better
-    < Much better
+   an ordered factor with levels Much worse < worse < average < better <
+   Much better
 
 ``Mileage``
-    fuel consumption miles per US gallon, as tested.
+   fuel consumption miles per US gallon, as tested.
 
 ``Type``
-    a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
-    ``Sporty`` ``Van``
+   a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
+   ``Sporty`` ``Van``
 
 Source
 ~~~~~~
@@ -60,7 +60,7 @@ Examples
 
 ::
 
-    fit <- rpart(Price ~ Mileage + Type + Country, cu.summary)
-    par(xpd = TRUE)
-    plot(fit, compress = TRUE)
-    text(fit, use.n = TRUE)
+   fit <- rpart(Price ~ Mileage + Type + Country, cu.summary)
+   par(xpd = TRUE)
+   plot(fit, compress = TRUE)
+   text(fit, use.n = TRUE)

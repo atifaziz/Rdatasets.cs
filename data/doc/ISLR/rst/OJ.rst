@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    OJ
+   OJ
 
 Format
 ~~~~~~
@@ -25,60 +25,60 @@ Format
 A data frame with 1070 observations on the following 18 variables.
 
 ``Purchase``
-    A factor with levels ``CH`` and ``MM`` indicating whether the
-    customer purchased Citrus Hill or Minute Maid Orange Juice
+   A factor with levels ``CH`` and ``MM`` indicating whether the
+   customer purchased Citrus Hill or Minute Maid Orange Juice
 
 ``WeekofPurchase``
-    Week of purchase
+   Week of purchase
 
 ``StoreID``
-    Store ID
+   Store ID
 
 ``PriceCH``
-    Price charged for CH
+   Price charged for CH
 
 ``PriceMM``
-    Price charged for MM
+   Price charged for MM
 
 ``DiscCH``
-    Discount offered for CH
+   Discount offered for CH
 
 ``DiscMM``
-    Discount offered for MM
+   Discount offered for MM
 
 ``SpecialCH``
-    Indicator of special on CH
+   Indicator of special on CH
 
 ``SpecialMM``
-    Indicator of special on MM
+   Indicator of special on MM
 
 ``LoyalCH``
-    Customer brand loyalty for CH
+   Customer brand loyalty for CH
 
 ``SalePriceMM``
-    Sale price for MM
+   Sale price for MM
 
 ``SalePriceCH``
-    Sale price for CH
+   Sale price for CH
 
 ``PriceDiff``
-    Sale price of MM less sale price of CH
+   Sale price of MM less sale price of CH
 
 ``Store7``
-    A factor with levels ``No`` and ``Yes`` indicating whether the sale
-    is at Store 7
+   A factor with levels ``No`` and ``Yes`` indicating whether the sale
+   is at Store 7
 
 ``PctDiscMM``
-    Percentage discount for MM
+   Percentage discount for MM
 
 ``PctDiscCH``
-    Percentage discount for CH
+   Percentage discount for CH
 
 ``ListPriceDiff``
-    List price of MM less list price of CH
+   List price of MM less list price of CH
 
 ``STORE``
-    Which of 5 possible stores the sale occured at
+   Which of 5 possible stores the sale occured at
 
 Source
 ~~~~~~
@@ -99,5 +99,5 @@ Examples
 
 ::
 
-    summary(OJ)
-    plot(OJ$Purchase,OJ$PriceCH)
+   summary(OJ)
+   plot(OJ$Purchase,OJ$PriceCH)

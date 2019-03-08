@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(edcT)
+   data(edcT)
 
 Format
 ~~~~~~
@@ -25,20 +25,20 @@ Format
 A data frame with 5788 observations on the following 5 variables.
 
 ``Bag``
-    Bag number
+   Bag number
 
 ``ztop``
-    Top depth (m)
+   Top depth (m)
 
 ``Age``
-    Years before 1950
+   Years before 1950
 
 ``Deuterium``
-    Deuterium dD data
+   Deuterium dD data
 
 ``dT``
-    Temperature difference from the average of the last 1000 years ~
-    -54.5degC
+   Temperature difference from the average of the last 1000 years ~
+   -54.5degC
 
 Details
 ~~~~~~~
@@ -68,4 +68,4 @@ Examples
 
 ::
 
-     data(edcT) 
+    data(edcT) 

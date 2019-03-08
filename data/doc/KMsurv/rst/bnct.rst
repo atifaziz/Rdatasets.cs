@@ -16,13 +16,13 @@ Format
 This data frame contains the following columns:
 
 trt
-    Treatment (1=untreated, 2=radiated, 3=radiated + BPA)
+   Treatment (1=untreated, 2=radiated, 3=radiated + BPA)
 
 time
-    Death time or on-study time, days
+   Death time or on-study time, days
 
 death
-    Death indicator (1=dead, 0=alive)
+   Death indicator (1=dead, 0=alive)
 
 Source
 ~~~~~~
@@ -35,4 +35,4 @@ Examples
 
 ::
 
-    data(bnct)
+   data(bnct)

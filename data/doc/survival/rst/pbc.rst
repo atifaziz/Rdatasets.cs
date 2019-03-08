@@ -28,7 +28,7 @@ Usage
 
 ::
 
-    pbc
+   pbc
 
 Format
 ~~~~~~
@@ -86,3 +86,8 @@ Source
 
 T Therneau and P Grambsch (2000), *Modeling Survival Data: Extending the
 Cox Model*, Springer-Verlag, New York. ISBN: 0-387-98784-3.
+
+See Also
+~~~~~~~~
+
+``pbcseq``

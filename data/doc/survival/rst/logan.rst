@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(logan)
+   data(logan)
 
 Format
 ~~~~~~
@@ -23,17 +23,17 @@ Format
 A data frame with 838 observations on the following 4 variables.
 
 occupation
-    subject's occupation, a factor with levels ``farm``, ``operatives``,
-    ``craftsmen``, ``sales``, and ``professional``
+   subject's occupation, a factor with levels ``farm``, ``operatives``,
+   ``craftsmen``, ``sales``, and ``professional``
 
 focc
-    father's occupation
+   father's occupation
 
 education
-    total years of schooling, 0 to 20
+   total years of schooling, 0 to 20
 
 race
-    levels of ``non-black`` and ``black``
+   levels of ``non-black`` and ``black``
 
 Source
 ~~~~~~

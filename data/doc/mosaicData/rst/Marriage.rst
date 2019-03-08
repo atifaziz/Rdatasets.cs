@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(Marriage)
+   data(Marriage)
 
 Format
 ~~~~~~
@@ -87,5 +87,5 @@ Examples
 
 ::
 
-    data(Marriage)
+   data(Marriage)
 

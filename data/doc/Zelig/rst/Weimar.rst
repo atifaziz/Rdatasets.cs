@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(Weimar)
+   data(Weimar)
 
 Format
 ~~~~~~
@@ -24,34 +24,34 @@ Format
 A table containing 11 variables and 10 observations. The variables are
 
 Nazi
-    Number of votes for the Nazi party
+   Number of votes for the Nazi party
 
 Government
-    Number of votes for the Government
+   Number of votes for the Government
 
 Communists
-    Number of votes for the Communist party
+   Number of votes for the Communist party
 
 FarRight
-    Number of votes for far right parties
+   Number of votes for far right parties
 
 Other
-    Number of votes for other parties, and non-voters
+   Number of votes for other parties, and non-voters
 
 shareunemployed
-    Proportion unemployed
+   Proportion unemployed
 
 shareblue
-    Proportion working class
+   Proportion working class
 
 sharewhite
-    Proportion white-collar workers
+   Proportion white-collar workers
 
 sharedomestic
-    Proportion domestic servants
+   Proportion domestic servants
 
 shareprotestants
-    Proportion Protestant
+   Proportion Protestant
 
 Source
 ~~~~~~

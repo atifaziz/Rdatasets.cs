@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("mastectomy")
+   data("mastectomy")
 
 Format
 ~~~~~~
@@ -25,14 +25,14 @@ Format
 A data frame with 42 observations on the following 3 variables.
 
 time
-    survival times in months.
+   survival times in months.
 
 event
-    a logical indicating if the event was observed (``TRUE``) or if the
-    survival time was censored (``FALSE``).
+   a logical indicating if the event was observed (``TRUE``) or if the
+   survival time was censored (``FALSE``).
 
 metastized
-    a factor at levels ``yes`` and ``no``.
+   a factor at levels ``yes`` and ``no``.
 
 Source
 ~~~~~~
@@ -46,5 +46,5 @@ Examples
 ::
 
 
-      data("mastectomy", package = "HSAUR")
-      table(mastectomy$metastized)
+     data("mastectomy", package = "HSAUR")
+     table(mastectomy$metastized)

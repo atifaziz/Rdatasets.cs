@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Crime)
+   data(Crime)
 
 Format
 ~~~~~~
@@ -29,77 +29,77 @@ Format
 A data frame containing :
 
 county
-    county identifier
+   county identifier
 
 year
-    year from 1981 to 1987
+   year from 1981 to 1987
 
 crmrte
-    crimes committed per person
+   crimes committed per person
 
 prbarr
-    'probability' of arrest
+   'probability' of arrest
 
 prbconv
-    'probability' of conviction
+   'probability' of conviction
 
 prbpris
-    'probability' of prison sentence
+   'probability' of prison sentence
 
 avgsen
-    average sentence, days
+   average sentence, days
 
 polpc
-    police per capita
+   police per capita
 
 density
-    people per square mile
+   people per square mile
 
 taxpc
-    tax revenue per capita
+   tax revenue per capita
 
 region
-    factor. One of 'other', 'west' or 'central'.
+   factor. One of 'other', 'west' or 'central'.
 
 smsa
-    factor. (Also called "urban".) Does the individual reside in a SMSA
-    (standard metropolitan statistical area)?
+   factor. (Also called "urban".) Does the individual reside in a SMSA
+   (standard metropolitan statistical area)?
 
 pctmin
-    percentage minority in 1980
+   percentage minority in 1980
 
 wcon
-    weekly wage in construction
+   weekly wage in construction
 
 wtuc
-    weekly wage in transportation, utilities, communications
+   weekly wage in transportation, utilities, communications
 
 wtrd
-    weekly wage in wholesale and retail trade
+   weekly wage in wholesale and retail trade
 
 wfir
-    weekly wage in finance, insurance and real estate
+   weekly wage in finance, insurance and real estate
 
 wser
-    weekly wage in service industry
+   weekly wage in service industry
 
 wmfg
-    weekly wage in manufacturing
+   weekly wage in manufacturing
 
 wfed
-    weekly wage in federal government
+   weekly wage in federal government
 
 wsta
-    weekly wage in state government
+   weekly wage in state government
 
 wloc
-    weekly wage in local government
+   weekly wage in local government
 
 mix
-    offence mix: face-to-face/other
+   offence mix: face-to-face/other
 
 pctymle
-    percentage of young males (between ages 15 to 24)
+   percentage of young males (between ages 15 to 24)
 
 Source
 ~~~~~~

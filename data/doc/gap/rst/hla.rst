@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(hla)
+   data(hla)
 
 Format
 ~~~~~~

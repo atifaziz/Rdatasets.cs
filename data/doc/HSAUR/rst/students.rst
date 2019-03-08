@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("students")
+   data("students")
 
 Format
 ~~~~~~
@@ -24,13 +24,13 @@ Format
 A data frame with 35 observations on the following 3 variables.
 
 ``treatment``
-    a factor with levels ``AA``, ``C``, and ``NC``.
+   a factor with levels ``AA``, ``C``, and ``NC``.
 
 ``low``
-    the result of the first test.
+   the result of the first test.
 
 ``high``
-    the result of the second test.
+   the result of the second test.
 
 Details
 ~~~~~~~
@@ -52,8 +52,8 @@ Examples
 ::
 
 
-      data("students", package = "HSAUR")
-      layout(matrix(1:2, ncol = 2))
-      boxplot(low ~ treatment, data = students, ylab = "low")
-      boxplot(high ~ treatment, data = students, ylab = "high")
+     data("students", package = "HSAUR")
+     layout(matrix(1:2, ncol = 2))
+     boxplot(low ~ treatment, data = students, ylab = "low")
+     boxplot(high ~ treatment, data = students, ylab = "high")
 

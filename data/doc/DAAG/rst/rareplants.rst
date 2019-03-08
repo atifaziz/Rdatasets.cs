@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    rareplants
+   rareplants
 
 Format
 ~~~~~~
@@ -38,4 +38,4 @@ Examples
 
 ::
 
-    chisq.test(rareplants)
+   chisq.test(rareplants)

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    anorexia
+   anorexia
 
 Format
 ~~~~~~
@@ -24,14 +24,14 @@ Format
 This data frame contains the following columns:
 
 ``Treat``
-    Factor of three levels: ``"Cont"`` (control), ``"CBT"`` (Cognitive
-    Behavioural treatment) and ``"FT"`` (family treatment).
+   Factor of three levels: ``"Cont"`` (control), ``"CBT"`` (Cognitive
+   Behavioural treatment) and ``"FT"`` (family treatment).
 
 ``Prewt``
-    Weight of patient before study period, in lbs.
+   Weight of patient before study period, in lbs.
 
 ``Postwt``
-    Weight of patient after study period, in lbs.
+   Weight of patient after study period, in lbs.
 
 Source
 ~~~~~~

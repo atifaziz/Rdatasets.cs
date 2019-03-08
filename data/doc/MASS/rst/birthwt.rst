@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    birthwt
+   birthwt
 
 Format
 ~~~~~~
@@ -24,34 +24,34 @@ Format
 This data frame contains the following columns:
 
 ``low``
-    indicator of birth weight less than 2.5 kg.
+   indicator of birth weight less than 2.5 kg.
 
 ``age``
-    mother's age in years.
+   mother's age in years.
 
 ``lwt``
-    mother's weight in pounds at last menstrual period.
+   mother's weight in pounds at last menstrual period.
 
 ``race``
-    mother's race (``1`` = white, ``2`` = black, ``3`` = other).
+   mother's race (``1`` = white, ``2`` = black, ``3`` = other).
 
 ``smoke``
-    smoking status during pregnancy.
+   smoking status during pregnancy.
 
 ``ptl``
-    number of previous premature labours.
+   number of previous premature labours.
 
 ``ht``
-    history of hypertension.
+   history of hypertension.
 
 ``ui``
-    presence of uterine irritability.
+   presence of uterine irritability.
 
 ``ftv``
-    number of physician visits during the first trimester.
+   number of physician visits during the first trimester.
 
 ``bwt``
-    birth weight in grams.
+   birth weight in grams.
 
 Source
 ~~~~~~
@@ -70,13 +70,13 @@ Examples
 
 ::
 
-    bwt <- with(birthwt, {
-    race <- factor(race, labels = c("white", "black", "other"))
-    ptd <- factor(ptl > 0)
-    ftv <- factor(ftv)
-    levels(ftv)[-(1:2)] <- "2+"
-    data.frame(low = factor(low), age, lwt, race, smoke = (smoke > 0),
-               ptd, ht = (ht > 0), ui = (ui > 0), ftv)
-    })
-    options(contrasts = c("contr.treatment", "contr.poly"))
-    glm(low ~ ., binomial, bwt)
+   bwt <- with(birthwt, {
+   race <- factor(race, labels = c("white", "black", "other"))
+   ptd <- factor(ptl > 0)
+   ftv <- factor(ftv)
+   levels(ftv)[-(1:2)] <- "2+"
+   data.frame(low = factor(low), age, lwt, race, smoke = (smoke > 0),
+              ptd, ht = (ht > 0), ui = (ui > 0), ftv)
+   })
+   options(contrasts = c("contr.treatment", "contr.poly"))
+   glm(low ~ ., binomial, bwt)

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(koch)
+   data(koch)
 
 Format
 ~~~~~~
@@ -23,22 +23,22 @@ Format
 This data frame contains the following columns:
 
 trt
-    a numeric vector
+   a numeric vector
 
 day
-    a numeric vector
+   a numeric vector
 
 y
-    an ordered factor with levels: ``1`` < ``2`` < ``3``
+   an ordered factor with levels: ``1`` < ``2`` < ``3``
 
 id
-    a numeric vector
+   a numeric vector
 
 Examples
 ~~~~~~~~
 
 ::
 
-    data(koch)
-    fit <- ordgee(ordered(y) ~ trt + as.factor(day), id=id, data=koch, corstr="exch")
-    summary(fit)
+   data(koch)
+   fit <- ordgee(ordered(y) ~ trt + as.factor(day), id=id, data=koch, corstr="exch")
+   summary(fit)

@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    presidents
+   presidents
 
 Format
 ~~~~~~
@@ -45,6 +45,6 @@ Examples
 
 ::
 
-    require(stats); require(graphics)
-    plot(presidents, las = 1, ylab = "Approval rating (%)",
-         main = "presidents data")
+   require(stats); require(graphics)
+   plot(presidents, las = 1, ylab = "Approval rating (%)",
+        main = "presidents data")

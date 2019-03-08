@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(lbw)
+   data(lbw)
 
 Format
 ~~~~~~
@@ -26,34 +26,34 @@ Format
 A data frame with 189 observations on the following 10 variables.
 
 ``low``
-    1=low birthweight baby; 0=norml weight
+   1=low birthweight baby; 0=norml weight
 
 ``smoke``
-    1=history of mother smoking; 0=mother nonsmoker
+   1=history of mother smoking; 0=mother nonsmoker
 
 ``race``
-    categorical 1-3: 1=white; 2-=black; 3=other
+   categorical 1-3: 1=white; 2-=black; 3=other
 
 ``age``
-    age of mother: 14-45
+   age of mother: 14-45
 
 ``lwt``
-    weight (lbs) at last menstrual period: 80-250 lbs
+   weight (lbs) at last menstrual period: 80-250 lbs
 
 ``ptl``
-    number of false of premature labors: 0-3
+   number of false of premature labors: 0-3
 
 ``ht``
-    1=history of hypertension; 0 =no hypertension
+   1=history of hypertension; 0 =no hypertension
 
 ``ui``
-    1=uterine irritability; 0 no irritability
+   1=uterine irritability; 0 no irritability
 
 ``ftv``
-    number of physician visits in 1st trimester: 0-6
+   number of physician visits in 1st trimester: 0-6
 
 ``bwt``
-    birth weight in grams: 709 - 4990 gr
+   birth weight in grams: 709 - 4990 gr
 
 Details
 ~~~~~~~
@@ -78,11 +78,11 @@ Examples
 
 ::
 
-    data(lbw)
-    glmbwp <- glm(ftv ~ low + smoke + factor(race), family=poisson, data=lbw)
-    summary(glmbwp)
-    exp(coef(glmbwp))
-    library(MASS)
-    glmbwnb <- glm.nb(ftv ~ low + smoke + factor(race), data=lbw)
-    summary(glmbwnb)
-    exp(coef(glmbwnb))
+   data(lbw)
+   glmbwp <- glm(ftv ~ low + smoke + factor(race), family=poisson, data=lbw)
+   summary(glmbwp)
+   exp(coef(glmbwp))
+   library(MASS)
+   glmbwnb <- glm.nb(ftv ~ low + smoke + factor(race), data=lbw)
+   summary(glmbwnb)
+   exp(coef(glmbwnb))

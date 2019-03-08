@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Davis
+   Davis
 
 Format
 ~~~~~~
@@ -24,19 +24,19 @@ Format
 This data frame contains the following columns:
 
 sex
-    A factor with levels: ``F``, female; ``M``, male.
+   A factor with levels: ``F``, female; ``M``, male.
 
 weight
-    Measured weight in kg.
+   Measured weight in kg.
 
 height
-    Measured height in cm.
+   Measured height in cm.
 
 repwt
-    Reported weight in kg.
+   Reported weight in kg.
 
 repht
-    Reported height in cm.
+   Reported height in cm.
 
 Source
 ~~~~~~

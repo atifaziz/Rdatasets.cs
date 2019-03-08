@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(epi.bfi)
+   data(epi.bfi)
 
 Format
 ~~~~~~
@@ -26,43 +26,43 @@ Format
 A data frame with 231 observations on the following 13 variables.
 
 ``epiE``
-    EPI Extraversion
+   EPI Extraversion
 
 ``epiS``
-    EPI Sociability (a subset of Extraversion items
+   EPI Sociability (a subset of Extraversion items
 
 ``epiImp``
-    EPI Impulsivity (a subset of Extraversion items
+   EPI Impulsivity (a subset of Extraversion items
 
 ``epilie``
-    EPI Lie scale
+   EPI Lie scale
 
 ``epiNeur``
-    EPI neuroticism
+   EPI neuroticism
 
 ``bfagree``
-    Big 5 inventory (from the IPIP) measure of Agreeableness
+   Big 5 inventory (from the IPIP) measure of Agreeableness
 
 ``bfcon``
-    Big 5 Conscientiousness
+   Big 5 Conscientiousness
 
 ``bfext``
-    Big 5 Extraversion
+   Big 5 Extraversion
 
 ``bfneur``
-    Big 5 Neuroticism
+   Big 5 Neuroticism
 
 ``bfopen``
-    Big 5 Openness
+   Big 5 Openness
 
 ``bdi``
-    Beck Depression scale
+   Beck Depression scale
 
 ``traitanx``
-    Trait Anxiety
+   Trait Anxiety
 
 ``stateanx``
-    State Anxiety
+   State Anxiety
 
 Details
 ~~~~~~~
@@ -90,6 +90,6 @@ Examples
 
 ::
 
-    data(epi.bfi)
-    pairs.panels(epi.bfi[,1:5])
-    describe(epi.bfi)
+   data(epi.bfi)
+   pairs.panels(epi.bfi[,1:5])
+   describe(epi.bfi)

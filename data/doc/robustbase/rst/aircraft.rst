@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(aircraft)
+   data(aircraft, package="robustbase")
 
 Format
 ~~~~~~
@@ -26,19 +26,19 @@ Format
 A data frame with 23 observations on the following 5 variables.
 
 ``X1``
-    Aspect Ratio
+   Aspect Ratio
 
 ``X2``
-    Lift-to-Drag Ratio
+   Lift-to-Drag Ratio
 
 ``X3``
-    Weight
+   Weight
 
 ``X4``
-    Thrust
+   Thrust
 
 ``Y``
-    Cost
+   Cost
 
 Source
 ~~~~~~
@@ -51,10 +51,10 @@ Examples
 
 ::
 
-    data(aircraft)
-    summary( lm.airc <-        lm(Y ~ ., data = aircraft))
-    summary(rlm.airc <- MASS::rlm(Y ~ ., data = aircraft))
+   data(aircraft)
+   summary( lm.airc <-        lm(Y ~ ., data = aircraft))
+   summary(rlm.airc <- MASS::rlm(Y ~ ., data = aircraft))
 
-    aircraft.x <- data.matrix(aircraft[,1:4])
-    c_air <- covMcd(aircraft.x)
-    c_air
+   aircraft.x <- data.matrix(aircraft[,1:4])
+   c_air <- covMcd(aircraft.x)
+   c_air

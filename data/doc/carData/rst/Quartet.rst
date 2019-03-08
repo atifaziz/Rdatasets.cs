@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Quartet
+   Quartet
 
 Format
 ~~~~~~
@@ -24,22 +24,22 @@ Format
 This data frame contains the following columns:
 
 x
-    X-values for datasets 1–3.
+   X-values for datasets 1–3.
 
 y1
-    Y-values for dataset 1.
+   Y-values for dataset 1.
 
 y2
-    Y-values for dataset 2.
+   Y-values for dataset 2.
 
 y3
-    Y-values for dataset 3.
+   Y-values for dataset 3.
 
 x4
-    X-values for dataset 4.
+   X-values for dataset 4.
 
 y4
-    Y-values for dataset 4.
+   Y-values for dataset 4.
 
 Source
 ~~~~~~

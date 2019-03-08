@@ -16,19 +16,19 @@ Format
 This data frame contains the following columns:
 
 stage
-    Stage of disease (1=stage 1, 2=stage2, 3=stage 3, 4=stage 4)
+   Stage of disease (1=stage 1, 2=stage2, 3=stage 3, 4=stage 4)
 
 time
-    Time to death or on-study time, months
+   Time to death or on-study time, months
 
 age
-    Age at diagnosis of larynx cancer
+   Age at diagnosis of larynx cancer
 
 diagyr
-    Year of diagnosis of larynx cancer
+   Year of diagnosis of larynx cancer
 
 delta
-    Death indicator (0=alive, 1=dead)
+   Death indicator (0=alive, 1=dead)
 
 Source
 ~~~~~~
@@ -42,4 +42,4 @@ Examples
 
 ::
 
-    data(larynx)
+   data(larynx)

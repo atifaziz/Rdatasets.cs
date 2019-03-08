@@ -16,16 +16,16 @@ Format
 This data frame contains the following columns:
 
 sex
-    Patient sex (1=male, 2=female)
+   Patient sex (1=male, 2=female)
 
 age
-    Patient age
+   Patient age
 
 time
-    Time to death or on-study time
+   Time to death or on-study time
 
 death
-    Death indicator (0=alive, 1=dead)
+   Death indicator (0=alive, 1=dead)
 
 Source
 ~~~~~~
@@ -38,4 +38,4 @@ Examples
 
 ::
 
-    data(psych)
+   data(psych)

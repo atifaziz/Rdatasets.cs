@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Hartnagel
+   Hartnagel
 
 Format
 ~~~~~~
@@ -24,28 +24,28 @@ Format
 This data frame contains the following columns:
 
 year
-    1931–1968.
+   1931–1968.
 
 tfr
-    Total fertility rate per 1000 women.
+   Total fertility rate per 1000 women.
 
 partic
-    Women's labor-force participation rate per 1000.
+   Women's labor-force participation rate per 1000.
 
 degrees
-    Women's post-secondary degree rate per 10,000.
+   Women's post-secondary degree rate per 10,000.
 
 fconvict
-    Female indictable-offense conviction rate per 100,000.
+   Female indictable-offense conviction rate per 100,000.
 
 ftheft
-    Female theft conviction rate per 100,000.
+   Female theft conviction rate per 100,000.
 
 mconvict
-    Male indictable-offense conviction rate per 100,000.
+   Male indictable-offense conviction rate per 100,000.
 
 mtheft
-    Male theft conviction rate per 100,000.
+   Male theft conviction rate per 100,000.
 
 Details
 ~~~~~~~

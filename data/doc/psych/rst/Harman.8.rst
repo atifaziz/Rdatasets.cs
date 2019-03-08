@@ -19,10 +19,10 @@ Usage
 
 ::
 
-    data(Harman)  
-    data(Harman.5)
-    data(Harman.political)
-    data(Harman.8)
+   data(Harman)  
+   data(Harman.5)
+   data(Harman.political)
+   data(Harman.8)
 
 Details
 ~~~~~~~
@@ -133,8 +133,8 @@ Examples
 
 ::
 
-    data(Harman)
-    cor.plot(Harman.Holzinger)
-    cor.plot(Harman.Burt)  
-    smc(Harman.Burt)  #note how this produces impossible results
-    f2 <- fa(Harman.8,2, rotate="none")  #minres matches Harman and Jones
+   data(Harman)
+   cor.plot(Harman.Holzinger)
+   cor.plot(Harman.Burt)  
+   smc(Harman.Burt)  #note how this produces impossible results
+   f2 <- fa(Harman.8,2, rotate="none")  #minres matches Harman and Jones

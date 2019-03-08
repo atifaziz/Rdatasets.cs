@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    ability.cov
+   ability.cov
 
 Details
 ~~~~~~~
@@ -24,23 +24,23 @@ Details
 The tests are described as
 
 general:
-    a non-verbal measure of general intelligence using Cattell's
-    culture-fair test.
+   a non-verbal measure of general intelligence using Cattell's
+   culture-fair test.
 
 picture:
-    a picture-completion test
+   a picture-completion test
 
 blocks:
-    block design
+   block design
 
 maze:
-    mazes
+   mazes
 
 reading:
-    reading comprehension
+   reading comprehension
 
 vocab:
-    vocabulary
+   vocabulary
 
 Bartholomew gives both covariance and correlation matrices, but these
 are inconsistent. Neither are in the original paper.
@@ -48,26 +48,27 @@ are inconsistent. Neither are in the original paper.
 Source
 ~~~~~~
 
-Bartholomew, D. J. (1987) *Latent Variable Analysis and Factor
-Analysis.* Griffin.
+Bartholomew, D. J. (1987). *Latent Variable Analysis and Factor
+Analysis*. Griffin.
 
-Bartholomew, D. J. and Knott, M. (1990) *Latent Variable Analysis and
-Factor Analysis.* Second Edition, Arnold.
+Bartholomew, D. J. and Knott, M. (1990). *Latent Variable Analysis and
+Factor Analysis*. Second Edition, Arnold.
 
 References
 ~~~~~~~~~~
 
-Smith, G. A. and Stanley G. (1983) Clocking *g*: relating intelligence
-and measures of timed performance. *Intelligence*, **7**, 353–368.
+Smith, G. A. and Stanley G. (1983). Clocking *g*: relating intelligence
+and measures of timed performance. *Intelligence*, **7**, 353–368. doi:
+`10.1016/0160-2896(83)90010-7 <http://doi.org/10.1016/0160-2896(83)90010-7>`__.
 
 Examples
 ~~~~~~~~
 
 ::
 
-    require(stats)
-    (ability.FA <- factanal(factors = 1, covmat = ability.cov))
-    update(ability.FA, factors = 2)
-    ## The signs of factors and hence the signs of correlations are
-    ## arbitrary with promax rotation.
-    update(ability.FA, factors = 2, rotation = "promax")
+   require(stats)
+   (ability.FA <- factanal(factors = 1, covmat = ability.cov))
+   update(ability.FA, factors = 2)
+   ## The signs of factors and hence the signs of correlations are
+   ## arbitrary with promax rotation.
+   update(ability.FA, factors = 2, rotation = "promax")

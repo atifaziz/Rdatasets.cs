@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    OBrienKaiser
+   OBrienKaiser
 
 Format
 ~~~~~~
@@ -32,55 +32,55 @@ Format
 A data frame with 16 observations on the following 17 variables.
 
 ``treatment``
-    a factor with levels ``control`` ``A`` ``B``
+   a factor with levels ``control`` ``A`` ``B``
 
 ``gender``
-    a factor with levels ``F`` ``M``
+   a factor with levels ``F`` ``M``
 
 ``pre.1``
-    pretest, hour 1
+   pretest, hour 1
 
 ``pre.2``
-    pretest, hour 2
+   pretest, hour 2
 
 ``pre.3``
-    pretest, hour 3
+   pretest, hour 3
 
 ``pre.4``
-    pretest, hour 4
+   pretest, hour 4
 
 ``pre.5``
-    pretest, hour 5
+   pretest, hour 5
 
 ``post.1``
-    posttest, hour 1
+   posttest, hour 1
 
 ``post.2``
-    posttest, hour 2
+   posttest, hour 2
 
 ``post.3``
-    posttest, hour 3
+   posttest, hour 3
 
 ``post.4``
-    posttest, hour 4
+   posttest, hour 4
 
 ``post.5``
-    posttest, hour 5
+   posttest, hour 5
 
 ``fup.1``
-    follow-up, hour 1
+   follow-up, hour 1
 
 ``fup.2``
-    follow-up, hour 2
+   follow-up, hour 2
 
 ``fup.3``
-    follow-up, hour 3
+   follow-up, hour 3
 
 ``fup.4``
-    follow-up, hour 4
+   follow-up, hour 4
 
 ``fup.5``
-    follow-up, hour 5
+   follow-up, hour 5
 
 Source
 ~~~~~~
@@ -94,6 +94,6 @@ Examples
 
 ::
 
-    OBrienKaiser
-    contrasts(OBrienKaiser$treatment)
-    contrasts(OBrienKaiser$gender)
+   OBrienKaiser
+   contrasts(OBrienKaiser$treatment)
+   contrasts(OBrienKaiser$gender)

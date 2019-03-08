@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    islay
+   islay
 
 Format
 ~~~~~~
@@ -26,7 +26,7 @@ Format
 This data frame contains the following column:
 
 ``theta``
-    The angle of the azimuth in degrees East of North.
+   The angle of the azimuth in degrees East of North.
 
 Source
 ~~~~~~

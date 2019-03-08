@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("pottery")
+   data("pottery")
 
 Format
 ~~~~~~
@@ -23,31 +23,31 @@ Format
 A data frame with 45 observations on the following 9 chemicals.
 
 Al2O3
-    aluminium trioxide.
+   aluminium trioxide.
 
 Fe2O3
-    iron trioxide.
+   iron trioxide.
 
 MgO
-    magnesium oxide.
+   magnesium oxide.
 
 CaO
-    calcium oxide.
+   calcium oxide.
 
 Na2O
-    natrium oxide.
+   natrium oxide.
 
 K2O
-    calium oxide.
+   calium oxide.
 
 TiO2
-    titanium oxide.
+   titanium oxide.
 
 MnO
-    mangan oxide.
+   mangan oxide.
 
 BaO
-    barium oxide.
+   barium oxide.
 
 Details
 ~~~~~~~
@@ -69,6 +69,6 @@ Examples
 ::
 
 
-      data("pottery", package = "HSAUR")
-      plot(pottery)
+     data("pottery", package = "HSAUR")
+     plot(pottery)
 

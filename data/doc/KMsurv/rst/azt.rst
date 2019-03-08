@@ -16,16 +16,16 @@ Format
 This data frame contains the following columns:
 
 patient
-    Patient number
+   Patient number
 
 ageentry
-    Age at entry into AZT study, months
+   Age at entry into AZT study, months
 
 age
-    Age at death or censoring time, months
+   Age at death or censoring time, months
 
 death
-    Death indicator (1=dead, 0=alive)
+   Death indicator (1=dead, 0=alive)
 
 Source
 ~~~~~~
@@ -38,4 +38,4 @@ Examples
 
 ::
 
-    data(azt)
+   data(azt)

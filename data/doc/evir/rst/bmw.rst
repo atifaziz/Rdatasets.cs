@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(bmw)
+   data(bmw)
 
 Format
 ~~~~~~

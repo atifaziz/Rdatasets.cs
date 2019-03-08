@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("schizophrenia")
+   data("schizophrenia")
 
 Format
 ~~~~~~
@@ -23,10 +23,10 @@ Format
 A data frame with 251 observations on the following 2 variables.
 
 ``age``
-    age at the time of diagnosis.
+   age at the time of diagnosis.
 
 ``gender``
-    a factor with levels ``female`` and ``male``
+   a factor with levels ``female`` and ``male``
 
 Details
 ~~~~~~~
@@ -53,6 +53,6 @@ Examples
 ::
 
 
-      data("schizophrenia", package = "HSAUR")
-      boxplot(age ~ gender, data = schizophrenia)
+     data("schizophrenia", package = "HSAUR")
+     boxplot(age ~ gender, data = schizophrenia)
 

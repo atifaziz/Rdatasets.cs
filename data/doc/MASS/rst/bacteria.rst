@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    bacteria
+   bacteria
 
 Format
 ~~~~~~
@@ -24,23 +24,23 @@ Format
 This data frame has 220 rows and the following columns:
 
 y
-    presence or absence: a factor with levels ``n`` and ``y``.
+   presence or absence: a factor with levels ``n`` and ``y``.
 
 ap
-    active/placebo: a factor with levels ``a`` and ``p``.
+   active/placebo: a factor with levels ``a`` and ``p``.
 
 hilo
-    hi/low compliance: a factor with levels ``hi`` amd ``lo``.
+   hi/low compliance: a factor with levels ``hi`` amd ``lo``.
 
 week
-    numeric: week of test.
+   numeric: week of test.
 
 ID
-    subject ID: a factor.
+   subject ID: a factor.
 
 trt
-    a factor with levels ``placebo``, ``drug`` and ``drug+``, a
-    re-coding of ``ap`` and ``hilo``.
+   a factor with levels ``placebo``, ``drug`` and ``drug+``, a re-coding
+   of ``ap`` and ``hilo``.
 
 Details
 ~~~~~~~
@@ -72,24 +72,24 @@ Examples
 
 ::
 
-    contrasts(bacteria$trt) <- structure(contr.sdif(3),
-         dimnames = list(NULL, c("drug", "encourage")))
-    ## fixed effects analyses
-    summary(glm(y ~ trt * week, binomial, data = bacteria))
-    summary(glm(y ~ trt + week, binomial, data = bacteria))
-    summary(glm(y ~ trt + I(week > 2), binomial, data = bacteria))
+   contrasts(bacteria$trt) <- structure(contr.sdif(3),
+        dimnames = list(NULL, c("drug", "encourage")))
+   ## fixed effects analyses
+   summary(glm(y ~ trt * week, binomial, data = bacteria))
+   summary(glm(y ~ trt + week, binomial, data = bacteria))
+   summary(glm(y ~ trt + I(week > 2), binomial, data = bacteria))
 
-    # conditional random-effects analysis
-    library(survival)
-    bacteria$Time <- rep(1, nrow(bacteria))
-    coxph(Surv(Time, unclass(y)) ~ week + strata(ID),
-          data = bacteria, method = "exact")
-    coxph(Surv(Time, unclass(y)) ~ factor(week) + strata(ID),
-          data = bacteria, method = "exact")
-    coxph(Surv(Time, unclass(y)) ~ I(week > 2) + strata(ID),
-          data = bacteria, method = "exact")
+   # conditional random-effects analysis
+   library(survival)
+   bacteria$Time <- rep(1, nrow(bacteria))
+   coxph(Surv(Time, unclass(y)) ~ week + strata(ID),
+         data = bacteria, method = "exact")
+   coxph(Surv(Time, unclass(y)) ~ factor(week) + strata(ID),
+         data = bacteria, method = "exact")
+   coxph(Surv(Time, unclass(y)) ~ I(week > 2) + strata(ID),
+         data = bacteria, method = "exact")
 
-    # PQL glmm analysis
-    library(nlme)
-    summary(glmmPQL(y ~ trt + I(week > 2), random = ~ 1 | ID,
-                    family = binomial, data = bacteria))
+   # PQL glmm analysis
+   library(nlme)
+   summary(glmmPQL(y ~ trt + I(week > 2), random = ~ 1 | ID,
+                   family = binomial, data = bacteria))

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("UKSoccer")
+   data("UKSoccer")
 
 Format
 ~~~~~~
@@ -57,5 +57,5 @@ Examples
 
 ::
 
-    data("UKSoccer")
-    mosaic(UKSoccer, gp = shading_max, main = "UK Soccer Scores")
+   data("UKSoccer")
+   mosaic(UKSoccer, gp = shading_max, main = "UK Soccer Scores")

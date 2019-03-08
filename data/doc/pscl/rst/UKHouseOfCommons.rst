@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(UKHouseOfCommons)
+   data(UKHouseOfCommons)
 
 Format
 ~~~~~~
@@ -24,43 +24,42 @@ Format
 A data frame with 521 observations on the following 12 variables.
 
 ``constituency``
-    a character vector, name of the House of Commons constituency
+   a character vector, name of the House of Commons constituency
 
 ``county``
-    a character vector, county of the House of Commons constituency
+   a character vector, county of the House of Commons constituency
 
 ``y1``
-    a numeric vector, log-odds of Conservative to LibDem vote share
+   a numeric vector, log-odds of Conservative to LibDem vote share
 
 ``y2``
-    a numeric vector, log-odds of Labor to LibDem vote share
+   a numeric vector, log-odds of Labor to LibDem vote share
 
 ``y1lag``
-    a numeric vector, ``y1`` from previous election
+   a numeric vector, ``y1`` from previous election
 
 ``y2lag``
-    a numeric vector, ``y2`` from previous election
+   a numeric vector, ``y2`` from previous election
 
 ``coninc``
-    a numeric vector, 1 if the incumbent is a Conservative, 0 otherwise
+   a numeric vector, 1 if the incumbent is a Conservative, 0 otherwise
 
 ``labinc``
-    a numeric vector, 1 if the incumbent is from the Labor Party, 0
-    otherwise
+   a numeric vector, 1 if the incumbent is from the Labor Party, 0
+   otherwise
 
 ``libinc``
-    a numeric vector, 1 if the incumbent is from the LibDems, 0
-    otherwise
+   a numeric vector, 1 if the incumbent is from the LibDems, 0 otherwise
 
 ``v1``
-    a numeric vector, Conservative vote share (proportion of 3 party
-    vote)
+   a numeric vector, Conservative vote share (proportion of 3 party
+   vote)
 
 ``v2``
-    a numeric vector, Labor vote share (proportion of 3 party vote)
+   a numeric vector, Labor vote share (proportion of 3 party vote)
 
 ``v3``
-    a numeric vector, LibDem vote share (proportion of 3 party vote)
+   a numeric vector, LibDem vote share (proportion of 3 party vote)
 
 Details
 ~~~~~~~
@@ -95,20 +94,20 @@ Examples
 
 ::
 
-    data(UKHouseOfCommons)
-    tmp <- UKHouseOfCommons[,c("v1","v2","v3")] 
-    summary(apply(tmp,1,sum))
+   data(UKHouseOfCommons)
+   tmp <- UKHouseOfCommons[,c("v1","v2","v3")] 
+   summary(apply(tmp,1,sum))
 
-    col <- rep("black",dim(tmp)[1])
-    col[UKHouseOfCommons$coninc==1] <- "blue"
-    col[UKHouseOfCommons$labinc==1] <- "red"
-    col[UKHouseOfCommons$libinc==1] <- "orange"
+   col <- rep("black",dim(tmp)[1])
+   col[UKHouseOfCommons$coninc==1] <- "blue"
+   col[UKHouseOfCommons$labinc==1] <- "red"
+   col[UKHouseOfCommons$libinc==1] <- "orange"
 
-    library(vcd)
-    vcd::ternaryplot(tmp,
-                     dimnames=c("Cons","Lab","Lib-Dem"),
-                     labels="outside",
-                     col=col,
-                     pch=1,
-                     main="1992 UK House of Commons Election",
-                     cex=.75)
+   library(vcd)
+   vcd::ternaryplot(tmp,
+                    dimnames=c("Cons","Lab","Lib-Dem"),
+                    labels="outside",
+                    col=col,
+                    pch=1,
+                    main="1992 UK House of Commons Election",
+                    cex=.75)

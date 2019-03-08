@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    wtloss
+   wtloss
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 This data frame contains the following columns:
 
 ``Days``
-    time in days since the start of the programme.
+   time in days since the start of the programme.
 
 ``Weight``
-    weight in kilograms of the patient.
+   weight in kilograms of the patient.
 
 Source
 ~~~~~~
@@ -45,8 +45,8 @@ Examples
 
 ::
 
-    wtloss.fm <- nls(Weight ~ b0 + b1*2^(-Days/th),
-        data = wtloss, start = list(b0=90, b1=95, th=120))
-    wtloss.fm
-    plot(wtloss)
-    with(wtloss, lines(Days, fitted(wtloss.fm)))
+   wtloss.fm <- nls(Weight ~ b0 + b1*2^(-Days/th),
+       data = wtloss, start = list(b0=90, b1=95, th=120))
+   wtloss.fm
+   plot(wtloss)
+   with(wtloss, lines(Days, fitted(wtloss.fm)))

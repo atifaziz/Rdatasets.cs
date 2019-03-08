@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(apoeapoc)
+   data(apoeapoc)
 
 Format
 ~~~~~~

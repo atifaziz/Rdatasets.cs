@@ -62,8 +62,12 @@ HeatX2 &lt;- transform(HeatX,
                 Q.hot= m.hot * C_p * (T.hot.out- T.hot.in)
 )
 HeatX2 &lt;- transform(HeatX2, Q.env = Q.cold + Q.hot)
+if (require(ggformula)) {
+  gf_jitter( "" ~ Q.env, data = HeatX2, alpha = 0.6, size = 4, 
+    width = 0, height = 0.1, seed = 123) %&gt;%
+  gf_labs(y = "")
+}
 if (require(mosaic)) {
-  stripplot( ~ Q.env, data=HeatX2, alpha=.6, cex=2, jitter.data=TRUE, factor=4)
   t.test( ~Q.env, data = HeatX2 )
 }
 </pre>

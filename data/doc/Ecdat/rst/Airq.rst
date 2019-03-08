@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Airq)
+   data(Airq)
 
 Format
 ~~~~~~
@@ -29,22 +29,22 @@ Format
 A dataframe containing :
 
 airq
-    indicator of air quality (the lower the better)
+   indicator of air quality (the lower the better)
 
 vala
-    value added of companies (in thousands of dollars)
+   value added of companies (in thousands of dollars)
 
 rain
-    amount of rain (in inches)
+   amount of rain (in inches)
 
 coas
-    is it a coastal area ?
+   is it a coastal area ?
 
 dens
-    population density (per square mile)
+   population density (per square mile)
 
 medi
-    average income per head (in US dollars)
+   average income per head (in US dollars)
 
 References
 ~~~~~~~~~~

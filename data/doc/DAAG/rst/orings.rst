@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    orings
+   orings
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 This data frame contains the following columns:
 
 Temperature
-    O-ring temperature for each test firing or actual launch of the
-    shuttle rocket engine
+   O-ring temperature for each test firing or actual launch of the
+   shuttle rocket engine
 
 Erosion
-    Number of erosion incidents
+   Number of erosion incidents
 
 Blowby
-    Number of blowby incidents
+   Number of blowby incidents
 
 Total
-    Total number of incidents
+   Total number of incidents
 
 Source
 ~~~~~~
@@ -53,8 +53,8 @@ Examples
 
 ::
 
-    oldpar <- par(mfrow=c(1,2))
-    plot(Total~Temperature, data = orings[c(1,2,4,11,13,18),]) # the 
-                   # observations included in the pre-launch charts
-    plot(Total~Temperature, data = orings)
-    par(oldpar)
+   oldpar <- par(mfrow=c(1,2))
+   plot(Total~Temperature, data = orings[c(1,2,4,11,13,18),]) # the 
+                  # observations included in the pre-launch charts
+   plot(Total~Temperature, data = orings)
+   par(oldpar)

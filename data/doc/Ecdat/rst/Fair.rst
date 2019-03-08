@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Fair)
+   data(Fair)
 
 Format
 ~~~~~~
@@ -29,32 +29,32 @@ Format
 A dataframe containing :
 
 sex
-    a factor with levels (male,female)
+   a factor with levels (male,female)
 
 age
-    age
+   age
 
 ym
-    number of years married
+   number of years married
 
 child
-    children ? a factor
+   children ? a factor
 
 religious
-    how religious, from 1 (anti) to 5 (very)
+   how religious, from 1 (anti) to 5 (very)
 
 education
-    education
+   education
 
 occupation
-    occupation, from 1 to 7, according to hollingshead classification
-    (reverse numbering)
+   occupation, from 1 to 7, according to hollingshead classification
+   (reverse numbering)
 
 rate
-    self rating of marriage, from 1 (very unhappy) to 5 (very happy)
+   self rating of marriage, from 1 (very unhappy) to 5 (very happy)
 
 nbaffairs
-    number of affairs in past year
+   number of affairs in past year
 
 Source
 ~~~~~~

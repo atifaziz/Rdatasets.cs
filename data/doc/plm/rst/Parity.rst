@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Parity)
+   data(Parity)
 
 Format
 ~~~~~~
@@ -29,31 +29,31 @@ Format
 A data frame containing :
 
 country
-    country codes: a factor with 17 levels
+   country codes: a factor with 17 levels
 
 time
-    the quarter index, 1973Q1-1998Q4
+   the quarter index, 1973Q1-1998Q4
 
 ls
-    log spot exchange rate vs. USD
+   log spot exchange rate vs. USD
 
 lp
-    log price level
+   log price level
 
 is
-    short term interest rate
+   short term interest rate
 
 il
-    long term interest rate
+   long term interest rate
 
 ld
-    log price differential vs. USA
+   log price differential vs. USA
 
 uis
-    U.S. short term interest rate
+   U.S. short term interest rate
 
 uil
-    U.S. long term interest rate
+   U.S. long term interest rate
 
 Source
 ~~~~~~

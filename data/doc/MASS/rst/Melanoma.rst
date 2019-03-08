@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Melanoma
+   Melanoma
 
 Format
 ~~~~~~
@@ -24,25 +24,25 @@ Format
 This data frame contains the following columns:
 
 ``time``
-    survival time in days, possibly censored.
+   survival time in days, possibly censored.
 
 ``status``
-    ``1`` died from melanoma, ``2`` alive, ``3`` dead from other causes.
+   ``1`` died from melanoma, ``2`` alive, ``3`` dead from other causes.
 
 ``sex``
-    ``1`` = male, ``0`` = female.
+   ``1`` = male, ``0`` = female.
 
 ``age``
-    age in years.
+   age in years.
 
 ``year``
-    of operation.
+   of operation.
 
 ``thickness``
-    tumour thickness in mm.
+   tumour thickness in mm.
 
 ``ulcer``
-    ``1`` = presence, ``0`` = absence.
+   ``1`` = presence, ``0`` = absence.
 
 Source
 ~~~~~~

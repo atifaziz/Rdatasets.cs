@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(mexico)
+   data(mexico)
 
 Format
 ~~~~~~

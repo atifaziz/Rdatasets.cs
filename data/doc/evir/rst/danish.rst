@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(danish)
+   data(danish)
 
 Format
 ~~~~~~

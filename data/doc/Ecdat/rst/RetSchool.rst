@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(RetSchool)
+   data(RetSchool)
 
 Format
 ~~~~~~
@@ -29,55 +29,55 @@ Format
 A time serie containing :
 
 wage76
-    wage in 1876
+   wage in 1876
 
 grade76
-    grade level in 1976
+   grade level in 1976
 
 exp76
-    experience 1n 1976
+   experience 1n 1976
 
 black
-    black ?
+   black ?
 
 south76
-    lived in south in 1976 ?
+   lived in south in 1976 ?
 
 smsa76
-    lived in smsa in 1976 ?
+   lived in smsa in 1976 ?
 
 region
-    region, a factor with levels (un,midatl,enc,wnc,sa,esc,wsc,m,p)
+   region, a factor with levels (un,midatl,enc,wnc,sa,esc,wsc,m,p)
 
 smsa66
-    lived in smsa in 1966 ?
+   lived in smsa in 1966 ?
 
 momdad14
-    lived with both parents at age 14 ?
+   lived with both parents at age 14 ?
 
 sinmom14
-    lived with mother only at age 14 ?
+   lived with mother only at age 14 ?
 
 nodaded
-    father has no formal education ?
+   father has no formal education ?
 
 nomomed
-    mother has no formal education ?
+   mother has no formal education ?
 
 daded
-    mean grade level of father
+   mean grade level of father
 
 momed
-    mean grade level of mother
+   mean grade level of mother
 
 famed
-    father's and mother's education, a factor with 9 levels
+   father's and mother's education, a factor with 9 levels
 
 age76
-    age in 1976
+   age in 1976
 
 col4
-    is any 4-year college nearby ?
+   is any 4-year college nearby ?
 
 Source
 ~~~~~~

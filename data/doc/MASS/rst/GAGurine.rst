@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    GAGurine
+   GAGurine
 
 Format
 ~~~~~~
@@ -26,10 +26,10 @@ Format
 This data frame contains the following columns:
 
 ``Age``
-    age of child in years.
+   age of child in years.
 
 ``GAG``
-    concentration of GAG (the units have been lost).
+   concentration of GAG (the units have been lost).
 
 Source
 ~~~~~~

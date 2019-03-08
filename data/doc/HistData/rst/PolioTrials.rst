@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    data(PolioTrials)
+   data(PolioTrials)
 
 Format
 ~~~~~~
@@ -30,25 +30,25 @@ Format
 A data frame with 8 observations on the following 6 variables.
 
 ``Experiment``
-    a factor with levels ``ObservedControl`` ``RandomizedControl``
+   a factor with levels ``ObservedControl`` ``RandomizedControl``
 
 ``Group``
-    a factor with levels ``Controls`` ``Grade2NotInoculated``
-    ``IncompleteVaccinations`` ``NotInoculated`` ``Placebo``
-    ``Vaccinated``
+   a factor with levels ``Controls`` ``Grade2NotInoculated``
+   ``IncompleteVaccinations`` ``NotInoculated`` ``Placebo``
+   ``Vaccinated``
 
 ``Population``
-    the size of the population in each group in each experiment
+   the size of the population in each group in each experiment
 
 ``Paralytic``
-    the number of cases of paralytic polio observed in that group
+   the number of cases of paralytic polio observed in that group
 
 ``NonParalytic``
-    the number of cases of paralytic polio observed in that group
+   the number of cases of paralytic polio observed in that group
 
 ``FalseReports``
-    the number of cases initially reported as polio, but later
-    determined not to be polio in that group
+   the number of cases initially reported as polio, but later determined
+   not to be polio in that group
 
 Details
 ~~~~~~~
@@ -99,5 +99,5 @@ Examples
 
 ::
 
-    data(PolioTrials)
-    ## maybe str(PolioTrials) ; plot(PolioTrials) ...
+   data(PolioTrials)
+   ## maybe str(PolioTrials) ; plot(PolioTrials) ...

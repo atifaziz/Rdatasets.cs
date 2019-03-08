@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(PE)
+   data(PE)
 
 Format
 ~~~~~~
@@ -29,10 +29,10 @@ Format
 A time serie containing :
 
 price
-    S\&P composite stock price index
+   S\&P composite stock price index
 
 earnings
-    S\&P composite earnings index
+   S\&P composite earnings index
 
 Source
 ~~~~~~

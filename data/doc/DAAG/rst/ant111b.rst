@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    ant111b
+   ant111b
 
 Format
 ~~~~~~
@@ -24,32 +24,32 @@ Format
 A data frame with 36 observations on 9 variables.
 
 site
-    a factor with levels (``ant111b``:) ``DBAN`` ``LFAN`` ``NSAN``
-    ``ORAN`` ``OVAN`` ``TEAN`` ``WEAN`` ``WLAN``
+   a factor with levels (``ant111b``:) ``DBAN`` ``LFAN`` ``NSAN``
+   ``ORAN`` ``OVAN`` ``TEAN`` ``WEAN`` ``WLAN``
 
 parcel
-    a factor with levels ``I`` ``II`` ``III`` ``IV``
+   a factor with levels ``I`` ``II`` ``III`` ``IV``
 
 code
-    a numeric vector
+   a numeric vector
 
 island
-    a numeric vector
+   a numeric vector
 
 id
-    a numeric vector
+   a numeric vector
 
 plot
-    a numeric vector
+   a numeric vector
 
 trt
-    a numeric vector
+   a numeric vector
 
 ears
-    a numeric vector
+   a numeric vector
 
 harvwt
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~

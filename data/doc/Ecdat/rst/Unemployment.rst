@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Unemployment)
+   data(Unemployment)
 
 Format
 ~~~~~~
@@ -29,49 +29,49 @@ Format
 A dataframe containing :
 
 duration
-    duration of first spell of unemployment, t, in weeks
+   duration of first spell of unemployment, t, in weeks
 
 spell
-    1 if spell is complete
+   1 if spell is complete
 
 race
-    one of nonwhite, white
+   one of nonwhite, white
 
 sex
-    one of male, female
+   one of male, female
 
 reason
-    reason for unemployment, one of new (new entrant), lose (job loser),
-    leave (job leaver), reentr (labor force reentrant)
+   reason for unemployment, one of new (new entrant), lose (job loser),
+   leave (job leaver), reentr (labor force reentrant)
 
 search
-    'yes' if (1) the unemployment spell is completed between the first
-    and second surveys and number of methods used to search > average
-    number of methods used across all records in the sample, or, (2) for
-    individuals who remain unemployed for consecutive surveys, if the
-    number of methods used is strictly nondecreasing at all survey
-    points, and is strictly increasing at least at one survey point
+   'yes' if (1) the unemployment spell is completed between the first
+   and second surveys and number of methods used to search > average
+   number of methods used across all records in the sample, or, (2) for
+   individuals who remain unemployed for consecutive surveys, if the
+   number of methods used is strictly nondecreasing at all survey
+   points, and is strictly increasing at least at one survey point
 
 pubemp
-    'yes' if an individual used a public employment agency to search for
-    work at any survey points relating to the individuals first
-    unemployment spell
+   'yes' if an individual used a public employment agency to search for
+   work at any survey points relating to the individuals first
+   unemployment spell
 
 ftp1
-    1 if an individual is searching for full time work at survey 1
+   1 if an individual is searching for full time work at survey 1
 
 ftp2
-    1 if an individual is searching for full time work at survey 2
+   1 if an individual is searching for full time work at survey 2
 
 ftp3
-    1 if an individual is searching for full time work at survey 3
+   1 if an individual is searching for full time work at survey 3
 
 ftp4
-    1 if an individual is searching for full time work at survey 4
+   1 if an individual is searching for full time work at survey 4
 
 nobs
-    number of observations on the first spell of unemployment for the
-    record
+   number of observations on the first spell of unemployment for the
+   record
 
 Source
 ~~~~~~

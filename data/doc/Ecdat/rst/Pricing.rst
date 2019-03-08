@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(Pricing)
+   data(Pricing)
 
 Format
 ~~~~~~
@@ -25,41 +25,41 @@ Format
 A time serie containing :
 
 r1
-    monthly return on portfolio 1 (small firms)
+   monthly return on portfolio 1 (small firms)
 
 r2
-    monthly return on portfolio 2
+   monthly return on portfolio 2
 
 r3
-    monthly return on portfolio 3
+   monthly return on portfolio 3
 
 r4
-    monthly return on portfolio 4
+   monthly return on portfolio 4
 
 r5
-    monthly return on portfolio 5
+   monthly return on portfolio 5
 
 r6
-    monthly return on portfolio 6
+   monthly return on portfolio 6
 
 r7
-    monthly return on portfolio 7
+   monthly return on portfolio 7
 
 r8
-    monthly return on portfolio 8
+   monthly return on portfolio 8
 
 r9
-    monthly return on portfolio 9
+   monthly return on portfolio 9
 
 r10
-    monthly return on portfolio 10 (large firms)
+   monthly return on portfolio 10 (large firms)
 
 rf
-    risk free rate (return on 3-month T-bill)
+   risk free rate (return on 3-month T-bill)
 
 cons
-    real per capita consumption growth based on total US personal
-    consumption expenditures (nondurables and services)
+   real per capita consumption growth based on total US personal
+   consumption expenditures (nondurables and services)
 
 Source
 ~~~~~~

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(airAccs)
+   data(airAccs)
 
 Format
 ~~~~~~
@@ -23,25 +23,25 @@ Format
 A data frame with 5666 observations on the following 7 variables.
 
 ``Date``
-    Date of Accident
+   Date of Accident
 
 ``location``
-    Location of accident
+   Location of accident
 
 ``operator``
-    Aircraft operator
+   Aircraft operator
 
 ``planeType``
-    Aircraft type
+   Aircraft type
 
 ``Dead``
-    Number of deaths
+   Number of deaths
 
 ``Aboard``
-    Number aboard
+   Number aboard
 
 ``Ground``
-    Deaths on ground
+   Deaths on ground
 
 Details
 ~~~~~~~
@@ -64,5 +64,5 @@ Examples
 
 ::
 
-    data(airAccs)
-    str(airAccs)
+   data(airAccs)
+   str(airAccs)

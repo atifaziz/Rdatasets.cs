@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    Caravan
+   Caravan
 
 Format
 ~~~~~~
@@ -57,5 +57,5 @@ Examples
 
 ::
 
-    summary(Caravan)
-    plot(Caravan$Purchase)
+   summary(Caravan)
+   plot(Caravan$Purchase)

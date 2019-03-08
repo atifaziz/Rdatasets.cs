@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    bostonc
+   bostonc
 
 Format
 ~~~~~~

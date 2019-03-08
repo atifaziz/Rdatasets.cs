@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(rwm)
+   data(rwm)
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 A data frame with 27,326 observations on the following 4 variables.
 
 ``docvis``
-    number of visits to doctor during year (0-121)
+   number of visits to doctor during year (0-121)
 
 ``age``
-    age: 25-64
+   age: 25-64
 
 ``educ``
-    years of formal education (7-18)
+   years of formal education (7-18)
 
 ``hhninc``
-    household yearly income in DM/1000)
+   household yearly income in DM/1000)
 
 Details
 ~~~~~~~
@@ -61,11 +61,11 @@ Examples
 
 ::
 
-    data(rwm)
-    glmrwp <- glm(docvis ~ age + educ + hhninc, family=poisson, data=rwm)
-    summary(glmrwp)
-    exp(coef(glmrwp))
-    library(MASS)
-    glmrwnb <- glm.nb(docvis ~ age + educ + hhninc, data=rwm)
-    summary(glmrwnb)
-    exp(coef(glmrwnb))
+   data(rwm)
+   glmrwp <- glm(docvis ~ age + educ + hhninc, family=poisson, data=rwm)
+   summary(glmrwp)
+   exp(coef(glmrwp))
+   library(MASS)
+   glmrwnb <- glm.nb(docvis ~ age + educ + hhninc, data=rwm)
+   summary(glmrwnb)
+   exp(coef(glmrwnb))

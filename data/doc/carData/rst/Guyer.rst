@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    Guyer
+   Guyer
 
 Format
 ~~~~~~
@@ -28,14 +28,14 @@ Format
 This data frame contains the following columns:
 
 cooperation
-    Number of cooperative choices (out of 120 in all).
+   Number of cooperative choices (out of 120 in all).
 
 condition
-    A factor with levels: ``anonymous``, Anonymous choice; ``public``,
-    Public choice.
+   A factor with levels: ``anonymous``, Anonymous choice; ``public``,
+   Public choice.
 
 sex
-    Sex. A factor with levels: ``female`` and ``male``.
+   Sex. A factor with levels: ``female`` and ``male``.
 
 Source
 ~~~~~~

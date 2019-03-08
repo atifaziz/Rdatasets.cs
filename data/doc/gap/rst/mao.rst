@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(mao)
+   data(mao)
 
 Format
 ~~~~~~

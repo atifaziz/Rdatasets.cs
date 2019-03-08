@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(tobin)
+   data(tobin)
 
 Format
 ~~~~~~

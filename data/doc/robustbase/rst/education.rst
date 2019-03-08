@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(education)
+   data(education, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,23 +25,23 @@ Format
 A data frame with 50 observations on the following 6 variables.
 
 ``State``
-    State
+   State
 
 ``Region``
-    Region (1=Northeastern, 2=North central, 3=Southern, 4=Western)
+   Region (1=Northeastern, 2=North central, 3=Southern, 4=Western)
 
 ``X1``
-    Number of residents per thousand residing in urban areas in 1970
+   Number of residents per thousand residing in urban areas in 1970
 
 ``X2``
-    Per capita personal income in 1973
+   Per capita personal income in 1973
 
 ``X3``
-    Number of residents per thousand under 18 years of age in 1974
+   Number of residents per thousand under 18 years of age in 1974
 
 ``Y``
-    Per capita expenditure on public education in a state, projected for
-    1975
+   Per capita expenditure on public education in a state, projected for
+   1975
 
 Source
 ~~~~~~
@@ -54,11 +54,11 @@ Examples
 
 ::
 
-    data(education)
-    education.x <- data.matrix(education[, 3:5])
+   data(education)
+   education.x <- data.matrix(education[, 3:5])
 
 
-    summary(lm.education <- lm(Y ~ Region + X1+X2+X3, data=education))
+   summary(lm.education <- lm(Y ~ Region + X1+X2+X3, data=education))
 
 
-    ## See  example(lmrob.M.S) # for how robust regression is used
+   ## See  example(lmrob.M.S) # for how robust regression is used

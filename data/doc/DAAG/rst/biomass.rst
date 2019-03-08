@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    biomass
+   biomass
 
 Format
 ~~~~~~
@@ -24,29 +24,29 @@ Format
 This data frame contains the following columns:
 
 dbh
-    a numeric vector
+   a numeric vector
 
 wood
-    a numeric vector
+   a numeric vector
 
 bark
-    a numeric vector
+   a numeric vector
 
 fac26
-    a factor with 3 levels
+   a factor with 3 levels
 
 root
-    a numeric vector
+   a numeric vector
 
 rootsk
-    a numeric vector
+   a numeric vector
 
 branch
-    a numeric vector
+   a numeric vector
 
 species
-    a factor with levels ``Acacia mabellae``, ``C. fraseri``,
-    ``Acmena smithii``, ``B. myrtifolia``
+   a factor with levels ``Acacia mabellae``, ``C. fraseri``,
+   ``Acmena smithii``, ``B. myrtifolia``
 
 Source
 ~~~~~~

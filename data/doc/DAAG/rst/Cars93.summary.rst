@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Cars93.summary
+   Cars93.summary
 
 Format
 ~~~~~~
@@ -26,17 +26,17 @@ Format
 This data frame contains the following columns:
 
 Min.passengers
-    minimum passenger capacity for each class of car
+   minimum passenger capacity for each class of car
 
 Max.passengers
-    maximum passenger capacity for each class of car
+   maximum passenger capacity for each class of car
 
 No.of.cars
-    number of cars in each class
+   number of cars in each class
 
 abbrev
-    a factor with levels ``C`` Compact, ``L`` Large, ``M`` Mid-Size,
-    ``Sm`` Small, ``Sp`` Sporty, ``V`` Van
+   a factor with levels ``C`` Compact, ``L`` Large, ``M`` Mid-Size,
+   ``Sm`` Small, ``Sp`` Sporty, ``V`` Van
 
 Source
 ~~~~~~
@@ -54,24 +54,24 @@ Examples
 
 ::
 
-    type <- Cars93.summary$abbrev
-    type <- Cars93.summary[,4]
-    type <- Cars93.summary[,"abbrev"]
-    type <- Cars93.summary[[4]] # Take the object that is stored
-                                # in the fourth list element.
-    type
-    pause()
+   type <- Cars93.summary$abbrev
+   type <- Cars93.summary[,4]
+   type <- Cars93.summary[,"abbrev"]
+   type <- Cars93.summary[[4]] # Take the object that is stored
+                               # in the fourth list element.
+   type
+   pause()
 
-    attach(Cars93.summary)
-      # R can now access the columns of Cars93.summary directly
-    abbrev
-    detach("Cars93.summary")
-    pause()
+   attach(Cars93.summary)
+     # R can now access the columns of Cars93.summary directly
+   abbrev
+   detach("Cars93.summary")
+   pause()
 
-    #  To change the name of the \verb!abbrev! variable (the fourth column)
-    names(Cars93.summary)[4] <- "code"
-    pause()
+   #  To change the name of the \verb!abbrev! variable (the fourth column)
+   names(Cars93.summary)[4] <- "code"
+   pause()
 
-    #  To change all of the names, try
-    names(Cars93.summary) <- c("minpass","maxpass","number","code")
+   #  To change all of the names, try
+   names(Cars93.summary) <- c("minpass","maxpass","number","code")
 

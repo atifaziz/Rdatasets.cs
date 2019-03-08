@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("schizophrenia2")
+   data("schizophrenia2")
 
 Format
 ~~~~~~
@@ -23,18 +23,18 @@ Format
 A data frame with 220 observations on the following 4 variables.
 
 ``subject``
-    the patient ID, a factor with levels ``1`` to ``44``.
+   the patient ID, a factor with levels ``1`` to ``44``.
 
 ``onset``
-    the time of onset of the disease, a factor with levels ``< 20 yrs``
-    and ``> 20 yrs``.
+   the time of onset of the disease, a factor with levels ``< 20 yrs``
+   and ``> 20 yrs``.
 
 ``disorder``
-    whether thought disorder was ``absent`` or ``present``, the response
-    variable.
+   whether thought disorder was ``absent`` or ``present``, the response
+   variable.
 
 ``month``
-    month after hospitalisation.
+   month after hospitalisation.
 
 Details
 ~~~~~~~
@@ -60,6 +60,6 @@ Examples
 ::
 
 
-      data("schizophrenia2", package = "HSAUR")
-      mosaicplot(xtabs( ~ onset + month + disorder, data = schizophrenia2))
+     data("schizophrenia2", package = "HSAUR")
+     mosaicplot(xtabs( ~ onset + month + disorder, data = schizophrenia2))
 

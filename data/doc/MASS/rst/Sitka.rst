@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Sitka
+   Sitka
 
 Format
 ~~~~~~
@@ -26,16 +26,16 @@ Format
 This data frame contains the following columns:
 
 ``size``
-    measured size (height times diameter squared) of tree, on log scale.
+   measured size (height times diameter squared) of tree, on log scale.
 
 ``Time``
-    time of measurement in days since 1 January 1988.
+   time of measurement in days since 1 January 1988.
 
 ``tree``
-    number of tree.
+   number of tree.
 
 ``treat``
-    either ``"ozone"`` for an ozone-enriched chamber or ``"control"``.
+   either ``"ozone"`` for an ozone-enriched chamber or ``"control"``.
 
 Source
 ~~~~~~

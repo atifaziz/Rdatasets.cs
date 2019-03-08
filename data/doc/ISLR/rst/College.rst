@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    College
+   College
 
 Format
 ~~~~~~
@@ -24,59 +24,59 @@ Format
 A data frame with 777 observations on the following 18 variables.
 
 ``Private``
-    A factor with levels ``No`` and ``Yes`` indicating private or public
-    university
+   A factor with levels ``No`` and ``Yes`` indicating private or public
+   university
 
 ``Apps``
-    Number of applications received
+   Number of applications received
 
 ``Accept``
-    Number of applications accepted
+   Number of applications accepted
 
 ``Enroll``
-    Number of new students enrolled
+   Number of new students enrolled
 
 ``Top10perc``
-    Pct. new students from top 10% of H.S. class
+   Pct. new students from top 10% of H.S. class
 
 ``Top25perc``
-    Pct. new students from top 25% of H.S. class
+   Pct. new students from top 25% of H.S. class
 
 ``F.Undergrad``
-    Number of fulltime undergraduates
+   Number of fulltime undergraduates
 
 ``P.Undergrad``
-    Number of parttime undergraduates
+   Number of parttime undergraduates
 
 ``Outstate``
-    Out-of-state tuition
+   Out-of-state tuition
 
 ``Room.Board``
-    Room and board costs
+   Room and board costs
 
 ``Books``
-    Estimated book costs
+   Estimated book costs
 
 ``Personal``
-    Estimated personal spending
+   Estimated personal spending
 
 ``PhD``
-    Pct. of faculty with Ph.D.'s
+   Pct. of faculty with Ph.D.'s
 
 ``Terminal``
-    Pct. of faculty with terminal degree
+   Pct. of faculty with terminal degree
 
 ``S.F.Ratio``
-    Student/faculty ratio
+   Student/faculty ratio
 
 ``perc.alumni``
-    Pct. alumni who donate
+   Pct. alumni who donate
 
 ``Expend``
-    Instructional expenditure per student
+   Instructional expenditure per student
 
 ``Grad.Rate``
-    Graduation rate
+   Graduation rate
 
 Source
 ~~~~~~
@@ -98,5 +98,5 @@ Examples
 
 ::
 
-    summary(College)
-    lm(Apps~Private+Accept,data=College)
+   summary(College)
+   lm(Apps~Private+Accept,data=College)

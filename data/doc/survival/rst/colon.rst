@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    colon
+   colon
 
 Format
 ~~~~~~

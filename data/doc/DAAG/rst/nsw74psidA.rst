@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    nsw74psidA
+   nsw74psidA
 
 Format
 ~~~~~~
@@ -24,34 +24,34 @@ Format
 This data frame contains the following columns:
 
 trt
-    a numeric vector
+   a numeric vector
 
 age
-    a numeric vector
+   a numeric vector
 
 educ
-    a numeric vector
+   a numeric vector
 
 black
-    a numeric vector
+   a numeric vector
 
 hisp
-    a numeric vector
+   a numeric vector
 
 marr
-    a numeric vector
+   a numeric vector
 
 nodeg
-    a numeric vector
+   a numeric vector
 
 re74
-    a numeric vector
+   a numeric vector
 
 re75
-    a numeric vector
+   a numeric vector
 
 re78
-    a numeric vector
+   a numeric vector
 
 Details
 ~~~~~~~
@@ -67,14 +67,14 @@ Examples
 
 ::
 
-    table(nsw74psidA$trt)
-    A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
-          hisp + marr + nodeg), data = nsw74psidA)
-    summary(A1.lm)$coef
-    discA.glm <- glm(formula = trt ~ age + educ + black + hisp +
-      marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
-    A.scores <- predict(discA.glm)
-    options(digits=4)
-    overlap <- A.scores > -3.5 & A.scores < 3.8
-    A.lm <- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
-    summary(A.lm)$coef
+   table(nsw74psidA$trt)
+   A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
+         hisp + marr + nodeg), data = nsw74psidA)
+   summary(A1.lm)$coef
+   discA.glm <- glm(formula = trt ~ age + educ + black + hisp +
+     marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
+   A.scores <- predict(discA.glm)
+   options(digits=4)
+   overlap <- A.scores > -3.5 & A.scores < 3.8
+   A.lm <- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
+   summary(A.lm)$coef

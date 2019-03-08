@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Indometh
+   Indometh
 
 Format
 ~~~~~~
@@ -26,14 +26,14 @@ An object of class
 containing the following columns:
 
 Subject
-    an ordered factor with containing the subject codes. The ordering is
-    according to increasing maximum response.
+   an ordered factor with containing the subject codes. The ordering is
+   according to increasing maximum response.
 
 time
-    a numeric vector of times at which blood samples were drawn (hr).
+   a numeric vector of times at which blood samples were drawn (hr).
 
 conc
-    a numeric vector of plasma concentrations of indometacin (mcg/ml).
+   a numeric vector of plasma concentrations of indometacin (mcg/ml).
 
 Details
 ~~~~~~~

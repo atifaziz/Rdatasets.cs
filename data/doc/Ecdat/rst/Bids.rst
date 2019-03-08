@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Bids)
+   data(Bids)
 
 Format
 ~~~~~~
@@ -29,40 +29,40 @@ Format
 A dataframe containing :
 
 docno
-    doc no.
+   doc no.
 
 weeks
-    weeks
+   weeks
 
 numbids
-    count
+   count
 
 takeover
-    delta (1 if taken over)
+   delta (1 if taken over)
 
 bidprem
-    bid Premium
+   bid Premium
 
 insthold
-    institutional holdings
+   institutional holdings
 
 size
-    size measured in billions
+   size measured in billions
 
 leglrest
-    legal restructuring
+   legal restructuring
 
 rearest
-    real restructuring
+   real restructuring
 
 finrest
-    financial restructuring
+   financial restructuring
 
 regulatn
-    regulation
+   regulation
 
 whtknght
-    white knight
+   white knight
 
 Source
 ~~~~~~

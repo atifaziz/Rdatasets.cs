@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Cushings
+   Cushings
 
 Format
 ~~~~~~
@@ -25,14 +25,14 @@ Format
 The ``Cushings`` data frame has 27 rows and 3 columns:
 
 ``Tetrahydrocortisone``
-    urinary excretion rate (mg/24hr) of Tetrahydrocortisone.
+   urinary excretion rate (mg/24hr) of Tetrahydrocortisone.
 
 ``Pregnanetriol``
-    urinary excretion rate (mg/24hr) of Pregnanetriol.
+   urinary excretion rate (mg/24hr) of Pregnanetriol.
 
 ``Type``
-    underlying type of syndrome, coded ``a`` (adenoma) , ``b``
-    (bilateral hyperplasia), ``c`` (carcinoma) or ``u`` for unknown.
+   underlying type of syndrome, coded ``a`` (adenoma) , ``b`` (bilateral
+   hyperplasia), ``c`` (carcinoma) or ``u`` for unknown.
 
 Source
 ~~~~~~

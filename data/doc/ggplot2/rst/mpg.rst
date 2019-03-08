@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    mpg
+   mpg
 
 Format
 ~~~~~~
@@ -27,31 +27,31 @@ A data frame with 234 rows and 11 variables
 
 manufacturer
 model
-    model name
+   model name
 
 displ
-    engine displacement, in litres
+   engine displacement, in litres
 
 year
-    year of manufacture
+   year of manufacture
 
 cyl
-    number of cylinders
+   number of cylinders
 
 trans
-    type of transmission
+   type of transmission
 
 drv
-    f = front-wheel drive, r = rear wheel drive, 4 = 4wd
+   f = front-wheel drive, r = rear wheel drive, 4 = 4wd
 
 cty
-    city miles per gallon
+   city miles per gallon
 
 hwy
-    highway miles per gallon
+   highway miles per gallon
 
 fl
-    fuel type
+   fuel type
 
 class
-    "type" of car
+   "type" of car

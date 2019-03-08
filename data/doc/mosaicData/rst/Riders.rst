@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(Riders)
+   data(Riders)
 
 Format
 ~~~~~~
@@ -27,43 +27,43 @@ Format
 A data frame with 90 observations on the following 12 variables.
 
 ``date``
-    date of data collection (POSIXct)
+   date of data collection (POSIXct)
 
 ``day``
-    a factor with levels ``Monday``, ``Tuesday``, ``Wednesday``,
-    ``Thursday``, ``Friday``, ``Saturday``, and ``Sunday``.
+   a factor with levels ``Monday``, ``Tuesday``, ``Wednesday``,
+   ``Thursday``, ``Friday``, ``Saturday``, and ``Sunday``.
 
 ``highT``
-    high temperature for the day (in degrees Fahrenheit)
+   high temperature for the day (in degrees Fahrenheit)
 
 ``lowT``
-    low temperature for the day (in degrees Fahrenheit)
+   low temperature for the day (in degrees Fahrenheit)
 
 ``hi``
-    shorter name for ``highT``
+   shorter name for ``highT``
 
 ``lo``
-    shorter name for ``lowT``
+   shorter name for ``lowT``
 
 ``precip``
-    inches of precipitation
+   inches of precipitation
 
 ``clouds``
-    measure of cloud cover (in oktas)
+   measure of cloud cover (in oktas)
 
 ``riders``
-    estimated number of trail crossings that day (number of breaks
-    recorded)
+   estimated number of trail crossings that day (number of breaks
+   recorded)
 
 ``ct``
-    shorter name for ``riders``
+   shorter name for ``riders``
 
 ``weekday``
-    type of day: a factor with levels ``N`` (weekend or holiday) ``Y``
-    (non-holiday weekday)
+   type of day: a factor with levels ``N`` (weekend or holiday) ``Y``
+   (non-holiday weekday)
 
 ``wday``
-    shorter name for ``weekday``
+   shorter name for ``weekday``
 
 Details
 ~~~~~~~
@@ -93,6 +93,6 @@ Examples
 
 ::
 
-    data(Riders)
-    str(Riders)
+   data(Riders)
+   str(Riders)
 

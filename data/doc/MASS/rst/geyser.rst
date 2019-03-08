@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    geyser
+   geyser
 
 Format
 ~~~~~~

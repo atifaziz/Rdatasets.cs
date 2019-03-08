@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    gilgais
+   gilgais
 
 Format
 ~~~~~~
@@ -31,31 +31,31 @@ Format
 This data frame contains the following columns:
 
 ``pH00``
-    pH at depth 0–10 cm.
+   pH at depth 0–10 cm.
 
 ``pH30``
-    pH at depth 30–40 cm.
+   pH at depth 30–40 cm.
 
 ``pH80``
-    pH at depth 80–90 cm.
+   pH at depth 80–90 cm.
 
 ``e00``
-    electrical conductivity in mS/cm (0–10 cm).
+   electrical conductivity in mS/cm (0–10 cm).
 
 ``e30``
-    electrical conductivity in mS/cm (30–40 cm).
+   electrical conductivity in mS/cm (30–40 cm).
 
 ``e80``
-    electrical conductivity in mS/cm (80–90 cm).
+   electrical conductivity in mS/cm (80–90 cm).
 
 ``c00``
-    chloride content in ppm (0–10 cm).
+   chloride content in ppm (0–10 cm).
 
 ``c30``
-    chloride content in ppm (30–40 cm).
+   chloride content in ppm (30–40 cm).
 
 ``c80``
-    chloride content in ppm (80–90 cm).
+   chloride content in ppm (80–90 cm).
 
 Source
 ~~~~~~

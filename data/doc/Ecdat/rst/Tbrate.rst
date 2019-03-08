@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Tbrate)
+   data(Tbrate)
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 A time serie containing :
 
 r
-    the 91-day treasury bill rate
+   the 91-day treasury bill rate
 
 y
-    the log of real GDP
+   the log of real GDP
 
 pi
-    the inflation rate
+   the inflation rate
 
 Source
 ~~~~~~

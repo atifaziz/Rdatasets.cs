@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(vote92)
+   data(vote92)
 
 Format
 ~~~~~~
@@ -25,41 +25,41 @@ Format
 A data frame with 909 observations on the following 10 variables.
 
 ``vote``
-    a factor with levels ``Perot`` ``Clinton`` ``Bush``
+   a factor with levels ``Perot`` ``Clinton`` ``Bush``
 
 ``dem``
-    a numeric vector, 1 if the respondent reports identifying with the
-    Democratic party, 0 otherwise.
+   a numeric vector, 1 if the respondent reports identifying with the
+   Democratic party, 0 otherwise.
 
 ``rep``
-    a numeric vector, 1 if the respondent reports identifying with the
-    Republican party, 0 otherwise
+   a numeric vector, 1 if the respondent reports identifying with the
+   Republican party, 0 otherwise
 
 ``female``
-    a numeric vector, 1 if the respondent is female, 0 otherwise
+   a numeric vector, 1 if the respondent is female, 0 otherwise
 
 ``persfinance``
-    a numeric vector, -1 if the respondent reports that their personal
-    financial situation has gotten worse over the last 12 months, 0 for
-    no change, 1 if better
+   a numeric vector, -1 if the respondent reports that their personal
+   financial situation has gotten worse over the last 12 months, 0 for
+   no change, 1 if better
 
 ``natlecon``
-    a numeric vector, -1 if the respondent reports that national
-    economic conditions have gotten worse over the last 12 months, 0 for
-    no change, 1 if better
+   a numeric vector, -1 if the respondent reports that national economic
+   conditions have gotten worse over the last 12 months, 0 for no
+   change, 1 if better
 
 ``clintondis``
-    a numeric vector, squared difference between respondent's
-    self-placement on a scale measure of political ideology and the
-    respondent's placement of the Democratic candidate, Bill Clinton
+   a numeric vector, squared difference between respondent's
+   self-placement on a scale measure of political ideology and the
+   respondent's placement of the Democratic candidate, Bill Clinton
 
 ``bushdis``
-    a numeric vector, squared ideological distance of the respondent
-    from the Republican candidate, President George H.W. Bush
+   a numeric vector, squared ideological distance of the respondent from
+   the Republican candidate, President George H.W. Bush
 
 ``perotdis``
-    a numeric vector, squared ideological distance of the respondent
-    from the Reform Party candidate, Ross Perot
+   a numeric vector, squared ideological distance of the respondent from
+   the Reform Party candidate, Ross Perot
 
 Details
 ~~~~~~~
@@ -93,5 +93,5 @@ Examples
 
 ::
 
-    data(vote92)
-    summary(vote92)
+   data(vote92)
+   summary(vote92)

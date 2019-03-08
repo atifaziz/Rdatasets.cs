@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(VietNamH)
+   data(VietNamH)
 
 Format
 ~~~~~~
@@ -29,37 +29,37 @@ Format
 A dataframe containing :
 
 sex
-    gender of household head (male,female)
+   gender of household head (male,female)
 
 age
-    age of household head
+   age of household head
 
 educyr
-    schooling year of household head
+   schooling year of household head
 
 farm
-    farm household ?
+   farm household ?
 
 urban
-    urban household ?
+   urban household ?
 
 hhsize
-    household size
+   household size
 
 lntotal
-    log household total expenditure
+   log household total expenditure
 
 lnmed
-    log household medical expenditure
+   log household medical expenditure
 
 lnrlfood
-    log household food expenditure
+   log household food expenditure
 
 lnexp12m
-    log of total household health care expenditure for 12 months
+   log of total household health care expenditure for 12 months
 
 commune
-    commune
+   commune
 
 Source
 ~~~~~~

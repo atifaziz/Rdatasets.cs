@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(respiratory)
+   data(respiratory)
 
 Format
 ~~~~~~
@@ -27,30 +27,30 @@ Format
 A data frame with 111 observations on the following 7 variables.
 
 center
-    a numeric vector
+   a numeric vector
 
 id
-    a numeric vector
+   a numeric vector
 
 age
-    a numeric vector
+   a numeric vector
 
 baseline
-    a numeric vector
+   a numeric vector
 
 active
-    a numeric vector
+   a numeric vector
 
 center2
-    a numeric vector
+   a numeric vector
 
 female
-    a numeric vector
+   a numeric vector
 
 Examples
 ~~~~~~~~
 
 ::
 
-    data(respiratory)
-    ## maybe str(respiratory) ; plot(respiratory) ...
+   data(respiratory)
+   ## maybe str(respiratory) ; plot(respiratory) ...

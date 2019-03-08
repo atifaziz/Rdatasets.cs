@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(barro)
+   data(barro)
 
 Format
 ~~~~~~

@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Insurance
+   Insurance
 
 Format
 ~~~~~~
@@ -26,22 +26,22 @@ Format
 This data frame contains the following columns:
 
 ``District``
-    factor: district of residence of policyholder (1 to 4): 4 is major
-    cities.
+   factor: district of residence of policyholder (1 to 4): 4 is major
+   cities.
 
 ``Group``
-    an ordered factor: group of car with levels <1 litre, 1–1.5 litre,
-    1.5–2 litre, >2 litre.
+   an ordered factor: group of car with levels <1 litre, 1–1.5 litre,
+   1.5–2 litre, >2 litre.
 
 ``Age``
-    an ordered factor: the age of the insured in 4 groups labelled <25,
-    25–29, 30–35, >35.
+   an ordered factor: the age of the insured in 4 groups labelled <25,
+   25–29, 30–35, >35.
 
 ``Holders``
-    numbers of policyholders.
+   numbers of policyholders.
 
 ``Claims``
-    numbers of claims
+   numbers of claims
 
 Source
 ~~~~~~
@@ -64,10 +64,10 @@ Examples
 
 ::
 
-    ## main-effects fit as Poisson GLM with offset
-    glm(Claims ~ District + Group + Age + offset(log(Holders)),
-        data = Insurance, family = poisson)
+   ## main-effects fit as Poisson GLM with offset
+   glm(Claims ~ District + Group + Age + offset(log(Holders)),
+       data = Insurance, family = poisson)
 
-    # same via loglm
-    loglm(Claims ~ District + Group + Age + offset(log(Holders)),
-          data = Insurance)
+   # same via loglm
+   loglm(Claims ~ District + Group + Age + offset(log(Holders)),
+         data = Insurance)

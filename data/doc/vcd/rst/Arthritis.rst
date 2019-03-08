@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("Arthritis")
+   data("Arthritis")
 
 Format
 ~~~~~~
@@ -24,19 +24,19 @@ Format
 A data frame with 84 observations and 5 variables.
 
 ID
-    patient ID.
+   patient ID.
 
 Treatment
-    factor indicating treatment (Placebo, Treated).
+   factor indicating treatment (Placebo, Treated).
 
 Sex
-    factor indicating sex (Female, Male).
+   factor indicating sex (Female, Male).
 
 Age
-    age of patient.
+   age of patient.
 
 Improved
-    ordered factor indicating treatment outcome (None, Some, Marked).
+   ordered factor indicating treatment outcome (None, Some, Marked).
 
 Source
 ~~~~~~
@@ -59,9 +59,9 @@ Examples
 
 ::
 
-    data("Arthritis")
-    art <- xtabs(~ Treatment + Improved, data = Arthritis, subset = Sex == "Female")
-    art
+   data("Arthritis")
+   art <- xtabs(~ Treatment + Improved, data = Arthritis, subset = Sex == "Female")
+   art
 
-    mosaic(art, gp = shading_Friendly)
-    mosaic(art, gp = shading_max)
+   mosaic(art, gp = shading_Friendly)
+   mosaic(art, gp = shading_max)

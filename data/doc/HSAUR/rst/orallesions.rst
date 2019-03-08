@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("orallesions")
+   data("orallesions")
 
 Format
 ~~~~~~
@@ -36,6 +36,6 @@ Examples
 ::
 
 
-      data("orallesions", package = "HSAUR")
-      mosaicplot(orallesions)
+     data("orallesions", package = "HSAUR")
+     mosaicplot(orallesions)
 

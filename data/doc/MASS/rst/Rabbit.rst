@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    Rabbit
+   Rabbit
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 This data frame contains 60 rows and the following variables:
 
 ``BPchange``
-    change in blood pressure relative to the start of the experiment.
+   change in blood pressure relative to the start of the experiment.
 
 ``Dose``
-    dose of Phenylbiguanide in micrograms.
+   dose of Phenylbiguanide in micrograms.
 
 ``Run``
-    label of run (``"C1"`` to ``"C5"``, then ``"M1"`` to ``"M5"``).
+   label of run (``"C1"`` to ``"C5"``, then ``"M1"`` to ``"M5"``).
 
 ``Treatment``
-    placebo or the *5-HT_3* antagonist MDL 72222.
+   placebo or the *5-HT_3* antagonist MDL 72222.
 
 ``Animal``
-    label of animal used (``"R1"`` to ``"R5"``).
+   label of animal used (``"R1"`` to ``"R5"``).
 
 Source
 ~~~~~~

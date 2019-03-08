@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    aulatlong
+   aulatlong
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 10 observations on the following 2 variables.
 
 ``latitude``
-    Latitude, as a decimal number
+   Latitude, as a decimal number
 
 ``longitude``
-    Latitude, as a decimal number
+   Latitude, as a decimal number
 
 Source
 ~~~~~~
@@ -40,5 +40,5 @@ Examples
 
 ::
 
-    data(aulatlong)
-    ## maybe str(aulatlong) ; plot(aulatlong) ...
+   data(aulatlong)
+   ## maybe str(aulatlong) ; plot(aulatlong) ...

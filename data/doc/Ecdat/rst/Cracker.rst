@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Cracker)
+   data(Cracker)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A dataframe containing :
 
 id
-    individuals identifiers
+   individuals identifiers
 
 choice
-    one of sunshine, kleebler, nabisco, private
+   one of sunshine, kleebler, nabisco, private
 
 disp.z
-    is there a display for brand z ?
+   is there a display for brand z ?
 
 feat.z
-    is there a newspaper feature advertisement for brand z ?
+   is there a newspaper feature advertisement for brand z ?
 
 price.z
-    price of brand z
+   price of brand z
 
 Source
 ~~~~~~

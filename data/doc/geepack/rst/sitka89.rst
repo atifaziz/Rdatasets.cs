@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(sitka89)
+   data(sitka89)
 
 Format
 ~~~~~~
@@ -23,21 +23,21 @@ Format
 A dataframe
 
 size:
-    size of the tree measured in *log(height*diamter^2)*
+   size of the tree measured in *log(height*diamter^2)*
 
 time:
-    days after the 1st january, 1988
+   days after the 1st january, 1988
 
 tree:
-    id number of a tree
+   id number of a tree
 
 treat:
-    ozone: grown under ozone environment, control: ozone free
+   ozone: grown under ozone environment, control: ozone free
 
 Examples
 ~~~~~~~~
 
 ::
 
-    data(sitka89)
+   data(sitka89)
 

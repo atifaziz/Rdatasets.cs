@@ -25,15 +25,31 @@ data(Births)
 <p>A data.frame with 7305 observations on the following 8 variables.
 </p>
 
-<p>itemcodedate [Date]
-itemcodebirths number of births on <code>date</code> [integer]
-itemcodewday day of week [ordered factor]
-itemcodeyear year [integer]
-itemcodemonth month [integer]
-itemcodeday day of month [integer]
-itemcodeday_of_year day of year [integer]
-itemcodeday_of_week day of week [integer]
+<ul>
+<li> <p><code>date</code>   Date
 </p>
+</li>
+<li> <p><code>births</code> Number of births on <code>date</code> (integer)
+</p>
+</li>
+<li> <p><code>wday</code>   Day of week (ordered factor)
+</p>
+</li>
+<li> <p><code>year</code>   Year (integer)
+</p>
+</li>
+<li> <p><code>month</code>  Month (integer)
+</p>
+</li>
+<li> <p><code>day_of_year</code>  Day of year (integer)
+</p>
+</li>
+<li> <p><code>day_of_month</code> Day of month (integer)
+</p>
+</li>
+<li> <p><code>day_of_week</code>  Day of week (integer)
+</p>
+</li></ul>
 
 
 <h3>Details</h3>
@@ -46,7 +62,7 @@ of births in this data set for the year 1978.  See the examples.
 <h3>Source</h3>
 
 <p>Data source: National Vital Statistics System natality data, as provided by
-Google BigQuery and exported to csv 
+Google BigQuery and exported to csv
 Robert Kern (<a href="http://www.mechanicalkern.com/static/birthdates-1968-1988.csv">http://www.mechanicalkern.com/static/birthdates-1968-1988.csv</a>)
 </p>
 
@@ -62,9 +78,9 @@ Robert Kern (<a href="http://www.mechanicalkern.com/static/birthdates-1968-1988.
 <pre>
 data(Births)
 if(require(ggplot2)) {
-  ggplot(data = Births, aes(x = date, y = births, colour = wday)) +
+  ggplot(data = Births, aes(x = date, y = births, colour = ~ wday)) +
     stat_smooth(se = FALSE, alpha = 0.8, geom = "line")
-  ggplot(data = Births, aes(x = day_of_year, y = births, colour = wday)) +
+  ggplot(data = Births, aes(x = day_of_year, y = births, colour = ~ wday)) +
     geom_point(size = 0.4, alpha = 0.5) +
     stat_smooth(se = FALSE, geom = "line", alpha = 0.6, size = 1.5)
   if (require(dplyr)) {

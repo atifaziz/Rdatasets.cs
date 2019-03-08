@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    pressure
+   pressure
 
 Format
 ~~~~~~
@@ -44,10 +44,10 @@ Examples
 
 ::
 
-    require(graphics)
-    plot(pressure, xlab = "Temperature (deg C)",
-         ylab = "Pressure (mm of Hg)",
-         main = "pressure data: Vapor Pressure of Mercury")
-    plot(pressure, xlab = "Temperature (deg C)",  log = "y",
-         ylab = "Pressure (mm of Hg)",
-         main = "pressure data: Vapor Pressure of Mercury")
+   require(graphics)
+   plot(pressure, xlab = "Temperature (deg C)",
+        ylab = "Pressure (mm of Hg)",
+        main = "pressure data: Vapor Pressure of Mercury")
+   plot(pressure, xlab = "Temperature (deg C)",  log = "y",
+        ylab = "Pressure (mm of Hg)",
+        main = "pressure data: Vapor Pressure of Mercury")

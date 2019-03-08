@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(coalition2)
+   data(coalition2)
 
 Format
 ~~~~~~

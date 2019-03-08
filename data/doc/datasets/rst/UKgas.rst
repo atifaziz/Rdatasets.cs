@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    UKgas
+   UKgas
 
 Format
 ~~~~~~
@@ -34,4 +34,4 @@ Examples
 
 ::
 
-    ## maybe str(UKgas) ; plot(UKgas) ...
+   ## maybe str(UKgas) ; plot(UKgas) ...

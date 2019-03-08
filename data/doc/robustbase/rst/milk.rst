@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    data(milk)
+   data(milk, package="robustbase")
 
 Format
 ~~~~~~
@@ -33,28 +33,28 @@ A data frame with 86 observations on the following 8 variables, all but
 the first measure units in *grams / liter*.
 
 ``X1``
-    density
+   density
 
 ``X2``
-    fat content
+   fat content
 
 ``X3``
-    protein content
+   protein content
 
 ``X4``
-    casein content
+   casein content
 
 ``X5``
-    cheese dry substance measured in the factory
+   cheese dry substance measured in the factory
 
 ``X6``
-    cheese dry substance measured in the laboratory
+   cheese dry substance measured in the laboratory
 
 ``X7``
-    milk dry substance
+   milk dry substance
 
 ``X8``
-    cheese product
+   cheese product
 
 Source
 ~~~~~~
@@ -81,9 +81,9 @@ Examples
 
 ::
 
-    data(milk)
-    (c.milk <- covMcd(milk))
-    summarizeRobWeights(c.milk $ mcd.wt)# 19..20 outliers
-    umilk <- unique(milk) # dropping obs.64 (== obs.63)
-    summary(cumilk <- covMcd(umilk, nsamp = "deterministic")) # 20 outliers
+   data(milk)
+   (c.milk <- covMcd(milk))
+   summarizeRobWeights(c.milk $ mcd.wt)# 19..20 outliers
+   umilk <- unique(milk) # dropping obs.64 (== obs.63)
+   summary(cumilk <- covMcd(umilk, nsamp = "deterministic")) # 20 outliers
 

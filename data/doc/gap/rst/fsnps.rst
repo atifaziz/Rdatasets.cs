@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(fsnps)
+   data(fsnps)
 
 Format
 ~~~~~~

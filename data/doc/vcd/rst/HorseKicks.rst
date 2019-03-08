@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data("HorseKicks")
+   data("HorseKicks")
 
 Format
 ~~~~~~
@@ -66,7 +66,7 @@ Examples
 
 ::
 
-    data("HorseKicks")
-    gf <- goodfit(HorseKicks)
-    summary(gf)
-    plot(gf)
+   data("HorseKicks")
+   gf <- goodfit(HorseKicks)
+   summary(gf)
+   plot(gf)

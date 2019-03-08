@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(ais)
+   data(ais)
 
 Format
 ~~~~~~
@@ -25,44 +25,44 @@ Format
 A data frame with 202 observations on the following 13 variables.
 
 rcc
-    red blood cell count, in **
+   red blood cell count, in
 
 wcc
-    while blood cell count, in ** per liter
+   while blood cell count, in per liter
 
 hc
-    hematocrit, percent
+   hematocrit, percent
 
 hg
-    hemaglobin concentration, in g per decaliter
+   hemaglobin concentration, in g per decaliter
 
 ferr
-    plasma ferritins, ng **
+   plasma ferritins, ng
 
 bmi
-    Body mass index, kg **
+   Body mass index, kg
 
 ssf
-    sum of skin folds
+   sum of skin folds
 
 pcBfat
-    percent Body fat
+   percent Body fat
 
 lbm
-    lean body mass, kg
+   lean body mass, kg
 
 ht
-    height, cm
+   height, cm
 
 wt
-    weight, kg
+   weight, kg
 
 sex
-    a factor with levels ``f`` ``m``
+   a factor with levels ``f`` ``m``
 
 sport
-    a factor with levels ``B_Ball`` ``Field`` ``Gym`` ``Netball``
-    ``Row`` ``Swim`` ``T_400m`` ``T_Sprnt`` ``Tennis`` ``W_Polo``
+   a factor with levels ``B_Ball`` ``Field`` ``Gym`` ``Netball`` ``Row``
+   ``Swim`` ``T_400m`` ``T_Sprnt`` ``Tennis`` ``W_Polo``
 
 Details
 ~~~~~~~

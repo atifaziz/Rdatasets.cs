@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(nasshead)
+   data(nasshead)
 
 Format
 ~~~~~~
@@ -27,13 +27,13 @@ Format
 A data frame with 56 observations on the following 3 variables.
 
 ``shortname``
-    a character vector
+   a character vector
 
 ``SASname``
-    a character vector
+   a character vector
 
 ``longname``
-    a character vector
+   a character vector
 
 Details
 ~~~~~~~
@@ -65,4 +65,4 @@ Examples
 
 ::
 
-    data(nasshead)
+   data(nasshead)

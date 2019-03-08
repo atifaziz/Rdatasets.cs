@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(MunExp)
+   data(MunExp)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A dataframe containing :
 
 id
-    identification
+   identification
 
 year
-    date
+   date
 
 expend
-    expenditure
+   expenditure
 
 revenue
-    revenue from taxes and fees
+   revenue from taxes and fees
 
 grants
-    grants from Central Government
+   grants from Central Government
 
 Source
 ~~~~~~

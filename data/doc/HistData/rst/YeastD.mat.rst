@@ -30,9 +30,9 @@ Usage
 
 ::
 
-        data(Yeast)
-        data(YeastD.mat)
-        
+       data(Yeast)
+       data(YeastD.mat)
+       
 
 Format
 ~~~~~~
@@ -41,13 +41,13 @@ Format
 3 variables, giving the frequencies of
 
 ``sample``
-    Sample identifier, a factor with levels ``A`` ``B`` ``C`` ``D``
+   Sample identifier, a factor with levels ``A`` ``B`` ``C`` ``D``
 
 ``count``
-    The number of yeast cells counted in a square
+   The number of yeast cells counted in a square
 
 ``freq``
-    The number of squares with the given ``count``
+   The number of squares with the given ``count``
 
 ``YeastD.mat``: A 20 x 20 matrix containing the count of yeast cells in
 each square for sample D.
@@ -83,15 +83,15 @@ Examples
 
 ::
 
-    data(Yeast)
+   data(Yeast)
 
-    require(lattice)
-    # basic bar charts 
-    # TODO: frequencies should start at 0, not 1.
-    barchart(count~freq|sample, data=Yeast, ylab="Number of Cells", xlab="Frequency")
-    barchart(freq~count|sample, data=Yeast, xlab="Number of Cells", ylab="Frequency",
-        horizontal=FALSE, origin=0)
+   require(lattice)
+   # basic bar charts 
+   # TODO: frequencies should start at 0, not 1.
+   barchart(count~freq|sample, data=Yeast, ylab="Number of Cells", xlab="Frequency")
+   barchart(freq~count|sample, data=Yeast, xlab="Number of Cells", ylab="Frequency",
+       horizontal=FALSE, origin=0)
 
-    # same, using xyplot
-    xyplot(freq~count|sample, data=Yeast, xlab="Number of Cells", ylab="Frequency",
-        horizontal=FALSE, origin=0, type="h", lwd=10)
+   # same, using xyplot
+   xyplot(freq~count|sample, data=Yeast, xlab="Number of Cells", ylab="Frequency",
+       horizontal=FALSE, origin=0, type="h", lwd=10)

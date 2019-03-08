@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    treering
+   treering
 
 Format
 ~~~~~~
@@ -42,4 +42,4 @@ References
 ~~~~~~~~~~
 
 For some photos of Methuselah Walk see
-http://www.ltrr.arizona.edu/~hallman/sitephotos/meth.html
+https://web.archive.org/web/20110523225828/http://www.ltrr.arizona.edu/~hallman/sitephotos/meth.html

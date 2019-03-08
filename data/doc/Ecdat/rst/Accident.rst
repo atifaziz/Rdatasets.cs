@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(Accident)
+   data(Accident)
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 A dataframe containing :
 
 type
-    ship type, a factor with levels (A,B,C,D,E)
+   ship type, a factor with levels (A,B,C,D,E)
 
 constr
-    year constructed, a factor with levels (C6064,C6569,C7074,C7579)
+   year constructed, a factor with levels (C6064,C6569,C7074,C7579)
 
 operate
-    year operated, a factor with levels (O6074,O7579)
+   year operated, a factor with levels (O6074,O7579)
 
 months
-    measure of service amount
+   measure of service amount
 
 acc
-    accidents
+   accidents
 
 Source
 ~~~~~~

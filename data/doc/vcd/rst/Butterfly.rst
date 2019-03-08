@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("Butterfly")
+   data("Butterfly")
 
 Format
 ~~~~~~
@@ -52,5 +52,5 @@ Examples
 
 ::
 
-    data("Butterfly")
-    Ord_plot(Butterfly)
+   data("Butterfly")
+   Ord_plot(Butterfly)

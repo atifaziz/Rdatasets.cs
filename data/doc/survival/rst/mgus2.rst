@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("mgus2")
+   data("mgus2")
 
 Format
 ~~~~~~
@@ -24,35 +24,35 @@ Format
 A data frame with 1384 observations on the following 10 variables.
 
 ``id``
-    subject identifier
+   subject identifier
 
 ``age``
-    age at diagnosis, in years
+   age at diagnosis, in years
 
 ``sex``
-    a factor with levels ``F`` ``M``
+   a factor with levels ``F`` ``M``
 
 ``hgb``
-    hemoglobin
+   hemoglobin
 
 ``creat``
-    creatinine
+   creatinine
 
 ``mspike``
-    size of the monoclonal serum splike
+   size of the monoclonal serum splike
 
 ``ptime``
-    time until progression to a plasma cell malignancy (PCM) or last
-    contact, in months
+   time until progression to a plasma cell malignancy (PCM) or last
+   contact, in months
 
 ``pstat``
-    occurrence of PCM: 0=no, 1=yes
+   occurrence of PCM: 0=no, 1=yes
 
 ``futime``
-    time until death or last contact, in months
+   time until death or last contact, in months
 
 ``death``
-    occurrence of death: 0=no, 1=yes
+   occurrence of death: 0=no, 1=yes
 
 Details
 ~~~~~~~

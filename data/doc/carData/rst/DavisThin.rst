@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    DavisThin
+   DavisThin
 
 Format
 ~~~~~~
@@ -26,25 +26,25 @@ Format
 This data frame contains the following columns:
 
 DT1
-    a numeric vector
+   a numeric vector
 
 DT2
-    a numeric vector
+   a numeric vector
 
 DT3
-    a numeric vector
+   a numeric vector
 
 DT4
-    a numeric vector
+   a numeric vector
 
 DT5
-    a numeric vector
+   a numeric vector
 
 DT6
-    a numeric vector
+   a numeric vector
 
 DT7
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~

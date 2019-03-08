@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    road
+   road
 
 Format
 ~~~~~~
@@ -24,25 +24,25 @@ Format
 Columns are:
 
 ``state``
-    name.
+   name.
 
 ``deaths``
-    number of deaths.
+   number of deaths.
 
 ``drivers``
-    number of drivers (in 10,000s).
+   number of drivers (in 10,000s).
 
 ``popden``
-    population density in people per square mile.
+   population density in people per square mile.
 
 ``rural``
-    length of rural roads, in 1000s of miles.
+   length of rural roads, in 1000s of miles.
 
 ``temp``
-    average daily maximum temperature in January.
+   average daily maximum temperature in January.
 
 ``fuel``
-    fuel consumption in 10,000,000 US gallons per year.
+   fuel consumption in 10,000,000 US gallons per year.
 
 Source
 ~~~~~~

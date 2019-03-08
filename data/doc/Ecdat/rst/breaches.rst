@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(breaches)
+   data(breaches)
 
 Format
 ~~~~~~
@@ -25,48 +25,47 @@ Format
 A ``data.frame`` with 1055 observations on the following 24 variables:
 
 Number
-    integer record number in the HHS data base
+   integer record number in the HHS data base
 
 Name_of_Covered_Entity
-    ``factor`` giving the name of the entity experiencing the breach
+   ``factor`` giving the name of the entity experiencing the breach
 
 State
-    Factor giving the 2-letter code of the state where the breach
-    occurred. This has 52 levels for the 50 states plus the District of
-    Columbia (DC) and Puerto Rico (PR).
+   Factor giving the 2-letter code of the state where the breach
+   occurred. This has 52 levels for the 50 states plus the District of
+   Columbia (DC) and Puerto Rico (PR).
 
 Business_Associate_Involved
-    Factor giving the name of a subcontractor (or blank) associated with
-    the breach.
+   Factor giving the name of a subcontractor (or blank) associated with
+   the breach.
 
 Individuals_Affected
-    ``integer`` number of humans whose records were compromised in the
-    breach. This is 500 or greater; U.S. law requires reports of
-    breaches involving 500 or more records but not of breaches involving
-    fewer.
+   ``integer`` number of humans whose records were compromised in the
+   breach. This is 500 or greater; U.S. law requires reports of breaches
+   involving 500 or more records but not of breaches involving fewer.
 
 Date_of_Breach
-    ``character`` vector giving the date or date range of the breach.
-    Recodes as ``Date``\ s in ``breach_start`` and ``breach_end``.
+   ``character`` vector giving the date or date range of the breach.
+   Recodes as ``Date``\ s in ``breach_start`` and ``breach_end``.
 
 Type_of_Breach
-    ``factor`` with 29 levels giving the type of breach (e.g., "Theft"
-    vs., "Unauthorized Access/Disclosure", etc.)
+   ``factor`` with 29 levels giving the type of breach (e.g., "Theft"
+   vs., "Unauthorized Access/Disclosure", etc.)
 
 Location_of_Breached_Information
-    ``factor`` with 41 levels coding the location from which the breach
-    occurred (e.g., "Paper", "Laptop", etc.)
+   ``factor`` with 41 levels coding the location from which the breach
+   occurred (e.g., "Paper", "Laptop", etc.)
 
 Date_Posted_or_Updated
-    ``Date`` the information was posted to the HHS data base or last
-    updated.
+   ``Date`` the information was posted to the HHS data base or last
+   updated.
 
 Summary
-    ``character`` vector of a summary of the incident.
+   ``character`` vector of a summary of the incident.
 
 breach_start
-    ``Date`` of the start of the incident = first date given in
-    ``Date_of_Breach`` above.
+   ``Date`` of the start of the incident = first date given in
+   ``Date_of_Breach`` above.
 
 ``breach_end`` ``Date`` of the end of the incident or ``NA`` if only one
 date is given in ``Date_of_Breach`` above. ``year`` ``integer`` giving
@@ -226,13 +225,13 @@ Examples
 
 ::
 
-    data(breaches)
-    quantile(breaches$Individuals_Affected)
-    # confirm that the smallest number is 500 
-    # -- and the largest is 4.9e6
-    # ... and there are no NAs
+   data(breaches)
+   quantile(breaches$Individuals_Affected)
+   # confirm that the smallest number is 500 
+   # -- and the largest is 4.9e6
+   # ... and there are no NAs
 
-    dDays <- with(breaches, breach_end - breach_start)
-    quantile(dDays, na.rm=TRUE)
-    # confirm that breach_end is NA or is later than 
-    # breach_start 
+   dDays <- with(breaches, breach_end - breach_start)
+   quantile(dDays, na.rm=TRUE)
+   # confirm that breach_end is NA or is later than 
+   # breach_start 

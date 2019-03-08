@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    survival
+   survival
 
 Format
 ~~~~~~
@@ -27,10 +27,10 @@ Format
 This data frame contains the following columns:
 
 ``dose``
-    The dose of radiation administered (rads).
+   The dose of radiation administered (rads).
 
 ``surv``
-    The survival rate of the batches expressed as a percentage.
+   The survival rate of the batches expressed as a percentage.
 
 Source
 ~~~~~~

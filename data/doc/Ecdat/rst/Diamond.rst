@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Diamond)
+   data(Diamond)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A dataframe containing :
 
 carat
-    weight of diamond stones in carat unit
+   weight of diamond stones in carat unit
 
 colour
-    a factor with levels (D,E,F,G,H,I)
+   a factor with levels (D,E,F,G,H,I)
 
 clarity
-    a factor with levels (IF,VVS1,VVS2,VS1,VS2)
+   a factor with levels (IF,VVS1,VVS2,VS1,VS2)
 
 certification
-    certification body, a factor with levels (GIA,IGI,HRD)
+   certification body, a factor with levels (GIA,IGI,HRD)
 
 price
-    price in Singapore \\$
+   price in Singapore \\$
 
 Source
 ~~~~~~

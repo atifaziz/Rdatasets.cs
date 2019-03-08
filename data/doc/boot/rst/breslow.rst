@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    breslow
+   breslow
 
 Format
 ~~~~~~
@@ -31,19 +31,19 @@ Format
 This data frame contains the following columns:
 
 ``age``
-    The mid-point of the 10 year age-group for the doctors.
+   The mid-point of the 10 year age-group for the doctors.
 
 ``smoke``
-    An indicator of whether the doctors smoked (1) or not (0).
+   An indicator of whether the doctors smoked (1) or not (0).
 
 ``n``
-    The number of person-years in the category.
+   The number of person-years in the category.
 
 ``y``
-    The number of deaths attributed to coronary artery disease.
+   The number of deaths attributed to coronary artery disease.
 
 ``ns``
-    The number of smoker years in the category (``smoke*n``).
+   The number of smoker years in the category (``smoke*n``).
 
 Source
 ~~~~~~

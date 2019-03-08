@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    TitanicSurvival
+   TitanicSurvival
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 A data frame with 1309 observations on the following 4 variables.
 
 ``survived``
-    ``no`` or ``yes``.
+   ``no`` or ``yes``.
 
 ``sex``
-    ``female`` or ``male``
+   ``female`` or ``male``
 
 ``age``
-    in years (and for some children, fractions of a year); age is
-    missing for 263 of the passengers.
+   in years (and for some children, fractions of a year); age is missing
+   for 263 of the passengers.
 
 ``passengerClass``
-    ``1st``, ``2nd``, or ``3rd`` class.
+   ``1st``, ``2nd``, or ``3rd`` class.
 
 Details
 ~~~~~~~
@@ -61,4 +61,4 @@ Examples
 
 ::
 
-    summary(TitanicSurvival)
+   summary(TitanicSurvival)

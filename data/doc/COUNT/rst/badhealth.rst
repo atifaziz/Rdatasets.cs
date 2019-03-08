@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(badhealth)
+   data(badhealth)
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 A data frame with 1,127 observations on the following 3 variables.
 
 ``numvisit``
-    number of visits to doctor during 1998
+   number of visits to doctor during 1998
 
 ``badh``
-    1=patient claims to be in bad health; 0=not in bad health
+   1=patient claims to be in bad health; 0=not in bad health
 
 ``age``
-    age of patient: 20-60
+   age of patient: 20-60
 
 Details
 ~~~~~~~
@@ -56,11 +56,11 @@ Examples
 
 ::
 
-    data(badhealth)
-    glmbadp <- glm(numvisit ~ badh + age, family=poisson, data=badhealth)
-    summary(glmbadp)
-    exp(coef(glmbadp))
-    library(MASS)
-    glmbadnb <- glm.nb(numvisit ~ badh + age, data=badhealth)
-    summary(glmbadnb)
-    exp(coef(glmbadnb))
+   data(badhealth)
+   glmbadp <- glm(numvisit ~ badh + age, family=poisson, data=badhealth)
+   summary(glmbadp)
+   exp(coef(glmbadp))
+   library(MASS)
+   glmbadnb <- glm.nb(numvisit ~ badh + age, data=badhealth)
+   summary(glmbadnb)
+   exp(coef(glmbadnb))

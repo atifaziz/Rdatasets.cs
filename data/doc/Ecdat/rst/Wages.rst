@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Wages)
+   data(Wages)
 
 Format
 ~~~~~~
@@ -29,40 +29,40 @@ Format
 A dataframe containing :
 
 exp
-    years of full-time work experience
+   years of full-time work experience
 
 wks
-    weeks worked
+   weeks worked
 
 bluecol
-    blue collar ?
+   blue collar ?
 
 ind
-    works in a manufacturing industry ?
+   works in a manufacturing industry ?
 
 south
-    resides in the south ?
+   resides in the south ?
 
 smsa
-    resides in a standard metropolitan statistical are ?
+   resides in a standard metropolitan statistical are ?
 
 married
-    married ?
+   married ?
 
 sex
-    a factor with levels (male,female)
+   a factor with levels (male,female)
 
 union
-    individual's wage set by a union contract ?
+   individual's wage set by a union contract ?
 
 ed
-    years of education
+   years of education
 
 black
-    is the individual black ?
+   is the individual black ?
 
 lwage
-    logarithm of wage
+   logarithm of wage
 
 Source
 ~~~~~~

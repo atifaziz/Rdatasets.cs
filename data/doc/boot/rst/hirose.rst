@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    hirose
+   hirose
 
 Format
 ~~~~~~
@@ -27,13 +27,13 @@ Format
 This data frame contains the following columns:
 
 ``volt``
-    The voltage (in kV).
+   The voltage (in kV).
 
 ``time``
-    The failure or censoring time in hours.
+   The failure or censoring time in hours.
 
 ``cens``
-    The censoring indicator; ``1`` means right-censored data.
+   The censoring indicator; ``1`` means right-censored data.
 
 Source
 ~~~~~~

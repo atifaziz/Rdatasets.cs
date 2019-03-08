@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("Rochdale")
+   data("Rochdale")
 
 Format
 ~~~~~~
@@ -71,5 +71,5 @@ Examples
 
 ::
 
-    data("Rochdale")
-    mosaic(Rochdale)
+   data("Rochdale")
+   mosaic(Rochdale)

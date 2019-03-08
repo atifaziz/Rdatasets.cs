@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(SaratogaHouses)
+   data(SaratogaHouses)
 
 Format
 ~~~~~~

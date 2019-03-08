@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    rivers
+   rivers
 
 Format
 ~~~~~~

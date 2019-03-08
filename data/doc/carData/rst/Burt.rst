@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Burt
+   Burt
 
 Format
 ~~~~~~
@@ -25,14 +25,14 @@ Format
 This data frame contains the following columns:
 
 IQbio
-    IQ of twin raised by biological parents
+   IQ of twin raised by biological parents
 
 IQfoster
-    IQ of twin raised by foster parents
+   IQ of twin raised by foster parents
 
 class
-    A factor with levels (note: out of order): ``high``; ``low``;
-    ``medium``.
+   A factor with levels (note: out of order): ``high``; ``low``;
+   ``medium``.
 
 Source
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    leafshape
+   leafshape
 
 Format
 ~~~~~~
@@ -24,32 +24,32 @@ Format
 This data frame contains the following columns:
 
 bladelen
-    leaf length (in mm)
+   leaf length (in mm)
 
 petiole
-    a numeric vector
+   a numeric vector
 
 bladewid
-    leaf width (in mm)
+   leaf width (in mm)
 
 latitude
-    latitude
+   latitude
 
 logwid
-    natural logarithm of width
+   natural logarithm of width
 
 logpet
-    logarithm of petiole
+   logarithm of petiole
 
 loglen
-    logarithm of length
+   logarithm of length
 
 arch
-    leaf architecture (0 = plagiotropic, 1 = orthotropic
+   leaf architecture (0 = plagiotropic, 1 = orthotropic
 
 location
-    a factor with levels ``Sabah``, ``Panama``, ``Costa Rica``,
-    ``N Queensland``, ``S Queensland``, ``Tasmania``
+   a factor with levels ``Sabah``, ``Panama``, ``Costa Rica``,
+   ``N Queensland``, ``S Queensland``, ``Tasmania``
 
 Source
 ~~~~~~

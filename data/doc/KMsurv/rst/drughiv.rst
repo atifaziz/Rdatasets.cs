@@ -16,15 +16,15 @@ Format
 This data frame contains the following columns:
 
 drug
-    Drug combination (1=AZT + zalcitabine, 2=AZT + zalcitabine +
-    saquinavir)
+   Drug combination (1=AZT + zalcitabine, 2=AZT + zalcitabine +
+   saquinavir)
 
 time
-    Time after drug administration to CD4 count at a specified level,
-    days
+   Time after drug administration to CD4 count at a specified level,
+   days
 
 delta
-    Indicator of CD4 count reaching specified level (1=yes, 0=no)
+   Indicator of CD4 count reaching specified level (1=yes, 0=no)
 
 Source
 ~~~~~~
@@ -37,4 +37,4 @@ Examples
 
 ::
 
-    data(drughiv)
+   data(drughiv)

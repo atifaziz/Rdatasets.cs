@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data("genfan")
+   data("genfan")
 
 Format
 ~~~~~~
@@ -29,10 +29,10 @@ Format
 A data frame with 70 observations on the following 2 variables.
 
 ``hours``
-    hours of service
+   hours of service
 
 ``status``
-    1=failure, 0=censored
+   1=failure, 0=censored
 
 References
 ~~~~~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Cards
+   Cards
 
 Details
 ~~~~~~~
@@ -29,9 +29,9 @@ Examples
 
 ::
 
-    if (require(mosaic)) {
-      deal(Cards, 13)        # bridge hand
-      deal(Cards, 5)         # poker hand
-      shuffle(Cards)         # shuffled deck
-    }
+   if (require(mosaic)) {
+     deal(Cards, 13)        # bridge hand
+     deal(Cards, 5)         # poker hand
+     shuffle(Cards)         # shuffled deck
+   }
 

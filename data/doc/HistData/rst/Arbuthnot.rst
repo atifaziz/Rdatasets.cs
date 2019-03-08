@@ -27,7 +27,7 @@ Usage
 
 ::
 
-    data(Arbuthnot)
+   data(Arbuthnot)
 
 Format
 ~~~~~~
@@ -35,25 +35,25 @@ Format
 A data frame with 82 observations on the following 7 variables.
 
 ``Year``
-    a numeric vector, 1629-1710
+   a numeric vector, 1629-1710
 
 ``Males``
-    a numeric vector, number of male christenings
+   a numeric vector, number of male christenings
 
 ``Females``
-    a numeric vector, number of female christenings
+   a numeric vector, number of female christenings
 
 ``Plague``
-    a numeric vector, number of deaths from plague
+   a numeric vector, number of deaths from plague
 
 ``Mortality``
-    a numeric vector, total mortality
+   a numeric vector, total mortality
 
 ``Ratio``
-    a numeric vector, ratio of Males/Females
+   a numeric vector, ratio of Males/Females
 
 ``Total``
-    a numeric vector, total christenings in London (000s)
+   a numeric vector, total christenings in London (000s)
 
 Details
 ~~~~~~~
@@ -99,13 +99,13 @@ Examples
 
 ::
 
-    data(Arbuthnot)
-    # plot the sex ratios
-    with(Arbuthnot, plot(Year,Ratio, type='b', ylim=c(1, 1.20), ylab="Sex Ratio (M/F)"))
-    abline(h=1, col="red")
-    #  add loess smooth
-    Arb.smooth <- with(Arbuthnot, loess.smooth(Year,Ratio))
-    lines(Arb.smooth$x, Arb.smooth$y, col="blue", lwd=2)
+   data(Arbuthnot)
+   # plot the sex ratios
+   with(Arbuthnot, plot(Year,Ratio, type='b', ylim=c(1, 1.20), ylab="Sex Ratio (M/F)"))
+   abline(h=1, col="red")
+   #  add loess smooth
+   Arb.smooth <- with(Arbuthnot, loess.smooth(Year,Ratio))
+   lines(Arb.smooth$x, Arb.smooth$y, col="blue", lwd=2)
 
-    # plot the total christenings to observe the anomalie in 1704
-    with(Arbuthnot, plot(Year,Total, type='b', ylab="Total Christenings"))
+   # plot the total christenings to observe the anomalie in 1704
+   with(Arbuthnot, plot(Year,Total, type='b', ylab="Total Christenings"))

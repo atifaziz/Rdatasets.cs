@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    faithfuld
+   faithfuld
 
 Format
 ~~~~~~

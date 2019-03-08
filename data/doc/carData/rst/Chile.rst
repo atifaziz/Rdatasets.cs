@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Chile
+   Chile
 
 Format
 ~~~~~~
@@ -25,32 +25,32 @@ Format
 This data frame contains the following columns:
 
 region
-    A factor with levels: ``C``, Central; ``M``, Metropolitan Santiago
-    area; ``N``, North; ``S``, South; ``SA``, city of Santiago.
+   A factor with levels: ``C``, Central; ``M``, Metropolitan Santiago
+   area; ``N``, North; ``S``, South; ``SA``, city of Santiago.
 
 population
-    Population size of respondent's community.
+   Population size of respondent's community.
 
 sex
-    A factor with levels: ``F``, female; ``M``, male.
+   A factor with levels: ``F``, female; ``M``, male.
 
 age
-    in years.
+   in years.
 
 education
-    A factor with levels (note: out of order): ``P``, Primary; ``PS``,
-    Post-secondary; ``S``, Secondary.
+   A factor with levels (note: out of order): ``P``, Primary; ``PS``,
+   Post-secondary; ``S``, Secondary.
 
 income
-    Monthly income, in Pesos.
+   Monthly income, in Pesos.
 
 statusquo
-    Scale of support for the status-quo.
+   Scale of support for the status-quo.
 
 vote
-    a factor with levels: ``A``, will abstain; ``N``, will vote no
-    (against Pinochet); ``U``, undecided; ``Y``, will vote yes (for
-    Pinochet).
+   a factor with levels: ``A``, will abstain; ``N``, will vote no
+   (against Pinochet); ``U``, undecided; ``Y``, will vote yes (for
+   Pinochet).
 
 Source
 ~~~~~~

@@ -17,28 +17,28 @@ Format
 A data frame with 767 observations on the following 8 variables.
 
 ``id``
-    subject id
+   subject id
 
 ``inst``
-    enrolling institution
+   enrolling institution
 
 ``trt``
-    treatment arm: 0=placebo, 1= rhDNase
+   treatment arm: 0=placebo, 1= rhDNase
 
 ``entry.dt``
-    date of entry into the study
+   date of entry into the study
 
 ``end.dt``
-    date of last follow-up
+   date of last follow-up
 
 ``fev``
-    forced expriatory volume at enrollment, a measure of lung capacity
+   forced expriatory volume at enrollment, a measure of lung capacity
 
 ``ivstart``
-    days from enrollment to the start of IV antibiotics
+   days from enrollment to the start of IV antibiotics
 
 ``ivstop``
-    days from enrollment to the cessation of IV antibiotics
+   days from enrollment to the cessation of IV antibiotics
 
 Details
 ~~~~~~~
@@ -94,19 +94,19 @@ Examples
 
 ::
 
-    # Build the start-stop data set for analysis, and
-    #  replicate line 2 of table 8.13
-    first <- subset(rhDNase, !duplicated(id)) #first row for each subject
-    dnase <- tmerge(first, first, id=id, tstop=as.numeric(end.dt -entry.dt))
+   # Build the start-stop data set for analysis, and
+   #  replicate line 2 of table 8.13
+   first <- subset(rhDNase, !duplicated(id)) #first row for each subject
+   dnase <- tmerge(first, first, id=id, tstop=as.numeric(end.dt -entry.dt))
 
-    # Subjects whose fu ended during the 6 day window are the reason for
-    #  this next line
-    temp.end <- with(rhDNase, pmin(ivstop+6, end.dt-entry.dt))
-    dnase <- tmerge(dnase, rhDNase, id=id,
-                           infect=event(ivstart),
-                           end=  event(temp.end))
-    # toss out the non-at-risk intervals, and extra variables
-    #  3 subjects had an event on their last day of fu, infect=1 and end=1
-    dnase <- subset(dnase, (infect==1 | end==0), c(id:trt, fev:infect))
-    agfit <- coxph(Surv(tstart, tstop, infect) ~ trt + fev + cluster(id),
-                     data=dnase)
+   # Subjects whose fu ended during the 6 day window are the reason for
+   #  this next line
+   temp.end <- with(rhDNase, pmin(ivstop+6, end.dt-entry.dt))
+   dnase <- tmerge(dnase, rhDNase, id=id,
+                          infect=event(ivstart),
+                          end=  event(temp.end))
+   # toss out the non-at-risk intervals, and extra variables
+   #  3 subjects had an event on their last day of fu, infect=1 and end=1
+   dnase <- subset(dnase, (infect==1 | end==0), c(id:trt, fev:infect))
+   agfit <- coxph(Surv(tstart, tstop, infect) ~ trt + fev + cluster(id),
+                    data=dnase)

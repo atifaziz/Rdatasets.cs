@@ -21,8 +21,8 @@ Usage
 
 ::
 
-    data(bfi)
-    data(bfi.dictionary)
+   data(bfi)
+   data(bfi.dictionary)
 
 Format
 ~~~~~~
@@ -31,89 +31,89 @@ A data frame with 2800 observations on the following 28 variables. (The
 q numbers are the SAPA item numbers).
 
 ``A1``
-    Am indifferent to the feelings of others. (q_146)
+   Am indifferent to the feelings of others. (q_146)
 
 ``A2``
-    Inquire about others' well-being. (q_1162)
+   Inquire about others' well-being. (q_1162)
 
 ``A3``
-    Know how to comfort others. (q_1206)
+   Know how to comfort others. (q_1206)
 
 ``A4``
-    Love children. (q_1364)
+   Love children. (q_1364)
 
 ``A5``
-    Make people feel at ease. (q_1419)
+   Make people feel at ease. (q_1419)
 
 ``C1``
-    Am exacting in my work. (q_124)
+   Am exacting in my work. (q_124)
 
 ``C2``
-    Continue until everything is perfect. (q_530)
+   Continue until everything is perfect. (q_530)
 
 ``C3``
-    Do things according to a plan. (q_619)
+   Do things according to a plan. (q_619)
 
 ``C4``
-    Do things in a half-way manner. (q_626)
+   Do things in a half-way manner. (q_626)
 
 ``C5``
-    Waste my time. (q_1949)
+   Waste my time. (q_1949)
 
 ``E1``
-    Don't talk a lot. (q_712)
+   Don't talk a lot. (q_712)
 
 ``E2``
-    Find it difficult to approach others. (q_901)
+   Find it difficult to approach others. (q_901)
 
 ``E3``
-    Know how to captivate people. (q_1205)
+   Know how to captivate people. (q_1205)
 
 ``E4``
-    Make friends easily. (q_1410)
+   Make friends easily. (q_1410)
 
 ``E5``
-    Take charge. (q_1768)
+   Take charge. (q_1768)
 
 ``N1``
-    Get angry easily. (q_952)
+   Get angry easily. (q_952)
 
 ``N2``
-    Get irritated easily. (q_974)
+   Get irritated easily. (q_974)
 
 ``N3``
-    Have frequent mood swings. (q_1099
+   Have frequent mood swings. (q_1099
 
 ``N4``
-    Often feel blue. (q_1479)
+   Often feel blue. (q_1479)
 
 ``N5``
-    Panic easily. (q_1505)
+   Panic easily. (q_1505)
 
 ``O1``
-    Am full of ideas. (q_128)
+   Am full of ideas. (q_128)
 
 ``O2``
-    Avoid difficult reading material.(q_316)
+   Avoid difficult reading material.(q_316)
 
 ``O3``
-    Carry the conversation to a higher level. (q_492)
+   Carry the conversation to a higher level. (q_492)
 
 ``O4``
-    Spend time reflecting on things. (q_1738)
+   Spend time reflecting on things. (q_1738)
 
 ``O5``
-    Will not probe deeply into a subject. (q_1964)
+   Will not probe deeply into a subject. (q_1964)
 
 ``gender``
-    Males = 1, Females =2
+   Males = 1, Females =2
 
 ``education``
-    1 = HS, 2 = finished HS, 3 = some college, 4 = college graduate 5 =
-    graduate degree
+   1 = HS, 2 = finished HS, 3 = some college, 4 = college graduate 5 =
+   graduate degree
 
 ``age``
-    age in years
+   age in years
 
 Details
 ~~~~~~~
@@ -188,15 +188,15 @@ Examples
 
 ::
 
-    data(bfi)
-    describe(bfi)
-     
-     keys.list <-
-      list(agree=c("-A1","A2","A3","A4","A5"),conscientious=c("C1","C2","C3","-C4","-C5"),
-    extraversion=c("-E1","-E2","E3","E4","E5"),neuroticism=c("N1","N2","N3","N4","N5"),
-    openness = c("O1","-O2","O3","O4","-O5")) 
-     scores <- scoreItems(keys.list,bfi,min=1,max=6) #specify the minimum and maximum values
-     scores
-     #show the use of the fa.lookup with a dictionary
-     keys.lookup(keys.list,bfi.dictionary[,1:4])
-     
+   data(bfi)
+   describe(bfi)
+    
+    keys.list <-
+     list(agree=c("-A1","A2","A3","A4","A5"),conscientious=c("C1","C2","C3","-C4","-C5"),
+   extraversion=c("-E1","-E2","E3","E4","E5"),neuroticism=c("N1","N2","N3","N4","N5"),
+   openness = c("O1","-O2","O3","O4","-O5")) 
+    scores <- scoreItems(keys.list,bfi,min=1,max=6) #specify the minimum and maximum values
+    scores
+    #show the use of the fa.lookup with a dictionary
+    keys.lookup(keys.list,bfi.dictionary[,1:4])
+    

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Klein)
+   data(Klein)
 
 Format
 ~~~~~~
@@ -29,31 +29,31 @@ Format
 A time serie containing :
 
 cons
-    consumption
+   consumption
 
 profit
-    corporate profits
+   corporate profits
 
 privwage
-    private wage bill
+   private wage bill
 
 inv
-    investment
+   investment
 
 lcap
-    previous year's capital stock
+   previous year's capital stock
 
 gnp
-    GNP
+   GNP
 
 pubwage
-    government wage bill
+   government wage bill
 
 govspend
-    government spending
+   government spending
 
 taxe
-    taxes
+   taxes
 
 Source
 ~~~~~~

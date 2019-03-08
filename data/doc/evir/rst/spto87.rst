@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(spto87)
+   data(spto87)
 
 Format
 ~~~~~~

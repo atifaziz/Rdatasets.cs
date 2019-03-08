@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Males)
+   data(Males)
 
 Format
 ~~~~~~
@@ -29,41 +29,40 @@ Format
 A dataframe containing :
 
 nr
-    identifier
+   identifier
 
 year
-    year
+   year
 
 school
-    years of schooling
+   years of schooling
 
 exper
-    years of experience (=age-6-school)
+   years of experience (=age-6-school)
 
 union
-    wage set by collective bargaining ?
+   wage set by collective bargaining ?
 
 ethn
-    a factor with levels (black,hisp,other)
+   a factor with levels (black,hisp,other)
 
 maried
-    maried ?
+   maried ?
 
 health
-    health problem ?
+   health problem ?
 
 wage
-    log of hourly wage
+   log of hourly wage
 
 industry
-    a factor with 12 levels
+   a factor with 12 levels
 
 occupation
-    a factor with 9 levels
+   a factor with 9 levels
 
 residence
-    a factor with levels (rural area, north east, nothern central,
-    south)
+   a factor with levels (rural area, north east, nothern central, south)
 
 Source
 ~~~~~~

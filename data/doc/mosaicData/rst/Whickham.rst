@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(Whickham)
+   data(Whickham)
 
 Format
 ~~~~~~
@@ -55,5 +55,5 @@ Examples
 
 ::
 
-    data(Whickham)
+   data(Whickham)
 

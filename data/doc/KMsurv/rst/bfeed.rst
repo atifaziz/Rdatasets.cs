@@ -16,34 +16,34 @@ Format
 This data frame contains the following columns:
 
 duration
-    Duration of breast feeding, weeks
+   Duration of breast feeding, weeks
 
 delta
-    Indicator of completed breast feeding (1=yes, 0=no)
+   Indicator of completed breast feeding (1=yes, 0=no)
 
 race
-    Race of mother (1=white, 2=black, 3=other)
+   Race of mother (1=white, 2=black, 3=other)
 
 poverty
-    Mother in poverty (1=yes, 0=no)
+   Mother in poverty (1=yes, 0=no)
 
 smoke
-    Mother smoked at birth of child (1=yes, 0=no)
+   Mother smoked at birth of child (1=yes, 0=no)
 
 alcohol
-    Mother used alcohol at birth of child (1=yes, 0=no)
+   Mother used alcohol at birth of child (1=yes, 0=no)
 
 agemth
-    Age of mother at birth of child
+   Age of mother at birth of child
 
 ybirth
-    Year of birth
+   Year of birth
 
 yschool
-    Education level of mother (years of school)
+   Education level of mother (years of school)
 
 pc3mth
-    Prenatal care after 3rd month (1=yes, 0=no)
+   Prenatal care after 3rd month (1=yes, 0=no)
 
 Source
 ~~~~~~
@@ -57,4 +57,4 @@ Examples
 
 ::
 
-    data(bfeed)
+   data(bfeed)

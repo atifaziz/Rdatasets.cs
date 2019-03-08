@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(hoff)
+   data(hoff)
 
 Format
 ~~~~~~

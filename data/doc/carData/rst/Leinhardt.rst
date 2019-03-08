@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Leinhardt
+   Leinhardt
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 This data frame contains the following columns:
 
 income
-    Per-capita income in U. S. dollars.
+   Per-capita income in U. S. dollars.
 
 infant
-    Infant-mortality rate per 1000 live births.
+   Infant-mortality rate per 1000 live births.
 
 region
-    A factor with levels: ``Africa``; ``Americas``; ``Asia``, Asia and
-    Oceania; ``Europe``.
+   A factor with levels: ``Africa``; ``Americas``; ``Asia``, Asia and
+   Oceania; ``Europe``.
 
 oil
-    Oil-exporting country. A factor with levels: ``no``, ``yes``.
+   Oil-exporting country. A factor with levels: ``no``, ``yes``.
 
 Details
 ~~~~~~~

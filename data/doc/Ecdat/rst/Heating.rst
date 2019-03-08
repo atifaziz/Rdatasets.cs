@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Heating)
+   data(Heating)
 
 Format
 ~~~~~~
@@ -29,31 +29,31 @@ Format
 A dataframe containing :
 
 idcase
-    id
+   id
 
 depvar
-    heating system, one of gc (gas central), gr (gas room), ec (electric
-    central), er (electric room), hp (heat pump)
+   heating system, one of gc (gas central), gr (gas room), ec (electric
+   central), er (electric room), hp (heat pump)
 
 ic.z
-    installation cost for heating system z (defined for the 5 heating
-    systems)
+   installation cost for heating system z (defined for the 5 heating
+   systems)
 
 oc.z
-    annual operating cost for heating system z (defined for the 5
-    heating systems)
+   annual operating cost for heating system z (defined for the 5 heating
+   systems)
 
 pb.z
-    ratio oc.z/ic.z
+   ratio oc.z/ic.z
 
 income
-    annual income of the household
+   annual income of the household
 
 agehed
-    age of the household head
+   age of the household head
 
 rooms
-    numbers of rooms in the house
+   numbers of rooms in the house
 
 References
 ~~~~~~~~~~

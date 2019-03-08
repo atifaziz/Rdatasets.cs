@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Oil)
+   data(Oil)
 
 Format
 ~~~~~~
@@ -29,47 +29,47 @@ Format
 A dataframe containing :
 
 dur
-    duration of the appraisal lag in months (time span between discovery
-    of an oil field and beginning of development, i.e. approval of annex
-    B).
+   duration of the appraisal lag in months (time span between discovery
+   of an oil field and beginning of development, i.e. approval of annex
+   B).
 
 size
-    size of recoverable reserves in millions of barrels
+   size of recoverable reserves in millions of barrels
 
 waterd
-    depth of the sea in metres
+   depth of the sea in metres
 
 gasres
-    size of recoverable gas reserves in billions of cubic feet
+   size of recoverable gas reserves in billions of cubic feet
 
 operator
-    equity market value (in 1991 million pounds) of the company
-    operating the oil field
+   equity market value (in 1991 million pounds) of the company operating
+   the oil field
 
 p
-    real after–tax oil price measured at time of annex B approval
+   real after–tax oil price measured at time of annex B approval
 
 vardp
-    volatility of the real oil price process measured as the squared
-    recursive standard errors of the regression of pt-pt-1 on a constant
+   volatility of the real oil price process measured as the squared
+   recursive standard errors of the regression of pt-pt-1 on a constant
 
 p97
-    adaptive expectations (with parameter theta=0.97) for the real
-    after–tax oil prices formed at the time of annex B approval
+   adaptive expectations (with parameter theta=0.97) for the real
+   after–tax oil prices formed at the time of annex B approval
 
 varp97
-    volatility of the adaptive expectations (with parameter theta=0.97)
-    for real after tax oil prices measured as the squared recursive
-    standard errors of the regression of pt on pte(theta)
+   volatility of the adaptive expectations (with parameter theta=0.97)
+   for real after tax oil prices measured as the squared recursive
+   standard errors of the regression of pt on pte(theta)
 
 p98
-    adaptive expectations (with parameter theta=0.98) for the real
-    after–tax oil prices formed at the time of annex B approval
+   adaptive expectations (with parameter theta=0.98) for the real
+   after–tax oil prices formed at the time of annex B approval
 
 varp98
-    volatility of the adaptive expectations (with parameter theta=0.98)
-    for real after tax oil prices measured as the squared recursive
-    standard errors of the regression of pt on pte(theta)
+   volatility of the adaptive expectations (with parameter theta=0.98)
+   for real after tax oil prices measured as the squared recursive
+   standard errors of the regression of pt on pte(theta)
 
 Source
 ~~~~~~

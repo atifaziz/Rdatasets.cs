@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    hills
+   hills
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 The components are:
 
 ``dist``
-    distance in miles (on the map).
+   distance in miles (on the map).
 
 ``climb``
-    total height gained during the route, in feet.
+   total height gained during the route, in feet.
 
 ``time``
-    record time in minutes.
+   record time in minutes.
 
 Source
 ~~~~~~

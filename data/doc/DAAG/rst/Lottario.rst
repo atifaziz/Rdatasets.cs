@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Lottario
+   Lottario
 
 Format
 ~~~~~~
@@ -26,10 +26,10 @@ Format
 This data frame contains the following columns:
 
 Number
-    the integers from 1 to 39, representing the numbered balls
+   the integers from 1 to 39, representing the numbered balls
 
 Frequency
-    the number of occurrences of each numbered ball
+   the number of occurrences of each numbered ball
 
 Source
 ~~~~~~
@@ -47,5 +47,5 @@ Examples
 
 ::
 
-     
-    order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers
+    
+   order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers

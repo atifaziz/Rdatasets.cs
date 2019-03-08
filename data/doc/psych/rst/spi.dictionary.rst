@@ -21,9 +21,9 @@ Usage
 
 ::
 
-    data("spi")
-    data(spi.dictionary)
-    data(spi.keys)
+   data("spi")
+   data(spi.dictionary)
+   data(spi.keys)
 
 Format
 ~~~~~~
@@ -32,45 +32,45 @@ A data frame with 4000 observations on the following 145 variables. (The
 q numbers are the SAPA item numbers).
 
 ``age``
-    Age in years from 11 -90
+   Age in years from 11 -90
 
 ``sex``
-    Reported biological sex (coded by X chromosones => 1=Male, 2 =
-    Female)
+   Reported biological sex (coded by X chromosones => 1=Male, 2 =
+   Female)
 
 ``health``
-    Self rated health 1-5: poor, fair, good, very good, excellent
+   Self rated health 1-5: poor, fair, good, very good, excellent
 
 ``p1edu``
-    Parent 1 education
+   Parent 1 education
 
 ``p2edu``
-    Parent 2 education
+   Parent 2 education
 
 ``education``
-    Respondents education: less than 12, HS grad, current univ, some
-    univ, associate degree, college degree, in grad/prof, grad/prof
-    degree
+   Respondents education: less than 12, HS grad, current univ, some
+   univ, associate degree, college degree, in grad/prof, grad/prof
+   degree
 
 ``wellness``
-    Self rated "wellnes" 1-2
+   Self rated "wellnes" 1-2
 
 ``exer``
-    Frequency of exercise: very rarely, < 1/month, < 1/wk, 1 or 2
-    times/week, 3-5/wk, > 5 times/week
+   Frequency of exercise: very rarely, < 1/month, < 1/wk, 1 or 2
+   times/week, 3-5/wk, > 5 times/week
 
 ``smoke``
-    never, not last year, < 1/month, <1/week, 1-3 days/week, most days,
-    up to 5 x /day, up to 20 x /day, > 20x/day
+   never, not last year, < 1/month, <1/week, 1-3 days/week, most days,
+   up to 5 x /day, up to 20 x /day, > 20x/day
 
 ``ER``
-    Emergency room visits none, 1x, 2x, 3 or more times
+   Emergency room visits none, 1x, 2x, 3 or more times
 
 ``q_253``
-    see the spi.dictionary for these items (q_253
+   see the spi.dictionary for these items (q_253
 
 ``q_1328``
-    see the dictionary for all items q_1328)
+   see the dictionary for all items q_1328)
 
 Details
 ~~~~~~~
@@ -112,9 +112,9 @@ Examples
 
 ::
 
-    data(spi)
-    data(sapa.dictionary)
-    bestScales(spi, criteria="health",dictionary=spi.dictionary)
+   data(spi)
+   data(sapa.dictionary)
+   bestScales(spi, criteria="health",dictionary=spi.dictionary)
 
-    sc <- scoreItems(spi.keys,spi)
-    corPlot(sc$corrected,numbers=TRUE,cex=.4,xlas=2,min.length=6)
+   sc <- scoreItems(spi.keys,spi)
+   corPlot(sc$corrected,numbers=TRUE,cex=.4,xlas=2,min.length=6)

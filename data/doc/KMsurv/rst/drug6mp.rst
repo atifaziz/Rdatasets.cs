@@ -16,19 +16,19 @@ Format
 This data frame contains the following columns:
 
 pair
-    pair number
+   pair number
 
 remstat
-    Remission status at randomization (1=partial, 2=complete)
+   Remission status at randomization (1=partial, 2=complete)
 
 t1
-    Time to relapse for placebo patients, months
+   Time to relapse for placebo patients, months
 
 t2
-    Time to relapse for 6-MP patients, months
+   Time to relapse for 6-MP patients, months
 
 relapse
-    Relapse indicator (0=censored, 1=relapse) for 6-MP patients
+   Relapse indicator (0=censored, 1=relapse) for 6-MP patients
 
 Source
 ~~~~~~
@@ -42,4 +42,4 @@ Examples
 
 ::
 
-    data(drug6mp)
+   data(drug6mp)

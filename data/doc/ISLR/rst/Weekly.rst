@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Weekly
+   Weekly
 
 Format
 ~~~~~~
@@ -24,33 +24,33 @@ Format
 A data frame with 1089 observations on the following 9 variables.
 
 ``Year``
-    The year that the observation was recorded
+   The year that the observation was recorded
 
 ``Lag1``
-    Percentage return for previous week
+   Percentage return for previous week
 
 ``Lag2``
-    Percentage return for 2 weeks previous
+   Percentage return for 2 weeks previous
 
 ``Lag3``
-    Percentage return for 3 weeks previous
+   Percentage return for 3 weeks previous
 
 ``Lag4``
-    Percentage return for 4 weeks previous
+   Percentage return for 4 weeks previous
 
 ``Lag5``
-    Percentage return for 5 weeks previous
+   Percentage return for 5 weeks previous
 
 ``Volume``
-    Volume of shares traded (average number of daily shares traded in
-    billions)
+   Volume of shares traded (average number of daily shares traded in
+   billions)
 
 ``Today``
-    Percentage return for this week
+   Percentage return for this week
 
 ``Direction``
-    A factor with levels ``Down`` and ``Up`` indicating whether the
-    market had a positive or negative return on a given week
+   A factor with levels ``Down`` and ``Up`` indicating whether the
+   market had a positive or negative return on a given week
 
 Source
 ~~~~~~
@@ -71,5 +71,5 @@ Examples
 
 ::
 
-    summary(Weekly)
-    lm(Today~Lag1+Lag2,data=Weekly)
+   summary(Weekly)
+   lm(Today~Lag1+Lag2,data=Weekly)

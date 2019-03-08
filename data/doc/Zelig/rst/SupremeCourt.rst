@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(SupremeCourt)
+   data(SupremeCourt)
 
 Format
 ~~~~~~

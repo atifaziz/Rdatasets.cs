@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("birthdeathrates")
+   data("birthdeathrates")
 
 Format
 ~~~~~~
@@ -23,10 +23,10 @@ Format
 A data frame with 69 observations on the following 2 variables.
 
 ``birth``
-    birth rate.
+   birth rate.
 
 ``death``
-    death rate.
+   death rate.
 
 Source
 ~~~~~~
@@ -40,6 +40,6 @@ Examples
 ::
 
 
-      data("birthdeathrates", package = "HSAUR")
-      plot(birthdeathrates)
+     data("birthdeathrates", package = "HSAUR")
+     plot(birthdeathrates)
 

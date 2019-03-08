@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("polyps")
+   data("polyps")
 
 Format
 ~~~~~~
@@ -25,14 +25,14 @@ Format
 A data frame with 20 observations on the following 3 variables.
 
 ``number``
-    number of colonic polyps at 12 months.
+   number of colonic polyps at 12 months.
 
 ``treat``
-    treatment arms of the trail, a factor with levels ``placebo`` and
-    ``drug``.
+   treatment arms of the trail, a factor with levels ``placebo`` and
+   ``drug``.
 
 ``age``
-    the age of the patient.
+   the age of the patient.
 
 Details
 ~~~~~~~
@@ -63,7 +63,7 @@ Examples
 ::
 
 
-      data("polyps", package = "HSAUR")
-      plot(number ~ age, data = polyps, pch = as.numeric(polyps$treat))
-      legend(40, 40, legend = levels(polyps$treat), pch = 1:2, bty = "n")
+     data("polyps", package = "HSAUR")
+     plot(number ~ age, data = polyps, pch = as.numeric(polyps$treat))
+     legend(40, 40, legend = levels(polyps$treat), pch = 1:2, bty = "n")
 

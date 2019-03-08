@@ -30,7 +30,7 @@ Usage
 
 ::
 
-    gravity
+   gravity
 
 Format
 ~~~~~~
@@ -38,11 +38,11 @@ Format
 This data frame contains the following columns:
 
 ``g``
-    The deviation of the estimate from 980.000 centimetres per second
-    squared.
+   The deviation of the estimate from 980.000 centimetres per second
+   squared.
 
 ``series``
-    A factor describing from which experiment the estimate was derived.
+   A factor describing from which experiment the estimate was derived.
 
 Source
 ~~~~~~

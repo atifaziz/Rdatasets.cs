@@ -16,16 +16,16 @@ Format
 This data frame contains the following columns:
 
 time
-    Time to tumor development
+   Time to tumor development
 
 tumor
-    Indicator of tumor development (1=yes, 0=no)
+   Indicator of tumor development (1=yes, 0=no)
 
 trt
-    Treatment (1=treated with drug, 0=given placebo)
+   Treatment (1=treated with drug, 0=given placebo)
 
 litter
-    Litter
+   Litter
 
 Source
 ~~~~~~
@@ -38,4 +38,4 @@ Examples
 
 ::
 
-    data(rats)
+   data(rats)

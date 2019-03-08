@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Smarket
+   Smarket
 
 Format
 ~~~~~~
@@ -24,32 +24,32 @@ Format
 A data frame with 1250 observations on the following 9 variables.
 
 ``Year``
-    The year that the observation was recorded
+   The year that the observation was recorded
 
 ``Lag1``
-    Percentage return for previous day
+   Percentage return for previous day
 
 ``Lag2``
-    Percentage return for 2 days previous
+   Percentage return for 2 days previous
 
 ``Lag3``
-    Percentage return for 3 days previous
+   Percentage return for 3 days previous
 
 ``Lag4``
-    Percentage return for 4 days previous
+   Percentage return for 4 days previous
 
 ``Lag5``
-    Percentage return for 5 days previous
+   Percentage return for 5 days previous
 
 ``Volume``
-    Volume of shares traded (number of daily shares traded in billions)
+   Volume of shares traded (number of daily shares traded in billions)
 
 ``Today``
-    Percentage return for today
+   Percentage return for today
 
 ``Direction``
-    A factor with levels ``Down`` and ``Up`` indicating whether the
-    market had a positive or negative return on a given day
+   A factor with levels ``Down`` and ``Up`` indicating whether the
+   market had a positive or negative return on a given day
 
 Source
 ~~~~~~
@@ -70,5 +70,5 @@ Examples
 
 ::
 
-    summary(Smarket)
-    lm(Today~Lag1+Lag2,data=Smarket)
+   summary(Smarket)
+   lm(Today~Lag1+Lag2,data=Smarket)

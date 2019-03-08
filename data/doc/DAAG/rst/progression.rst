@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(progression)
+   data(progression)
 
 Format
 ~~~~~~
@@ -23,16 +23,16 @@ Format
 A data frame with 227 observations on the following 4 columns.
 
 ``year``
-    Year that time was first recorded
+   Year that time was first recorded
 
 ``Distance``
-    distance in kilometers
+   distance in kilometers
 
 ``Time``
-    time in minutes
+   time in minutes
 
 ``race``
-    character; descriptor for event (100m, mile, ...)
+   character; descriptor for event (100m, mile, ...)
 
 Details
 ~~~~~~~
@@ -53,11 +53,11 @@ Examples
 
 ::
 
-    data(progression)
-    plot(log(Time) ~ log(Distance), data=progression)
-    xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
-    xyplot(log(Time) ~ log(Distance), data=progression,
-           type=c("p","smooth"))
-    res <- resid(lm(log(Time) ~ log(Distance), data=progression))
-    plot(res ~ log(Distance), data=progression,
-         ylab="Residuals from regression line on log scales")
+   data(progression)
+   plot(log(Time) ~ log(Distance), data=progression)
+   xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
+   xyplot(log(Time) ~ log(Distance), data=progression,
+          type=c("p","smooth"))
+   res <- resid(lm(log(Time) ~ log(Distance), data=progression))
+   plot(res ~ log(Distance), data=progression,
+        ylab="Residuals from regression line on log scales")

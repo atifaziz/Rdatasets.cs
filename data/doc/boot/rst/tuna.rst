@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    tuna
+   tuna
 
 Format
 ~~~~~~
@@ -30,8 +30,8 @@ Format
 This data frame contains the following column:
 
 ``y``
-    The perpendicular distance, in miles, from the transect for 64
-    independent sightings of tuna schools.
+   The perpendicular distance, in miles, from the transect for 64
+   independent sightings of tuna schools.
 
 Source
 ~~~~~~

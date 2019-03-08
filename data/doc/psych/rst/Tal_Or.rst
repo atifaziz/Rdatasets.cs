@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data("Tal_Or")
+   data("Tal_Or")
 
 Format
 ~~~~~~
@@ -27,24 +27,24 @@ Format
 A data frame with 123 observations on the following 6 variables.
 
 ``cond``
-    Experimental Condition: 0 low media importance, 1 high media
-    importance
+   Experimental Condition: 0 low media importance, 1 high media
+   importance
 
 ``pmi``
-    Presumed media influence (based upon the mean of two items
+   Presumed media influence (based upon the mean of two items
 
 ``import``
-    Importance of the issue
+   Importance of the issue
 
 ``reaction``
-    Subjects rated agreement about possible reactions to the story (mean
-    of 4 items).
+   Subjects rated agreement about possible reactions to the story (mean
+   of 4 items).
 
 ``gender``
-    1 = male, 2 = female
+   1 = male, 2 = female
 
 ``age``
-    a numeric vector
+   a numeric vector
 
 Details
 ~~~~~~~
@@ -83,6 +83,6 @@ Examples
 
 ::
 
-    data(Tal_Or)
-    mediate(reaction ~ cond + (pmi), data =Tal_Or,n.iter=50) 
+   data(Tal_Or)
+   mediate(reaction ~ cond + (pmi), data =Tal_Or,n.iter=50) 
 

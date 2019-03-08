@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    cane
+   cane
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 This data frame contains the following columns:
 
 ``n``
-    The total number of shoots in each plot.
+   The total number of shoots in each plot.
 
 ``r``
-    The number of diseased shoots.
+   The number of diseased shoots.
 
 ``x``
-    The number of pieces of the stems, out of 50, planted in each plot.
+   The number of pieces of the stems, out of 50, planted in each plot.
 
 ``var``
-    A factor indicating the variety of sugar-cane in each plot.
+   A factor indicating the variety of sugar-cane in each plot.
 
 ``block``
-    A factor for the blocks.
+   A factor for the blocks.
 
 Details
 ~~~~~~~

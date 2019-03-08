@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(chorSub)
+   data(chorSub)
 
 Format
 ~~~~~~
@@ -31,11 +31,11 @@ This data set was produced from ``chorizon`` via these statements:
 
 ::
 
-        data(chorizon, package = "mvoutlier")
-        chorSub <- round(100*scale(chorizon[,101:110]))[190:250,]
-        storage.mode(chorSub) <- "integer"
-        colnames(chorSub) <- gsub("_.*", '', colnames(chorSub))
-      
+       data(chorizon, package = "mvoutlier")
+       chorSub <- round(100*scale(chorizon[,101:110]))[190:250,]
+       storage.mode(chorSub) <- "integer"
+       colnames(chorSub) <- gsub("_.*", '', colnames(chorSub))
+     
 
 Source
 ~~~~~~
@@ -53,6 +53,6 @@ Examples
 
 ::
 
-    data(chorSub)
-    summary(chorSub)
-    pairs(chorSub, gap= .1)# some outliers
+   data(chorSub)
+   summary(chorSub)
+   pairs(chorSub, gap= .1)# some outliers

@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("foster")
+   data("foster")
 
 Format
 ~~~~~~
@@ -25,15 +25,15 @@ Format
 A data frame with 61 observations on the following 3 variables.
 
 ``litgen``
-    genotype of the litter, a factor with levels ``A``, ``B``, ``I``,
-    and ``J``.
+   genotype of the litter, a factor with levels ``A``, ``B``, ``I``, and
+   ``J``.
 
 ``motgen``
-    genotype of the mother, a factor with levels ``A``, ``B``, ``I``,
-    and ``J``.
+   genotype of the mother, a factor with levels ``A``, ``B``, ``I``, and
+   ``J``.
 
 ``weight``
-    the weight of the litter after a feeding period.
+   the weight of the litter after a feeding period.
 
 Details
 ~~~~~~~
@@ -53,6 +53,6 @@ Examples
 ::
 
 
-      data("foster", package = "HSAUR")
-      plot.design(foster)
+     data("foster", package = "HSAUR")
+     plot.design(foster)
 

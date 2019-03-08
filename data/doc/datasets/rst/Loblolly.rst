@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Loblolly
+   Loblolly
 
 Format
 ~~~~~~
@@ -26,14 +26,14 @@ An object of class
 containing the following columns:
 
 height
-    a numeric vector of tree heights (ft).
+   a numeric vector of tree heights (ft).
 
 age
-    a numeric vector of tree ages (yr).
+   a numeric vector of tree ages (yr).
 
 Seed
-    an ordered factor indicating the seed source for the tree. The
-    ordering is according to increasing maximum height.
+   an ordered factor indicating the seed source for the tree. The
+   ordering is according to increasing maximum height.
 
 Details
 ~~~~~~~
@@ -57,12 +57,12 @@ Examples
 
 ::
 
-    require(stats); require(graphics)
-    plot(height ~ age, data = Loblolly, subset = Seed == 329,
-         xlab = "Tree age (yr)", las = 1,
-         ylab = "Tree height (ft)",
-         main = "Loblolly data and fitted curve (Seed 329 only)")
-    fm1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
-               data = Loblolly, subset = Seed == 329)
-    age <- seq(0, 30, length.out = 101)
-    lines(age, predict(fm1, list(age = age)))
+   require(stats); require(graphics)
+   plot(height ~ age, data = Loblolly, subset = Seed == 329,
+        xlab = "Tree age (yr)", las = 1,
+        ylab = "Tree height (ft)",
+        main = "Loblolly data and fitted curve (Seed 329 only)")
+   fm1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
+              data = Loblolly, subset = Seed == 329)
+   age <- seq(0, 30, length.out = 101)
+   lines(age, predict(fm1, list(age = age)))

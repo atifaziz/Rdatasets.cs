@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(friendship)
+   data(friendship)
 
 Format
 ~~~~~~
@@ -40,7 +40,7 @@ Examples
 
 ::
 
-        ## Not run: 
-    friendship <- format.network.data(friends, advice, prestige, authority, perpower, per)
+       ## Not run: 
+   friendship <- format.network.data(friends, advice, prestige, authority, perpower, per)
 
-    ## End(Not run)
+   ## End(Not run)

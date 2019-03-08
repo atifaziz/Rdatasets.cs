@@ -39,9 +39,9 @@ Usage
 
 ::
 
-    data(CushnyPeebles)
-    data(CushnyPeeblesN)
-        
+   data(CushnyPeebles)
+   data(CushnyPeeblesN)
+       
 
 Format
 ~~~~~~
@@ -50,31 +50,31 @@ Format
 variables.
 
 ``Control``
-    a numeric vector: mean hours of sleep
+   a numeric vector: mean hours of sleep
 
 ``L_hyoscyamine``
-    a numeric vector: mean hours of sleep
+   a numeric vector: mean hours of sleep
 
 ``L_hyoscine``
-    a numeric vector: mean hours of sleep
+   a numeric vector: mean hours of sleep
 
 ``D_hyoscine``
-    a numeric vector: mean hours of sleep
+   a numeric vector: mean hours of sleep
 
 ``CushnyPeeblesN``: A data frame with 11 observations on the following 4
 variables.
 
 ``Control``
-    a numeric vector: number of observations
+   a numeric vector: number of observations
 
 ``L_hyoscyamine``
-    a numeric vector: number of observations
+   a numeric vector: number of observations
 
 ``L_hyoscine``
-    a numeric vector: number of observations
+   a numeric vector: number of observations
 
 ``DL_hyoscine``
-    a numeric vector: number of observations
+   a numeric vector: number of observations
 
 Details
 ~~~~~~~
@@ -112,41 +112,41 @@ Examples
 
 ::
 
-    data(CushnyPeebles)
-    # quick looks at the data
-    plot(CushnyPeebles)
-    boxplot(CushnyPeebles, ylab="Hours of Sleep", xlab="Treatment")
+   data(CushnyPeebles)
+   # quick looks at the data
+   plot(CushnyPeebles)
+   boxplot(CushnyPeebles, ylab="Hours of Sleep", xlab="Treatment")
 
-    ##########################
-    # Repeated measures MANOVA
-    require(car)
+   ##########################
+   # Repeated measures MANOVA
+   require(car)
 
-    CPmod <- lm(cbind(Control, L_hyoscyamine, L_hyoscine, DL_hyoscine) ~ 1, data=CushnyPeebles)
+   CPmod <- lm(cbind(Control, L_hyoscyamine, L_hyoscine, DL_hyoscine) ~ 1, data=CushnyPeebles)
 
-    # Assign within-S factor and contrasts
-    Treatment <- factor(colnames(CushnyPeebles), levels=colnames(CushnyPeebles))
-    contrasts(Treatment) <- matrix(
-        c(-3, 1, 1, 1,
-           0,-2, 1, 1,
-           0, 0,-1, 1), ncol=3)
-    colnames(contrasts(Treatment)) <- c("Control.Drug", "L.DL", "L_hy.DL_hy")
+   # Assign within-S factor and contrasts
+   Treatment <- factor(colnames(CushnyPeebles), levels=colnames(CushnyPeebles))
+   contrasts(Treatment) <- matrix(
+       c(-3, 1, 1, 1,
+          0,-2, 1, 1,
+          0, 0,-1, 1), ncol=3)
+   colnames(contrasts(Treatment)) <- c("Control.Drug", "L.DL", "L_hy.DL_hy")
 
-    Treats <- data.frame(Treatment)
-    (CPaov <- Anova(CPmod, idata=Treats, idesign= ~Treatment))
-    summary(CPaov, univariate=FALSE)
+   Treats <- data.frame(Treatment)
+   (CPaov <- Anova(CPmod, idata=Treats, idesign= ~Treatment))
+   summary(CPaov, univariate=FALSE)
 
-    if (require(heplots)) {
-      heplot(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment", 
-        xlab="Control vs Drugs", ylab="L vs DL drug")
-      pairs(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment")
-    }
+   if (require(heplots)) {
+     heplot(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment", 
+       xlab="Control vs Drugs", ylab="L vs DL drug")
+     pairs(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment")
+   }
 
-    ################################
-    # reshape to long format, add Ns
+   ################################
+   # reshape to long format, add Ns
 
-    CPlong <- stack(CushnyPeebles)[,2:1]
-    colnames(CPlong) <- c("treatment", "sleep")
-    CPN <- stack(CushnyPeeblesN)
-    CPlong <- data.frame(patient=rep(1:11,4), CPlong, n=CPN$values)
-    str(CPlong)
+   CPlong <- stack(CushnyPeebles)[,2:1]
+   colnames(CPlong) <- c("treatment", "sleep")
+   CPN <- stack(CushnyPeeblesN)
+   CPlong <- data.frame(patient=rep(1:11,4), CPlong, n=CPN$values)
+   str(CPlong)
 

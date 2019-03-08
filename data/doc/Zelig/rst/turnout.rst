@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(turnout)
+   data(turnout)
 
 Format
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    WVS
+   WVS
 
 Format
 ~~~~~~
@@ -24,26 +24,26 @@ Format
 A data frame with 5381 observations on the following 6 variables.
 
 ``poverty``
-    “Do you think that what the government is doing for people in
-    poverty in this country is about the right amount, too much, or too
-    little?” (ordered): ``Too Little``, ``About Right``, ``Too Much``
+   “Do you think that what the government is doing for people in poverty
+   in this country is about the right amount, too much, or too little?”
+   (ordered): ``Too Little``, ``About Right``, ``Too Much``
 
 .
 
 ``religion``
-    Member of a religion: ``no`` or ``yes``.
+   Member of a religion: ``no`` or ``yes``.
 
 ``degree``
-    Held a university degree: ``no`` or ``yes``.
+   Held a university degree: ``no`` or ``yes``.
 
 ``country``
-    ``Australia``, ``Norway``, ``Sweden``, or ``USA``.
+   ``Australia``, ``Norway``, ``Sweden``, or ``USA``.
 
 ``age``
-    in years.
+   in years.
 
 ``gender``
-    ``male`` or ``female``.
+   ``male`` or ``female``.
 
 References
 ~~~~~~~~~~
@@ -57,4 +57,4 @@ Examples
 
 ::
 
-    summary(WVS)
+   summary(WVS)

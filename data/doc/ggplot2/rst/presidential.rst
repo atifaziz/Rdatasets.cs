@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    presidential
+   presidential
 
 Format
 ~~~~~~

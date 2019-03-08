@@ -17,8 +17,8 @@ Usage
 
 ::
 
-    synth.tr
-    synth.te
+   synth.tr
+   synth.te
 
 Format
 ~~~~~~
@@ -26,13 +26,13 @@ Format
 These data frames contains the following columns:
 
 ``xs``
-    x-coordinate
+   x-coordinate
 
 ``ys``
-    y-coordinate
+   y-coordinate
 
 ``yc``
-    class, coded as 0 or 1.
+   class, coded as 0 or 1.
 
 Source
 ~~~~~~

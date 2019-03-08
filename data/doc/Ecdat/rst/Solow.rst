@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Solow)
+   data(Solow)
 
 Format
 ~~~~~~
@@ -29,13 +29,13 @@ Format
 A time serie containing :
 
 q
-    output
+   output
 
 k
-    capital/labor ratio
+   capital/labor ratio
 
 A
-    index of technology
+   index of technology
 
 Source
 ~~~~~~

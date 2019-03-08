@@ -17,20 +17,20 @@ Usage
 
 ::
 
-    data(state.info)
+   data(state.info)
 
 Format
 ~~~~~~
 
 ``icpsr``
-    integer, numeric code for state used by the Inter-university
-    Consortium for Political and Social Research
+   integer, numeric code for state used by the Inter-university
+   Consortium for Political and Social Research
 
 ``state``
-    character, name of state or ``Washington     D.C.``
+   character, name of state or ``Washington     D.C.``
 
 ``year``
-    numeric or ``NA``, year of statehood
+   numeric or ``NA``, year of statehood
 
 Details
 ~~~~~~~

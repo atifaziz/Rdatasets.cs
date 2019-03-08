@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    Depredations
+   Depredations
 
 Format
 ~~~~~~
@@ -23,19 +23,19 @@ Format
 A data frame with 434 observations on the following 5 variables.
 
 ``longitude``
-    longitude of the farm
+   longitude of the farm
 
 ``latitude``
-    latitude of the farm
+   latitude of the farm
 
 ``number``
-    number of depredations 1976-1998
+   number of depredations 1976-1998
 
 ``early``
-    number of depredations 1991 or before
+   number of depredations 1991 or before
 
 ``late``
-    number of depredations 1992 or later
+   number of depredations 1992 or later
 
 References
 ~~~~~~~~~~

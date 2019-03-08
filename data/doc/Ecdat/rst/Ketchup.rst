@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Ketchup)
+   data(Ketchup)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A dataframe containing :
 
 hid
-    individuals identifiers
+   individuals identifiers
 
 id
-    purchase identifiers
+   purchase identifiers
 
 choice
-    one of heinz, hunts, delmonte, stb (store brand)
+   one of heinz, hunts, delmonte, stb (store brand)
 
 price.z
-    price of brand z
+   price of brand z
 
 Source
 ~~~~~~

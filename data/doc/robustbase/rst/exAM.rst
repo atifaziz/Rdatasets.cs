@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(exAM)
+   data(exAM, package="robustbase")
 
 Format
 ~~~~~~
@@ -42,7 +42,7 @@ Examples
 
 ::
 
-    data(exAM)
-    plot(exAM)
-    summary(ls <- lm(y ~ x, data=exAM))
-    abline(ls)
+   data(exAM)
+   plot(exAM)
+   summary(ls <- lm(y ~ x, data=exAM))
+   abline(ls)

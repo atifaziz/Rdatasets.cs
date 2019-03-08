@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(newpainters)
+   data(newpainters)
 
 Format
 ~~~~~~

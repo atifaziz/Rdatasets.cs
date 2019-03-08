@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    Tests
+   Tests
 
 Format
 ~~~~~~
@@ -28,22 +28,22 @@ Format
 A data frame with 32 observations on the following 6 variables.
 
 ``x1``
-    score on verbal test 1.
+   score on verbal test 1.
 
 ``x2``
-    score on verbal test 2.
+   score on verbal test 2.
 
 ``x3``
-    score on verbal test 3.
+   score on verbal test 3.
 
 ``y1``
-    score on math test 1.
+   score on math test 1.
 
 ``y2``
-    score on math test 2.
+   score on math test 2.
 
 ``y3``
-    score on math test 3.
+   score on math test 3.
 
 Source
 ~~~~~~

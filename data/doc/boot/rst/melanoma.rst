@@ -26,7 +26,7 @@ Usage
 
 ::
 
-    melanoma
+   melanoma
 
 Format
 ~~~~~~
@@ -34,28 +34,27 @@ Format
 This data frame contains the following columns:
 
 ``time``
-    Survival time in days since the operation, possibly censored.
+   Survival time in days since the operation, possibly censored.
 
 ``status``
-    The patients status at the end of the study. 1 indicates that they
-    had died from melanoma, 2 indicates that they were still alive and 3
-    indicates that they had died from causes unrelated to their
-    melanoma.
+   The patients status at the end of the study. 1 indicates that they
+   had died from melanoma, 2 indicates that they were still alive and 3
+   indicates that they had died from causes unrelated to their melanoma.
 
 ``sex``
-    The patients sex; 1=male, 0=female.
+   The patients sex; 1=male, 0=female.
 
 ``age``
-    Age in years at the time of the operation.
+   Age in years at the time of the operation.
 
 ``year``
-    Year of operation.
+   Year of operation.
 
 ``thickness``
-    Tumour thickness in mm.
+   Tumour thickness in mm.
 
 ``ulcer``
-    Indicator of ulceration; 1=present, 0=absent.
+   Indicator of ulceration; 1=present, 0=absent.
 
 Note
 ~~~~

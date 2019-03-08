@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("PetersenCL")
+   data("PetersenCL")
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 A data frame containing 5000 observations on 4 variables.
 
 firm
-    integer. Firm identifier (500 firms).
+   integer. Firm identifier (500 firms).
 
 year
-    integer. Time variable (10 years per firm).
+   integer. Time variable (10 years per firm).
 
 x
-    numeric. Independent regressor variable.
+   numeric. Independent regressor variable.
 
 y
-    numeric. Dependent response variable.
+   numeric. Dependent response variable.
 
 Details
 ~~~~~~~

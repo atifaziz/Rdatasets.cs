@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    kyphosis
+   kyphosis
 
 Format
 ~~~~~~
@@ -24,17 +24,17 @@ Format
 This data frame contains the following columns:
 
 ``Kyphosis``
-    a factor with levels ``absent`` ``present`` indicating if a kyphosis
-    (a type of deformation) was present after the operation.
+   a factor with levels ``absent`` ``present`` indicating if a kyphosis
+   (a type of deformation) was present after the operation.
 
 ``Age``
-    in months
+   in months
 
 ``Number``
-    the number of vertebrae involved
+   the number of vertebrae involved
 
 ``Start``
-    the number of the first (topmost) vertebra operated on.
+   the number of the first (topmost) vertebra operated on.
 
 Source
 ~~~~~~
@@ -47,13 +47,13 @@ Examples
 
 ::
 
-    fit <- rpart(Kyphosis ~ Age + Number + Start, data = kyphosis)
-    fit2 <- rpart(Kyphosis ~ Age + Number + Start, data = kyphosis,
-                  parms = list(prior = c(0.65, 0.35), split = "information"))
-    fit3 <- rpart(Kyphosis ~ Age + Number + Start, data=kyphosis,
-                  control = rpart.control(cp = 0.05))
-    par(mfrow = c(1,2), xpd = TRUE)
-    plot(fit)
-    text(fit, use.n = TRUE)
-    plot(fit2)
-    text(fit2, use.n = TRUE)
+   fit <- rpart(Kyphosis ~ Age + Number + Start, data = kyphosis)
+   fit2 <- rpart(Kyphosis ~ Age + Number + Start, data = kyphosis,
+                 parms = list(prior = c(0.65, 0.35), split = "information"))
+   fit3 <- rpart(Kyphosis ~ Age + Number + Start, data=kyphosis,
+                 control = rpart.control(cp = 0.05))
+   par(mfrow = c(1,2), xpd = TRUE)
+   plot(fit)
+   text(fit, use.n = TRUE)
+   plot(fit2)
+   text(fit2, use.n = TRUE)

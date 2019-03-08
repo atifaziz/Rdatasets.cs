@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    Migration
+   Migration
 
 Format
 ~~~~~~
@@ -23,39 +23,39 @@ Format
 This data frame contains the following columns:
 
 source
-    Province of origin (source). A factor with levels: ``ALTA``,
-    Alberta; ``BC``, British Columbia; ``MAN``, Manitoba; ``NB``, New
-    Brunswick; ``NFLD``, New Foundland; ``NS``, Nova Scotia; ``ONT``,
-    Ontario; ``PEI``, Prince Edward Island; ``QUE``, Quebec; ``SASK``,
-    Saskatchewan.
+   Province of origin (source). A factor with levels: ``ALTA``, Alberta;
+   ``BC``, British Columbia; ``MAN``, Manitoba; ``NB``, New Brunswick;
+   ``NFLD``, New Foundland; ``NS``, Nova Scotia; ``ONT``, Ontario;
+   ``PEI``, Prince Edward Island; ``QUE``, Quebec; ``SASK``,
+   Saskatchewan.
 
 destination
-    Province of destination (1971 residence). A factor with levels:
-    ``ALTA``, Alberta; ``BC``, British Columbia; ``MAN``, Manitoba;
-    ``NB``, New Brunswick; ``NFLD``, New Foundland; ``NS``, Nova Scotia;
-    ``ONT``, Ontario; ``PEI``, Prince Edward Island; ``QUE``, Quebec;
-    ``SASK``, Saskatchewan.
+   Province of destination (1971 residence). A factor with levels:
+   ``ALTA``, Alberta; ``BC``, British Columbia; ``MAN``, Manitoba;
+   ``NB``, New Brunswick; ``NFLD``, New Foundland; ``NS``, Nova Scotia;
+   ``ONT``, Ontario; ``PEI``, Prince Edward Island; ``QUE``, Quebec;
+   ``SASK``, Saskatchewan.
 
 migrants
-    Number of migrants (from source to destination) in the period
-    1966–1971.
+   Number of migrants (from source to destination) in the period
+   1966–1971.
 
 distance
-    Distance (between principal cities of provinces): NFLD, St. John;
-    PEI, Charlottetown; NS, Halifax; NB, Fredricton; QUE, Montreal; ONT,
-    Toronto; MAN, Winnipeg; SASK, Regina; ALTA, Edmonton; BC, Vancouver.
+   Distance (between principal cities of provinces): NFLD, St. John;
+   PEI, Charlottetown; NS, Halifax; NB, Fredricton; QUE, Montreal; ONT,
+   Toronto; MAN, Winnipeg; SASK, Regina; ALTA, Edmonton; BC, Vancouver.
 
 pops66
-    1966 population of source province.
+   1966 population of source province.
 
 pops71
-    1971 population of source province.
+   1971 population of source province.
 
 popd66
-    1966 population of destination province.
+   1966 population of destination province.
 
 popd71
-    1971 population of destination province.
+   1971 population of destination province.
 
 Details
 ~~~~~~~

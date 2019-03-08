@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(iqitems)
+   data(iqitems)
 
 Format
 ~~~~~~
@@ -30,52 +30,52 @@ A data frame with 1525 observations on the following 16 variables. The
 number following the name is the item number from SAPA.
 
 ``reason.4``
-    Basic reasoning questions
+   Basic reasoning questions
 
 ``reason.16``
-    Basic reasoning question
+   Basic reasoning question
 
 ``reason.17``
-    Basic reasoning question
+   Basic reasoning question
 
 ``reason.19``
-    Basic reasoning question
+   Basic reasoning question
 
 ``letter.7``
-    In the following alphanumeric series, what letter comes next?
+   In the following alphanumeric series, what letter comes next?
 
 ``letter.33``
-    In the following alphanumeric series, what letter comes next?
+   In the following alphanumeric series, what letter comes next?
 
 ``letter.34``
-    In the following alphanumeric series, what letter comes next
+   In the following alphanumeric series, what letter comes next
 
 ``letter.58``
-    In the following alphanumeric series, what letter comes next?
+   In the following alphanumeric series, what letter comes next?
 
 ``matrix.45``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``matrix.46``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``matrix.47``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``matrix.55``
-    A matrix reasoning task
+   A matrix reasoning task
 
 ``rotate.3``
-    Spatial Rotation of type 1.2
+   Spatial Rotation of type 1.2
 
 ``rotate.4``
-    Spatial Rotation of type 1.2
+   Spatial Rotation of type 1.2
 
 ``rotate.6``
-    Spatial Rotation of type 1.1
+   Spatial Rotation of type 1.1
 
 ``rotate.8``
-    Spatial Rotation of type 2.3
+   Spatial Rotation of type 2.3
 
 Details
 ~~~~~~~
@@ -133,21 +133,21 @@ Examples
 
 ::
 
-    ## Not run: 
-    data(iqitems)
-    iq.keys <- c(4,4,4, 6,  6,3,4,4,   5,2,2,4,   3,2,6,7)
-    score.multiple.choice(iq.keys,iqitems)   #this just gives summary statisics
-    #convert them to true false 
-    iq.scrub <- scrub(iqitems,isvalue=0)  #first get rid of the zero responses
-    iq.tf <-  score.multiple.choice(iq.keys,iq.scrub,score=FALSE) 
-                  #convert to wrong (0) and correct (1) for analysis
-    describe(iq.tf) 
-    #see the ability data set for these analyses
-    #now, for some item analysis
-    #iq.irt <- irt.fa(iq.tf)  #do a basic irt
-    #iq.sc <-score.irt(iq.irt,iq.tf)  #find the scores
-    #op <- par(mfrow=c(4,4))
-    #irt.responses(iq.sc[,1], iq.tf)  
-    #op <- par(mfrow=c(1,1))
+   ## Not run: 
+   data(iqitems)
+   iq.keys <- c(4,4,4, 6,  6,3,4,4,   5,2,2,4,   3,2,6,7)
+   score.multiple.choice(iq.keys,iqitems)   #this just gives summary statisics
+   #convert them to true false 
+   iq.scrub <- scrub(iqitems,isvalue=0)  #first get rid of the zero responses
+   iq.tf <-  score.multiple.choice(iq.keys,iq.scrub,score=FALSE) 
+                 #convert to wrong (0) and correct (1) for analysis
+   describe(iq.tf) 
+   #see the ability data set for these analyses
+   #now, for some item analysis
+   #iq.irt <- irt.fa(iq.tf)  #do a basic irt
+   #iq.sc <-score.irt(iq.irt,iq.tf)  #find the scores
+   #op <- par(mfrow=c(4,4))
+   #irt.responses(iq.sc[,1], iq.tf)  
+   #op <- par(mfrow=c(1,1))
 
-    ## End(Not run)
+   ## End(Not run)

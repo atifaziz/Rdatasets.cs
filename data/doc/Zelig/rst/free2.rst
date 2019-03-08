@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(free2)
+   data(free2)
 
 Details
 ~~~~~~~

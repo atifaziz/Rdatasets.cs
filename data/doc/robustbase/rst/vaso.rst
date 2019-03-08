@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(vaso)
+   data(vaso, package="robustbase")
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 A data frame with 39 observations on the following 3 variables.
 
 ``Volume``
-    Inhaled volume of air
+   Inhaled volume of air
 
 ``Rate``
-    Rate of inhalation
+   Rate of inhalation
 
 ``Y``
-    vector of 0 or 1 values.
+   vector of 0 or 1 values.
 
 Details
 ~~~~~~~
@@ -75,10 +75,10 @@ Examples
 
 ::
 
-    data(vaso)
-    str(vaso)
-    pairs(vaso)
+   data(vaso)
+   str(vaso)
+   pairs(vaso)
 
-    glmV <- glm(Y ~ log(Volume) + log(Rate), family=binomial, data=vaso)
-    summary(glmV)
-    ## -->  example(glmrob)  showing classical & robust GLM
+   glmV <- glm(Y ~ log(Volume) + log(Rate), family=binomial, data=vaso)
+   summary(glmV)
+   ## -->  example(glmrob)  showing classical & robust GLM

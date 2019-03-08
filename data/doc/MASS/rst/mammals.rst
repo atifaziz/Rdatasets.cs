@@ -16,20 +16,20 @@ Usage
 
 ::
 
-    mammals
+   mammals
 
 Format
 ~~~~~~
 
 ``body``
-    body weight in kg.
+   body weight in kg.
 
 ``brain``
-    brain weight in g.
+   brain weight in g.
 
 ``name``
-    Common name of species. (Rock hyrax-a = *Heterohyrax brucci*, Rock
-    hyrax-b = *Procavia habessinic.*.)
+   Common name of species. (Rock hyrax-a = *Heterohyrax brucci*, Rock
+   hyrax-b = *Procavia habessinic.*.)
 
 Source
 ~~~~~~

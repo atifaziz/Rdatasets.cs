@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(stagec)
+   data(stagec)
 
 Format
 ~~~~~~
@@ -24,29 +24,29 @@ Format
 A data frame with 146 observations on the following 8 variables.
 
 ``pgtime``
-    Time to progression or last follow-up (years)
+   Time to progression or last follow-up (years)
 
 ``pgstat``
-    1 = progression observed, 0 = censored
+   1 = progression observed, 0 = censored
 
 ``age``
-    age in years
+   age in years
 
 ``eet``
-    early endocrine therapy, 1 = no, 2 = yes
+   early endocrine therapy, 1 = no, 2 = yes
 
 ``g2``
-    percent of cells in G2 phase, as found by flow cytometry
+   percent of cells in G2 phase, as found by flow cytometry
 
 ``grade``
-    grade of the tumor, Farrow system
+   grade of the tumor, Farrow system
 
 ``gleason``
-    grade of the tumor, Gleason system
+   grade of the tumor, Gleason system
 
 ``ploidy``
-    the ploidy status of the tumor, from flow cytometry. Values are
-    diploid, tetraploid, and aneuploid
+   the ploidy status of the tumor, from flow cytometry. Values are
+   diploid, tetraploid, and aneuploid
 
 Details
 ~~~~~~~
@@ -62,5 +62,5 @@ Examples
 
 ::
 
-    require(survival)
-    rpart(Surv(pgtime, pgstat) ~ ., stagec)
+   require(survival)
+   rpart(Surv(pgtime, pgstat) ~ ., stagec)

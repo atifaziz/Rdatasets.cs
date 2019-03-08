@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(politicalInformation)
+   data(politicalInformation)
 
 Format
 ~~~~~~
@@ -25,29 +25,29 @@ Format
 A data frame with 1807 observations on the following 8 variables.
 
 ``y``
-    interviewer rating, a factor with levels ``Very Low`` ``Fairly Low``
-    ``Average`` ``Fairly High`` ``Very High``
+   interviewer rating, a factor with levels ``Very Low`` ``Fairly Low``
+   ``Average`` ``Fairly High`` ``Very High``
 
 ``collegeDegree``
-    a factor with levels ``No`` ``Yes``
+   a factor with levels ``No`` ``Yes``
 
 ``female``
-    a factor with levels ``No`` ``Yes``
+   a factor with levels ``No`` ``Yes``
 
 ``age``
-    a numeric vector, respondent age in years
+   a numeric vector, respondent age in years
 
 ``homeOwn``
-    a factor with levels ``No`` ``Yes``
+   a factor with levels ``No`` ``Yes``
 
 ``govt``
-    a factor with levels ``No`` ``Yes``
+   a factor with levels ``No`` ``Yes``
 
 ``length``
-    a numeric vector, length of ANES pre-election interview in minutes
+   a numeric vector, length of ANES pre-election interview in minutes
 
 ``id``
-    a factor, unique identifier for each interviewer
+   a factor, unique identifier for each interviewer
 
 Details
 ~~~~~~~
@@ -73,11 +73,11 @@ Examples
 
 ::
 
-    data(politicalInformation)
+   data(politicalInformation)
 
-    table(politicalInformation$y,exclude=NULL)
+   table(politicalInformation$y,exclude=NULL)
 
-    op <- MASS::polr(y ~ collegeDegree + female + log(age) + homeOwn + govt + log(length),
-               data=politicalInformation,
-               Hess=TRUE,
-               method="probit")
+   op <- MASS::polr(y ~ collegeDegree + female + log(age) + homeOwn + govt + log(length),
+              data=politicalInformation,
+              Hess=TRUE,
+              method="probit")

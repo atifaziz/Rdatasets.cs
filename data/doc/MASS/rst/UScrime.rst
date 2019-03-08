@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    UScrime
+   UScrime
 
 Format
 ~~~~~~
@@ -26,52 +26,52 @@ Format
 This data frame contains the following columns:
 
 ``M``
-    percentage of males aged 14–24.
+   percentage of males aged 14–24.
 
 ``So``
-    indicator variable for a Southern state.
+   indicator variable for a Southern state.
 
 ``Ed``
-    mean years of schooling.
+   mean years of schooling.
 
 ``Po1``
-    police expenditure in 1960.
+   police expenditure in 1960.
 
 ``Po2``
-    police expenditure in 1959.
+   police expenditure in 1959.
 
 ``LF``
-    labour force participation rate.
+   labour force participation rate.
 
 ``M.F``
-    number of males per 1000 females.
+   number of males per 1000 females.
 
 ``Pop``
-    state population.
+   state population.
 
 ``NW``
-    number of non-whites per 1000 people.
+   number of non-whites per 1000 people.
 
 ``U1``
-    unemployment rate of urban males 14–24.
+   unemployment rate of urban males 14–24.
 
 ``U2``
-    unemployment rate of urban males 35–39.
+   unemployment rate of urban males 35–39.
 
 ``GDP``
-    gross domestic product per head.
+   gross domestic product per head.
 
 ``Ineq``
-    income inequality.
+   income inequality.
 
 ``Prob``
-    probability of imprisonment.
+   probability of imprisonment.
 
 ``Time``
-    average time served in state prisons.
+   average time served in state prisons.
 
 ``y``
-    rate of crimes in a particular category per head of population.
+   rate of crimes in a particular category per head of population.
 
 Source
 ~~~~~~

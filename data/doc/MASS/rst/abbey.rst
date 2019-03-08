@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    abbey
+   abbey
 
 Source
 ~~~~~~

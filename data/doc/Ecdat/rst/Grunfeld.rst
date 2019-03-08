@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Grunfeld)
+   data(Grunfeld)
 
 Format
 ~~~~~~
@@ -29,19 +29,19 @@ Format
 A dataframe containing :
 
 firm
-    observation
+   observation
 
 year
-    date
+   date
 
 inv
-    gross Investment
+   gross Investment
 
 value
-    value of the firm
+   value of the firm
 
 capital
-    stock of plant and equipment
+   stock of plant and equipment
 
 Source
 ~~~~~~

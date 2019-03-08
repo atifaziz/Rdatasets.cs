@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    tips
+   tips
 
 Format
 ~~~~~~

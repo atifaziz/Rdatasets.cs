@@ -21,9 +21,9 @@ Usage
 
 ::
 
-    data(Minard.troops)
-    data(Minard.cities)
-    data(Minard.temp)
+   data(Minard.troops)
+   data(Minard.cities)
+   data(Minard.temp)
 
 Format
 ~~~~~~
@@ -32,50 +32,50 @@ Format
 variables giving the number of surviving troops.
 
 ``long``
-    Longitude
+   Longitude
 
 ``lat``
-    Latitude
+   Latitude
 
 ``survivors``
-    Number of surviving troops, a numeric vector
+   Number of surviving troops, a numeric vector
 
 ``direction``
-    a factor with levels ``A`` ("Advance") ``R`` ("Retreat")
+   a factor with levels ``A`` ("Advance") ``R`` ("Retreat")
 
 ``group``
-    a numeric vector
+   a numeric vector
 
 ``Minard.cities``: A data frame with 20 observations on the following 3
 variables giving the locations of various places along the path of
 Napoleon's army.
 
 ``long``
-    Longitude
+   Longitude
 
 ``lat``
-    Latitude
+   Latitude
 
 ``city``
-    City name: a factor with levels ``Bobr`` ``Chjat`` ... ``Witebsk``
-    ``Wixma``
+   City name: a factor with levels ``Bobr`` ``Chjat`` ... ``Witebsk``
+   ``Wixma``
 
 ``Minard.temp``: A data frame with 9 observations on the following 4
 variables, giving the temperature at various places along the march of
 retreat from Moscow.
 
 ``long``
-    Longitude
+   Longitude
 
 ``temp``
-    Temperature
+   Temperature
 
 ``days``
-    Number of days on the retreat march
+   Number of days on the retreat march
 
 ``date``
-    a factor with levels ``Dec01`` ``Dec06`` ``Dec07`` ``Nov09``
-    ``Nov14`` ``Nov28`` ``Oct18`` ``Oct24``
+   a factor with levels ``Dec01`` ``Dec06`` ``Dec07`` ``Nov09``
+   ``Nov14`` ``Nov28`` ``Oct18`` ``Oct24``
 
 Details
 ~~~~~~~
@@ -101,54 +101,54 @@ Examples
 
 ::
 
-    data(Minard.troops)
-    data(Minard.cities)
-    data(Minard.temp)
+   data(Minard.troops)
+   data(Minard.cities)
+   data(Minard.temp)
 
-    ## Not run: 
-    #' ## Load required packages
-    require(ggplot2)
-    require(scales)
-    require(gridExtra)
+   ## Not run: 
+   #' ## Load required packages
+   require(ggplot2)
+   require(scales)
+   require(gridExtra)
 
-    #' ## plot path of troops, and another layer for city names
-     plot_troops <- ggplot(Minard.troops, aes(long, lat)) +
-            geom_path(aes(size = survivors, colour = direction, group = group),
-                     lineend = "round", linejoin = "round")
-     plot_cities <- geom_text(aes(label = city), size = 4, data = Minard.cities)
-     
-    #' ## Combine these, and add scale information, labels, etc.
-    #' Set the x-axis limits for longitude explicitly, to coincide with those for temperature
+   #' ## plot path of troops, and another layer for city names
+    plot_troops <- ggplot(Minard.troops, aes(long, lat)) +
+           geom_path(aes(size = survivors, colour = direction, group = group),
+                    lineend = "round", linejoin = "round")
+    plot_cities <- geom_text(aes(label = city), size = 4, data = Minard.cities)
+    
+   #' ## Combine these, and add scale information, labels, etc.
+   #' Set the x-axis limits for longitude explicitly, to coincide with those for temperature
 
-    breaks <- c(1, 2, 3) * 10^5 
-    plot_minard <- plot_troops + plot_cities +
-        scale_size("Survivors", range = c(1, 10), 
-                    breaks = breaks, labels = scales::comma(breaks)) +
-      scale_color_manual("Direction", 
-                         values = c("grey50", "red"), 
-                         labels=c("Advance", "Retreat")) +
-      coord_cartesian(xlim = c(24, 38)) +
-      xlab(NULL) + 
-      ylab("Latitude") + 
-      ggtitle("Napoleon's March on Moscow") +
-      theme_bw() +
-      theme(legend.position=c(.8, .2), legend.box="horizontal")
-     
-    #' ## plot temperature vs. longitude, with labels for dates
-    plot_temp <- ggplot(Minard.temp, aes(long, temp)) +
-        geom_path(color="grey", size=1.5) +
-        geom_point(size=2) +
-        geom_text(aes(label=date)) +
-        xlab("Longitude") + ylab("Temperature") +
-        coord_cartesian(xlim = c(24, 38)) + 
-        theme_bw()
-        
+   breaks <- c(1, 2, 3) * 10^5 
+   plot_minard <- plot_troops + plot_cities +
+       scale_size("Survivors", range = c(1, 10), 
+                   breaks = breaks, labels = scales::comma(breaks)) +
+     scale_color_manual("Direction", 
+                        values = c("grey50", "red"), 
+                        labels=c("Advance", "Retreat")) +
+     coord_cartesian(xlim = c(24, 38)) +
+     xlab(NULL) + 
+     ylab("Latitude") + 
+     ggtitle("Napoleon's March on Moscow") +
+     theme_bw() +
+     theme(legend.position=c(.8, .2), legend.box="horizontal")
+    
+   #' ## plot temperature vs. longitude, with labels for dates
+   plot_temp <- ggplot(Minard.temp, aes(long, temp)) +
+       geom_path(color="grey", size=1.5) +
+       geom_point(size=2) +
+       geom_text(aes(label=date)) +
+       xlab("Longitude") + ylab("Temperature") +
+       coord_cartesian(xlim = c(24, 38)) + 
+       theme_bw()
+       
 
-    #' The plot works best if we  re-scale the plot window to an aspect ratio of ~ 2 x 1
-    # windows(width=10, height=5)
+   #' The plot works best if we  re-scale the plot window to an aspect ratio of ~ 2 x 1
+   # windows(width=10, height=5)
 
-    #' Combine the two plots into one
-    grid.arrange(plot_minard, plot_temp, nrow=2, heights=c(3,1))
+   #' Combine the two plots into one
+   grid.arrange(plot_minard, plot_temp, nrow=2, heights=c(3,1))
 
 
-    ## End(Not run)
+   ## End(Not run)

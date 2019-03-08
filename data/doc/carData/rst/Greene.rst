@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Greene
+   Greene
 
 Format
 ~~~~~~
@@ -26,35 +26,35 @@ Format
 This data frame contains the following columns:
 
 judge
-    Name of judge hearing case. A factor with levels: ``Desjardins``,
-    ``Heald``, ``Hugessen``, ``Iacobucci``, ``MacGuigan``, ``Mahoney``,
-    ``Marceau``, ``Pratte``, ``Stone``, ``Urie``.
+   Name of judge hearing case. A factor with levels: ``Desjardins``,
+   ``Heald``, ``Hugessen``, ``Iacobucci``, ``MacGuigan``, ``Mahoney``,
+   ``Marceau``, ``Pratte``, ``Stone``, ``Urie``.
 
 nation
-    Nation of origin of claimant. A factor with levels: ``Argentina``,
-    ``Bulgaria``, ``China``, ``Czechoslovakia``, ``El.Salvador``,
-    ``Fiji``, ``Ghana``, ``Guatemala``, ``India``, ``Iran``,
-    ``Lebanon``, ``Nicaragua``, ``Nigeria``, ``Pakistan``, ``Poland``,
-    ``Somalia``, ``Sri.Lanka``.
+   Nation of origin of claimant. A factor with levels: ``Argentina``,
+   ``Bulgaria``, ``China``, ``Czechoslovakia``, ``El.Salvador``,
+   ``Fiji``, ``Ghana``, ``Guatemala``, ``India``, ``Iran``, ``Lebanon``,
+   ``Nicaragua``, ``Nigeria``, ``Pakistan``, ``Poland``, ``Somalia``,
+   ``Sri.Lanka``.
 
 rater
-    Judgment of independent rater. A factor with levels: ``no``, case
-    has no merit; ``yes``, case has some merit (leave to appeal should
-    be granted).
+   Judgment of independent rater. A factor with levels: ``no``, case has
+   no merit; ``yes``, case has some merit (leave to appeal should be
+   granted).
 
 decision
-    Judge's decision. A factor with levels: ``no``, leave to appeal not
-    granted; ``yes``, leave to appeal granted.
+   Judge's decision. A factor with levels: ``no``, leave to appeal not
+   granted; ``yes``, leave to appeal granted.
 
 language
-    Language of case. A factor with levels: ``English``, ``French``.
+   Language of case. A factor with levels: ``English``, ``French``.
 
 location
-    Location of original refugee claim. A factor with levels:
-    ``Montreal``, ``other``, ``Toronto``.
+   Location of original refugee claim. A factor with levels:
+   ``Montreal``, ``other``, ``Toronto``.
 
 success
-    Logit of success rate, for all cases from the applicant's nation.
+   Logit of success rate, for all cases from the applicant's nation.
 
 Source
 ~~~~~~

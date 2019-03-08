@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    luv_colours
+   luv_colours
 
 Format
 ~~~~~~
@@ -23,7 +23,7 @@ Format
 A data frame with 657 observations and 4 variables:
 
 L,u,v
-    Position in Luv colour space
+   Position in Luv colour space
 
 col
-    Colour name
+   Colour name

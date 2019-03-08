@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Irates)
+   data(Irates)
 
 Format
 ~~~~~~
@@ -29,34 +29,34 @@ Format
 A time serie containing :
 
 r1
-    interest rate for a maturity of 1 months (% per year).
+   interest rate for a maturity of 1 months (% per year).
 
 r2
-    interest rate for a maturity of 2 months (% per year).
+   interest rate for a maturity of 2 months (% per year).
 
 r3
-    interest rate for a maturity of 3 months (% per year).
+   interest rate for a maturity of 3 months (% per year).
 
 r5
-    interest rate for a maturity of 5 months (% per year).
+   interest rate for a maturity of 5 months (% per year).
 
 r6
-    interest rate for a maturity of 6 months (% per year).
+   interest rate for a maturity of 6 months (% per year).
 
 r11
-    interest rate for a maturity of 11 months (% per year).
+   interest rate for a maturity of 11 months (% per year).
 
 r12
-    interest rate for a maturity of 12 months (% per year).
+   interest rate for a maturity of 12 months (% per year).
 
 r36
-    interest rate for a maturity of 36 months (% per year).
+   interest rate for a maturity of 36 months (% per year).
 
 r60
-    interest rate for a maturity of 60 months (% per year).
+   interest rate for a maturity of 60 months (% per year).
 
 r120
-    interest rate for a maturity of 120 months (% per year).
+   interest rate for a maturity of 120 months (% per year).
 
 Source
 ~~~~~~

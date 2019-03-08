@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    modelcars
+   modelcars
 
 Format
 ~~~~~~
@@ -26,11 +26,11 @@ Format
 This data frame contains the following columns:
 
 distance.traveled
-    a numeric vector consisting of the lengths traveled (in cm)
+   a numeric vector consisting of the lengths traveled (in cm)
 
 starting.point
-    a numeric vector consisting of the distance of the starting point
-    from the top of the ramp (in cm)
+   a numeric vector consisting of the distance of the starting point
+   from the top of the ramp (in cm)
 
 Source
 ~~~~~~
@@ -42,14 +42,14 @@ Examples
 
 ::
 
-    plot(modelcars)
-    modelcars.lm <- lm(distance.traveled ~ starting.point, data=modelcars)
-    aov(modelcars.lm)
-    pause()
+   plot(modelcars)
+   modelcars.lm <- lm(distance.traveled ~ starting.point, data=modelcars)
+   aov(modelcars.lm)
+   pause()
 
-    print("Response Curves - Example 4.6")
-    attach(modelcars)
-    stripchart(distance.traveled ~ starting.point, vertical=TRUE, pch=15,
-               xlab = "Distance up ramp", ylab="Distance traveled")
-    detach(modelcars)
+   print("Response Curves - Example 4.6")
+   attach(modelcars)
+   stripchart(distance.traveled ~ starting.point, vertical=TRUE, pch=15,
+              xlab = "Distance up ramp", ylab="Distance traveled")
+   detach(modelcars)
 

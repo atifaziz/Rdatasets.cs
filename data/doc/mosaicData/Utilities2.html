@@ -9,7 +9,7 @@
 
 <h3>Description</h3>
 
-<p>Data from utility bills at a private residence.  This is an augmented version 
+<p>Data from utility bills at a private residence.  This is an augmented version
 of <code>Utilities</code>.
 </p>
 
@@ -63,25 +63,27 @@ data(Utilities2)
 <li><p><code>notes</code> notes about the billing period
 </p>
 </li>
-<li><p><code>ccfpday</code> average gas usage per day [<code>Utilities2</code> only]
+<li><p><code>ccfpday</code> average gas usage per day (<code>Utilities2</code> only)
 </p>
 </li>
-<li><p><code>kwhpday</code> average electric usage per day [<code>Utilities2</code> only]
+<li><p><code>kwhpday</code> average electric usage per day (<code>Utilities2</code> only)
 </p>
 </li>
-<li><p><code>gasbillpday</code> gas bill divided by billing days [<code>Utilities2</code> only]
+<li><p><code>gasbillpday</code> gas bill divided by billing days (<code>Utilities2</code> only)
 </p>
 </li>
-<li><p><code>elecbillpday</code> electric bill divided by billing days a numeric vector [<code>Utilities2</code> only]
+<li><p><code>elecbillpday</code> electric bill divided by billing days a numeric vector
+(<code>Utilities2</code> only)
 </p>
 </li>
-<li><p><code>totalbillpday</code> total bill divided by billing days a numeric vector [<code>Utilities2</code> only]
+<li><p><code>totalbillpday</code> total bill divided by billing days a
+numeric vector (<code>Utilities2</code> only)
 </p>
 </li>
-<li><p><code>therms</code> <code>thermsPerDay * billingDays</code> [<code>Utilities2</code> only]
+<li><p><code>therms</code> <code>thermsPerDay * billingDays</code> (<code>Utilities2</code> only)
 </p>
 </li>
-<li><p><code>monthsSinceY2K</code> months since 2000 [<code>Utilities2</code> only]
+<li><p><code>monthsSinceY2K</code> months since 2000 (<code>Utilities2</code> only)
 </p>
 </li></ul>
 
@@ -102,8 +104,8 @@ data(Utilities2)
 
 <pre>
 data(Utilities2)
-if (require(lattice)) {
-  xyplot(gasbillpday ~ temp, Utilities2)
+if (require(ggformula)) {
+  gf_point(gasbillpday ~ temp, data = Utilities2)
 }
 
 </pre>

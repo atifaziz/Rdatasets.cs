@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Caschool)
+   data(Caschool)
 
 Format
 ~~~~~~
@@ -29,55 +29,55 @@ Format
 A dataframe containing :
 
 distcod
-    district code
+   district code
 
 county
-    county
+   county
 
 district
-    district
+   district
 
 grspan
-    grade span of district
+   grade span of district
 
 enrltot
-    total enrollment
+   total enrollment
 
 teachers
-    number of teachers
+   number of teachers
 
 calwpct
-    percent qualifying for CalWorks
+   percent qualifying for CalWorks
 
 mealpct
-    percent qualifying for reduced-price lunch
+   percent qualifying for reduced-price lunch
 
 computer
-    number of computers
+   number of computers
 
 testscr
-    average test score (read.scr+math.scr)/2
+   average test score (read.scr+math.scr)/2
 
 compstu
-    computer per student
+   computer per student
 
 expnstu
-    expenditure per student
+   expenditure per student
 
 str
-    student teacher ratio
+   student teacher ratio
 
 avginc
-    district average income
+   district average income
 
 elpct
-    percent of English learners
+   percent of English learners
 
 readscr
-    average reading score
+   average reading score
 
 mathscr
-    average math score
+   average math score
 
 Source
 ~~~~~~

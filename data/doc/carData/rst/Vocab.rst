@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Vocab
+   Vocab
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 This data frame contains the following columns:
 
 year
-    Year of the survey.
+   Year of the survey.
 
 sex
-    Sex of the respondent, ``Female`` or ``Male``.
+   Sex of the respondent, ``Female`` or ``Male``.
 
 education
-    Education, in years.
+   Education, in years.
 
 vocabulary
-    Vocabulary test score: number correct on a 10-word test.
+   Vocabulary test score: number correct on a 10-word test.
 
 Source
 ~~~~~~

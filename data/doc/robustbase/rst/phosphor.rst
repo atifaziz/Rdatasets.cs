@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(phosphor)
+   data(phosphor, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,13 +25,13 @@ Format
 A data frame with 18 observations on the following 3 variables.
 
 ``inorg``
-    Inorganic soil Phosphorus
+   Inorganic soil Phosphorus
 
 ``organic``
-    Organic soil Phosphorus
+   Organic soil Phosphorus
 
 ``plant``
-    Plant Phosphorus content
+   Plant Phosphorus content
 
 Source
 ~~~~~~
@@ -44,11 +44,11 @@ Examples
 
 ::
 
-    data(phosphor)
-    plot(phosphor)
-    summary(lm.phosphor <- lm(plant ~ ., data = phosphor))
-    summary(lts.phosphor <- ltsReg(plant ~ ., data = phosphor))
+   data(phosphor)
+   plot(phosphor)
+   summary(lm.phosphor <- lm(plant ~ ., data = phosphor))
+   summary(lts.phosphor <- ltsReg(plant ~ ., data = phosphor))
 
-    phosphor.x <- data.matrix(phosphor[, 1:2])
-    cPh <- covMcd(phosphor.x)
-    plot(cPh, "dd")
+   phosphor.x <- data.matrix(phosphor[, 1:2])
+   cPh <- covMcd(phosphor.x)
+   plot(cPh, "dd")

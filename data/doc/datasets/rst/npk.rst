@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    npk
+   npk
 
 Format
 ~~~~~~
@@ -26,19 +26,19 @@ Format
 The ``npk`` data frame has 24 rows and 5 columns:
 
 ``block``
-    which block (label 1 to 6).
+   which block (label 1 to 6).
 
 ``N``
-    indicator (0/1) for the application of nitrogen.
+   indicator (0/1) for the application of nitrogen.
 
 ``P``
-    indicator (0/1) for the application of phosphate.
+   indicator (0/1) for the application of phosphate.
 
 ``K``
-    indicator (0/1) for the application of potassium.
+   indicator (0/1) for the application of potassium.
 
 ``yield``
-    Yield of peas, in pounds/plot (the plots were (1/70) acre).
+   Yield of peas, in pounds/plot (the plots were (1/70) acre).
 
 Source
 ~~~~~~
@@ -56,13 +56,13 @@ Examples
 
 ::
 
-    options(contrasts = c("contr.sum", "contr.poly"))
-    npk.aov <- aov(yield ~ block + N*P*K, npk)
-    npk.aov
-    summary(npk.aov)
-    coef(npk.aov)
-    options(contrasts = c("contr.treatment", "contr.poly"))
-    npk.aov1 <- aov(yield ~ block + N + K, data = npk)
-    summary.lm(npk.aov1)
-    se.contrast(npk.aov1, list(N=="0", N=="1"), data = npk)
-    model.tables(npk.aov1, type = "means", se = TRUE)
+   options(contrasts = c("contr.sum", "contr.poly"))
+   npk.aov <- aov(yield ~ block + N*P*K, npk)
+   npk.aov
+   summary(npk.aov)
+   coef(npk.aov)
+   options(contrasts = c("contr.treatment", "contr.poly"))
+   npk.aov1 <- aov(yield ~ block + N + K, data = npk)
+   summary.lm(npk.aov1)
+   se.contrast(npk.aov1, list(N=="0", N=="1"), data = npk)
+   model.tables(npk.aov1, type = "means", se = TRUE)

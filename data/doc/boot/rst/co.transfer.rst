@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    co.transfer
+   co.transfer
 
 Format
 ~~~~~~
@@ -27,10 +27,10 @@ Format
 This data frame contains the following columns:
 
 ``entry``
-    Carbon monoxide transfer factor on entry to hospital.
+   Carbon monoxide transfer factor on entry to hospital.
 
 ``week``
-    Carbon monoxide transfer one week after admittance to hospital.
+   Carbon monoxide transfer one week after admittance to hospital.
 
 Source
 ~~~~~~

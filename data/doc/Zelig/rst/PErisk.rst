@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(PErisk)
+   data(PErisk)
 
 Format
 ~~~~~~

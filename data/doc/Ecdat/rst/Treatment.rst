@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(Treatment)
+   data(Treatment)
 
 Format
 ~~~~~~
@@ -27,34 +27,34 @@ Format
 A dataframe containing :
 
 treat
-    treated ?
+   treated ?
 
 age
-    age
+   age
 
 educ
-    education in years
+   education in years
 
 ethn
-    a factor with levels ("other","black","hispanic")
+   a factor with levels ("other","black","hispanic")
 
 married
-    married ?
+   married ?
 
 re74
-    real annual earnings in 1974 (pre-treatment)
+   real annual earnings in 1974 (pre-treatment)
 
 re75
-    real annual earnings in 1975 (pre-treatment)
+   real annual earnings in 1975 (pre-treatment)
 
 re78
-    real annual earnings in 1978 (post-treatment)
+   real annual earnings in 1978 (post-treatment)
 
 u74
-    unemployed in 1974 ?
+   unemployed in 1974 ?
 
 u75
-    unemployed in 1975 ?
+   unemployed in 1975 ?
 
 Source
 ~~~~~~

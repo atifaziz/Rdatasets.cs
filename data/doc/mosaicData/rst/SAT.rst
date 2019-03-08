@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(SAT)
+   data(SAT)
 
 Format
 ~~~~~~
@@ -61,9 +61,10 @@ Examples
 
 ::
 
-    data(SAT)
-    if (require(lattice)) {
-      xyplot(sat ~ expend, SAT)
-      xyplot(sat ~ expend, SAT, 
-           panel=function(x,y){grid.text(abbreviate(SAT$state, 3), x, y, default.units='native')})
-    } 
+   data(SAT)
+   if (require(ggformula)) {
+     gf_point(sat ~ expend, data = SAT, color = "blue", alpha = 0.5) %>%
+       gf_lm()
+     gf_text(sat ~ expend, data = SAT, label = ~ abbreviate(SAT$state, 3),
+       inherit = FALSE)
+   } 

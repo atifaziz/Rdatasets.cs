@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Crime)
+   data(Crime)
 
 Format
 ~~~~~~
@@ -29,76 +29,76 @@ Format
 A dataframe containing :
 
 county
-    county identifier
+   county identifier
 
 year
-    year from 1981 to 1987
+   year from 1981 to 1987
 
 crmrte
-    crimes committed per person
+   crimes committed per person
 
 prbarr
-    'probability' of arrest
+   'probability' of arrest
 
 prbconv
-    'probability' of conviction
+   'probability' of conviction
 
 prbpris
-    'probability' of prison sentence
+   'probability' of prison sentence
 
 avgsen
-    average sentence, days
+   average sentence, days
 
 polpc
-    police per capita
+   police per capita
 
 density
-    people per square mile
+   people per square mile
 
 taxpc
-    tax revenue per capita
+   tax revenue per capita
 
 region
-    one of 'other', 'west' or 'central'
+   one of 'other', 'west' or 'central'
 
 smsa
-    'yes' or 'no' if in SMSA
+   'yes' or 'no' if in SMSA
 
 pctmin
-    percentage minority in 1980
+   percentage minority in 1980
 
 wcon
-    weekly wage in construction
+   weekly wage in construction
 
 wtuc
-    weekly wage in trns, util, commun
+   weekly wage in trns, util, commun
 
 wtrd
-    weekly wage in whole sales and retail trade
+   weekly wage in whole sales and retail trade
 
 wfir
-    weekly wage in finance, insurance and real estate
+   weekly wage in finance, insurance and real estate
 
 wser
-    weekly wage in service industry
+   weekly wage in service industry
 
 wmfg
-    weekly wage in manufacturing
+   weekly wage in manufacturing
 
 wfed
-    weekly wage of federal employees
+   weekly wage of federal employees
 
 wsta
-    weekly wage of state employees
+   weekly wage of state employees
 
 wloc
-    weekly wage of local governments employees
+   weekly wage of local governments employees
 
 mix
-    offence mix: face-to-face/other
+   offence mix: face-to-face/other
 
 pctymle
-    percentage of young males
+   percentage of young males
 
 Source
 ~~~~~~

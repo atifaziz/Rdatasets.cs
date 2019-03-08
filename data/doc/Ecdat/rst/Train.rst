@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Train)
+   data(Train)
 
 Format
 ~~~~~~
@@ -29,26 +29,26 @@ Format
 A dataframe containing :
 
 id
-    individual identifier
+   individual identifier
 
 choiceid
-    choice identifier
+   choice identifier
 
 choice
-    one of choice1, choice2
+   one of choice1, choice2
 
 pricez
-    price of proposition z (z=1,2) in cents of guilders
+   price of proposition z (z=1,2) in cents of guilders
 
 timez
-    travel time of proposition z (z=1,2) in minutes
+   travel time of proposition z (z=1,2) in minutes
 
 comfortz
-    comfort of proposition z (z=1,2), 0, 1 or 2 in decreasing comfort
-    order
+   comfort of proposition z (z=1,2), 0, 1 or 2 in decreasing comfort
+   order
 
 changez
-    number of changes for proposition z (z=1,2)
+   number of changes for proposition z (z=1,2)
 
 Source
 ~~~~~~

@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(nidd.thresh)
+   data(nidd.thresh)
 
 Format
 ~~~~~~

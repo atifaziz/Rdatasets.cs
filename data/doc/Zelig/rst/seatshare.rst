@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(seatshare)
+   data(seatshare)
 
 Format
 ~~~~~~

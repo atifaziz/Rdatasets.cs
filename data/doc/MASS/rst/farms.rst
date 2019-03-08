@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    farms
+   farms
 
 Format
 ~~~~~~
@@ -25,19 +25,19 @@ Format
 This data frame contains the following columns:
 
 ``Mois``
-    Five levels of soil moisture – level 3 does not occur at these 20
-    farms.
+   Five levels of soil moisture – level 3 does not occur at these 20
+   farms.
 
 ``Manag``
-    Grassland management type (``SF`` = standard, ``BF`` = biological,
-    ``HF`` = hobby farming, ``NM`` = nature conservation).
+   Grassland management type (``SF`` = standard, ``BF`` = biological,
+   ``HF`` = hobby farming, ``NM`` = nature conservation).
 
 ``Use``
-    Grassland use (``U1`` = hay production, ``U2`` = intermediate,
-    ``U3`` = grazing).
+   Grassland use (``U1`` = hay production, ``U2`` = intermediate, ``U3``
+   = grazing).
 
 ``Manure``
-    Manure usage – classes ``C0`` to ``C4``.
+   Manure usage – classes ``C0`` to ``C4``.
 
 Source
 ~~~~~~
@@ -59,7 +59,7 @@ Examples
 
 ::
 
-    farms.mca <- mca(farms, abbrev = TRUE)  # Use levels as names
-    eqscplot(farms.mca$cs, type = "n")
-    text(farms.mca$rs, cex = 0.7)
-    text(farms.mca$cs, labels = dimnames(farms.mca$cs)[[1]], cex = 0.7)
+   farms.mca <- mca(farms, abbrev = TRUE)  # Use levels as names
+   eqscplot(farms.mca$cs, type = "n")
+   text(farms.mca$rs, cex = 0.7)
+   text(farms.mca$cs, labels = dimnames(farms.mca$cs)[[1]], cex = 0.7)

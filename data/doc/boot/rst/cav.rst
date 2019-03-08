@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    cav
+   cav
 
 Format
 ~~~~~~
@@ -29,10 +29,10 @@ Format
 This data frame contains the following columns:
 
 ``x``
-    The x coordinate of the caveola's position in the region.
+   The x coordinate of the caveola's position in the region.
 
 ``y``
-    The y coordinate of the caveola's position in the region.
+   The y coordinate of the caveola's position in the region.
 
 References
 ~~~~~~~~~~

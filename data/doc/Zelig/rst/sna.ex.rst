@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(sna.ex)
+   data(sna.ex)
 
 Format
 ~~~~~~

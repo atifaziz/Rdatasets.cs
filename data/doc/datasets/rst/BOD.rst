@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    BOD
+   BOD
 
 Format
 ~~~~~~
@@ -24,10 +24,10 @@ Format
 This data frame contains the following columns:
 
 ``Time``
-    A numeric vector giving the time of the measurement (days).
+   A numeric vector giving the time of the measurement (days).
 
 ``demand``
-    A numeric vector giving the biochemical oxygen demand (mg/l).
+   A numeric vector giving the biochemical oxygen demand (mg/l).
 
 Source
 ~~~~~~
@@ -45,16 +45,16 @@ Examples
 ::
 
 
-    require(stats)
-    # simplest form of fitting a first-order model to these data
-    fm1 <- nls(demand ~ A*(1-exp(-exp(lrc)*Time)), data = BOD,
-       start = c(A = 20, lrc = log(.35)))
-    coef(fm1)
-    fm1
-    # using the plinear algorithm
-    fm2 <- nls(demand ~ (1-exp(-exp(lrc)*Time)), data = BOD,
-       start = c(lrc = log(.35)), algorithm = "plinear", trace = TRUE)
-    # using a self-starting model
-    fm3 <- nls(demand ~ SSasympOrig(Time, A, lrc), data = BOD)
-    summary(fm3)
+   require(stats)
+   # simplest form of fitting a first-order model to these data
+   fm1 <- nls(demand ~ A*(1-exp(-exp(lrc)*Time)), data = BOD,
+      start = c(A = 20, lrc = log(.35)))
+   coef(fm1)
+   fm1
+   # using the plinear algorithm
+   fm2 <- nls(demand ~ (1-exp(-exp(lrc)*Time)), data = BOD,
+      start = c(lrc = log(.35)), algorithm = "plinear", trace = TRUE)
+   # using a self-starting model
+   fm3 <- nls(demand ~ SSasympOrig(Time, A, lrc), data = BOD)
+   summary(fm3)
 

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(mendelABC)
+   data(mendelABC)
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 This data frame contains the following columns:
 
 seedshape
-    Factor with levels: ``AA``, ``Aa`` and ``aa``
+   Factor with levels: ``AA``, ``Aa`` and ``aa``
 
 cotylcolor
-    Factor with levels: ``BB``, ``Bb`` and ``bb``
+   Factor with levels: ``BB``, ``Bb`` and ``bb``
 
 coatcolor
-    Factor with levels: ``CC``, ``Cc`` and ``cc``
+   Factor with levels: ``CC``, ``Cc`` and ``cc``
 
 Observed
-    a numeric vector that holds the frequencies.
+   a numeric vector that holds the frequencies.
 
 Details
 ~~~~~~~
@@ -68,11 +68,11 @@ Examples
 
 ::
 
-    ## Lay table out as a 3D array, as in Fisher (1936)
-    abc <- aperm(array(mendelABC[,4], dim=c(3,3,3)), c(1,3,2))
-    dimnames(abc) <- list(B=c('BB','Bb','bb'), 
-                          A=c('AA','Aa','aa'),
-                          C=c('CC','Cc','cc'))
-    abc
-    ## Fit Hardy-Weinberg disequilibium model
-    hwde(mendelABC, loci=c("seedshape","cotylcolor","coatcolor"))
+   ## Lay table out as a 3D array, as in Fisher (1936)
+   abc <- aperm(array(mendelABC[,4], dim=c(3,3,3)), c(1,3,2))
+   dimnames(abc) <- list(B=c('BB','Bb','bb'), 
+                         A=c('AA','Aa','aa'),
+                         C=c('CC','Cc','cc'))
+   abc
+   ## Fit Hardy-Weinberg disequilibium model
+   hwde(mendelABC, loci=c("seedshape","cotylcolor","coatcolor"))

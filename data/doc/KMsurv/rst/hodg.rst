@@ -16,22 +16,22 @@ Format
 This data frame contains the following columns:
 
 gtype
-    Graft type (1=allogenic, 2=autologous)
+   Graft type (1=allogenic, 2=autologous)
 
 dtype
-    Disease type (1=Non Hodgkin lymphoma, 2=Hodgkins disease)
+   Disease type (1=Non Hodgkin lymphoma, 2=Hodgkins disease)
 
 time
-    Time to death or relapse, days
+   Time to death or relapse, days
 
 delta
-    Death/relapse indicator (0=alive, 1=dead)
+   Death/relapse indicator (0=alive, 1=dead)
 
 score
-    Karnofsky score
+   Karnofsky score
 
 wtime
-    Waiting time to transplant in months
+   Waiting time to transplant in months
 
 Source
 ~~~~~~
@@ -45,4 +45,4 @@ Examples
 
 ::
 
-    data(hodg)
+   data(hodg)

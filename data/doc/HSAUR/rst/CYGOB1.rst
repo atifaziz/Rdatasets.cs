@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("CYGOB1")
+   data("CYGOB1")
 
 Format
 ~~~~~~
@@ -23,10 +23,10 @@ Format
 A data frame with 47 observations on the following 2 variables.
 
 ``logst``
-    log survface termperature of the star.
+   log survface termperature of the star.
 
 ``logli``
-    log light intensity of the star.
+   log light intensity of the star.
 
 Details
 ~~~~~~~
@@ -52,6 +52,6 @@ Examples
 ::
 
 
-      data("CYGOB1", package = "HSAUR")
-      plot(logst ~ logli, data = CYGOB1)
+     data("CYGOB1", package = "HSAUR")
+     plot(logst ~ logli, data = CYGOB1)
 

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("meteo")
+   data("meteo")
 
 Format
 ~~~~~~
@@ -23,22 +23,22 @@ Format
 A data frame with 11 observations on the following 6 variables.
 
 ``year``
-    the years.
+   the years.
 
 ``rainNovDec``
-    rainfall in November and December (mm).
+   rainfall in November and December (mm).
 
 ``temp``
-    average July temperature.
+   average July temperature.
 
 ``rainJuly``
-    rainfall in July (mm).
+   rainfall in July (mm).
 
 ``radiation``
-    radiation in July (millilitres of alcohol).
+   radiation in July (millilitres of alcohol).
 
 ``yield``
-    average harvest yield (quintals per hectare).
+   average harvest yield (quintals per hectare).
 
 Details
 ~~~~~~~
@@ -59,6 +59,6 @@ Examples
 ::
 
 
-      data("meteo", package = "HSAUR")
-      meteo
+     data("meteo", package = "HSAUR")
+     meteo
 

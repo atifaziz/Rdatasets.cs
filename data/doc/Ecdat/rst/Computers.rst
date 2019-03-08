@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Computers)
+   data(Computers)
 
 Format
 ~~~~~~
@@ -29,35 +29,35 @@ Format
 A dataframe containing :
 
 price
-    price in US dollars of 486 PCs
+   price in US dollars of 486 PCs
 
 speed
-    clock speed in MHz
+   clock speed in MHz
 
 hd
-    size of hard drive in MB
+   size of hard drive in MB
 
 ram
-    size of Ram in in MB
+   size of Ram in in MB
 
 screen
-    size of screen in inches
+   size of screen in inches
 
 cd
-    is a CD-ROM present ?
+   is a CD-ROM present ?
 
 multi
-    is a multimedia kit (speakers, sound card) included ?
+   is a multimedia kit (speakers, sound card) included ?
 
 premium
-    is the manufacturer was a "premium" firm (IBM, COMPAQ) ?
+   is the manufacturer was a "premium" firm (IBM, COMPAQ) ?
 
 ads
-    number of 486 price listings for each month
+   number of 486 price listings for each month
 
 trend
-    time trend indicating month starting from January of 1993 to
-    November of 1995.
+   time trend indicating month starting from January of 1993 to November
+   of 1995.
 
 Source
 ~~~~~~

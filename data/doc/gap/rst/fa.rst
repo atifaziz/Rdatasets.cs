@@ -14,8 +14,8 @@ genotype
 
 ::
 
-     2  7  7  7  1  3  2  2  2  2  6  3
-     3  8 10  8  3  9  3  4  2  2  7  5
+    2  7  7  7  1  3  2  2  2  2  6  3
+    3  8 10  8  3  9  3  4  2  2  7  5
 
 has not been included.
 
@@ -29,7 +29,7 @@ Usage
 
 ::
 
-    data(fa)
+   data(fa)
 
 Format
 ~~~~~~

@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    data(mdvis)
+   data(mdvis)
 
 Format
 ~~~~~~
@@ -32,43 +32,43 @@ Format
 A data frame with 2,227 observations on the following 13 variables.
 
 ``numvisit``
-    visits to MD office 3mo prior
+   visits to MD office 3mo prior
 
 ``reform``
-    1=interview yr post-reform: 1998;0=pre-reform:1996
+   1=interview yr post-reform: 1998;0=pre-reform:1996
 
 ``badh``
-    1=bad health; 0 = not bad health
+   1=bad health; 0 = not bad health
 
 ``age``
-    Age(yrs 20-60)
+   Age(yrs 20-60)
 
 ``educ``
-    education(1:7-10;2=10.5-12;3=HSgrad+)
+   education(1:7-10;2=10.5-12;3=HSgrad+)
 
 ``educ1``
-    educ1= 7-10 years
+   educ1= 7-10 years
 
 ``educ2``
-    educ2= 10.5-12 years
+   educ2= 10.5-12 years
 
 ``educ3``
-    educ3= post secondary or high school
+   educ3= post secondary or high school
 
 ``agegrp``
-    age: 1=20-39; 2=40-49; 3=50-60
+   age: 1=20-39; 2=40-49; 3=50-60
 
 ``age1``
-    age 20-39
+   age 20-39
 
 ``age2``
-    age 40-49
+   age 40-49
 
 ``age3``
-    age 50-60
+   age 50-60
 
 ``loginc``
-    log(household income in DM)
+   log(household income in DM)
 
 Details
 ~~~~~~~
@@ -95,11 +95,11 @@ Examples
 
 ::
 
-    data(mdvis)
-    glmmdp <- glm(numvisit ~ reform + factor(educ) + factor(agegrp), family=poisson, data=mdvis)
-    summary(glmmdp)
-    exp(coef(glmmdp))
-    library(MASS)
-    glmmdnb <- glm.nb(numvisit ~ reform + factor(educ) + factor(agegrp), data=mdvis)
-    summary(glmmdnb)
-    exp(coef(glmmdnb))
+   data(mdvis)
+   glmmdp <- glm(numvisit ~ reform + factor(educ) + factor(agegrp), family=poisson, data=mdvis)
+   summary(glmmdp)
+   exp(coef(glmmdp))
+   library(MASS)
+   glmmdnb <- glm.nb(numvisit ~ reform + factor(educ) + factor(agegrp), data=mdvis)
+   summary(glmmdnb)
+   exp(coef(glmmdnb))

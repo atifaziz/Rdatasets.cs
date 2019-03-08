@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Mofa)
+   data(Mofa)
 
 Format
 ~~~~~~
@@ -29,31 +29,30 @@ Format
 A dataframe containing :
 
 capexp
-    capital expenditures made by the MOFA's of nonbank U.S. corporations
-    in finance, insurance and real estate. Source: "U.S. Direct
-    Investment Abroad: 1982 Benchmark Survey data." Table III.C 6.
+   capital expenditures made by the MOFA's of nonbank U.S. corporations
+   in finance, insurance and real estate. Source: "U.S. Direct
+   Investment Abroad: 1982 Benchmark Survey data." Table III.C 6.
 
 gdp
-    gross domestic product. Source: "World Bank, World Development
-    Report 1984." Table 3. (This variable is scaled by a factor of
-    1/100,000)
+   gross domestic product. Source: "World Bank, World Development Report
+   1984." Table 3. (This variable is scaled by a factor of 1/100,000)
 
 sales
-    sales made by the majority owned foreign affiliates of nonbank U.S.
-    parents in finance, insurance and real estate. Source: "U.S. Direct
-    Investment Abroad: 1982 Benchmark Survey Data." Table III.D 3. (This
-    variable is scaled by a factor of 1/100)
+   sales made by the majority owned foreign affiliates of nonbank U.S.
+   parents in finance, insurance and real estate. Source: "U.S. Direct
+   Investment Abroad: 1982 Benchmark Survey Data." Table III.D 3. (This
+   variable is scaled by a factor of 1/100)
 
 nbaf
-    the number of U.S. affiliates in the host country. Source: "U.S.
-    Direct Investment Abroad: 1982 Benchmark Survey Data." Table 5.
-    (This variable is scaled by a factor of 1/100)
+   the number of U.S. affiliates in the host country. Source: "U.S.
+   Direct Investment Abroad: 1982 Benchmark Survey Data." Table 5. (This
+   variable is scaled by a factor of 1/100)
 
 netinc
-    net income earned by MOFA's of nonbank U.S. corporations operating
-    in the nonbanking financial sector of the host country. Source:
-    "U.S. Direct Investment Abroad: 1982 Benchmark Survey Data." Table
-    III.D 6.(This variable is scaled by a factor of 1/10)
+   net income earned by MOFA's of nonbank U.S. corporations operating in
+   the nonbanking financial sector of the host country. Source: "U.S.
+   Direct Investment Abroad: 1982 Benchmark Survey Data." Table III.D
+   6.(This variable is scaled by a factor of 1/10)
 
 Source
 ~~~~~~

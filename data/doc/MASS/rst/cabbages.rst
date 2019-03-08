@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    cabbages
+   cabbages
 
 Format
 ~~~~~~
@@ -23,18 +23,18 @@ Format
 This data frame contains the following columns:
 
 ``Cult``
-    Factor giving the cultivar of the cabbage, two levels: ``c39`` and
-    ``c52``.
+   Factor giving the cultivar of the cabbage, two levels: ``c39`` and
+   ``c52``.
 
 ``Date``
-    Factor specifying one of three planting dates: ``d16``, ``d20`` or
-    ``d21``.
+   Factor specifying one of three planting dates: ``d16``, ``d20`` or
+   ``d21``.
 
 ``HeadWt``
-    Weight of the cabbage head, presumably in kg.
+   Weight of the cabbage head, presumably in kg.
 
 ``VitC``
-    Ascorbic acid content, in undefined units.
+   Ascorbic acid content, in undefined units.
 
 Source
 ~~~~~~

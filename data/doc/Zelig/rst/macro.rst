@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(macro)
+   data(macro)
 
 Format
 ~~~~~~

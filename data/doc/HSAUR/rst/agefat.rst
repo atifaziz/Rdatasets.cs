@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("agefat")
+   data("agefat")
 
 Format
 ~~~~~~
@@ -23,13 +23,13 @@ Format
 A data frame with 25 observations on the following 3 variables.
 
 ``age``
-    the age of the subject.
+   the age of the subject.
 
 ``fat``
-    the body fat percentage.
+   the body fat percentage.
 
 ``sex``
-    a factor with levels ``female`` and ``male``.
+   a factor with levels ``female`` and ``male``.
 
 Details
 ~~~~~~~
@@ -54,6 +54,6 @@ Examples
 ::
 
 
-      data("agefat", package = "HSAUR")
-      plot(fat ~ age, data = agefat)
+     data("agefat", package = "HSAUR")
+     plot(fat ~ age, data = agefat)
 

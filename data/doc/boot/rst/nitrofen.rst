@@ -29,7 +29,7 @@ Usage
 
 ::
 
-    nitrofen
+   nitrofen
 
 Format
 ~~~~~~
@@ -37,19 +37,19 @@ Format
 This data frame contains the following columns:
 
 ``conc``
-    The nitrofen concentration in the solution (mug/litre).
+   The nitrofen concentration in the solution (mug/litre).
 
 ``brood1``
-    The number of live offspring in the first brood.
+   The number of live offspring in the first brood.
 
 ``brood2``
-    The number of live offspring in the second brood.
+   The number of live offspring in the second brood.
 
 ``brood3``
-    The number of live offspring in the third brood.
+   The number of live offspring in the third brood.
 
 ``total``
-    The total number of live offspring in the first three broods.
+   The total number of live offspring in the first three broods.
 
 Source
 ~~~~~~

@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    car.test.frame
+   car.test.frame
 
 Format
 ~~~~~~
@@ -26,31 +26,31 @@ Format
 This data frame contains the following columns:
 
 ``Price``
-    a numeric vector giving the list price in US dollars of a standard
-    model
+   a numeric vector giving the list price in US dollars of a standard
+   model
 
 ``Country``
-    of origin, a factor with levels France, Germany, Japan , Japan/USA,
-    Korea, Mexico, Sweden and USA
+   of origin, a factor with levels France, Germany, Japan , Japan/USA,
+   Korea, Mexico, Sweden and USA
 
 ``Reliability``
-    a numeric vector coded ``1`` to ``5``.
+   a numeric vector coded ``1`` to ``5``.
 
 ``Mileage``
-    fuel consumption miles per US gallon, as tested.
+   fuel consumption miles per US gallon, as tested.
 
 ``Type``
-    a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
-    ``Sporty`` ``Van``
+   a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
+   ``Sporty`` ``Van``
 
 ``Weight``
-    kerb weight in pounds.
+   kerb weight in pounds.
 
 ``Disp.``
-    the engine capacity (displacement) in litres.
+   the engine capacity (displacement) in litres.
 
 ``HP``
-    the net horsepower of the vehicle.
+   the net horsepower of the vehicle.
 
 Source
 ~~~~~~
@@ -70,5 +70,5 @@ Examples
 
 ::
 
-    z.auto <- rpart(Mileage ~ Weight, car.test.frame)
-    summary(z.auto)
+   z.auto <- rpart(Mileage ~ Weight, car.test.frame)
+   summary(z.auto)

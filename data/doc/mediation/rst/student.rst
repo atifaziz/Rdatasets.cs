@@ -28,7 +28,7 @@ Usage
 
 ::
 
-    data
+   data
 
 Format
 ~~~~~~
@@ -39,43 +39,43 @@ inference about education effectiveness, for which the original data
 source should be consulted.
 
 SCH_ID:
-    School indicator.
+   School indicator.
 
 fight:
-    Indicator variable for fight at school. 1 = fight.
+   Indicator variable for fight at school. 1 = fight.
 
 attachment:
-    Indicator variable for attachment to school. 1 = like.
+   Indicator variable for attachment to school. 1 = like.
 
 work:
-    Indicator variable for part-time job. 1 = work.
+   Indicator variable for part-time job. 1 = work.
 
 score:
-    Measure of math score.
+   Measure of math score.
 
 late:
-    Frequency in which the student was late for school. 5 levels.
+   Frequency in which the student was late for school. 5 levels.
 
 coed:
-    Indicator variable for coeducation. 1 = coeducation.
+   Indicator variable for coeducation. 1 = coeducation.
 
 smorale:
-    Measure of student morale in the school. 4 levels.
+   Measure of student morale in the school. 4 levels.
 
 gender:
-    Indicator variable for gender. 1 = female.
+   Indicator variable for gender. 1 = female.
 
 income:
-    Total family income. 13 levels.
+   Total family income. 13 levels.
 
 free:
-    Percent of 10th grade students receiving free lunch. 1 to 7 levels.
+   Percent of 10th grade students receiving free lunch. 1 to 7 levels.
 
 pared:
-    Parents highest level of education. 8 levels
+   Parents highest level of education. 8 levels
 
 catholic:
-    Indicator variable for catholic school. 1 = catholic school.
+   Indicator variable for catholic school. 1 = catholic school.
 
 Source
 ~~~~~~

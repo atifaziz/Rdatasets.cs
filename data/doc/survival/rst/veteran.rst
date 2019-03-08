@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    veteran
+   veteran
 
 Format
 ~~~~~~

@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(mid)
+   data(mid)
 
 Format
 ~~~~~~

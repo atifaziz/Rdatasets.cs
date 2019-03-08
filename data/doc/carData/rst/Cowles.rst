@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Cowles
+   Cowles
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 This data frame contains the following columns:
 
 neuroticism
-    scale from Eysenck personality inventory
+   scale from Eysenck personality inventory
 
 extraversion
-    scale from Eysenck personality inventory
+   scale from Eysenck personality inventory
 
 sex
-    a factor with levels: ``female``; ``male``
+   a factor with levels: ``female``; ``male``
 
 volunteer
-    volunteeing, a factor with levels: ``no``; ``yes``
+   volunteeing, a factor with levels: ``no``; ``yes``
 
 Source
 ~~~~~~

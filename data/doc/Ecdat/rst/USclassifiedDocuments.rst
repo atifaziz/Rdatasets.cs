@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    data(USclassifiedDocuments)
+   data(USclassifiedDocuments)
 
 Format
 ~~~~~~
@@ -31,26 +31,25 @@ Format
 A dataframe containing :
 
 year
-    the calendar year
+   the calendar year
 
 OCAuthority
-    Number of people in the government designated as Original
-    Classification Authorities for the indicated ``year``.
+   Number of people in the government designated as Original
+   Classification Authorities for the indicated ``year``.
 
 OCActivity
-    Original classification activity for the indicated year: These are
-    the number of documents created with an original classification,
-    i.e., so designated by an official Original Classification
-    Authority.
+   Original classification activity for the indicated year: These are
+   the number of documents created with an original classification,
+   i.e., so designated by an official Original Classification Authority.
 
 TenYearDeclass
-    Percent of ``OCActivity`` covered by the 10 year declassification
-    rules.
+   Percent of ``OCActivity`` covered by the 10 year declassification
+   rules.
 
 DerivClassActivity
-    Derivative classification activity for the indicated year: These are
-    the number of documents created that claim another document as the
-    authority for classification.
+   Derivative classification activity for the indicated year: These are
+   the number of documents created that claim another document as the
+   authority for classification.
 
 Details
 ~~~~~~~
@@ -73,31 +72,31 @@ Examples
 
 ::
 
-    ##
-    ## 1.  plot DerivClassActivity 
-    ##
-    plot(DerivClassActivity~year, USclassifiedDocuments)
-    #  Exponential growth?  
+   ##
+   ## 1.  plot DerivClassActivity 
+   ##
+   plot(DerivClassActivity~year, USclassifiedDocuments)
+   #  Exponential growth?  
 
-    plot(DerivClassActivity~year, USclassifiedDocuments, 
-         log='y')
-    # A jump in 2009 as discussed by Fitzpatrick (2013).  
-    # Otherwise plausibly a straight line.   
+   plot(DerivClassActivity~year, USclassifiedDocuments, 
+        log='y')
+   # A jump in 2009 as discussed by Fitzpatrick (2013).  
+   # Otherwise plausibly a straight line.   
 
-    ##
-    ## 2.  First difference? 
-    ##
-    plot(diff(log(DerivClassActivity))~year[-1], 
-         USclassifiedDocuments)
-    # Jump in 2009 but otherwise on distribution 
+   ##
+   ## 2.  First difference? 
+   ##
+   plot(diff(log(DerivClassActivity))~year[-1], 
+        USclassifiedDocuments)
+   # Jump in 2009 but otherwise on distribution 
 
-    ##
-    ## 3.  autocorrelation?  
-    ##
-    sel <- with(USclassifiedDocuments, 
-                (1995 < year) & (year < 2009) )
-    acf(diff(log(USclassifiedDocuments$
-                 DerivClassActivity[sel])))
-    # lag 1 autocorrelation = (-0.52).  
-    # However, with only 12 numbers, 
-    # this is not statistically significant.  
+   ##
+   ## 3.  autocorrelation?  
+   ##
+   sel <- with(USclassifiedDocuments, 
+               (1995 < year) & (year < 2009) )
+   acf(diff(log(USclassifiedDocuments$
+                DerivClassActivity[sel])))
+   # lag 1 autocorrelation = (-0.52).  
+   # However, with only 12 numbers, 
+   # this is not statistically significant.  

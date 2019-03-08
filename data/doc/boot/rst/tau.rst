@@ -34,7 +34,7 @@ Usage
 
 ::
 
-    tau
+   tau
 
 Format
 ~~~~~~
@@ -42,11 +42,11 @@ Format
 This data frame contains the following columns:
 
 ``rate``
-    The decay rate expressed as a percentage.
+   The decay rate expressed as a percentage.
 
 ``decay``
-    The type of decay measured in the experiment. It is a factor with
-    levels ``1``, ``rho``, ``pi``, ``e`` and ``mu``.
+   The type of decay measured in the experiment. It is a factor with
+   levels ``1``, ``rho``, ``pi``, ``e`` and ``mu``.
 
 Source
 ~~~~~~

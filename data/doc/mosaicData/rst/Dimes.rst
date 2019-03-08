@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(Dimes)
+   data(Dimes)
 
 Format
 ~~~~~~

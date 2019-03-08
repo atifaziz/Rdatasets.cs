@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Klein
+   Klein
 
 Format
 ~~~~~~
@@ -25,34 +25,34 @@ Format
 This data frame contains the following columns:
 
 Year
-    1921–1941
+   1921–1941
 
 C
-    consumption.
+   consumption.
 
 P
-    private profits.
+   private profits.
 
 Wp
-    private wages.
+   private wages.
 
 I
-    investment.
+   investment.
 
 K.lag
-    capital stock, lagged one year.
+   capital stock, lagged one year.
 
 X
-    equilibrium demand.
+   equilibrium demand.
 
 Wg
-    government wages.
+   government wages.
 
 G
-    government non-wage spending.
+   government non-wage spending.
 
 T
-    indirect business taxes and net exports.
+   indirect business taxes and net exports.
 
 Source
 ~~~~~~
@@ -70,17 +70,17 @@ Examples
 
 ::
 
-    Klein$P.lag <- c(NA, Klein$P[-22])
-    Klein$X.lag <- c(NA, Klein$X[-22])
+   Klein$P.lag <- c(NA, Klein$P[-22])
+   Klein$X.lag <- c(NA, Klein$X[-22])
 
-    summary(tsls(C ~ P + P.lag + I(Wp + Wg), 
-        instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
-        data=Klein))
-        
-    summary(tsls(I ~ P + P.lag + K.lag,
-        instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
-        data=Klein))
-        
-    summary(tsls(Wp ~ X + X.lag + I(Year - 1931),
-        instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
-        data=Klein))
+   summary(tsls(C ~ P + P.lag + I(Wp + Wg), 
+       instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
+       data=Klein))
+       
+   summary(tsls(I ~ P + P.lag + K.lag,
+       instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
+       data=Klein))
+       
+   summary(tsls(Wp ~ X + X.lag + I(Year - 1931),
+       instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
+       data=Klein))

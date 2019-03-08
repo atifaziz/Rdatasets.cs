@@ -15,19 +15,19 @@ Usage
 
 ::
 
-    Rubber
+   Rubber
 
 Format
 ~~~~~~
 
 ``loss``
-    the abrasion loss in gm/hr.
+   the abrasion loss in gm/hr.
 
 ``hard``
-    the hardness in Shore units.
+   the hardness in Shore units.
 
 ``tens``
-    tensile strength in kg/sq m.
+   tensile strength in kg/sq m.
 
 Source
 ~~~~~~

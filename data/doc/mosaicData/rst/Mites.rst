@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(Mites)
+   data(Mites)
 
 Format
 ~~~~~~
@@ -50,9 +50,9 @@ Examples
 
 ::
 
-    data(Mites)
-    if (require(mosaic)) {
-      tally(~ treatment + outcome, data=Mites)
-      tally(~ outcome | treatment, format="percent", data=Mites)
-    }
+   data(Mites)
+   if (require(mosaic)) {
+     tally(~ treatment + outcome, data=Mites)
+     tally(~ outcome | treatment, format="percent", data=Mites)
+   }
 

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Schooling)
+   data(Schooling)
 
 Format
 ~~~~~~
@@ -29,88 +29,88 @@ Format
 A dataframe containing :
 
 smsa66
-    lived in smsa in 1966 ?
+   lived in smsa in 1966 ?
 
 smsa76
-    lived in smsa in 1976 ?
+   lived in smsa in 1976 ?
 
 nearc2
-    grew up near 2-yr college ?
+   grew up near 2-yr college ?
 
 nearc4
-    grew up near 4-yr college ?
+   grew up near 4-yr college ?
 
 nearc4a
-    grew up near 4-year public college ?
+   grew up near 4-year public college ?
 
 nearc4b
-    grew up near 4-year private college ?
+   grew up near 4-year private college ?
 
 ed76
-    education in 1976
+   education in 1976
 
 ed66
-    education in 1966
+   education in 1966
 
 age76
-    age in 1976
+   age in 1976
 
 daded
-    dads education (imputed avg if missing)
+   dads education (imputed avg if missing)
 
 nodaded
-    dads education imputed ?
+   dads education imputed ?
 
 momed
-    mothers education
+   mothers education
 
 nomomed
-    moms education imputed ?
+   moms education imputed ?
 
 momdad14
-    lived with mom and dad at age 14 ?
+   lived with mom and dad at age 14 ?
 
 sinmom14
-    single mom at age 14 ?
+   single mom at age 14 ?
 
 step14
-    step parent at age 14 ?
+   step parent at age 14 ?
 
 south66
-    lived in south in 1966 ?
+   lived in south in 1966 ?
 
 south76
-    lived in south in 1976 ?
+   lived in south in 1976 ?
 
 lwage76
-    log wage in 1976 (outliers trimmed)
+   log wage in 1976 (outliers trimmed)
 
 famed
-    mom-dad education class (1-9)
+   mom-dad education class (1-9)
 
 black
-    black ?
+   black ?
 
 wage76
-    wage in 1976 (raw, cents per hour)
+   wage in 1976 (raw, cents per hour)
 
 enroll76
-    enrolled in 1976 ?
+   enrolled in 1976 ?
 
 kww
-    the kww score
+   the kww score
 
 iqscore
-    a normed IQ score
+   a normed IQ score
 
 mar76
-    married in 1976 ?
+   married in 1976 ?
 
 libcrd14
-    library card in home at age 14 ?
+   library card in home at age 14 ?
 
 exp76
-    experience in 1976
+   experience in 1976
 
 Source
 ~~~~~~

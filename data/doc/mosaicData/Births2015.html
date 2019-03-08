@@ -22,28 +22,40 @@ data(Births2015)
 
 <h3>Format</h3>
 
-<p>A data frame with 365 observations on the following variables.
+<p>A data.frame with 365 observations on the following 8 variables.
 </p>
 
 <ul>
-<li><p><code>date</code> date in 2015
+<li> <p><code>date</code>   Date
 </p>
 </li>
-<li><p><code>births</code> number of US births
+<li> <p><code>births</code> Number of births on <code>date</code> (integer)
 </p>
 </li>
-<li><p><code>dayofyear</code> sequential number of days from 1 to 365
+<li> <p><code>wday</code>   Day of week (ordered factor)
 </p>
 </li>
-<li><p><code>wday</code> day of week as an ordered factor
+<li> <p><code>year</code>   Year (integer)
+</p>
+</li>
+<li> <p><code>month</code>  Month (integer)
+</p>
+</li>
+<li> <p><code>day_of_year</code>  Day of year (integer)
+</p>
+</li>
+<li> <p><code>day_of_month</code> Day of month (integer)
+</p>
+</li>
+<li> <p><code>day_of_week</code>  Day of week (integer)
 </p>
 </li></ul>
 
 
 <h3>Source</h3>
 
-<p>Obtained from the National Center for Health Statistics,  
-National Vital Statistics System,  
+<p>Obtained from the National Center for Health Statistics,
+National Vital Statistics System,
 Natality, 2015 data.
 </p>
 
@@ -58,9 +70,9 @@ Natality, 2015 data.
 
 <pre>
 data(Births2015)
-if (require(lattice)) {
-  xyplot(births ~ date, Births2015)
-  xyplot(births ~ date, Births2015, groups = wday)
+if (require(ggformula)) {
+  gf_point(births ~ date, data = Births2015)
+  gf_point(births ~ date, data = Births2015, color = ~ wday)
 }
 if (require(dplyr)) {
   Births78 %&gt;% 

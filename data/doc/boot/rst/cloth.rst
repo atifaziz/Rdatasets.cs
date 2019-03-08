@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    cloth
+   cloth
 
 Format
 ~~~~~~
@@ -23,10 +23,10 @@ Format
 This data frame contains the following columns:
 
 ``x``
-    The length of the roll of cloth.
+   The length of the roll of cloth.
 
 ``y``
-    The number of flaws found in the roll.
+   The number of flaws found in the roll.
 
 Source
 ~~~~~~

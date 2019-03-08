@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("pistonrings")
+   data("pistonrings")
 
 Format
 ~~~~~~
@@ -44,7 +44,7 @@ Examples
 
 ::
 
-      
-      data("pistonrings", package = "HSAUR")
-      mosaicplot(pistonrings)
+     
+     data("pistonrings", package = "HSAUR")
+     mosaicplot(pistonrings)
 

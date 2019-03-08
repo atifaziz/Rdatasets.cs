@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Ginzberg
+   Ginzberg
 
 Format
 ~~~~~~
@@ -24,23 +24,23 @@ Format
 This data frame contains the following columns:
 
 simplicity
-    Measures subject's need to see the world in black and white.
+   Measures subject's need to see the world in black and white.
 
 fatalism
-    Fatalism scale.
+   Fatalism scale.
 
 depression
-    Beck self-report depression scale.
+   Beck self-report depression scale.
 
 adjsimp
-    Adjusted Simplicity: Simplicity adjusted (by regression) for other
-    variables thought to influence depression.
+   Adjusted Simplicity: Simplicity adjusted (by regression) for other
+   variables thought to influence depression.
 
 adjfatal
-    Adjusted Fatalism.
+   Adjusted Fatalism.
 
 adjdep
-    Adjusted Depression.
+   Adjusted Depression.
 
 Source
 ~~~~~~

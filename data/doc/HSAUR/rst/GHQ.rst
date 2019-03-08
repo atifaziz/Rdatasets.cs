@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("GHQ")
+   data("GHQ")
 
 Format
 ~~~~~~
@@ -23,16 +23,16 @@ Format
 A data frame with 22 observations on the following 4 variables.
 
 ``GHQ``
-    the General Health Questionnaire score.
+   the General Health Questionnaire score.
 
 ``sex``
-    a factor with levels ``female`` and ``male``
+   a factor with levels ``female`` and ``male``
 
 ``cases``
-    the number of diseased subjects.
+   the number of diseased subjects.
 
 ``non.cases``
-    the number of healthy subjects.
+   the number of healthy subjects.
 
 Details
 ~~~~~~~
@@ -54,10 +54,10 @@ Examples
 ::
 
 
-      data("GHQ", package = "HSAUR")
-      male <- subset(GHQ, sex == "male")
-      female <- subset(GHQ, sex == "female")
-      layout(matrix(1:2, ncol = 2))
-      barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Male", xlab = "GHC score")
-      barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Female", xlab = "GHC score")
+     data("GHQ", package = "HSAUR")
+     male <- subset(GHQ, sex == "male")
+     female <- subset(GHQ, sex == "female")
+     layout(matrix(1:2, ncol = 2))
+     barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Male", xlab = "GHC score")
+     barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Female", xlab = "GHC score")
 

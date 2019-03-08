@@ -20,20 +20,20 @@ Format
 A data frame with 270 observations on the following 5 variables.
 
 ``replicate``
-    a factor with levels ``1`` to ``15``
+   a factor with levels ``1`` to ``15``
 
 ``recipe``
-    a factor with levels ``A``, ``B`` and ``C``
+   a factor with levels ``A``, ``B`` and ``C``
 
 ``temperature``
-    an ordered factor with levels ``175`` < ``185`` < ``195`` < ``205``
-    < ``215`` < ``225``
+   an ordered factor with levels ``175`` < ``185`` < ``195`` < ``205`` <
+   ``215`` < ``225``
 
 ``angle``
-    a numeric vector giving the angle at which the cake broke.
+   a numeric vector giving the angle at which the cake broke.
 
 ``temp``
-    numeric value of the baking temperature (degrees F).
+   numeric value of the baking temperature (degrees F).
 
 Details
 ~~~~~~~
@@ -65,12 +65,12 @@ Examples
 
 ::
 
-    str(cake)
-    ## 'temp' is continuous, 'temperature' an ordered factor with 6 levels
+   str(cake)
+   ## 'temp' is continuous, 'temperature' an ordered factor with 6 levels
 
-    (fm1 <- lmer(angle ~ recipe * temperature + (1|recipe:replicate), cake, REML= FALSE))
-    (fm2 <- lmer(angle ~ recipe + temperature + (1|recipe:replicate), cake, REML= FALSE))
-    (fm3 <- lmer(angle ~ recipe + temp        + (1|recipe:replicate), cake, REML= FALSE))
+   (fm1 <- lmer(angle ~ recipe * temperature + (1|recipe:replicate), cake, REML= FALSE))
+   (fm2 <- lmer(angle ~ recipe + temperature + (1|recipe:replicate), cake, REML= FALSE))
+   (fm3 <- lmer(angle ~ recipe + temp        + (1|recipe:replicate), cake, REML= FALSE))
 
-    ## and now "choose" :
-    anova(fm3, fm2, fm1)
+   ## and now "choose" :
+   anova(fm3, fm2, fm1)

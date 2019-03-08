@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(hotspots)
+   data(hotspots)
 
 Format
 ~~~~~~
@@ -26,22 +26,22 @@ Format
 A data frame with 36 observations on the following 6 variables.
 
 ``ID``
-    Volcano identifier
+   Volcano identifier
 
 ``name``
-    Name
+   Name
 
 ``distance``
-    Distance in kilometers
+   Distance in kilometers
 
 ``age``
-    K-Ar age in millions of years
+   K-Ar age in millions of years
 
 ``error``
-    Standard error of estimate?
+   Standard error of estimate?
 
 ``source``
-    Data source; see information on web site below.
+   Data source; see information on web site below.
 
 Details
 ~~~~~~~
@@ -60,6 +60,6 @@ Examples
 
 ::
 
-    data(hotspots)
-    plot(age ~ distance, data=hotspots)
-    abline(lm(age ~ distance, data=hotspots))
+   data(hotspots)
+   plot(age ~ distance, data=hotspots)
+   abline(lm(age ~ distance, data=hotspots))

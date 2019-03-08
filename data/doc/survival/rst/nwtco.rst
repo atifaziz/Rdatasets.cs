@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    nwtco
+   nwtco
 
 Format
 ~~~~~~
@@ -25,31 +25,31 @@ Format
 A data frame with 4028 observations on the following 9 variables.
 
 ``seqno``
-    id number
+   id number
 
 ``instit``
-    Histology from local institution
+   Histology from local institution
 
 ``histol``
-    Histology from central lab
+   Histology from central lab
 
 ``stage``
-    Disease stage
+   Disease stage
 
 ``study``
-    study
+   study
 
 ``rel``
-    indicator for relapse
+   indicator for relapse
 
 ``edrel``
-    time to relapse
+   time to relapse
 
 ``age``
-    age in months
+   age in months
 
 ``in.subcohort``
-    Included in the subcohort for the example in the paper
+   Included in the subcohort for the example in the paper
 
 References
 ~~~~~~~~~~
@@ -63,6 +63,6 @@ Examples
 
 ::
 
-    with(nwtco, table(instit,histol))
-    anova(coxph(Surv(edrel,rel)~histol+instit,data=nwtco))
-    anova(coxph(Surv(edrel,rel)~instit+histol,data=nwtco))
+   with(nwtco, table(instit,histol))
+   anova(coxph(Surv(edrel,rel)~histol+instit,data=nwtco))
+   anova(coxph(Surv(edrel,rel)~instit+histol,data=nwtco))

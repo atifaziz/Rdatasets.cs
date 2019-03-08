@@ -23,7 +23,7 @@ Usage
 
 ::
 
-    darwin
+   darwin
 
 Format
 ~~~~~~
@@ -31,8 +31,8 @@ Format
 This data frame contains the following column:
 
 ``y``
-    The difference in heights for the pairs of plants (in units of 0.125
-    inches).
+   The difference in heights for the pairs of plants (in units of 0.125
+   inches).
 
 Source
 ~~~~~~

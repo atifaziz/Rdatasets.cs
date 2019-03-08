@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Mishkin)
+   data(Mishkin)
 
 Format
 ~~~~~~
@@ -29,20 +29,20 @@ Format
 A time serie containing :
 
 pai1
-    one-month inflation rate (in percent, annual rate)
+   one-month inflation rate (in percent, annual rate)
 
 pai3
-    three-month inflation rate (in percent, annual rate)
+   three-month inflation rate (in percent, annual rate)
 
 tb1
-    one-month T-bill rate (in percent, annual rate)
+   one-month T-bill rate (in percent, annual rate)
 
 tb3
-    three-month T-bill rate (in percent, annual rate)
+   three-month T-bill rate (in percent, annual rate)
 
 cpi
-    CPI for urban consumers, all items (the 1982-1984 average is set to
-    100)
+   CPI for urban consumers, all items (the 1982-1984 average is set to
+   100)
 
 Source
 ~~~~~~

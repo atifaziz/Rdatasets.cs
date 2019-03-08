@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    loti
+   loti
 
 Format
 ~~~~~~
@@ -25,61 +25,61 @@ Format
 A data frame with 131 observations on the following 19 variables.
 
 ``Jan``
-    a numeric vector
+   a numeric vector
 
 ``Feb``
-    a numeric vector
+   a numeric vector
 
 ``Mar``
-    a numeric vector
+   a numeric vector
 
 ``Apr``
-    a numeric vector
+   a numeric vector
 
 ``May``
-    a numeric vector
+   a numeric vector
 
 ``Jun``
-    a numeric vector
+   a numeric vector
 
 ``Jul``
-    a numeric vector
+   a numeric vector
 
 ``Aug``
-    a numeric vector
+   a numeric vector
 
 ``Sep``
-    a numeric vector
+   a numeric vector
 
 ``Oct``
-    a numeric vector
+   a numeric vector
 
 ``Nov``
-    a numeric vector
+   a numeric vector
 
 ``Dec``
-    a numeric vector
+   a numeric vector
 
 ``J.D``
-    Jan-Dec averages
+   Jan-Dec averages
 
 ``D.N``
-    Dec-Nov averages
+   Dec-Nov averages
 
 ``DJF``
-    Dec-Jan-Feb averages
+   Dec-Jan-Feb averages
 
 ``MAM``
-    Mar-Apr-May
+   Mar-Apr-May
 
 ``JJA``
-    Jun-Jul-Aug
+   Jun-Jul-Aug
 
 ``SON``
-    Sept-Oct-Nov
+   Sept-Oct-Nov
 
 ``Year``
-    a numeric vector
+   a numeric vector
 
 Source
 ~~~~~~
@@ -91,4 +91,4 @@ Examples
 
 ::
 
-    data(loti)
+   data(loti)

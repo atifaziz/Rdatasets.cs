@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(EmplUK)
+   data(EmplUK)
 
 Format
 ~~~~~~
@@ -29,25 +29,25 @@ Format
 A data frame containing :
 
 firm
-    firm index
+   firm index
 
 year
-    year
+   year
 
 sector
-    the sector of activity
+   the sector of activity
 
 emp
-    employment
+   employment
 
 wage
-    wages
+   wages
 
 capital
-    capital
+   capital
 
 output
-    output
+   output
 
 Source
 ~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Mroz
+   Mroz
 
 Format
 ~~~~~~
@@ -24,30 +24,30 @@ Format
 This data frame contains the following columns:
 
 lfp
-    labor-force participation; a factor with levels: ``no``; ``yes``.
+   labor-force participation; a factor with levels: ``no``; ``yes``.
 
 k5
-    number of children 5 years old or younger.
+   number of children 5 years old or younger.
 
 k618
-    number of children 6 to 18 years old.
+   number of children 6 to 18 years old.
 
 age
-    in years.
+   in years.
 
 wc
-    wife's college attendance; a factor with levels: ``no``; ``yes``.
+   wife's college attendance; a factor with levels: ``no``; ``yes``.
 
 hc
-    husband's college attendance; a factor with levels: ``no``; ``yes``.
+   husband's college attendance; a factor with levels: ``no``; ``yes``.
 
 lwg
-    log expected wage rate; for women in the labor force, the actual
-    wage rate; for women not in the labor force, an imputed value based
-    on the regression of ``lwg`` on the other variables.
+   log expected wage rate; for women in the labor force, the actual wage
+   rate; for women not in the labor force, an imputed value based on the
+   regression of ``lwg`` on the other variables.
 
 inc
-    family income exclusive of wife's income.
+   family income exclusive of wife's income.
 
 Source
 ~~~~~~

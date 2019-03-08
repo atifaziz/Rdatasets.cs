@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    french_fries
+   french_fries
 
 Format
 ~~~~~~

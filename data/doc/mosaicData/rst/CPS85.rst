@@ -20,7 +20,7 @@ Usage
 
 ::
 
-    data(CPS85)
+   data(CPS85)
 
 Format
 ~~~~~~
@@ -72,5 +72,5 @@ Examples
 
 ::
 
-    data(CPS85)
+   data(CPS85)
 

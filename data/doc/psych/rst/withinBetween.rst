@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(withinBetween)
+   data(withinBetween)
 
 Format
 ~~~~~~
@@ -29,34 +29,34 @@ Format
 A data frame with 16 observations on the following 10 variables.
 
 ``Group``
-    An example grouping factor.
+   An example grouping factor.
 
 ``V1``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V2``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V3``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V4``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V5``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V6``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V7``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V8``
-    A column of 16 observations
+   A column of 16 observations
 
 ``V9``
-    A column of 16 observations
+   A column of 16 observations
 
 Details
 ~~~~~~~
@@ -108,8 +108,8 @@ Examples
 
 ::
 
-    data(withinBetween)
-    pairs.panels(withinBetween,bg=c("red","blue","white","black")[withinBetween[,1]],
-         pch=21,ellipses=FALSE,lm=TRUE)
-    stats <- statsBy(withinBetween,'Group')
-    print(stats,short=FALSE)
+   data(withinBetween)
+   pairs.panels(withinBetween,bg=c("red","blue","white","black")[withinBetween[,1]],
+        pch=21,ellipses=FALSE,lm=TRUE)
+   stats <- statsBy(withinBetween,'Group')
+   print(stats,short=FALSE)

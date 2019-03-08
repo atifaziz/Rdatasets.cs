@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    Baumann
+   Baumann
 
 Format
 ~~~~~~
@@ -26,24 +26,24 @@ Format
 This data frame contains the following columns:
 
 group
-    Experimental group; a factor with levels: ``Basal``, traditional
-    method of teaching; ``DRTA``, an innovative method; ``Strat``,
-    another innovative method.
+   Experimental group; a factor with levels: ``Basal``, traditional
+   method of teaching; ``DRTA``, an innovative method; ``Strat``,
+   another innovative method.
 
 pretest.1
-    First pretest.
+   First pretest.
 
 pretest.2
-    Second pretest.
+   Second pretest.
 
 post.test.1
-    First post-test.
+   First post-test.
 
 post.test.2
-    Second post-test.
+   Second post-test.
 
 post.test.3
-    Third post-test.
+   Third post-test.
 
 Source
 ~~~~~~

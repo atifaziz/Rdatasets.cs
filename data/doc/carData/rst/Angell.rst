@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Angell
+   Angell
 
 Format
 ~~~~~~
@@ -24,19 +24,19 @@ Format
 This data frame contains the following columns:
 
 moral
-    Moral Integration: Composite of crime rate and welfare expenditures.
+   Moral Integration: Composite of crime rate and welfare expenditures.
 
 hetero
-    Ethnic Heterogenity: From percentages of nonwhite and foreign-born
-    white residents.
+   Ethnic Heterogenity: From percentages of nonwhite and foreign-born
+   white residents.
 
 mobility
-    Geographic Mobility: From percentages of residents moving into and
-    out of the city.
+   Geographic Mobility: From percentages of residents moving into and
+   out of the city.
 
 region
-    A factor with levels: ``E`` Northeast; ``MW`` Midwest; ``S``
-    Southeast; ``W`` West.
+   A factor with levels: ``E`` Northeast; ``MW`` Midwest; ``S``
+   Southeast; ``W`` West.
 
 Source
 ~~~~~~

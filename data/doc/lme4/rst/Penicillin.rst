@@ -18,14 +18,14 @@ Format
 A data frame with 144 observations on the following 3 variables.
 
 ``diameter``
-    diameter (mm) of the zone of inhibition of the growth of the
-    organism.
+   diameter (mm) of the zone of inhibition of the growth of the
+   organism.
 
 ``plate``
-    assay plate. A factor with levels ‘a’ to ‘x’.
+   assay plate. A factor with levels ‘a’ to ‘x’.
 
 ``sample``
-    penicillin sample. A factor with levels ‘A’ to ‘F’.
+   penicillin sample. A factor with levels ‘A’ to ‘F’.
 
 Details
 ~~~~~~~
@@ -55,14 +55,14 @@ Examples
 
 ::
 
-    str(Penicillin)
-    require(lattice)
-    dotplot(reorder(plate, diameter) ~ diameter, Penicillin, groups = sample,
-            ylab = "Plate", xlab = "Diameter of growth inhibition zone (mm)",
-            type = c("p", "a"), auto.key = list(columns = 3, lines = TRUE,
-            title = "Penicillin sample"))
-    (fm1 <- lmer(diameter ~ (1|plate) + (1|sample), Penicillin))
+   str(Penicillin)
+   require(lattice)
+   dotplot(reorder(plate, diameter) ~ diameter, Penicillin, groups = sample,
+           ylab = "Plate", xlab = "Diameter of growth inhibition zone (mm)",
+           type = c("p", "a"), auto.key = list(columns = 3, lines = TRUE,
+           title = "Penicillin sample"))
+   (fm1 <- lmer(diameter ~ (1|plate) + (1|sample), Penicillin))
 
-    L <- getME(fm1, "L")
-    Matrix::image(L, main = "L",
-                  sub = "Penicillin: Structure of random effects interaction")
+   L <- getME(fm1, "L")
+   Matrix::image(L, main = "L",
+                 sub = "Penicillin: Structure of random effects interaction")

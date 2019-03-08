@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    fgl
+   fgl
 
 Format
 ~~~~~~
@@ -24,40 +24,40 @@ Format
 This data frame contains the following columns:
 
 ``RI``
-    refractive index; more precisely the refractive index is 1.518xxxx.
+   refractive index; more precisely the refractive index is 1.518xxxx.
 
-    The next 8 measurements are percentages by weight of oxides.
+   The next 8 measurements are percentages by weight of oxides.
 
 ``Na``
-    sodium.
+   sodium.
 
 ``Mg``
-    manganese.
+   manganese.
 
 ``Al``
-    aluminium.
+   aluminium.
 
 ``Si``
-    silicon.
+   silicon.
 
 ``K``
-    potassium.
+   potassium.
 
 ``Ca``
-    calcium.
+   calcium.
 
 ``Ba``
-    barium.
+   barium.
 
 ``Fe``
-    iron.
+   iron.
 
 ``type``
-    The fragments were originally classed into seven types, one of which
-    was absent in this dataset. The categories which occur are window
-    float glass (``WinF``: 70), window non-float glass (``WinNF``: 76),
-    vehicle window glass (``Veh``: 17), containers (``Con``: 13),
-    tableware (``Tabl``: 9) and vehicle headlamps (``Head``: 29).
+   The fragments were originally classed into seven types, one of which
+   was absent in this dataset. The categories which occur are window
+   float glass (``WinF``: 70), window non-float glass (``WinNF``: 76),
+   vehicle window glass (``Veh``: 17), containers (``Con``: 13),
+   tableware (``Tabl``: 9) and vehicle headlamps (``Head``: 29).
 
 References
 ~~~~~~~~~~

@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Star)
+   data(Star)
 
 Format
 ~~~~~~
@@ -29,29 +29,29 @@ Format
 A dataframe containing :
 
 tmathssk
-    total math scaled score
+   total math scaled score
 
 treadssk
-    total reading scaled score
+   total reading scaled score
 
 classk
-    type of class, a factor with levels
-    (regular,small.class,regular.with.aide)
+   type of class, a factor with levels
+   (regular,small.class,regular.with.aide)
 
 totexpk
-    years of total teaching experience
+   years of total teaching experience
 
 sex
-    a factor with levels (boy,girl)
+   a factor with levels (boy,girl)
 
 freelunk
-    qualified for free lunch ?
+   qualified for free lunch ?
 
 race
-    a factor with levels (white,black,other)
+   a factor with levels (white,black,other)
 
 schidkn
-    school indicator variable
+   school indicator variable
 
 Source
 ~~~~~~

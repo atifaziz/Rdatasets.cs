@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data(mfblong)
+   data(mfblong)
 
 Format
 ~~~~~~

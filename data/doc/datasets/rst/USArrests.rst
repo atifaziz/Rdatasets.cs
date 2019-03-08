@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    USArrests
+   USArrests
 
 Format
 ~~~~~~
@@ -40,8 +40,8 @@ Note
 ``USArrests`` contains the data as in McNeil's monograph. For the
 ``UrbanPop`` percentages, a review of the table (No. 21) in the
 Statistical Abstracts 1975 reveals a transcription error for Maryland
-(and that McNeil used the same “round to even” rule that **R**'s
-``round()`` uses), as found by Daniel S Coven (Arizona).
+(and that McNeil used the same “round to even” rule that R's ``round()``
+uses), as found by Daniel S Coven (Arizona).
 
 See the example below on how to correct the error and improve accuracy
 for the ‘<n>.5’ percentages.
@@ -70,20 +70,20 @@ Examples
 
 ::
 
-    summary(USArrests)
+   summary(USArrests)
 
-    require(graphics)
-    pairs(USArrests, panel = panel.smooth, main = "USArrests data")
+   require(graphics)
+   pairs(USArrests, panel = panel.smooth, main = "USArrests data")
 
-    ## Difference between 'USArrests' and its correction
-    USArrests["Maryland", "UrbanPop"] # 67 -- the transcription error
-    UA.C <- USArrests
-    UA.C["Maryland", "UrbanPop"] <- 76.6
+   ## Difference between 'USArrests' and its correction
+   USArrests["Maryland", "UrbanPop"] # 67 -- the transcription error
+   UA.C <- USArrests
+   UA.C["Maryland", "UrbanPop"] <- 76.6
 
-    ## also +/- 0.5 to restore the original  <n>.5  percentages
-    s5u <- c("Colorado", "Florida", "Mississippi", "Wyoming")
-    s5d <- c("Nebraska", "Pennsylvania")
-    UA.C[s5u, "UrbanPop"] <- UA.C[s5u, "UrbanPop"] + 0.5
-    UA.C[s5d, "UrbanPop"] <- UA.C[s5d, "UrbanPop"] - 0.5
+   ## also +/- 0.5 to restore the original  <n>.5  percentages
+   s5u <- c("Colorado", "Florida", "Mississippi", "Wyoming")
+   s5d <- c("Nebraska", "Pennsylvania")
+   UA.C[s5u, "UrbanPop"] <- UA.C[s5u, "UrbanPop"] + 0.5
+   UA.C[s5d, "UrbanPop"] <- UA.C[s5d, "UrbanPop"] - 0.5
 
-    ## ==> UA.C  is now a *C*orrected version of  USArrests
+   ## ==> UA.C  is now a *C*orrected version of  USArrests

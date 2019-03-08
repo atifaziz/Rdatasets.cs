@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    HairEyeColor
+   HairEyeColor
 
 Format
 ~~~~~~
@@ -57,18 +57,19 @@ used by Friendly (2000).
 References
 ~~~~~~~~~~
 
-Snee, R. D. (1974) Graphical display of two-way contingency tables. *The
-American Statistician*, **28**, 9–12.
+Snee, R. D. (1974). Graphical display of two-way contingency tables.
+*The American Statistician*, **28**, 9–12. doi:
+`10.2307/2683520 <http://doi.org/10.2307/2683520>`__.
 
-Friendly, M. (1992a) Graphical methods for categorical data. *SAS User
+Friendly, M. (1992a). Graphical methods for categorical data. *SAS User
 Group International Conference Proceedings*, **17**, 190–200.
 http://www.math.yorku.ca/SCS/sugi/sugi17-paper.html
 
-Friendly, M. (1992b) Mosaic displays for loglinear models. *Proceedings
+Friendly, M. (1992b). Mosaic displays for loglinear models. *Proceedings
 of the Statistical Graphics Section*, American Statistical Association,
 pp. 61–68. http://www.math.yorku.ca/SCS/Papers/asa92.html
 
-Friendly, M. (2000) *Visualizing Categorical Data.* SAS Institute, ISBN
+Friendly, M. (2000). *Visualizing Categorical Data*. SAS Institute, ISBN
 1-58025-660-0.
 
 See Also
@@ -81,10 +82,10 @@ Examples
 
 ::
 
-    require(graphics)
-    ## Full mosaic
-    mosaicplot(HairEyeColor)
-    ## Aggregate over sex (as in Snee's original data)
-    x <- apply(HairEyeColor, c(1, 2), sum)
-    x
-    mosaicplot(x, main = "Relation between hair and eye color")
+   require(graphics)
+   ## Full mosaic
+   mosaicplot(HairEyeColor)
+   ## Aggregate over sex (as in Snee's original data)
+   x <- apply(HairEyeColor, c(1, 2), sum)
+   x
+   mosaicplot(x, main = "Relation between hair and eye color")

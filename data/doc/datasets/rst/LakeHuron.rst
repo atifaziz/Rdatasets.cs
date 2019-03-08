@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    LakeHuron
+   LakeHuron
 
 Format
 ~~~~~~

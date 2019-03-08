@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    rats
+   rats
 
 Format
 ~~~~~~

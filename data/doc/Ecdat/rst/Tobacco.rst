@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Tobacco)
+   data(Tobacco)
 
 Format
 ~~~~~~
@@ -29,32 +29,32 @@ Format
 A dataframe containing :
 
 occupation
-    a factor with levels (bluecol,whitecol,inactself), the last level
-    being inactive and self-employed
+   a factor with levels (bluecol,whitecol,inactself), the last level
+   being inactive and self-employed
 
 region
-    a factor with levels (flanders,wallon,brussels)
+   a factor with levels (flanders,wallon,brussels)
 
 nkids
-    number of kids of more than two years old
+   number of kids of more than two years old
 
 nkids2
-    number of kids of less than two years old
+   number of kids of less than two years old
 
 nadults
-    number of adults in household
+   number of adults in household
 
 lnx
-    log of total expenditures
+   log of total expenditures
 
 stobacco
-    budgetshare of tobacco
+   budgetshare of tobacco
 
 salcohol
-    budgetshare of alcohol
+   budgetshare of alcohol
 
 age
-    age in brackets (0-4)
+   age in brackets (0-4)
 
 Source
 ~~~~~~

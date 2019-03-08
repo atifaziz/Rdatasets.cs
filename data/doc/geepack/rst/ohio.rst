@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(ohio)
+   data(ohio)
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 This data frame contains the following columns:
 
 resp
-    an indicator of wheeze status (1=yes, 0=no)
+   an indicator of wheeze status (1=yes, 0=no)
 
 id
-    a numeric vector for subject id
+   a numeric vector for subject id
 
 age
-    a numeric vector of age, 0 is 9 years old
+   a numeric vector of age, 0 is 9 years old
 
 smoke
-    an indicator of maternal smoking at the first year of the study
+   an indicator of maternal smoking at the first year of the study
 
 References
 ~~~~~~~~~~
@@ -47,10 +47,10 @@ Examples
 
 ::
 
-    data(ohio)
-    fit <- geese(resp ~ age + smoke + age:smoke, id=id, data=ohio,
-                 family=binomial, corstr="exch", scale.fix=TRUE)
-    summary(fit)
-    fit.ar1 <- geese(resp ~ age + smoke + age:smoke, id=id, data=ohio,
-                     family=binomial, corstr="ar1", scale.fix=TRUE)
-    summary(fit.ar1)
+   data(ohio)
+   fit <- geese(resp ~ age + smoke + age:smoke, id=id, data=ohio,
+                family=binomial, corstr="exch", scale.fix=TRUE)
+   summary(fit)
+   fit.ar1 <- geese(resp ~ age + smoke + age:smoke, id=id, data=ohio,
+                    family=binomial, corstr="ar1", scale.fix=TRUE)
+   summary(fit.ar1)

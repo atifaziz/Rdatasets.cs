@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(Countries)
+   data(Countries)
 
 Format
 ~~~~~~
@@ -45,7 +45,7 @@ Examples
 
 ::
 
-    data(Countries)
-    subset(Countries, maps=="Yugoslavia")  # Where has Yugoslavia gone?
-    subset(Countries, is.na(gapminder))    # Things from maps with no Gapminder equivalent
-    subset(Countries, is.na(maps))         # Things from Gapminder with no maps equivalent
+   data(Countries)
+   subset(Countries, maps=="Yugoslavia")  # Where has Yugoslavia gone?
+   subset(Countries, is.na(gapminder))    # Things from maps with no Gapminder equivalent
+   subset(Countries, is.na(maps))         # Things from Gapminder with no maps equivalent

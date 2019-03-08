@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Wong
+   Wong
 
 Format
 ~~~~~~
@@ -25,25 +25,25 @@ Format
 This data frame contains the following columns:
 
 ``id``
-    patient ID number.
+   patient ID number.
 
 ``days``
-    number of days post coma at which IQs were measured.
+   number of days post coma at which IQs were measured.
 
 ``duration``
-    duration of the coma in days.
+   duration of the coma in days.
 
 ``sex``
-    a factor with levels ``Female`` and ``Male``.
+   a factor with levels ``Female`` and ``Male``.
 
 ``age``
-    in years at the time of injury.
+   in years at the time of injury.
 
 ``piq``
-    performance (i.e., mathematical) IQ.
+   performance (i.e., mathematical) IQ.
 
 ``viq``
-    verbal IQ.
+   verbal IQ.
 
 Details
 ~~~~~~~
@@ -71,4 +71,4 @@ Examples
 
 ::
 
-    summary(Wong)
+   summary(Wong)

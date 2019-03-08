@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(BudgetItaly)
+   data(BudgetItaly)
 
 Format
 ~~~~~~
@@ -29,37 +29,37 @@ Format
 A dataframe containing :
 
 wfood
-    food share
+   food share
 
 whouse
-    housing and fuels share
+   housing and fuels share
 
 wmisc
-    miscellaneous share
+   miscellaneous share
 
 pfood
-    food price
+   food price
 
 phouse
-    housing and fuels price
+   housing and fuels price
 
 pmisc
-    miscellaneous price
+   miscellaneous price
 
 totexp
-    total expenditure
+   total expenditure
 
 year
-    year
+   year
 
 income
-    income
+   income
 
 size
-    household size
+   household size
 
 pct
-    cellule weight
+   cellule weight
 
 Source
 ~~~~~~

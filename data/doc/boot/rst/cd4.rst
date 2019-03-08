@@ -25,7 +25,7 @@ Usage
 
 ::
 
-    cd4
+   cd4
 
 Format
 ~~~~~~
@@ -33,11 +33,11 @@ Format
 This data frame contains the following columns:
 
 ``baseline``
-    The CD4 counts (in 100's) on admission to the trial.
+   The CD4 counts (in 100's) on admission to the trial.
 
 ``oneyear``
-    The CD4 counts (in 100's) after one year of treatment with the new
-    drug.
+   The CD4 counts (in 100's) after one year of treatment with the new
+   drug.
 
 Source
 ~~~~~~

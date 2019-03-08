@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Wages1)
+   data(Wages1)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A time serie containing :
 
 exper
-    experience in years
+   experience in years
 
 sex
-    a factor with levels (male,female)
+   a factor with levels (male,female)
 
 school
-    years of schooling
+   years of schooling
 
 wage
-    wage (in 1980 \\$) per hour
+   wage (in 1980 \\$) per hour
 
 References
 ~~~~~~~~~~

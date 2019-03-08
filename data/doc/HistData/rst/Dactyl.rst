@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    data(Dactyl)
+   data(Dactyl)
 
 Format
 ~~~~~~
@@ -30,16 +30,16 @@ Format
 A data frame with 60 observations on the following 3 variables.
 
 ``Foot``
-    an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4``
+   an ordered factor with levels ``1`` < ``2`` < ``3`` < ``4``
 
 ``Lines``
-    an ordered factor with levels ``1:5`` < ``6:10`` < ``11:15`` <
-    ``16:20`` < ``21:25`` < ``26:30`` < ``31:35`` < ``36:40`` <
-    ``41:45`` < ``46:50`` < ``51:55`` < ``56:60`` < ``61:65`` <
-    ``66:70`` < ``71:75``
+   an ordered factor with levels ``1:5`` < ``6:10`` < ``11:15`` <
+   ``16:20`` < ``21:25`` < ``26:30`` < ``31:35`` < ``36:40`` < ``41:45``
+   < ``46:50`` < ``51:55`` < ``56:60`` < ``61:65`` < ``66:70`` <
+   ``71:75``
 
 ``count``
-    number of dactyls
+   number of dactyls
 
 Source
 ~~~~~~
@@ -59,18 +59,18 @@ Examples
 
 ::
 
-    data(Dactyl)
+   data(Dactyl)
 
-    # display the basic table
-    xtabs(count ~ Foot+Lines, data=Dactyl)
+   # display the basic table
+   xtabs(count ~ Foot+Lines, data=Dactyl)
 
-    # simple two-way anova
-    anova(dact.lm <- lm(count ~ Foot+Lines, data=Dactyl))
+   # simple two-way anova
+   anova(dact.lm <- lm(count ~ Foot+Lines, data=Dactyl))
 
-    # plot the lm-quartet
-    op <- par(mfrow=c(2,2))
-    plot(dact.lm)
-    par(op)
+   # plot the lm-quartet
+   op <- par(mfrow=c(2,2))
+   plot(dact.lm)
+   par(op)
 
-    # show table as a simple mosaicplot
-    mosaicplot(xtabs(count ~ Foot+Lines, data=Dactyl), shade=TRUE)
+   # show table as a simple mosaicplot
+   mosaicplot(xtabs(count ~ Foot+Lines, data=Dactyl), shade=TRUE)

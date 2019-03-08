@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    CEDdata
+   CEDdata
 
 Format
 ~~~~~~
@@ -26,25 +26,25 @@ as results from a hypothetical randomized trial employing the crossover
 encouragement design.
 
 T1:
-    The binary treatment indicator in the first stage.
+   The binary treatment indicator in the first stage.
 
 M1:
-    The binary mediator variable recorded in the first stage.
+   The binary mediator variable recorded in the first stage.
 
 Y1:
-    The binary outcome variable recorded in the first stage.
+   The binary outcome variable recorded in the first stage.
 
 T2:
-    The binary treatment in the second stage. Equal to 1 - T1 by design.
+   The binary treatment in the second stage. Equal to 1 - T1 by design.
 
 Z:
-    The binary encouragement indicator for the second stage.
+   The binary encouragement indicator for the second stage.
 
 M2:
-    The binary mediator recorded in the second stage.
+   The binary mediator recorded in the second stage.
 
 Y2:
-    The binary outcome recorded in the second stage.
+   The binary outcome recorded in the second stage.
 
 Details
 ~~~~~~~

@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(eidat)
+   data(eidat)
 
 Format
 ~~~~~~

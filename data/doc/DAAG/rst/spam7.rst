@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    spam7
+   spam7
 
 Format
 ~~~~~~
@@ -24,25 +24,25 @@ Format
 This data frame contains the following columns:
 
 crl.tot
-    total length of words in capitals
+   total length of words in capitals
 
 dollar
-    number of occurrences of the \\$ symbol
+   number of occurrences of the \\$ symbol
 
 bang
-    number of occurrences of the ! symbol
+   number of occurrences of the ! symbol
 
 money
-    number of occurrences of the word ‘money’
+   number of occurrences of the word ‘money’
 
 n000
-    number of occurrences of the string ‘000’
+   number of occurrences of the string ‘000’
 
 make
-    number of occurrences of the word ‘make’
+   number of occurrences of the word ‘make’
 
 yesno
-    outcome variable, a factor with levels ``n`` not spam, ``y`` spam
+   outcome variable, a factor with levels ``n`` not spam, ``y`` spam
 
 Source
 ~~~~~~
@@ -58,9 +58,9 @@ Examples
 
 ::
 
-    require(rpart)
-    spam.rpart <- rpart(formula = yesno ~ crl.tot + dollar + bang +
-       money + n000 + make, data=spam7)
-    plot(spam.rpart)
-    text(spam.rpart)
+   require(rpart)
+   spam.rpart <- rpart(formula = yesno ~ crl.tot + dollar + bang +
+      money + n000 + make, data=spam7)
+   plot(spam.rpart)
+   text(spam.rpart)
 

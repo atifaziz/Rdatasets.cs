@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(tomato)
+   data(tomato)
 
 Format
 ~~~~~~
@@ -24,11 +24,11 @@ Format
 This data frame contains the following columns:
 
 weight
-    weight, in g
+   weight, in g
 
 trt
-    a factor with levels ``water only``, ``conc nutrient``,
-    ``2-4-D + conc nutrient``, ``3x conc nutrient``
+   a factor with levels ``water only``, ``conc nutrient``,
+   ``2-4-D + conc nutrient``, ``3x conc nutrient``
 
 Source
 ~~~~~~
@@ -41,8 +41,8 @@ Examples
 
 ::
 
-    tomato.aov <- aov(log(weight) ~ trt, data=tomato)
-    fitted.values(tomato.aov)
-    summary.lm(tomato.aov)
-    tomato.aov <- aov(formula = weight ~ trt, data = tomato)
-    summary.lm(tomato.aov)
+   tomato.aov <- aov(log(weight) ~ trt, data=tomato)
+   fitted.values(tomato.aov)
+   summary.lm(tomato.aov)
+   tomato.aov <- aov(formula = weight ~ trt, data = tomato)
+   summary.lm(tomato.aov)

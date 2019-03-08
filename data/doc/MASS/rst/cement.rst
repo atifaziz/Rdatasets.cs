@@ -15,16 +15,16 @@ Usage
 
 ::
 
-    cement
+   cement
 
 Format
 ~~~~~~
 
 ``x1, x2, x3, x4``
-    Proportions (%) of active ingredients.
+   Proportions (%) of active ingredients.
 
 ``y``
-    heat evolved in cals/gm.
+   heat evolved in cals/gm.
 
 Details
 ~~~~~~~
@@ -52,4 +52,4 @@ Examples
 
 ::
 
-    lm(y ~ x1 + x2 + x3 + x4, cement)
+   lm(y ~ x1 + x2 + x3 + x4, cement)

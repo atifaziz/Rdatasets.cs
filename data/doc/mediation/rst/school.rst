@@ -28,7 +28,7 @@ Usage
 
 ::
 
-    data
+   data
 
 Format
 ~~~~~~
@@ -39,19 +39,19 @@ inference about education effectiveness, for which the original data
 source should be consulted.
 
 SCH_ID:
-    School indicator.
+   School indicator.
 
 coed:
-    Indicator variable for coeducation. 1 = coeducation.
+   Indicator variable for coeducation. 1 = coeducation.
 
 smorale:
-    Measure of student morale in the school. 4 levels.
+   Measure of student morale in the school. 4 levels.
 
 free:
-    Percent of 10th grade students receiving free lunch. 1 to 7 levels.
+   Percent of 10th grade students receiving free lunch. 1 to 7 levels.
 
 catholic:
-    Indicator variable for catholic school. 1 = catholic school.
+   Indicator variable for catholic school. 1 = catholic school.
 
 Source
 ~~~~~~

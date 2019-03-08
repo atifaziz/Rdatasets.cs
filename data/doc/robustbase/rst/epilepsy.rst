@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(epilepsy)
+   data(epilepsy, package="robustbase")
 
 Format
 ~~~~~~
@@ -24,44 +24,44 @@ Format
 A data frame with 59 observations on the following 11 variables.
 
 ``ID``
-    Patient identification number
+   Patient identification number
 
 ``Y1``
-    Number of epilepsy attacks patients have during the first follow-up
-    period
+   Number of epilepsy attacks patients have during the first follow-up
+   period
 
 ``Y2``
-    Number of epilepsy attacks patients have during the second follow-up
-    period
+   Number of epilepsy attacks patients have during the second follow-up
+   period
 
 ``Y3``
-    Number of epilepsy attacks patients have during the third follow-up
-    period
+   Number of epilepsy attacks patients have during the third follow-up
+   period
 
 ``Y4``
-    Number of epilepsy attacks patients have during the forth follow-up
-    period
+   Number of epilepsy attacks patients have during the forth follow-up
+   period
 
 ``Base``
-    Number of epileptic attacks recorded during 8 week period prior to
-    randomization
+   Number of epileptic attacks recorded during 8 week period prior to
+   randomization
 
 ``Age``
-    Age of the patients
+   Age of the patients
 
 ``Trt``
-    a factor with levels ``placebo`` ``progabide`` indicating whether
-    the anti-epilepsy drug Progabide has been applied or not
+   a factor with levels ``placebo`` ``progabide`` indicating whether the
+   anti-epilepsy drug Progabide has been applied or not
 
 ``Ysum``
-    Total number of epilepsy attacks patients have during the four
-    follow-up periods
+   Total number of epilepsy attacks patients have during the four
+   follow-up periods
 
 ``Age10``
-    Age of the patients devided by 10
+   Age of the patients devided by 10
 
 ``Base4``
-    Variable ``Base`` devided by 4
+   Variable ``Base`` devided by 4
 
 Details
 ~~~~~~~
@@ -94,15 +94,15 @@ Examples
 
 ::
 
-    data(epilepsy)
-    str(epilepsy)
-    pairs(epilepsy[,c("Ysum","Base4","Trt","Age10")])
+   data(epilepsy)
+   str(epilepsy)
+   pairs(epilepsy[,c("Ysum","Base4","Trt","Age10")])
 
-    Efit1 <- glm(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy)
-    summary(Efit1)
+   Efit1 <- glm(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy)
+   summary(Efit1)
 
-    ## Robust Fit :
-    Efit2 <- glmrob(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy,
-                    method = "Mqle",
-                    tcc=1.2, maxit=100)
-    summary(Efit2)
+   ## Robust Fit :
+   Efit2 <- glmrob(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy,
+                   method = "Mqle",
+                   tcc=1.2, maxit=100)
+   summary(Efit2)

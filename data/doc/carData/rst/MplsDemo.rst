@@ -17,28 +17,28 @@ Format
 A data frame with 84 observations on the following 7 variables.
 
 ``neighborhood``
-    name of the neighborhood
+   name of the neighborhood
 
 ``population``
-    total population
+   total population
 
 ``black``
-    fraction of the population estimated to be black
+   fraction of the population estimated to be black
 
 ``white``
-    fraction of the population estimated to be white
+   fraction of the population estimated to be white
 
 ``foreignBorn``
-    fraction of the population estimated to be foreign born
+   fraction of the population estimated to be foreign born
 
 ``hhIncome``
-    estimated median household income
+   estimated median household income
 
 ``poverty``
-    estimated fraction earning less than twice the poverty level
+   estimated fraction earning less than twice the poverty level
 
 ``collegeGrad``
-    estimated fraction with a college degree
+   estimated fraction with a college degree
 
 Details
 ~~~~~~~
@@ -56,4 +56,4 @@ Examples
 
 ::
 
-    str(MplsDemo)
+   str(MplsDemo)

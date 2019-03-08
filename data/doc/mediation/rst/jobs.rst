@@ -28,7 +28,7 @@ Usage
 
 ::
 
-    data
+   data
 
 Format
 ~~~~~~
@@ -39,62 +39,62 @@ inference about program efficacy, for which the original data source
 should be consulted.
 
 econ_hard:
-    Level of economic hardship pre-treatment with values from 1 to 5.
+   Level of economic hardship pre-treatment with values from 1 to 5.
 
 depress1:
-    Measure of depressive symptoms pre-treatment.
+   Measure of depressive symptoms pre-treatment.
 
 sex:
-    Indicator variable for sex. 1 = female
+   Indicator variable for sex. 1 = female
 
 age:
-    Age in years.
+   Age in years.
 
 occp:
-    Factor with seven categories for various occupations.
+   Factor with seven categories for various occupations.
 
 marital:
-    Factor with five categories for marital status.
+   Factor with five categories for marital status.
 
 nonwhite:
-    Indicator variable for race. 1 = nonwhite.
+   Indicator variable for race. 1 = nonwhite.
 
 educ:
-    Factor with five categories for educational attainment.
+   Factor with five categories for educational attainment.
 
 income:
-    Factor with five categories for level of income.
+   Factor with five categories for level of income.
 
 job_seek:
-    A continuous scale measuring the level of job-search self-efficacy
-    with values from 1 to 5. The mediator variable.
+   A continuous scale measuring the level of job-search self-efficacy
+   with values from 1 to 5. The mediator variable.
 
 depress2:
-    Measure of depressive symptoms post-treatment.
+   Measure of depressive symptoms post-treatment.
 
 work1:
-    Indicator variable for employment. 1 = employed.
+   Indicator variable for employment. 1 = employed.
 
 job_dich:
-    The job_seek measure recoded into two categories of high and low. 1
-    = high job search self-efficacy.
+   The job_seek measure recoded into two categories of high and low. 1 =
+   high job search self-efficacy.
 
 job_disc:
-    The job_seek measure recoded into four categories from lowest to
-    highest.
+   The job_seek measure recoded into four categories from lowest to
+   highest.
 
 treat:
-    Indicator variable for whether participant was randomly selected for
-    the JOBS II training program. 1 = assignment to participation.
+   Indicator variable for whether participant was randomly selected for
+   the JOBS II training program. 1 = assignment to participation.
 
 comply:
-    Indicator variable for whether participant actually participated in
-    the JOBS II program. 1 = participation.
+   Indicator variable for whether participant actually participated in
+   the JOBS II program. 1 = participation.
 
 control:
-    Indicator variable for whether participant was randomly selected to
-    not participate in the JOBS II training program. 1 =
-    non-participation.
+   Indicator variable for whether participant was randomly selected to
+   not participate in the JOBS II training program. 1 =
+   non-participation.
 
 Source
 ~~~~~~

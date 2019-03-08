@@ -29,7 +29,7 @@ Usage
 
 ::
 
-    data(OldMaps)
+   data(OldMaps)
 
 Format
 ~~~~~~
@@ -39,25 +39,25 @@ the latitude and longitude of 39 points recorded from 12 sources (Actual
 + 11 maps).
 
 ``point``
-    a numeric vector
+   a numeric vector
 
 ``col``
-    Column in the table a numeric vector
+   Column in the table a numeric vector
 
 ``name``
-    Name of the map maker, using ``Actual`` for the true coordinates of
-    the points. A factor with levels ``Actual`` ``Arrowsmith`` ``Belin``
-    ``Cary`` ``Coronelli`` ``D'Anville} \code{Del'Isle`` ``Lattre``
-    ``Melish`` ``Mitchell`` ``Popple``
+   Name of the map maker, using ``Actual`` for the true coordinates of
+   the points. A factor with levels ``Actual`` ``Arrowsmith`` ``Belin``
+   ``Cary`` ``Coronelli`` ``D'Anville} \code{Del'Isle`` ``Lattre``
+   ``Melish`` ``Mitchell`` ``Popple``
 
 ``year``
-    Year of the map
+   Year of the map
 
 ``lat``
-    Latitude
+   Latitude
 
 ``long``
-    Longitude
+   Longitude
 
 Details
 ~~~~~~~
@@ -80,7 +80,7 @@ Examples
 
 ::
 
-    data(OldMaps)
-    ## maybe str(OldMaps) ; plot(OldMaps) ...
+   data(OldMaps)
+   ## maybe str(OldMaps) ; plot(OldMaps) ...
 
-    with(OldMaps, plot(abs(long),abs(lat), pch=col, col=colors()[point]))
+   with(OldMaps, plot(abs(long),abs(lat), pch=col, col=colors()[point]))

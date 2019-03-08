@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    Portfolio
+   Portfolio
 
 Format
 ~~~~~~
@@ -27,10 +27,10 @@ Format
 A data frame with 100 observations on the following 2 variables.
 
 ``X``
-    Returns for Asset X
+   Returns for Asset X
 
 ``Y``
-    Returns for Asset Y
+   Returns for Asset Y
 
 Source
 ~~~~~~
@@ -50,6 +50,6 @@ Examples
 
 ::
 
-    summary(Portfolio)
-    attach(Portfolio)
-    plot(X,Y)
+   summary(Portfolio)
+   attach(Portfolio)
+   plot(X,Y)

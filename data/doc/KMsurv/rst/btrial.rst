@@ -16,13 +16,13 @@ Format
 This data frame contains the following columns:
 
 time
-    Time to death or on-study time, months
+   Time to death or on-study time, months
 
 death
-    Death indicator (0=alive, 1=dead)
+   Death indicator (0=alive, 1=dead)
 
 im
-    Immunohistochemical response (1=negative, 2=positive)
+   Immunohistochemical response (1=negative, 2=positive)
 
 Source
 ~~~~~~
@@ -36,4 +36,4 @@ Examples
 
 ::
 
-    data(btrial)
+   data(btrial)

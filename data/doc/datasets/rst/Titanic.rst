@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Titanic
+   Titanic
 
 Format
 ~~~~~~
@@ -55,7 +55,7 @@ rescued, or lost.
 Due in particular to the very successful film ‘Titanic’, the last years
 saw a rise in public interest in the Titanic. Very detailed data about
 the passengers is now available on the Internet, at sites such as
-*Encyclopedia Titanica* (http://www.rmplc.co.uk/eduweb/sites/phind).
+*Encyclopedia Titanica* (https://www.encyclopedia-titanica.org/).
 
 Source
 ~~~~~~
@@ -77,10 +77,10 @@ Examples
 
 ::
 
-    require(graphics)
-    mosaicplot(Titanic, main = "Survival on the Titanic")
-    ## Higher survival rates in children?
-    apply(Titanic, c(3, 4), sum)
-    ## Higher survival rates in females?
-    apply(Titanic, c(2, 4), sum)
-    ## Use loglm() in package 'MASS' for further analysis ...
+   require(graphics)
+   mosaicplot(Titanic, main = "Survival on the Titanic")
+   ## Higher survival rates in children?
+   apply(Titanic, c(3, 4), sum)
+   ## Higher survival rates in females?
+   apply(Titanic, c(2, 4), sum)
+   ## Use loglm() in package 'MASS' for further analysis ...

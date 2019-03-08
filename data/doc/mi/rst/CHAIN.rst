@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(CHAIN)
+   data(CHAIN)
 
 Format
 ~~~~~~
@@ -26,31 +26,31 @@ Format
 A ``data.frame`` with 532 observations on the following 8 variables.
 
 ``log_virus``
-    log of self reported viral load level, where zero represents an
-    undetectable level.
+   log of self reported viral load level, where zero represents an
+   undetectable level.
 
 ``age``
-    age at time of the interview
+   age at time of the interview
 
 ``income``
-    annual family income in 10 intervals
+   annual family income in 10 intervals
 
 ``healthy``
-    a continuous scale of physical health with a theoretical range
-    between 0 and 100 where better health is associated with higher
-    scale values
+   a continuous scale of physical health with a theoretical range
+   between 0 and 100 where better health is associated with higher scale
+   values
 
 ``mental``
-    a binary measure of poor mental health ( 1=Yes, 0=No )
+   a binary measure of poor mental health ( 1=Yes, 0=No )
 
 ``damage``
-    ordered interval for the CD4 count, which is an indicator of how
-    much damage HIV has caused to the immune system
+   ordered interval for the CD4 count, which is an indicator of how much
+   damage HIV has caused to the immune system
 
 ``treatment``
-    a three-level ordered variable: 0=Not currently taking HAART (Highly
-    Active AntiretRoviral Therapy) 1=taking HAART but nonadherent,
-    2=taking HAART and adherent
+   a three-level ordered variable: 0=Not currently taking HAART (Highly
+   Active AntiretRoviral Therapy) 1=taking HAART but nonadherent,
+   2=taking HAART and adherent
 
 Details
 ~~~~~~~

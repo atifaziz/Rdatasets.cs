@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(PatentsHGH)
+   data(PatentsHGH)
 
 Format
 ~~~~~~
@@ -29,62 +29,62 @@ Format
 A dataframe containing :
 
 obsno
-    firm index
+   firm index
 
 year
-    year
+   year
 
 cusip
-    Compustat's identifying number for the firm (Committee on Uniform
-    Security Identification Procedures number)
+   Compustat's identifying number for the firm (Committee on Uniform
+   Security Identification Procedures number)
 
 ardsic
-    a two-digit code for the applied R&D industrial classification
-    (roughly that in Bound, Cummins, Griliches, Hall, and Jaffe, in the
-    Griliches R&D, Patents, and Productivity volume)
+   a two-digit code for the applied R&D industrial classification
+   (roughly that in Bound, Cummins, Griliches, Hall, and Jaffe, in the
+   Griliches R&D, Patents, and Productivity volume)
 
 scisect
-    is the firm in the scientific sector ?
+   is the firm in the scientific sector ?
 
 logk
-    the logarithm of the book value of capital in 1972.
+   the logarithm of the book value of capital in 1972.
 
 sumpat
-    the sum of patents applied for between 1972-1979.
+   the sum of patents applied for between 1972-1979.
 
 logr
-    the logarithm of R&D spending during the year (in 1972 dollars)
+   the logarithm of R&D spending during the year (in 1972 dollars)
 
 logr1
-    the logarithm of R&D spending (one year lag)
+   the logarithm of R&D spending (one year lag)
 
 logr2
-    the logarithm of R&D spending (two years lag)
+   the logarithm of R&D spending (two years lag)
 
 logr3
-    the logarithm of R&D spending (three years lag)
+   the logarithm of R&D spending (three years lag)
 
 logr4
-    the logarithm of R&D spending (four years lag)
+   the logarithm of R&D spending (four years lag)
 
 logr5
-    the logarithm of R&D spending (five years lag)
+   the logarithm of R&D spending (five years lag)
 
 pat
-    the number of patents applied for during the year that were
-    eventually granted
+   the number of patents applied for during the year that were
+   eventually granted
 
 pat1
-    the number of patents (one year lag)
+   the number of patents (one year lag)
 
 pat2
-    the number of patents (two years lag)
+   the number of patents (two years lag)
 
 pat3
-    the number of patents (three years lag)
+   the number of patents (three years lag)
 
 pat4
-    the number of patents (four years lag)
+   the number of patents (four years lag)
 
 Source
 ~~~~~~

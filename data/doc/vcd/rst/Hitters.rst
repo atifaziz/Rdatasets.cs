@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    data("Hitters")
+   data("Hitters")
 
 Format
 ~~~~~~
@@ -30,19 +30,19 @@ Format
 A data frame with 154 observations and 4 variables.
 
 Positions
-    factor indicating the field position (1B=first baseman, 2B=second
-    baseman, 3B=third baseman, C=catcher, OF=outfielder, SS=Short Stop,
-    UT=Utility Players).
+   factor indicating the field position (1B=first baseman, 2B=second
+   baseman, 3B=third baseman, C=catcher, OF=outfielder, SS=Short Stop,
+   UT=Utility Players).
 
 Putouts
-    occur when a fielder causes an opposing player to be tagged or
-    forced out.
+   occur when a fielder causes an opposing player to be tagged or forced
+   out.
 
 Assists
-    are credited to other fielders involved in making that putout.
+   are credited to other fielders involved in making that putout.
 
 Errors
-    count the errors made by a player.
+   count the errors made by a player.
 
 Source
 ~~~~~~
@@ -60,16 +60,16 @@ Examples
 
 ::
 
-    data("Hitters")
-    attach(Hitters)
+   data("Hitters")
+   attach(Hitters)
 
-    colors <- c("black","red","green","blue","red","black","blue")
-    pch <- substr(levels(Positions), 1, 1)
-    ternaryplot(Hitters[,2:4],
-      pch = as.character(Positions),
-      col = colors[as.numeric(Positions)],
-      main = "Baseball Hitters Data")
-    grid_legend(0.8, 0.9, pch, colors, levels(Positions),
-      title = "POSITION(S)")
+   colors <- c("black","red","green","blue","red","black","blue")
+   pch <- substr(levels(Positions), 1, 1)
+   ternaryplot(Hitters[,2:4],
+     pch = as.character(Positions),
+     col = colors[as.numeric(Positions)],
+     main = "Baseball Hitters Data")
+   grid_legend(0.8, 0.9, pch, colors, levels(Positions),
+     title = "POSITION(S)")
 
-    detach(Hitters)
+   detach(Hitters)

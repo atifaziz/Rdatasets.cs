@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Bwages)
+   data(Bwages)
 
 Format
 ~~~~~~
@@ -29,16 +29,16 @@ Format
 A dataframe containing :
 
 wage
-    gross hourly wage rate in euro
+   gross hourly wage rate in euro
 
 educ
-    education level from 1 [low] to 5 [high]
+   education level from 1 [low] to 5 [high]
 
 exper
-    years of experience
+   years of experience
 
 sex
-    a factor with levels (males,female)
+   a factor with levels (males,female)
 
 Source
 ~~~~~~

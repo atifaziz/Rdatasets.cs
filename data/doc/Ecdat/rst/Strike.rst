@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(Strike)
+   data(Strike)
 
 Format
 ~~~~~~
@@ -27,10 +27,10 @@ Format
 A dataframe containing :
 
 duration
-    strike duration in days
+   strike duration in days
 
 prod
-    unanticipated output
+   unanticipated output
 
 Source
 ~~~~~~

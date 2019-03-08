@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    gehan
+   gehan
 
 Format
 ~~~~~~
@@ -26,16 +26,16 @@ Format
 This data frame contains the following columns:
 
 ``pair``
-    label for pair.
+   label for pair.
 
 ``time``
-    remission time in weeks.
+   remission time in weeks.
 
 ``cens``
-    censoring, 0/1.
+   censoring, 0/1.
 
 ``treat``
-    treatment, control or 6-MP.
+   treatment, control or 6-MP.
 
 Source
 ~~~~~~
@@ -57,12 +57,12 @@ Examples
 
 ::
 
-    library(survival)
-    gehan.surv <- survfit(Surv(time, cens) ~ treat, data = gehan,
-         conf.type = "log-log")
-    summary(gehan.surv)
-    survreg(Surv(time, cens) ~ factor(pair) + treat, gehan, dist = "exponential")
-    summary(survreg(Surv(time, cens) ~ treat, gehan, dist = "exponential"))
-    summary(survreg(Surv(time, cens) ~ treat, gehan))
-    gehan.cox <- coxph(Surv(time, cens) ~ treat, gehan)
-    summary(gehan.cox)
+   library(survival)
+   gehan.surv <- survfit(Surv(time, cens) ~ treat, data = gehan,
+        conf.type = "log-log")
+   summary(gehan.surv)
+   survreg(Surv(time, cens) ~ factor(pair) + treat, gehan, dist = "exponential")
+   summary(survreg(Surv(time, cens) ~ treat, gehan, dist = "exponential"))
+   summary(survreg(Surv(time, cens) ~ treat, gehan))
+   gehan.cox <- coxph(Surv(time, cens) ~ treat, gehan)
+   summary(gehan.cox)

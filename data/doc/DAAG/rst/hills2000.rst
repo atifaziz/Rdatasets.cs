@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    hills2000
+   hills2000
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 This data frame contains the following columns:
 
 dist
-    distance, in miles (on the map)
+   distance, in miles (on the map)
 
 climb
-    total height gained during the route, in feet
+   total height gained during the route, in feet
 
 time
-    record time in hours
+   record time in hours
 
 timef
-    record time in hours for females
+   record time in hours for females
 
 Source
 ~~~~~~
@@ -46,4 +46,4 @@ Examples
 
 ::
 
-        pairs(hills2000)
+       pairs(hills2000)

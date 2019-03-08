@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(galton)
+   data(galton)
 
 Format
 ~~~~~~
@@ -26,10 +26,10 @@ Format
 A data frame with 928 observations on the following 2 variables.
 
 ``parent``
-    Mid Parent heights (in inches)
+   Mid Parent heights (in inches)
 
 ``child``
-    Child Height
+   Child Height
 
 Details
 ~~~~~~~
@@ -66,11 +66,11 @@ Examples
 
 ::
 
-    data(galton)
-    describe(galton)
-     #show the scatter plot and the lowess fit 
-    pairs.panels(galton,main="Galton's Parent child heights")  
-    #but this makes the regression lines look the same
-    pairs.panels(galton,lm=TRUE,main="Galton's Parent child heights") 
-     #better is to scale them 
-    pairs.panels(galton,lm=TRUE,xlim=c(62,74),ylim=c(62,74),main="Galton's Parent child heights") 
+   data(galton)
+   describe(galton)
+    #show the scatter plot and the lowess fit 
+   pairs.panels(galton,main="Galton's Parent child heights")  
+   #but this makes the regression lines look the same
+   pairs.panels(galton,lm=TRUE,main="Galton's Parent child heights") 
+    #better is to scale them 
+   pairs.panels(galton,lm=TRUE,xlim=c(62,74),ylim=c(62,74),main="Galton's Parent child heights") 

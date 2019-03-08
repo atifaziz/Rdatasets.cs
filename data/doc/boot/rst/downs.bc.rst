@@ -28,7 +28,7 @@ Usage
 
 ::
 
-    downs.bc
+   downs.bc
 
 Format
 ~~~~~~
@@ -36,13 +36,13 @@ Format
 This data frame contains the following columns:
 
 ``age``
-    The average age of all mothers in the age category.
+   The average age of all mothers in the age category.
 
 ``m``
-    The total number of live births to mothers in the age category.
+   The total number of live births to mothers in the age category.
 
 ``r``
-    The number of cases of Down's syndrome.
+   The number of cases of Down's syndrome.
 
 Source
 ~~~~~~

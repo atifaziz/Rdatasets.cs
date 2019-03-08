@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(fasttrakg)
+   data(fasttrakg)
 
 Format
 ~~~~~~
@@ -25,33 +25,33 @@ Format
 A data frame with 15 observations on the following 9 variables.
 
 ``die``
-    number died from MI
+   number died from MI
 
 ``cases``
-    number of cases with same covariate pattern
+   number of cases with same covariate pattern
 
 ``anterior``
-    1=anterior site MI; 0=inferior site MI
+   1=anterior site MI; 0=inferior site MI
 
 ``hcabg``
-    1=history of CABG; 0=no history of CABG
+   1=history of CABG; 0=no history of CABG
 
 ``killip``
-    Killip level of cardiac event severity (1-4)age75
+   Killip level of cardiac event severity (1-4)age75
 
 1= Age>75; 0=Age<=75
 
 ``kk1``
-    (1/0) angina; not MI
+   (1/0) angina; not MI
 
 ``kk2``
-    (1/0) moderate severity cardiac event
+   (1/0) moderate severity cardiac event
 
 ``kk3``
-    (1/0) Severe cardiac event
+   (1/0) Severe cardiac event
 
 ``kk4``
-    (1/0) Severe cardiac event; death
+   (1/0) Severe cardiac event; death
 
 Details
 ~~~~~~~
@@ -78,9 +78,9 @@ Examples
 
 ::
 
-    library(MASS)
-    data(fasttrakg)
-    glmfp <- glm(die ~ anterior + factor(killip) + offset(log(cases)), family=poisson, data=fasttrakg)
-    summary(glmfp)
-    exp(coef(glmfp))
+   library(MASS)
+   data(fasttrakg)
+   glmfp <- glm(die ~ anterior + factor(killip) + offset(log(cases)), family=poisson, data=fasttrakg)
+   summary(glmfp)
+   exp(coef(glmfp))
 

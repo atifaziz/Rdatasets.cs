@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    fossum
+   fossum
 
 Format
 ~~~~~~
@@ -26,47 +26,47 @@ Format
 This data frame contains the following columns:
 
 case
-    observation number
+   observation number
 
 site
-    one of seven locations where possums were trapped
+   one of seven locations where possums were trapped
 
 Pop
-    a factor which classifies the sites as ``Vic`` Victoria, ``other``
-    New South Wales or Queensland
+   a factor which classifies the sites as ``Vic`` Victoria, ``other``
+   New South Wales or Queensland
 
 sex
-    a factor with levels ``f`` female, ``m`` male
+   a factor with levels ``f`` female, ``m`` male
 
 age
-    age
+   age
 
 hdlngth
-    head length
+   head length
 
 skullw
-    skull width
+   skull width
 
 totlngth
-    total length
+   total length
 
 taill
-    tail length
+   tail length
 
 footlgth
-    foot length
+   foot length
 
 earconch
-    ear conch length
+   ear conch length
 
 eye
-    distance from medial canthus to lateral canthus of right eye
+   distance from medial canthus to lateral canthus of right eye
 
 chest
-    chest girth (in cm)
+   chest girth (in cm)
 
 belly
-    belly girth (in cm)
+   belly girth (in cm)
 
 Source
 ~~~~~~
@@ -81,4 +81,4 @@ Examples
 
 ::
 
-    boxplot(fossum$totlngth)
+   boxplot(fossum$totlngth)

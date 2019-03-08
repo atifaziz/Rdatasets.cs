@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Cigarette)
+   data(Cigarette)
 
 Format
 ~~~~~~
@@ -29,32 +29,32 @@ Format
 A dataframe containing :
 
 state
-    state
+   state
 
 year
-    year
+   year
 
 cpi
-    consumer price index
+   consumer price index
 
 pop
-    state population
+   state population
 
 packpc
-    number of packs per capita
+   number of packs per capita
 
 income
-    state personal income (total, nominal)
+   state personal income (total, nominal)
 
 tax
-    average state, federal, and average local excise taxes for fiscal
-    year
+   average state, federal, and average local excise taxes for fiscal
+   year
 
 avgprs
-    average price during fiscal year, including sales taxes
+   average price during fiscal year, including sales taxes
 
 taxs
-    average excise taxes for fiscal year, including sales taxes
+   average excise taxes for fiscal year, including sales taxes
 
 Source
 ~~~~~~

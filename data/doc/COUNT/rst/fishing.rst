@@ -24,7 +24,7 @@ Usage
 
 ::
 
-    data(fishing)
+   data(fishing)
 
 Format
 ~~~~~~
@@ -32,25 +32,25 @@ Format
 A data frame with 147 observations on the following variables.
 
 ``totabund``
-    total fish counted per site
+   total fish counted per site
 
 ``meandepth``
-    mean water depth per site
+   mean water depth per site
 
 ``sweptarea``
-    adjusted area of site
+   adjusted area of site
 
 ``density``
-    folage density index
+   folage density index
 
 ``site``
-    catch site
+   catch site
 
 ``year``
-    1977-2002
+   1977-2002
 
 ``period``
-    0=1977-1989; 1=2000+
+   0=1977-1989; 1=2000+
 
 Details
 ~~~~~~~
@@ -78,16 +78,16 @@ Examples
 
 
 
-    ## Not run: 
-    library(MASS)
-    library(flexmix)
-    data(fishing)
-    attach(fishing)
-    fmm_pg <- flexmix(totabund~meandepth + offset(log(sweptarea)), data=rwm1984, k=2,
-             model=list(FLXMRglm(totabund~., family="NB1"), 
-                        FLXMRglm(tpdocvis~., family="NB1")))
-    parameters(fmm_pg, component=1, model=1)
-    parameters(fmm_pg, component=2, model=1)
-    summary(fmm_pg)
+   ## Not run: 
+   library(MASS)
+   library(flexmix)
+   data(fishing)
+   attach(fishing)
+   fmm_pg <- flexmix(totabund~meandepth + offset(log(sweptarea)), data=rwm1984, k=2,
+            model=list(FLXMRglm(totabund~., family="NB1"), 
+                       FLXMRglm(tpdocvis~., family="NB1")))
+   parameters(fmm_pg, component=1, model=1)
+   parameters(fmm_pg, component=2, model=1)
+   summary(fmm_pg)
 
-    ## End(Not run)
+   ## End(Not run)

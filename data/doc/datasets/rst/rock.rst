@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    rock
+   rock
 
 Format
 ~~~~~~

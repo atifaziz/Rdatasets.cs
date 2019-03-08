@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Orange
+   Orange
 
 Format
 ~~~~~~
@@ -26,16 +26,15 @@ An object of class
 containing the following columns:
 
 Tree
-    an ordered factor indicating the tree on which the measurement is
-    made. The ordering is according to increasing maximum diameter.
+   an ordered factor indicating the tree on which the measurement is
+   made. The ordering is according to increasing maximum diameter.
 
 age
-    a numeric vector giving the age of the tree (days since 1968/12/31)
+   a numeric vector giving the age of the tree (days since 1968/12/31)
 
 circumference
-    a numeric vector of trunk circumferences (mm). This is probably
-    “circumference at breast height”, a standard measurement in
-    forestry.
+   a numeric vector of trunk circumferences (mm). This is probably
+   “circumference at breast height”, a standard measurement in forestry.
 
 Details
 ~~~~~~~
@@ -58,13 +57,13 @@ Examples
 
 ::
 
-    require(stats); require(graphics)
-    coplot(circumference ~ age | Tree, data = Orange, show.given = FALSE)
-    fm1 <- nls(circumference ~ SSlogis(age, Asym, xmid, scal),
-               data = Orange, subset = Tree == 3)
-    plot(circumference ~ age, data = Orange, subset = Tree == 3,
-         xlab = "Tree age (days since 1968/12/31)",
-         ylab = "Tree circumference (mm)", las = 1,
-         main = "Orange tree data and fitted model (Tree 3 only)")
-    age <- seq(0, 1600, length.out = 101)
-    lines(age, predict(fm1, list(age = age)))
+   require(stats); require(graphics)
+   coplot(circumference ~ age | Tree, data = Orange, show.given = FALSE)
+   fm1 <- nls(circumference ~ SSlogis(age, Asym, xmid, scal),
+              data = Orange, subset = Tree == 3)
+   plot(circumference ~ age, data = Orange, subset = Tree == 3,
+        xlab = "Tree age (days since 1968/12/31)",
+        ylab = "Tree circumference (mm)", las = 1,
+        main = "Orange tree data and fitted model (Tree 3 only)")
+   age <- seq(0, 1600, length.out = 101)
+   lines(age, predict(fm1, list(age = age)))

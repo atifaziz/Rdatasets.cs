@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Garch)
+   data(Garch)
 
 Format
 ~~~~~~
@@ -29,28 +29,28 @@ Format
 A dataframe containing :
 
 date
-    date of observation (yymmdd)
+   date of observation (yymmdd)
 
 day
-    day of the week (a factor)
+   day of the week (a factor)
 
 dm
-    exchange rate Dollar/Deutsch Mark
+   exchange rate Dollar/Deutsch Mark
 
 ddm
-    dm-dm(-1)
+   dm-dm(-1)
 
 bp
-    exchange rate of Dollar/British Pound
+   exchange rate of Dollar/British Pound
 
 cd
-    exchange rate of Dollar/Canadian Dollar
+   exchange rate of Dollar/Canadian Dollar
 
 dy
-    exchange rate of Dollar/Yen
+   exchange rate of Dollar/Yen
 
 sf
-    exchange rate of Dollar/Swiss Franc
+   exchange rate of Dollar/Swiss Franc
 
 References
 ~~~~~~~~~~

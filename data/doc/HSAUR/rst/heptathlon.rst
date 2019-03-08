@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    data("heptathlon")
+   data("heptathlon")
 
 Format
 ~~~~~~
@@ -23,28 +23,28 @@ Format
 A data frame with 25 observations on the following 8 variables.
 
 ``hurdles``
-    results 100m hurdles.
+   results 100m hurdles.
 
 ``highjump``
-    results high jump.
+   results high jump.
 
 ``shot``
-    results shot.
+   results shot.
 
 ``run200m``
-    results 200m race.
+   results 200m race.
 
 ``longjump``
-    results long jump.
+   results long jump.
 
 ``javelin``
-    results javelin.
+   results javelin.
 
 ``run800m``
-    results 800m race.
+   results 800m race.
 
 ``score``
-    total score.
+   total score.
 
 Details
 ~~~~~~~
@@ -78,6 +78,6 @@ Examples
 ::
 
 
-      data("heptathlon", package = "HSAUR")
-      plot(heptathlon)
+     data("heptathlon", package = "HSAUR")
+     plot(heptathlon)
 

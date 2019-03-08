@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data(Gestation)
+   data(Gestation)
 
 Format
 ~~~~~~
@@ -107,5 +107,5 @@ Examples
 
 ::
 
-    data(Gestation)
+   data(Gestation)
 

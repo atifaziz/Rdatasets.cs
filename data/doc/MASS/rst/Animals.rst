@@ -15,16 +15,16 @@ Usage
 
 ::
 
-    Animals
+   Animals
 
 Format
 ~~~~~~
 
 ``body``
-    body weight in kg.
+   body weight in kg.
 
 ``brain``
-    brain weight in g.
+   brain weight in g.
 
 Note
 ~~~~

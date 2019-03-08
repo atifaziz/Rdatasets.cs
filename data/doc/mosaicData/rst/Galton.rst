@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(Galton)
+   data(Galton)
 
 Format
 ~~~~~~
@@ -41,8 +41,8 @@ Details
 ~~~~~~~
 
 Entries were deleted for those children whose heights were not recorded
-numerically by Galton, who sometimes used entries such as “tall”,
-“short”, “idiotic”, “deformed” and so on.
+numerically by Galton, who sometimes used entries such as
+``tall'',``\ short”, ``idiotic'',``\ deformed” and so on.
 
 Source
 ~~~~~~
@@ -61,5 +61,5 @@ Examples
 
 ::
 
-    data(Galton)
+   data(Galton)
 

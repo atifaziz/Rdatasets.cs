@@ -15,7 +15,7 @@ Usage
 
 ::
 
-    leaftemp.all
+   leaftemp.all
 
 Format
 ~~~~~~
@@ -23,31 +23,31 @@ Format
 This data frame contains the following columns:
 
 glasshouse
-    a factor with levels ``A``, ``B``, ``C``
+   a factor with levels ``A``, ``B``, ``C``
 
 CO2level
-    a factor with Carbon Dioxide Levels: ``high``, ``low``, ``medium``
+   a factor with Carbon Dioxide Levels: ``high``, ``low``, ``medium``
 
 day
-    a factor
+   a factor
 
 light
-    a numeric vector
+   a numeric vector
 
 CO2
-    a numeric vector
+   a numeric vector
 
 tempDiff
-    Difference between Leaf and Air Temperature
+   Difference between Leaf and Air Temperature
 
 BtempDiff
-    a numeric vector
+   a numeric vector
 
 airTemp
-    Air Temperature
+   Air Temperature
 
 vapPress
-    Vapour Pressure
+   Vapour Pressure
 
 Source
 ~~~~~~

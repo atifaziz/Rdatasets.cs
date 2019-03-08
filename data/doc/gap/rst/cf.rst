@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    data(cf)
+   data(cf)
 
 Format
 ~~~~~~
@@ -36,20 +36,20 @@ This can be used as an example of converting PL-EM to matrix format,
 
 ::
 
-    cfdata <- vector("numeric")
-    cfname <- vector("character")
-    for (i in 2:dim(cf)[2])
-    {
-        tmp <- plem2m(cf[,i])
-        a1 <- tmp[[1]]
-        a2 <- tmp[[2]]
-        cfdata <- cbind(cfdata,a1,a2)
-        a1name <- paste("loc",i-1,".a1",sep="")
-        a2name <- paste("loc",i-1,".a2",sep="")
-        cfname <- cbind(cfname,a1name,a2name)
-    }
-    cfdata <- as.data.frame(cfdata)
-    names(cfdata) <- cfname
+   cfdata <- vector("numeric")
+   cfname <- vector("character")
+   for (i in 2:dim(cf)[2])
+   {
+       tmp <- plem2m(cf[,i])
+       a1 <- tmp[[1]]
+       a2 <- tmp[[2]]
+       cfdata <- cbind(cfdata,a1,a2)
+       a1name <- paste("loc",i-1,".a1",sep="")
+       a2name <- paste("loc",i-1,".a2",sep="")
+       cfname <- cbind(cfname,a1name,a2name)
+   }
+   cfdata <- as.data.frame(cfdata)
+   names(cfdata) <- cfname
 
 Source
 ~~~~~~

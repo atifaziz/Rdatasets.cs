@@ -19,7 +19,7 @@ Usage
 
 ::
 
-    data(wagnerGrowth)
+   data(wagnerGrowth, package="robustbase")
 
 Format
 ~~~~~~
@@ -28,27 +28,27 @@ A data frame with *21 \* 3 = 63* observations (one per
 ``Region x Period``) on the following 7 variables.
 
 ``Region``
-    a ``factor`` with 21 levels, denoting the corresponding region in
-    Hannover (conceptually a “block factor”).
+   a ``factor`` with 21 levels, denoting the corresponding region in
+   Hannover (conceptually a “block factor”).
 
 ``PA``
-    numeric: percent of people involved in production activities.
+   numeric: percent of people involved in production activities.
 
 ``GPA``
-    **g**\ rowth of ``PA``.
+   **g**\ rowth of ``PA``.
 
 ``HS``
-    a numeric vector
+   a numeric vector
 
 ``GHS``
-    a numeric vector
+   a numeric vector
 
 ``y``
-    a numeric vector
+   a numeric vector
 
 ``Period``
-    a ``factor`` with levels ``1:3``, denoting the time period, 1 =
-    1979-1982, 2 = 1983-1988, 3 = 1989-1992.
+   a ``factor`` with levels ``1:3``, denoting the time period, 1 =
+   1979-1982, 2 = 1983-1988, 3 = 1989-1992.
 
 Source
 ~~~~~~
@@ -69,15 +69,15 @@ Examples
 
 ::
 
-    data(wagnerGrowth)
-    ## maybe
-    str(wagnerGrowth)
+   data(wagnerGrowth)
+   ## maybe
+   str(wagnerGrowth)
 
 
-    require(lattice)
-    (xyplot(y ~ Period | Region, data = wagnerGrowth,
-             main = "wagnerGrowth: 21 regions @ Hannover"))
+   require(lattice)
+   (xyplot(y ~ Period | Region, data = wagnerGrowth,
+            main = "wagnerGrowth: 21 regions @ Hannover"))
 
-    (dotplot(y ~ reorder(Region,y,median), data = wagnerGrowth,
-             main = "wagnerGrowth",
-             xlab = "Region [ordered by  median(y | Region) ]"))
+   (dotplot(y ~ reorder(Region,y,median), data = wagnerGrowth,
+            main = "wagnerGrowth",
+            xlab = "Region [ordered by  median(y | Region) ]"))

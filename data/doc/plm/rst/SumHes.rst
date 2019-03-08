@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(SumHes)
+   data(SumHes)
 
 Format
 ~~~~~~
@@ -29,25 +29,25 @@ Format
 A data frame containing :
 
 year
-    the year
+   the year
 
 country
-    the country name (factor)
+   the country name (factor)
 
 opec
-    OPEC member?
+   OPEC member?
 
 com
-    communist regime?
+   communist regime?
 
 pop
-    country's population (in thousands)
+   country's population (in thousands)
 
 gdp
-    real GDP per capita (in 1985 US dollars)
+   real GDP per capita (in 1985 US dollars)
 
 sr
-    saving rate (in percent)
+   saving rate (in percent)
 
 Source
 ~~~~~~

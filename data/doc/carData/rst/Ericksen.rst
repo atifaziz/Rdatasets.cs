@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    Ericksen
+   Ericksen
 
 Format
 ~~~~~~
@@ -25,33 +25,33 @@ Format
 This data frame contains the following columns:
 
 minority
-    Percentage black or Hispanic.
+   Percentage black or Hispanic.
 
 crime
-    Rate of serious crimes per 1000 population.
+   Rate of serious crimes per 1000 population.
 
 poverty
-    Percentage poor.
+   Percentage poor.
 
 language
-    Percentage having difficulty speaking or writing English.
+   Percentage having difficulty speaking or writing English.
 
 highschool
-    Percentage age 25 or older who had not finished highschool.
+   Percentage age 25 or older who had not finished highschool.
 
 housing
-    Percentage of housing in small, multiunit buildings.
+   Percentage of housing in small, multiunit buildings.
 
 city
-    A factor with levels: ``city``, major city; ``state``, state or
-    state-remainder.
+   A factor with levels: ``city``, major city; ``state``, state or
+   state-remainder.
 
 conventional
-    Percentage of households counted by conventional personal
-    enumeration.
+   Percentage of households counted by conventional personal
+   enumeration.
 
 undercount
-    Preliminary estimate of percentage undercount.
+   Preliminary estimate of percentage undercount.
 
 Source
 ~~~~~~

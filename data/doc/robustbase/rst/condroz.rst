@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data(condroz)
+   data(condroz, package="robustbase")
 
 Format
 ~~~~~~
@@ -25,10 +25,10 @@ Format
 A data frame with 428 observations on the following 2 variables.
 
 ``Ca``
-    Calcium content of the soil sample
+   Calcium content of the soil sample
 
 ``pH``
-    pH value of the soil sample
+   pH value of the soil sample
 
 Details
 ~~~~~~~
@@ -60,4 +60,4 @@ Examples
 
 ::
 
-      adjbox(condroz$Ca)
+     adjbox(condroz$Ca)

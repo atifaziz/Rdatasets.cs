@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("SpaceShuttle")
+   data("SpaceShuttle")
 
 Format
 ~~~~~~
@@ -25,22 +25,22 @@ Format
 A data frame with 24 observations and 6 variables.
 
 FlightNumber
-    Number of space shuttle flight.
+   Number of space shuttle flight.
 
 Temperature
-    temperature during start (in degrees F).
+   temperature during start (in degrees F).
 
 Pressure
-    pressure.
+   pressure.
 
 Fail
-    did any O-ring failures occur? (no, yes).
+   did any O-ring failures occur? (no, yes).
 
 nFailures
-    how many (of six) 0-rings failed?.
+   how many (of six) 0-rings failed?.
 
 Damage
-    damage index.
+   damage index.
 
 Source
 ~~~~~~
@@ -66,16 +66,16 @@ Examples
 
 ::
 
-    data("SpaceShuttle")
-    plot(nFailures/6 ~ Temperature, data = SpaceShuttle,
-         xlim = c(30, 81), ylim = c(0,1),
-         main = "NASA Space Shuttle O-Ring Failures",
-         ylab = "Estimated failure probability",
-         pch = 19, col = 4)
-    fm <- glm(cbind(nFailures, 6 - nFailures) ~ Temperature,
-              data = SpaceShuttle,
-              family = binomial)
-    lines(30 : 81,
-          predict(fm, data.frame(Temperature = 30 : 81), type = "re"),
-          lwd = 2)
-    abline(v = 31, lty = 3)
+   data("SpaceShuttle")
+   plot(nFailures/6 ~ Temperature, data = SpaceShuttle,
+        xlim = c(30, 81), ylim = c(0,1),
+        main = "NASA Space Shuttle O-Ring Failures",
+        ylab = "Estimated failure probability",
+        pch = 19, col = 4)
+   fm <- glm(cbind(nFailures, 6 - nFailures) ~ Temperature,
+             data = SpaceShuttle,
+             family = binomial)
+   lines(30 : 81,
+         predict(fm, data.frame(Temperature = 30 : 81), type = "re"),
+         lwd = 2)
+   abline(v = 31, lty = 3)

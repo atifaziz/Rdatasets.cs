@@ -24,18 +24,17 @@ Format
 A data frame with 56 observations on the following 4 variables.
 
 ``herd``
-    A factor identifying the herd (1 to 15).
+   A factor identifying the herd (1 to 15).
 
 ``incidence``
-    The number of new serological cases for a given herd and time
-    period.
+   The number of new serological cases for a given herd and time period.
 
 ``size``
-    A numeric vector describing herd size at the beginning of a given
-    time period.
+   A numeric vector describing herd size at the beginning of a given
+   time period.
 
 ``period``
-    A factor with levels ``1`` to ``4``.
+   A factor with levels ``1`` to ``4``.
 
 Details
 ~~~~~~~
@@ -56,18 +55,18 @@ Examples
 
 ::
 
-    ## response as a matrix
-    (m1 <- glmer(cbind(incidence, size - incidence) ~ period + (1 | herd),
+   ## response as a matrix
+   (m1 <- glmer(cbind(incidence, size - incidence) ~ period + (1 | herd),
+                family = binomial, data = cbpp))
+   ## response as a vector of probabilities and usage of argument "weights"
+   m1p <- glmer(incidence / size ~ period + (1 | herd), weights = size,
+                family = binomial, data = cbpp)
+   ## Confirm that these are equivalent:
+   stopifnot(all.equal(fixef(m1), fixef(m1p), tolerance = 1e-5),
+             all.equal(ranef(m1), ranef(m1p), tolerance = 1e-5))
+
+
+   ## GLMM with individual-level variability (accounting for overdispersion)
+   cbpp$obs <- 1:nrow(cbpp)
+   (m2 <- glmer(cbind(incidence, size - incidence) ~ period + (1 | herd) +  (1|obs),
                  family = binomial, data = cbpp))
-    ## response as a vector of probabilities and usage of argument "weights"
-    m1p <- glmer(incidence / size ~ period + (1 | herd), weights = size,
-                 family = binomial, data = cbpp)
-    ## Confirm that these are equivalent:
-    stopifnot(all.equal(fixef(m1), fixef(m1p), tolerance = 1e-5),
-              all.equal(ranef(m1), ranef(m1p), tolerance = 1e-5))
-
-
-    ## GLMM with individual-level variability (accounting for overdispersion)
-    cbpp$obs <- 1:nrow(cbpp)
-    (m2 <- glmer(cbind(incidence, size - incidence) ~ period + (1 | herd) +  (1|obs),
-                  family = binomial, data = cbpp))

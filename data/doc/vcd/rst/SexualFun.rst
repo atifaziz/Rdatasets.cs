@@ -18,7 +18,7 @@ Usage
 
 ::
 
-    data("SexualFun")
+   data("SexualFun")
 
 Format
 ~~~~~~
@@ -57,15 +57,15 @@ Examples
 
 ::
 
-    data("SexualFun")
+   data("SexualFun")
 
-    ## Kappa statistics
-    Kappa(SexualFun)
+   ## Kappa statistics
+   Kappa(SexualFun)
 
-    ## Agreement Chart
-    agreementplot(t(SexualFun), weights = 1)
-    ## Partial Agreement Chart and B-Statistics
-    agreementplot(t(SexualFun),
-                  xlab = "Husband's Rating",
-                  ylab = "Wife's Rating",
-                  main = "Husband's and Wife's Sexual Fun")
+   ## Agreement Chart
+   agreementplot(t(SexualFun), weights = 1)
+   ## Partial Agreement Chart and B-Statistics
+   agreementplot(t(SexualFun),
+                 xlab = "Husband's Rating",
+                 ylab = "Wife's Rating",
+                 main = "Husband's and Wife's Sexual Fun")

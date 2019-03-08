@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    chem
+   chem
 
 Source
 ~~~~~~

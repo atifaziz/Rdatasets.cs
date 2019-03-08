@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data("respiratory")
+   data("respiratory")
 
 Format
 ~~~~~~
@@ -24,28 +24,28 @@ Format
 A data frame with 555 observations on the following 7 variables.
 
 ``centre``
-    the study center, a factor with levels ``1`` and ``2``.
+   the study center, a factor with levels ``1`` and ``2``.
 
 ``treatment``
-    the treatment arm, a factor with levels ``placebo`` and
-    ``treatment``.
+   the treatment arm, a factor with levels ``placebo`` and
+   ``treatment``.
 
 ``sex``
-    a factor with levels ``female`` and ``male``.
+   a factor with levels ``female`` and ``male``.
 
 ``age``
-    the age of the patient.
+   the age of the patient.
 
 ``status``
-    the respiratory status (response variable), a factor with levels
-    ``poor`` and ``good``.
+   the respiratory status (response variable), a factor with levels
+   ``poor`` and ``good``.
 
 ``month``
-    the month, each patient was examined at months ``0``, ``1``, ``2``,
-    ``3`` and ``4``.
+   the month, each patient was examined at months ``0``, ``1``, ``2``,
+   ``3`` and ``4``.
 
 ``subject``
-    the patient ID, a factor with levels ``1`` to ``111``.
+   the patient ID, a factor with levels ``1`` to ``111``.
 
 Details
 ~~~~~~~
@@ -74,6 +74,6 @@ Examples
 ::
 
 
-      data("respiratory", package = "HSAUR")
-      mosaicplot(xtabs( ~ treatment + month + status, data = respiratory))
+     data("respiratory", package = "HSAUR")
+     mosaicplot(xtabs( ~ treatment + month + status, data = respiratory))
 

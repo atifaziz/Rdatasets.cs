@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("womensrole")
+   data("womensrole")
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 A data frame with 42 observations on the following 4 variables.
 
 ``education``
-    years of education.
+   years of education.
 
 ``sex``
-    a factor with levels ``Male`` and ``Female``.
+   a factor with levels ``Male`` and ``Female``.
 
 ``agree``
-    number of subjects in agreement with the statement.
+   number of subjects in agreement with the statement.
 
 ``disagree``
-    number of subjects in disagreement with the statement.
+   number of subjects in disagreement with the statement.
 
 Details
 ~~~~~~~
@@ -57,7 +57,7 @@ Examples
 ::
 
 
-      data("womensrole", package = "HSAUR")
-      summary(subset(womensrole, sex == "Female"))
-      summary(subset(womensrole, sex == "Male"))
+     data("womensrole", package = "HSAUR")
+     summary(subset(womensrole, sex == "Female"))
+     summary(subset(womensrole, sex == "Male"))
 

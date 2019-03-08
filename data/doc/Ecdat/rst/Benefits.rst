@@ -21,7 +21,7 @@ Usage
 
 ::
 
-    data(Benefits)
+   data(Benefits)
 
 Format
 ~~~~~~
@@ -29,59 +29,59 @@ Format
 A time serie containing :
 
 stateur
-    state unemployment rate (in %)
+   state unemployment rate (in %)
 
 statemb
-    state maximum benefit level
+   state maximum benefit level
 
 state
-    state of residence code
+   state of residence code
 
 age
-    age in years
+   age in years
 
 tenure
-    years of tenure in job lost
+   years of tenure in job lost
 
 joblost
-    a factor with levels
-    (slack\_work,position\_abolished,seasonal\_job\_ended,other)
+   a factor with levels
+   (slack\_work,position\_abolished,seasonal\_job\_ended,other)
 
 nwhite
-    non-white ?
+   non-white ?
 
 school12
-    more than 12 years of school ?
+   more than 12 years of school ?
 
 sex
-    a factor with levels (male,female)
+   a factor with levels (male,female)
 
 bluecol
-    blue collar worker ?
+   blue collar worker ?
 
 smsa
-    lives is smsa ?
+   lives is smsa ?
 
 married
-    married ?
+   married ?
 
 dkids
-    has kids ?
+   has kids ?
 
 dykids
-    has young kids (0-5 yrs) ?
+   has young kids (0-5 yrs) ?
 
 yrdispl
-    year of job displacement (1982=1,..., 1991=10)
+   year of job displacement (1982=1,..., 1991=10)
 
 rr
-    replacement rate
+   replacement rate
 
 head
-    is head of household ?
+   is head of household ?
 
 ui
-    applied for (and received) UI benefits ?
+   applied for (and received) UI benefits ?
 
 Source
 ~~~~~~

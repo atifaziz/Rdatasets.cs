@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    Anscombe
+   Anscombe
 
 Format
 ~~~~~~
@@ -24,16 +24,16 @@ Format
 This data frame contains the following columns:
 
 education
-    Per-capita education expenditures, dollars.
+   Per-capita education expenditures, dollars.
 
 income
-    Per-capita income, dollars.
+   Per-capita income, dollars.
 
 young
-    Proportion under 18, per 1000.
+   Proportion under 18, per 1000.
 
 urban
-    Proportion urban, per 1000.
+   Proportion urban, per 1000.
 
 Source
 ~~~~~~

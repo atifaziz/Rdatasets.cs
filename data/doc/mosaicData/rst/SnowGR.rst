@@ -16,7 +16,7 @@ Usage
 
 ::
 
-    data(SnowGR)
+   data(SnowGR)
 
 Format
 ~~~~~~
@@ -65,15 +65,17 @@ Examples
 
 ::
 
-    data(SnowGR)
-    if (require(mosaic)) {
-      favstats(SnowGR$Total)
-      histogram(~Total, data=SnowGR)
-      xyplot(Total ~ SeasonStart, SnowGR, type=c('p','smooth'))
-    }
-    if (require(reshape2)) {
-      Snow2 <- melt(SnowGR, id=1:2)
-      names(Snow2)[3:4] <- c('Time','Snow')
-      bwplot(Snow ~ Time, Snow2)
-    }
+   data(SnowGR)
+   if (require(mosaic)) {
+     df_stats(~ Total, data = SnowGR)
+     gf_histogram( ~ Total, data = SnowGR)
+     gf_point(Total ~ SeasonStart, data = SnowGR) %>%
+       gf_smooth()
+   }
+   if (require(tidyr)) {
+     Snow2 <- 
+       SnowGR %>%
+       gather("Time", "Snowfall", Jul:Total) 
+     gf_boxplot(Snowfall ~ Time, data = Snow2)
+   }
 

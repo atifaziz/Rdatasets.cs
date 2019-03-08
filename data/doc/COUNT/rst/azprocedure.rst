@@ -25,7 +25,7 @@ Usage
 
 ::
 
-    data(azprocedure)
+   data(azprocedure)
 
 Format
 ~~~~~~
@@ -33,22 +33,22 @@ Format
 A data frame with 3589 observations on the following 6 variables.
 
 ``los``
-    length of hospital stay
+   length of hospital stay
 
 ``procedure``
-    1=CABG;0=PTCA
+   1=CABG;0=PTCA
 
 ``sex``
-    1=Male; 0=female
+   1=Male; 0=female
 
 ``admit``
-    1=Urgent/Emerg; 0=elective (type of admission)
+   1=Urgent/Emerg; 0=elective (type of admission)
 
 ``age75``
-    1= Age>75; 0=Age<=75
+   1= Age>75; 0=Age<=75
 
 ``hospital``
-    encrypted facility code (string)
+   encrypted facility code (string)
 
 Details
 ~~~~~~~
@@ -75,19 +75,19 @@ Examples
 
 ::
 
-    library(MASS)
-    library(msme)
+   library(MASS)
+   library(msme)
 
-    data(azprocedure)
+   data(azprocedure)
 
-    glmazp <- glm(los ~ procedure + sex + admit, family=poisson, data=azprocedure)
-    summary(glmazp)
-    exp(coef(glmazp))
+   glmazp <- glm(los ~ procedure + sex + admit, family=poisson, data=azprocedure)
+   summary(glmazp)
+   exp(coef(glmazp))
 
-    nb2 <- nbinomial(los ~ procedure + sex + admit, data=azprocedure)
-    summary(nb2)
-    exp(coef(nb2))
+   nb2 <- nbinomial(los ~ procedure + sex + admit, data=azprocedure)
+   summary(nb2)
+   exp(coef(nb2))
 
-    glmaznb <- glm.nb(los ~ procedure + sex + admit, data=azprocedure)
-    summary(glmaznb)
-    exp(coef(glmaznb))
+   glmaznb <- glm.nb(los ~ procedure + sex + admit, data=azprocedure)
+   summary(glmaznb)
+   exp(coef(glmaznb))

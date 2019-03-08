@@ -22,7 +22,7 @@ Usage
 
 ::
 
-    data(Guerry)
+   data(Guerry)
 
 Format
 ~~~~~~
@@ -31,106 +31,106 @@ A data frame with 86 observations (the departments of France) on the
 following 23 variables.
 
 ``dept``
-    Department ID: Standard numbers for the departments, except for
-    Corsica (200)
+   Department ID: Standard numbers for the departments, except for
+   Corsica (200)
 
 ``Region``
-    Region of France ('N'='North', 'S'='South', 'E'='East', 'W'='West',
-    'C'='Central'). Corsica is coded as NA
+   Region of France ('N'='North', 'S'='South', 'E'='East', 'W'='West',
+   'C'='Central'). Corsica is coded as NA
 
 ``Department``
-    Department name: Departments are named according to usage in 1830,
-    but without accents. A factor with levels ``Ain`` ``Aisne``
-    ``Allier`` ... ``Vosges`` ``Yonne``
+   Department name: Departments are named according to usage in 1830,
+   but without accents. A factor with levels ``Ain`` ``Aisne``
+   ``Allier`` ... ``Vosges`` ``Yonne``
 
 ``Crime_pers``
-    Population per Crime against persons. Source: A2 (Compte general,
-    1825-1830)
+   Population per Crime against persons. Source: A2 (Compte general,
+   1825-1830)
 
 ``Crime_prop``
-    Population per Crime against property. Source: A2 (Compte general,
-    1825-1830)
+   Population per Crime against property. Source: A2 (Compte general,
+   1825-1830)
 
 ``Literacy``
-    Percent Read & Write: Percent of military conscripts who can read
-    and write. Source: A2
+   Percent Read & Write: Percent of military conscripts who can read and
+   write. Source: A2
 
 ``Donations``
-    Donations to the poor. Source: A2 (Bulletin des lois)
+   Donations to the poor. Source: A2 (Bulletin des lois)
 
 ``Infants``
-    Population per illegitimate birth. Source: A2 (Bureaau des
-    Longitudes, 1817-1821)
+   Population per illegitimate birth. Source: A2 (Bureaau des
+   Longitudes, 1817-1821)
 
 ``Suicides``
-    Population per suicide. Source: A2 (Compte general, 1827-1830)
+   Population per suicide. Source: A2 (Compte general, 1827-1830)
 
 ``MainCity``
-    Size of principal city ('1:Sm', '2:Med', '3:Lg'), used as a
-    surrogate for poulation density. Large refers to the top 10, small
-    to the bottom 10; all the rest are classed Medium. Source: A1. An
-    ordered factor with levels ``1:Sm`` < ``2:Med`` < ``3:Lg``
+   Size of principal city ('1:Sm', '2:Med', '3:Lg'), used as a surrogate
+   for poulation density. Large refers to the top 10, small to the
+   bottom 10; all the rest are classed Medium. Source: A1. An ordered
+   factor with levels ``1:Sm`` < ``2:Med`` < ``3:Lg``
 
 ``Wealth``
-    Per capita tax on personal property. A ranked index based on taxes
-    on personal and movable property per inhabitant. Source: A1
+   Per capita tax on personal property. A ranked index based on taxes on
+   personal and movable property per inhabitant. Source: A1
 
 ``Commerce``
-    Commerce and Industry, measured by the rank of the number of patents
-    / population. Source: A1
+   Commerce and Industry, measured by the rank of the number of patents
+   / population. Source: A1
 
 ``Clergy``
-    Distribution of clergy, measured by the rank of the number of
-    Catholic priests in active service / population. Source: A1
-    (Almanach officiel du clergy, 1829)
+   Distribution of clergy, measured by the rank of the number of
+   Catholic priests in active service / population. Source: A1 (Almanach
+   officiel du clergy, 1829)
 
 ``Crime_parents``
-    Crimes against parents, measured by the rank of the ratio of crimes
-    against parents to all crimes– Average for the years 1825-1830.
-    Source: A1 (Compte general)
+   Crimes against parents, measured by the rank of the ratio of crimes
+   against parents to all crimes– Average for the years 1825-1830.
+   Source: A1 (Compte general)
 
 ``Infanticide``
-    Infanticides per capita. A ranked ratio of number of infanticides to
-    population– Average for the years 1825-1830. Source: A1 (Compte
-    general)
+   Infanticides per capita. A ranked ratio of number of infanticides to
+   population– Average for the years 1825-1830. Source: A1 (Compte
+   general)
 
 ``Donation_clergy``
-    Donations to the clergy. A ranked ratio of the number of bequests
-    and donations inter vivios to population– Average for the years
-    1815-1824. Source: A1 (Bull. des lois, ordunn. d'autorisation)
+   Donations to the clergy. A ranked ratio of the number of bequests and
+   donations inter vivios to population– Average for the years
+   1815-1824. Source: A1 (Bull. des lois, ordunn. d'autorisation)
 
 ``Lottery``
-    Per capita wager on Royal Lottery. Ranked ratio of the proceeds bet
-    on the royal lottery to population— Average for the years 1822-1826.
-    Source: A1 (Compte rendus par le ministre des finances)
+   Per capita wager on Royal Lottery. Ranked ratio of the proceeds bet
+   on the royal lottery to population— Average for the years 1822-1826.
+   Source: A1 (Compte rendus par le ministre des finances)
 
 ``Desertion``
-    Military disertion, ratio of the number of young soldiers accused of
-    desertion to the force of the military contingent, minus the deficit
-    produced by the insufficiency of available billets– Average of the
-    years 1825-1827. Source: A1 (Compte du ministere du guerre, 1829
-    etat V)
+   Military disertion, ratio of the number of young soldiers accused of
+   desertion to the force of the military contingent, minus the deficit
+   produced by the insufficiency of available billets– Average of the
+   years 1825-1827. Source: A1 (Compte du ministere du guerre, 1829 etat
+   V)
 
 ``Instruction``
-    Instruction. Ranks recorded from Guerry's map of Instruction. Note:
-    this is inversely related to ``Literacy`` (as defined here)
+   Instruction. Ranks recorded from Guerry's map of Instruction. Note:
+   this is inversely related to ``Literacy`` (as defined here)
 
 ``Prostitutes``
-    Prostitutes in Paris. Number of prostitutes registered in Paris from
-    1816 to 1834, classified by the department of their birth Source:
-    Parent-Duchatelet (1836), *De la prostitution en Paris*
+   Prostitutes in Paris. Number of prostitutes registered in Paris from
+   1816 to 1834, classified by the department of their birth Source:
+   Parent-Duchatelet (1836), *De la prostitution en Paris*
 
 ``Distance``
-    Distance to Paris (km). Distance of each department centroid to the
-    centroid of the Seine (Paris) Source: cakculated from department
-    centroids
+   Distance to Paris (km). Distance of each department centroid to the
+   centroid of the Seine (Paris) Source: cakculated from department
+   centroids
 
 ``Area``
-    Area (1000 km^2). Source: Angeville (1836)
+   Area (1000 km^2). Source: Angeville (1836)
 
 ``Pop1831``
-    1831 population. Population in 1831, taken from Angeville (1836),
-    *Essai sur la Statistique de la Population fran?ais*, in 1000s
+   1831 population. Population in 1831, taken from Angeville (1836),
+   *Essai sur la Statistique de la Population fran?ais*, in 1000s
 
 Details
 ~~~~~~~
@@ -188,5 +188,5 @@ Examples
 
 ::
 
-    data(Guerry)
-    ## maybe str(Guerry) ; plot(Guerry) ...
+   data(Guerry)
+   ## maybe str(Guerry) ; plot(Guerry) ...

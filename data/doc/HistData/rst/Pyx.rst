@@ -32,7 +32,7 @@ Usage
 
 ::
 
-    data(Pyx)
+   data(Pyx)
 
 Format
 ~~~~~~
@@ -43,20 +43,20 @@ giving the distribution of 10,000 soverigns, classified according to the
 standard weight.
 
 ``Bags``
-    an ordered factor with levels ``1 and 2`` < ``3`` < ``4`` < ``5`` <
-    ``6`` < ``7`` < ``8`` < ``9`` < ``10``
+   an ordered factor with levels ``1 and 2`` < ``3`` < ``4`` < ``5`` <
+   ``6`` < ``7`` < ``8`` < ``9`` < ``10``
 
 ``Group``
-    an ordered factor with levels ``below std`` < ``near std`` <
-    ``above std``
+   an ordered factor with levels ``below std`` < ``near std`` <
+   ``above std``
 
 ``Deviation``
-    an ordered factor with levels ``Below -R`` < ``(-R to -.2)`` <
-    ``(-.2 to -.l)`` < ``(-.1 to 0)`` < ``(0 to .l)`` < ``(.1 to .2)`` <
-    ``(.2 to R)`` < ``Above R``
+   an ordered factor with levels ``Below -R`` < ``(-R to -.2)`` <
+   ``(-.2 to -.l)`` < ``(-.1 to 0)`` < ``(0 to .l)`` < ``(.1 to .2)`` <
+   ``(.2 to R)`` < ``Above R``
 
 ``count``
-    number of soverigns
+   number of soverigns
 
 Details
 ~~~~~~~
@@ -87,6 +87,6 @@ Examples
 
 ::
 
-    data(Pyx)
-    # display as table
-    xtabs(count ~ Bags+Deviation, data=Pyx)
+   data(Pyx)
+   # display as table
+   xtabs(count ~ Bags+Deviation, data=Pyx)

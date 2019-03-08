@@ -81,8 +81,8 @@ data(Utilities)
 
 <pre>
 data(Utilities)
-if (require(lattice)) {
-  xyplot(gasbill ~ temp, Utilities)
+if (require(ggformula)) {
+  gf_point(gasbill ~ temp, data = Utilities)
 }
 
 </pre>

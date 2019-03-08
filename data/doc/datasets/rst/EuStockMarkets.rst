@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    EuStockMarkets
+   EuStockMarkets
 
 Format
 ~~~~~~

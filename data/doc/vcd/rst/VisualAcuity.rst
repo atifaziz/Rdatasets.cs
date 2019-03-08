@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    data("VisualAcuity")
+   data("VisualAcuity")
 
 Format
 ~~~~~~
@@ -25,16 +25,16 @@ Format
 A data frame with 32 observations and 4 variables.
 
 Freq
-    frequency of visual acuity measurements.
+   frequency of visual acuity measurements.
 
 right
-    visual acuity on right eye.
+   visual acuity on right eye.
 
 left
-    visual acuity on left eye.
+   visual acuity on left eye.
 
 gender
-    factor indicating gender of patient.
+   factor indicating gender of patient.
 
 Source
 ~~~~~~
@@ -56,8 +56,8 @@ Examples
 
 ::
 
-    data("VisualAcuity")
-    structable(~ gender + left + right, data = VisualAcuity)
-    sieve(Freq ~ left + right | gender, data = VisualAcuity, shade = TRUE)
-    cotabplot(Freq ~ left + right | gender, data = VisualAcuity,
-              panel = cotab_agreementplot)
+   data("VisualAcuity")
+   structable(~ gender + left + right, data = VisualAcuity)
+   sieve(Freq ~ left + right | gender, data = VisualAcuity, shade = TRUE)
+   cotabplot(Freq ~ left + right | gender, data = VisualAcuity,
+             panel = cotab_agreementplot)
