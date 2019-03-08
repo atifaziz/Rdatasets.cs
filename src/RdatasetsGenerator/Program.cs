@@ -102,27 +102,7 @@ namespace RdatasetsGenerator
                             {
                                 Package = pkg,
                                 Item = Path.GetFileNameWithoutExtension(item),
-                                /*
                                 Format =
-                                    File.ReadLines(fp)
-                                        .Select(e => new
-                                        {
-                                            Name = Regex.Match(e, @"(?<=^``)[^`]+(?=``)").Value,
-                                            Line = e,
-                                        })
-                                        .Segment(e => e.Name.Length > 0)
-                                        .Skip(1)
-                                        .Select(ss => ss.TakeWhile(s => !string.IsNullOrWhiteSpace(s.Line))
-                                                        .Index()
-                                                        .Partition(e => e.Key == 0, (name, desc) => new
-                                                        {
-                                                            Name = name.Single().Value.Name,
-                                                            Description = desc.Select(e => e.Value.Line.Trim())
-                                                                              .ToDelimitedString(" "),
-                                                        }))
-                                        .ToArray(),
-                                */
-                                Format2 =
                                     from Match m in Regex.Matches(File.ReadAllText(path),
                                                                   @"^(?:``)?([a-zA-Z][a-zA-Z0-9.]*)(?:``)?\r?$\n( {4}.+\r?$\n)+",
                                                                   RegexOptions.Multiline)
@@ -135,8 +115,7 @@ namespace RdatasetsGenerator
                             })
                     on new { e.Package, e.Item } equals new { f.Package, f.Item }
                     into j
-                //where f.Cols != e.Format2.Count()
-                let f = j.SingleOrDefault() // ?? throw new Exception($"{e.Package}/{e.Item} not found.")
+                let f = j.SingleOrDefault()
                 where f != null
                 select new
                 {
@@ -146,7 +125,7 @@ namespace RdatasetsGenerator
                     e.Title,
                     e.Rows,
                     e.Cols,
-                    Format = f.Format2.ToArray()
+                    Format = f.Format.ToArray()
                 }
                 into e
                 join f in
