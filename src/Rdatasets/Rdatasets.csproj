@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netstandard1.0</TargetFrameworks>
     <VersionPrefix>1.0.0</VersionPrefix>
     <Copyright>Copyright © 2017 Atif Aziz</Copyright>
     <Description>Collection of over a thousand R datasets packaged as a .NET Standard library.</Description>
