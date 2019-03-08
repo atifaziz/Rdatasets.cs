@@ -17,6 +17,13 @@
     <IncludeSource>true</IncludeSource>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\bin\Release\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\COPYING.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
   </ItemGroup>
