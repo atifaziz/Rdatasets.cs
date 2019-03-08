@@ -11,10 +11,14 @@
     <RepositoryUrl>https://github.com/atifaziz/Rdatasets.cs.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>r;data</PackageTags>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageLicenseFile>COPYING.txt</PackageLicenseFile>
     <PackageOutputPath>..\..\dist</PackageOutputPath>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\COPYING.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+  </ItemGroup>
 
 </Project>
