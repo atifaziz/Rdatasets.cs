@@ -10,10 +10,12 @@ namespace Rdatasets.boot
 
     public class darwin
     {
+        public readonly int κ;
         public readonly int y;
 
-        public darwin(int y)
+        public darwin(int κ, int y)
         {
+            this.κ = κ;
             this.y = y;
         }
 
@@ -21,21 +23,21 @@ namespace Rdatasets.boot
         {
             get
             {
-                yield return new darwin(49);
-                yield return new darwin(-67);
-                yield return new darwin(8);
-                yield return new darwin(16);
-                yield return new darwin(6);
-                yield return new darwin(23);
-                yield return new darwin(28);
-                yield return new darwin(41);
-                yield return new darwin(14);
-                yield return new darwin(29);
-                yield return new darwin(56);
-                yield return new darwin(24);
-                yield return new darwin(75);
-                yield return new darwin(60);
-                yield return new darwin(-48);
+                yield return new darwin(1, 49);
+                yield return new darwin(2, -67);
+                yield return new darwin(3, 8);
+                yield return new darwin(4, 16);
+                yield return new darwin(5, 6);
+                yield return new darwin(6, 23);
+                yield return new darwin(7, 28);
+                yield return new darwin(8, 41);
+                yield return new darwin(9, 14);
+                yield return new darwin(10, 29);
+                yield return new darwin(11, 56);
+                yield return new darwin(12, 24);
+                yield return new darwin(13, 75);
+                yield return new darwin(14, 60);
+                yield return new darwin(15, -48);
             }
         }
     }

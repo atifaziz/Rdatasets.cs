@@ -10,11 +10,13 @@ namespace Rdatasets.boot
 
     public class city
     {
+        public readonly int κ;
         public readonly int u;
         public readonly int x;
 
-        public city(int u, int x)
+        public city(int κ, int u, int x)
         {
+            this.κ = κ;
             this.u = u;
             this.x = x;
         }
@@ -23,16 +25,16 @@ namespace Rdatasets.boot
         {
             get
             {
-                yield return new city(138, 143);
-                yield return new city(93, 104);
-                yield return new city(61, 69);
-                yield return new city(179, 260);
-                yield return new city(48, 75);
-                yield return new city(37, 63);
-                yield return new city(29, 50);
-                yield return new city(23, 48);
-                yield return new city(30, 111);
-                yield return new city(2, 50);
+                yield return new city(1, 138, 143);
+                yield return new city(2, 93, 104);
+                yield return new city(3, 61, 69);
+                yield return new city(4, 179, 260);
+                yield return new city(5, 48, 75);
+                yield return new city(6, 37, 63);
+                yield return new city(7, 29, 50);
+                yield return new city(8, 23, 48);
+                yield return new city(9, 30, 111);
+                yield return new city(10, 2, 50);
             }
         }
     }

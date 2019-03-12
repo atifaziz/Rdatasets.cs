@@ -10,11 +10,13 @@ namespace Rdatasets.HistData
 
     public class Bowley
     {
+        public readonly int κ;
         public readonly int Year;
         public readonly double Value;
 
-        public Bowley(int Year, double Value)
+        public Bowley(int κ, int Year, double Value)
         {
+            this.κ = κ;
             this.Year = Year;
             this.Value = Value;
         }
@@ -23,51 +25,51 @@ namespace Rdatasets.HistData
         {
             get
             {
-                yield return new Bowley(1855, 95.7);
-                yield return new Bowley(1856, 115.8);
-                yield return new Bowley(1857, 122);
-                yield return new Bowley(1858, 116.6);
-                yield return new Bowley(1859, 130.4);
-                yield return new Bowley(1860, 135.9);
-                yield return new Bowley(1861, 125.1);
-                yield return new Bowley(1862, 124);
-                yield return new Bowley(1863, 146.5);
-                yield return new Bowley(1864, 160.4);
-                yield return new Bowley(1865, 165.8);
-                yield return new Bowley(1866, 188.9);
-                yield return new Bowley(1867, 181);
-                yield return new Bowley(1868, 179.7);
-                yield return new Bowley(1869, 190);
-                yield return new Bowley(1870, 199.6);
-                yield return new Bowley(1871, 223.1);
-                yield return new Bowley(1872, 256.3);
-                yield return new Bowley(1873, 255.2);
-                yield return new Bowley(1874, 239.6);
-                yield return new Bowley(1875, 223.5);
-                yield return new Bowley(1876, 200.6);
-                yield return new Bowley(1877, 198.9);
-                yield return new Bowley(1878, 192.8);
-                yield return new Bowley(1879, 191.5);
-                yield return new Bowley(1880, 223.1);
-                yield return new Bowley(1881, 234);
-                yield return new Bowley(1882, 241.5);
-                yield return new Bowley(1883, 239.8);
-                yield return new Bowley(1884, 233);
-                yield return new Bowley(1885, 213.1);
-                yield return new Bowley(1886, 212.7);
-                yield return new Bowley(1887, 221.9);
-                yield return new Bowley(1888, 234.5);
-                yield return new Bowley(1889, 248.9);
-                yield return new Bowley(1890, 263.5);
-                yield return new Bowley(1891, 247.2);
-                yield return new Bowley(1892, 227.1);
-                yield return new Bowley(1893, 218.1);
-                yield return new Bowley(1894, 215.8);
-                yield return new Bowley(1895, 225.9);
-                yield return new Bowley(1896, 240.1);
-                yield return new Bowley(1897, 234.3);
-                yield return new Bowley(1898, 233.4);
-                yield return new Bowley(1899, 255.4);
+                yield return new Bowley(1, 1855, 95.7);
+                yield return new Bowley(2, 1856, 115.8);
+                yield return new Bowley(3, 1857, 122);
+                yield return new Bowley(4, 1858, 116.6);
+                yield return new Bowley(5, 1859, 130.4);
+                yield return new Bowley(6, 1860, 135.9);
+                yield return new Bowley(7, 1861, 125.1);
+                yield return new Bowley(8, 1862, 124);
+                yield return new Bowley(9, 1863, 146.5);
+                yield return new Bowley(10, 1864, 160.4);
+                yield return new Bowley(11, 1865, 165.8);
+                yield return new Bowley(12, 1866, 188.9);
+                yield return new Bowley(13, 1867, 181);
+                yield return new Bowley(14, 1868, 179.7);
+                yield return new Bowley(15, 1869, 190);
+                yield return new Bowley(16, 1870, 199.6);
+                yield return new Bowley(17, 1871, 223.1);
+                yield return new Bowley(18, 1872, 256.3);
+                yield return new Bowley(19, 1873, 255.2);
+                yield return new Bowley(20, 1874, 239.6);
+                yield return new Bowley(21, 1875, 223.5);
+                yield return new Bowley(22, 1876, 200.6);
+                yield return new Bowley(23, 1877, 198.9);
+                yield return new Bowley(24, 1878, 192.8);
+                yield return new Bowley(25, 1879, 191.5);
+                yield return new Bowley(26, 1880, 223.1);
+                yield return new Bowley(27, 1881, 234);
+                yield return new Bowley(28, 1882, 241.5);
+                yield return new Bowley(29, 1883, 239.8);
+                yield return new Bowley(30, 1884, 233);
+                yield return new Bowley(31, 1885, 213.1);
+                yield return new Bowley(32, 1886, 212.7);
+                yield return new Bowley(33, 1887, 221.9);
+                yield return new Bowley(34, 1888, 234.5);
+                yield return new Bowley(35, 1889, 248.9);
+                yield return new Bowley(36, 1890, 263.5);
+                yield return new Bowley(37, 1891, 247.2);
+                yield return new Bowley(38, 1892, 227.1);
+                yield return new Bowley(39, 1893, 218.1);
+                yield return new Bowley(40, 1894, 215.8);
+                yield return new Bowley(41, 1895, 225.9);
+                yield return new Bowley(42, 1896, 240.1);
+                yield return new Bowley(43, 1897, 234.3);
+                yield return new Bowley(44, 1898, 233.4);
+                yield return new Bowley(45, 1899, 255.4);
             }
         }
     }

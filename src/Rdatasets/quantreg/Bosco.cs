@@ -10,11 +10,13 @@ namespace Rdatasets.quantreg
 
     public class Bosco
     {
+        public readonly string κ;
         public readonly double x;
         public readonly int y;
 
-        public Bosco(double x, int y)
+        public Bosco(string κ, double x, int y)
         {
+            this.κ = κ;
             this.x = x;
             this.y = y;
         }
@@ -23,11 +25,11 @@ namespace Rdatasets.quantreg
         {
             get
             {
-                yield return new Bosco(0, 51);
-                yield return new Bosco(0.2987, 337);
-                yield return new Bosco(0.4648, 279);
-                yield return new Bosco(0.5762, 374);
-                yield return new Bosco(0.8386, 722);
+                yield return new Bosco("Quito", 0, 51);
+                yield return new Bosco("Capehope", 0.2987, 337);
+                yield return new Bosco("Rome", 0.4648, 279);
+                yield return new Bosco("Paris", 0.5762, 374);
+                yield return new Bosco("Lapland", 0.8386, 722);
             }
         }
     }

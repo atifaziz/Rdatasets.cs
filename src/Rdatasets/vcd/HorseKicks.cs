@@ -10,11 +10,13 @@ namespace Rdatasets.vcd
 
     public class HorseKicks
     {
+        public readonly int κ;
         public readonly int nDeaths;
         public readonly int Freq;
 
-        public HorseKicks(int nDeaths, int Freq)
+        public HorseKicks(int κ, int nDeaths, int Freq)
         {
+            this.κ = κ;
             this.nDeaths = nDeaths;
             this.Freq = Freq;
         }
@@ -23,11 +25,11 @@ namespace Rdatasets.vcd
         {
             get
             {
-                yield return new HorseKicks(0, 109);
-                yield return new HorseKicks(1, 65);
-                yield return new HorseKicks(2, 22);
-                yield return new HorseKicks(3, 3);
-                yield return new HorseKicks(4, 1);
+                yield return new HorseKicks(1, 0, 109);
+                yield return new HorseKicks(2, 1, 65);
+                yield return new HorseKicks(3, 2, 22);
+                yield return new HorseKicks(4, 3, 3);
+                yield return new HorseKicks(5, 4, 1);
             }
         }
     }

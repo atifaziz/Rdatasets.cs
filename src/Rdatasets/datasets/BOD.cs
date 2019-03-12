@@ -10,11 +10,13 @@ namespace Rdatasets.datasets
 
     public class BOD
     {
+        public readonly int κ;
         public readonly int Time;
         public readonly double demand;
 
-        public BOD(int Time, double demand)
+        public BOD(int κ, int Time, double demand)
         {
+            this.κ = κ;
             this.Time = Time;
             this.demand = demand;
         }
@@ -23,12 +25,12 @@ namespace Rdatasets.datasets
         {
             get
             {
-                yield return new BOD(1, 8.3);
-                yield return new BOD(2, 10.3);
-                yield return new BOD(3, 19);
-                yield return new BOD(4, 16);
-                yield return new BOD(5, 15.6);
-                yield return new BOD(7, 19.8);
+                yield return new BOD(1, 1, 8.3);
+                yield return new BOD(2, 2, 10.3);
+                yield return new BOD(3, 3, 19);
+                yield return new BOD(4, 4, 16);
+                yield return new BOD(5, 5, 15.6);
+                yield return new BOD(6, 7, 19.8);
             }
         }
     }

@@ -10,11 +10,13 @@ namespace Rdatasets.robustbase
 
     public class SiegelsEx
     {
+        public readonly int κ;
         public readonly int x;
         public readonly int y;
 
-        public SiegelsEx(int x, int y)
+        public SiegelsEx(int κ, int x, int y)
         {
+            this.κ = κ;
             this.x = x;
             this.y = y;
         }
@@ -23,15 +25,15 @@ namespace Rdatasets.robustbase
         {
             get
             {
-                yield return new SiegelsEx(-4, 0);
-                yield return new SiegelsEx(-3, 0);
-                yield return new SiegelsEx(-2, 0);
-                yield return new SiegelsEx(-1, 0);
-                yield return new SiegelsEx(0, 0);
-                yield return new SiegelsEx(1, 0);
-                yield return new SiegelsEx(2, -5);
-                yield return new SiegelsEx(3, 5);
-                yield return new SiegelsEx(12, 1);
+                yield return new SiegelsEx(1, -4, 0);
+                yield return new SiegelsEx(2, -3, 0);
+                yield return new SiegelsEx(3, -2, 0);
+                yield return new SiegelsEx(4, -1, 0);
+                yield return new SiegelsEx(5, 0, 0);
+                yield return new SiegelsEx(6, 1, 0);
+                yield return new SiegelsEx(7, 2, -5);
+                yield return new SiegelsEx(8, 3, 5);
+                yield return new SiegelsEx(9, 12, 1);
             }
         }
     }

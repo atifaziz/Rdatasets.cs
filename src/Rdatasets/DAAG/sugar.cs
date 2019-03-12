@@ -10,11 +10,13 @@ namespace Rdatasets.DAAG
 
     public class sugar
     {
+        public readonly int κ;
         public readonly double weight;
         public readonly string trt;
 
-        public sugar(double weight, string trt)
+        public sugar(int κ, double weight, string trt)
         {
+            this.κ = κ;
             this.weight = weight;
             this.trt = trt;
         }
@@ -23,18 +25,18 @@ namespace Rdatasets.DAAG
         {
             get
             {
-                yield return new sugar(82, "Control");
-                yield return new sugar(97.8, "Control");
-                yield return new sugar(69.9, "Control");
-                yield return new sugar(58.3, "A");
-                yield return new sugar(67.9, "A");
-                yield return new sugar(59.3, "A");
-                yield return new sugar(68.1, "B");
-                yield return new sugar(70.8, "B");
-                yield return new sugar(63.6, "B");
-                yield return new sugar(50.7, "C");
-                yield return new sugar(47.1, "C");
-                yield return new sugar(48.9, "C");
+                yield return new sugar(1, 82, "Control");
+                yield return new sugar(2, 97.8, "Control");
+                yield return new sugar(3, 69.9, "Control");
+                yield return new sugar(4, 58.3, "A");
+                yield return new sugar(5, 67.9, "A");
+                yield return new sugar(6, 59.3, "A");
+                yield return new sugar(7, 68.1, "B");
+                yield return new sugar(8, 70.8, "B");
+                yield return new sugar(9, 63.6, "B");
+                yield return new sugar(10, 50.7, "C");
+                yield return new sugar(11, 47.1, "C");
+                yield return new sugar(12, 48.9, "C");
             }
         }
     }

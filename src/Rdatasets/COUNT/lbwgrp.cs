@@ -10,6 +10,7 @@ namespace Rdatasets.COUNT
 
     public class lbwgrp
     {
+        public readonly int κ;
         public readonly int lowbw;
         public readonly int cases;
         public readonly int smoke;
@@ -18,8 +19,9 @@ namespace Rdatasets.COUNT
         public readonly int race3;
         public readonly int low;
 
-        public lbwgrp(int lowbw, int cases, int smoke, int race1, int race2, int race3, int low)
+        public lbwgrp(int κ, int lowbw, int cases, int smoke, int race1, int race2, int race3, int low)
         {
+            this.κ = κ;
             this.lowbw = lowbw;
             this.cases = cases;
             this.smoke = smoke;
@@ -33,12 +35,12 @@ namespace Rdatasets.COUNT
         {
             get
             {
-                yield return new lbwgrp(60, 165, 0, 0, 0, 1, 0);
-                yield return new lbwgrp(15, 48, 0, 0, 1, 0, 0);
-                yield return new lbwgrp(12, 132, 0, 1, 0, 0, 0);
-                yield return new lbwgrp(15, 36, 1, 0, 0, 1, 1);
-                yield return new lbwgrp(18, 30, 1, 0, 1, 0, 1);
-                yield return new lbwgrp(57, 156, 1, 1, 0, 0, 1);
+                yield return new lbwgrp(1, 60, 165, 0, 0, 0, 1, 0);
+                yield return new lbwgrp(2, 15, 48, 0, 0, 1, 0, 0);
+                yield return new lbwgrp(3, 12, 132, 0, 1, 0, 0, 0);
+                yield return new lbwgrp(4, 15, 36, 1, 0, 0, 1, 1);
+                yield return new lbwgrp(5, 18, 30, 1, 0, 1, 0, 1);
+                yield return new lbwgrp(6, 57, 156, 1, 1, 0, 0, 1);
             }
         }
     }

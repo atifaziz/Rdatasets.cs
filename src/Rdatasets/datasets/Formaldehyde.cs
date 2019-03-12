@@ -10,11 +10,13 @@ namespace Rdatasets.datasets
 
     public class Formaldehyde
     {
+        public readonly int κ;
         public readonly double carb;
         public readonly double optden;
 
-        public Formaldehyde(double carb, double optden)
+        public Formaldehyde(int κ, double carb, double optden)
         {
+            this.κ = κ;
             this.carb = carb;
             this.optden = optden;
         }
@@ -23,12 +25,12 @@ namespace Rdatasets.datasets
         {
             get
             {
-                yield return new Formaldehyde(0.1, 0.086);
-                yield return new Formaldehyde(0.3, 0.269);
-                yield return new Formaldehyde(0.5, 0.446);
-                yield return new Formaldehyde(0.6, 0.538);
-                yield return new Formaldehyde(0.7, 0.626);
-                yield return new Formaldehyde(0.9, 0.782);
+                yield return new Formaldehyde(1, 0.1, 0.086);
+                yield return new Formaldehyde(2, 0.3, 0.269);
+                yield return new Formaldehyde(3, 0.5, 0.446);
+                yield return new Formaldehyde(4, 0.6, 0.538);
+                yield return new Formaldehyde(5, 0.7, 0.626);
+                yield return new Formaldehyde(6, 0.9, 0.782);
             }
         }
     }

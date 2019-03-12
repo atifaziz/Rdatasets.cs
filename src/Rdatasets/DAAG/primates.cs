@@ -10,11 +10,13 @@ namespace Rdatasets.DAAG
 
     public class primates
     {
+        public readonly string κ;
         public readonly double Bodywt;
         public readonly int Brainwt;
 
-        public primates(double Bodywt, int Brainwt)
+        public primates(string κ, double Bodywt, int Brainwt)
         {
+            this.κ = κ;
             this.Bodywt = Bodywt;
             this.Brainwt = Brainwt;
         }
@@ -23,11 +25,11 @@ namespace Rdatasets.DAAG
         {
             get
             {
-                yield return new primates(10, 115);
-                yield return new primates(207, 406);
-                yield return new primates(62, 1320);
-                yield return new primates(6.8, 179);
-                yield return new primates(52.2, 440);
+                yield return new primates("Potar monkey", 10, 115);
+                yield return new primates("Gorilla", 207, 406);
+                yield return new primates("Human", 62, 1320);
+                yield return new primates("Rhesus monkey", 6.8, 179);
+                yield return new primates("Chimp", 52.2, 440);
             }
         }
     }

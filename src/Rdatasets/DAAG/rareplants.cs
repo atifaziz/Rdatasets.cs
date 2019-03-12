@@ -10,12 +10,14 @@ namespace Rdatasets.DAAG
 
     public class rareplants
     {
+        public readonly string κ;
         public readonly int D;
         public readonly int W;
         public readonly int WD;
 
-        public rareplants(int D, int W, int WD)
+        public rareplants(string κ, int D, int W, int WD)
         {
+            this.κ = κ;
             this.D = D;
             this.W = W;
             this.WD = WD;
@@ -25,10 +27,10 @@ namespace Rdatasets.DAAG
         {
             get
             {
-                yield return new rareplants(37, 190, 94);
-                yield return new rareplants(23, 59, 23);
-                yield return new rareplants(10, 141, 28);
-                yield return new rareplants(15, 58, 16);
+                yield return new rareplants("CC", 37, 190, 94);
+                yield return new rareplants("CR", 23, 59, 23);
+                yield return new rareplants("RC", 10, 141, 28);
+                yield return new rareplants("RR", 15, 58, 16);
             }
         }
     }

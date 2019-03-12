@@ -142,7 +142,6 @@ namespace RdatasetsGenerator
                                         .ParseCsv()
                                         .First()
                                         .Index()
-                                        .SkipWhile(s => s.Value.Length == 0)
                                         .ToArray(),
                                 Rows = File.ReadLines(path).ParseCsv(hr => hr).Memoize(),
                             })
@@ -150,6 +149,7 @@ namespace RdatasetsGenerator
                     into j
                 let f = j.SingleOrDefault()
                 where e.Cols == f.Columns.Length
+                   || f.Columns[0].Value.Length == 0 && e.Cols == f.Columns.Length - 1
                 select new
                 {
                     e.RowNumber,
@@ -171,7 +171,7 @@ namespace RdatasetsGenerator
                         select new
                         {
                             Name = c.Value,
-                            IdName = CSharpId(c.Value) + (c.Value == e.Item ? "_" : null),
+                            IdName = c.Value.Length == 0 ? "\u03ba" : CSharpId(c.Value) + (c.Value == e.Item ? "_" : null),
                             Index = c.Key,
                             Type = vs.Values.All(v => v == "TRUE" || v == "FALSE")
                                  ? (vs.HasNA ? ColumnType.NullableBoolean : ColumnType.Boolean)

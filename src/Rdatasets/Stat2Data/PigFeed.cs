@@ -10,12 +10,14 @@ namespace Rdatasets.Stat2Data
 
     public class PigFeed
     {
+        public readonly int κ;
         public readonly int WgtGain;
         public readonly string Antibiotic;
         public readonly string B12;
 
-        public PigFeed(int WgtGain, string Antibiotic, string B12)
+        public PigFeed(int κ, int WgtGain, string Antibiotic, string B12)
         {
+            this.κ = κ;
             this.WgtGain = WgtGain;
             this.Antibiotic = Antibiotic;
             this.B12 = B12;
@@ -25,18 +27,18 @@ namespace Rdatasets.Stat2Data
         {
             get
             {
-                yield return new PigFeed(30, "No", "No");
-                yield return new PigFeed(8, "No", "No");
-                yield return new PigFeed(19, "No", "No");
-                yield return new PigFeed(5, "Yes", "No");
-                yield return new PigFeed(0, "Yes", "No");
-                yield return new PigFeed(4, "Yes", "No");
-                yield return new PigFeed(26, "No", "Yes");
-                yield return new PigFeed(21, "No", "Yes");
-                yield return new PigFeed(19, "No", "Yes");
-                yield return new PigFeed(52, "Yes", "Yes");
-                yield return new PigFeed(56, "Yes", "Yes");
-                yield return new PigFeed(54, "Yes", "Yes");
+                yield return new PigFeed(1, 30, "No", "No");
+                yield return new PigFeed(2, 8, "No", "No");
+                yield return new PigFeed(3, 19, "No", "No");
+                yield return new PigFeed(4, 5, "Yes", "No");
+                yield return new PigFeed(5, 0, "Yes", "No");
+                yield return new PigFeed(6, 4, "Yes", "No");
+                yield return new PigFeed(7, 26, "No", "Yes");
+                yield return new PigFeed(8, 21, "No", "Yes");
+                yield return new PigFeed(9, 19, "No", "Yes");
+                yield return new PigFeed(10, 52, "Yes", "Yes");
+                yield return new PigFeed(11, 56, "Yes", "Yes");
+                yield return new PigFeed(12, 54, "Yes", "Yes");
             }
         }
     }
